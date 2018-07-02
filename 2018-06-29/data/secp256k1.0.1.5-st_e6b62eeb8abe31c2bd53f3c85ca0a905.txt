@@ -1,0 +1,451 @@
+The following actions will be performed:
+  - install secp256k1 0.1.5
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[secp256k1: http] Command started
+[secp256k1: http] Command started
+[secp256k1.0.1.5] https://github.com/dakk/secp256k1-ml/archive/0.1.5.zip downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[secp256k1: oasis setup] Command started
++ oasis "setup" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/secp256k1.0.1.5)
+[secp256k1: ./configure] Command started
++ ./configure "--prefix=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/secp256k1.0.1.5)
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ secp256k1
+- Package version: ..................................... 0.1.5
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- 
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ secp256k1
+- Package version: ..................................... 0.1.5
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- 
+[secp256k1: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/secp256k1.0.1.5)
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ secp256k1
+- Package version: ..................................... 0.1.5
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- 
+- ocaml setup.ml -build 
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ secp256k1
+- Package version: ..................................... 0.1.5
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- 
+- ocaml setup.ml -build 
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind ocamlc -g -ccopt -O -c src/secp256k1_wrap.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind ocamlc -g -ccopt -O -c src/secp256k1_wrap.c
+- src/secp256k1_wrap.c:10:23: fatal error: secp256k1.h: No such file or directory
+- compilation terminated.
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' src/libsecp256k1_stubs.a src/dllsecp256k1_stubs.so src/secp256k1.cma src/secp256k1.cmxa src/secp256k1.a src/secp256k1.cmxs test/test.native -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind ocamlc -g -ccopt -O -c src/secp256k1_wrap.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind ocamlc -g -ccopt -O -c src/secp256k1_wrap.c
+- src/secp256k1_wrap.c:10:23: fatal error: secp256k1.h: No such file or directory
+- compilation terminated.
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' src/libsecp256k1_stubs.a src/dllsecp256k1_stubs.so src/secp256k1.cma src/secp256k1.cmxa src/secp256k1.a src/secp256k1.cmxs test/test.native -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+[ERROR] The compilation of secp256k1 failed at "make".
+[secp256k1: ocamlfind remove] Command started
++ ocamlfind "remove" "secp256k1" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/secp256k1.0.1.5)
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ secp256k1
+- Package version: ..................................... 0.1.5
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- 
+- ocaml setup.ml -build 
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind ocamlc -g -ccopt -O -c src/secp256k1_wrap.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind ocamlc -g -ccopt -O -c src/secp256k1_wrap.c
+- src/secp256k1_wrap.c:10:23: fatal error: secp256k1.h: No such file or directory
+- compilation terminated.
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' src/libsecp256k1_stubs.a src/dllsecp256k1_stubs.so src/secp256k1.cma src/secp256k1.cmxa src/secp256k1.a src/secp256k1.cmxs test/test.native -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/secp256k1/META
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ secp256k1
+- Package version: ..................................... 0.1.5
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- 
+- ocaml setup.ml -build 
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind ocamlc -g -ccopt -O -c src/secp256k1_wrap.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind ocamlc -g -ccopt -O -c src/secp256k1_wrap.c
+- src/secp256k1_wrap.c:10:23: fatal error: secp256k1.h: No such file or directory
+- compilation terminated.
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' src/libsecp256k1_stubs.a src/dllsecp256k1_stubs.so src/secp256k1.cma src/secp256k1.cmxa src/secp256k1.a src/secp256k1.cmxs test/test.native -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/secp256k1/META
+
+#=== ERROR while installing secp256k1.0.1.5 ===================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/secp256k1.0.1.5
+# compiler             4.04.2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/secp256k1.0.1.5/secp256k1-21788.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/secp256k1.0.1.5/secp256k1-21788.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/secp256k1.0.1.5/secp256k1-21788.out
+### stdout ###
+# [...]
+# ocaml setup.ml -build 
+# /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind ocamlc -g -ccopt -O -c src/secp256k1_wrap.c
+# + /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind ocamlc -g -ccopt -O -c src/secp256k1_wrap.c
+# src/secp256k1_wrap.c:10:23: fatal error: secp256k1.h: No such file or directory
+# compilation terminated.
+# Command exited with code 2.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' src/libsecp256k1_stubs.a src/dllsecp256k1_stubs.so src/secp256k1.cma src/secp256k1.cmxa src/secp256k1.a src/secp256k1.cmxs test/test.native -tag debug' terminated with error code 10")
+# Makefile:7: recipe for target 'build' failed
+# make: *** [build] Error 1
+### stderr ###
+# [...]
+# ocaml setup.ml -build 
+# /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind ocamlc -g -ccopt -O -c src/secp256k1_wrap.c
+# + /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind ocamlc -g -ccopt -O -c src/secp256k1_wrap.c
+# src/secp256k1_wrap.c:10:23: fatal error: secp256k1.h: No such file or directory
+# compilation terminated.
+# Command exited with code 2.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' src/libsecp256k1_stubs.a src/dllsecp256k1_stubs.so src/secp256k1.cma src/secp256k1.cmxa src/secp256k1.a src/secp256k1.cmxs test/test.native -tag debug' terminated with error code 10")
+# Makefile:7: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install secp256k1 0.1.5
+No changes have been performed
+'opam install secp256k1.0.1.5' failed.

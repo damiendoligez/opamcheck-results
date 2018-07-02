@@ -1,0 +1,151 @@
+The following actions will be performed:
+  - install ocamldiff 1.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocamldiff: http] Command started
+[ocamldiff: http] Command started
+[ocamldiff.1.0] http://zoggy.github.com/ocamldiff/ocamldiff-1.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocamldiff: make all] Command started
++ make "all" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ocamldiff.1.0)
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_types.mli
+- ocamlyacc odiff_parser.mly
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_parser.mli
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_lexer.mli
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff.mli
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_types.ml
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_parser.ml
+- ocamllex odiff_lexer.mll
+- 43 states, 329 transitions, table size 1574 bytes
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_lexer.ml
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff.ml
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -o odiff.cma -a odiff_types.cmo odiff_parser.cmo odiff_lexer.cmo odiff.cmo
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_messages.ml
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_merge.ml
+- File "odiff_merge.ml", line 75, characters 10-23:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "odiff_merge.ml", line 84, characters 34-35:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:140: recipe for target 'odiff_merge.cmi' failed
+- make: *** [odiff_merge.cmi] Error 2
+- rm odiff_parser.mli odiff_lexer.ml
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_types.mli
+- ocamlyacc odiff_parser.mly
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_parser.mli
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_lexer.mli
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff.mli
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_types.ml
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_parser.ml
+- ocamllex odiff_lexer.mll
+- 43 states, 329 transitions, table size 1574 bytes
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_lexer.ml
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff.ml
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -o odiff.cma -a odiff_types.cmo odiff_parser.cmo odiff_lexer.cmo odiff.cmo
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_messages.ml
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_merge.ml
+- File "odiff_merge.ml", line 75, characters 10-23:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "odiff_merge.ml", line 84, characters 34-35:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:140: recipe for target 'odiff_merge.cmi' failed
+- make: *** [odiff_merge.cmi] Error 2
+- rm odiff_parser.mli odiff_lexer.ml
+[ERROR] The compilation of ocamldiff failed at "make all".
+[ocamldiff: ocamlfind remove] Command started
++ ocamlfind "remove" "diff" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ocamldiff.1.0)
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_types.mli
+- ocamlyacc odiff_parser.mly
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_parser.mli
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_lexer.mli
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff.mli
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_types.ml
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_parser.ml
+- ocamllex odiff_lexer.mll
+- 43 states, 329 transitions, table size 1574 bytes
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_lexer.ml
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff.ml
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -o odiff.cma -a odiff_types.cmo odiff_parser.cmo odiff_lexer.cmo odiff.cmo
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_messages.ml
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_merge.ml
+- File "odiff_merge.ml", line 75, characters 10-23:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "odiff_merge.ml", line 84, characters 34-35:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:140: recipe for target 'odiff_merge.cmi' failed
+- make: *** [odiff_merge.cmi] Error 2
+- rm odiff_parser.mli odiff_lexer.ml
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/diff/META
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_types.mli
+- ocamlyacc odiff_parser.mly
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_parser.mli
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_lexer.mli
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff.mli
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_types.ml
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_parser.ml
+- ocamllex odiff_lexer.mll
+- 43 states, 329 transitions, table size 1574 bytes
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_lexer.ml
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff.ml
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -o odiff.cma -a odiff_types.cmo odiff_parser.cmo odiff_lexer.cmo odiff.cmo
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_messages.ml
+- ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_merge.ml
+- File "odiff_merge.ml", line 75, characters 10-23:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "odiff_merge.ml", line 84, characters 34-35:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:140: recipe for target 'odiff_merge.cmi' failed
+- make: *** [odiff_merge.cmi] Error 2
+- rm odiff_parser.mli odiff_lexer.ml
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/diff/META
+
+#=== ERROR while installing ocamldiff.1.0 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make all
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ocamldiff.1.0
+# compiler             4.06.1
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ocamldiff.1.0/ocamldiff-2709.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ocamldiff.1.0/ocamldiff-2709.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ocamldiff.1.0/ocamldiff-2709.out
+### stdout ###
+# [...]
+# ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_merge.ml
+# File "odiff_merge.ml", line 75, characters 10-23:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# File "odiff_merge.ml", line 84, characters 34-35:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:140: recipe for target 'odiff_merge.cmi' failed
+# make: *** [odiff_merge.cmi] Error 2
+# rm odiff_parser.mli odiff_lexer.ml
+### stderr ###
+# [...]
+# ocamlfind ocamlc -package unix,lablgtk2 -annot -c odiff_merge.ml
+# File "odiff_merge.ml", line 75, characters 10-23:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# File "odiff_merge.ml", line 84, characters 34-35:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:140: recipe for target 'odiff_merge.cmi' failed
+# make: *** [odiff_merge.cmi] Error 2
+# rm odiff_parser.mli odiff_lexer.ml
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ocamldiff 1.0
+No changes have been performed
+'opam install ocamldiff.1.0' failed.

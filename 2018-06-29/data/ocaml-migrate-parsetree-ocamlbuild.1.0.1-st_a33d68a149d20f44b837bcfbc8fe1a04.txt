@@ -1,0 +1,46 @@
+The following actions will be performed:
+  - install ocaml-migrate-parsetree-ocamlbuild 1.0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocaml-migrate-parsetree-ocamlbuild: http] Command started
+[ocaml-migrate-parsetree-ocamlbuild: http] Command started
+[ocaml-migrate-parsetree-ocamlbuild.1.0.1] https://github.com/let-def/ocaml-migrate-parsetree/archive/1.0.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocaml-migrate-parsetree-ocamlbuild: jbuilder build] Command started
++ jbuilder "build" "-p" "ocaml-migrate-parsetree-ocamlbuild" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocaml-migrate-parsetree-ocamlbuild.1.0.1)
+-        ocaml (internal) (exit 1)
+- (cd src && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocaml -I +compiler-libs /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocaml-migrate-parsetree-ocamlbuild.1.0.1/_build/.jbuilds/default/src/jbuild.ml)
+- Unkown OCaml version 4.07.0+rc2
+-        ocaml (internal) (exit 1)
+- (cd src && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocaml -I +compiler-libs /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocaml-migrate-parsetree-ocamlbuild.1.0.1/_build/.jbuilds/default/src/jbuild.ml)
+- Unkown OCaml version 4.07.0+rc2
+[ERROR] The compilation of ocaml-migrate-parsetree-ocamlbuild failed at
+        "jbuilder build -p ocaml-migrate-parsetree-ocamlbuild -j 4".
+
+#=== ERROR while installing ocaml-migrate-parsetree-ocamlbuild.1.0.1 ==========#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p ocaml-migrate-parsetree-ocamlbuild -j 4
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocaml-migrate-parsetree-ocamlbuild.1.0.1
+# compiler             4.07.0+rc2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocaml-migrate-parsetree-ocamlbuild.1.0.1/ocaml-migrate-parsetree-ocamlbuild-28568.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocaml-migrate-parsetree-ocamlbuild.1.0.1/ocaml-migrate-parsetree-ocamlbuild-28568.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocaml-migrate-parsetree-ocamlbuild.1.0.1/ocaml-migrate-parsetree-ocamlbuild-28568.out
+### stdout ###
+#        ocaml (internal) (exit 1)
+# (cd src && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocaml -I +compiler-libs /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocaml-migrate-parsetree-ocamlbuild.1.0.1/_build/.jbuilds/default/src/jbuild.ml)
+# Unkown OCaml version 4.07.0+rc2
+### stderr ###
+#        ocaml (internal) (exit 1)
+# (cd src && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocaml -I +compiler-libs /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocaml-migrate-parsetree-ocamlbuild.1.0.1/_build/.jbuilds/default/src/jbuild.ml)
+# Unkown OCaml version 4.07.0+rc2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ocaml-migrate-parsetree-ocamlbuild 1.0.1
+No changes have been performed
+'opam install ocaml-migrate-parsetree-ocamlbuild.1.0.1' failed.

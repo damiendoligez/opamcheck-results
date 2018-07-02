@@ -1,0 +1,421 @@
+The following actions will be performed:
+  - install combine 0.42
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[combine: http] Command started
+[combine: http] Command started
+[combine.0.42] http://www.lri.fr/~filliatr/combine/download/combine-0.42.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[combine: ./configure] Command started
++ ./configure "--prefix=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/combine.0.42)
+- checking for ocamlc... ocamlc
+- ocaml version is 4.07.0+rc2
+- ocaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for menhir... menhir
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- checking for ocamlc... ocamlc
+- ocaml version is 4.07.0+rc2
+- ocaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for menhir... menhir
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+[combine: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/combine.0.42)
+- checking for ocamlc... ocamlc
+- ocaml version is 4.07.0+rc2
+- ocaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for menhir... menhir
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- echo "let version = \""0.42"\"" > version.ml
+- echo "let date = \""`date`"\"" >> version.ml
+- rm -f .depend
+- ocamldep.opt  *.ml *.mli > .depend
+- ocamlc.opt -c -g  dlx.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine dlx.ml
+- ocamlc.opt -c -g  zdd.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine zdd.ml
+- File "zdd.ml", line 84, characters 14-26:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  emc.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine emc.ml
+- ocamlc.opt -c -g  d4.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine d4.ml
+- ocamlc.opt -c -g  tiling.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine tiling.ml
+- ocamlopt.opt  -pack -o combine.cmx dlx.cmx zdd.cmx emc.cmx d4.cmx tiling.cmx
+- ocamlopt.opt  -a -o combine.cmxa combine.cmx
+- ocamlc.opt -c -g  dlx.ml
+- ocamlc.opt -c -g  zdd.ml
+- File "zdd.ml", line 84, characters 14-26:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  emc.ml
+- ocamlc.opt -c -g  d4.ml
+- ocamlc.opt -c -g  tiling.ml
+- ocamlc.opt  -pack -g -o combine.cmo dlx.cmo zdd.cmo emc.cmo d4.cmo tiling.cmo
+- ocamlc.opt -c -g  ast.mli
+- ocamlc.opt -c -g  parser.mli
+- ocamlopt.opt -c -g -annot  parser.ml
+- ocamlopt.opt -c -g -annot  lexer.ml
+- File "lexer.ml", line 344, characters 27-39:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  interp.mli
+- ocamlopt.opt -c -g -annot  interp.ml
+- File "interp.ml", line 61, characters 37-41:
+- Warning 43: the label ofsx is not optional.
+- File "interp.ml", line 61, characters 43-47:
+- Warning 43: the label ofsy is not optional.
+- File "interp.ml", line 70, characters 38-39:
+- Warning 43: the label w is not optional.
+- File "interp.ml", line 70, characters 41-42:
+- Warning 43: the label h is not optional.
+- File "interp.ml", line 73, characters 36-37:
+- Warning 43: the label x is not optional.
+- File "interp.ml", line 73, characters 39-40:
+- Warning 43: the label y is not optional.
+- File "interp.ml", line 73, characters 42-43:
+- Warning 43: the label w is not optional.
+- File "interp.ml", line 73, characters 45-46:
+- Warning 43: the label h is not optional.
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module Num, and its interface was not compiled with -opaque
+- ocamlopt.opt -c -g -annot  main.ml
+- checking for ocamlc... ocamlc
+- ocaml version is 4.07.0+rc2
+- ocaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for menhir... menhir
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- echo "let version = \""0.42"\"" > version.ml
+- echo "let date = \""`date`"\"" >> version.ml
+- rm -f .depend
+- ocamldep.opt  *.ml *.mli > .depend
+- ocamlc.opt -c -g  dlx.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine dlx.ml
+- ocamlc.opt -c -g  zdd.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine zdd.ml
+- File "zdd.ml", line 84, characters 14-26:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  emc.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine emc.ml
+- ocamlc.opt -c -g  d4.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine d4.ml
+- ocamlc.opt -c -g  tiling.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine tiling.ml
+- ocamlopt.opt  -pack -o combine.cmx dlx.cmx zdd.cmx emc.cmx d4.cmx tiling.cmx
+- ocamlopt.opt  -a -o combine.cmxa combine.cmx
+- ocamlc.opt -c -g  dlx.ml
+- ocamlc.opt -c -g  zdd.ml
+- File "zdd.ml", line 84, characters 14-26:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  emc.ml
+- ocamlc.opt -c -g  d4.ml
+- ocamlc.opt -c -g  tiling.ml
+- ocamlc.opt  -pack -g -o combine.cmo dlx.cmo zdd.cmo emc.cmo d4.cmo tiling.cmo
+- ocamlc.opt -c -g  ast.mli
+- ocamlc.opt -c -g  parser.mli
+- ocamlopt.opt -c -g -annot  parser.ml
+- ocamlopt.opt -c -g -annot  lexer.ml
+- File "lexer.ml", line 344, characters 27-39:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  interp.mli
+- ocamlopt.opt -c -g -annot  interp.ml
+- File "interp.ml", line 61, characters 37-41:
+- Warning 43: the label ofsx is not optional.
+- File "interp.ml", line 61, characters 43-47:
+- Warning 43: the label ofsy is not optional.
+- File "interp.ml", line 70, characters 38-39:
+- Warning 43: the label w is not optional.
+- File "interp.ml", line 70, characters 41-42:
+- Warning 43: the label h is not optional.
+- File "interp.ml", line 73, characters 36-37:
+- Warning 43: the label x is not optional.
+- File "interp.ml", line 73, characters 39-40:
+- Warning 43: the label y is not optional.
+- File "interp.ml", line 73, characters 42-43:
+- Warning 43: the label w is not optional.
+- File "interp.ml", line 73, characters 45-46:
+- Warning 43: the label h is not optional.
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module Num, and its interface was not compiled with -opaque
+- ocamlopt.opt -c -g -annot  main.ml
+- ocamlopt.opt -g -annot  -o combine.opt nums.cmxa unix.cmxa combine.cmxa parser.cmx lexer.cmx interp.cmx main.cmx
+- ocamlopt.opt -c -g -annot  sudoku.ml
+- File "sudoku.ml", line 124, characters 21-22:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:224: recipe for target 'sudoku.cmx' failed
+- make: *** [sudoku.cmx] Error 2
+- ocamlopt.opt -g -annot  -o combine.opt nums.cmxa unix.cmxa combine.cmxa parser.cmx lexer.cmx interp.cmx main.cmx
+- ocamlopt.opt -c -g -annot  sudoku.ml
+- File "sudoku.ml", line 124, characters 21-22:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:224: recipe for target 'sudoku.cmx' failed
+- make: *** [sudoku.cmx] Error 2
+[ERROR] The compilation of combine failed at "make".
+[combine: ocamlfind remove] Command started
++ ocamlfind "remove" "combine" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/combine.0.42)
+- checking for ocamlc... ocamlc
+- ocaml version is 4.07.0+rc2
+- ocaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for menhir... menhir
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- echo "let version = \""0.42"\"" > version.ml
+- echo "let date = \""`date`"\"" >> version.ml
+- rm -f .depend
+- ocamldep.opt  *.ml *.mli > .depend
+- ocamlc.opt -c -g  dlx.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine dlx.ml
+- ocamlc.opt -c -g  zdd.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine zdd.ml
+- File "zdd.ml", line 84, characters 14-26:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  emc.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine emc.ml
+- ocamlc.opt -c -g  d4.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine d4.ml
+- ocamlc.opt -c -g  tiling.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine tiling.ml
+- ocamlopt.opt  -pack -o combine.cmx dlx.cmx zdd.cmx emc.cmx d4.cmx tiling.cmx
+- ocamlopt.opt  -a -o combine.cmxa combine.cmx
+- ocamlc.opt -c -g  dlx.ml
+- ocamlc.opt -c -g  zdd.ml
+- File "zdd.ml", line 84, characters 14-26:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  emc.ml
+- ocamlc.opt -c -g  d4.ml
+- ocamlc.opt -c -g  tiling.ml
+- ocamlc.opt  -pack -g -o combine.cmo dlx.cmo zdd.cmo emc.cmo d4.cmo tiling.cmo
+- ocamlc.opt -c -g  ast.mli
+- ocamlc.opt -c -g  parser.mli
+- ocamlopt.opt -c -g -annot  parser.ml
+- ocamlopt.opt -c -g -annot  lexer.ml
+- File "lexer.ml", line 344, characters 27-39:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  interp.mli
+- ocamlopt.opt -c -g -annot  interp.ml
+- File "interp.ml", line 61, characters 37-41:
+- Warning 43: the label ofsx is not optional.
+- File "interp.ml", line 61, characters 43-47:
+- Warning 43: the label ofsy is not optional.
+- File "interp.ml", line 70, characters 38-39:
+- Warning 43: the label w is not optional.
+- File "interp.ml", line 70, characters 41-42:
+- Warning 43: the label h is not optional.
+- File "interp.ml", line 73, characters 36-37:
+- Warning 43: the label x is not optional.
+- File "interp.ml", line 73, characters 39-40:
+- Warning 43: the label y is not optional.
+- File "interp.ml", line 73, characters 42-43:
+- Warning 43: the label w is not optional.
+- File "interp.ml", line 73, characters 45-46:
+- Warning 43: the label h is not optional.
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module Num, and its interface was not compiled with -opaque
+- ocamlopt.opt -c -g -annot  main.ml
+- ocamlopt.opt -g -annot  -o combine.opt nums.cmxa unix.cmxa combine.cmxa parser.cmx lexer.cmx interp.cmx main.cmx
+- ocamlopt.opt -c -g -annot  sudoku.ml
+- File "sudoku.ml", line 124, characters 21-22:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:224: recipe for target 'sudoku.cmx' failed
+- make: *** [sudoku.cmx] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/combine/META
+- checking for ocamlc... ocamlc
+- ocaml version is 4.07.0+rc2
+- ocaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for menhir... menhir
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- echo "let version = \""0.42"\"" > version.ml
+- echo "let date = \""`date`"\"" >> version.ml
+- rm -f .depend
+- ocamldep.opt  *.ml *.mli > .depend
+- ocamlc.opt -c -g  dlx.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine dlx.ml
+- ocamlc.opt -c -g  zdd.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine zdd.ml
+- File "zdd.ml", line 84, characters 14-26:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  emc.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine emc.ml
+- ocamlc.opt -c -g  d4.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine d4.ml
+- ocamlc.opt -c -g  tiling.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine tiling.ml
+- ocamlopt.opt  -pack -o combine.cmx dlx.cmx zdd.cmx emc.cmx d4.cmx tiling.cmx
+- ocamlopt.opt  -a -o combine.cmxa combine.cmx
+- ocamlc.opt -c -g  dlx.ml
+- ocamlc.opt -c -g  zdd.ml
+- File "zdd.ml", line 84, characters 14-26:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  emc.ml
+- ocamlc.opt -c -g  d4.ml
+- ocamlc.opt -c -g  tiling.ml
+- ocamlc.opt  -pack -g -o combine.cmo dlx.cmo zdd.cmo emc.cmo d4.cmo tiling.cmo
+- ocamlc.opt -c -g  ast.mli
+- ocamlc.opt -c -g  parser.mli
+- ocamlopt.opt -c -g -annot  parser.ml
+- ocamlopt.opt -c -g -annot  lexer.ml
+- File "lexer.ml", line 344, characters 27-39:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  interp.mli
+- ocamlopt.opt -c -g -annot  interp.ml
+- File "interp.ml", line 61, characters 37-41:
+- Warning 43: the label ofsx is not optional.
+- File "interp.ml", line 61, characters 43-47:
+- Warning 43: the label ofsy is not optional.
+- File "interp.ml", line 70, characters 38-39:
+- Warning 43: the label w is not optional.
+- File "interp.ml", line 70, characters 41-42:
+- Warning 43: the label h is not optional.
+- File "interp.ml", line 73, characters 36-37:
+- Warning 43: the label x is not optional.
+- File "interp.ml", line 73, characters 39-40:
+- Warning 43: the label y is not optional.
+- File "interp.ml", line 73, characters 42-43:
+- Warning 43: the label w is not optional.
+- File "interp.ml", line 73, characters 45-46:
+- Warning 43: the label h is not optional.
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module Num, and its interface was not compiled with -opaque
+- ocamlopt.opt -c -g -annot  main.ml
+- ocamlopt.opt -g -annot  -o combine.opt nums.cmxa unix.cmxa combine.cmxa parser.cmx lexer.cmx interp.cmx main.cmx
+- ocamlopt.opt -c -g -annot  sudoku.ml
+- File "sudoku.ml", line 124, characters 21-22:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:224: recipe for target 'sudoku.cmx' failed
+- make: *** [sudoku.cmx] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/combine/META
+
+#=== ERROR while installing combine.0.42 ======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/combine.0.42
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/combine.0.42/combine-6934.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/combine.0.42/combine-6934.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/combine.0.42/combine-6934.out
+### stdout ###
+# [...]
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module Num, and its interface was not compiled with -opaque
+# ocamlopt.opt -c -g -annot  main.ml
+# ocamlopt.opt -g -annot  -o combine.opt nums.cmxa unix.cmxa combine.cmxa parser.cmx lexer.cmx interp.cmx main.cmx
+# ocamlopt.opt -c -g -annot  sudoku.ml
+# File "sudoku.ml", line 124, characters 21-22:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:224: recipe for target 'sudoku.cmx' failed
+# make: *** [sudoku.cmx] Error 2
+### stderr ###
+# [...]
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module Num, and its interface was not compiled with -opaque
+# ocamlopt.opt -c -g -annot  main.ml
+# ocamlopt.opt -g -annot  -o combine.opt nums.cmxa unix.cmxa combine.cmxa parser.cmx lexer.cmx interp.cmx main.cmx
+# ocamlopt.opt -c -g -annot  sudoku.ml
+# File "sudoku.ml", line 124, characters 21-22:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:224: recipe for target 'sudoku.cmx' failed
+# make: *** [sudoku.cmx] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install combine 0.42
+No changes have been performed
+'opam install combine.0.42' failed.

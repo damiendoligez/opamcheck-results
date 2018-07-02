@@ -1,0 +1,54 @@
+The following actions will be performed:
+  - install junit_alcotest 2.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[junit_alcotest: http] Command started
+[junit_alcotest: http] Command started
+[junit_alcotest.2.0] https://github.com/Khady/ocaml-junit/releases/download/2.0/junit-2.0.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[junit_alcotest: jbuilder build] Command started
++ jbuilder "build" "-p" "junit_alcotest" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/junit_alcotest.2.0)
+-       ocamlc alcotest/.junit_alcotest.objs/junit_alcotest.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -safe-string -short-paths -g -bin-annot -I alcotest/.junit_alcotest.objs -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/alcotest -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/astring -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/cmdliner -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/fmt -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/junit -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ptime -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ptime/os -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/re -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/result -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/tyxml -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/uchar -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/uutf -no-alias-deps -o alcotest/.junit_alcotest.objs/junit_alcotest.cmi -c -intf alcotest/junit_alcotest.mli)
+- File "alcotest/junit_alcotest.mli", line 9, characters 2-25:
+- Error: The type constructor Alcotest.test_case expects 0 argument(s),
+-        but is here applied to 1 argument(s)
+-       ocamlc alcotest/.junit_alcotest.objs/junit_alcotest.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -safe-string -short-paths -g -bin-annot -I alcotest/.junit_alcotest.objs -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/alcotest -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/astring -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/cmdliner -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/fmt -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/junit -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ptime -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ptime/os -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/re -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/result -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/tyxml -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/uchar -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/uutf -no-alias-deps -o alcotest/.junit_alcotest.objs/junit_alcotest.cmi -c -intf alcotest/junit_alcotest.mli)
+- File "alcotest/junit_alcotest.mli", line 9, characters 2-25:
+- Error: The type constructor Alcotest.test_case expects 0 argument(s),
+-        but is here applied to 1 argument(s)
+[ERROR] The compilation of junit_alcotest failed at "jbuilder build -p
+        junit_alcotest -j 4".
+
+#=== ERROR while installing junit_alcotest.2.0 ================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p junit_alcotest -j 4
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/junit_alcotest.2.0
+# compiler             4.07.0+rc2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/junit_alcotest.2.0/junit_alcotest-29096.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/junit_alcotest.2.0/junit_alcotest-29096.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/junit_alcotest.2.0/junit_alcotest-29096.out
+### stdout ###
+#       ocamlc alcotest/.junit_alcotest.objs/junit_alcotest.{cmi,cmti} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -safe-string -short-paths -g -bin-annot -I alcotest/.junit_alcotest.objs -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/alcotest -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/astring -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/cmdliner -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/fmt -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/junit -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ptime -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ptime/os -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/re -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/result -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/tyxml -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/uchar -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/uutf -no-alias-deps -o alcotest/.junit_alcotest.objs/junit_alcotest.cmi -c -intf alcotest/junit_alcotest.mli)
+# File "alcotest/junit_alcotest.mli", line 9, characters 2-25:
+# Error: The type constructor Alcotest.test_case expects 0 argument(s),
+#        but is here applied to 1 argument(s)
+### stderr ###
+#       ocamlc alcotest/.junit_alcotest.objs/junit_alcotest.{cmi,cmti} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -safe-string -short-paths -g -bin-annot -I alcotest/.junit_alcotest.objs -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/alcotest -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/astring -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/cmdliner -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/fmt -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/junit -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ptime -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ptime/os -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/re -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/result -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/tyxml -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/uchar -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/uutf -no-alias-deps -o alcotest/.junit_alcotest.objs/junit_alcotest.cmi -c -intf alcotest/junit_alcotest.mli)
+# File "alcotest/junit_alcotest.mli", line 9, characters 2-25:
+# Error: The type constructor Alcotest.test_case expects 0 argument(s),
+#        but is here applied to 1 argument(s)
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install junit_alcotest 2.0
+No changes have been performed
+'opam install junit_alcotest.2.0' failed.

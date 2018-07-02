@@ -1,0 +1,81 @@
+The following actions will be performed:
+  - install gsl 1.22.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[gsl: http] Command started
+[gsl: http] Command started
+[gsl.1.22.0] https://github.com/mmottl/gsl-ocaml/releases/download/1.22.0/gsl-1.22.0.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[gsl: jbuilder build] Command started
++ jbuilder "build" "-p" "gsl" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/gsl.1.22.0)
+-       ocamlc src/config/.do_cdf.eobjs/do_cdf.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt -w -40 -w -9 -strict-sequence -principal -short-paths -g -bin-annot -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base/caml -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sexplib -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sexplib/0 -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/stdio -I src/config/.do_common.objs -no-alias-deps -I src/config/.do_cdf.eobjs -o src/config/.do_cdf.eobjs/do_cdf.cmo -c -impl src/config/do_cdf.ml)
+- File "src/config/do_cdf.ml", line 43, characters 15-29:
+- Error: Unbound constructor Caml.Not_found
+-       ocamlc src/config/.do_sf.eobjs/do_sf.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt -w -40 -w -9 -strict-sequence -principal -short-paths -g -bin-annot -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base/caml -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sexplib -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sexplib/0 -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/stdio -I src/config/.do_common.objs -no-alias-deps -I src/config/.do_sf.eobjs -o src/config/.do_sf.eobjs/do_sf.cmo -c -impl src/config/do_sf.ml)
+- File "src/config/do_sf.ml", line 155, characters 13-27:
+- Error: Unbound constructor Caml.Not_found
+-       ocamlc src/config/.do_cdf.eobjs/do_cdf.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt -w -40 -w -9 -strict-sequence -principal -short-paths -g -bin-annot -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base/caml -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sexplib -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sexplib/0 -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/stdio -I src/config/.do_common.objs -no-alias-deps -I src/config/.do_cdf.eobjs -o src/config/.do_cdf.eobjs/do_cdf.cmo -c -impl src/config/do_cdf.ml)
+- File "src/config/do_cdf.ml", line 43, characters 15-29:
+- Error: Unbound constructor Caml.Not_found
+-       ocamlc src/config/.do_sf.eobjs/do_sf.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt -w -40 -w -9 -strict-sequence -principal -short-paths -g -bin-annot -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base/caml -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sexplib -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sexplib/0 -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/stdio -I src/config/.do_common.objs -no-alias-deps -I src/config/.do_sf.eobjs -o src/config/.do_sf.eobjs/do_sf.cmo -c -impl src/config/do_sf.ml)
+- File "src/config/do_sf.ml", line 155, characters 13-27:
+- Error: Unbound constructor Caml.Not_found
+-       ocamlc src/mlgsl_randist.o
+- mlgsl_randist.c: In function 'ml_gsl_ran_multivariate_gaussian':
+- mlgsl_randist.c:56:3: warning: implicit declaration of function 'gsl_ran_multivariate_gaussian' [-Wimplicit-function-declaration]
+-    gsl_ran_multivariate_gaussian(Rng_val(rng), &v_mu, &m_l, &v_out);
+-    ^
+-       ocamlc src/mlgsl_randist.o
+- mlgsl_randist.c: In function 'ml_gsl_ran_multivariate_gaussian':
+- mlgsl_randist.c:56:3: warning: implicit declaration of function 'gsl_ran_multivariate_gaussian' [-Wimplicit-function-declaration]
+-    gsl_ran_multivariate_gaussian(Rng_val(rng), &v_mu, &m_l, &v_out);
+-    ^
+[ERROR] The compilation of gsl failed at "jbuilder build -p gsl -j 4".
+
+#=== ERROR while installing gsl.1.22.0 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p gsl -j 4
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/gsl.1.22.0
+# compiler             4.06.1
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/gsl.1.22.0/gsl-3454.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/gsl.1.22.0/gsl-3454.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/gsl.1.22.0/gsl-3454.out
+### stdout ###
+# [...]
+# Error: Unbound constructor Caml.Not_found
+#       ocamlc src/config/.do_sf.eobjs/do_sf.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt -w -40 -w -9 -strict-sequence -principal -short-paths -g -bin-annot -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base/caml -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sexplib -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sexplib/0 -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/stdio -I src/config/.do_common.objs -no-alias-deps -I src/config/.do_sf.eobjs -o src/config/.do_sf.eobjs/do_sf.cmo -c -impl src/config/do_sf.ml)
+# File "src/config/do_sf.ml", line 155, characters 13-27:
+# Error: Unbound constructor Caml.Not_found
+#       ocamlc src/mlgsl_randist.o
+# mlgsl_randist.c: In function 'ml_gsl_ran_multivariate_gaussian':
+# mlgsl_randist.c:56:3: warning: implicit declaration of function 'gsl_ran_multivariate_gaussian' [-Wimplicit-function-declaration]
+#    gsl_ran_multivariate_gaussian(Rng_val(rng), &v_mu, &m_l, &v_out);
+#    ^
+### stderr ###
+# [...]
+# Error: Unbound constructor Caml.Not_found
+#       ocamlc src/config/.do_sf.eobjs/do_sf.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt -w -40 -w -9 -strict-sequence -principal -short-paths -g -bin-annot -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base/caml -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sexplib -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sexplib/0 -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/stdio -I src/config/.do_common.objs -no-alias-deps -I src/config/.do_sf.eobjs -o src/config/.do_sf.eobjs/do_sf.cmo -c -impl src/config/do_sf.ml)
+# File "src/config/do_sf.ml", line 155, characters 13-27:
+# Error: Unbound constructor Caml.Not_found
+#       ocamlc src/mlgsl_randist.o
+# mlgsl_randist.c: In function 'ml_gsl_ran_multivariate_gaussian':
+# mlgsl_randist.c:56:3: warning: implicit declaration of function 'gsl_ran_multivariate_gaussian' [-Wimplicit-function-declaration]
+#    gsl_ran_multivariate_gaussian(Rng_val(rng), &v_mu, &m_l, &v_out);
+#    ^
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install gsl 1.22.0
+No changes have been performed
+'opam install gsl.1.22.0' failed.

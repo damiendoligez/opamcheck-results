@@ -1,0 +1,75 @@
+The following actions will be performed:
+  - install erm_xml 0.3
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[erm_xml: http] Command started
+[erm_xml: http] Command started
+[erm_xml.0.3] https://github.com/ermine/xml/tarball/v0.3 downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[erm_xml: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/erm_xml.0.3)
+- File "/usr/home/ermine/projects/ocaml/src/oasis.git/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/usr/home/ermine/projects/ocaml/src/oasis.git/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "/usr/home/ermine/projects/ocaml/src/oasis.git/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/usr/home/ermine/projects/ocaml/src/oasis.git/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+[ERROR] The compilation of erm_xml failed at "ocaml setup.ml -configure
+        --prefix
+        /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2".
+[erm_xml: ocamlfind remove] Command started
++ ocamlfind "remove" "erm_xml" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/erm_xml.0.3)
+- File "/usr/home/ermine/projects/ocaml/src/oasis.git/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/usr/home/ermine/projects/ocaml/src/oasis.git/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/erm_xml/META
+- File "/usr/home/ermine/projects/ocaml/src/oasis.git/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/usr/home/ermine/projects/ocaml/src/oasis.git/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/erm_xml/META
+
+#=== ERROR while installing erm_xml.0.3 =======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -configure --prefix /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/erm_xml.0.3
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/erm_xml.0.3/erm_xml-32125.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/erm_xml.0.3/erm_xml-32125.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/erm_xml.0.3/erm_xml-32125.out
+### stdout ###
+# File "/usr/home/ermine/projects/ocaml/src/oasis.git/src/oasis/OASISString.ml", line 118, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "/usr/home/ermine/projects/ocaml/src/oasis.git/src/oasis/OASISString.ml", line 118, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+### stderr ###
+# File "/usr/home/ermine/projects/ocaml/src/oasis.git/src/oasis/OASISString.ml", line 118, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "/usr/home/ermine/projects/ocaml/src/oasis.git/src/oasis/OASISString.ml", line 118, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install erm_xml 0.3
+No changes have been performed
+'opam install erm_xml.0.3' failed.

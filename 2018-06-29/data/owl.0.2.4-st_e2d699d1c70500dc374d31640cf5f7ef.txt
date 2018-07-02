@@ -1,0 +1,43 @@
+The following actions will be performed:
+  - install owl 0.2.4
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owl: http] Command started
+[owl: http] Command started
+[owl.0.2.4] https://github.com/ryanrhymes/owl/archive/0.2.4.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owl: oasis setup] Command started
++ oasis "setup" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/owl.0.2.4)
+- E: Syntax error Illegal character , in file '_oasis' at line 40, char 33
+- E: Syntax error Illegal character , in file '_oasis' at line 40, char 33
+[ERROR] The compilation of owl failed at "oasis setup".
+[owl: ocaml] Command started
++ ocaml "/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/etc/owl/_oasis_remove_.ml" "/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/etc/owl" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/owl.0.2.4)
+- E: Syntax error Illegal character , in file '_oasis' at line 40, char 33
+- Cannot find file /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/etc/owl/_oasis_remove_.ml.
+- E: Syntax error Illegal character , in file '_oasis' at line 40, char 33
+- Cannot find file /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/etc/owl/_oasis_remove_.ml.
+
+#=== ERROR while installing owl.0.2.4 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              oasis setup
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/owl.0.2.4
+# compiler             4.04.2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/owl.0.2.4/owl-1123.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/owl.0.2.4/owl-1123.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/owl.0.2.4/owl-1123.out
+### stdout ###
+# E: Syntax error Illegal character , in file '_oasis' at line 40, char 33
+### stderr ###
+# E: Syntax error Illegal character , in file '_oasis' at line 40, char 33
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install owl 0.2.4
+No changes have been performed
+'opam install owl.0.2.4' failed.

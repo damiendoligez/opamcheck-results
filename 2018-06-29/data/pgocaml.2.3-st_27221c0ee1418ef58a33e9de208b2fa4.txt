@@ -1,0 +1,869 @@
+The following actions will be performed:
+  - install pgocaml 2.3
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pgocaml: http] Command started
+[pgocaml: http] Command started
+[pgocaml.2.3] https://github.com/darioteixeira/pgocaml/archive/v2.3.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pgocaml: ./configure] Command started
++ ./configure "--disable-p4" "--prefix" "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1" "--docdir" "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/doc/pgocaml" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/pgocaml.2.3)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ PG'OCaml
+- Package version: ..................................... 2.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/doc/pgocaml
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Build PG'OCaml profiling utility: .................... true
+- PG'OCaml syntax extension: ........................... false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- make: ................................................ /usr/bin/make
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- pkg_calendar: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/calendar
+- pkg_csv: ............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/csv
+- pkg_re: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/re
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/bytes
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- 
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ PG'OCaml
+- Package version: ..................................... 2.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/doc/pgocaml
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Build PG'OCaml profiling utility: .................... true
+- PG'OCaml syntax extension: ........................... false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- make: ................................................ /usr/bin/make
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- pkg_calendar: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/calendar
+- pkg_csv: ............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/csv
+- pkg_re: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/re
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/bytes
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- 
+[pgocaml: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/pgocaml.2.3)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ PG'OCaml
+- Package version: ..................................... 2.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/doc/pgocaml
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Build PG'OCaml profiling utility: .................... true
+- PG'OCaml syntax extension: ........................... false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- make: ................................................ /usr/bin/make
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- pkg_calendar: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/calendar
+- pkg_csv: ............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/csv
+- pkg_re: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/re
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/bytes
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- 
+- ocaml setup.ml -build 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ PG'OCaml
+- Package version: ..................................... 2.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/doc/pgocaml
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Build PG'OCaml profiling utility: .................... true
+- PG'OCaml syntax extension: ........................... false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- make: ................................................ /usr/bin/make
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- pkg_calendar: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/calendar
+- pkg_csv: ............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/csv
+- pkg_re: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/re
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/bytes
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- 
+- ocaml setup.ml -build 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/pgocaml.2.3'
+- echo "let default_unix_domain_socket_dir = \""/tmp"\"" > src/PGOCaml_config.ml
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/pgocaml.2.3'
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "_tags", line 79, characters 51-69:
+- Warning: the tag "pkg_pgocaml.syntax" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package bytes -package calendar -syntax camlp4o -package camlp4.extend -package camlp4.quotations -package csv -package re -package unix -modules src/PGOCaml_aux.mli > src/PGOCaml_aux.mli.depends
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package bytes -package calendar -syntax camlp4o -package camlp4.extend -package camlp4.quotations -package csv -package re -package unix -modules src/PGOCaml_aux.mli > src/PGOCaml_aux.mli.depends
+- >> Fatal error: OCaml and preprocessor have incompatible versions
+- Fatal error: exception Misc.Fatal_error
+- Command exited with code 2.
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' src/pgocaml.cma src/pgocaml.cmxa src/pgocaml.a src/pgocaml.cmxs utils/pgocaml_prof.byte -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/pgocaml.2.3'
+- echo "let default_unix_domain_socket_dir = \""/tmp"\"" > src/PGOCaml_config.ml
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/pgocaml.2.3'
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "_tags", line 79, characters 51-69:
+- Warning: the tag "pkg_pgocaml.syntax" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package bytes -package calendar -syntax camlp4o -package camlp4.extend -package camlp4.quotations -package csv -package re -package unix -modules src/PGOCaml_aux.mli > src/PGOCaml_aux.mli.depends
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package bytes -package calendar -syntax camlp4o -package camlp4.extend -package camlp4.quotations -package csv -package re -package unix -modules src/PGOCaml_aux.mli > src/PGOCaml_aux.mli.depends
+- >> Fatal error: OCaml and preprocessor have incompatible versions
+- Fatal error: exception Misc.Fatal_error
+- Command exited with code 2.
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' src/pgocaml.cma src/pgocaml.cmxa src/pgocaml.a src/pgocaml.cmxs utils/pgocaml_prof.byte -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+[ERROR] The compilation of pgocaml failed at "make".
+[pgocaml: ocamlfind remove] Command started
++ ocamlfind "remove" "pgocaml" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/pgocaml.2.3)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ PG'OCaml
+- Package version: ..................................... 2.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/doc/pgocaml
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Build PG'OCaml profiling utility: .................... true
+- PG'OCaml syntax extension: ........................... false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- make: ................................................ /usr/bin/make
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- pkg_calendar: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/calendar
+- pkg_csv: ............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/csv
+- pkg_re: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/re
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/bytes
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- 
+- ocaml setup.ml -build 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/pgocaml.2.3'
+- echo "let default_unix_domain_socket_dir = \""/tmp"\"" > src/PGOCaml_config.ml
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/pgocaml.2.3'
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "_tags", line 79, characters 51-69:
+- Warning: the tag "pkg_pgocaml.syntax" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package bytes -package calendar -syntax camlp4o -package camlp4.extend -package camlp4.quotations -package csv -package re -package unix -modules src/PGOCaml_aux.mli > src/PGOCaml_aux.mli.depends
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package bytes -package calendar -syntax camlp4o -package camlp4.extend -package camlp4.quotations -package csv -package re -package unix -modules src/PGOCaml_aux.mli > src/PGOCaml_aux.mli.depends
+- >> Fatal error: OCaml and preprocessor have incompatible versions
+- Fatal error: exception Misc.Fatal_error
+- Command exited with code 2.
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' src/pgocaml.cma src/pgocaml.cmxa src/pgocaml.a src/pgocaml.cmxs utils/pgocaml_prof.byte -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/pgocaml/META
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ PG'OCaml
+- Package version: ..................................... 2.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/doc/pgocaml
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Build PG'OCaml profiling utility: .................... true
+- PG'OCaml syntax extension: ........................... false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- make: ................................................ /usr/bin/make
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- pkg_calendar: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/calendar
+- pkg_csv: ............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/csv
+- pkg_re: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/re
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/bytes
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- 
+- ocaml setup.ml -build 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/pgocaml.2.3'
+- echo "let default_unix_domain_socket_dir = \""/tmp"\"" > src/PGOCaml_config.ml
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/pgocaml.2.3'
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "_tags", line 79, characters 51-69:
+- Warning: the tag "pkg_pgocaml.syntax" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package bytes -package calendar -syntax camlp4o -package camlp4.extend -package camlp4.quotations -package csv -package re -package unix -modules src/PGOCaml_aux.mli > src/PGOCaml_aux.mli.depends
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package bytes -package calendar -syntax camlp4o -package camlp4.extend -package camlp4.quotations -package csv -package re -package unix -modules src/PGOCaml_aux.mli > src/PGOCaml_aux.mli.depends
+- >> Fatal error: OCaml and preprocessor have incompatible versions
+- Fatal error: exception Misc.Fatal_error
+- Command exited with code 2.
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' src/pgocaml.cma src/pgocaml.cmxa src/pgocaml.a src/pgocaml.cmxs utils/pgocaml_prof.byte -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/pgocaml/META
+
+#=== ERROR while installing pgocaml.2.3 =======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/pgocaml.2.3
+# compiler             4.06.1
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/pgocaml.2.3/pgocaml-28511.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/pgocaml.2.3/pgocaml-28511.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/pgocaml.2.3/pgocaml-28511.out
+### stdout ###
+# [...]
+# + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' src/pgocaml.cma src/pgocaml.cmxa src/pgocaml.a src/pgocaml.cmxs utils/pgocaml_prof.byte -tag debug' terminated with error code 10")
+# Makefile:7: recipe for target 'build' failed
+# make: *** [build] Error 1
+### stderr ###
+# [...]
+# + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' src/pgocaml.cma src/pgocaml.cmxa src/pgocaml.a src/pgocaml.cmxs utils/pgocaml_prof.byte -tag debug' terminated with error code 10")
+# Makefile:7: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install pgocaml 2.3
+No changes have been performed
+'opam install pgocaml.2.3' failed.

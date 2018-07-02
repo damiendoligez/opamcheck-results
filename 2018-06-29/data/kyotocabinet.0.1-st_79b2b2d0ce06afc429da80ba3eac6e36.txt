@@ -1,0 +1,269 @@
+The following actions will be performed:
+  - install kyotocabinet 0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[kyotocabinet: http] Command started
+[kyotocabinet: http] Command started
+[kyotocabinet.0.1] https://github.com/didier-wenzek/ocaml-kyotocabinet/archive/1.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[kyotocabinet: jbuilder build] Command started
++ jbuilder "build" "--only" "kyotocabinet" "--root" "." "-j" "4" "@install" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/kyotocabinet.0.1)
+- # Workspace root: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/kyotocabinet.0.1
+- Running[0]: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind printconf path > /tmp/jbuild32b902.output
+- Running[1]: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -config > /tmp/jbuilde8b8bd.output
+- # # Workspace root: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/kyotocabinet.0.1
+- # Jbuilder context:
+- #  ((name default)
+- #   (kind default)
+- #   (merlin true)
+- #   (for_host ())
+- #   (build_dir _build/default)
+- #   (toplevel_path
+- #    (/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/toplevel))
+- #   (ocaml_bin
+- #    /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin)
+- #   (ocaml
+- #    /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocaml)
+- #   (ocamlc
+- #    /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt)
+- #   (ocamlopt
+- #    (/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt))
+- #   (ocamldep
+- #    /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldep.opt)
+- #   (ocamlmklib
+- #    /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlmklib.opt)
+- #   (env ())
+- #   (findlib_path
+- #    (/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib))
+- #   (arch_sixtyfour true)
+- #   (natdynlink_supported true)
+- #   (opam_vars ())
+- #   (ocamlc_config
+- #    ((architecture amd64)
+- #     (asm as)
+- #     (asm_cfi_supported true)
+- #     (ast_impl_magic_number Caml1999M020)
+- #     (ast_intf_magic_number Caml1999N018)
+- #     (bytecomp_c_compiler
+- #      gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC)
+- #     (bytecomp_c_libraries -lm  -ldl -lcurses -lpthread                  )
+- #     (cc_profile -pg)
+- #     (ccomp_type cc)
+- #     (cma_magic_number Caml1999A012)
+- #     (cmi_magic_number Caml1999I021)
+- #     (cmo_magic_number Caml1999O011)
+- #     (cmt_magic_number Caml2012T008)
+- #     (cmx_magic_number Caml1999Y015)
+- #     (cmxa_magic_number Caml1999Z014)
+- #     (cmxs_magic_number Caml2007D002)
+- #     (default_executable_name a.out)
+- #     (exec_magic_number Caml1999X011)
+- #     (ext_asm .s)
+- #     (ext_dll .so)
+- #     (ext_lib .a)
+- #     (ext_obj .o)
+- #     (flambda false)
+- #     (host x86_64-unknown-linux-gnu)
+- #     (model default)
+- #     (native_c_compiler
+- #      gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT)
+- #     (native_c_libraries -lm  -ldl)
+- #     (native_pack_linker ld -r  -o )
+- #     (os_type Unix)
+- #     (ranlib ranlib)
+- #     (safe_string false)
+- #     (spacetime false)
+- #     (standard_library
+- #      /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml)
+- #     (standard_library_default
+- #      /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml)
+- #     (standard_runtime
+- #      /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun)
+- #     (system linux)
+- #     (systhread_supported true)
+- #     (target x86_64-unknown-linux-gnu)
+- #     (version 4.04.2)
+- #     (with_frame_pointers false)))
+- #   (which
+- #    ((ocaml
+- #      (/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocaml))
+- #     (ocamlc
+- #      (/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt))
+- #     (ocamlfind
+- #      (/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind)))))
+- # Actual targets:
+- # - recursive alias install
+- Running[2]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldep.opt -modules -impl bin/kyoto_append.ml) > _build/default/bin/kyoto_append.ml.d
+- Running[3]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldep.opt -modules -impl bin/kyoto_pairs.ml) > _build/default/bin/kyoto_pairs.ml.d
+- Running[4]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldep.opt -modules -impl lib/kyoto.ml) > _build/default/lib/kyoto.ml.d
+- Running[5]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldep.opt -modules -intf lib/kyoto.mli) > _build/default/lib/kyoto.mli.d
+- Running[6]: (cd _build/default/lib && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -g -ccopt -g -o kyoto_ocaml_wrapper.o kyoto_ocaml_wrapper.c)
+- Running[7]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -w -40 -g -bin-annot -no-alias-deps -I lib/.kyoto.objs -o lib/.kyoto.objs/kyoto.cmi -c -intf lib/kyoto.mli)
+- Running[8]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -w -40 -g -bin-annot -no-alias-deps -I lib/.kyoto.objs -o lib/.kyoto.objs/kyoto.cmo -c -impl lib/kyoto.ml)
+- Running[9]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt -w -40 -g -no-alias-deps -I lib/.kyoto.objs -o lib/.kyoto.objs/kyoto.cmx -c -impl lib/kyoto.ml)
+- Running[10]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.kyoto.objs -no-alias-deps -I bin/.kyoto_pairs.eobjs -o bin/.kyoto_pairs.eobjs/kyoto_append.cmo -c -impl bin/kyoto_append.ml)
+- Running[11]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.kyoto.objs -no-alias-deps -I bin/.kyoto_pairs.eobjs -o bin/.kyoto_pairs.eobjs/kyoto_pairs.cmo -c -impl bin/kyoto_pairs.ml)
+- 
+- Command [6] exited with code 2:
+- $ (cd _build/default/lib && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -g -ccopt -g -o kyoto_ocaml_wrapper.o kyoto_ocaml_wrapper.c)
+- kyoto_ocaml_wrapper.c:7:21: fatal error: kclangc.h: No such file or directory
+- compilation terminated.
+- Running[12]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -w -40 -g -a -o lib/kyoto.cma -dllib -lkyoto_stubs -cclib -lkyoto_stubs -cclib -lkyotocabinet lib/.kyoto.objs/kyoto.cmo)
+- Running[13]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt -w -40 -g -I lib/.kyoto.objs -intf-suffix .ml -no-alias-deps -I bin/.kyoto_pairs.eobjs -o bin/.kyoto_pairs.eobjs/kyoto_append.cmx -c -impl bin/kyoto_append.ml)
+- Running[14]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt -w -40 -g -I lib/.kyoto.objs -intf-suffix .ml -no-alias-deps -I bin/.kyoto_pairs.eobjs -o bin/.kyoto_pairs.eobjs/kyoto_pairs.cmx -c -impl bin/kyoto_pairs.ml)
+- Running[15]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt -w -40 -g -a -o lib/kyoto.cmxa -cclib -lkyoto_stubs -cclib -lkyotocabinet lib/.kyoto.objs/kyoto.cmx)
+- # Workspace root: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/kyotocabinet.0.1
+- Running[0]: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind printconf path > /tmp/jbuild32b902.output
+- Running[1]: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -config > /tmp/jbuilde8b8bd.output
+- # # Workspace root: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/kyotocabinet.0.1
+- # Jbuilder context:
+- #  ((name default)
+- #   (kind default)
+- #   (merlin true)
+- #   (for_host ())
+- #   (build_dir _build/default)
+- #   (toplevel_path
+- #    (/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/toplevel))
+- #   (ocaml_bin
+- #    /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin)
+- #   (ocaml
+- #    /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocaml)
+- #   (ocamlc
+- #    /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt)
+- #   (ocamlopt
+- #    (/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt))
+- #   (ocamldep
+- #    /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldep.opt)
+- #   (ocamlmklib
+- #    /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlmklib.opt)
+- #   (env ())
+- #   (findlib_path
+- #    (/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib))
+- #   (arch_sixtyfour true)
+- #   (natdynlink_supported true)
+- #   (opam_vars ())
+- #   (ocamlc_config
+- #    ((architecture amd64)
+- #     (asm as)
+- #     (asm_cfi_supported true)
+- #     (ast_impl_magic_number Caml1999M020)
+- #     (ast_intf_magic_number Caml1999N018)
+- #     (bytecomp_c_compiler
+- #      gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC)
+- #     (bytecomp_c_libraries -lm  -ldl -lcurses -lpthread                  )
+- #     (cc_profile -pg)
+- #     (ccomp_type cc)
+- #     (cma_magic_number Caml1999A012)
+- #     (cmi_magic_number Caml1999I021)
+- #     (cmo_magic_number Caml1999O011)
+- #     (cmt_magic_number Caml2012T008)
+- #     (cmx_magic_number Caml1999Y015)
+- #     (cmxa_magic_number Caml1999Z014)
+- #     (cmxs_magic_number Caml2007D002)
+- #     (default_executable_name a.out)
+- #     (exec_magic_number Caml1999X011)
+- #     (ext_asm .s)
+- #     (ext_dll .so)
+- #     (ext_lib .a)
+- #     (ext_obj .o)
+- #     (flambda false)
+- #     (host x86_64-unknown-linux-gnu)
+- #     (model default)
+- #     (native_c_compiler
+- #      gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT)
+- #     (native_c_libraries -lm  -ldl)
+- #     (native_pack_linker ld -r  -o )
+- #     (os_type Unix)
+- #     (ranlib ranlib)
+- #     (safe_string false)
+- #     (spacetime false)
+- #     (standard_library
+- #      /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml)
+- #     (standard_library_default
+- #      /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml)
+- #     (standard_runtime
+- #      /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun)
+- #     (system linux)
+- #     (systhread_supported true)
+- #     (target x86_64-unknown-linux-gnu)
+- #     (version 4.04.2)
+- #     (with_frame_pointers false)))
+- #   (which
+- #    ((ocaml
+- #      (/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocaml))
+- #     (ocamlc
+- #      (/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt))
+- #     (ocamlfind
+- #      (/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind)))))
+- # Actual targets:
+- # - recursive alias install
+- Running[2]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldep.opt -modules -impl bin/kyoto_append.ml) > _build/default/bin/kyoto_append.ml.d
+- Running[3]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldep.opt -modules -impl bin/kyoto_pairs.ml) > _build/default/bin/kyoto_pairs.ml.d
+- Running[4]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldep.opt -modules -impl lib/kyoto.ml) > _build/default/lib/kyoto.ml.d
+- Running[5]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldep.opt -modules -intf lib/kyoto.mli) > _build/default/lib/kyoto.mli.d
+- Running[6]: (cd _build/default/lib && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -g -ccopt -g -o kyoto_ocaml_wrapper.o kyoto_ocaml_wrapper.c)
+- Running[7]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -w -40 -g -bin-annot -no-alias-deps -I lib/.kyoto.objs -o lib/.kyoto.objs/kyoto.cmi -c -intf lib/kyoto.mli)
+- Running[8]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -w -40 -g -bin-annot -no-alias-deps -I lib/.kyoto.objs -o lib/.kyoto.objs/kyoto.cmo -c -impl lib/kyoto.ml)
+- Running[9]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt -w -40 -g -no-alias-deps -I lib/.kyoto.objs -o lib/.kyoto.objs/kyoto.cmx -c -impl lib/kyoto.ml)
+- Running[10]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.kyoto.objs -no-alias-deps -I bin/.kyoto_pairs.eobjs -o bin/.kyoto_pairs.eobjs/kyoto_append.cmo -c -impl bin/kyoto_append.ml)
+- Running[11]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.kyoto.objs -no-alias-deps -I bin/.kyoto_pairs.eobjs -o bin/.kyoto_pairs.eobjs/kyoto_pairs.cmo -c -impl bin/kyoto_pairs.ml)
+- 
+- Command [6] exited with code 2:
+- $ (cd _build/default/lib && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -g -ccopt -g -o kyoto_ocaml_wrapper.o kyoto_ocaml_wrapper.c)
+- kyoto_ocaml_wrapper.c:7:21: fatal error: kclangc.h: No such file or directory
+- compilation terminated.
+- Running[12]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -w -40 -g -a -o lib/kyoto.cma -dllib -lkyoto_stubs -cclib -lkyoto_stubs -cclib -lkyotocabinet lib/.kyoto.objs/kyoto.cmo)
+- Running[13]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt -w -40 -g -I lib/.kyoto.objs -intf-suffix .ml -no-alias-deps -I bin/.kyoto_pairs.eobjs -o bin/.kyoto_pairs.eobjs/kyoto_append.cmx -c -impl bin/kyoto_append.ml)
+- Running[14]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt -w -40 -g -I lib/.kyoto.objs -intf-suffix .ml -no-alias-deps -I bin/.kyoto_pairs.eobjs -o bin/.kyoto_pairs.eobjs/kyoto_pairs.cmx -c -impl bin/kyoto_pairs.ml)
+- Running[15]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt -w -40 -g -a -o lib/kyoto.cmxa -cclib -lkyoto_stubs -cclib -lkyotocabinet lib/.kyoto.objs/kyoto.cmx)
+[ERROR] The compilation of kyotocabinet failed at "jbuilder build --only
+        kyotocabinet --root . -j 4 @install".
+
+#=== ERROR while installing kyotocabinet.0.1 ==================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build --only kyotocabinet --root . -j 4 @install
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/kyotocabinet.0.1
+# compiler             4.04.2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/kyotocabinet.0.1/kyotocabinet-26194.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/kyotocabinet.0.1/kyotocabinet-26194.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/kyotocabinet.0.1/kyotocabinet-26194.out
+### stdout ###
+# [...]
+# Running[11]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.kyoto.objs -no-alias-deps -I bin/.kyoto_pairs.eobjs -o bin/.kyoto_pairs.eobjs/kyoto_pairs.cmo -c -impl bin/kyoto_pairs.ml)
+# 
+# Command [6] exited with code 2:
+# $ (cd _build/default/lib && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -g -ccopt -g -o kyoto_ocaml_wrapper.o kyoto_ocaml_wrapper.c)
+# kyoto_ocaml_wrapper.c:7:21: fatal error: kclangc.h: No such file or directory
+# compilation terminated.
+# Running[12]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -w -40 -g -a -o lib/kyoto.cma -dllib -lkyoto_stubs -cclib -lkyoto_stubs -cclib -lkyotocabinet lib/.kyoto.objs/kyoto.cmo)
+# Running[13]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt -w -40 -g -I lib/.kyoto.objs -intf-suffix .ml -no-alias-deps -I bin/.kyoto_pairs.eobjs -o bin/.kyoto_pairs.eobjs/kyoto_append.cmx -c -impl bin/kyoto_append.ml)
+# Running[14]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt -w -40 -g -I lib/.kyoto.objs -intf-suffix .ml -no-alias-deps -I bin/.kyoto_pairs.eobjs -o bin/.kyoto_pairs.eobjs/kyoto_pairs.cmx -c -impl bin/kyoto_pairs.ml)
+# Running[15]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt -w -40 -g -a -o lib/kyoto.cmxa -cclib -lkyoto_stubs -cclib -lkyotocabinet lib/.kyoto.objs/kyoto.cmx)
+### stderr ###
+# [...]
+# Running[11]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.kyoto.objs -no-alias-deps -I bin/.kyoto_pairs.eobjs -o bin/.kyoto_pairs.eobjs/kyoto_pairs.cmo -c -impl bin/kyoto_pairs.ml)
+# 
+# Command [6] exited with code 2:
+# $ (cd _build/default/lib && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -g -ccopt -g -o kyoto_ocaml_wrapper.o kyoto_ocaml_wrapper.c)
+# kyoto_ocaml_wrapper.c:7:21: fatal error: kclangc.h: No such file or directory
+# compilation terminated.
+# Running[12]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt -w -40 -g -a -o lib/kyoto.cma -dllib -lkyoto_stubs -cclib -lkyoto_stubs -cclib -lkyotocabinet lib/.kyoto.objs/kyoto.cmo)
+# Running[13]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt -w -40 -g -I lib/.kyoto.objs -intf-suffix .ml -no-alias-deps -I bin/.kyoto_pairs.eobjs -o bin/.kyoto_pairs.eobjs/kyoto_append.cmx -c -impl bin/kyoto_append.ml)
+# Running[14]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt -w -40 -g -I lib/.kyoto.objs -intf-suffix .ml -no-alias-deps -I bin/.kyoto_pairs.eobjs -o bin/.kyoto_pairs.eobjs/kyoto_pairs.cmx -c -impl bin/kyoto_pairs.ml)
+# Running[15]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt -w -40 -g -a -o lib/kyoto.cmxa -cclib -lkyoto_stubs -cclib -lkyotocabinet lib/.kyoto.objs/kyoto.cmx)
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install kyotocabinet 0.1
+No changes have been performed
+
+=-=- kyotocabinet.0.1 troobleshooting -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package relies on external (system) dependencies that may be missing.
+   `opam depext kyotocabinet.0.1' may help you find the correct installation
+   for your system.
+'opam install kyotocabinet.0.1' failed.

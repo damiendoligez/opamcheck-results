@@ -1,0 +1,59 @@
+The following actions will be performed:
+  - install google-drive-ocamlfuse 0.5.12
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[google-drive-ocamlfuse: http] Command started
+[google-drive-ocamlfuse: http] Command started
+[google-drive-ocamlfuse.0.5.12] https://forge.ocamlcore.org/frs/download.php/1489/google-drive-ocamlfuse-0.5.12.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[google-drive-ocamlfuse: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/google-drive-ocamlfuse.0.5.12)
+- File "./setup.ml", line 247, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 247, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "./setup.ml", line 247, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 247, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+[ERROR] The compilation of google-drive-ocamlfuse failed at "ocaml setup.ml
+        -configure --prefix
+        /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1".
+
+#=== ERROR while installing google-drive-ocamlfuse.0.5.12 =====================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -configure --prefix /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/google-drive-ocamlfuse.0.5.12
+# compiler             4.06.1
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/google-drive-ocamlfuse.0.5.12/google-drive-ocamlfuse-31136.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/google-drive-ocamlfuse.0.5.12/google-drive-ocamlfuse-31136.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/google-drive-ocamlfuse.0.5.12/google-drive-ocamlfuse-31136.out
+### stdout ###
+# File "./setup.ml", line 247, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 247, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+### stderr ###
+# File "./setup.ml", line 247, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 247, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install google-drive-ocamlfuse 0.5.12
+No changes have been performed
+'opam install google-drive-ocamlfuse.0.5.12' failed.

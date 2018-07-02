@@ -1,0 +1,49 @@
+The following actions will be performed:
+  - install wcs-lib 2017-05-26.04
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[wcs-lib: http] Command started
+[wcs-lib: http] Command started
+[wcs-lib.2017-05-26.04] https://github.com/IBM/wcs-ocaml/archive/2017-05-26.04.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[wcs-lib: jbuilder build] Command started
++ jbuilder "build" "-p" "wcs-lib" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/wcs-lib.2017-05-26.04)
+-         rmlc wcs-api/wcs_call.rzi (exit 2)
+- (cd _build/default/wcs-api && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/rmlc.opt -I ../wcs-lib -c wcs_call.mli)
+- Cannot find the compiled interface file wcs_lib.rzi.
+- 
+-         rmlc wcs-api/wcs_call.rzi (exit 2)
+- (cd _build/default/wcs-api && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/rmlc.opt -I ../wcs-lib -c wcs_call.mli)
+- Cannot find the compiled interface file wcs_lib.rzi.
+- 
+[ERROR] The compilation of wcs-lib failed at "jbuilder build -p wcs-lib -j 4".
+
+#=== ERROR while installing wcs-lib.2017-05-26.04 =============================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p wcs-lib -j 4
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/wcs-lib.2017-05-26.04
+# compiler             4.07.0+rc2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/wcs-lib.2017-05-26.04/wcs-lib-29617.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/wcs-lib.2017-05-26.04/wcs-lib-29617.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/wcs-lib.2017-05-26.04/wcs-lib-29617.out
+### stdout ###
+#         rmlc wcs-api/wcs_call.rzi (exit 2)
+# (cd _build/default/wcs-api && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/rmlc.opt -I ../wcs-lib -c wcs_call.mli)
+# Cannot find the compiled interface file wcs_lib.rzi.
+# 
+### stderr ###
+#         rmlc wcs-api/wcs_call.rzi (exit 2)
+# (cd _build/default/wcs-api && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/rmlc.opt -I ../wcs-lib -c wcs_call.mli)
+# Cannot find the compiled interface file wcs_lib.rzi.
+# 
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install wcs-lib 2017-05-26.04
+No changes have been performed
+'opam install wcs-lib.2017-05-26.04' failed.

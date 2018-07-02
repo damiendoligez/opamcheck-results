@@ -1,0 +1,107 @@
+The following actions will be performed:
+  - install macaroons 0.1.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[macaroons: http] Command started
+[macaroons: http] Command started
+[macaroons.0.1.1] https://github.com/nojb/ocaml-macaroons/archive/v0.1.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[macaroons: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/macaroons.0.1.1)
+- ocamlbuild -use-ocamlfind -classic-display lib/macaroons.{cma,cmx,cmxa,cmxs,a}
+- ocamlfind ocamldep -package base64 -modules lib/macaroons.mli > lib/macaroons.mli.depends
+- ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmi lib/macaroons.mli
+- ocamlfind ocamldep -package base64 -modules lib/macaroons.ml > lib/macaroons.ml.depends
+- ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmo lib/macaroons.ml
+- + ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmo lib/macaroons.ml
+- File "lib/macaroons.ml", line 292, characters 50-67:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Makefile:14: recipe for target 'build' failed
+- make: *** [build] Error 10
+- ocamlbuild -use-ocamlfind -classic-display lib/macaroons.{cma,cmx,cmxa,cmxs,a}
+- ocamlfind ocamldep -package base64 -modules lib/macaroons.mli > lib/macaroons.mli.depends
+- ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmi lib/macaroons.mli
+- ocamlfind ocamldep -package base64 -modules lib/macaroons.ml > lib/macaroons.ml.depends
+- ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmo lib/macaroons.ml
+- + ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmo lib/macaroons.ml
+- File "lib/macaroons.ml", line 292, characters 50-67:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Makefile:14: recipe for target 'build' failed
+- make: *** [build] Error 10
+[ERROR] The compilation of macaroons failed at "make".
+[macaroons: ocamlfind remove] Command started
++ ocamlfind "remove" "macaroons" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/macaroons.0.1.1)
+- ocamlbuild -use-ocamlfind -classic-display lib/macaroons.{cma,cmx,cmxa,cmxs,a}
+- ocamlfind ocamldep -package base64 -modules lib/macaroons.mli > lib/macaroons.mli.depends
+- ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmi lib/macaroons.mli
+- ocamlfind ocamldep -package base64 -modules lib/macaroons.ml > lib/macaroons.ml.depends
+- ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmo lib/macaroons.ml
+- + ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmo lib/macaroons.ml
+- File "lib/macaroons.ml", line 292, characters 50-67:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Makefile:14: recipe for target 'build' failed
+- make: *** [build] Error 10
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/macaroons/META
+- ocamlbuild -use-ocamlfind -classic-display lib/macaroons.{cma,cmx,cmxa,cmxs,a}
+- ocamlfind ocamldep -package base64 -modules lib/macaroons.mli > lib/macaroons.mli.depends
+- ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmi lib/macaroons.mli
+- ocamlfind ocamldep -package base64 -modules lib/macaroons.ml > lib/macaroons.ml.depends
+- ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmo lib/macaroons.ml
+- + ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmo lib/macaroons.ml
+- File "lib/macaroons.ml", line 292, characters 50-67:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Makefile:14: recipe for target 'build' failed
+- make: *** [build] Error 10
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/macaroons/META
+
+#=== ERROR while installing macaroons.0.1.1 ===================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/macaroons.0.1.1
+# compiler             4.06.1
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/macaroons.0.1.1/macaroons-10587.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/macaroons.0.1.1/macaroons-10587.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/macaroons.0.1.1/macaroons-10587.out
+### stdout ###
+# [...]
+# ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmi lib/macaroons.mli
+# ocamlfind ocamldep -package base64 -modules lib/macaroons.ml > lib/macaroons.ml.depends
+# ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmo lib/macaroons.ml
+# + ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmo lib/macaroons.ml
+# File "lib/macaroons.ml", line 292, characters 50-67:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# Makefile:14: recipe for target 'build' failed
+# make: *** [build] Error 10
+### stderr ###
+# [...]
+# ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmi lib/macaroons.mli
+# ocamlfind ocamldep -package base64 -modules lib/macaroons.ml > lib/macaroons.ml.depends
+# ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmo lib/macaroons.ml
+# + ocamlfind ocamlc -c -bin-annot -package base64 -I lib -o lib/macaroons.cmo lib/macaroons.ml
+# File "lib/macaroons.ml", line 292, characters 50-67:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# Makefile:14: recipe for target 'build' failed
+# make: *** [build] Error 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install macaroons 0.1.1
+No changes have been performed
+'opam install macaroons.0.1.1' failed.

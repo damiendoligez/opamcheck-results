@@ -1,0 +1,924 @@
+The following actions will be performed:
+  - install spf 1.0.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[spf: http] Command started
+[spf: http] Command started
+[spf.1.0.0] http://forge.ocamlcore.org/frs/download.php/1004/ocaml-spf-1.0.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[spf: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/spf.1.0.0)
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ spf
+- Package version: ..................................... 1.0.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- 
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ spf
+- Package version: ..................................... 1.0.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- 
+[spf: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-build" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/spf.1.0.0)
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ spf
+- Package version: ..................................... 1.0.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- 
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamlc -g -ccopt -Wall -ccopt -Werror -c lib/spf_stubs.c
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ spf
+- Package version: ..................................... 1.0.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- 
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamlc -g -ccopt -Wall -ccopt -Werror -c lib/spf_stubs.c
+- mv spf_stubs.o lib/spf_stubs.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlmklib.opt -o lib/spf_stubs -lspf2 lib/spf_stubs.o
+- ocamlfind ocamldep -modules lib/SPF.mli > lib/SPF.mli.depends
+- ocamlfind ocamlc -c -g -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmi lib/SPF.mli
+- ocamlfind ocamldep -modules lib/SPF.ml > lib/SPF.ml.depends
+- ocamlfind ocamlc -c -g -annot -warn-error A -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmo lib/SPF.ml
+- + ocamlfind ocamlc -c -g -annot -warn-error A -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmo lib/SPF.ml
+- File "lib/SPF.ml", line 131, characters 9-10:
+- Warning 28: wildcard pattern given as argument to a constant constructor
+- File "lib/SPF.ml", line 1:
+- Error: Some fatal warnings were triggered (1 occurrences)
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' lib/libspf_stubs.a lib/dllspf_stubs.so lib/spf.cma lib/spf.cmxa lib/spf.a lib/spf.cmxs lib_test/test.native -tag debug' terminated with error code 10")
+- mv spf_stubs.o lib/spf_stubs.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlmklib.opt -o lib/spf_stubs -lspf2 lib/spf_stubs.o
+- ocamlfind ocamldep -modules lib/SPF.mli > lib/SPF.mli.depends
+- ocamlfind ocamlc -c -g -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmi lib/SPF.mli
+- ocamlfind ocamldep -modules lib/SPF.ml > lib/SPF.ml.depends
+- ocamlfind ocamlc -c -g -annot -warn-error A -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmo lib/SPF.ml
+- + ocamlfind ocamlc -c -g -annot -warn-error A -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmo lib/SPF.ml
+- File "lib/SPF.ml", line 131, characters 9-10:
+- Warning 28: wildcard pattern given as argument to a constant constructor
+- File "lib/SPF.ml", line 1:
+- Error: Some fatal warnings were triggered (1 occurrences)
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' lib/libspf_stubs.a lib/dllspf_stubs.so lib/spf.cma lib/spf.cmxa lib/spf.a lib/spf.cmxs lib_test/test.native -tag debug' terminated with error code 10")
+[ERROR] The compilation of spf failed at "ocaml setup.ml -build".
+[spf: ocamlfind remove] Command started
++ ocamlfind "remove" "spf" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/spf.1.0.0)
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ spf
+- Package version: ..................................... 1.0.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- 
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamlc -g -ccopt -Wall -ccopt -Werror -c lib/spf_stubs.c
+- mv spf_stubs.o lib/spf_stubs.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlmklib.opt -o lib/spf_stubs -lspf2 lib/spf_stubs.o
+- ocamlfind ocamldep -modules lib/SPF.mli > lib/SPF.mli.depends
+- ocamlfind ocamlc -c -g -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmi lib/SPF.mli
+- ocamlfind ocamldep -modules lib/SPF.ml > lib/SPF.ml.depends
+- ocamlfind ocamlc -c -g -annot -warn-error A -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmo lib/SPF.ml
+- + ocamlfind ocamlc -c -g -annot -warn-error A -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmo lib/SPF.ml
+- File "lib/SPF.ml", line 131, characters 9-10:
+- Warning 28: wildcard pattern given as argument to a constant constructor
+- File "lib/SPF.ml", line 1:
+- Error: Some fatal warnings were triggered (1 occurrences)
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' lib/libspf_stubs.a lib/dllspf_stubs.so lib/spf.cma lib/spf.cmxa lib/spf.a lib/spf.cmxs lib_test/test.native -tag debug' terminated with error code 10")
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/spf/META
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ spf
+- Package version: ..................................... 1.0.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- 
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamlc -g -ccopt -Wall -ccopt -Werror -c lib/spf_stubs.c
+- mv spf_stubs.o lib/spf_stubs.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlmklib.opt -o lib/spf_stubs -lspf2 lib/spf_stubs.o
+- ocamlfind ocamldep -modules lib/SPF.mli > lib/SPF.mli.depends
+- ocamlfind ocamlc -c -g -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmi lib/SPF.mli
+- ocamlfind ocamldep -modules lib/SPF.ml > lib/SPF.ml.depends
+- ocamlfind ocamlc -c -g -annot -warn-error A -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmo lib/SPF.ml
+- + ocamlfind ocamlc -c -g -annot -warn-error A -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmo lib/SPF.ml
+- File "lib/SPF.ml", line 131, characters 9-10:
+- Warning 28: wildcard pattern given as argument to a constant constructor
+- File "lib/SPF.ml", line 1:
+- Error: Some fatal warnings were triggered (1 occurrences)
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' lib/libspf_stubs.a lib/dllspf_stubs.so lib/spf.cma lib/spf.cmxa lib/spf.a lib/spf.cmxs lib_test/test.native -tag debug' terminated with error code 10")
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/spf/META
+
+#=== ERROR while installing spf.1.0.0 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/spf.1.0.0
+# compiler             4.04.2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/spf.1.0.0/spf-29065.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/spf.1.0.0/spf-29065.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/spf.1.0.0/spf-29065.out
+### stdout ###
+# [...]
+# ocamlfind ocamlc -c -g -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmi lib/SPF.mli
+# ocamlfind ocamldep -modules lib/SPF.ml > lib/SPF.ml.depends
+# ocamlfind ocamlc -c -g -annot -warn-error A -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmo lib/SPF.ml
+# + ocamlfind ocamlc -c -g -annot -warn-error A -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmo lib/SPF.ml
+# File "lib/SPF.ml", line 131, characters 9-10:
+# Warning 28: wildcard pattern given as argument to a constant constructor
+# File "lib/SPF.ml", line 1:
+# Error: Some fatal warnings were triggered (1 occurrences)
+# Command exited with code 2.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' lib/libspf_stubs.a lib/dllspf_stubs.so lib/spf.cma lib/spf.cmxa lib/spf.a lib/spf.cmxs lib_test/test.native -tag debug' terminated with error code 10")
+### stderr ###
+# [...]
+# ocamlfind ocamlc -c -g -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmi lib/SPF.mli
+# ocamlfind ocamldep -modules lib/SPF.ml > lib/SPF.ml.depends
+# ocamlfind ocamlc -c -g -annot -warn-error A -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmo lib/SPF.ml
+# + ocamlfind ocamlc -c -g -annot -warn-error A -ccopt -Wall -ccopt -Werror -I lib -o lib/SPF.cmo lib/SPF.ml
+# File "lib/SPF.ml", line 131, characters 9-10:
+# Warning 28: wildcard pattern given as argument to a constant constructor
+# File "lib/SPF.ml", line 1:
+# Error: Some fatal warnings were triggered (1 occurrences)
+# Command exited with code 2.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' lib/libspf_stubs.a lib/dllspf_stubs.so lib/spf.cma lib/spf.cmxa lib/spf.a lib/spf.cmxs lib_test/test.native -tag debug' terminated with error code 10")
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install spf 1.0.0
+No changes have been performed
+
+=-=- spf.1.0.0 troobleshooting =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package relies on external (system) dependencies that may be missing.
+   `opam depext spf.1.0.0' may help you find the correct installation for your
+   system.
+'opam install spf.1.0.0' failed.

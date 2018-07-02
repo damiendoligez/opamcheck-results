@@ -1,0 +1,45 @@
+The following actions will be performed:
+  - install srs 2.0.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[srs: http] Command started
+[srs: http] Command started
+[srs.2.0.0] https://github.com/andrenth/ocaml-srs/archive/2.0.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[srs: jbuilder build] Command started
++ jbuilder "build" "-p" "srs" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/srs.2.0.0)
+- jbuilder: unknown option `-p'.
+- Usage: jbuilder build [OPTION]... TARGET...
+- Try `jbuilder build --help' or `jbuilder --help' for more information.
+- jbuilder: unknown option `-p'.
+- Usage: jbuilder build [OPTION]... TARGET...
+- Try `jbuilder build --help' or `jbuilder --help' for more information.
+[ERROR] The compilation of srs failed at "jbuilder build -p srs -j 4".
+
+#=== ERROR while installing srs.2.0.0 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p srs -j 4
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/srs.2.0.0
+# compiler             4.07.0+rc2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/srs.2.0.0/srs-10807.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/srs.2.0.0/srs-10807.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/srs.2.0.0/srs-10807.out
+### stdout ###
+# jbuilder: unknown option `-p'.
+# Usage: jbuilder build [OPTION]... TARGET...
+# Try `jbuilder build --help' or `jbuilder --help' for more information.
+### stderr ###
+# jbuilder: unknown option `-p'.
+# Usage: jbuilder build [OPTION]... TARGET...
+# Try `jbuilder build --help' or `jbuilder --help' for more information.
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install srs 2.0.0
+No changes have been performed
+'opam install srs.2.0.0' failed.

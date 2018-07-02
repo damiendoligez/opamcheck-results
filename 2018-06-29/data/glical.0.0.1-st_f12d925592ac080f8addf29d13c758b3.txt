@@ -1,0 +1,179 @@
+The following actions will be performed:
+  - install glical 0.0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[glical: http] Command started
+[glical: http] Command started
+[glical.0.0.1] http://pw374.github.io/distrib/glical/glical-0.0.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[glical: ./configure] Command started
++ ./configure "-prefix" "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/glical.0.0.1)
+[glical: make build] Command started
++ make "build" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/glical.0.0.1)
+- ocamlc -c glical_kernel.mli
+- ocamlc -c glical_kernel.ml
+- File "glical_kernel.ml", line 636, characters 22-37:
+- Warning 52: Code should not depend on the actual values of
+- this constructor's arguments. They are only for information
+- and may change in future versions. (See manual section 9.5)
+- ocamlc -c glical.mli
+- ocamlc -c glical.ml
+- File "glical.ml", line 41, characters 12-23:
+- Warning 3: deprecated: Stdlib.String.copy
+- File "glical.ml", line 45, characters 13-25:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "glical.ml", line 45, characters 13-14:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile.lib:23: recipe for target 'glical.cmo' failed
+- make: *** [glical.cmo] Error 2
+- ocamlc -c glical_kernel.mli
+- ocamlc -c glical_kernel.ml
+- File "glical_kernel.ml", line 636, characters 22-37:
+- Warning 52: Code should not depend on the actual values of
+- this constructor's arguments. They are only for information
+- and may change in future versions. (See manual section 9.5)
+- ocamlc -c glical.mli
+- ocamlc -c glical.ml
+- File "glical.ml", line 41, characters 12-23:
+- Warning 3: deprecated: Stdlib.String.copy
+- File "glical.ml", line 45, characters 13-25:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "glical.ml", line 45, characters 13-14:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile.lib:23: recipe for target 'glical.cmo' failed
+- make: *** [glical.cmo] Error 2
+[ERROR] The compilation of glical failed at "make build".
+[glical: ./configure] Command started
++ ./configure "-prefix" "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/glical.0.0.1)
+- ocamlc -c glical_kernel.mli
+- ocamlc -c glical_kernel.ml
+- File "glical_kernel.ml", line 636, characters 22-37:
+- Warning 52: Code should not depend on the actual values of
+- this constructor's arguments. They are only for information
+- and may change in future versions. (See manual section 9.5)
+- ocamlc -c glical.mli
+- ocamlc -c glical.ml
+- File "glical.ml", line 41, characters 12-23:
+- Warning 3: deprecated: Stdlib.String.copy
+- File "glical.ml", line 45, characters 13-25:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "glical.ml", line 45, characters 13-14:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile.lib:23: recipe for target 'glical.cmo' failed
+- make: *** [glical.cmo] Error 2
+- ocamlc -c glical_kernel.mli
+- ocamlc -c glical_kernel.ml
+- File "glical_kernel.ml", line 636, characters 22-37:
+- Warning 52: Code should not depend on the actual values of
+- this constructor's arguments. They are only for information
+- and may change in future versions. (See manual section 9.5)
+- ocamlc -c glical.mli
+- ocamlc -c glical.ml
+- File "glical.ml", line 41, characters 12-23:
+- Warning 3: deprecated: Stdlib.String.copy
+- File "glical.ml", line 45, characters 13-25:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "glical.ml", line 45, characters 13-14:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile.lib:23: recipe for target 'glical.cmo' failed
+- make: *** [glical.cmo] Error 2
+[glical: make uninstall] Command started
++ make "uninstall" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/glical.0.0.1)
+- ocamlc -c glical_kernel.mli
+- ocamlc -c glical_kernel.ml
+- File "glical_kernel.ml", line 636, characters 22-37:
+- Warning 52: Code should not depend on the actual values of
+- this constructor's arguments. They are only for information
+- and may change in future versions. (See manual section 9.5)
+- ocamlc -c glical.mli
+- ocamlc -c glical.ml
+- File "glical.ml", line 41, characters 12-23:
+- Warning 3: deprecated: Stdlib.String.copy
+- File "glical.ml", line 45, characters 13-25:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "glical.ml", line 45, characters 13-14:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile.lib:23: recipe for target 'glical.cmo' failed
+- make: *** [glical.cmo] Error 2
+- rm -f "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2"/lib/glical/glical.cm{a,xa}
+- rmdir "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2"/lib/glical
+- rmdir: failed to remove '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/glical': No such file or directory
+- Makefile:9: recipe for target 'uninstall' failed
+- make: [uninstall] Error 1 (ignored)
+- ocamlc -c glical_kernel.mli
+- ocamlc -c glical_kernel.ml
+- File "glical_kernel.ml", line 636, characters 22-37:
+- Warning 52: Code should not depend on the actual values of
+- this constructor's arguments. They are only for information
+- and may change in future versions. (See manual section 9.5)
+- ocamlc -c glical.mli
+- ocamlc -c glical.ml
+- File "glical.ml", line 41, characters 12-23:
+- Warning 3: deprecated: Stdlib.String.copy
+- File "glical.ml", line 45, characters 13-25:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "glical.ml", line 45, characters 13-14:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile.lib:23: recipe for target 'glical.cmo' failed
+- make: *** [glical.cmo] Error 2
+- rm -f "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2"/lib/glical/glical.cm{a,xa}
+- rmdir "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2"/lib/glical
+- rmdir: failed to remove '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/glical': No such file or directory
+- Makefile:9: recipe for target 'uninstall' failed
+- make: [uninstall] Error 1 (ignored)
+
+#=== ERROR while installing glical.0.0.1 ======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make build
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/glical.0.0.1
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/glical.0.0.1/glical-24999.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/glical.0.0.1/glical-24999.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/glical.0.0.1/glical-24999.out
+### stdout ###
+# [...]
+# File "glical.ml", line 41, characters 12-23:
+# Warning 3: deprecated: Stdlib.String.copy
+# File "glical.ml", line 45, characters 13-25:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "glical.ml", line 45, characters 13-14:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile.lib:23: recipe for target 'glical.cmo' failed
+# make: *** [glical.cmo] Error 2
+### stderr ###
+# [...]
+# File "glical.ml", line 41, characters 12-23:
+# Warning 3: deprecated: Stdlib.String.copy
+# File "glical.ml", line 45, characters 13-25:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "glical.ml", line 45, characters 13-14:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile.lib:23: recipe for target 'glical.cmo' failed
+# make: *** [glical.cmo] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install glical 0.0.1
+No changes have been performed
+'opam install glical.0.0.1' failed.

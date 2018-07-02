@@ -1,0 +1,433 @@
+The following actions will be performed:
+  - install labltk 8.06.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[labltk: http] Command started
+[labltk: http] Command started
+[labltk.8.06.0] https://forge.ocamlcore.org/frs/download.php/1455/labltk-8.06.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[labltk: ./configure] Command started
++ ./configure "-use-findlib" "-installbindir" "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/labltk.8.06.0)
+- Configuring LablTk...
+- tcl.h and/or tk.h not found.
+- 
+- ** Configuration summary **
+- 
+- The "labltk" library: not supported
+- Configuring LablTk...
+- tcl.h and/or tk.h not found.
+- 
+- ** Configuration summary **
+- 
+- The "labltk" library: not supported
+[labltk: make all] Command started
++ make "all" "opt" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/labltk.8.06.0)
+- Configuring LablTk...
+- tcl.h and/or tk.h not found.
+- 
+- ** Configuration summary **
+- 
+- The "labltk" library: not supported
+- cd support; make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/labltk.8.06.0/support'
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  support.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  support.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  rawwidget.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  rawwidget.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  widget.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  widget.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  protocol.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  protocol.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  textvariable.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  textvariable.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  timer.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  timer.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  fileevent.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  fileevent.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  camltkwrap.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  camltkwrap.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  -I +threads -I vmthreads tkthread.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  -I +threads -I vmthreads tkthread.ml
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkCaml.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkCaml.o' failed
+- make[1]: [cltkCaml.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkUtf.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkUtf.o' failed
+- make[1]: [cltkUtf.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkEval.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkEval.o' failed
+- make[1]: [cltkEval.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkEvent.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkEvent.o' failed
+- make[1]: [cltkEvent.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkFile.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkFile.o' failed
+- make[1]: [cltkFile.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkMain.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkMain.o' failed
+- make[1]: [cltkMain.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkMisc.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkMisc.o' failed
+- make[1]: [cltkMisc.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkTimer.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkTimer.o' failed
+- make[1]: [cltkTimer.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkVar.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkVar.o' failed
+- make[1]: [cltkVar.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkWait.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkWait.o' failed
+- make[1]: [cltkWait.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkImg.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkImg.o' failed
+- make[1]: [cltkImg.o] Error 127 (ignored)
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlmklib -o labltk cltkCaml.o cltkUtf.o cltkEval.o cltkEvent.o cltkFile.o cltkMain.o cltkMisc.o cltkTimer.o cltkVar.o cltkWait.o cltkImg.o 
+- gcc: error: cltkCaml.o: No such file or directory
+- gcc: error: cltkUtf.o: No such file or directory
+- gcc: error: cltkEval.o: No such file or directory
+- gcc: error: cltkEvent.o: No such file or directory
+- gcc: error: cltkFile.o: No such file or directory
+- gcc: error: cltkMain.o: No such file or directory
+- gcc: error: cltkMisc.o: No such file or directory
+- gcc: error: cltkTimer.o: No such file or directory
+- gcc: error: cltkVar.o: No such file or directory
+- gcc: error: cltkWait.o: No such file or directory
+- gcc: error: cltkImg.o: No such file or directory
+- gcc: fatal error: no input files
+- compilation terminated.
+- Makefile:38: recipe for target 'liblabltk.a' failed
+- make[1]: *** [liblabltk.a] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/labltk.8.06.0/support'
+- Makefile:25: recipe for target 'all' failed
+- make: *** [all] Error 2
+- Configuring LablTk...
+- tcl.h and/or tk.h not found.
+- 
+- ** Configuration summary **
+- 
+- The "labltk" library: not supported
+- cd support; make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/labltk.8.06.0/support'
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  support.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  support.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  rawwidget.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  rawwidget.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  widget.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  widget.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  protocol.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  protocol.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  textvariable.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  textvariable.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  timer.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  timer.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  fileevent.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  fileevent.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  camltkwrap.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  camltkwrap.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  -I +threads -I vmthreads tkthread.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  -I +threads -I vmthreads tkthread.ml
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkCaml.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkCaml.o' failed
+- make[1]: [cltkCaml.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkUtf.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkUtf.o' failed
+- make[1]: [cltkUtf.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkEval.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkEval.o' failed
+- make[1]: [cltkEval.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkEvent.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkEvent.o' failed
+- make[1]: [cltkEvent.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkFile.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkFile.o' failed
+- make[1]: [cltkFile.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkMain.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkMain.o' failed
+- make[1]: [cltkMain.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkMisc.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkMisc.o' failed
+- make[1]: [cltkMisc.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkTimer.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkTimer.o' failed
+- make[1]: [cltkTimer.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkVar.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkVar.o' failed
+- make[1]: [cltkVar.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkWait.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkWait.o' failed
+- make[1]: [cltkWait.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkImg.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkImg.o' failed
+- make[1]: [cltkImg.o] Error 127 (ignored)
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlmklib -o labltk cltkCaml.o cltkUtf.o cltkEval.o cltkEvent.o cltkFile.o cltkMain.o cltkMisc.o cltkTimer.o cltkVar.o cltkWait.o cltkImg.o 
+- gcc: error: cltkCaml.o: No such file or directory
+- gcc: error: cltkUtf.o: No such file or directory
+- gcc: error: cltkEval.o: No such file or directory
+- gcc: error: cltkEvent.o: No such file or directory
+- gcc: error: cltkFile.o: No such file or directory
+- gcc: error: cltkMain.o: No such file or directory
+- gcc: error: cltkMisc.o: No such file or directory
+- gcc: error: cltkTimer.o: No such file or directory
+- gcc: error: cltkVar.o: No such file or directory
+- gcc: error: cltkWait.o: No such file or directory
+- gcc: error: cltkImg.o: No such file or directory
+- gcc: fatal error: no input files
+- compilation terminated.
+- Makefile:38: recipe for target 'liblabltk.a' failed
+- make[1]: *** [liblabltk.a] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/labltk.8.06.0/support'
+- Makefile:25: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of labltk failed at "make all opt".
+[labltk: ocamlfind remove] Command started
++ ocamlfind "remove" "labltk" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/labltk.8.06.0)
+- Configuring LablTk...
+- tcl.h and/or tk.h not found.
+- 
+- ** Configuration summary **
+- 
+- The "labltk" library: not supported
+- cd support; make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/labltk.8.06.0/support'
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  support.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  support.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  rawwidget.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  rawwidget.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  widget.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  widget.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  protocol.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  protocol.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  textvariable.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  textvariable.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  timer.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  timer.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  fileevent.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  fileevent.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  camltkwrap.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  camltkwrap.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  -I +threads -I vmthreads tkthread.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  -I +threads -I vmthreads tkthread.ml
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkCaml.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkCaml.o' failed
+- make[1]: [cltkCaml.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkUtf.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkUtf.o' failed
+- make[1]: [cltkUtf.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkEval.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkEval.o' failed
+- make[1]: [cltkEval.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkEvent.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkEvent.o' failed
+- make[1]: [cltkEvent.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkFile.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkFile.o' failed
+- make[1]: [cltkFile.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkMain.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkMain.o' failed
+- make[1]: [cltkMain.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkMisc.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkMisc.o' failed
+- make[1]: [cltkMisc.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkTimer.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkTimer.o' failed
+- make[1]: [cltkTimer.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkVar.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkVar.o' failed
+- make[1]: [cltkVar.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkWait.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkWait.o' failed
+- make[1]: [cltkWait.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkImg.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkImg.o' failed
+- make[1]: [cltkImg.o] Error 127 (ignored)
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlmklib -o labltk cltkCaml.o cltkUtf.o cltkEval.o cltkEvent.o cltkFile.o cltkMain.o cltkMisc.o cltkTimer.o cltkVar.o cltkWait.o cltkImg.o 
+- gcc: error: cltkCaml.o: No such file or directory
+- gcc: error: cltkUtf.o: No such file or directory
+- gcc: error: cltkEval.o: No such file or directory
+- gcc: error: cltkEvent.o: No such file or directory
+- gcc: error: cltkFile.o: No such file or directory
+- gcc: error: cltkMain.o: No such file or directory
+- gcc: error: cltkMisc.o: No such file or directory
+- gcc: error: cltkTimer.o: No such file or directory
+- gcc: error: cltkVar.o: No such file or directory
+- gcc: error: cltkWait.o: No such file or directory
+- gcc: error: cltkImg.o: No such file or directory
+- gcc: fatal error: no input files
+- compilation terminated.
+- Makefile:38: recipe for target 'liblabltk.a' failed
+- make[1]: *** [liblabltk.a] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/labltk.8.06.0/support'
+- Makefile:25: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/labltk/META
+- Configuring LablTk...
+- tcl.h and/or tk.h not found.
+- 
+- ** Configuration summary **
+- 
+- The "labltk" library: not supported
+- cd support; make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/labltk.8.06.0/support'
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  support.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  support.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  rawwidget.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  rawwidget.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  widget.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  widget.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  protocol.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  protocol.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  textvariable.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  textvariable.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  timer.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  timer.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  fileevent.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  fileevent.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  camltkwrap.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  camltkwrap.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  -I +threads -I vmthreads tkthread.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -warn-error A-3  -I +threads -I vmthreads tkthread.ml
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkCaml.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkCaml.o' failed
+- make[1]: [cltkCaml.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkUtf.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkUtf.o' failed
+- make[1]: [cltkUtf.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkEval.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkEval.o' failed
+- make[1]: [cltkEval.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkEvent.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkEvent.o' failed
+- make[1]: [cltkEvent.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkFile.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkFile.o' failed
+- make[1]: [cltkFile.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkMain.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkMain.o' failed
+- make[1]: [cltkMain.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkMisc.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkMisc.o' failed
+- make[1]: [cltkMisc.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkTimer.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkTimer.o' failed
+- make[1]: [cltkTimer.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkVar.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkVar.o' failed
+- make[1]: [cltkVar.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkWait.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkWait.o' failed
+- make[1]: [cltkWait.o] Error 127 (ignored)
+- I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml  -fPIC -c cltkImg.c
+- make[1]: I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/caml: Command not found
+- Makefile:87: recipe for target 'cltkImg.o' failed
+- make[1]: [cltkImg.o] Error 127 (ignored)
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlmklib -o labltk cltkCaml.o cltkUtf.o cltkEval.o cltkEvent.o cltkFile.o cltkMain.o cltkMisc.o cltkTimer.o cltkVar.o cltkWait.o cltkImg.o 
+- gcc: error: cltkCaml.o: No such file or directory
+- gcc: error: cltkUtf.o: No such file or directory
+- gcc: error: cltkEval.o: No such file or directory
+- gcc: error: cltkEvent.o: No such file or directory
+- gcc: error: cltkFile.o: No such file or directory
+- gcc: error: cltkMain.o: No such file or directory
+- gcc: error: cltkMisc.o: No such file or directory
+- gcc: error: cltkTimer.o: No such file or directory
+- gcc: error: cltkVar.o: No such file or directory
+- gcc: error: cltkWait.o: No such file or directory
+- gcc: error: cltkImg.o: No such file or directory
+- gcc: fatal error: no input files
+- compilation terminated.
+- Makefile:38: recipe for target 'liblabltk.a' failed
+- make[1]: *** [liblabltk.a] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/labltk.8.06.0/support'
+- Makefile:25: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/labltk/META
+
+#=== ERROR while installing labltk.8.06.0 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make all opt
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/labltk.8.06.0
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/labltk.8.06.0/labltk-3631.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/labltk.8.06.0/labltk-3631.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/labltk.8.06.0/labltk-3631.out
+### stdout ###
+# [...]
+# gcc: error: cltkVar.o: No such file or directory
+# gcc: error: cltkWait.o: No such file or directory
+# gcc: error: cltkImg.o: No such file or directory
+# gcc: fatal error: no input files
+# compilation terminated.
+# Makefile:38: recipe for target 'liblabltk.a' failed
+# make[1]: *** [liblabltk.a] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/labltk.8.06.0/support'
+# Makefile:25: recipe for target 'all' failed
+# make: *** [all] Error 2
+### stderr ###
+# [...]
+# gcc: error: cltkVar.o: No such file or directory
+# gcc: error: cltkWait.o: No such file or directory
+# gcc: error: cltkImg.o: No such file or directory
+# gcc: fatal error: no input files
+# compilation terminated.
+# Makefile:38: recipe for target 'liblabltk.a' failed
+# make[1]: *** [liblabltk.a] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/labltk.8.06.0/support'
+# Makefile:25: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install labltk 8.06.0
+No changes have been performed
+
+=-=- labltk.8.06.0 troubleshooting =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package requires Tcl/Tk with its development packages installed on your
+   system
+'opam install labltk.8.06.0' failed.

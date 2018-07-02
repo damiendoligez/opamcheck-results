@@ -1,0 +1,143 @@
+The following actions will be performed:
+  - install cpdf 2.2.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cpdf: http] Command started
+[cpdf: http] Command started
+[cpdf.2.2.1] https://github.com/johnwhitington/cpdf-source/archive/v2.2.1.zip downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cpdf: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/cpdf.2.2.1)
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/cpdf.2.2.1'
+- ocamlfind ocamldep -native cpdfcommand.mli > ._ncdi/cpdfcommand.di
+- ocamlfind ocamldep -native cpdf.mli > ._ncdi/cpdf.di
+- ocamlfind ocamldep -native cpdfstrftime.mli > ._ncdi/cpdfstrftime.di
+- ocamlfind ocamldep -native xmlm.mli > ._ncdi/xmlm.di
+- ocamlfind ocamldep cpdfcommandrun.ml > ._d/cpdfcommandrun.d
+- ocamlfind ocamldep cpdfcommand.ml > ._d/cpdfcommand.d
+- ocamlfind ocamldep cpdf.ml > ._d/cpdf.d
+- ocamlfind ocamldep cpdfstrftime.ml > ._d/cpdfstrftime.d
+- ocamlfind ocamldep xmlm.ml > ._d/xmlm.d
+- ocamlfind ocamlc -package camlpdf -c -annot xmlm.mli
+- ocamlfind ocamlopt -package camlpdf -c -annot -g -w -3 -annot xmlm.ml
+- File "xmlm.ml", line 965, characters 19-47:
+- Error: This expression has type string -> int -> int -> unit
+-        but an expression was expected of type bytes -> int -> int -> unit
+-        Type string is not compatible with type bytes 
+- OCamlMakefile:1076: recipe for target 'xmlm.cmx' failed
+- make[1]: *** [xmlm.cmx] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/cpdf.2.2.1'
+- OCamlMakefile:777: recipe for target 'native-code' failed
+- make: *** [native-code] Error 2
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/cpdf.2.2.1'
+- ocamlfind ocamldep -native cpdfcommand.mli > ._ncdi/cpdfcommand.di
+- ocamlfind ocamldep -native cpdf.mli > ._ncdi/cpdf.di
+- ocamlfind ocamldep -native cpdfstrftime.mli > ._ncdi/cpdfstrftime.di
+- ocamlfind ocamldep -native xmlm.mli > ._ncdi/xmlm.di
+- ocamlfind ocamldep cpdfcommandrun.ml > ._d/cpdfcommandrun.d
+- ocamlfind ocamldep cpdfcommand.ml > ._d/cpdfcommand.d
+- ocamlfind ocamldep cpdf.ml > ._d/cpdf.d
+- ocamlfind ocamldep cpdfstrftime.ml > ._d/cpdfstrftime.d
+- ocamlfind ocamldep xmlm.ml > ._d/xmlm.d
+- ocamlfind ocamlc -package camlpdf -c -annot xmlm.mli
+- ocamlfind ocamlopt -package camlpdf -c -annot -g -w -3 -annot xmlm.ml
+- File "xmlm.ml", line 965, characters 19-47:
+- Error: This expression has type string -> int -> int -> unit
+-        but an expression was expected of type bytes -> int -> int -> unit
+-        Type string is not compatible with type bytes 
+- OCamlMakefile:1076: recipe for target 'xmlm.cmx' failed
+- make[1]: *** [xmlm.cmx] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/cpdf.2.2.1'
+- OCamlMakefile:777: recipe for target 'native-code' failed
+- make: *** [native-code] Error 2
+[ERROR] The compilation of cpdf failed at "make".
+[cpdf: ocamlfind remove] Command started
++ ocamlfind "remove" "cpdf" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/cpdf.2.2.1)
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/cpdf.2.2.1'
+- ocamlfind ocamldep -native cpdfcommand.mli > ._ncdi/cpdfcommand.di
+- ocamlfind ocamldep -native cpdf.mli > ._ncdi/cpdf.di
+- ocamlfind ocamldep -native cpdfstrftime.mli > ._ncdi/cpdfstrftime.di
+- ocamlfind ocamldep -native xmlm.mli > ._ncdi/xmlm.di
+- ocamlfind ocamldep cpdfcommandrun.ml > ._d/cpdfcommandrun.d
+- ocamlfind ocamldep cpdfcommand.ml > ._d/cpdfcommand.d
+- ocamlfind ocamldep cpdf.ml > ._d/cpdf.d
+- ocamlfind ocamldep cpdfstrftime.ml > ._d/cpdfstrftime.d
+- ocamlfind ocamldep xmlm.ml > ._d/xmlm.d
+- ocamlfind ocamlc -package camlpdf -c -annot xmlm.mli
+- ocamlfind ocamlopt -package camlpdf -c -annot -g -w -3 -annot xmlm.ml
+- File "xmlm.ml", line 965, characters 19-47:
+- Error: This expression has type string -> int -> int -> unit
+-        but an expression was expected of type bytes -> int -> int -> unit
+-        Type string is not compatible with type bytes 
+- OCamlMakefile:1076: recipe for target 'xmlm.cmx' failed
+- make[1]: *** [xmlm.cmx] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/cpdf.2.2.1'
+- OCamlMakefile:777: recipe for target 'native-code' failed
+- make: *** [native-code] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/cpdf/META
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/cpdf.2.2.1'
+- ocamlfind ocamldep -native cpdfcommand.mli > ._ncdi/cpdfcommand.di
+- ocamlfind ocamldep -native cpdf.mli > ._ncdi/cpdf.di
+- ocamlfind ocamldep -native cpdfstrftime.mli > ._ncdi/cpdfstrftime.di
+- ocamlfind ocamldep -native xmlm.mli > ._ncdi/xmlm.di
+- ocamlfind ocamldep cpdfcommandrun.ml > ._d/cpdfcommandrun.d
+- ocamlfind ocamldep cpdfcommand.ml > ._d/cpdfcommand.d
+- ocamlfind ocamldep cpdf.ml > ._d/cpdf.d
+- ocamlfind ocamldep cpdfstrftime.ml > ._d/cpdfstrftime.d
+- ocamlfind ocamldep xmlm.ml > ._d/xmlm.d
+- ocamlfind ocamlc -package camlpdf -c -annot xmlm.mli
+- ocamlfind ocamlopt -package camlpdf -c -annot -g -w -3 -annot xmlm.ml
+- File "xmlm.ml", line 965, characters 19-47:
+- Error: This expression has type string -> int -> int -> unit
+-        but an expression was expected of type bytes -> int -> int -> unit
+-        Type string is not compatible with type bytes 
+- OCamlMakefile:1076: recipe for target 'xmlm.cmx' failed
+- make[1]: *** [xmlm.cmx] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/cpdf.2.2.1'
+- OCamlMakefile:777: recipe for target 'native-code' failed
+- make: *** [native-code] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/cpdf/META
+
+#=== ERROR while installing cpdf.2.2.1 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/cpdf.2.2.1
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/cpdf.2.2.1/cpdf-10862.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/cpdf.2.2.1/cpdf-10862.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/cpdf.2.2.1/cpdf-10862.out
+### stdout ###
+# [...]
+# ocamlfind ocamlopt -package camlpdf -c -annot -g -w -3 -annot xmlm.ml
+# File "xmlm.ml", line 965, characters 19-47:
+# Error: This expression has type string -> int -> int -> unit
+#        but an expression was expected of type bytes -> int -> int -> unit
+#        Type string is not compatible with type bytes 
+# OCamlMakefile:1076: recipe for target 'xmlm.cmx' failed
+# make[1]: *** [xmlm.cmx] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/cpdf.2.2.1'
+# OCamlMakefile:777: recipe for target 'native-code' failed
+# make: *** [native-code] Error 2
+### stderr ###
+# [...]
+# ocamlfind ocamlopt -package camlpdf -c -annot -g -w -3 -annot xmlm.ml
+# File "xmlm.ml", line 965, characters 19-47:
+# Error: This expression has type string -> int -> int -> unit
+#        but an expression was expected of type bytes -> int -> int -> unit
+#        Type string is not compatible with type bytes 
+# OCamlMakefile:1076: recipe for target 'xmlm.cmx' failed
+# make[1]: *** [xmlm.cmx] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/cpdf.2.2.1'
+# OCamlMakefile:777: recipe for target 'native-code' failed
+# make: *** [native-code] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install cpdf 2.2.1
+No changes have been performed
+'opam install cpdf.2.2.1' failed.

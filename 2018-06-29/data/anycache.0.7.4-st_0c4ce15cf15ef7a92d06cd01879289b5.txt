@@ -1,0 +1,42 @@
+The following actions will be performed:
+  - install anycache 0.7.4
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[anycache: http] Command started
+[anycache: http] Command started
+[anycache.0.7.4] https://gitlab.com/edwintorok/ocaml-anycache/uploads/47d27fb2e3ac835994d7b546872b12cb/anycache-0.7.4.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[anycache: jbuilder build] Command started
++ jbuilder "build" "-p" "anycache" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/anycache.0.7.4)
+- File "_build/.jbuilds/default/test/lwt/jbuild", line 11, characters 3-10:
+- Error: Unknown field package
+- File "_build/.jbuilds/default/test/lwt/jbuild", line 11, characters 3-10:
+- Error: Unknown field package
+[ERROR] The compilation of anycache failed at "jbuilder build -p anycache -j
+        4".
+
+#=== ERROR while installing anycache.0.7.4 ====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p anycache -j 4
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/anycache.0.7.4
+# compiler             4.07.0+rc2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/anycache.0.7.4/anycache-25376.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/anycache.0.7.4/anycache-25376.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/anycache.0.7.4/anycache-25376.out
+### stdout ###
+# File "_build/.jbuilds/default/test/lwt/jbuild", line 11, characters 3-10:
+# Error: Unknown field package
+### stderr ###
+# File "_build/.jbuilds/default/test/lwt/jbuild", line 11, characters 3-10:
+# Error: Unknown field package
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install anycache 0.7.4
+No changes have been performed
+'opam install anycache.0.7.4' failed.

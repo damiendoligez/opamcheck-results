@@ -1,0 +1,78 @@
+The following actions will be performed:
+  - install nosetup 0.8.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[nosetup: http] Command started
+[nosetup: http] Command started
+[nosetup.0.8.1] https://github.com/Leonidas-from-XIV/nosetup/releases/download/v0.8.1/nosetup-0.8.1.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[nosetup: ocaml build] Command started
++ ocaml "pkg/pkg.ml" "build" "--pinned" "false" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/nosetup.0.8.1)
+- ocamlfind ocamldep -package angstrom -package containers -package findlib -modules src/nosetup.ml > src/nosetup.ml.depends
+- ocamlfind ocamldep -package angstrom -package containers -package findlib -modules src/merlin_parser.ml > src/merlin_parser.ml.depends
+- ocamlfind ocamlc -c -g -package angstrom -package containers -package findlib -I src -o src/merlin_parser.cmo src/merlin_parser.ml
+- ocamlfind ocamlc -c -g -package angstrom -package containers -package findlib -I src -o src/nosetup.cmo src/nosetup.ml
+- + ocamlfind ocamlc -c -g -package angstrom -package containers -package findlib -I src -o src/nosetup.cmo src/nosetup.ml
+- File "src/nosetup.ml", line 20, characters 2-12:
+- Error: Unbound module IO
+- Command exited with code 2.
+- pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+-      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+-      'README.md' 'src/nosetup.cma']: exited with 10
+- ocamlfind ocamldep -package angstrom -package containers -package findlib -modules src/nosetup.ml > src/nosetup.ml.depends
+- ocamlfind ocamldep -package angstrom -package containers -package findlib -modules src/merlin_parser.ml > src/merlin_parser.ml.depends
+- ocamlfind ocamlc -c -g -package angstrom -package containers -package findlib -I src -o src/merlin_parser.cmo src/merlin_parser.ml
+- ocamlfind ocamlc -c -g -package angstrom -package containers -package findlib -I src -o src/nosetup.cmo src/nosetup.ml
+- + ocamlfind ocamlc -c -g -package angstrom -package containers -package findlib -I src -o src/nosetup.cmo src/nosetup.ml
+- File "src/nosetup.ml", line 20, characters 2-12:
+- Error: Unbound module IO
+- Command exited with code 2.
+- pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+-      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+-      'README.md' 'src/nosetup.cma']: exited with 10
+[ERROR] The compilation of nosetup failed at "ocaml pkg/pkg.ml build --pinned
+        false".
+
+#=== ERROR while installing nosetup.0.8.1 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml pkg/pkg.ml build --pinned false
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/nosetup.0.8.1
+# compiler             4.07.0+rc2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/nosetup.0.8.1/nosetup-15365.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/nosetup.0.8.1/nosetup-15365.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/nosetup.0.8.1/nosetup-15365.out
+### stdout ###
+# [...]
+# ocamlfind ocamldep -package angstrom -package containers -package findlib -modules src/merlin_parser.ml > src/merlin_parser.ml.depends
+# ocamlfind ocamlc -c -g -package angstrom -package containers -package findlib -I src -o src/merlin_parser.cmo src/merlin_parser.ml
+# ocamlfind ocamlc -c -g -package angstrom -package containers -package findlib -I src -o src/nosetup.cmo src/nosetup.ml
+# + ocamlfind ocamlc -c -g -package angstrom -package containers -package findlib -I src -o src/nosetup.cmo src/nosetup.ml
+# File "src/nosetup.ml", line 20, characters 2-12:
+# Error: Unbound module IO
+# Command exited with code 2.
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+#      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+#      'README.md' 'src/nosetup.cma']: exited with 10
+### stderr ###
+# [...]
+# ocamlfind ocamldep -package angstrom -package containers -package findlib -modules src/merlin_parser.ml > src/merlin_parser.ml.depends
+# ocamlfind ocamlc -c -g -package angstrom -package containers -package findlib -I src -o src/merlin_parser.cmo src/merlin_parser.ml
+# ocamlfind ocamlc -c -g -package angstrom -package containers -package findlib -I src -o src/nosetup.cmo src/nosetup.ml
+# + ocamlfind ocamlc -c -g -package angstrom -package containers -package findlib -I src -o src/nosetup.cmo src/nosetup.ml
+# File "src/nosetup.ml", line 20, characters 2-12:
+# Error: Unbound module IO
+# Command exited with code 2.
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+#      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+#      'README.md' 'src/nosetup.cma']: exited with 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install nosetup 0.8.1
+No changes have been performed
+'opam install nosetup.0.8.1' failed.

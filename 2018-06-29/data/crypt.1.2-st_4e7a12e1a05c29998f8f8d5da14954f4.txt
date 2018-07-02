@@ -1,0 +1,249 @@
+The following actions will be performed:
+  - install crypt 1.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[crypt: http] Command started
+[crypt: http] Command started
+[crypt.1.2] https://github.com/vbmithr/ocaml-crypt/archive/1.2.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[crypt: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2)
+- cd lib && make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- ocamldep -native crypt.mli > ._ncdi/crypt.di
+- ocamldep crypt.ml > ._d/crypt.d
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -cc "cc" -ccopt "-fPIC  \
+- 			-DPIC -DNATIVE_CODE   \
+- 			    -o crypt_stubs.o " crypt_stubs.c
+- ar rcs libcrypt_stubs.a  crypt_stubs.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c crypt.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c crypt.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -a -cclib -lcrypt_stubs           -ccopt -lcrypt     -o crypt.cmxa crypt.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- ocamldep crypt.mli > ._bcdi/crypt.di
+- make[2]: 'libcrypt_stubs.a' is up to date.
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c crypt.ml
+- ocamlmklib         \
+- 			-o crypt_stubs  crypt_stubs.o   \
+- 			-lcrypt
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -a -cclib -lcrypt_stubs    -dllib dllcrypt_stubs.so       -ccopt -lcrypt      -o crypt.cma crypt.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- cd test && make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+- ocamldep -I ../lib test.ml > ._d/test.d
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -I ../lib test.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt \
+- 			  \
+- 			     -I ../lib          crypt.cmxa -o test.opt \
+- 			test.cmx
+- ../lib/libcrypt_stubs.a(crypt_stubs.o): In function `crypt_raw':
+- crypt_stubs.c:(.text+0x82): undefined reference to `crypt'
+- ../lib/libcrypt_stubs.a(crypt_stubs.o): In function `crypt_md5':
+- crypt_stubs.c:(.text+0x241): undefined reference to `crypt'
+- collect2: error: ld returned 1 exit status
+- File "caml_startup", line 1:
+- Error: Error during linking
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-makefile/OCamlMakefile:952: recipe for target 'test.opt' failed
+- make[2]: *** [test.opt] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-makefile/OCamlMakefile:777: recipe for target 'native-code' failed
+- make[1]: *** [native-code] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+- Makefile:2: recipe for target 'all' failed
+- make: *** [all] Error 2
+- cd lib && make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- ocamldep -native crypt.mli > ._ncdi/crypt.di
+- ocamldep crypt.ml > ._d/crypt.d
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -cc "cc" -ccopt "-fPIC  \
+- 			-DPIC -DNATIVE_CODE   \
+- 			    -o crypt_stubs.o " crypt_stubs.c
+- ar rcs libcrypt_stubs.a  crypt_stubs.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c crypt.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c crypt.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -a -cclib -lcrypt_stubs           -ccopt -lcrypt     -o crypt.cmxa crypt.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- ocamldep crypt.mli > ._bcdi/crypt.di
+- make[2]: 'libcrypt_stubs.a' is up to date.
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c crypt.ml
+- ocamlmklib         \
+- 			-o crypt_stubs  crypt_stubs.o   \
+- 			-lcrypt
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -a -cclib -lcrypt_stubs    -dllib dllcrypt_stubs.so       -ccopt -lcrypt      -o crypt.cma crypt.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- cd test && make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+- ocamldep -I ../lib test.ml > ._d/test.d
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -I ../lib test.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt \
+- 			  \
+- 			     -I ../lib          crypt.cmxa -o test.opt \
+- 			test.cmx
+- ../lib/libcrypt_stubs.a(crypt_stubs.o): In function `crypt_raw':
+- crypt_stubs.c:(.text+0x82): undefined reference to `crypt'
+- ../lib/libcrypt_stubs.a(crypt_stubs.o): In function `crypt_md5':
+- crypt_stubs.c:(.text+0x241): undefined reference to `crypt'
+- collect2: error: ld returned 1 exit status
+- File "caml_startup", line 1:
+- Error: Error during linking
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-makefile/OCamlMakefile:952: recipe for target 'test.opt' failed
+- make[2]: *** [test.opt] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-makefile/OCamlMakefile:777: recipe for target 'native-code' failed
+- make[1]: *** [native-code] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+- Makefile:2: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of crypt failed at "make".
+[crypt: make uninstall] Command started
++ make "uninstall" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2)
+- cd lib && make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- ocamldep -native crypt.mli > ._ncdi/crypt.di
+- ocamldep crypt.ml > ._d/crypt.d
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -cc "cc" -ccopt "-fPIC  \
+- 			-DPIC -DNATIVE_CODE   \
+- 			    -o crypt_stubs.o " crypt_stubs.c
+- ar rcs libcrypt_stubs.a  crypt_stubs.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c crypt.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c crypt.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -a -cclib -lcrypt_stubs           -ccopt -lcrypt     -o crypt.cmxa crypt.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- ocamldep crypt.mli > ._bcdi/crypt.di
+- make[2]: 'libcrypt_stubs.a' is up to date.
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c crypt.ml
+- ocamlmklib         \
+- 			-o crypt_stubs  crypt_stubs.o   \
+- 			-lcrypt
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -a -cclib -lcrypt_stubs    -dllib dllcrypt_stubs.so       -ccopt -lcrypt      -o crypt.cma crypt.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- cd test && make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+- ocamldep -I ../lib test.ml > ._d/test.d
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -I ../lib test.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt \
+- 			  \
+- 			     -I ../lib          crypt.cmxa -o test.opt \
+- 			test.cmx
+- ../lib/libcrypt_stubs.a(crypt_stubs.o): In function `crypt_raw':
+- crypt_stubs.c:(.text+0x82): undefined reference to `crypt'
+- ../lib/libcrypt_stubs.a(crypt_stubs.o): In function `crypt_md5':
+- crypt_stubs.c:(.text+0x241): undefined reference to `crypt'
+- collect2: error: ld returned 1 exit status
+- File "caml_startup", line 1:
+- Error: Error during linking
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-makefile/OCamlMakefile:952: recipe for target 'test.opt' failed
+- make[2]: *** [test.opt] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-makefile/OCamlMakefile:777: recipe for target 'native-code' failed
+- make[1]: *** [native-code] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+- Makefile:2: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ocamlfind remove crypt
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/crypt/META
+- cd lib && make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- ocamldep -native crypt.mli > ._ncdi/crypt.di
+- ocamldep crypt.ml > ._d/crypt.d
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -cc "cc" -ccopt "-fPIC  \
+- 			-DPIC -DNATIVE_CODE   \
+- 			    -o crypt_stubs.o " crypt_stubs.c
+- ar rcs libcrypt_stubs.a  crypt_stubs.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c crypt.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c crypt.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -a -cclib -lcrypt_stubs           -ccopt -lcrypt     -o crypt.cmxa crypt.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- ocamldep crypt.mli > ._bcdi/crypt.di
+- make[2]: 'libcrypt_stubs.a' is up to date.
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c crypt.ml
+- ocamlmklib         \
+- 			-o crypt_stubs  crypt_stubs.o   \
+- 			-lcrypt
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -a -cclib -lcrypt_stubs    -dllib dllcrypt_stubs.so       -ccopt -lcrypt      -o crypt.cma crypt.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/lib'
+- cd test && make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+- ocamldep -I ../lib test.ml > ._d/test.d
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -I ../lib test.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt \
+- 			  \
+- 			     -I ../lib          crypt.cmxa -o test.opt \
+- 			test.cmx
+- ../lib/libcrypt_stubs.a(crypt_stubs.o): In function `crypt_raw':
+- crypt_stubs.c:(.text+0x82): undefined reference to `crypt'
+- ../lib/libcrypt_stubs.a(crypt_stubs.o): In function `crypt_md5':
+- crypt_stubs.c:(.text+0x241): undefined reference to `crypt'
+- collect2: error: ld returned 1 exit status
+- File "caml_startup", line 1:
+- Error: Error during linking
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-makefile/OCamlMakefile:952: recipe for target 'test.opt' failed
+- make[2]: *** [test.opt] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-makefile/OCamlMakefile:777: recipe for target 'native-code' failed
+- make[1]: *** [native-code] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+- Makefile:2: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ocamlfind remove crypt
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/crypt/META
+
+#=== ERROR while installing crypt.1.2 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/crypt-18029.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/crypt-18029.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/crypt-18029.out
+### stdout ###
+# [...]
+# File "caml_startup", line 1:
+# Error: Error during linking
+# /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-makefile/OCamlMakefile:952: recipe for target 'test.opt' failed
+# make[2]: *** [test.opt] Error 2
+# make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+# /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-makefile/OCamlMakefile:777: recipe for target 'native-code' failed
+# make[1]: *** [native-code] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+# Makefile:2: recipe for target 'all' failed
+# make: *** [all] Error 2
+### stderr ###
+# [...]
+# File "caml_startup", line 1:
+# Error: Error during linking
+# /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-makefile/OCamlMakefile:952: recipe for target 'test.opt' failed
+# make[2]: *** [test.opt] Error 2
+# make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+# /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-makefile/OCamlMakefile:777: recipe for target 'native-code' failed
+# make[1]: *** [native-code] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/crypt.1.2/test'
+# Makefile:2: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install crypt 1.2
+No changes have been performed
+'opam install crypt.1.2' failed.

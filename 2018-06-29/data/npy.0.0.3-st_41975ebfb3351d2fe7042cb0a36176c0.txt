@@ -1,0 +1,81 @@
+The following actions will be performed:
+  - install npy 0.0.3
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[npy: http] Command started
+[npy: http] Command started
+[npy.0.0.3] https://github.com/LaurentMazare/npy-ocaml/archive/0.0.4.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[npy: make npy.lib] Command started
++ make "npy.lib" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/npy.0.0.3)
+- ocamlbuild npy.cmxa npy.cma npy.cmxs npy.cmx
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamldep -modules src/npy.ml > src/npy.ml.depends
+- ocamlfind ocamldep -modules src/npy.mli > src/npy.mli.depends
+- ocamlfind ocamlc -c -for-pack Npy -warn-error A-4-29-40-41-42-44-45-48-56-58 -w A-4-29-40-41-42-44-45-48-56-58 -I src -o src/npy.cmi src/npy.mli
+- ocamlfind ocamlopt -c -for-pack Npy -warn-error A-4-29-40-41-42-44-45-48-56-58 -w A-4-29-40-41-42-44-45-48-56-58 -I src -o src/npy.cmx src/npy.ml
+- + ocamlfind ocamlopt -c -for-pack Npy -warn-error A-4-29-40-41-42-44-45-48-56-58 -w A-4-29-40-41-42-44-45-48-56-58 -I src -o src/npy.cmx src/npy.ml
+- File "src/npy.ml", line 94, characters 29-40:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Command exited with code 2.
+- Makefile:2: recipe for target 'npy.lib' failed
+- make: *** [npy.lib] Error 10
+- ocamlbuild npy.cmxa npy.cma npy.cmxs npy.cmx
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamldep -modules src/npy.ml > src/npy.ml.depends
+- ocamlfind ocamldep -modules src/npy.mli > src/npy.mli.depends
+- ocamlfind ocamlc -c -for-pack Npy -warn-error A-4-29-40-41-42-44-45-48-56-58 -w A-4-29-40-41-42-44-45-48-56-58 -I src -o src/npy.cmi src/npy.mli
+- ocamlfind ocamlopt -c -for-pack Npy -warn-error A-4-29-40-41-42-44-45-48-56-58 -w A-4-29-40-41-42-44-45-48-56-58 -I src -o src/npy.cmx src/npy.ml
+- + ocamlfind ocamlopt -c -for-pack Npy -warn-error A-4-29-40-41-42-44-45-48-56-58 -w A-4-29-40-41-42-44-45-48-56-58 -I src -o src/npy.cmx src/npy.ml
+- File "src/npy.ml", line 94, characters 29-40:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Command exited with code 2.
+- Makefile:2: recipe for target 'npy.lib' failed
+- make: *** [npy.lib] Error 10
+[ERROR] The compilation of npy failed at "make npy.lib".
+
+#=== ERROR while installing npy.0.0.3 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make npy.lib
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/npy.0.0.3
+# compiler             4.06.1
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/npy.0.0.3/npy-25664.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/npy.0.0.3/npy-25664.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/npy.0.0.3/npy-25664.out
+### stdout ###
+# [...]
+# ocamlfind ocamldep -modules src/npy.mli > src/npy.mli.depends
+# ocamlfind ocamlc -c -for-pack Npy -warn-error A-4-29-40-41-42-44-45-48-56-58 -w A-4-29-40-41-42-44-45-48-56-58 -I src -o src/npy.cmi src/npy.mli
+# ocamlfind ocamlopt -c -for-pack Npy -warn-error A-4-29-40-41-42-44-45-48-56-58 -w A-4-29-40-41-42-44-45-48-56-58 -I src -o src/npy.cmx src/npy.ml
+# + ocamlfind ocamlopt -c -for-pack Npy -warn-error A-4-29-40-41-42-44-45-48-56-58 -w A-4-29-40-41-42-44-45-48-56-58 -I src -o src/npy.cmx src/npy.ml
+# File "src/npy.ml", line 94, characters 29-40:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Command exited with code 2.
+# Makefile:2: recipe for target 'npy.lib' failed
+# make: *** [npy.lib] Error 10
+### stderr ###
+# [...]
+# ocamlfind ocamldep -modules src/npy.mli > src/npy.mli.depends
+# ocamlfind ocamlc -c -for-pack Npy -warn-error A-4-29-40-41-42-44-45-48-56-58 -w A-4-29-40-41-42-44-45-48-56-58 -I src -o src/npy.cmi src/npy.mli
+# ocamlfind ocamlopt -c -for-pack Npy -warn-error A-4-29-40-41-42-44-45-48-56-58 -w A-4-29-40-41-42-44-45-48-56-58 -I src -o src/npy.cmx src/npy.ml
+# + ocamlfind ocamlopt -c -for-pack Npy -warn-error A-4-29-40-41-42-44-45-48-56-58 -w A-4-29-40-41-42-44-45-48-56-58 -I src -o src/npy.cmx src/npy.ml
+# File "src/npy.ml", line 94, characters 29-40:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Command exited with code 2.
+# Makefile:2: recipe for target 'npy.lib' failed
+# make: *** [npy.lib] Error 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install npy 0.0.3
+No changes have been performed
+'opam install npy.0.0.3' failed.

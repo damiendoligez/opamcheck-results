@@ -1,0 +1,295 @@
+The following actions will be performed:
+  - install ocp-ocamlres 0.3
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocp-ocamlres: http] Command started
+[ocp-ocamlres: http] Command started
+[ocp-ocamlres.0.3] https://github.com/OCamlPro/ocp-ocamlres/archive/v0.3.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocp-ocamlres: make all] Command started
++ make "all" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ocp-ocamlres.0.3)
+- ocamlfind ocamldep -I src -package unix,str,pprint,dynlink src/oCamlRes.ml src/oCamlResScanners.ml src/oCamlResSubFormats.ml src/oCamlResFormats.ml src/oCamlResRegistry.ml > .depend
+- sed -i.old s/src/build/g .depend
+- mkdir build
+- cp src/oCamlRes.mli  build/oCamlRes.mli
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlRes.mli
+- cp src/oCamlRes.ml  build/oCamlRes.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlRes.ml
+- cp src/oCamlResScanners.ml  build/oCamlResScanners.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlResScanners.ml
+- File "build/oCamlResScanners.ml", line 111, characters 21-34:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- cp src/oCamlResSubFormats.ml  build/oCamlResSubFormats.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlResSubFormats.ml
+- File "build/oCamlResSubFormats.ml", line 157, characters 20-33:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "build/oCamlResSubFormats.ml", line 158, characters 12-25:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 158, characters 28-40:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 159, characters 12-37:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 159, characters 40-67:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 160, characters 43-44:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:53: recipe for target 'build/oCamlResSubFormats.cmo' failed
+- make: *** [build/oCamlResSubFormats.cmo] Error 2
+- rm build/oCamlRes.mli build/oCamlRes.ml build/oCamlResSubFormats.ml build/oCamlResScanners.ml
+- ocamlfind ocamldep -I src -package unix,str,pprint,dynlink src/oCamlRes.ml src/oCamlResScanners.ml src/oCamlResSubFormats.ml src/oCamlResFormats.ml src/oCamlResRegistry.ml > .depend
+- sed -i.old s/src/build/g .depend
+- mkdir build
+- cp src/oCamlRes.mli  build/oCamlRes.mli
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlRes.mli
+- cp src/oCamlRes.ml  build/oCamlRes.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlRes.ml
+- cp src/oCamlResScanners.ml  build/oCamlResScanners.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlResScanners.ml
+- File "build/oCamlResScanners.ml", line 111, characters 21-34:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- cp src/oCamlResSubFormats.ml  build/oCamlResSubFormats.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlResSubFormats.ml
+- File "build/oCamlResSubFormats.ml", line 157, characters 20-33:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "build/oCamlResSubFormats.ml", line 158, characters 12-25:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 158, characters 28-40:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 159, characters 12-37:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 159, characters 40-67:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 160, characters 43-44:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:53: recipe for target 'build/oCamlResSubFormats.cmo' failed
+- make: *** [build/oCamlResSubFormats.cmo] Error 2
+- rm build/oCamlRes.mli build/oCamlRes.ml build/oCamlResSubFormats.ml build/oCamlResScanners.ml
+[ERROR] The compilation of ocp-ocamlres failed at "make all".
+[ocp-ocamlres: make uninstall] Command started
++ make "BINDIR=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin" "LIBDIR=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib" "uninstall" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ocp-ocamlres.0.3)
+- ocamlfind ocamldep -I src -package unix,str,pprint,dynlink src/oCamlRes.ml src/oCamlResScanners.ml src/oCamlResSubFormats.ml src/oCamlResFormats.ml src/oCamlResRegistry.ml > .depend
+- sed -i.old s/src/build/g .depend
+- mkdir build
+- cp src/oCamlRes.mli  build/oCamlRes.mli
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlRes.mli
+- cp src/oCamlRes.ml  build/oCamlRes.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlRes.ml
+- cp src/oCamlResScanners.ml  build/oCamlResScanners.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlResScanners.ml
+- File "build/oCamlResScanners.ml", line 111, characters 21-34:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- cp src/oCamlResSubFormats.ml  build/oCamlResSubFormats.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlResSubFormats.ml
+- File "build/oCamlResSubFormats.ml", line 157, characters 20-33:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "build/oCamlResSubFormats.ml", line 158, characters 12-25:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 158, characters 28-40:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 159, characters 12-37:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 159, characters 40-67:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 160, characters 43-44:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:53: recipe for target 'build/oCamlResSubFormats.cmo' failed
+- make: *** [build/oCamlResSubFormats.cmo] Error 2
+- rm build/oCamlRes.mli build/oCamlRes.ml build/oCamlResSubFormats.ml build/oCamlResScanners.ml
+- ocamlfind remove -destdir /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib ocplib-ocamlres
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocplib-ocamlres/META
+- rm /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocp-ocamlres
+- rm: cannot remove '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocp-ocamlres': No such file or directory
+- Makefile:93: recipe for target 'uninstall' failed
+- make: *** [uninstall] Error 1
+- ocamlfind ocamldep -I src -package unix,str,pprint,dynlink src/oCamlRes.ml src/oCamlResScanners.ml src/oCamlResSubFormats.ml src/oCamlResFormats.ml src/oCamlResRegistry.ml > .depend
+- sed -i.old s/src/build/g .depend
+- mkdir build
+- cp src/oCamlRes.mli  build/oCamlRes.mli
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlRes.mli
+- cp src/oCamlRes.ml  build/oCamlRes.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlRes.ml
+- cp src/oCamlResScanners.ml  build/oCamlResScanners.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlResScanners.ml
+- File "build/oCamlResScanners.ml", line 111, characters 21-34:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- cp src/oCamlResSubFormats.ml  build/oCamlResSubFormats.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlResSubFormats.ml
+- File "build/oCamlResSubFormats.ml", line 157, characters 20-33:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "build/oCamlResSubFormats.ml", line 158, characters 12-25:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 158, characters 28-40:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 159, characters 12-37:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 159, characters 40-67:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 160, characters 43-44:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:53: recipe for target 'build/oCamlResSubFormats.cmo' failed
+- make: *** [build/oCamlResSubFormats.cmo] Error 2
+- rm build/oCamlRes.mli build/oCamlRes.ml build/oCamlResSubFormats.ml build/oCamlResScanners.ml
+- ocamlfind remove -destdir /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib ocplib-ocamlres
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocplib-ocamlres/META
+- rm /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocp-ocamlres
+- rm: cannot remove '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocp-ocamlres': No such file or directory
+- Makefile:93: recipe for target 'uninstall' failed
+- make: *** [uninstall] Error 1
+[ocp-ocamlres: make uninstall-doc] Command started
++ make "DOCDIR=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/doc" "uninstall-doc" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ocp-ocamlres.0.3)
+- ocamlfind ocamldep -I src -package unix,str,pprint,dynlink src/oCamlRes.ml src/oCamlResScanners.ml src/oCamlResSubFormats.ml src/oCamlResFormats.ml src/oCamlResRegistry.ml > .depend
+- sed -i.old s/src/build/g .depend
+- mkdir build
+- cp src/oCamlRes.mli  build/oCamlRes.mli
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlRes.mli
+- cp src/oCamlRes.ml  build/oCamlRes.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlRes.ml
+- cp src/oCamlResScanners.ml  build/oCamlResScanners.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlResScanners.ml
+- File "build/oCamlResScanners.ml", line 111, characters 21-34:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- cp src/oCamlResSubFormats.ml  build/oCamlResSubFormats.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlResSubFormats.ml
+- File "build/oCamlResSubFormats.ml", line 157, characters 20-33:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "build/oCamlResSubFormats.ml", line 158, characters 12-25:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 158, characters 28-40:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 159, characters 12-37:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 159, characters 40-67:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 160, characters 43-44:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:53: recipe for target 'build/oCamlResSubFormats.cmo' failed
+- make: *** [build/oCamlResSubFormats.cmo] Error 2
+- rm build/oCamlRes.mli build/oCamlRes.ml build/oCamlResSubFormats.ml build/oCamlResScanners.ml
+- ocamlfind remove -destdir /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib ocplib-ocamlres
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocplib-ocamlres/META
+- rm /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocp-ocamlres
+- rm: cannot remove '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocp-ocamlres': No such file or directory
+- Makefile:93: recipe for target 'uninstall' failed
+- make: *** [uninstall] Error 1
+- rm -f -rf /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/doc/ocp-ocamlres
+- ocamlfind ocamldep -I src -package unix,str,pprint,dynlink src/oCamlRes.ml src/oCamlResScanners.ml src/oCamlResSubFormats.ml src/oCamlResFormats.ml src/oCamlResRegistry.ml > .depend
+- sed -i.old s/src/build/g .depend
+- mkdir build
+- cp src/oCamlRes.mli  build/oCamlRes.mli
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlRes.mli
+- cp src/oCamlRes.ml  build/oCamlRes.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlRes.ml
+- cp src/oCamlResScanners.ml  build/oCamlResScanners.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlResScanners.ml
+- File "build/oCamlResScanners.ml", line 111, characters 21-34:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- cp src/oCamlResSubFormats.ml  build/oCamlResSubFormats.ml
+- ocamlfind ocamlc -I build -g -bin-annot -c -package unix,str,pprint,dynlink build/oCamlResSubFormats.ml
+- File "build/oCamlResSubFormats.ml", line 157, characters 20-33:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "build/oCamlResSubFormats.ml", line 158, characters 12-25:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 158, characters 28-40:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 159, characters 12-37:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 159, characters 40-67:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "build/oCamlResSubFormats.ml", line 160, characters 43-44:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:53: recipe for target 'build/oCamlResSubFormats.cmo' failed
+- make: *** [build/oCamlResSubFormats.cmo] Error 2
+- rm build/oCamlRes.mli build/oCamlRes.ml build/oCamlResSubFormats.ml build/oCamlResScanners.ml
+- ocamlfind remove -destdir /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib ocplib-ocamlres
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocplib-ocamlres/META
+- rm /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocp-ocamlres
+- rm: cannot remove '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocp-ocamlres': No such file or directory
+- Makefile:93: recipe for target 'uninstall' failed
+- make: *** [uninstall] Error 1
+- rm -f -rf /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/doc/ocp-ocamlres
+
+#=== ERROR while installing ocp-ocamlres.0.3 ==================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make all
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ocp-ocamlres.0.3
+# compiler             4.06.1
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ocp-ocamlres.0.3/ocp-ocamlres-15978.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ocp-ocamlres.0.3/ocp-ocamlres-15978.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ocp-ocamlres.0.3/ocp-ocamlres-15978.out
+### stdout ###
+# [...]
+# Use Bytes.set instead.
+# File "build/oCamlResSubFormats.ml", line 159, characters 40-67:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "build/oCamlResSubFormats.ml", line 160, characters 43-44:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:53: recipe for target 'build/oCamlResSubFormats.cmo' failed
+# make: *** [build/oCamlResSubFormats.cmo] Error 2
+# rm build/oCamlRes.mli build/oCamlRes.ml build/oCamlResSubFormats.ml build/oCamlResScanners.ml
+### stderr ###
+# [...]
+# Use Bytes.set instead.
+# File "build/oCamlResSubFormats.ml", line 159, characters 40-67:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "build/oCamlResSubFormats.ml", line 160, characters 43-44:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:53: recipe for target 'build/oCamlResSubFormats.cmo' failed
+# make: *** [build/oCamlResSubFormats.cmo] Error 2
+# rm build/oCamlRes.mli build/oCamlRes.ml build/oCamlResSubFormats.ml build/oCamlResScanners.ml
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ocp-ocamlres 0.3
+No changes have been performed
+'opam install ocp-ocamlres.0.3' failed.

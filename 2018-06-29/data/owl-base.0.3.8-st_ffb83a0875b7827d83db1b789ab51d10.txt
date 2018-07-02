@@ -1,0 +1,42 @@
+The following actions will be performed:
+  - install owl-base 0.3.8
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owl-base: http] Command started
+[owl-base: http] Command started
+[owl-base.0.3.8] https://github.com/owlbarn/owl/releases/download/0.3.8/owl-base-0.3.8.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owl-base: jbuilder build] Command started
++ jbuilder "build" "-p" "owl-base" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/owl-base.0.3.8)
+- File "src/base/jbuild", line 3, characters 0-21:
+- Error: Unknown constructor copy_files#
+- File "src/base/jbuild", line 3, characters 0-21:
+- Error: Unknown constructor copy_files#
+[ERROR] The compilation of owl-base failed at "jbuilder build -p owl-base -j
+        4".
+
+#=== ERROR while installing owl-base.0.3.8 ====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p owl-base -j 4
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/owl-base.0.3.8
+# compiler             4.06.1
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/owl-base.0.3.8/owl-base-29422.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/owl-base.0.3.8/owl-base-29422.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/owl-base.0.3.8/owl-base-29422.out
+### stdout ###
+# File "src/base/jbuild", line 3, characters 0-21:
+# Error: Unknown constructor copy_files#
+### stderr ###
+# File "src/base/jbuild", line 3, characters 0-21:
+# Error: Unknown constructor copy_files#
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install owl-base 0.3.8
+No changes have been performed
+'opam install owl-base.0.3.8' failed.

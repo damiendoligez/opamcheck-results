@@ -1,0 +1,123 @@
+The following actions will be performed:
+  - install pomap 4.0.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pomap: http] Command started
+[pomap: http] Command started
+[pomap.4.0.0] https://github.com/mmottl/pomap/releases/download/4.0.0/pomap-4.0.0.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pomap: jbuilder build] Command started
++ jbuilder "build" "-p" "pomap" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/pomap.4.0.0)
+-       ocamlc src/.pomap.objs/pomap__Store_impl.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -w -9 -safe-string -strict-sequence -principal -short-paths -g -bin-annot -I src/.pomap.objs -no-alias-deps -open Pomap -o src/.pomap.objs/pomap__Store_impl.cmo -c -impl src/store_impl.ml)
+- File "src/store_impl.ml", line 104, characters 24-29:
+- Error: Signature mismatch:
+-        ...
+-        In module Set:
+-        The value `of_seq' is required but not provided
+-        File "set.mli", line 277, characters 4-31: Expected declaration
+-        In module Set:
+-        The value `add_seq' is required but not provided
+-        File "set.mli", line 273, characters 4-37: Expected declaration
+-        In module Set:
+-        The value `to_seq' is required but not provided
+-        File "set.mli", line 269, characters 4-31: Expected declaration
+-        In module Set:
+-        The value `to_seq_from' is required but not provided
+-        File "set.mli", line 264, characters 4-43: Expected declaration
+-     ocamlopt src/.pomap.objs/pomap__Store_impl.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -w -40 -w -9 -safe-string -strict-sequence -principal -short-paths -g -I src/.pomap.objs -no-alias-deps -open Pomap -o src/.pomap.objs/pomap__Store_impl.cmx -c -impl src/store_impl.ml)
+- File "src/store_impl.ml", line 104, characters 24-29:
+- Error: Signature mismatch:
+-        ...
+-        In module Set:
+-        The value `of_seq' is required but not provided
+-        File "set.mli", line 277, characters 4-31: Expected declaration
+-        In module Set:
+-        The value `add_seq' is required but not provided
+-        File "set.mli", line 273, characters 4-37: Expected declaration
+-        In module Set:
+-        The value `to_seq' is required but not provided
+-        File "set.mli", line 269, characters 4-31: Expected declaration
+-        In module Set:
+-        The value `to_seq_from' is required but not provided
+-        File "set.mli", line 264, characters 4-43: Expected declaration
+-       ocamlc src/.pomap.objs/pomap__Store_impl.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -w -9 -safe-string -strict-sequence -principal -short-paths -g -bin-annot -I src/.pomap.objs -no-alias-deps -open Pomap -o src/.pomap.objs/pomap__Store_impl.cmo -c -impl src/store_impl.ml)
+- File "src/store_impl.ml", line 104, characters 24-29:
+- Error: Signature mismatch:
+-        ...
+-        In module Set:
+-        The value `of_seq' is required but not provided
+-        File "set.mli", line 277, characters 4-31: Expected declaration
+-        In module Set:
+-        The value `add_seq' is required but not provided
+-        File "set.mli", line 273, characters 4-37: Expected declaration
+-        In module Set:
+-        The value `to_seq' is required but not provided
+-        File "set.mli", line 269, characters 4-31: Expected declaration
+-        In module Set:
+-        The value `to_seq_from' is required but not provided
+-        File "set.mli", line 264, characters 4-43: Expected declaration
+-     ocamlopt src/.pomap.objs/pomap__Store_impl.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -w -40 -w -9 -safe-string -strict-sequence -principal -short-paths -g -I src/.pomap.objs -no-alias-deps -open Pomap -o src/.pomap.objs/pomap__Store_impl.cmx -c -impl src/store_impl.ml)
+- File "src/store_impl.ml", line 104, characters 24-29:
+- Error: Signature mismatch:
+-        ...
+-        In module Set:
+-        The value `of_seq' is required but not provided
+-        File "set.mli", line 277, characters 4-31: Expected declaration
+-        In module Set:
+-        The value `add_seq' is required but not provided
+-        File "set.mli", line 273, characters 4-37: Expected declaration
+-        In module Set:
+-        The value `to_seq' is required but not provided
+-        File "set.mli", line 269, characters 4-31: Expected declaration
+-        In module Set:
+-        The value `to_seq_from' is required but not provided
+-        File "set.mli", line 264, characters 4-43: Expected declaration
+[ERROR] The compilation of pomap failed at "jbuilder build -p pomap -j 4".
+
+#=== ERROR while installing pomap.4.0.0 =======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p pomap -j 4
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/pomap.4.0.0
+# compiler             4.07.0+rc2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/pomap.4.0.0/pomap-14141.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/pomap.4.0.0/pomap-14141.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/pomap.4.0.0/pomap-14141.out
+### stdout ###
+# Error: Signature mismatch:
+# [...]
+#        In module Set:
+#        The value `add_seq' is required but not provided
+#        File "set.mli", line 273, characters 4-37: Expected declaration
+#        In module Set:
+#        The value `to_seq' is required but not provided
+#        File "set.mli", line 269, characters 4-31: Expected declaration
+#        In module Set:
+#        The value `to_seq_from' is required but not provided
+#        File "set.mli", line 264, characters 4-43: Expected declaration
+### stderr ###
+# Error: Signature mismatch:
+# [...]
+#        In module Set:
+#        The value `add_seq' is required but not provided
+#        File "set.mli", line 273, characters 4-37: Expected declaration
+#        In module Set:
+#        The value `to_seq' is required but not provided
+#        File "set.mli", line 269, characters 4-31: Expected declaration
+#        In module Set:
+#        The value `to_seq_from' is required but not provided
+#        File "set.mli", line 264, characters 4-43: Expected declaration
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install pomap 4.0.0
+No changes have been performed
+'opam install pomap.4.0.0' failed.

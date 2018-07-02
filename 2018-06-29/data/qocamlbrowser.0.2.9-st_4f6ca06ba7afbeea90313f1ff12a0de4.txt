@@ -1,0 +1,1960 @@
+The following actions will be performed:
+  - install qocamlbrowser 0.2.9
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[qocamlbrowser: http] Command started
+[qocamlbrowser: http] Command started
+[qocamlbrowser.0.2.9] https://github.com/Kakadu/QOcamlBrowser_quick/archive/0.2.9.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[qocamlbrowser: sh] Command started
++ sh "-exc" "PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:$PATH ./configure" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/qocamlbrowser.0.2.9)
+- + PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin:/home/doligez/opamcheck/sandbox/bin:/home/doligez/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+- + ./configure
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/Controller.ml > src/Controller.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmo src/Controller.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmo src/Controller.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_fullPathChanged :
+-   cppobj -> string -> unit =
+-     "caml_controller_fullPathChanged_cppmeth_wrapper"
+- external stub_descrChanged :
+-   cppobj -> string -> unit = "caml_controller_descrChanged_cppmeth_wrapper"
+- external stub_hasDataChanged :
+-   cppobj -> bool -> unit = "caml_controller_hasDataChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_controller"
+- class virtual controller cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method virtual  onItemSelected : int -> int -> unit[@@qtmeth ]
+-     method virtual  setPaths : string list -> unit[@@qtmeth ]
+-     method virtual  linkActivated : string -> unit[@@qtmeth ]
+-     method virtual  paths : unit -> string list[@@qtmeth ]
+-     method virtual  backTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  forwardTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  getDefaultLibraryPath : unit -> string[@@qtmeth ]
+-     method emit_hasDataChanged = stub_hasDataChanged self#handler[@@qtprop ]
+-     method virtual  gethasData : unit -> bool[@@qtprop ]
+-     method emit_descrChanged = stub_descrChanged self#handler[@@qtprop ]
+-     method virtual  getdescr : unit -> string[@@qtprop ]
+-     method emit_fullPathChanged = stub_fullPathChanged self#handler[@@qtprop
+-                                                                     ]
+-     method virtual  getfullPath : unit -> string[@@qtprop ]
+-   end
+- external create_controller : unit -> 'a = "caml_create_controller"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmx src/Controller.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmx src/Controller.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_fullPathChanged :
+-   cppobj -> string -> unit =
+-     "caml_controller_fullPathChanged_cppmeth_wrapper"
+- external stub_descrChanged :
+-   cppobj -> string -> unit = "caml_controller_descrChanged_cppmeth_wrapper"
+- external stub_hasDataChanged :
+-   cppobj -> bool -> unit = "caml_controller_hasDataChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_controller"
+- class virtual controller cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method virtual  onItemSelected : int -> int -> unit[@@qtmeth ]
+-     method virtual  setPaths : string list -> unit[@@qtmeth ]
+-     method virtual  linkActivated : string -> unit[@@qtmeth ]
+-     method virtual  paths : unit -> string list[@@qtmeth ]
+-     method virtual  backTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  forwardTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  getDefaultLibraryPath : unit -> string[@@qtmeth ]
+-     method emit_hasDataChanged = stub_hasDataChanged self#handler[@@qtprop ]
+-     method virtual  gethasData : unit -> bool[@@qtprop ]
+-     method emit_descrChanged = stub_descrChanged self#handler[@@qtprop ]
+-     method virtual  getdescr : unit -> string[@@qtprop ]
+-     method emit_fullPathChanged = stub_fullPathChanged self#handler[@@qtprop
+-                                                                     ]
+-     method virtual  getfullPath : unit -> string[@@qtprop ]
+-   end
+- external create_controller : unit -> 'a = "caml_create_controller"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/DataItem.ml > src/DataItem.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmo src/DataItem.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmo src/DataItem.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_sortChanged :
+-   cppobj -> string -> unit = "caml_dataItem_sortChanged_cppmeth_wrapper"
+- external stub_nameChanged :
+-   cppobj -> string -> unit = "caml_dataItem_nameChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_dataItem"
+- class virtual dataItem cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_nameChanged = stub_nameChanged self#handler[@@qtprop ]
+-     method virtual  getname : unit -> string[@@qtprop ]
+-     method emit_sortChanged = stub_sortChanged self#handler[@@qtprop ]
+-     method virtual  getsort : unit -> string[@@qtprop ]
+-   end
+- external create_dataItem : unit -> 'a = "caml_create_dataItem"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmx src/DataItem.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmx src/DataItem.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_sortChanged :
+-   cppobj -> string -> unit = "caml_dataItem_sortChanged_cppmeth_wrapper"
+- external stub_nameChanged :
+-   cppobj -> string -> unit = "caml_dataItem_nameChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_dataItem"
+- class virtual dataItem cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_nameChanged = stub_nameChanged self#handler[@@qtprop ]
+-     method virtual  getname : unit -> string[@@qtprop ]
+-     method emit_sortChanged = stub_sortChanged self#handler[@@qtprop ]
+-     method virtual  getsort : unit -> string[@@qtprop ]
+-   end
+- external create_dataItem : unit -> 'a = "caml_create_dataItem"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/AbstractModel.ml > src/AbstractModel.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmo src/AbstractModel.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmo src/AbstractModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_hardcodedIndexChanged :
+-   cppobj -> int -> unit =
+-     "caml_abstractModel_hardcodedIndexChanged_cppmeth_wrapper"
+- external add_role :
+-   'a -> int -> string -> unit = "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_abstractModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_abstractModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_abstractModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_abstractModel"
+- class virtual abstractModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_hardcodedIndexChanged =
+-       stub_hardcodedIndexChanged self#handler[@@qtprop ]
+-     method virtual  gethardcodedIndex : unit -> int[@@qtprop ]
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_abstractModel : unit -> 'a = "caml_create_abstractModel"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmx src/AbstractModel.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmx src/AbstractModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_hardcodedIndexChanged :
+-   cppobj -> int -> unit =
+-     "caml_abstractModel_hardcodedIndexChanged_cppmeth_wrapper"
+- external add_role :
+-   'a -> int -> string -> unit = "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_abstractModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_abstractModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_abstractModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_abstractModel"
+- class virtual abstractModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_hardcodedIndexChanged =
+-       stub_hardcodedIndexChanged self#handler[@@qtprop ]
+-     method virtual  gethardcodedIndex : unit -> int[@@qtprop ]
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_abstractModel : unit -> 'a = "caml_create_abstractModel"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/HistoryModel.ml > src/HistoryModel.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmo src/HistoryModel.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmo src/HistoryModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external add_role :
+-   'a -> int -> string -> unit = "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_historyModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_historyModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_historyModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_historyModel"
+- class virtual historyModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_historyModel : unit -> 'a = "caml_create_historyModel"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmx src/HistoryModel.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmx src/HistoryModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external add_role :
+-   'a -> int -> string -> unit = "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_historyModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_historyModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_historyModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_historyModel"
+- class virtual historyModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_historyModel : unit -> 'a = "caml_create_historyModel"
+- + PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin:/home/doligez/opamcheck/sandbox/bin:/home/doligez/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+- + ./configure
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/Controller.ml > src/Controller.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmo src/Controller.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmo src/Controller.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_fullPathChanged :
+-   cppobj -> string -> unit =
+-     "caml_controller_fullPathChanged_cppmeth_wrapper"
+- external stub_descrChanged :
+-   cppobj -> string -> unit = "caml_controller_descrChanged_cppmeth_wrapper"
+- external stub_hasDataChanged :
+-   cppobj -> bool -> unit = "caml_controller_hasDataChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_controller"
+- class virtual controller cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method virtual  onItemSelected : int -> int -> unit[@@qtmeth ]
+-     method virtual  setPaths : string list -> unit[@@qtmeth ]
+-     method virtual  linkActivated : string -> unit[@@qtmeth ]
+-     method virtual  paths : unit -> string list[@@qtmeth ]
+-     method virtual  backTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  forwardTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  getDefaultLibraryPath : unit -> string[@@qtmeth ]
+-     method emit_hasDataChanged = stub_hasDataChanged self#handler[@@qtprop ]
+-     method virtual  gethasData : unit -> bool[@@qtprop ]
+-     method emit_descrChanged = stub_descrChanged self#handler[@@qtprop ]
+-     method virtual  getdescr : unit -> string[@@qtprop ]
+-     method emit_fullPathChanged = stub_fullPathChanged self#handler[@@qtprop
+-                                                                     ]
+-     method virtual  getfullPath : unit -> string[@@qtprop ]
+-   end
+- external create_controller : unit -> 'a = "caml_create_controller"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmx src/Controller.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmx src/Controller.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_fullPathChanged :
+-   cppobj -> string -> unit =
+-     "caml_controller_fullPathChanged_cppmeth_wrapper"
+- external stub_descrChanged :
+-   cppobj -> string -> unit = "caml_controller_descrChanged_cppmeth_wrapper"
+- external stub_hasDataChanged :
+-   cppobj -> bool -> unit = "caml_controller_hasDataChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_controller"
+- class virtual controller cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method virtual  onItemSelected : int -> int -> unit[@@qtmeth ]
+-     method virtual  setPaths : string list -> unit[@@qtmeth ]
+-     method virtual  linkActivated : string -> unit[@@qtmeth ]
+-     method virtual  paths : unit -> string list[@@qtmeth ]
+-     method virtual  backTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  forwardTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  getDefaultLibraryPath : unit -> string[@@qtmeth ]
+-     method emit_hasDataChanged = stub_hasDataChanged self#handler[@@qtprop ]
+-     method virtual  gethasData : unit -> bool[@@qtprop ]
+-     method emit_descrChanged = stub_descrChanged self#handler[@@qtprop ]
+-     method virtual  getdescr : unit -> string[@@qtprop ]
+-     method emit_fullPathChanged = stub_fullPathChanged self#handler[@@qtprop
+-                                                                     ]
+-     method virtual  getfullPath : unit -> string[@@qtprop ]
+-   end
+- external create_controller : unit -> 'a = "caml_create_controller"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/DataItem.ml > src/DataItem.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmo src/DataItem.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmo src/DataItem.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_sortChanged :
+-   cppobj -> string -> unit = "caml_dataItem_sortChanged_cppmeth_wrapper"
+- external stub_nameChanged :
+-   cppobj -> string -> unit = "caml_dataItem_nameChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_dataItem"
+- class virtual dataItem cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_nameChanged = stub_nameChanged self#handler[@@qtprop ]
+-     method virtual  getname : unit -> string[@@qtprop ]
+-     method emit_sortChanged = stub_sortChanged self#handler[@@qtprop ]
+-     method virtual  getsort : unit -> string[@@qtprop ]
+-   end
+- external create_dataItem : unit -> 'a = "caml_create_dataItem"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmx src/DataItem.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmx src/DataItem.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_sortChanged :
+-   cppobj -> string -> unit = "caml_dataItem_sortChanged_cppmeth_wrapper"
+- external stub_nameChanged :
+-   cppobj -> string -> unit = "caml_dataItem_nameChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_dataItem"
+- class virtual dataItem cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_nameChanged = stub_nameChanged self#handler[@@qtprop ]
+-     method virtual  getname : unit -> string[@@qtprop ]
+-     method emit_sortChanged = stub_sortChanged self#handler[@@qtprop ]
+-     method virtual  getsort : unit -> string[@@qtprop ]
+-   end
+- external create_dataItem : unit -> 'a = "caml_create_dataItem"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/AbstractModel.ml > src/AbstractModel.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmo src/AbstractModel.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmo src/AbstractModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_hardcodedIndexChanged :
+-   cppobj -> int -> unit =
+-     "caml_abstractModel_hardcodedIndexChanged_cppmeth_wrapper"
+- external add_role :
+-   'a -> int -> string -> unit = "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_abstractModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_abstractModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_abstractModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_abstractModel"
+- class virtual abstractModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_hardcodedIndexChanged =
+-       stub_hardcodedIndexChanged self#handler[@@qtprop ]
+-     method virtual  gethardcodedIndex : unit -> int[@@qtprop ]
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_abstractModel : unit -> 'a = "caml_create_abstractModel"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmx src/AbstractModel.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmx src/AbstractModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_hardcodedIndexChanged :
+-   cppobj -> int -> unit =
+-     "caml_abstractModel_hardcodedIndexChanged_cppmeth_wrapper"
+- external add_role :
+-   'a -> int -> string -> unit = "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_abstractModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_abstractModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_abstractModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_abstractModel"
+- class virtual abstractModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_hardcodedIndexChanged =
+-       stub_hardcodedIndexChanged self#handler[@@qtprop ]
+-     method virtual  gethardcodedIndex : unit -> int[@@qtprop ]
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_abstractModel : unit -> 'a = "caml_create_abstractModel"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/HistoryModel.ml > src/HistoryModel.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmo src/HistoryModel.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmo src/HistoryModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external add_role :
+-   'a -> int -> string -> unit = "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_historyModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_historyModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_historyModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_historyModel"
+- class virtual historyModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_historyModel : unit -> 'a = "caml_create_historyModel"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmx src/HistoryModel.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmx src/HistoryModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external add_role :
+-   'a -> int -> string -> unit = "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_historyModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_historyModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_historyModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_historyModel"
+- class virtual historyModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_historyModel : unit -> 'a = "caml_create_historyModel"
+[qocamlbrowser: sh] Command started
++ sh "-exc" "PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:$PATH make" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/qocamlbrowser.0.2.9)
+- + PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin:/home/doligez/opamcheck/sandbox/bin:/home/doligez/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+- + ./configure
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/Controller.ml > src/Controller.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmo src/Controller.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmo src/Controller.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_fullPathChanged :
+-   cppobj -> string -> unit =
+-     "caml_controller_fullPathChanged_cppmeth_wrapper"
+- external stub_descrChanged :
+-   cppobj -> string -> unit = "caml_controller_descrChanged_cppmeth_wrapper"
+- external stub_hasDataChanged :
+-   cppobj -> bool -> unit = "caml_controller_hasDataChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_controller"
+- class virtual controller cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method virtual  onItemSelected : int -> int -> unit[@@qtmeth ]
+-     method virtual  setPaths : string list -> unit[@@qtmeth ]
+-     method virtual  linkActivated : string -> unit[@@qtmeth ]
+-     method virtual  paths : unit -> string list[@@qtmeth ]
+-     method virtual  backTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  forwardTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  getDefaultLibraryPath : unit -> string[@@qtmeth ]
+-     method emit_hasDataChanged = stub_hasDataChanged self#handler[@@qtprop ]
+-     method virtual  gethasData : unit -> bool[@@qtprop ]
+-     method emit_descrChanged = stub_descrChanged self#handler[@@qtprop ]
+-     method virtual  getdescr : unit -> string[@@qtprop ]
+-     method emit_fullPathChanged = stub_fullPathChanged self#handler[@@qtprop
+-                                                                     ]
+-     method virtual  getfullPath : unit -> string[@@qtprop ]
+-   end
+- external create_controller : unit -> 'a = "caml_create_controller"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmx src/Controller.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmx src/Controller.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_fullPathChanged :
+-   cppobj -> string -> unit =
+-     "caml_controller_fullPathChanged_cppmeth_wrapper"
+- external stub_descrChanged :
+-   cppobj -> string -> unit = "caml_controller_descrChanged_cppmeth_wrapper"
+- external stub_hasDataChanged :
+-   cppobj -> bool -> unit = "caml_controller_hasDataChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_controller"
+- class virtual controller cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method virtual  onItemSelected : int -> int -> unit[@@qtmeth ]
+-     method virtual  setPaths : string list -> unit[@@qtmeth ]
+-     method virtual  linkActivated : string -> unit[@@qtmeth ]
+-     method virtual  paths : unit -> string list[@@qtmeth ]
+-     method virtual  backTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  forwardTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  getDefaultLibraryPath : unit -> string[@@qtmeth ]
+-     method emit_hasDataChanged = stub_hasDataChanged self#handler[@@qtprop ]
+-     method virtual  gethasData : unit -> bool[@@qtprop ]
+-     method emit_descrChanged = stub_descrChanged self#handler[@@qtprop ]
+-     method virtual  getdescr : unit -> string[@@qtprop ]
+-     method emit_fullPathChanged = stub_fullPathChanged self#handler[@@qtprop
+-                                                                     ]
+-     method virtual  getfullPath : unit -> string[@@qtprop ]
+-   end
+- external create_controller : unit -> 'a = "caml_create_controller"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/DataItem.ml > src/DataItem.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmo src/DataItem.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmo src/DataItem.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_sortChanged :
+-   cppobj -> string -> unit = "caml_dataItem_sortChanged_cppmeth_wrapper"
+- external stub_nameChanged :
+-   cppobj -> string -> unit = "caml_dataItem_nameChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_dataItem"
+- class virtual dataItem cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_nameChanged = stub_nameChanged self#handler[@@qtprop ]
+-     method virtual  getname : unit -> string[@@qtprop ]
+-     method emit_sortChanged = stub_sortChanged self#handler[@@qtprop ]
+-     method virtual  getsort : unit -> string[@@qtprop ]
+-   end
+- external create_dataItem : unit -> 'a = "caml_create_dataItem"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmx src/DataItem.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmx src/DataItem.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_sortChanged :
+-   cppobj -> string -> unit = "caml_dataItem_sortChanged_cppmeth_wrapper"
+- external stub_nameChanged :
+-   cppobj -> string -> unit = "caml_dataItem_nameChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_dataItem"
+- class virtual dataItem cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_nameChanged = stub_nameChanged self#handler[@@qtprop ]
+-     method virtual  getname : unit -> string[@@qtprop ]
+-     method emit_sortChanged = stub_sortChanged self#handler[@@qtprop ]
+-     method virtual  getsort : unit -> string[@@qtprop ]
+-   end
+- external create_dataItem : unit -> 'a = "caml_create_dataItem"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/AbstractModel.ml > src/AbstractModel.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmo src/AbstractModel.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmo src/AbstractModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_hardcodedIndexChanged :
+-   cppobj -> int -> unit =
+-     "caml_abstractModel_hardcodedIndexChanged_cppmeth_wrapper"
+- external add_role :
+-   'a -> int -> string -> unit = "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_abstractModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_abstractModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_abstractModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_abstractModel"
+- class virtual abstractModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_hardcodedIndexChanged =
+-       stub_hardcodedIndexChanged self#handler[@@qtprop ]
+-     method virtual  gethardcodedIndex : unit -> int[@@qtprop ]
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_abstractModel : unit -> 'a = "caml_create_abstractModel"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmx src/AbstractModel.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmx src/AbstractModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_hardcodedIndexChanged :
+-   cppobj -> int -> unit =
+-     "caml_abstractModel_hardcodedIndexChanged_cppmeth_wrapper"
+- external add_role :
+-   'a -> int -> string -> unit = "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_abstractModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_abstractModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_abstractModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_abstractModel"
+- class virtual abstractModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_hardcodedIndexChanged =
+-       stub_hardcodedIndexChanged self#handler[@@qtprop ]
+-     method virtual  gethardcodedIndex : unit -> int[@@qtprop ]
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_abstractModel : unit -> 'a = "caml_create_abstractModel"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/HistoryModel.ml > src/HistoryModel.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmo src/HistoryModel.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmo src/HistoryModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external add_role :
+-   'a -> int -> string -> unit = "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_historyModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_historyModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_historyModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_historyModel"
+- class virtual historyModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_historyModel : unit -> 'a = "caml_create_historyModel"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmx src/HistoryModel.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmx src/HistoryModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external add_role :
+-   'a -> int -> string -> unit = "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_historyModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_historyModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_historyModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_historyModel"
+- class virtual historyModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_historyModel : unit -> 'a = "caml_create_historyModel"
+- + PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin:/home/doligez/opamcheck/sandbox/bin:/home/doligez/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+- + make
+- ocamlbuild -use-ocamlfind  -j 2  src/moc_dataItem.c src/moc_controller.c src/moc_abstractModel.c src/moc_historyModel.c \
+-     src/qrc_resources.c src/libcppstubs.a src/program.native
+- moc src/dataItem.h > src/moc_dataItem.c
+- moc src/controller.h > src/moc_controller.c
+- moc src/abstractModel.h > src/moc_abstractModel.c
+- moc src/historyModel.h > src/moc_historyModel.c
+- rcc -name resources src/resources.qrc -o src/qrc_resources.c
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/dataItem_c.c
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/controller_c.c
+- mv dataItem_c.o src/dataItem_c.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/abstractModel_c.c
+- mv controller_c.o src/controller_c.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/historyModel_c.c
+- + PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin:/home/doligez/opamcheck/sandbox/bin:/home/doligez/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+- + ./configure
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/Controller.ml > src/Controller.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmo src/Controller.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmo src/Controller.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_fullPathChanged :
+-   cppobj -> string -> unit =
+-     "caml_controller_fullPathChanged_cppmeth_wrapper"
+- external stub_descrChanged :
+-   cppobj -> string -> unit = "caml_controller_descrChanged_cppmeth_wrapper"
+- external stub_hasDataChanged :
+-   cppobj -> bool -> unit = "caml_controller_hasDataChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_controller"
+- class virtual controller cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method virtual  onItemSelected : int -> int -> unit[@@qtmeth ]
+-     method virtual  setPaths : string list -> unit[@@qtmeth ]
+-     method virtual  linkActivated : string -> unit[@@qtmeth ]
+-     method virtual  paths : unit -> string list[@@qtmeth ]
+-     method virtual  backTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  forwardTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  getDefaultLibraryPath : unit -> string[@@qtmeth ]
+-     method emit_hasDataChanged = stub_hasDataChanged self#handler[@@qtprop ]
+-     method virtual  gethasData : unit -> bool[@@qtprop ]
+-     method emit_descrChanged = stub_descrChanged self#handler[@@qtprop ]
+-     method virtual  getdescr : unit -> string[@@qtprop ]
+-     method emit_fullPathChanged = stub_fullPathChanged self#handler[@@qtprop
+-                                                                     ]
+-     method virtual  getfullPath : unit -> string[@@qtprop ]
+-   end
+- external create_controller : unit -> 'a = "caml_create_controller"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmx src/Controller.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmx src/Controller.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_fullPathChanged :
+-   cppobj -> string -> unit =
+-     "caml_controller_fullPathChanged_cppmeth_wrapper"
+- external stub_descrChanged :
+-   cppobj -> string -> unit = "caml_controller_descrChanged_cppmeth_wrapper"
+- external stub_hasDataChanged :
+-   cppobj -> bool -> unit = "caml_controller_hasDataChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_controller"
+- class virtual controller cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method virtual  onItemSelected : int -> int -> unit[@@qtmeth ]
+-     method virtual  setPaths : string list -> unit[@@qtmeth ]
+-     method virtual  linkActivated : string -> unit[@@qtmeth ]
+-     method virtual  paths : unit -> string list[@@qtmeth ]
+-     method virtual  backTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  forwardTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  getDefaultLibraryPath : unit -> string[@@qtmeth ]
+-     method emit_hasDataChanged = stub_hasDataChanged self#handler[@@qtprop ]
+-     method virtual  gethasData : unit -> bool[@@qtprop ]
+-     method emit_descrChanged = stub_descrChanged self#handler[@@qtprop ]
+-     method virtual  getdescr : unit -> string[@@qtprop ]
+-     method emit_fullPathChanged = stub_fullPathChanged self#handler[@@qtprop
+-                                                                     ]
+-     method virtual  getfullPath : unit -> string[@@qtprop ]
+-   end
+- external create_controller : unit -> 'a = "caml_create_controller"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/DataItem.ml > src/DataItem.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmo src/DataItem.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmo src/DataItem.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_sortChanged :
+-   cppobj -> string -> unit = "caml_dataItem_sortChanged_cppmeth_wrapper"
+- external stub_nameChanged :
+-   cppobj -> string -> unit = "caml_dataItem_nameChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_dataItem"
+- class virtual dataItem cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_nameChanged = stub_nameChanged self#handler[@@qtprop ]
+-     method virtual  getname : unit -> string[@@qtprop ]
+-     method emit_sortChanged = stub_sortChanged self#handler[@@qtprop ]
+-     method virtual  getsort : unit -> string[@@qtprop ]
+-   end
+- external create_dataItem : unit -> 'a = "caml_create_dataItem"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmx src/DataItem.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmx src/DataItem.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_sortChanged :
+-   cppobj -> string -> unit = "caml_dataItem_sortChanged_cppmeth_wrapper"
+- external stub_nameChanged :
+-   cppobj -> string -> unit = "caml_dataItem_nameChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_dataItem"
+- class virtual dataItem cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_nameChanged = stub_nameChanged self#handler[@@qtprop ]
+-     method virtual  getname : unit -> string[@@qtprop ]
+-     method emit_sortChanged = stub_sortChanged self#handler[@@qtprop ]
+-     method virtual  getsort : unit -> string[@@qtprop ]
+-   end
+- external create_dataItem : unit -> 'a = "caml_create_dataItem"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/AbstractModel.ml > src/AbstractModel.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmo src/AbstractModel.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmo src/AbstractModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_hardcodedIndexChanged :
+-   cppobj -> int -> unit =
+-     "caml_abstractModel_hardcodedIndexChanged_cppmeth_wrapper"
+- external add_role :
+-   'a -> int -> string -> unit = "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_abstractModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_abstractModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_abstractModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_abstractModel"
+- class virtual abstractModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_hardcodedIndexChanged =
+-       stub_hardcodedIndexChanged self#handler[@@qtprop ]
+-     method virtual  gethardcodedIndex : unit -> int[@@qtprop ]
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_abstractModel : unit -> 'a = "caml_create_abstractModel"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmx src/AbstractModel.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmx src/AbstractModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_hardcodedIndexChanged :
+-   cppobj -> int -> unit =
+-     "caml_abstractModel_hardcodedIndexChanged_cppmeth_wrapper"
+- external add_role :
+-   'a -> int -> string -> unit = "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_abstractModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_abstractModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_abstractModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_abstractModel"
+- class virtual abstractModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_hardcodedIndexChanged =
+-       stub_hardcodedIndexChanged self#handler[@@qtprop ]
+-     method virtual  gethardcodedIndex : unit -> int[@@qtprop ]
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_abstractModel : unit -> 'a = "caml_create_abstractModel"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/HistoryModel.ml > src/HistoryModel.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmo src/HistoryModel.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmo src/HistoryModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external add_role :
+-   'a -> int -> string -> unit = "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_historyModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_historyModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_historyModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_historyModel"
+- class virtual historyModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_historyModel : unit -> 'a = "caml_create_historyModel"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmx src/HistoryModel.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmx src/HistoryModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external add_role :
+-   'a -> int -> string -> unit = "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_historyModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_historyModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_historyModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_historyModel"
+- class virtual historyModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_historyModel : unit -> 'a = "caml_create_historyModel"
+- + PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin:/home/doligez/opamcheck/sandbox/bin:/home/doligez/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+- + make
+- ocamlbuild -use-ocamlfind  -j 2  src/moc_dataItem.c src/moc_controller.c src/moc_abstractModel.c src/moc_historyModel.c \
+-     src/qrc_resources.c src/libcppstubs.a src/program.native
+- moc src/dataItem.h > src/moc_dataItem.c
+- moc src/controller.h > src/moc_controller.c
+- moc src/abstractModel.h > src/moc_abstractModel.c
+- moc src/historyModel.h > src/moc_historyModel.c
+- rcc -name resources src/resources.qrc -o src/qrc_resources.c
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/dataItem_c.c
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/controller_c.c
+- mv dataItem_c.o src/dataItem_c.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/abstractModel_c.c
+- mv controller_c.o src/controller_c.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/historyModel_c.c
+- mv abstractModel_c.o src/abstractModel_c.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/moc_dataItem.c
+- mv historyModel_c.o src/historyModel_c.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/moc_controller.c
+- mv abstractModel_c.o src/abstractModel_c.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/moc_dataItem.c
+- mv historyModel_c.o src/historyModel_c.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/moc_controller.c
+- mv moc_dataItem.o src/moc_dataItem.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/moc_abstractModel.c
+- mv moc_controller.o src/moc_controller.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/moc_historyModel.c
+- mv moc_dataItem.o src/moc_dataItem.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/moc_abstractModel.c
+- mv moc_controller.o src/moc_controller.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/moc_historyModel.c
+- mv moc_abstractModel.o src/moc_abstractModel.o
+- mv moc_historyModel.o src/moc_historyModel.o
+- ocamlfind ocamlmklib -o src/cppstubs src/dataItem_c.o src/controller_c.o src/abstractModel_c.o src/historyModel_c.o src/moc_dataItem.o src/moc_controller.o src/moc_abstractModel.o src/moc_historyModel.o
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/program.ml > src/program.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/helpers.ml > src/helpers.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/HistoryZipper.ml > src/HistoryZipper.ml.depends
+- ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/helpers.cmo src/helpers.ml
+- + ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/helpers.cmo src/helpers.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/Richify.ml > src/Richify.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/Comb.ml > src/Comb.ml.depends
+- ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Comb.cmo src/Comb.ml
+- + ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Comb.cmo src/Comb.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/S.ml > src/S.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/tree.ml > src/tree.ml.depends
+- ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/tree.cmo src/tree.ml
+- + ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/tree.cmo src/tree.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- File "src/tree.ml", line 16, characters 26-36:
+- Error: Unbound record field Ident.name
+- Command exited with code 2.
+- Makefile:9: recipe for target 'all' failed
+- make: *** [all] Error 10
+- mv moc_abstractModel.o src/moc_abstractModel.o
+- mv moc_historyModel.o src/moc_historyModel.o
+- ocamlfind ocamlmklib -o src/cppstubs src/dataItem_c.o src/controller_c.o src/abstractModel_c.o src/historyModel_c.o src/moc_dataItem.o src/moc_controller.o src/moc_abstractModel.o src/moc_historyModel.o
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/program.ml > src/program.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/helpers.ml > src/helpers.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/HistoryZipper.ml > src/HistoryZipper.ml.depends
+- ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/helpers.cmo src/helpers.ml
+- + ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/helpers.cmo src/helpers.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/Richify.ml > src/Richify.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/Comb.ml > src/Comb.ml.depends
+- ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Comb.cmo src/Comb.ml
+- + ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Comb.cmo src/Comb.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/S.ml > src/S.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/tree.ml > src/tree.ml.depends
+- ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/tree.cmo src/tree.ml
+- + ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/tree.cmo src/tree.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- File "src/tree.ml", line 16, characters 26-36:
+- Error: Unbound record field Ident.name
+- Command exited with code 2.
+- Makefile:9: recipe for target 'all' failed
+- make: *** [all] Error 10
+[ERROR] The compilation of qocamlbrowser failed at "sh -exc
+        PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:$PATH make".
+[qocamlbrowser: make uninstall] Command started
++ make "uninstall" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/qocamlbrowser.0.2.9)
+- + PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin:/home/doligez/opamcheck/sandbox/bin:/home/doligez/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+- + ./configure
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/Controller.ml > src/Controller.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmo src/Controller.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmo src/Controller.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_fullPathChanged :
+-   cppobj -> string -> unit =
+-     "caml_controller_fullPathChanged_cppmeth_wrapper"
+- external stub_descrChanged :
+-   cppobj -> string -> unit = "caml_controller_descrChanged_cppmeth_wrapper"
+- external stub_hasDataChanged :
+-   cppobj -> bool -> unit = "caml_controller_hasDataChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_controller"
+- class virtual controller cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method virtual  onItemSelected : int -> int -> unit[@@qtmeth ]
+-     method virtual  setPaths : string list -> unit[@@qtmeth ]
+-     method virtual  linkActivated : string -> unit[@@qtmeth ]
+-     method virtual  paths : unit -> string list[@@qtmeth ]
+-     method virtual  backTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  forwardTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  getDefaultLibraryPath : unit -> string[@@qtmeth ]
+-     method emit_hasDataChanged = stub_hasDataChanged self#handler[@@qtprop ]
+-     method virtual  gethasData : unit -> bool[@@qtprop ]
+-     method emit_descrChanged = stub_descrChanged self#handler[@@qtprop ]
+-     method virtual  getdescr : unit -> string[@@qtprop ]
+-     method emit_fullPathChanged = stub_fullPathChanged self#handler[@@qtprop
+-                                                                     ]
+-     method virtual  getfullPath : unit -> string[@@qtprop ]
+-   end
+- external create_controller : unit -> 'a = "caml_create_controller"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmx src/Controller.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmx src/Controller.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_fullPathChanged :
+-   cppobj -> string -> unit =
+-     "caml_controller_fullPathChanged_cppmeth_wrapper"
+- external stub_descrChanged :
+-   cppobj -> string -> unit = "caml_controller_descrChanged_cppmeth_wrapper"
+- external stub_hasDataChanged :
+-   cppobj -> bool -> unit = "caml_controller_hasDataChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_controller"
+- class virtual controller cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method virtual  onItemSelected : int -> int -> unit[@@qtmeth ]
+-     method virtual  setPaths : string list -> unit[@@qtmeth ]
+-     method virtual  linkActivated : string -> unit[@@qtmeth ]
+-     method virtual  paths : unit -> string list[@@qtmeth ]
+-     method virtual  backTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  forwardTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  getDefaultLibraryPath : unit -> string[@@qtmeth ]
+-     method emit_hasDataChanged = stub_hasDataChanged self#handler[@@qtprop ]
+-     method virtual  gethasData : unit -> bool[@@qtprop ]
+-     method emit_descrChanged = stub_descrChanged self#handler[@@qtprop ]
+-     method virtual  getdescr : unit -> string[@@qtprop ]
+-     method emit_fullPathChanged = stub_fullPathChanged self#handler[@@qtprop
+-                                                                     ]
+-     method virtual  getfullPath : unit -> string[@@qtprop ]
+-   end
+- external create_controller : unit -> 'a = "caml_create_controller"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/DataItem.ml > src/DataItem.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmo src/DataItem.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmo src/DataItem.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_sortChanged :
+-   cppobj -> string -> unit = "caml_dataItem_sortChanged_cppmeth_wrapper"
+- external stub_nameChanged :
+-   cppobj -> string -> unit = "caml_dataItem_nameChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_dataItem"
+- class virtual dataItem cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_nameChanged = stub_nameChanged self#handler[@@qtprop ]
+-     method virtual  getname : unit -> string[@@qtprop ]
+-     method emit_sortChanged = stub_sortChanged self#handler[@@qtprop ]
+-     method virtual  getsort : unit -> string[@@qtprop ]
+-   end
+- external create_dataItem : unit -> 'a = "caml_create_dataItem"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmx src/DataItem.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmx src/DataItem.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_sortChanged :
+-   cppobj -> string -> unit = "caml_dataItem_sortChanged_cppmeth_wrapper"
+- external stub_nameChanged :
+-   cppobj -> string -> unit = "caml_dataItem_nameChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_dataItem"
+- class virtual dataItem cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_nameChanged = stub_nameChanged self#handler[@@qtprop ]
+-     method virtual  getname : unit -> string[@@qtprop ]
+-     method emit_sortChanged = stub_sortChanged self#handler[@@qtprop ]
+-     method virtual  getsort : unit -> string[@@qtprop ]
+-   end
+- external create_dataItem : unit -> 'a = "caml_create_dataItem"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/AbstractModel.ml > src/AbstractModel.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmo src/AbstractModel.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmo src/AbstractModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_hardcodedIndexChanged :
+-   cppobj -> int -> unit =
+-     "caml_abstractModel_hardcodedIndexChanged_cppmeth_wrapper"
+- external add_role :
+-   'a -> int -> string -> unit = "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_abstractModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_abstractModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_abstractModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_abstractModel"
+- class virtual abstractModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_hardcodedIndexChanged =
+-       stub_hardcodedIndexChanged self#handler[@@qtprop ]
+-     method virtual  gethardcodedIndex : unit -> int[@@qtprop ]
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_abstractModel : unit -> 'a = "caml_create_abstractModel"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmx src/AbstractModel.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmx src/AbstractModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_hardcodedIndexChanged :
+-   cppobj -> int -> unit =
+-     "caml_abstractModel_hardcodedIndexChanged_cppmeth_wrapper"
+- external add_role :
+-   'a -> int -> string -> unit = "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_abstractModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_abstractModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_abstractModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_abstractModel"
+- class virtual abstractModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_hardcodedIndexChanged =
+-       stub_hardcodedIndexChanged self#handler[@@qtprop ]
+-     method virtual  gethardcodedIndex : unit -> int[@@qtprop ]
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_abstractModel : unit -> 'a = "caml_create_abstractModel"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/HistoryModel.ml > src/HistoryModel.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmo src/HistoryModel.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmo src/HistoryModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external add_role :
+-   'a -> int -> string -> unit = "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_historyModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_historyModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_historyModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_historyModel"
+- class virtual historyModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_historyModel : unit -> 'a = "caml_create_historyModel"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmx src/HistoryModel.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmx src/HistoryModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external add_role :
+-   'a -> int -> string -> unit = "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_historyModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_historyModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_historyModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_historyModel"
+- class virtual historyModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_historyModel : unit -> 'a = "caml_create_historyModel"
+- + PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin:/home/doligez/opamcheck/sandbox/bin:/home/doligez/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+- + make
+- ocamlbuild -use-ocamlfind  -j 2  src/moc_dataItem.c src/moc_controller.c src/moc_abstractModel.c src/moc_historyModel.c \
+-     src/qrc_resources.c src/libcppstubs.a src/program.native
+- moc src/dataItem.h > src/moc_dataItem.c
+- moc src/controller.h > src/moc_controller.c
+- moc src/abstractModel.h > src/moc_abstractModel.c
+- moc src/historyModel.h > src/moc_historyModel.c
+- rcc -name resources src/resources.qrc -o src/qrc_resources.c
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/dataItem_c.c
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/controller_c.c
+- mv dataItem_c.o src/dataItem_c.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/abstractModel_c.c
+- mv controller_c.o src/controller_c.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/historyModel_c.c
+- mv abstractModel_c.o src/abstractModel_c.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/moc_dataItem.c
+- mv historyModel_c.o src/historyModel_c.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/moc_controller.c
+- mv moc_dataItem.o src/moc_dataItem.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/moc_abstractModel.c
+- mv moc_controller.o src/moc_controller.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/moc_historyModel.c
+- mv moc_abstractModel.o src/moc_abstractModel.o
+- mv moc_historyModel.o src/moc_historyModel.o
+- ocamlfind ocamlmklib -o src/cppstubs src/dataItem_c.o src/controller_c.o src/abstractModel_c.o src/historyModel_c.o src/moc_dataItem.o src/moc_controller.o src/moc_abstractModel.o src/moc_historyModel.o
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/program.ml > src/program.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/helpers.ml > src/helpers.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/HistoryZipper.ml > src/HistoryZipper.ml.depends
+- ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/helpers.cmo src/helpers.ml
+- + ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/helpers.cmo src/helpers.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/Richify.ml > src/Richify.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/Comb.ml > src/Comb.ml.depends
+- ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Comb.cmo src/Comb.ml
+- + ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Comb.cmo src/Comb.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/S.ml > src/S.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/tree.ml > src/tree.ml.depends
+- ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/tree.cmo src/tree.ml
+- + ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/tree.cmo src/tree.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- File "src/tree.ml", line 16, characters 26-36:
+- Error: Unbound record field Ident.name
+- Command exited with code 2.
+- Makefile:9: recipe for target 'all' failed
+- make: *** [all] Error 10
+- rm -f -r /bin/qocamlbrowser
+- + PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin:/home/doligez/opamcheck/sandbox/bin:/home/doligez/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+- + ./configure
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/Controller.ml > src/Controller.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmo src/Controller.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmo src/Controller.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_fullPathChanged :
+-   cppobj -> string -> unit =
+-     "caml_controller_fullPathChanged_cppmeth_wrapper"
+- external stub_descrChanged :
+-   cppobj -> string -> unit = "caml_controller_descrChanged_cppmeth_wrapper"
+- external stub_hasDataChanged :
+-   cppobj -> bool -> unit = "caml_controller_hasDataChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_controller"
+- class virtual controller cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method virtual  onItemSelected : int -> int -> unit[@@qtmeth ]
+-     method virtual  setPaths : string list -> unit[@@qtmeth ]
+-     method virtual  linkActivated : string -> unit[@@qtmeth ]
+-     method virtual  paths : unit -> string list[@@qtmeth ]
+-     method virtual  backTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  forwardTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  getDefaultLibraryPath : unit -> string[@@qtmeth ]
+-     method emit_hasDataChanged = stub_hasDataChanged self#handler[@@qtprop ]
+-     method virtual  gethasData : unit -> bool[@@qtprop ]
+-     method emit_descrChanged = stub_descrChanged self#handler[@@qtprop ]
+-     method virtual  getdescr : unit -> string[@@qtprop ]
+-     method emit_fullPathChanged = stub_fullPathChanged self#handler[@@qtprop
+-                                                                     ]
+-     method virtual  getfullPath : unit -> string[@@qtprop ]
+-   end
+- external create_controller : unit -> 'a = "caml_create_controller"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmx src/Controller.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Controller.cmx src/Controller.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_fullPathChanged :
+-   cppobj -> string -> unit =
+-     "caml_controller_fullPathChanged_cppmeth_wrapper"
+- external stub_descrChanged :
+-   cppobj -> string -> unit = "caml_controller_descrChanged_cppmeth_wrapper"
+- external stub_hasDataChanged :
+-   cppobj -> bool -> unit = "caml_controller_hasDataChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_controller"
+- class virtual controller cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method virtual  onItemSelected : int -> int -> unit[@@qtmeth ]
+-     method virtual  setPaths : string list -> unit[@@qtmeth ]
+-     method virtual  linkActivated : string -> unit[@@qtmeth ]
+-     method virtual  paths : unit -> string list[@@qtmeth ]
+-     method virtual  backTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  forwardTo : string -> int -> unit[@@qtmeth ]
+-     method virtual  getDefaultLibraryPath : unit -> string[@@qtmeth ]
+-     method emit_hasDataChanged = stub_hasDataChanged self#handler[@@qtprop ]
+-     method virtual  gethasData : unit -> bool[@@qtprop ]
+-     method emit_descrChanged = stub_descrChanged self#handler[@@qtprop ]
+-     method virtual  getdescr : unit -> string[@@qtprop ]
+-     method emit_fullPathChanged = stub_fullPathChanged self#handler[@@qtprop
+-                                                                     ]
+-     method virtual  getfullPath : unit -> string[@@qtprop ]
+-   end
+- external create_controller : unit -> 'a = "caml_create_controller"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/DataItem.ml > src/DataItem.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmo src/DataItem.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmo src/DataItem.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_sortChanged :
+-   cppobj -> string -> unit = "caml_dataItem_sortChanged_cppmeth_wrapper"
+- external stub_nameChanged :
+-   cppobj -> string -> unit = "caml_dataItem_nameChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_dataItem"
+- class virtual dataItem cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_nameChanged = stub_nameChanged self#handler[@@qtprop ]
+-     method virtual  getname : unit -> string[@@qtprop ]
+-     method emit_sortChanged = stub_sortChanged self#handler[@@qtprop ]
+-     method virtual  getsort : unit -> string[@@qtprop ]
+-   end
+- external create_dataItem : unit -> 'a = "caml_create_dataItem"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmx src/DataItem.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/DataItem.cmx src/DataItem.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_sortChanged :
+-   cppobj -> string -> unit = "caml_dataItem_sortChanged_cppmeth_wrapper"
+- external stub_nameChanged :
+-   cppobj -> string -> unit = "caml_dataItem_nameChanged_cppmeth_wrapper"
+- external store : cppobj -> < .. >  -> unit = "caml_store_value_in_dataItem"
+- class virtual dataItem cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_nameChanged = stub_nameChanged self#handler[@@qtprop ]
+-     method virtual  getname : unit -> string[@@qtprop ]
+-     method emit_sortChanged = stub_sortChanged self#handler[@@qtprop ]
+-     method virtual  getsort : unit -> string[@@qtprop ]
+-   end
+- external create_dataItem : unit -> 'a = "caml_create_dataItem"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/AbstractModel.ml > src/AbstractModel.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmo src/AbstractModel.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmo src/AbstractModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_hardcodedIndexChanged :
+-   cppobj -> int -> unit =
+-     "caml_abstractModel_hardcodedIndexChanged_cppmeth_wrapper"
+- external add_role :
+-   'a -> int -> string -> unit = "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_abstractModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_abstractModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_abstractModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_abstractModel"
+- class virtual abstractModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_hardcodedIndexChanged =
+-       stub_hardcodedIndexChanged self#handler[@@qtprop ]
+-     method virtual  gethardcodedIndex : unit -> int[@@qtprop ]
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_abstractModel : unit -> 'a = "caml_create_abstractModel"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmx src/AbstractModel.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/AbstractModel.cmx src/AbstractModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external stub_hardcodedIndexChanged :
+-   cppobj -> int -> unit =
+-     "caml_abstractModel_hardcodedIndexChanged_cppmeth_wrapper"
+- external add_role :
+-   'a -> int -> string -> unit = "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_abstractModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_abstractModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_abstractModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_abstractModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_abstractModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_abstractModel"
+- class virtual abstractModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method emit_hardcodedIndexChanged =
+-       stub_hardcodedIndexChanged self#handler[@@qtprop ]
+-     method virtual  gethardcodedIndex : unit -> int[@@qtprop ]
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_abstractModel : unit -> 'a = "caml_create_abstractModel"
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/HistoryModel.ml > src/HistoryModel.ml.depends
+- ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmo src/HistoryModel.ml
+- + ocamlfind ocamlc -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmo src/HistoryModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external add_role :
+-   'a -> int -> string -> unit = "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_historyModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_historyModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_historyModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_historyModel"
+- class virtual historyModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_historyModel : unit -> 'a = "caml_create_historyModel"
+- ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmx src/HistoryModel.ml
+- + ocamlfind ocamlopt -c -g -thread -ppx 'ppx_qt --as-ppx -nocpp' -dsource -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/HistoryModel.cmx src/HistoryModel.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- open Lablqml
+- external add_role :
+-   'a -> int -> string -> unit = "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_addRole :
+-   cppobj -> int -> string -> unit =
+-     "caml_historyModel_addRole_cppmeth_wrapper"
+- external stub_endRemoveRows :
+-   cppobj -> unit = "caml_historyModel_endRemoveRows_cppmeth_wrapper"
+- external stub_beginRemoveRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginRemoveRows_cppmeth_wrapper"
+- external stub_endInsertRows :
+-   cppobj -> unit = "caml_historyModel_endInsertRows_cppmeth_wrapper"
+- external stub_beginInsertRows :
+-   cppobj -> QModelIndex.t -> int -> int -> unit =
+-     "caml_historyModel_beginInsertRows_cppmeth_wrapper"
+- external stub_dataChanged :
+-   cppobj -> QModelIndex.t -> QModelIndex.t -> unit =
+-     "caml_historyModel_dataChanged_cppmeth_wrapper"
+- external store :
+-   cppobj -> < .. >  -> unit = "caml_store_value_in_historyModel"
+- class virtual historyModel cppobj =
+-   object (self)
+-     initializer store cppobj self
+-     method handler = cppobj
+-     method dataChanged = stub_dataChanged cppobj
+-     method beginInsertRows = stub_beginInsertRows cppobj
+-     method endInsertRows = stub_endInsertRows cppobj
+-     method beginRemoveRows = stub_beginRemoveRows cppobj
+-     method endRemoveRows = stub_endRemoveRows cppobj
+-     method virtual  parent : QModelIndex.t -> QModelIndex.t
+-     method virtual  index : int -> int -> QModelIndex.t -> QModelIndex.t
+-     method virtual  columnCount : QModelIndex.t -> int
+-     method virtual  rowCount : QModelIndex.t -> int
+-     method virtual  hasChildren : QModelIndex.t -> bool
+-     method virtual  data : QModelIndex.t -> int -> QVariant.t
+-   end
+- external create_historyModel : unit -> 'a = "caml_create_historyModel"
+- + PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin:/home/doligez/opamcheck/sandbox/bin:/home/doligez/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+- + make
+- ocamlbuild -use-ocamlfind  -j 2  src/moc_dataItem.c src/moc_controller.c src/moc_abstractModel.c src/moc_historyModel.c \
+-     src/qrc_resources.c src/libcppstubs.a src/program.native
+- moc src/dataItem.h > src/moc_dataItem.c
+- moc src/controller.h > src/moc_controller.c
+- moc src/abstractModel.h > src/moc_abstractModel.c
+- moc src/historyModel.h > src/moc_historyModel.c
+- rcc -name resources src/resources.qrc -o src/qrc_resources.c
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/dataItem_c.c
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/controller_c.c
+- mv dataItem_c.o src/dataItem_c.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/abstractModel_c.c
+- mv controller_c.o src/controller_c.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/historyModel_c.c
+- mv abstractModel_c.o src/abstractModel_c.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/moc_dataItem.c
+- mv historyModel_c.o src/historyModel_c.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/moc_controller.c
+- mv moc_dataItem.o src/moc_dataItem.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/moc_abstractModel.c
+- mv moc_controller.o src/moc_controller.o
+- ocamlfind ocamlc -g -thread -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQuick -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtQml -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtGui -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -ccopt -I/usr/include/x86_64-linux-gnu/qt5/QtCore -ccopt -I/usr/include/x86_64-linux-gnu/qt5 -cc g++ -ccopt '-std=c++0x' -ccopt -fPIC -ccopt '-Dprotected=public' -package lablqml -ccopt -I. -c src/moc_historyModel.c
+- mv moc_abstractModel.o src/moc_abstractModel.o
+- mv moc_historyModel.o src/moc_historyModel.o
+- ocamlfind ocamlmklib -o src/cppstubs src/dataItem_c.o src/controller_c.o src/abstractModel_c.o src/historyModel_c.o src/moc_dataItem.o src/moc_controller.o src/moc_abstractModel.o src/moc_historyModel.o
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/program.ml > src/program.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/helpers.ml > src/helpers.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/HistoryZipper.ml > src/HistoryZipper.ml.depends
+- ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/helpers.cmo src/helpers.ml
+- + ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/helpers.cmo src/helpers.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/Richify.ml > src/Richify.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/Comb.ml > src/Comb.ml.depends
+- ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Comb.cmo src/Comb.ml
+- + ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/Comb.cmo src/Comb.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/S.ml > src/S.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/tree.ml > src/tree.ml.depends
+- ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/tree.cmo src/tree.ml
+- + ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/tree.cmo src/tree.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- File "src/tree.ml", line 16, characters 26-36:
+- Error: Unbound record field Ident.name
+- Command exited with code 2.
+- Makefile:9: recipe for target 'all' failed
+- make: *** [all] Error 10
+- rm -f -r /bin/qocamlbrowser
+
+#=== ERROR while installing qocamlbrowser.0.2.9 ===============================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              sh -exc PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:$PATH make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/qocamlbrowser.0.2.9
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/qocamlbrowser.0.2.9/qocamlbrowser-13291.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/qocamlbrowser.0.2.9/qocamlbrowser-13291.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/qocamlbrowser.0.2.9/qocamlbrowser-13291.out
+### stdout ###
+# [...]
+# ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/S.ml > src/S.ml.depends
+# ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/tree.ml > src/tree.ml.depends
+# ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/tree.cmo src/tree.ml
+# + ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/tree.cmo src/tree.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+# File "src/tree.ml", line 16, characters 26-36:
+# Error: Unbound record field Ident.name
+# Command exited with code 2.
+# Makefile:9: recipe for target 'all' failed
+# make: *** [all] Error 10
+### stderr ###
+# [...]
+# ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/S.ml > src/S.ml.depends
+# ocamlfind ocamldep -package compiler-libs.common -package str -package lablqml -modules src/tree.ml > src/tree.ml.depends
+# ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/tree.cmo src/tree.ml
+# + ocamlfind ocamlc -c -g -thread -package compiler-libs.common -package str -package lablqml -w @6 -I src -o src/tree.cmo src/tree.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+# File "src/tree.ml", line 16, characters 26-36:
+# Error: Unbound record field Ident.name
+# Command exited with code 2.
+# Makefile:9: recipe for target 'all' failed
+# make: *** [all] Error 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install qocamlbrowser 0.2.9
+No changes have been performed
+'opam install qocamlbrowser.0.2.9' failed.

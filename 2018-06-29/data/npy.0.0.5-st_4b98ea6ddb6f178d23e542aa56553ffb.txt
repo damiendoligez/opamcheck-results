@@ -1,0 +1,94 @@
+The following actions will be performed:
+  - install npy 0.0.5
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[npy: http] Command started
+[npy: http] Command started
+[npy.0.0.5] https://github.com/LaurentMazare/npy-ocaml/archive/0.0.6.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[npy: jbuilder build] Command started
++ jbuilder "build" "--only-packages" "npy" "--root" "." "-j" "4" "@install" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/npy.0.0.5)
+- Workspace root: .
+- Running[0]: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -config > /tmp/jbuild9bdc4f.output
+- Running[1]: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlfind printconf path > /tmp/jbuild2c2ba8.output
+- Running[2]: /home/doligez/bin/opam config var lib > /tmp/jbuild757d6a.output
+- Actual targets:
+- - alias install
+- Running[3]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules src/npy.ml) > _build/default/src/npy.depends.ocamldep-output
+- Running[4]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules src/npy.mli) > _build/default/src/npy.dependsi.ocamldep-output
+- Running[5]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -no-alias-deps -I src -o src/npy.cmi -c -intf src/npy.mli)
+- Running[6]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -no-alias-deps -I src -o src/npy.cmo -c -impl src/npy.ml)
+- Running[7]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -w -40 -g -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -no-alias-deps -I src -o src/npy.cmx -c -impl src/npy.ml)
+- 
+- Command [6] exited with code 2:
+- $ (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -no-alias-deps -I src -o src/npy.cmo -c -impl src/npy.ml)
+- File "src/npy.ml", line 94, characters 29-40:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- 
+- Waiting for the following jobs to finish: [7]
+- Workspace root: .
+- Running[0]: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -config > /tmp/jbuild9bdc4f.output
+- Running[1]: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlfind printconf path > /tmp/jbuild2c2ba8.output
+- Running[2]: /home/doligez/bin/opam config var lib > /tmp/jbuild757d6a.output
+- Actual targets:
+- - alias install
+- Running[3]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules src/npy.ml) > _build/default/src/npy.depends.ocamldep-output
+- Running[4]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules src/npy.mli) > _build/default/src/npy.dependsi.ocamldep-output
+- Running[5]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -no-alias-deps -I src -o src/npy.cmi -c -intf src/npy.mli)
+- Running[6]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -no-alias-deps -I src -o src/npy.cmo -c -impl src/npy.ml)
+- Running[7]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -w -40 -g -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -no-alias-deps -I src -o src/npy.cmx -c -impl src/npy.ml)
+- 
+- Command [6] exited with code 2:
+- $ (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -no-alias-deps -I src -o src/npy.cmo -c -impl src/npy.ml)
+- File "src/npy.ml", line 94, characters 29-40:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- 
+- Waiting for the following jobs to finish: [7]
+[ERROR] The compilation of npy failed at "jbuilder build --only-packages npy
+        --root . -j 4 @install".
+
+#=== ERROR while installing npy.0.0.5 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build --only-packages npy --root . -j 4 @install
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/npy.0.0.5
+# compiler             4.07.0+rc2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/npy.0.0.5/npy-30950.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/npy.0.0.5/npy-30950.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/npy.0.0.5/npy-30950.out
+### stdout ###
+# [...]
+# Running[6]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -no-alias-deps -I src -o src/npy.cmo -c -impl src/npy.ml)
+# Running[7]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -w -40 -g -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -no-alias-deps -I src -o src/npy.cmx -c -impl src/npy.ml)
+# 
+# Command [6] exited with code 2:
+# $ (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -no-alias-deps -I src -o src/npy.cmo -c -impl src/npy.ml)
+# File "src/npy.ml", line 94, characters 29-40:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# 
+# Waiting for the following jobs to finish: [7]
+### stderr ###
+# [...]
+# Running[6]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -no-alias-deps -I src -o src/npy.cmo -c -impl src/npy.ml)
+# Running[7]: (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -w -40 -g -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -no-alias-deps -I src -o src/npy.cmx -c -impl src/npy.ml)
+# 
+# Command [6] exited with code 2:
+# $ (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -no-alias-deps -I src -o src/npy.cmo -c -impl src/npy.ml)
+# File "src/npy.ml", line 94, characters 29-40:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# 
+# Waiting for the following jobs to finish: [7]
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install npy 0.0.5
+No changes have been performed
+'opam install npy.0.0.5' failed.

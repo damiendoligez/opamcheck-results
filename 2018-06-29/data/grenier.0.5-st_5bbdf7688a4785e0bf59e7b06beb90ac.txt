@@ -1,0 +1,1552 @@
+The following actions will be performed:
+  - install grenier 0.5
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[grenier: http] Command started
+[grenier: http] Command started
+[grenier.0.5] https://github.com/let-def/grenier/archive/v0.5.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[grenier: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5)
+- for i in hll jmphash pcg orderme doubledouble physh baltree trope binpacking; do make -C $i all; done
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ocamldep hll.mli > ._bcdi/hll.di
+- ocamldep hll.ml > ._d/hll.d
+- ocamldep hll_consts.ml > ._d/hll_consts.d
+- ocamlc -c -g hll_consts.ml
+- ocamlc -c -g hll.mli
+- ocamlc -c -g hll.ml
+- File "hll.ml", line 72, characters 17-18:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../OCamlMakefile:1076: recipe for target 'hll.cmo' failed
+- make[2]: *** [hll.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ../OCamlMakefile:792: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- ocamldep jmphash.mli > ._bcdi/jmphash.di
+- ocamldep jmphash.ml > ._d/jmphash.d
+- ocamlc -c -g jmphash.mli
+- ocamlc -c -g jmphash.ml
+- ocamlc -a         -g        -o jmphash.cma jmphash.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- ocamldep -native jmphash.mli > ._ncdi/jmphash.di
+- ocamlopt -c -g jmphash.ml
+- ocamlopt -a          -g       -o jmphash.cmxa jmphash.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- ocamldep pcg.mli > ._bcdi/pcg.di
+- ocamldep pcg.ml > ._d/pcg.d
+- ocamlc -c -g pcg.mli
+- ocamlc -c -g pcg.ml
+- ocamlc -a         -g        -o pcg.cma pcg.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- ocamldep -native pcg.mli > ._ncdi/pcg.di
+- ocamlopt -c -g pcg.ml
+- ocamlopt -a          -g       -o pcg.cmxa pcg.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- ocamldep order_managed.mli > ._bcdi/order_managed.di
+- ocamldep order_indir.mli > ._bcdi/order_indir.di
+- ocamldep order_list.mli > ._bcdi/order_list.di
+- ocamldep order_managed.ml > ._d/order_managed.d
+- ocamldep order_indir.ml > ._d/order_indir.d
+- ocamldep order_list.ml > ._d/order_list.d
+- ocamlc -c -g order_list.mli
+- ocamlc -c -g order_list.ml
+- ocamlc -c -g order_indir.mli
+- ocamlc -c -g order_indir.ml
+- ocamlc -c -g order_managed.mli
+- ocamlc -c -g order_managed.ml
+- ocamlc -a         -g        -o orderme.cma order_list.cmo order_indir.cmo order_managed.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- ocamldep -native order_managed.mli > ._ncdi/order_managed.di
+- ocamldep -native order_indir.mli > ._ncdi/order_indir.di
+- ocamldep -native order_list.mli > ._ncdi/order_list.di
+- ocamlopt -c -g order_list.ml
+- ocamlopt -c -g order_indir.ml
+- ocamlopt -c -g order_managed.ml
+- ocamlopt -a          -g       -o orderme.cmxa order_list.cmx order_indir.cmx order_managed.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- ocamldep doubledouble.mli > ._bcdi/doubledouble.di
+- ocamldep doubledouble.ml > ._d/doubledouble.d
+- ocamlc -c -g doubledouble.mli
+- ocamlc -c -g doubledouble.ml
+- ocamlc -a         -g        -o doubledouble.cma doubledouble.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- ocamldep -native doubledouble.mli > ._ncdi/doubledouble.di
+- ocamlopt -c -g doubledouble.ml
+- ocamlopt -a          -g       -o doubledouble.cmxa doubledouble.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- ocamlc -c physh.mli
+- ocamlc -c physh.ml
+- ocamlc -c -ccopt "-O2 -std=gnu99" ml_physh_set.c
+- ocamlc -c -ccopt "-O2 -std=gnu99" ml_physh_map.c
+- ocamlmklib \
+-     -o _physh_stubs ml_physh_set.o ml_physh_map.o \
+-     -ccopt -O2 -ccopt -std=gnu99
+- ocamlc -a -custom -o physh.cma physh.cmo \
+-        -dllib dll_physh_stubs.so \
+-        -cclib -l_physh_stubs
+- ocamlopt -c physh.ml
+- ocamlopt -a -o physh.cmxa physh.cmx \
+-       -cclib -l_physh_stubs \
+-   		-ccopt -O2 -ccopt -std=gnu99
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- ocamldep mbt.mli > ._bcdi/mbt.di
+- ocamldep bt2.mli > ._bcdi/bt2.di
+- ocamldep bt1.mli > ._bcdi/bt1.di
+- ocamldep mbt.ml > ._d/mbt.d
+- ocamldep bt2.ml > ._d/bt2.d
+- ocamldep bt1.ml > ._d/bt1.d
+- ocamlc -c -g bt1.mli
+- ocamlc -c -g bt1.ml
+- ocamlc -c -g bt2.mli
+- ocamlc -c -g bt2.ml
+- ocamlc -c -g mbt.mli
+- ocamlc -c -g mbt.ml
+- ocamlc -a         -g        -o baltree.cma bt1.cmo bt2.cmo mbt.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- ocamldep -native mbt.mli > ._ncdi/mbt.di
+- ocamldep -native bt2.mli > ._ncdi/bt2.di
+- ocamldep -native bt1.mli > ._ncdi/bt1.di
+- ocamlopt -c -g bt1.ml
+- ocamlopt -c -g bt2.ml
+- for i in hll jmphash pcg orderme doubledouble physh baltree trope binpacking; do make -C $i all; done
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ocamldep hll.mli > ._bcdi/hll.di
+- ocamldep hll.ml > ._d/hll.d
+- ocamldep hll_consts.ml > ._d/hll_consts.d
+- ocamlc -c -g hll_consts.ml
+- ocamlc -c -g hll.mli
+- ocamlc -c -g hll.ml
+- File "hll.ml", line 72, characters 17-18:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../OCamlMakefile:1076: recipe for target 'hll.cmo' failed
+- make[2]: *** [hll.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ../OCamlMakefile:792: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- ocamldep jmphash.mli > ._bcdi/jmphash.di
+- ocamldep jmphash.ml > ._d/jmphash.d
+- ocamlc -c -g jmphash.mli
+- ocamlc -c -g jmphash.ml
+- ocamlc -a         -g        -o jmphash.cma jmphash.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- ocamldep -native jmphash.mli > ._ncdi/jmphash.di
+- ocamlopt -c -g jmphash.ml
+- ocamlopt -a          -g       -o jmphash.cmxa jmphash.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- ocamldep pcg.mli > ._bcdi/pcg.di
+- ocamldep pcg.ml > ._d/pcg.d
+- ocamlc -c -g pcg.mli
+- ocamlc -c -g pcg.ml
+- ocamlc -a         -g        -o pcg.cma pcg.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- ocamldep -native pcg.mli > ._ncdi/pcg.di
+- ocamlopt -c -g pcg.ml
+- ocamlopt -a          -g       -o pcg.cmxa pcg.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- ocamldep order_managed.mli > ._bcdi/order_managed.di
+- ocamldep order_indir.mli > ._bcdi/order_indir.di
+- ocamldep order_list.mli > ._bcdi/order_list.di
+- ocamldep order_managed.ml > ._d/order_managed.d
+- ocamldep order_indir.ml > ._d/order_indir.d
+- ocamldep order_list.ml > ._d/order_list.d
+- ocamlc -c -g order_list.mli
+- ocamlc -c -g order_list.ml
+- ocamlc -c -g order_indir.mli
+- ocamlc -c -g order_indir.ml
+- ocamlc -c -g order_managed.mli
+- ocamlc -c -g order_managed.ml
+- ocamlc -a         -g        -o orderme.cma order_list.cmo order_indir.cmo order_managed.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- ocamldep -native order_managed.mli > ._ncdi/order_managed.di
+- ocamldep -native order_indir.mli > ._ncdi/order_indir.di
+- ocamldep -native order_list.mli > ._ncdi/order_list.di
+- ocamlopt -c -g order_list.ml
+- ocamlopt -c -g order_indir.ml
+- ocamlopt -c -g order_managed.ml
+- ocamlopt -a          -g       -o orderme.cmxa order_list.cmx order_indir.cmx order_managed.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- ocamldep doubledouble.mli > ._bcdi/doubledouble.di
+- ocamldep doubledouble.ml > ._d/doubledouble.d
+- ocamlc -c -g doubledouble.mli
+- ocamlc -c -g doubledouble.ml
+- ocamlc -a         -g        -o doubledouble.cma doubledouble.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- ocamldep -native doubledouble.mli > ._ncdi/doubledouble.di
+- ocamlopt -c -g doubledouble.ml
+- ocamlopt -a          -g       -o doubledouble.cmxa doubledouble.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- ocamlc -c physh.mli
+- ocamlc -c physh.ml
+- ocamlc -c -ccopt "-O2 -std=gnu99" ml_physh_set.c
+- ocamlc -c -ccopt "-O2 -std=gnu99" ml_physh_map.c
+- ocamlmklib \
+-     -o _physh_stubs ml_physh_set.o ml_physh_map.o \
+-     -ccopt -O2 -ccopt -std=gnu99
+- ocamlc -a -custom -o physh.cma physh.cmo \
+-        -dllib dll_physh_stubs.so \
+-        -cclib -l_physh_stubs
+- ocamlopt -c physh.ml
+- ocamlopt -a -o physh.cmxa physh.cmx \
+-       -cclib -l_physh_stubs \
+-   		-ccopt -O2 -ccopt -std=gnu99
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- ocamldep mbt.mli > ._bcdi/mbt.di
+- ocamldep bt2.mli > ._bcdi/bt2.di
+- ocamldep bt1.mli > ._bcdi/bt1.di
+- ocamldep mbt.ml > ._d/mbt.d
+- ocamldep bt2.ml > ._d/bt2.d
+- ocamldep bt1.ml > ._d/bt1.d
+- ocamlc -c -g bt1.mli
+- ocamlc -c -g bt1.ml
+- ocamlc -c -g bt2.mli
+- ocamlc -c -g bt2.ml
+- ocamlc -c -g mbt.mli
+- ocamlc -c -g mbt.ml
+- ocamlc -a         -g        -o baltree.cma bt1.cmo bt2.cmo mbt.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- ocamldep -native mbt.mli > ._ncdi/mbt.di
+- ocamldep -native bt2.mli > ._ncdi/bt2.di
+- ocamldep -native bt1.mli > ._ncdi/bt1.di
+- ocamlopt -c -g bt1.ml
+- ocamlopt -c -g bt2.ml
+- ocamlopt -c -g mbt.ml
+- ocamlopt -a          -g       -o baltree.cmxa bt1.cmx bt2.cmx mbt.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- ocamldep trope.mli > ._bcdi/trope.di
+- ocamldep trope.ml > ._d/trope.d
+- ocamlc -c -g -I ../baltree -I ../orderme trope.mli
+- ocamlc -c -g -I ../baltree -I ../orderme trope.ml
+- ocamlc -a         -g        -o trope.cma trope.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- ocamldep -native trope.mli > ._ncdi/trope.di
+- ocamlopt -c -g -I ../baltree -I ../orderme trope.ml
+- ocamlopt -a          -g       -o trope.cmxa trope.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- ocamldep maxrects.mli > ._bcdi/maxrects.di
+- ocamldep maxrects.ml > ._d/maxrects.d
+- ocamlc -c -g maxrects.mli
+- ocamlc -c -g maxrects.ml
+- ocamlc -a         -g        -o binpacking.cma maxrects.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- ocamldep -native maxrects.mli > ._ncdi/maxrects.di
+- ocamlopt -c -g maxrects.ml
+- ocamlopt -a          -g       -o binpacking.cmxa maxrects.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- ocamlopt -c -g mbt.ml
+- ocamlopt -a          -g       -o baltree.cmxa bt1.cmx bt2.cmx mbt.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- ocamldep trope.mli > ._bcdi/trope.di
+- ocamldep trope.ml > ._d/trope.d
+- ocamlc -c -g -I ../baltree -I ../orderme trope.mli
+- ocamlc -c -g -I ../baltree -I ../orderme trope.ml
+- ocamlc -a         -g        -o trope.cma trope.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- ocamldep -native trope.mli > ._ncdi/trope.di
+- ocamlopt -c -g -I ../baltree -I ../orderme trope.ml
+- ocamlopt -a          -g       -o trope.cmxa trope.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- ocamldep maxrects.mli > ._bcdi/maxrects.di
+- ocamldep maxrects.ml > ._d/maxrects.d
+- ocamlc -c -g maxrects.mli
+- ocamlc -c -g maxrects.ml
+- ocamlc -a         -g        -o binpacking.cma maxrects.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- ocamldep -native maxrects.mli > ._ncdi/maxrects.di
+- ocamlopt -c -g maxrects.ml
+- ocamlopt -a          -g       -o binpacking.cmxa maxrects.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+[grenier: make install] Command started
++ make "install" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5)
+- for i in hll jmphash pcg orderme doubledouble physh baltree trope binpacking; do make -C $i all; done
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ocamldep hll.mli > ._bcdi/hll.di
+- ocamldep hll.ml > ._d/hll.d
+- ocamldep hll_consts.ml > ._d/hll_consts.d
+- ocamlc -c -g hll_consts.ml
+- ocamlc -c -g hll.mli
+- ocamlc -c -g hll.ml
+- File "hll.ml", line 72, characters 17-18:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../OCamlMakefile:1076: recipe for target 'hll.cmo' failed
+- make[2]: *** [hll.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ../OCamlMakefile:792: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- ocamldep jmphash.mli > ._bcdi/jmphash.di
+- ocamldep jmphash.ml > ._d/jmphash.d
+- ocamlc -c -g jmphash.mli
+- ocamlc -c -g jmphash.ml
+- ocamlc -a         -g        -o jmphash.cma jmphash.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- ocamldep -native jmphash.mli > ._ncdi/jmphash.di
+- ocamlopt -c -g jmphash.ml
+- ocamlopt -a          -g       -o jmphash.cmxa jmphash.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- ocamldep pcg.mli > ._bcdi/pcg.di
+- ocamldep pcg.ml > ._d/pcg.d
+- ocamlc -c -g pcg.mli
+- ocamlc -c -g pcg.ml
+- ocamlc -a         -g        -o pcg.cma pcg.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- ocamldep -native pcg.mli > ._ncdi/pcg.di
+- ocamlopt -c -g pcg.ml
+- ocamlopt -a          -g       -o pcg.cmxa pcg.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- ocamldep order_managed.mli > ._bcdi/order_managed.di
+- ocamldep order_indir.mli > ._bcdi/order_indir.di
+- ocamldep order_list.mli > ._bcdi/order_list.di
+- ocamldep order_managed.ml > ._d/order_managed.d
+- ocamldep order_indir.ml > ._d/order_indir.d
+- ocamldep order_list.ml > ._d/order_list.d
+- ocamlc -c -g order_list.mli
+- ocamlc -c -g order_list.ml
+- ocamlc -c -g order_indir.mli
+- ocamlc -c -g order_indir.ml
+- ocamlc -c -g order_managed.mli
+- ocamlc -c -g order_managed.ml
+- ocamlc -a         -g        -o orderme.cma order_list.cmo order_indir.cmo order_managed.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- ocamldep -native order_managed.mli > ._ncdi/order_managed.di
+- ocamldep -native order_indir.mli > ._ncdi/order_indir.di
+- ocamldep -native order_list.mli > ._ncdi/order_list.di
+- ocamlopt -c -g order_list.ml
+- ocamlopt -c -g order_indir.ml
+- ocamlopt -c -g order_managed.ml
+- ocamlopt -a          -g       -o orderme.cmxa order_list.cmx order_indir.cmx order_managed.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- ocamldep doubledouble.mli > ._bcdi/doubledouble.di
+- ocamldep doubledouble.ml > ._d/doubledouble.d
+- ocamlc -c -g doubledouble.mli
+- ocamlc -c -g doubledouble.ml
+- ocamlc -a         -g        -o doubledouble.cma doubledouble.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- ocamldep -native doubledouble.mli > ._ncdi/doubledouble.di
+- ocamlopt -c -g doubledouble.ml
+- ocamlopt -a          -g       -o doubledouble.cmxa doubledouble.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- ocamlc -c physh.mli
+- ocamlc -c physh.ml
+- ocamlc -c -ccopt "-O2 -std=gnu99" ml_physh_set.c
+- ocamlc -c -ccopt "-O2 -std=gnu99" ml_physh_map.c
+- ocamlmklib \
+-     -o _physh_stubs ml_physh_set.o ml_physh_map.o \
+-     -ccopt -O2 -ccopt -std=gnu99
+- ocamlc -a -custom -o physh.cma physh.cmo \
+-        -dllib dll_physh_stubs.so \
+-        -cclib -l_physh_stubs
+- ocamlopt -c physh.ml
+- ocamlopt -a -o physh.cmxa physh.cmx \
+-       -cclib -l_physh_stubs \
+-   		-ccopt -O2 -ccopt -std=gnu99
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- ocamldep mbt.mli > ._bcdi/mbt.di
+- ocamldep bt2.mli > ._bcdi/bt2.di
+- ocamldep bt1.mli > ._bcdi/bt1.di
+- ocamldep mbt.ml > ._d/mbt.d
+- ocamldep bt2.ml > ._d/bt2.d
+- ocamldep bt1.ml > ._d/bt1.d
+- ocamlc -c -g bt1.mli
+- ocamlc -c -g bt1.ml
+- ocamlc -c -g bt2.mli
+- ocamlc -c -g bt2.ml
+- ocamlc -c -g mbt.mli
+- ocamlc -c -g mbt.ml
+- ocamlc -a         -g        -o baltree.cma bt1.cmo bt2.cmo mbt.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- ocamldep -native mbt.mli > ._ncdi/mbt.di
+- ocamldep -native bt2.mli > ._ncdi/bt2.di
+- ocamldep -native bt1.mli > ._ncdi/bt1.di
+- ocamlopt -c -g bt1.ml
+- ocamlopt -c -g bt2.ml
+- ocamlopt -c -g mbt.ml
+- ocamlopt -a          -g       -o baltree.cmxa bt1.cmx bt2.cmx mbt.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- ocamldep trope.mli > ._bcdi/trope.di
+- ocamldep trope.ml > ._d/trope.d
+- ocamlc -c -g -I ../baltree -I ../orderme trope.mli
+- ocamlc -c -g -I ../baltree -I ../orderme trope.ml
+- ocamlc -a         -g        -o trope.cma trope.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- ocamldep -native trope.mli > ._ncdi/trope.di
+- ocamlopt -c -g -I ../baltree -I ../orderme trope.ml
+- ocamlopt -a          -g       -o trope.cmxa trope.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- ocamldep maxrects.mli > ._bcdi/maxrects.di
+- ocamldep maxrects.ml > ._d/maxrects.d
+- ocamlc -c -g maxrects.mli
+- ocamlc -c -g maxrects.ml
+- ocamlc -a         -g        -o binpacking.cma maxrects.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- ocamldep -native maxrects.mli > ._ncdi/maxrects.di
+- ocamlopt -c -g maxrects.ml
+- ocamlopt -a          -g       -o binpacking.cmxa maxrects.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- for i in hll jmphash pcg orderme doubledouble physh baltree trope binpacking; do make -C $i all; done
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ocamlc -c -g hll.ml
+- File "hll.ml", line 72, characters 17-18:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../OCamlMakefile:1076: recipe for target 'hll.cmo' failed
+- make[2]: *** [hll.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ../OCamlMakefile:792: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: 'jmphash.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: 'jmphash.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: 'pcg.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: 'pcg.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: 'orderme.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: 'orderme.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: 'doubledouble.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: 'doubledouble.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- make[1]: Nothing to be done for 'all'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: 'baltree.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: 'baltree.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: 'trope.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: 'trope.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: 'binpacking.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: 'binpacking.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- 
+- Installing library with ocamlfind
+- ocamlfind install  grenier META hll/hll.mli hll/hll.cmi hll/hll.cmx hll/hll_consts.cmi hll/hll_consts.cmx hll/hll.a hll/hll.cma hll/hll.cmxa jmphash/jmphash.mli jmphash/jmphash.cmi jmphash/jmphash.cmx jmphash/jmphash.a jmphash/jmphash.cma jmphash/jmphash.cmxa pcg/pcg.mli pcg/pcg.cmi pcg/pcg.cmx pcg/pcg.a pcg/pcg.cma pcg/pcg.cmxa orderme/order_list.mli orderme/order_indir.mli orderme/order_managed.mli orderme/order_list.cmi orderme/order_list.cmx orderme/order_indir.cmi orderme/order_indir.cmx orderme/order_managed.cmi orderme/order_managed.cmx orderme/orderme.a orderme/orderme.cma orderme/orderme.cmxa doubledouble/doubledouble.mli doubledouble/doubledouble.cmi doubledouble/doubledouble.cmo doubledouble/doubledouble.cmx physh/physh.mli physh/physh.cmi physh/physh.cmx physh/physh.a physh/physh.cma physh/physh.cmxa physh/lib_physh_stubs.a physh/dll_physh_stubs.so baltree/bt1.mli baltree/bt1.cmi baltree/bt1.cmx baltree/bt2.mli baltree/bt2.cmi baltree/bt2.cmx baltree/mbt.mli baltree/mbt.cmi baltree/mbt.cmx baltree/baltree.a baltree/baltree.cma baltree/baltree.cmxa binpacking/maxrects.mli binpacking/maxrects.cmi binpacking/maxrects.cmx binpacking/binpacking.a binpacking/binpacking.cma binpacking/binpacking.cmxa trope/trope.mli trope/trope.cmi trope/trope.cmx trope/trope.a trope/trope.cma trope/trope.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/binpacking.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/binpacking.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/binpacking.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/maxrects.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/maxrects.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/maxrects.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/baltree.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/baltree.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/baltree.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/mbt.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/mbt.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/mbt.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt2.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt2.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt2.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt1.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt1.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt1.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/dll_physh_stubs.so
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/lib_physh_stubs.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/doubledouble.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/doubledouble.cmo
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/doubledouble.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/doubledouble.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/orderme.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/orderme.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/orderme.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_managed.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_managed.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_indir.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_indir.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_list.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_list.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_managed.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_indir.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_list.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.mli
+- ocamlfind: hll/hll.cmxa: No such file or directory
+- OCamlMakefile:1236: recipe for target 'libinstall' failed
+- make: *** [libinstall] Error 2
+- for i in hll jmphash pcg orderme doubledouble physh baltree trope binpacking; do make -C $i all; done
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ocamldep hll.mli > ._bcdi/hll.di
+- ocamldep hll.ml > ._d/hll.d
+- ocamldep hll_consts.ml > ._d/hll_consts.d
+- ocamlc -c -g hll_consts.ml
+- ocamlc -c -g hll.mli
+- ocamlc -c -g hll.ml
+- File "hll.ml", line 72, characters 17-18:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../OCamlMakefile:1076: recipe for target 'hll.cmo' failed
+- make[2]: *** [hll.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ../OCamlMakefile:792: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- ocamldep jmphash.mli > ._bcdi/jmphash.di
+- ocamldep jmphash.ml > ._d/jmphash.d
+- ocamlc -c -g jmphash.mli
+- ocamlc -c -g jmphash.ml
+- ocamlc -a         -g        -o jmphash.cma jmphash.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- ocamldep -native jmphash.mli > ._ncdi/jmphash.di
+- ocamlopt -c -g jmphash.ml
+- ocamlopt -a          -g       -o jmphash.cmxa jmphash.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- ocamldep pcg.mli > ._bcdi/pcg.di
+- ocamldep pcg.ml > ._d/pcg.d
+- ocamlc -c -g pcg.mli
+- ocamlc -c -g pcg.ml
+- ocamlc -a         -g        -o pcg.cma pcg.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- ocamldep -native pcg.mli > ._ncdi/pcg.di
+- ocamlopt -c -g pcg.ml
+- ocamlopt -a          -g       -o pcg.cmxa pcg.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- ocamldep order_managed.mli > ._bcdi/order_managed.di
+- ocamldep order_indir.mli > ._bcdi/order_indir.di
+- ocamldep order_list.mli > ._bcdi/order_list.di
+- ocamldep order_managed.ml > ._d/order_managed.d
+- ocamldep order_indir.ml > ._d/order_indir.d
+- ocamldep order_list.ml > ._d/order_list.d
+- ocamlc -c -g order_list.mli
+- ocamlc -c -g order_list.ml
+- ocamlc -c -g order_indir.mli
+- ocamlc -c -g order_indir.ml
+- ocamlc -c -g order_managed.mli
+- ocamlc -c -g order_managed.ml
+- ocamlc -a         -g        -o orderme.cma order_list.cmo order_indir.cmo order_managed.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- ocamldep -native order_managed.mli > ._ncdi/order_managed.di
+- ocamldep -native order_indir.mli > ._ncdi/order_indir.di
+- ocamldep -native order_list.mli > ._ncdi/order_list.di
+- ocamlopt -c -g order_list.ml
+- ocamlopt -c -g order_indir.ml
+- ocamlopt -c -g order_managed.ml
+- ocamlopt -a          -g       -o orderme.cmxa order_list.cmx order_indir.cmx order_managed.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- ocamldep doubledouble.mli > ._bcdi/doubledouble.di
+- ocamldep doubledouble.ml > ._d/doubledouble.d
+- ocamlc -c -g doubledouble.mli
+- ocamlc -c -g doubledouble.ml
+- ocamlc -a         -g        -o doubledouble.cma doubledouble.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- ocamldep -native doubledouble.mli > ._ncdi/doubledouble.di
+- ocamlopt -c -g doubledouble.ml
+- ocamlopt -a          -g       -o doubledouble.cmxa doubledouble.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- ocamlc -c physh.mli
+- ocamlc -c physh.ml
+- ocamlc -c -ccopt "-O2 -std=gnu99" ml_physh_set.c
+- ocamlc -c -ccopt "-O2 -std=gnu99" ml_physh_map.c
+- ocamlmklib \
+-     -o _physh_stubs ml_physh_set.o ml_physh_map.o \
+-     -ccopt -O2 -ccopt -std=gnu99
+- ocamlc -a -custom -o physh.cma physh.cmo \
+-        -dllib dll_physh_stubs.so \
+-        -cclib -l_physh_stubs
+- ocamlopt -c physh.ml
+- ocamlopt -a -o physh.cmxa physh.cmx \
+-       -cclib -l_physh_stubs \
+-   		-ccopt -O2 -ccopt -std=gnu99
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- ocamldep mbt.mli > ._bcdi/mbt.di
+- ocamldep bt2.mli > ._bcdi/bt2.di
+- ocamldep bt1.mli > ._bcdi/bt1.di
+- ocamldep mbt.ml > ._d/mbt.d
+- ocamldep bt2.ml > ._d/bt2.d
+- ocamldep bt1.ml > ._d/bt1.d
+- ocamlc -c -g bt1.mli
+- ocamlc -c -g bt1.ml
+- ocamlc -c -g bt2.mli
+- ocamlc -c -g bt2.ml
+- ocamlc -c -g mbt.mli
+- ocamlc -c -g mbt.ml
+- ocamlc -a         -g        -o baltree.cma bt1.cmo bt2.cmo mbt.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- ocamldep -native mbt.mli > ._ncdi/mbt.di
+- ocamldep -native bt2.mli > ._ncdi/bt2.di
+- ocamldep -native bt1.mli > ._ncdi/bt1.di
+- ocamlopt -c -g bt1.ml
+- ocamlopt -c -g bt2.ml
+- ocamlopt -c -g mbt.ml
+- ocamlopt -a          -g       -o baltree.cmxa bt1.cmx bt2.cmx mbt.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- ocamldep trope.mli > ._bcdi/trope.di
+- ocamldep trope.ml > ._d/trope.d
+- ocamlc -c -g -I ../baltree -I ../orderme trope.mli
+- ocamlc -c -g -I ../baltree -I ../orderme trope.ml
+- ocamlc -a         -g        -o trope.cma trope.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- ocamldep -native trope.mli > ._ncdi/trope.di
+- ocamlopt -c -g -I ../baltree -I ../orderme trope.ml
+- ocamlopt -a          -g       -o trope.cmxa trope.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- ocamldep maxrects.mli > ._bcdi/maxrects.di
+- ocamldep maxrects.ml > ._d/maxrects.d
+- ocamlc -c -g maxrects.mli
+- ocamlc -c -g maxrects.ml
+- ocamlc -a         -g        -o binpacking.cma maxrects.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- ocamldep -native maxrects.mli > ._ncdi/maxrects.di
+- ocamlopt -c -g maxrects.ml
+- ocamlopt -a          -g       -o binpacking.cmxa maxrects.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- for i in hll jmphash pcg orderme doubledouble physh baltree trope binpacking; do make -C $i all; done
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ocamlc -c -g hll.ml
+- File "hll.ml", line 72, characters 17-18:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../OCamlMakefile:1076: recipe for target 'hll.cmo' failed
+- make[2]: *** [hll.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ../OCamlMakefile:792: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: 'jmphash.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: 'jmphash.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: 'pcg.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: 'pcg.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: 'orderme.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: 'orderme.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: 'doubledouble.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: 'doubledouble.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- make[1]: Nothing to be done for 'all'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: 'baltree.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: 'baltree.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: 'trope.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: 'trope.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: 'binpacking.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: 'binpacking.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- 
+- Installing library with ocamlfind
+- ocamlfind install  grenier META hll/hll.mli hll/hll.cmi hll/hll.cmx hll/hll_consts.cmi hll/hll_consts.cmx hll/hll.a hll/hll.cma hll/hll.cmxa jmphash/jmphash.mli jmphash/jmphash.cmi jmphash/jmphash.cmx jmphash/jmphash.a jmphash/jmphash.cma jmphash/jmphash.cmxa pcg/pcg.mli pcg/pcg.cmi pcg/pcg.cmx pcg/pcg.a pcg/pcg.cma pcg/pcg.cmxa orderme/order_list.mli orderme/order_indir.mli orderme/order_managed.mli orderme/order_list.cmi orderme/order_list.cmx orderme/order_indir.cmi orderme/order_indir.cmx orderme/order_managed.cmi orderme/order_managed.cmx orderme/orderme.a orderme/orderme.cma orderme/orderme.cmxa doubledouble/doubledouble.mli doubledouble/doubledouble.cmi doubledouble/doubledouble.cmo doubledouble/doubledouble.cmx physh/physh.mli physh/physh.cmi physh/physh.cmx physh/physh.a physh/physh.cma physh/physh.cmxa physh/lib_physh_stubs.a physh/dll_physh_stubs.so baltree/bt1.mli baltree/bt1.cmi baltree/bt1.cmx baltree/bt2.mli baltree/bt2.cmi baltree/bt2.cmx baltree/mbt.mli baltree/mbt.cmi baltree/mbt.cmx baltree/baltree.a baltree/baltree.cma baltree/baltree.cmxa binpacking/maxrects.mli binpacking/maxrects.cmi binpacking/maxrects.cmx binpacking/binpacking.a binpacking/binpacking.cma binpacking/binpacking.cmxa trope/trope.mli trope/trope.cmi trope/trope.cmx trope/trope.a trope/trope.cma trope/trope.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/binpacking.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/binpacking.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/binpacking.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/maxrects.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/maxrects.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/maxrects.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/baltree.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/baltree.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/baltree.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/mbt.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/mbt.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/mbt.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt2.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt2.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt2.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt1.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt1.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt1.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/dll_physh_stubs.so
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/lib_physh_stubs.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/doubledouble.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/doubledouble.cmo
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/doubledouble.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/doubledouble.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/orderme.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/orderme.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/orderme.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_managed.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_managed.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_indir.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_indir.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_list.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_list.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_managed.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_indir.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_list.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.mli
+- ocamlfind: hll/hll.cmxa: No such file or directory
+- OCamlMakefile:1236: recipe for target 'libinstall' failed
+- make: *** [libinstall] Error 2
+[ERROR] The compilation of grenier failed at "make install".
+[grenier: ocamlfind remove] Command started
++ ocamlfind "remove" "grenier" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5)
+- for i in hll jmphash pcg orderme doubledouble physh baltree trope binpacking; do make -C $i all; done
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ocamldep hll.mli > ._bcdi/hll.di
+- ocamldep hll.ml > ._d/hll.d
+- ocamldep hll_consts.ml > ._d/hll_consts.d
+- ocamlc -c -g hll_consts.ml
+- ocamlc -c -g hll.mli
+- ocamlc -c -g hll.ml
+- File "hll.ml", line 72, characters 17-18:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../OCamlMakefile:1076: recipe for target 'hll.cmo' failed
+- make[2]: *** [hll.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ../OCamlMakefile:792: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- ocamldep jmphash.mli > ._bcdi/jmphash.di
+- ocamldep jmphash.ml > ._d/jmphash.d
+- ocamlc -c -g jmphash.mli
+- ocamlc -c -g jmphash.ml
+- ocamlc -a         -g        -o jmphash.cma jmphash.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- ocamldep -native jmphash.mli > ._ncdi/jmphash.di
+- ocamlopt -c -g jmphash.ml
+- ocamlopt -a          -g       -o jmphash.cmxa jmphash.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- ocamldep pcg.mli > ._bcdi/pcg.di
+- ocamldep pcg.ml > ._d/pcg.d
+- ocamlc -c -g pcg.mli
+- ocamlc -c -g pcg.ml
+- ocamlc -a         -g        -o pcg.cma pcg.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- ocamldep -native pcg.mli > ._ncdi/pcg.di
+- ocamlopt -c -g pcg.ml
+- ocamlopt -a          -g       -o pcg.cmxa pcg.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- ocamldep order_managed.mli > ._bcdi/order_managed.di
+- ocamldep order_indir.mli > ._bcdi/order_indir.di
+- ocamldep order_list.mli > ._bcdi/order_list.di
+- ocamldep order_managed.ml > ._d/order_managed.d
+- ocamldep order_indir.ml > ._d/order_indir.d
+- ocamldep order_list.ml > ._d/order_list.d
+- ocamlc -c -g order_list.mli
+- ocamlc -c -g order_list.ml
+- ocamlc -c -g order_indir.mli
+- ocamlc -c -g order_indir.ml
+- ocamlc -c -g order_managed.mli
+- ocamlc -c -g order_managed.ml
+- ocamlc -a         -g        -o orderme.cma order_list.cmo order_indir.cmo order_managed.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- ocamldep -native order_managed.mli > ._ncdi/order_managed.di
+- ocamldep -native order_indir.mli > ._ncdi/order_indir.di
+- ocamldep -native order_list.mli > ._ncdi/order_list.di
+- ocamlopt -c -g order_list.ml
+- ocamlopt -c -g order_indir.ml
+- ocamlopt -c -g order_managed.ml
+- ocamlopt -a          -g       -o orderme.cmxa order_list.cmx order_indir.cmx order_managed.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- ocamldep doubledouble.mli > ._bcdi/doubledouble.di
+- ocamldep doubledouble.ml > ._d/doubledouble.d
+- ocamlc -c -g doubledouble.mli
+- ocamlc -c -g doubledouble.ml
+- ocamlc -a         -g        -o doubledouble.cma doubledouble.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- ocamldep -native doubledouble.mli > ._ncdi/doubledouble.di
+- ocamlopt -c -g doubledouble.ml
+- ocamlopt -a          -g       -o doubledouble.cmxa doubledouble.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- ocamlc -c physh.mli
+- ocamlc -c physh.ml
+- ocamlc -c -ccopt "-O2 -std=gnu99" ml_physh_set.c
+- ocamlc -c -ccopt "-O2 -std=gnu99" ml_physh_map.c
+- ocamlmklib \
+-     -o _physh_stubs ml_physh_set.o ml_physh_map.o \
+-     -ccopt -O2 -ccopt -std=gnu99
+- ocamlc -a -custom -o physh.cma physh.cmo \
+-        -dllib dll_physh_stubs.so \
+-        -cclib -l_physh_stubs
+- ocamlopt -c physh.ml
+- ocamlopt -a -o physh.cmxa physh.cmx \
+-       -cclib -l_physh_stubs \
+-   		-ccopt -O2 -ccopt -std=gnu99
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- ocamldep mbt.mli > ._bcdi/mbt.di
+- ocamldep bt2.mli > ._bcdi/bt2.di
+- ocamldep bt1.mli > ._bcdi/bt1.di
+- ocamldep mbt.ml > ._d/mbt.d
+- ocamldep bt2.ml > ._d/bt2.d
+- ocamldep bt1.ml > ._d/bt1.d
+- ocamlc -c -g bt1.mli
+- ocamlc -c -g bt1.ml
+- ocamlc -c -g bt2.mli
+- ocamlc -c -g bt2.ml
+- ocamlc -c -g mbt.mli
+- ocamlc -c -g mbt.ml
+- ocamlc -a         -g        -o baltree.cma bt1.cmo bt2.cmo mbt.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- ocamldep -native mbt.mli > ._ncdi/mbt.di
+- ocamldep -native bt2.mli > ._ncdi/bt2.di
+- ocamldep -native bt1.mli > ._ncdi/bt1.di
+- ocamlopt -c -g bt1.ml
+- ocamlopt -c -g bt2.ml
+- ocamlopt -c -g mbt.ml
+- ocamlopt -a          -g       -o baltree.cmxa bt1.cmx bt2.cmx mbt.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- ocamldep trope.mli > ._bcdi/trope.di
+- ocamldep trope.ml > ._d/trope.d
+- ocamlc -c -g -I ../baltree -I ../orderme trope.mli
+- ocamlc -c -g -I ../baltree -I ../orderme trope.ml
+- ocamlc -a         -g        -o trope.cma trope.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- ocamldep -native trope.mli > ._ncdi/trope.di
+- ocamlopt -c -g -I ../baltree -I ../orderme trope.ml
+- ocamlopt -a          -g       -o trope.cmxa trope.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- ocamldep maxrects.mli > ._bcdi/maxrects.di
+- ocamldep maxrects.ml > ._d/maxrects.d
+- ocamlc -c -g maxrects.mli
+- ocamlc -c -g maxrects.ml
+- ocamlc -a         -g        -o binpacking.cma maxrects.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- ocamldep -native maxrects.mli > ._ncdi/maxrects.di
+- ocamlopt -c -g maxrects.ml
+- ocamlopt -a          -g       -o binpacking.cmxa maxrects.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- for i in hll jmphash pcg orderme doubledouble physh baltree trope binpacking; do make -C $i all; done
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ocamlc -c -g hll.ml
+- File "hll.ml", line 72, characters 17-18:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../OCamlMakefile:1076: recipe for target 'hll.cmo' failed
+- make[2]: *** [hll.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ../OCamlMakefile:792: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: 'jmphash.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: 'jmphash.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: 'pcg.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: 'pcg.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: 'orderme.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: 'orderme.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: 'doubledouble.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: 'doubledouble.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- make[1]: Nothing to be done for 'all'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: 'baltree.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: 'baltree.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: 'trope.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: 'trope.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: 'binpacking.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: 'binpacking.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- 
+- Installing library with ocamlfind
+- ocamlfind install  grenier META hll/hll.mli hll/hll.cmi hll/hll.cmx hll/hll_consts.cmi hll/hll_consts.cmx hll/hll.a hll/hll.cma hll/hll.cmxa jmphash/jmphash.mli jmphash/jmphash.cmi jmphash/jmphash.cmx jmphash/jmphash.a jmphash/jmphash.cma jmphash/jmphash.cmxa pcg/pcg.mli pcg/pcg.cmi pcg/pcg.cmx pcg/pcg.a pcg/pcg.cma pcg/pcg.cmxa orderme/order_list.mli orderme/order_indir.mli orderme/order_managed.mli orderme/order_list.cmi orderme/order_list.cmx orderme/order_indir.cmi orderme/order_indir.cmx orderme/order_managed.cmi orderme/order_managed.cmx orderme/orderme.a orderme/orderme.cma orderme/orderme.cmxa doubledouble/doubledouble.mli doubledouble/doubledouble.cmi doubledouble/doubledouble.cmo doubledouble/doubledouble.cmx physh/physh.mli physh/physh.cmi physh/physh.cmx physh/physh.a physh/physh.cma physh/physh.cmxa physh/lib_physh_stubs.a physh/dll_physh_stubs.so baltree/bt1.mli baltree/bt1.cmi baltree/bt1.cmx baltree/bt2.mli baltree/bt2.cmi baltree/bt2.cmx baltree/mbt.mli baltree/mbt.cmi baltree/mbt.cmx baltree/baltree.a baltree/baltree.cma baltree/baltree.cmxa binpacking/maxrects.mli binpacking/maxrects.cmi binpacking/maxrects.cmx binpacking/binpacking.a binpacking/binpacking.cma binpacking/binpacking.cmxa trope/trope.mli trope/trope.cmi trope/trope.cmx trope/trope.a trope/trope.cma trope/trope.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/binpacking.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/binpacking.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/binpacking.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/maxrects.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/maxrects.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/maxrects.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/baltree.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/baltree.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/baltree.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/mbt.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/mbt.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/mbt.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt2.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt2.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt2.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt1.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt1.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt1.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/dll_physh_stubs.so
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/lib_physh_stubs.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/doubledouble.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/doubledouble.cmo
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/doubledouble.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/doubledouble.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/orderme.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/orderme.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/orderme.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_managed.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_managed.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_indir.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_indir.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_list.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_list.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_managed.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_indir.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_list.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.mli
+- ocamlfind: hll/hll.cmxa: No such file or directory
+- OCamlMakefile:1236: recipe for target 'libinstall' failed
+- make: *** [libinstall] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/META
+- for i in hll jmphash pcg orderme doubledouble physh baltree trope binpacking; do make -C $i all; done
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ocamldep hll.mli > ._bcdi/hll.di
+- ocamldep hll.ml > ._d/hll.d
+- ocamldep hll_consts.ml > ._d/hll_consts.d
+- ocamlc -c -g hll_consts.ml
+- ocamlc -c -g hll.mli
+- ocamlc -c -g hll.ml
+- File "hll.ml", line 72, characters 17-18:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../OCamlMakefile:1076: recipe for target 'hll.cmo' failed
+- make[2]: *** [hll.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ../OCamlMakefile:792: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- ocamldep jmphash.mli > ._bcdi/jmphash.di
+- ocamldep jmphash.ml > ._d/jmphash.d
+- ocamlc -c -g jmphash.mli
+- ocamlc -c -g jmphash.ml
+- ocamlc -a         -g        -o jmphash.cma jmphash.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- ocamldep -native jmphash.mli > ._ncdi/jmphash.di
+- ocamlopt -c -g jmphash.ml
+- ocamlopt -a          -g       -o jmphash.cmxa jmphash.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- ocamldep pcg.mli > ._bcdi/pcg.di
+- ocamldep pcg.ml > ._d/pcg.d
+- ocamlc -c -g pcg.mli
+- ocamlc -c -g pcg.ml
+- ocamlc -a         -g        -o pcg.cma pcg.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- ocamldep -native pcg.mli > ._ncdi/pcg.di
+- ocamlopt -c -g pcg.ml
+- ocamlopt -a          -g       -o pcg.cmxa pcg.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- ocamldep order_managed.mli > ._bcdi/order_managed.di
+- ocamldep order_indir.mli > ._bcdi/order_indir.di
+- ocamldep order_list.mli > ._bcdi/order_list.di
+- ocamldep order_managed.ml > ._d/order_managed.d
+- ocamldep order_indir.ml > ._d/order_indir.d
+- ocamldep order_list.ml > ._d/order_list.d
+- ocamlc -c -g order_list.mli
+- ocamlc -c -g order_list.ml
+- ocamlc -c -g order_indir.mli
+- ocamlc -c -g order_indir.ml
+- ocamlc -c -g order_managed.mli
+- ocamlc -c -g order_managed.ml
+- ocamlc -a         -g        -o orderme.cma order_list.cmo order_indir.cmo order_managed.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- ocamldep -native order_managed.mli > ._ncdi/order_managed.di
+- ocamldep -native order_indir.mli > ._ncdi/order_indir.di
+- ocamldep -native order_list.mli > ._ncdi/order_list.di
+- ocamlopt -c -g order_list.ml
+- ocamlopt -c -g order_indir.ml
+- ocamlopt -c -g order_managed.ml
+- ocamlopt -a          -g       -o orderme.cmxa order_list.cmx order_indir.cmx order_managed.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- ocamldep doubledouble.mli > ._bcdi/doubledouble.di
+- ocamldep doubledouble.ml > ._d/doubledouble.d
+- ocamlc -c -g doubledouble.mli
+- ocamlc -c -g doubledouble.ml
+- ocamlc -a         -g        -o doubledouble.cma doubledouble.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- ocamldep -native doubledouble.mli > ._ncdi/doubledouble.di
+- ocamlopt -c -g doubledouble.ml
+- ocamlopt -a          -g       -o doubledouble.cmxa doubledouble.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- ocamlc -c physh.mli
+- ocamlc -c physh.ml
+- ocamlc -c -ccopt "-O2 -std=gnu99" ml_physh_set.c
+- ocamlc -c -ccopt "-O2 -std=gnu99" ml_physh_map.c
+- ocamlmklib \
+-     -o _physh_stubs ml_physh_set.o ml_physh_map.o \
+-     -ccopt -O2 -ccopt -std=gnu99
+- ocamlc -a -custom -o physh.cma physh.cmo \
+-        -dllib dll_physh_stubs.so \
+-        -cclib -l_physh_stubs
+- ocamlopt -c physh.ml
+- ocamlopt -a -o physh.cmxa physh.cmx \
+-       -cclib -l_physh_stubs \
+-   		-ccopt -O2 -ccopt -std=gnu99
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- ocamldep mbt.mli > ._bcdi/mbt.di
+- ocamldep bt2.mli > ._bcdi/bt2.di
+- ocamldep bt1.mli > ._bcdi/bt1.di
+- ocamldep mbt.ml > ._d/mbt.d
+- ocamldep bt2.ml > ._d/bt2.d
+- ocamldep bt1.ml > ._d/bt1.d
+- ocamlc -c -g bt1.mli
+- ocamlc -c -g bt1.ml
+- ocamlc -c -g bt2.mli
+- ocamlc -c -g bt2.ml
+- ocamlc -c -g mbt.mli
+- ocamlc -c -g mbt.ml
+- ocamlc -a         -g        -o baltree.cma bt1.cmo bt2.cmo mbt.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- ocamldep -native mbt.mli > ._ncdi/mbt.di
+- ocamldep -native bt2.mli > ._ncdi/bt2.di
+- ocamldep -native bt1.mli > ._ncdi/bt1.di
+- ocamlopt -c -g bt1.ml
+- ocamlopt -c -g bt2.ml
+- ocamlopt -c -g mbt.ml
+- ocamlopt -a          -g       -o baltree.cmxa bt1.cmx bt2.cmx mbt.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- ocamldep trope.mli > ._bcdi/trope.di
+- ocamldep trope.ml > ._d/trope.d
+- ocamlc -c -g -I ../baltree -I ../orderme trope.mli
+- ocamlc -c -g -I ../baltree -I ../orderme trope.ml
+- ocamlc -a         -g        -o trope.cma trope.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- ocamldep -native trope.mli > ._ncdi/trope.di
+- ocamlopt -c -g -I ../baltree -I ../orderme trope.ml
+- ocamlopt -a          -g       -o trope.cmxa trope.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- ocamldep maxrects.mli > ._bcdi/maxrects.di
+- ocamldep maxrects.ml > ._d/maxrects.d
+- ocamlc -c -g maxrects.mli
+- ocamlc -c -g maxrects.ml
+- ocamlc -a         -g        -o binpacking.cma maxrects.cmo
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- ocamldep -native maxrects.mli > ._ncdi/maxrects.di
+- ocamlopt -c -g maxrects.ml
+- ocamlopt -a          -g       -o binpacking.cmxa maxrects.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- for i in hll jmphash pcg orderme doubledouble physh baltree trope binpacking; do make -C $i all; done
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ocamlc -c -g hll.ml
+- File "hll.ml", line 72, characters 17-18:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../OCamlMakefile:1076: recipe for target 'hll.cmo' failed
+- make[2]: *** [hll.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- ../OCamlMakefile:792: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/hll'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: 'jmphash.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[2]: 'jmphash.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/jmphash'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: 'pcg.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[2]: 'pcg.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/pcg'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: 'orderme.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[2]: 'orderme.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/orderme'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: 'doubledouble.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[2]: 'doubledouble.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/doubledouble'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- make[1]: Nothing to be done for 'all'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/physh'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: 'baltree.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[2]: 'baltree.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/baltree'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: 'trope.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[2]: 'trope.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/trope'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: 'binpacking.cma' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[2]: 'binpacking.cmxa' is up to date.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/binpacking'
+- 
+- Installing library with ocamlfind
+- ocamlfind install  grenier META hll/hll.mli hll/hll.cmi hll/hll.cmx hll/hll_consts.cmi hll/hll_consts.cmx hll/hll.a hll/hll.cma hll/hll.cmxa jmphash/jmphash.mli jmphash/jmphash.cmi jmphash/jmphash.cmx jmphash/jmphash.a jmphash/jmphash.cma jmphash/jmphash.cmxa pcg/pcg.mli pcg/pcg.cmi pcg/pcg.cmx pcg/pcg.a pcg/pcg.cma pcg/pcg.cmxa orderme/order_list.mli orderme/order_indir.mli orderme/order_managed.mli orderme/order_list.cmi orderme/order_list.cmx orderme/order_indir.cmi orderme/order_indir.cmx orderme/order_managed.cmi orderme/order_managed.cmx orderme/orderme.a orderme/orderme.cma orderme/orderme.cmxa doubledouble/doubledouble.mli doubledouble/doubledouble.cmi doubledouble/doubledouble.cmo doubledouble/doubledouble.cmx physh/physh.mli physh/physh.cmi physh/physh.cmx physh/physh.a physh/physh.cma physh/physh.cmxa physh/lib_physh_stubs.a physh/dll_physh_stubs.so baltree/bt1.mli baltree/bt1.cmi baltree/bt1.cmx baltree/bt2.mli baltree/bt2.cmi baltree/bt2.cmx baltree/mbt.mli baltree/mbt.cmi baltree/mbt.cmx baltree/baltree.a baltree/baltree.cma baltree/baltree.cmxa binpacking/maxrects.mli binpacking/maxrects.cmi binpacking/maxrects.cmx binpacking/binpacking.a binpacking/binpacking.cma binpacking/binpacking.cmxa trope/trope.mli trope/trope.cmi trope/trope.cmx trope/trope.a trope/trope.cma trope/trope.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/trope.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/binpacking.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/binpacking.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/binpacking.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/maxrects.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/maxrects.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/maxrects.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/baltree.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/baltree.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/baltree.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/mbt.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/mbt.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/mbt.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt2.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt2.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt2.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt1.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt1.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/bt1.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/dll_physh_stubs.so
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/lib_physh_stubs.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/physh.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/doubledouble.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/doubledouble.cmo
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/doubledouble.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/doubledouble.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/orderme.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/orderme.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/orderme.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_managed.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_managed.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_indir.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_indir.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_list.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_list.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_managed.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_indir.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/order_list.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.mli
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmxa
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cma
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.a
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmx
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmi
+- Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.mli
+- ocamlfind: hll/hll.cmxa: No such file or directory
+- OCamlMakefile:1236: recipe for target 'libinstall' failed
+- make: *** [libinstall] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/META
+[WARNING] Directory
+          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier
+          is not empty, not removing
+
+#=== ERROR while installing grenier.0.5 =======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make install
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/grenier-10186.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/grenier-10186.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/grenier.0.5/grenier-10186.out
+### stdout ###
+# [...]
+# Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.mli
+# Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmxa
+# Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cma
+# Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.a
+# Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmx
+# Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmi
+# Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.mli
+# ocamlfind: hll/hll.cmxa: No such file or directory
+# OCamlMakefile:1236: recipe for target 'libinstall' failed
+# make: *** [libinstall] Error 2
+### stderr ###
+# [...]
+# Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/pcg.mli
+# Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmxa
+# Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cma
+# Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.a
+# Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmx
+# Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.cmi
+# Installed /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/grenier/jmphash.mli
+# ocamlfind: hll/hll.cmxa: No such file or directory
+# OCamlMakefile:1236: recipe for target 'libinstall' failed
+# make: *** [libinstall] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install grenier 0.5
+No changes have been performed
+'opam install grenier.0.5' failed.

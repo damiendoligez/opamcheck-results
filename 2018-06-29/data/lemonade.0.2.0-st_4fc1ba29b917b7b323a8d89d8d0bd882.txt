@@ -1,0 +1,439 @@
+The following actions will be performed:
+  - install lemonade 0.2.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[lemonade: http] Command started
+[lemonade: http] Command started
+[lemonade.0.2.0] https://github.com/michipili/lemonade/releases/download/v0.2.0/lemonade-0.2.0.tar.xz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[lemonade: ./configure] Command started
++ ./configure "--prefix" "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0)
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.0+rc2
+- OCaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for dynlink.cmxa... yes
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamlbuild... ocamlbuild
+- checking for ocamlfind... ocamlfind
+- checking for findlib package mixture... found
+- checking for findlib package broken... found
+- configure: creating ./config.status
+- config.status: creating Makefile.config
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.0+rc2
+- OCaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for dynlink.cmxa... yes
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamlbuild... ocamlbuild
+- checking for ocamlfind... ocamlfind
+- checking for findlib package mixture... found
+- checking for findlib package broken... found
+- configure: creating ./config.status
+- config.status: creating Makefile.config
+[lemonade: /usr/bin/bmake all] Command started
++ /usr/bin/bmake "-I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/share/bsdowl" "all" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0)
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.0+rc2
+- OCaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for dynlink.cmxa... yes
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamlbuild... ocamlbuild
+- checking for ocamlfind... ocamlfind
+- checking for findlib package mixture... found
+- checking for findlib package broken... found
+- configure: creating ./config.status
+- config.status: creating Makefile.config
+- /usr/bin/bmake configure
+- /usr/bin/bmake depend
+- ===> src (depend)
+- (cd /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src && ocamldep -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src lemonade_Type.ml lemonade_Type.mli lemonade_Lazy.ml lemonade_Lazy.mli lemonade_List.ml lemonade_List.mli lemonade_Maybe.ml lemonade_Maybe.mli lemonade_Retry.ml lemonade_Retry.mli lemonade_Success.ml lemonade_Success.mli lemonade_Type.ml lemonade_Type.mli lemonade_Lazy.ml lemonade_Lazy.mli lemonade_List.ml lemonade_List.mli lemonade_Maybe.ml lemonade_Maybe.mli lemonade_Retry.ml lemonade_Retry.mli lemonade_Success.ml lemonade_Success.mli) | sh -c '/bin/sed -e "s@/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src/*@@g" -e "s@/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src/*@@g"' -- OCAMLDEP_FILTER  > .depend
+- ===> meta (depend)
+- ===> manual (depend)
+- ===> testsuite (depend)
+- /usr/bin/bmake build
+- ===> src (build)
+- ocamlfind ocamlc -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Type.cmi lemonade_Type.mli
+- ocamlfind ocamlopt -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Type.cmx lemonade_Type.ml
+- ocamlfind ocamlc -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Lazy.cmi lemonade_Lazy.mli
+- ocamlfind ocamlopt -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Lazy.cmx lemonade_Lazy.ml
+- File "lemonade_Lazy.ml", line 1:
+- Error: The implementation lemonade_Lazy.ml
+-        does not match the interface lemonade_Lazy.cmi:
+-        ...
+-        At position module T(M : <here>) : ...
+-        Modules do not match:
+-          Lemonade_Type.S
+-        is not included in
+-          Mixture_Monad.S
+-        At position module T(M : sig module Infix : <here> end) : ...
+-        The value `>|=' is required but not provided
+-        File "mixture_Monad.mli", line 100, characters 4-44:
+-          Expected declaration
+- *** Error code 2
+- 
+- Stop.
+- bmake[2]: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src
+- *** Error code 1
+- 
+- Stop.
+- bmake[1]: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0
+- *** Error code 1
+- 
+- Stop.
+- bmake: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.0+rc2
+- OCaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for dynlink.cmxa... yes
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamlbuild... ocamlbuild
+- checking for ocamlfind... ocamlfind
+- checking for findlib package mixture... found
+- checking for findlib package broken... found
+- configure: creating ./config.status
+- config.status: creating Makefile.config
+- /usr/bin/bmake configure
+- /usr/bin/bmake depend
+- ===> src (depend)
+- (cd /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src && ocamldep -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src lemonade_Type.ml lemonade_Type.mli lemonade_Lazy.ml lemonade_Lazy.mli lemonade_List.ml lemonade_List.mli lemonade_Maybe.ml lemonade_Maybe.mli lemonade_Retry.ml lemonade_Retry.mli lemonade_Success.ml lemonade_Success.mli lemonade_Type.ml lemonade_Type.mli lemonade_Lazy.ml lemonade_Lazy.mli lemonade_List.ml lemonade_List.mli lemonade_Maybe.ml lemonade_Maybe.mli lemonade_Retry.ml lemonade_Retry.mli lemonade_Success.ml lemonade_Success.mli) | sh -c '/bin/sed -e "s@/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src/*@@g" -e "s@/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src/*@@g"' -- OCAMLDEP_FILTER  > .depend
+- ===> meta (depend)
+- ===> manual (depend)
+- ===> testsuite (depend)
+- /usr/bin/bmake build
+- ===> src (build)
+- ocamlfind ocamlc -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Type.cmi lemonade_Type.mli
+- ocamlfind ocamlopt -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Type.cmx lemonade_Type.ml
+- ocamlfind ocamlc -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Lazy.cmi lemonade_Lazy.mli
+- ocamlfind ocamlopt -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Lazy.cmx lemonade_Lazy.ml
+- File "lemonade_Lazy.ml", line 1:
+- Error: The implementation lemonade_Lazy.ml
+-        does not match the interface lemonade_Lazy.cmi:
+-        ...
+-        At position module T(M : <here>) : ...
+-        Modules do not match:
+-          Lemonade_Type.S
+-        is not included in
+-          Mixture_Monad.S
+-        At position module T(M : sig module Infix : <here> end) : ...
+-        The value `>|=' is required but not provided
+-        File "mixture_Monad.mli", line 100, characters 4-44:
+-          Expected declaration
+- *** Error code 2
+- 
+- Stop.
+- bmake[2]: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src
+- *** Error code 1
+- 
+- Stop.
+- bmake[1]: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0
+- *** Error code 1
+- 
+- Stop.
+- bmake: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0
+[ERROR] The compilation of lemonade failed at "/usr/bin/bmake
+        -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/share/bsdowl
+        all".
+[lemonade: ocamlfind remove] Command started
++ ocamlfind "remove" "lemonade" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0)
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.0+rc2
+- OCaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for dynlink.cmxa... yes
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamlbuild... ocamlbuild
+- checking for ocamlfind... ocamlfind
+- checking for findlib package mixture... found
+- checking for findlib package broken... found
+- configure: creating ./config.status
+- config.status: creating Makefile.config
+- /usr/bin/bmake configure
+- /usr/bin/bmake depend
+- ===> src (depend)
+- (cd /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src && ocamldep -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src lemonade_Type.ml lemonade_Type.mli lemonade_Lazy.ml lemonade_Lazy.mli lemonade_List.ml lemonade_List.mli lemonade_Maybe.ml lemonade_Maybe.mli lemonade_Retry.ml lemonade_Retry.mli lemonade_Success.ml lemonade_Success.mli lemonade_Type.ml lemonade_Type.mli lemonade_Lazy.ml lemonade_Lazy.mli lemonade_List.ml lemonade_List.mli lemonade_Maybe.ml lemonade_Maybe.mli lemonade_Retry.ml lemonade_Retry.mli lemonade_Success.ml lemonade_Success.mli) | sh -c '/bin/sed -e "s@/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src/*@@g" -e "s@/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src/*@@g"' -- OCAMLDEP_FILTER  > .depend
+- ===> meta (depend)
+- ===> manual (depend)
+- ===> testsuite (depend)
+- /usr/bin/bmake build
+- ===> src (build)
+- ocamlfind ocamlc -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Type.cmi lemonade_Type.mli
+- ocamlfind ocamlopt -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Type.cmx lemonade_Type.ml
+- ocamlfind ocamlc -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Lazy.cmi lemonade_Lazy.mli
+- ocamlfind ocamlopt -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Lazy.cmx lemonade_Lazy.ml
+- File "lemonade_Lazy.ml", line 1:
+- Error: The implementation lemonade_Lazy.ml
+-        does not match the interface lemonade_Lazy.cmi:
+-        ...
+-        At position module T(M : <here>) : ...
+-        Modules do not match:
+-          Lemonade_Type.S
+-        is not included in
+-          Mixture_Monad.S
+-        At position module T(M : sig module Infix : <here> end) : ...
+-        The value `>|=' is required but not provided
+-        File "mixture_Monad.mli", line 100, characters 4-44:
+-          Expected declaration
+- *** Error code 2
+- 
+- Stop.
+- bmake[2]: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src
+- *** Error code 1
+- 
+- Stop.
+- bmake[1]: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0
+- *** Error code 1
+- 
+- Stop.
+- bmake: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/lemonade/META
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.0+rc2
+- OCaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for dynlink.cmxa... yes
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamlbuild... ocamlbuild
+- checking for ocamlfind... ocamlfind
+- checking for findlib package mixture... found
+- checking for findlib package broken... found
+- configure: creating ./config.status
+- config.status: creating Makefile.config
+- /usr/bin/bmake configure
+- /usr/bin/bmake depend
+- ===> src (depend)
+- (cd /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src && ocamldep -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src lemonade_Type.ml lemonade_Type.mli lemonade_Lazy.ml lemonade_Lazy.mli lemonade_List.ml lemonade_List.mli lemonade_Maybe.ml lemonade_Maybe.mli lemonade_Retry.ml lemonade_Retry.mli lemonade_Success.ml lemonade_Success.mli lemonade_Type.ml lemonade_Type.mli lemonade_Lazy.ml lemonade_Lazy.mli lemonade_List.ml lemonade_List.mli lemonade_Maybe.ml lemonade_Maybe.mli lemonade_Retry.ml lemonade_Retry.mli lemonade_Success.ml lemonade_Success.mli) | sh -c '/bin/sed -e "s@/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src/*@@g" -e "s@/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src/*@@g"' -- OCAMLDEP_FILTER  > .depend
+- ===> meta (depend)
+- ===> manual (depend)
+- ===> testsuite (depend)
+- /usr/bin/bmake build
+- ===> src (build)
+- ocamlfind ocamlc -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Type.cmi lemonade_Type.mli
+- ocamlfind ocamlopt -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Type.cmx lemonade_Type.ml
+- ocamlfind ocamlc -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Lazy.cmi lemonade_Lazy.mli
+- ocamlfind ocamlopt -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Lazy.cmx lemonade_Lazy.ml
+- File "lemonade_Lazy.ml", line 1:
+- Error: The implementation lemonade_Lazy.ml
+-        does not match the interface lemonade_Lazy.cmi:
+-        ...
+-        At position module T(M : <here>) : ...
+-        Modules do not match:
+-          Lemonade_Type.S
+-        is not included in
+-          Mixture_Monad.S
+-        At position module T(M : sig module Infix : <here> end) : ...
+-        The value `>|=' is required but not provided
+-        File "mixture_Monad.mli", line 100, characters 4-44:
+-          Expected declaration
+- *** Error code 2
+- 
+- Stop.
+- bmake[2]: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src
+- *** Error code 1
+- 
+- Stop.
+- bmake[1]: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0
+- *** Error code 1
+- 
+- Stop.
+- bmake: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/lemonade/META
+[lemonade: rm] Command started
++ rm "-rf" "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/share/doc/lemonade" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0)
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.0+rc2
+- OCaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for dynlink.cmxa... yes
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamlbuild... ocamlbuild
+- checking for ocamlfind... ocamlfind
+- checking for findlib package mixture... found
+- checking for findlib package broken... found
+- configure: creating ./config.status
+- config.status: creating Makefile.config
+- /usr/bin/bmake configure
+- /usr/bin/bmake depend
+- ===> src (depend)
+- (cd /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src && ocamldep -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src lemonade_Type.ml lemonade_Type.mli lemonade_Lazy.ml lemonade_Lazy.mli lemonade_List.ml lemonade_List.mli lemonade_Maybe.ml lemonade_Maybe.mli lemonade_Retry.ml lemonade_Retry.mli lemonade_Success.ml lemonade_Success.mli lemonade_Type.ml lemonade_Type.mli lemonade_Lazy.ml lemonade_Lazy.mli lemonade_List.ml lemonade_List.mli lemonade_Maybe.ml lemonade_Maybe.mli lemonade_Retry.ml lemonade_Retry.mli lemonade_Success.ml lemonade_Success.mli) | sh -c '/bin/sed -e "s@/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src/*@@g" -e "s@/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src/*@@g"' -- OCAMLDEP_FILTER  > .depend
+- ===> meta (depend)
+- ===> manual (depend)
+- ===> testsuite (depend)
+- /usr/bin/bmake build
+- ===> src (build)
+- ocamlfind ocamlc -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Type.cmi lemonade_Type.mli
+- ocamlfind ocamlopt -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Type.cmx lemonade_Type.ml
+- ocamlfind ocamlc -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Lazy.cmi lemonade_Lazy.mli
+- ocamlfind ocamlopt -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Lazy.cmx lemonade_Lazy.ml
+- File "lemonade_Lazy.ml", line 1:
+- Error: The implementation lemonade_Lazy.ml
+-        does not match the interface lemonade_Lazy.cmi:
+-        ...
+-        At position module T(M : <here>) : ...
+-        Modules do not match:
+-          Lemonade_Type.S
+-        is not included in
+-          Mixture_Monad.S
+-        At position module T(M : sig module Infix : <here> end) : ...
+-        The value `>|=' is required but not provided
+-        File "mixture_Monad.mli", line 100, characters 4-44:
+-          Expected declaration
+- *** Error code 2
+- 
+- Stop.
+- bmake[2]: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src
+- *** Error code 1
+- 
+- Stop.
+- bmake[1]: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0
+- *** Error code 1
+- 
+- Stop.
+- bmake: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/lemonade/META
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.0+rc2
+- OCaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for dynlink.cmxa... yes
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamlbuild... ocamlbuild
+- checking for ocamlfind... ocamlfind
+- checking for findlib package mixture... found
+- checking for findlib package broken... found
+- configure: creating ./config.status
+- config.status: creating Makefile.config
+- /usr/bin/bmake configure
+- /usr/bin/bmake depend
+- ===> src (depend)
+- (cd /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src && ocamldep -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src lemonade_Type.ml lemonade_Type.mli lemonade_Lazy.ml lemonade_Lazy.mli lemonade_List.ml lemonade_List.mli lemonade_Maybe.ml lemonade_Maybe.mli lemonade_Retry.ml lemonade_Retry.mli lemonade_Success.ml lemonade_Success.mli lemonade_Type.ml lemonade_Type.mli lemonade_Lazy.ml lemonade_Lazy.mli lemonade_List.ml lemonade_List.mli lemonade_Maybe.ml lemonade_Maybe.mli lemonade_Retry.ml lemonade_Retry.mli lemonade_Success.ml lemonade_Success.mli) | sh -c '/bin/sed -e "s@/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src/*@@g" -e "s@/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src/*@@g"' -- OCAMLDEP_FILTER  > .depend
+- ===> meta (depend)
+- ===> manual (depend)
+- ===> testsuite (depend)
+- /usr/bin/bmake build
+- ===> src (build)
+- ocamlfind ocamlc -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Type.cmi lemonade_Type.mli
+- ocamlfind ocamlopt -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Type.cmx lemonade_Type.ml
+- ocamlfind ocamlc -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Lazy.cmi lemonade_Lazy.mli
+- ocamlfind ocamlopt -c -package "broken mixture" -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src -o lemonade_Lazy.cmx lemonade_Lazy.ml
+- File "lemonade_Lazy.ml", line 1:
+- Error: The implementation lemonade_Lazy.ml
+-        does not match the interface lemonade_Lazy.cmi:
+-        ...
+-        At position module T(M : <here>) : ...
+-        Modules do not match:
+-          Lemonade_Type.S
+-        is not included in
+-          Mixture_Monad.S
+-        At position module T(M : sig module Infix : <here> end) : ...
+-        The value `>|=' is required but not provided
+-        File "mixture_Monad.mli", line 100, characters 4-44:
+-          Expected declaration
+- *** Error code 2
+- 
+- Stop.
+- bmake[2]: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src
+- *** Error code 1
+- 
+- Stop.
+- bmake[1]: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0
+- *** Error code 1
+- 
+- Stop.
+- bmake: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/lemonade/META
+
+#=== ERROR while installing lemonade.0.2.0 ====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              /usr/bin/bmake -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/share/bsdowl all
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0
+# compiler             4.07.0+rc2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/lemonade-19877.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/lemonade-19877.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/lemonade-19877.out
+### stdout ###
+# [...]
+# Stop.
+# bmake[2]: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src
+# *** Error code 1
+# 
+# Stop.
+# bmake[1]: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0
+# *** Error code 1
+# 
+# Stop.
+# bmake: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0
+### stderr ###
+# [...]
+# Stop.
+# bmake[2]: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0/src
+# *** Error code 1
+# 
+# Stop.
+# bmake[1]: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0
+# *** Error code 1
+# 
+# Stop.
+# bmake: stopped in /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lemonade.0.2.0
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install lemonade 0.2.0
+No changes have been performed
+'opam install lemonade.0.2.0' failed.

@@ -1,0 +1,67 @@
+The following actions will be performed:
+  - install sundialsml 2.5.0p0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sundialsml: http] Command started
+[sundialsml: http] Command started
+[sundialsml.2.5.0p0] https://github.com/inria-parkas/sundialsml/archive/v2.5.0p0.zip downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sundialsml: ./configure] Command started
++ ./configure "--prefix=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/sundialsml.2.5.0p0)
+- <stdin>:1:27: warning: extra tokens at end of #include directive
+- Failed to detect size of `int'.  This might be a problem
+- with detecting your system's C preprocessor.
+- 
+- <stdin>:1:27: warning: extra tokens at end of #include directive
+- Failed to detect size of `int'.  This might be a problem
+- with detecting your system's C preprocessor.
+- 
+[ERROR] The compilation of sundialsml failed at "./configure
+        --prefix=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2".
+[sundialsml: ocamlfind remove] Command started
++ ocamlfind "remove" "sundialsml" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/sundialsml.2.5.0p0)
+- <stdin>:1:27: warning: extra tokens at end of #include directive
+- Failed to detect size of `int'.  This might be a problem
+- with detecting your system's C preprocessor.
+- 
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/sundialsml/META
+- <stdin>:1:27: warning: extra tokens at end of #include directive
+- Failed to detect size of `int'.  This might be a problem
+- with detecting your system's C preprocessor.
+- 
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/sundialsml/META
+
+#=== ERROR while installing sundialsml.2.5.0p0 ================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ./configure --prefix=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/sundialsml.2.5.0p0
+# compiler             4.04.2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/sundialsml.2.5.0p0/sundialsml-17828.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/sundialsml.2.5.0p0/sundialsml-17828.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/sundialsml.2.5.0p0/sundialsml-17828.out
+### stdout ###
+# <stdin>:1:27: warning: extra tokens at end of #include directive
+# Failed to detect size of `int'.  This might be a problem
+# with detecting your system's C preprocessor.
+# 
+### stderr ###
+# <stdin>:1:27: warning: extra tokens at end of #include directive
+# Failed to detect size of `int'.  This might be a problem
+# with detecting your system's C preprocessor.
+# 
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install sundialsml 2.5.0p0
+No changes have been performed
+
+=-=- sundialsml.2.5.0p0 troobleshooting -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package relies on external (system) dependencies that may be missing.
+   `opam depext sundialsml.2.5.0p0' may help you find the correct installation
+   for your system.
+'opam install sundialsml.2.5.0p0' failed.

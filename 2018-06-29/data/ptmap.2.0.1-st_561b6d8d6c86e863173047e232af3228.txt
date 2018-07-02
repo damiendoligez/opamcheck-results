@@ -1,0 +1,159 @@
+The following actions will be performed:
+  - install ptmap 2.0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ptmap: http] Command started
+[ptmap: http] Command started
+[ptmap.2.0.1] https://github.com/UnixJunkie/ptmap/archive/v2.0.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ptmap: obuild configure] Command started
++ obuild "configure" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ptmap.2.0.1)
+- Configuring ptmap-1.0...
+- Configuring ptmap-1.0...
+[ptmap: obuild build] Command started
++ obuild "build" "lib-ptmap" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ptmap.2.0.1)
+- Configuring ptmap-1.0...
+- [1 of 4] Intfing Ptmap                         
+- [2 of 4] Compiling Ptmap                         
+- 
+- File "ptmap.ml", line 1:
+- Error: The implementation ptmap.ml
+-        does not match the interface dist/build/lib-ptmap/ptmap.cmi:
+-        The value `find_last_opt' is required but not provided
+-        File "map.mli", line 291, characters 4-65: Expected declaration
+-        The value `find_last' is required but not provided
+-        File "map.mli", line 284, characters 4-52: Expected declaration
+-        The value `find_first_opt' is required but not provided
+-        File "map.mli", line 277, characters 4-66: Expected declaration
+-        The value `find_first' is required but not provided
+-        File "map.mli", line 264, characters 4-53: Expected declaration
+-        The value `choose_opt' is required but not provided
+-        File "map.mli", line 236, characters 4-45: Expected declaration
+-        The value `max_binding_opt' is required but not provided
+-        File "map.mli", line 223, characters 4-50: Expected declaration
+-        The value `min_binding_opt' is required but not provided
+-        File "map.mli", line 210, characters 4-50: Expected declaration
+-        The value `update' is required but not provided
+-        File "map.mli", line 89, characters 4-63: Expected declaration
+- 
+- Configuring ptmap-1.0...
+- [1 of 4] Intfing Ptmap                         
+- [2 of 4] Compiling Ptmap                         
+- 
+- File "ptmap.ml", line 1:
+- Error: The implementation ptmap.ml
+-        does not match the interface dist/build/lib-ptmap/ptmap.cmi:
+-        The value `find_last_opt' is required but not provided
+-        File "map.mli", line 291, characters 4-65: Expected declaration
+-        The value `find_last' is required but not provided
+-        File "map.mli", line 284, characters 4-52: Expected declaration
+-        The value `find_first_opt' is required but not provided
+-        File "map.mli", line 277, characters 4-66: Expected declaration
+-        The value `find_first' is required but not provided
+-        File "map.mli", line 264, characters 4-53: Expected declaration
+-        The value `choose_opt' is required but not provided
+-        File "map.mli", line 236, characters 4-45: Expected declaration
+-        The value `max_binding_opt' is required but not provided
+-        File "map.mli", line 223, characters 4-50: Expected declaration
+-        The value `min_binding_opt' is required but not provided
+-        File "map.mli", line 210, characters 4-50: Expected declaration
+-        The value `update' is required but not provided
+-        File "map.mli", line 89, characters 4-63: Expected declaration
+- 
+[ERROR] The compilation of ptmap failed at "obuild build lib-ptmap".
+[ptmap: ocamlfind remove] Command started
++ ocamlfind "remove" "ptmap" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ptmap.2.0.1)
+- Configuring ptmap-1.0...
+- [1 of 4] Intfing Ptmap                         
+- [2 of 4] Compiling Ptmap                         
+- 
+- File "ptmap.ml", line 1:
+- Error: The implementation ptmap.ml
+-        does not match the interface dist/build/lib-ptmap/ptmap.cmi:
+-        The value `find_last_opt' is required but not provided
+-        File "map.mli", line 291, characters 4-65: Expected declaration
+-        The value `find_last' is required but not provided
+-        File "map.mli", line 284, characters 4-52: Expected declaration
+-        The value `find_first_opt' is required but not provided
+-        File "map.mli", line 277, characters 4-66: Expected declaration
+-        The value `find_first' is required but not provided
+-        File "map.mli", line 264, characters 4-53: Expected declaration
+-        The value `choose_opt' is required but not provided
+-        File "map.mli", line 236, characters 4-45: Expected declaration
+-        The value `max_binding_opt' is required but not provided
+-        File "map.mli", line 223, characters 4-50: Expected declaration
+-        The value `min_binding_opt' is required but not provided
+-        File "map.mli", line 210, characters 4-50: Expected declaration
+-        The value `update' is required but not provided
+-        File "map.mli", line 89, characters 4-63: Expected declaration
+- 
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ptmap/META
+- Configuring ptmap-1.0...
+- [1 of 4] Intfing Ptmap                         
+- [2 of 4] Compiling Ptmap                         
+- 
+- File "ptmap.ml", line 1:
+- Error: The implementation ptmap.ml
+-        does not match the interface dist/build/lib-ptmap/ptmap.cmi:
+-        The value `find_last_opt' is required but not provided
+-        File "map.mli", line 291, characters 4-65: Expected declaration
+-        The value `find_last' is required but not provided
+-        File "map.mli", line 284, characters 4-52: Expected declaration
+-        The value `find_first_opt' is required but not provided
+-        File "map.mli", line 277, characters 4-66: Expected declaration
+-        The value `find_first' is required but not provided
+-        File "map.mli", line 264, characters 4-53: Expected declaration
+-        The value `choose_opt' is required but not provided
+-        File "map.mli", line 236, characters 4-45: Expected declaration
+-        The value `max_binding_opt' is required but not provided
+-        File "map.mli", line 223, characters 4-50: Expected declaration
+-        The value `min_binding_opt' is required but not provided
+-        File "map.mli", line 210, characters 4-50: Expected declaration
+-        The value `update' is required but not provided
+-        File "map.mli", line 89, characters 4-63: Expected declaration
+- 
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ptmap/META
+
+#=== ERROR while installing ptmap.2.0.1 =======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              obuild build lib-ptmap
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ptmap.2.0.1
+# compiler             4.06.1
+# exit-code            6
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ptmap.2.0.1/ptmap-24531.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ptmap.2.0.1/ptmap-24531.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/ptmap.2.0.1/ptmap-24531.out
+### stdout ###
+# Error: The implementation ptmap.ml
+# [...]
+#        The value `choose_opt' is required but not provided
+#        File "map.mli", line 236, characters 4-45: Expected declaration
+#        The value `max_binding_opt' is required but not provided
+#        File "map.mli", line 223, characters 4-50: Expected declaration
+#        The value `min_binding_opt' is required but not provided
+#        File "map.mli", line 210, characters 4-50: Expected declaration
+#        The value `update' is required but not provided
+#        File "map.mli", line 89, characters 4-63: Expected declaration
+# 
+### stderr ###
+# Error: The implementation ptmap.ml
+# [...]
+#        The value `choose_opt' is required but not provided
+#        File "map.mli", line 236, characters 4-45: Expected declaration
+#        The value `max_binding_opt' is required but not provided
+#        File "map.mli", line 223, characters 4-50: Expected declaration
+#        The value `min_binding_opt' is required but not provided
+#        File "map.mli", line 210, characters 4-50: Expected declaration
+#        The value `update' is required but not provided
+#        File "map.mli", line 89, characters 4-63: Expected declaration
+# 
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ptmap 2.0.1
+No changes have been performed
+'opam install ptmap.2.0.1' failed.

@@ -1,0 +1,54 @@
+The following actions will be performed:
+  - install anycache 0.7.4
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[anycache: http] Command started
+[anycache: http] Command started
+[anycache.0.7.4] https://gitlab.com/edwintorok/ocaml-anycache/uploads/47d27fb2e3ac835994d7b546872b12cb/anycache-0.7.4.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[anycache: jbuilder build] Command started
++ jbuilder "build" "-p" "anycache" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/anycache.0.7.4)
+-       ocamlc lib/.anycache.objs/anycache__LRU.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.anycache.objs -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/lru -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/psq -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/result -no-alias-deps -open Anycache__ -o lib/.anycache.objs/anycache__LRU.cmo -c -impl lib/LRU.ml)
+- File "lib/LRU.ml", line 54, characters 37-42:
+- Error: This function has type L.k -> L.v -> L.t -> L.t
+-        It is applied to too many arguments; maybe you forgot a `;'.
+-       ocamlc lib/.anycache.objs/anycache__LRU.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.anycache.objs -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/lru -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/psq -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/result -no-alias-deps -open Anycache__ -o lib/.anycache.objs/anycache__LRU.cmo -c -impl lib/LRU.ml)
+- File "lib/LRU.ml", line 54, characters 37-42:
+- Error: This function has type L.k -> L.v -> L.t -> L.t
+-        It is applied to too many arguments; maybe you forgot a `;'.
+[ERROR] The compilation of anycache failed at "jbuilder build -p anycache -j
+        4".
+
+#=== ERROR while installing anycache.0.7.4 ====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p anycache -j 4
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/anycache.0.7.4
+# compiler             4.07.0+rc2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/anycache.0.7.4/anycache-23143.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/anycache.0.7.4/anycache-23143.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/anycache.0.7.4/anycache-23143.out
+### stdout ###
+#       ocamlc lib/.anycache.objs/anycache__LRU.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.anycache.objs -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/lru -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/psq -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/result -no-alias-deps -open Anycache__ -o lib/.anycache.objs/anycache__LRU.cmo -c -impl lib/LRU.ml)
+# File "lib/LRU.ml", line 54, characters 37-42:
+# Error: This function has type L.k -> L.v -> L.t -> L.t
+#        It is applied to too many arguments; maybe you forgot a `;'.
+### stderr ###
+#       ocamlc lib/.anycache.objs/anycache__LRU.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.anycache.objs -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/lru -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/psq -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/result -no-alias-deps -open Anycache__ -o lib/.anycache.objs/anycache__LRU.cmo -c -impl lib/LRU.ml)
+# File "lib/LRU.ml", line 54, characters 37-42:
+# Error: This function has type L.k -> L.v -> L.t -> L.t
+#        It is applied to too many arguments; maybe you forgot a `;'.
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install anycache 0.7.4
+No changes have been performed
+'opam install anycache.0.7.4' failed.

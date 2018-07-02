@@ -1,0 +1,181 @@
+The following actions will be performed:
+  - install bencode 0.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bencode: http] Command started
+[bencode: http] Command started
+[bencode.0.2] https://github.com/rgrinberg/bencode/archive/0.2.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bencode: make all] Command started
++ make "all" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/bencode.0.2)
+- ocamlbuild -use-ocamlfind bencode.cma bencode.cmxa bencode.a bencode.docdir/index.html
+- ocamlfind ocamldep -modules lib/bencode.mli > lib/bencode.mli.depends
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode.cmi lib/bencode.mli
+- ocamlfind ocamldep -modules lib/bencode.ml > lib/bencode.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamllex.opt -q lib/bencode_lex.mll
+- ocamlfind ocamldep -modules lib/bencode_lex.ml > lib/bencode_lex.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlyacc lib/bencode_parse.mly
+- ocamlfind ocamldep -modules lib/bencode_parse.mli > lib/bencode_parse.mli.depends
+- ocamlfind ocamldep -modules lib/bencode_types.ml > lib/bencode_types.ml.depends
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode_types.cmo lib/bencode_types.ml
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode_parse.cmi lib/bencode_parse.mli
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode_lex.cmo lib/bencode_lex.ml
+- ocamlfind ocamldep -modules lib/bencode_parse.ml > lib/bencode_parse.ml.depends
+- ocamlfind ocamldep -modules lib/bencode_streaming.mli > lib/bencode_streaming.mli.depends
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode_streaming.cmi lib/bencode_streaming.mli
+- ocamlfind ocamldep -modules lib/bencode_streaming.ml > lib/bencode_streaming.ml.depends
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode.cmo lib/bencode.ml
+- + ocamlfind ocamlc -c -g -I lib -o lib/bencode.cmo lib/bencode.ml
+- File "lib/bencode.ml", line 43, characters 10-23:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "lib/bencode.ml", line 45, characters 4-16:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "lib/bencode.ml", line 56, characters 32-46:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Makefile:13: recipe for target 'all' failed
+- make: *** [all] Error 10
+- ocamlbuild -use-ocamlfind bencode.cma bencode.cmxa bencode.a bencode.docdir/index.html
+- ocamlfind ocamldep -modules lib/bencode.mli > lib/bencode.mli.depends
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode.cmi lib/bencode.mli
+- ocamlfind ocamldep -modules lib/bencode.ml > lib/bencode.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamllex.opt -q lib/bencode_lex.mll
+- ocamlfind ocamldep -modules lib/bencode_lex.ml > lib/bencode_lex.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlyacc lib/bencode_parse.mly
+- ocamlfind ocamldep -modules lib/bencode_parse.mli > lib/bencode_parse.mli.depends
+- ocamlfind ocamldep -modules lib/bencode_types.ml > lib/bencode_types.ml.depends
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode_types.cmo lib/bencode_types.ml
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode_parse.cmi lib/bencode_parse.mli
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode_lex.cmo lib/bencode_lex.ml
+- ocamlfind ocamldep -modules lib/bencode_parse.ml > lib/bencode_parse.ml.depends
+- ocamlfind ocamldep -modules lib/bencode_streaming.mli > lib/bencode_streaming.mli.depends
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode_streaming.cmi lib/bencode_streaming.mli
+- ocamlfind ocamldep -modules lib/bencode_streaming.ml > lib/bencode_streaming.ml.depends
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode.cmo lib/bencode.ml
+- + ocamlfind ocamlc -c -g -I lib -o lib/bencode.cmo lib/bencode.ml
+- File "lib/bencode.ml", line 43, characters 10-23:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "lib/bencode.ml", line 45, characters 4-16:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "lib/bencode.ml", line 56, characters 32-46:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Makefile:13: recipe for target 'all' failed
+- make: *** [all] Error 10
+[ERROR] The compilation of bencode failed at "make all".
+[bencode: make uninstall] Command started
++ make "uninstall" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/bencode.0.2)
+- ocamlbuild -use-ocamlfind bencode.cma bencode.cmxa bencode.a bencode.docdir/index.html
+- ocamlfind ocamldep -modules lib/bencode.mli > lib/bencode.mli.depends
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode.cmi lib/bencode.mli
+- ocamlfind ocamldep -modules lib/bencode.ml > lib/bencode.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamllex.opt -q lib/bencode_lex.mll
+- ocamlfind ocamldep -modules lib/bencode_lex.ml > lib/bencode_lex.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlyacc lib/bencode_parse.mly
+- ocamlfind ocamldep -modules lib/bencode_parse.mli > lib/bencode_parse.mli.depends
+- ocamlfind ocamldep -modules lib/bencode_types.ml > lib/bencode_types.ml.depends
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode_types.cmo lib/bencode_types.ml
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode_parse.cmi lib/bencode_parse.mli
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode_lex.cmo lib/bencode_lex.ml
+- ocamlfind ocamldep -modules lib/bencode_parse.ml > lib/bencode_parse.ml.depends
+- ocamlfind ocamldep -modules lib/bencode_streaming.mli > lib/bencode_streaming.mli.depends
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode_streaming.cmi lib/bencode_streaming.mli
+- ocamlfind ocamldep -modules lib/bencode_streaming.ml > lib/bencode_streaming.ml.depends
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode.cmo lib/bencode.ml
+- + ocamlfind ocamlc -c -g -I lib -o lib/bencode.cmo lib/bencode.ml
+- File "lib/bencode.ml", line 43, characters 10-23:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "lib/bencode.ml", line 45, characters 4-16:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "lib/bencode.ml", line 56, characters 32-46:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Makefile:13: recipe for target 'all' failed
+- make: *** [all] Error 10
+- ocamlfind remove bencode
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/bencode/META
+- ocamlbuild -use-ocamlfind bencode.cma bencode.cmxa bencode.a bencode.docdir/index.html
+- ocamlfind ocamldep -modules lib/bencode.mli > lib/bencode.mli.depends
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode.cmi lib/bencode.mli
+- ocamlfind ocamldep -modules lib/bencode.ml > lib/bencode.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamllex.opt -q lib/bencode_lex.mll
+- ocamlfind ocamldep -modules lib/bencode_lex.ml > lib/bencode_lex.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlyacc lib/bencode_parse.mly
+- ocamlfind ocamldep -modules lib/bencode_parse.mli > lib/bencode_parse.mli.depends
+- ocamlfind ocamldep -modules lib/bencode_types.ml > lib/bencode_types.ml.depends
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode_types.cmo lib/bencode_types.ml
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode_parse.cmi lib/bencode_parse.mli
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode_lex.cmo lib/bencode_lex.ml
+- ocamlfind ocamldep -modules lib/bencode_parse.ml > lib/bencode_parse.ml.depends
+- ocamlfind ocamldep -modules lib/bencode_streaming.mli > lib/bencode_streaming.mli.depends
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode_streaming.cmi lib/bencode_streaming.mli
+- ocamlfind ocamldep -modules lib/bencode_streaming.ml > lib/bencode_streaming.ml.depends
+- ocamlfind ocamlc -c -g -I lib -o lib/bencode.cmo lib/bencode.ml
+- + ocamlfind ocamlc -c -g -I lib -o lib/bencode.cmo lib/bencode.ml
+- File "lib/bencode.ml", line 43, characters 10-23:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "lib/bencode.ml", line 45, characters 4-16:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "lib/bencode.ml", line 56, characters 32-46:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Makefile:13: recipe for target 'all' failed
+- make: *** [all] Error 10
+- ocamlfind remove bencode
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/bencode/META
+
+#=== ERROR while installing bencode.0.2 =======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make all
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/bencode.0.2
+# compiler             4.06.1
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/bencode.0.2/bencode-26763.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/bencode.0.2/bencode-26763.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/bencode.0.2/bencode-26763.out
+### stdout ###
+# [...]
+# Use Bytes.create instead.
+# File "lib/bencode.ml", line 45, characters 4-16:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "lib/bencode.ml", line 56, characters 32-46:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# Makefile:13: recipe for target 'all' failed
+# make: *** [all] Error 10
+### stderr ###
+# [...]
+# Use Bytes.create instead.
+# File "lib/bencode.ml", line 45, characters 4-16:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "lib/bencode.ml", line 56, characters 32-46:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# Makefile:13: recipe for target 'all' failed
+# make: *** [all] Error 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install bencode 0.2
+No changes have been performed
+'opam install bencode.0.2' failed.

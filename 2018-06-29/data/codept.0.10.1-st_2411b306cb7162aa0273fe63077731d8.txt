@@ -1,0 +1,83 @@
+The following actions will be performed:
+  - install codept 0.10.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[codept: http] Command started
+[codept: http] Command started
+[codept.0.10.1] https://github.com/Octachron/codept/archive/0.10.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[codept: ./configure] Command started
++ ./configure "--disable-ocamlbuild" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1)
+[codept: make all] Command started
++ make "all" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1)
+- make -C build -j /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1/codept
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1/build'
+- mkdir -p full tests docs precomputed
+- ocamllex /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1/lib/slex.mll -o lib/slex.ml
+- 18 states, 262 transitions, table size 1156 bytes
+- File "compiler internals", line 1:
+- Error: Unbound module Stdlib
+- Makefile:39: recipe for target 'precomputed/stdlib.cmx' failed
+- make[1]: *** [precomputed/stdlib.cmx] Error 2
+- make[1]: *** Waiting for unfinished jobs....
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1/build'
+- Makefile:17: recipe for target 'alt-codept' failed
+- make: *** [alt-codept] Error 2
+- make -C build -j /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1/codept
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1/build'
+- mkdir -p full tests docs precomputed
+- ocamllex /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1/lib/slex.mll -o lib/slex.ml
+- 18 states, 262 transitions, table size 1156 bytes
+- File "compiler internals", line 1:
+- Error: Unbound module Stdlib
+- Makefile:39: recipe for target 'precomputed/stdlib.cmx' failed
+- make[1]: *** [precomputed/stdlib.cmx] Error 2
+- make[1]: *** Waiting for unfinished jobs....
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1/build'
+- Makefile:17: recipe for target 'alt-codept' failed
+- make: *** [alt-codept] Error 2
+[ERROR] The compilation of codept failed at "make all".
+
+#=== ERROR while installing codept.0.10.1 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make all
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1/codept-22954.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1/codept-22954.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1/codept-22954.out
+### stdout ###
+# [...]
+# ocamllex /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1/lib/slex.mll -o lib/slex.ml
+# 18 states, 262 transitions, table size 1156 bytes
+# File "compiler internals", line 1:
+# Error: Unbound module Stdlib
+# Makefile:39: recipe for target 'precomputed/stdlib.cmx' failed
+# make[1]: *** [precomputed/stdlib.cmx] Error 2
+# make[1]: *** Waiting for unfinished jobs....
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1/build'
+# Makefile:17: recipe for target 'alt-codept' failed
+# make: *** [alt-codept] Error 2
+### stderr ###
+# [...]
+# ocamllex /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1/lib/slex.mll -o lib/slex.ml
+# 18 states, 262 transitions, table size 1156 bytes
+# File "compiler internals", line 1:
+# Error: Unbound module Stdlib
+# Makefile:39: recipe for target 'precomputed/stdlib.cmx' failed
+# make[1]: *** [precomputed/stdlib.cmx] Error 2
+# make[1]: *** Waiting for unfinished jobs....
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/codept.0.10.1/build'
+# Makefile:17: recipe for target 'alt-codept' failed
+# make: *** [alt-codept] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install codept 0.10.1
+No changes have been performed
+'opam install codept.0.10.1' failed.

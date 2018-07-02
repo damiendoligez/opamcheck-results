@@ -1,0 +1,311 @@
+The following actions will be performed:
+  - install ocamlclean 2.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocamlclean: http] Command started
+[ocamlclean: http] Command started
+[ocamlclean.2.0] http://www.algo-prog.info/ocapic/web/lib/exe/fetch.php?media=ocamlclean-2.0.tar.bz2 downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocamlclean: ./configure] Command started
++ ./configure "-prefix" "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0)
+- ** OCamlClean configuration completed successfully **
+- ** OCamlClean configuration completed successfully **
+[ocamlclean: make all] Command started
++ make "all" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0)
+- ** OCamlClean configuration completed successfully **
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/src'
+- cp /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/etc/config.ml config.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlbuild -cflags -w,Ae -lflags -w,Ae -no-links -classic-display -cflag -g main.native
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules main.ml > main.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules cleanbra.ml > cleanbra.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules instr.ml > instr.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o instr.cmo instr.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules cleanenvs.ml > cleanenvs.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules step1.ml > step1.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules code.ml > code.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules index.ml > index.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o index.cmo index.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o index.cmo index.ml
+- File "index.ml", line 23, characters 18-31:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "index.ml", line 24, characters 13-26:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "index.ml", line 33, characters 8-14:
+- Error: This pattern matches values of type string
+-        but a pattern was expected which matches values of type bytes
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:24: recipe for target '_build/main.native' failed
+- make[1]: *** [_build/main.native] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/src'
+- Makefile:15: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ** OCamlClean configuration completed successfully **
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/src'
+- cp /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/etc/config.ml config.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlbuild -cflags -w,Ae -lflags -w,Ae -no-links -classic-display -cflag -g main.native
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules main.ml > main.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules cleanbra.ml > cleanbra.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules instr.ml > instr.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o instr.cmo instr.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules cleanenvs.ml > cleanenvs.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules step1.ml > step1.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules code.ml > code.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules index.ml > index.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o index.cmo index.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o index.cmo index.ml
+- File "index.ml", line 23, characters 18-31:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "index.ml", line 24, characters 13-26:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "index.ml", line 33, characters 8-14:
+- Error: This pattern matches values of type string
+-        but a pattern was expected which matches values of type bytes
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:24: recipe for target '_build/main.native' failed
+- make[1]: *** [_build/main.native] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/src'
+- Makefile:15: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of ocamlclean failed at "make all".
+[ocamlclean: ./configure] Command started
++ ./configure "-prefix" "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0)
+- ** OCamlClean configuration completed successfully **
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/src'
+- cp /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/etc/config.ml config.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlbuild -cflags -w,Ae -lflags -w,Ae -no-links -classic-display -cflag -g main.native
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules main.ml > main.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules cleanbra.ml > cleanbra.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules instr.ml > instr.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o instr.cmo instr.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules cleanenvs.ml > cleanenvs.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules step1.ml > step1.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules code.ml > code.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules index.ml > index.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o index.cmo index.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o index.cmo index.ml
+- File "index.ml", line 23, characters 18-31:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "index.ml", line 24, characters 13-26:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "index.ml", line 33, characters 8-14:
+- Error: This pattern matches values of type string
+-        but a pattern was expected which matches values of type bytes
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:24: recipe for target '_build/main.native' failed
+- make[1]: *** [_build/main.native] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/src'
+- Makefile:15: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ** OCamlClean configuration completed successfully **
+- ** OCamlClean configuration completed successfully **
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/src'
+- cp /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/etc/config.ml config.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlbuild -cflags -w,Ae -lflags -w,Ae -no-links -classic-display -cflag -g main.native
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules main.ml > main.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules cleanbra.ml > cleanbra.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules instr.ml > instr.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o instr.cmo instr.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules cleanenvs.ml > cleanenvs.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules step1.ml > step1.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules code.ml > code.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules index.ml > index.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o index.cmo index.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o index.cmo index.ml
+- File "index.ml", line 23, characters 18-31:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "index.ml", line 24, characters 13-26:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "index.ml", line 33, characters 8-14:
+- Error: This pattern matches values of type string
+-        but a pattern was expected which matches values of type bytes
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:24: recipe for target '_build/main.native' failed
+- make[1]: *** [_build/main.native] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/src'
+- Makefile:15: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ** OCamlClean configuration completed successfully **
+[ocamlclean: make uninstall] Command started
++ make "uninstall" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0)
+- ** OCamlClean configuration completed successfully **
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/src'
+- cp /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/etc/config.ml config.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlbuild -cflags -w,Ae -lflags -w,Ae -no-links -classic-display -cflag -g main.native
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules main.ml > main.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules cleanbra.ml > cleanbra.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules instr.ml > instr.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o instr.cmo instr.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules cleanenvs.ml > cleanenvs.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules step1.ml > step1.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules code.ml > code.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules index.ml > index.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o index.cmo index.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o index.cmo index.ml
+- File "index.ml", line 23, characters 18-31:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "index.ml", line 24, characters 13-26:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "index.ml", line 33, characters 8-14:
+- Error: This pattern matches values of type string
+-        but a pattern was expected which matches values of type bytes
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:24: recipe for target '_build/main.native' failed
+- make[1]: *** [_build/main.native] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/src'
+- Makefile:15: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ** OCamlClean configuration completed successfully **
+- rm -f "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlclean"
+- rm -f "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/man/man1/man1/ocamlclean.1.gz"
+- ** OCamlClean configuration completed successfully **
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/src'
+- cp /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/etc/config.ml config.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlbuild -cflags -w,Ae -lflags -w,Ae -no-links -classic-display -cflag -g main.native
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules main.ml > main.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules cleanbra.ml > cleanbra.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules instr.ml > instr.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o instr.cmo instr.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules cleanenvs.ml > cleanenvs.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules step1.ml > step1.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules code.ml > code.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules index.ml > index.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o index.cmo index.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -w Ae -g -o index.cmo index.ml
+- File "index.ml", line 23, characters 18-31:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "index.ml", line 24, characters 13-26:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "index.ml", line 33, characters 8-14:
+- Error: This pattern matches values of type string
+-        but a pattern was expected which matches values of type bytes
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:24: recipe for target '_build/main.native' failed
+- make[1]: *** [_build/main.native] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/src'
+- Makefile:15: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ** OCamlClean configuration completed successfully **
+- rm -f "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlclean"
+- rm -f "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/man/man1/man1/ocamlclean.1.gz"
+
+#=== ERROR while installing ocamlclean.2.0 ====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make all
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/ocamlclean-10449.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/ocamlclean-10449.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/ocamlclean-10449.out
+### stdout ###
+# Hint: Recursive traversal of subdirectories was not enabled for this build,
+# [...]
+#   
+#       true: -traverse
+#       <dir1> or <dir2>: traverse
+#       
+# Makefile:24: recipe for target '_build/main.native' failed
+# make[1]: *** [_build/main.native] Error 10
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/src'
+# Makefile:15: recipe for target 'all' failed
+# make: *** [all] Error 2
+### stderr ###
+# Hint: Recursive traversal of subdirectories was not enabled for this build,
+# [...]
+#   
+#       true: -traverse
+#       <dir1> or <dir2>: traverse
+#       
+# Makefile:24: recipe for target '_build/main.native' failed
+# make[1]: *** [_build/main.native] Error 10
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocamlclean.2.0/src'
+# Makefile:15: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ocamlclean 2.0
+No changes have been performed
+'opam install ocamlclean.2.0' failed.

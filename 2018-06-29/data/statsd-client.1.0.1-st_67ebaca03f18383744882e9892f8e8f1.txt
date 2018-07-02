@@ -1,0 +1,135 @@
+The following actions will be performed:
+  - install statsd-client 1.0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[statsd-client: http] Command started
+[statsd-client: http] Command started
+[statsd-client.1.0.1] https://github.com/mfp/ocaml-statsd-client/archive/1.0.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[statsd-client: make all] Command started
++ make "all" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/statsd-client.1.0.1)
+- ocamlfind ocamlc -c statsd_client.mli -package lwt.unix
+- ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+- ocamlfind ocamlc -a -g statsd_client.ml \
+-           -o statsd_client.cma -package lwt.unix
+- ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+- File "statsd_client.ml", line 126, characters 2-245:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val socket :
+-            ?cloexec:bool -> socket_domain -> socket_type -> int -> file_descr
+-        is not included in
+-          val socket :
+-            Unix.socket_domain -> Unix.socket_type -> int -> file_descr
+-        File "statsd_client.ml", line 22, characters 2-74:
+-          Expected declaration
+-        File "unix.mli", line 1244, characters 0-83: Actual declaration
+- Makefile:6: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ocamlfind ocamlc -c statsd_client.mli -package lwt.unix
+- ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+- ocamlfind ocamlc -a -g statsd_client.ml \
+-           -o statsd_client.cma -package lwt.unix
+- ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+- File "statsd_client.ml", line 126, characters 2-245:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val socket :
+-            ?cloexec:bool -> socket_domain -> socket_type -> int -> file_descr
+-        is not included in
+-          val socket :
+-            Unix.socket_domain -> Unix.socket_type -> int -> file_descr
+-        File "statsd_client.ml", line 22, characters 2-74:
+-          Expected declaration
+-        File "unix.mli", line 1244, characters 0-83: Actual declaration
+- Makefile:6: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of statsd-client failed at "make all".
+[statsd-client: ocamlfind remove] Command started
++ ocamlfind "remove" "statsd-client" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/statsd-client.1.0.1)
+- ocamlfind ocamlc -c statsd_client.mli -package lwt.unix
+- ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+- ocamlfind ocamlc -a -g statsd_client.ml \
+-           -o statsd_client.cma -package lwt.unix
+- ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+- File "statsd_client.ml", line 126, characters 2-245:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val socket :
+-            ?cloexec:bool -> socket_domain -> socket_type -> int -> file_descr
+-        is not included in
+-          val socket :
+-            Unix.socket_domain -> Unix.socket_type -> int -> file_descr
+-        File "statsd_client.ml", line 22, characters 2-74:
+-          Expected declaration
+-        File "unix.mli", line 1244, characters 0-83: Actual declaration
+- Makefile:6: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/statsd-client/META
+- ocamlfind ocamlc -c statsd_client.mli -package lwt.unix
+- ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+- ocamlfind ocamlc -a -g statsd_client.ml \
+-           -o statsd_client.cma -package lwt.unix
+- ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+- File "statsd_client.ml", line 126, characters 2-245:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val socket :
+-            ?cloexec:bool -> socket_domain -> socket_type -> int -> file_descr
+-        is not included in
+-          val socket :
+-            Unix.socket_domain -> Unix.socket_type -> int -> file_descr
+-        File "statsd_client.ml", line 22, characters 2-74:
+-          Expected declaration
+-        File "unix.mli", line 1244, characters 0-83: Actual declaration
+- Makefile:6: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/statsd-client/META
+
+#=== ERROR while installing statsd-client.1.0.1 ===============================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make all
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/statsd-client.1.0.1
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/statsd-client.1.0.1/statsd-client-18070.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/statsd-client.1.0.1/statsd-client-18070.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/statsd-client.1.0.1/statsd-client-18070.out
+### stdout ###
+# Error: Signature mismatch:
+# [...]
+#            ?cloexec:bool -> socket_domain -> socket_type -> int -> file_descr
+#        is not included in
+#          val socket :
+#            Unix.socket_domain -> Unix.socket_type -> int -> file_descr
+#        File "statsd_client.ml", line 22, characters 2-74:
+#          Expected declaration
+#        File "unix.mli", line 1244, characters 0-83: Actual declaration
+# Makefile:6: recipe for target 'all' failed
+# make: *** [all] Error 2
+### stderr ###
+# Error: Signature mismatch:
+# [...]
+#            ?cloexec:bool -> socket_domain -> socket_type -> int -> file_descr
+#        is not included in
+#          val socket :
+#            Unix.socket_domain -> Unix.socket_type -> int -> file_descr
+#        File "statsd_client.ml", line 22, characters 2-74:
+#          Expected declaration
+#        File "unix.mli", line 1244, characters 0-83: Actual declaration
+# Makefile:6: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install statsd-client 1.0.1
+No changes have been performed
+'opam install statsd-client.1.0.1' failed.

@@ -1,0 +1,98 @@
+The following actions will be performed:
+  - install 0install 2.12.3
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[0install: http] Command started
+[0install: http] Command started
+[0install.2.12.3] https://downloads.sf.net/project/zero-install/0install/2.12.3/0install-2.12.3.tar.bz2 downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[0install: make all] Command started
++ make "all" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3)
+- [ -d "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build" ] || mkdir "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build"
+- [ -d "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/dist" ] || mkdir "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/dist"
+- make -C "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build" -f "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/Makefile.build" "all" SRCDIR="/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3" BUILDDIR="/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build" DISTDIR="/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/dist" DESTDIR=""
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build'
+- make -C "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/ocaml" OCAML_BUILDDIR="/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build/ocaml" ocaml
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/ocaml'
+- [ -d "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build/ocaml" ] || mkdir -p "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build/ocaml"
+- ocamlbuild -j 0 -use-ocamlfind -plugin-tag 'package(cppo_ocamlbuild)' -build-dir "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build/ocaml"  "all-native.otarget"
+- ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package cppo_ocamlbuild myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- obus not found; compiling without D-BUS support
+- Failure: lablgtk2 is present, but missing lwt_glib dependency!.
+- Makefile:33: recipe for target 'ocaml' failed
+- make[2]: *** [ocaml] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/ocaml'
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/Makefile.build:20: recipe for target 'all' failed
+- make[1]: *** [all] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build'
+- Makefile:53: recipe for target 'all' failed
+- make: *** [all] Error 2
+- [ -d "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build" ] || mkdir "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build"
+- [ -d "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/dist" ] || mkdir "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/dist"
+- make -C "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build" -f "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/Makefile.build" "all" SRCDIR="/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3" BUILDDIR="/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build" DISTDIR="/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/dist" DESTDIR=""
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build'
+- make -C "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/ocaml" OCAML_BUILDDIR="/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build/ocaml" ocaml
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/ocaml'
+- [ -d "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build/ocaml" ] || mkdir -p "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build/ocaml"
+- ocamlbuild -j 0 -use-ocamlfind -plugin-tag 'package(cppo_ocamlbuild)' -build-dir "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build/ocaml"  "all-native.otarget"
+- ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package cppo_ocamlbuild myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- obus not found; compiling without D-BUS support
+- Failure: lablgtk2 is present, but missing lwt_glib dependency!.
+- Makefile:33: recipe for target 'ocaml' failed
+- make[2]: *** [ocaml] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/ocaml'
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/Makefile.build:20: recipe for target 'all' failed
+- make[1]: *** [all] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build'
+- Makefile:53: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of 0install failed at "make all".
+
+#=== ERROR while installing 0install.2.12.3 ===================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make all
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3
+# compiler             4.06.1
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/0install-4054.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/0install-4054.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/0install-4054.out
+### stdout ###
+# [...]
+# obus not found; compiling without D-BUS support
+# Failure: lablgtk2 is present, but missing lwt_glib dependency!.
+# Makefile:33: recipe for target 'ocaml' failed
+# make[2]: *** [ocaml] Error 2
+# make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/ocaml'
+# /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/Makefile.build:20: recipe for target 'all' failed
+# make[1]: *** [all] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build'
+# Makefile:53: recipe for target 'all' failed
+# make: *** [all] Error 2
+### stderr ###
+# [...]
+# obus not found; compiling without D-BUS support
+# Failure: lablgtk2 is present, but missing lwt_glib dependency!.
+# Makefile:33: recipe for target 'ocaml' failed
+# make[2]: *** [ocaml] Error 2
+# make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/ocaml'
+# /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/Makefile.build:20: recipe for target 'all' failed
+# make[1]: *** [all] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/0install.2.12.3/build'
+# Makefile:53: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install 0install 2.12.3
+No changes have been performed
+
+=-=- 0install.2.12.3 troobleshooting =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package relies on external (system) dependencies that may be missing.
+   `opam depext 0install.2.12.3' may help you find the correct installation for
+   your system.
+'opam install 0install.2.12.3' failed.

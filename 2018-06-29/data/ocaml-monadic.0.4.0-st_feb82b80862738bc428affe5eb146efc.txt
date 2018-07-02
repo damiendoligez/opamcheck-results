@@ -1,0 +1,88 @@
+The following actions will be performed:
+  - install ocaml-monadic 0.4.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocaml-monadic: http] Command started
+[ocaml-monadic: http] Command started
+[ocaml-monadic.0.4.0] https://github.com/zepalmer/ocaml-monadic/archive/affad91aeae24a41f088465d9c3ebe0fbc69fa73.zip downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocaml-monadic: jbuilder build] Command started
++ jbuilder "build" "-p" "ocaml-monadic" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocaml-monadic.0.4.0)
+- Error: Library "ppx_tools_versioned.metaquot_406" not found.
+- -> required by library "ocaml-monadic" in _build/default/src
+- -> required by META.ocaml-monadic
+- Hint: try: jbuilder external-lib-deps --missing -p ocaml-monadic @install
+- Error: Library "ppx_tools_versioned.metaquot_406" not found.
+- -> required by (pps (ppx_tools_versioned.metaquot_406 ocaml-migrate-parsetree.driver-main))
+- Hint: try: jbuilder external-lib-deps --missing -p ocaml-monadic @install
+- File "src/jbuild", line 4, characters 1-238:
+- Error: Library "ppx_tools_versioned.metaquot_406" not found.
+- -> required by library "ocaml-monadic" in _build/default/src
+- Hint: try: jbuilder external-lib-deps --missing -p ocaml-monadic @install
+- Error: Library "ppx_tools_versioned.metaquot_406" not found.
+- -> required by library "ocaml-monadic" in _build/default/src
+- -> required by library "ocaml-monadic" in _build/default/src
+- -> required by (pps (ocaml-monadic ocaml-migrate-parsetree.driver-main))
+- Hint: try: jbuilder external-lib-deps --missing -p ocaml-monadic @install
+- Error: Library "ppx_tools_versioned.metaquot_406" not found.
+- -> required by library "ocaml-monadic" in _build/default/src
+- -> required by META.ocaml-monadic
+- Hint: try: jbuilder external-lib-deps --missing -p ocaml-monadic @install
+- Error: Library "ppx_tools_versioned.metaquot_406" not found.
+- -> required by (pps (ppx_tools_versioned.metaquot_406 ocaml-migrate-parsetree.driver-main))
+- Hint: try: jbuilder external-lib-deps --missing -p ocaml-monadic @install
+- File "src/jbuild", line 4, characters 1-238:
+- Error: Library "ppx_tools_versioned.metaquot_406" not found.
+- -> required by library "ocaml-monadic" in _build/default/src
+- Hint: try: jbuilder external-lib-deps --missing -p ocaml-monadic @install
+- Error: Library "ppx_tools_versioned.metaquot_406" not found.
+- -> required by library "ocaml-monadic" in _build/default/src
+- -> required by library "ocaml-monadic" in _build/default/src
+- -> required by (pps (ocaml-monadic ocaml-migrate-parsetree.driver-main))
+- Hint: try: jbuilder external-lib-deps --missing -p ocaml-monadic @install
+[ERROR] The compilation of ocaml-monadic failed at "jbuilder build -p
+        ocaml-monadic -j 4".
+
+#=== ERROR while installing ocaml-monadic.0.4.0 ===============================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p ocaml-monadic -j 4
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocaml-monadic.0.4.0
+# compiler             4.07.0+rc2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocaml-monadic.0.4.0/ocaml-monadic-21435.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocaml-monadic.0.4.0/ocaml-monadic-21435.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocaml-monadic.0.4.0/ocaml-monadic-21435.out
+### stdout ###
+# [...]
+# Hint: try: jbuilder external-lib-deps --missing -p ocaml-monadic @install
+# File "src/jbuild", line 4, characters 1-238:
+# Error: Library "ppx_tools_versioned.metaquot_406" not found.
+# -> required by library "ocaml-monadic" in _build/default/src
+# Hint: try: jbuilder external-lib-deps --missing -p ocaml-monadic @install
+# Error: Library "ppx_tools_versioned.metaquot_406" not found.
+# -> required by library "ocaml-monadic" in _build/default/src
+# -> required by library "ocaml-monadic" in _build/default/src
+# -> required by (pps (ocaml-monadic ocaml-migrate-parsetree.driver-main))
+# Hint: try: jbuilder external-lib-deps --missing -p ocaml-monadic @install
+### stderr ###
+# [...]
+# Hint: try: jbuilder external-lib-deps --missing -p ocaml-monadic @install
+# File "src/jbuild", line 4, characters 1-238:
+# Error: Library "ppx_tools_versioned.metaquot_406" not found.
+# -> required by library "ocaml-monadic" in _build/default/src
+# Hint: try: jbuilder external-lib-deps --missing -p ocaml-monadic @install
+# Error: Library "ppx_tools_versioned.metaquot_406" not found.
+# -> required by library "ocaml-monadic" in _build/default/src
+# -> required by library "ocaml-monadic" in _build/default/src
+# -> required by (pps (ocaml-monadic ocaml-migrate-parsetree.driver-main))
+# Hint: try: jbuilder external-lib-deps --missing -p ocaml-monadic @install
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ocaml-monadic 0.4.0
+No changes have been performed
+'opam install ocaml-monadic.0.4.0' failed.

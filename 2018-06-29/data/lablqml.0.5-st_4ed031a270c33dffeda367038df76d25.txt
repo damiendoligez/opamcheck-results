@@ -1,0 +1,303 @@
+The following actions will be performed:
+  - install lablqml 0.5
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[lablqml: http] Command started
+[lablqml: http] Command started
+[lablqml.0.5] https://github.com/Kakadu/lablqml/archive/0.5.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[lablqml: ./configure] Command started
++ ./configure  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5)
+- N.B. Don't forget to export right LD_LIBRARY_PATH and PKG_CONFIG_PATH for Qt5 before running this!
+- OCaml 4.07.0+rc2 found.
+- ocamlfind found.
+- qmake found for Qt 5.5.1
+- Compiling test C++&Qt application...
+- N.B. Don't forget to export right LD_LIBRARY_PATH and PKG_CONFIG_PATH for Qt5 before running this!
+- OCaml 4.07.0+rc2 found.
+- ocamlfind found.
+- qmake found for Qt 5.5.1
+- Compiling test C++&Qt application...
+- Test C++&Qt application is built successfully
+- ocamlfind: Package `lablqml' not found
+- Generating Makefile
+- Test C++&Qt application is built successfully
+- ocamlfind: Package `lablqml' not found
+- Generating Makefile
+[lablqml: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5)
+- N.B. Don't forget to export right LD_LIBRARY_PATH and PKG_CONFIG_PATH for Qt5 before running this!
+- OCaml 4.07.0+rc2 found.
+- ocamlfind found.
+- qmake found for Qt 5.5.1
+- Compiling test C++&Qt application...
+- Test C++&Qt application is built successfully
+- ocamlfind: Package `lablqml' not found
+- Generating Makefile
+- cd /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx && make all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx'
+- ocamlbuild -use-ocamlfind -classic-display ppxext/ppx_qt.native
+- ocamlfind ocamldep -package compiler-libs.common,unix -modules ppxext/ppx_qt.ml > ppxext/ppx_qt.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common,unix -modules ppxext/gencpp.ml > ppxext/gencpp.ml.depends
+- ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/gencpp.cmo ppxext/gencpp.ml
+- + ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/gencpp.cmo ppxext/gencpp.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- File "ppxext/gencpp.ml", line 73, characters 31-47:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- File "ppxext/gencpp.ml", line 74, characters 31-47:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- File "ppxext/gencpp.ml", line 156, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/ppx_qt.cmo ppxext/ppx_qt.ml
+- + ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/ppx_qt.cmo ppxext/ppx_qt.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- File "ppxext/ppx_qt.ml", line 246, characters 79-88:
+- Error: This expression has type string but an expression was expected of type
+-          Ast_helper.str = string Location.loc
+- Command exited with code 2.
+- Makefile:11: recipe for target 'ppx_qt.native' failed
+- make[1]: *** [ppx_qt.native] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx'
+- Makefile:5: recipe for target 'generator' failed
+- make: *** [generator] Error 2
+- N.B. Don't forget to export right LD_LIBRARY_PATH and PKG_CONFIG_PATH for Qt5 before running this!
+- OCaml 4.07.0+rc2 found.
+- ocamlfind found.
+- qmake found for Qt 5.5.1
+- Compiling test C++&Qt application...
+- Test C++&Qt application is built successfully
+- ocamlfind: Package `lablqml' not found
+- Generating Makefile
+- cd /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx && make all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx'
+- ocamlbuild -use-ocamlfind -classic-display ppxext/ppx_qt.native
+- ocamlfind ocamldep -package compiler-libs.common,unix -modules ppxext/ppx_qt.ml > ppxext/ppx_qt.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common,unix -modules ppxext/gencpp.ml > ppxext/gencpp.ml.depends
+- ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/gencpp.cmo ppxext/gencpp.ml
+- + ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/gencpp.cmo ppxext/gencpp.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- File "ppxext/gencpp.ml", line 73, characters 31-47:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- File "ppxext/gencpp.ml", line 74, characters 31-47:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- File "ppxext/gencpp.ml", line 156, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/ppx_qt.cmo ppxext/ppx_qt.ml
+- + ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/ppx_qt.cmo ppxext/ppx_qt.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- File "ppxext/ppx_qt.ml", line 246, characters 79-88:
+- Error: This expression has type string but an expression was expected of type
+-          Ast_helper.str = string Location.loc
+- Command exited with code 2.
+- Makefile:11: recipe for target 'ppx_qt.native' failed
+- make[1]: *** [ppx_qt.native] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx'
+- Makefile:5: recipe for target 'generator' failed
+- make: *** [generator] Error 2
+[ERROR] The compilation of lablqml failed at "make".
+[lablqml: ocamlfind remove] Command started
++ ocamlfind "remove" "lablqml" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5)
+- N.B. Don't forget to export right LD_LIBRARY_PATH and PKG_CONFIG_PATH for Qt5 before running this!
+- OCaml 4.07.0+rc2 found.
+- ocamlfind found.
+- qmake found for Qt 5.5.1
+- Compiling test C++&Qt application...
+- Test C++&Qt application is built successfully
+- ocamlfind: Package `lablqml' not found
+- Generating Makefile
+- cd /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx && make all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx'
+- ocamlbuild -use-ocamlfind -classic-display ppxext/ppx_qt.native
+- ocamlfind ocamldep -package compiler-libs.common,unix -modules ppxext/ppx_qt.ml > ppxext/ppx_qt.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common,unix -modules ppxext/gencpp.ml > ppxext/gencpp.ml.depends
+- ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/gencpp.cmo ppxext/gencpp.ml
+- + ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/gencpp.cmo ppxext/gencpp.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- File "ppxext/gencpp.ml", line 73, characters 31-47:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- File "ppxext/gencpp.ml", line 74, characters 31-47:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- File "ppxext/gencpp.ml", line 156, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/ppx_qt.cmo ppxext/ppx_qt.ml
+- + ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/ppx_qt.cmo ppxext/ppx_qt.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- File "ppxext/ppx_qt.ml", line 246, characters 79-88:
+- Error: This expression has type string but an expression was expected of type
+-          Ast_helper.str = string Location.loc
+- Command exited with code 2.
+- Makefile:11: recipe for target 'ppx_qt.native' failed
+- make[1]: *** [ppx_qt.native] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx'
+- Makefile:5: recipe for target 'generator' failed
+- make: *** [generator] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/lablqml/META
+- N.B. Don't forget to export right LD_LIBRARY_PATH and PKG_CONFIG_PATH for Qt5 before running this!
+- OCaml 4.07.0+rc2 found.
+- ocamlfind found.
+- qmake found for Qt 5.5.1
+- Compiling test C++&Qt application...
+- Test C++&Qt application is built successfully
+- ocamlfind: Package `lablqml' not found
+- Generating Makefile
+- cd /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx && make all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx'
+- ocamlbuild -use-ocamlfind -classic-display ppxext/ppx_qt.native
+- ocamlfind ocamldep -package compiler-libs.common,unix -modules ppxext/ppx_qt.ml > ppxext/ppx_qt.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common,unix -modules ppxext/gencpp.ml > ppxext/gencpp.ml.depends
+- ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/gencpp.cmo ppxext/gencpp.ml
+- + ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/gencpp.cmo ppxext/gencpp.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- File "ppxext/gencpp.ml", line 73, characters 31-47:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- File "ppxext/gencpp.ml", line 74, characters 31-47:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- File "ppxext/gencpp.ml", line 156, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/ppx_qt.cmo ppxext/ppx_qt.ml
+- + ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/ppx_qt.cmo ppxext/ppx_qt.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- File "ppxext/ppx_qt.ml", line 246, characters 79-88:
+- Error: This expression has type string but an expression was expected of type
+-          Ast_helper.str = string Location.loc
+- Command exited with code 2.
+- Makefile:11: recipe for target 'ppx_qt.native' failed
+- make[1]: *** [ppx_qt.native] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx'
+- Makefile:5: recipe for target 'generator' failed
+- make: *** [generator] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/lablqml/META
+[lablqml: rm] Command started
++ rm "-f" "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ppx_qt" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5)
+- N.B. Don't forget to export right LD_LIBRARY_PATH and PKG_CONFIG_PATH for Qt5 before running this!
+- OCaml 4.07.0+rc2 found.
+- ocamlfind found.
+- qmake found for Qt 5.5.1
+- Compiling test C++&Qt application...
+- Test C++&Qt application is built successfully
+- ocamlfind: Package `lablqml' not found
+- Generating Makefile
+- cd /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx && make all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx'
+- ocamlbuild -use-ocamlfind -classic-display ppxext/ppx_qt.native
+- ocamlfind ocamldep -package compiler-libs.common,unix -modules ppxext/ppx_qt.ml > ppxext/ppx_qt.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common,unix -modules ppxext/gencpp.ml > ppxext/gencpp.ml.depends
+- ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/gencpp.cmo ppxext/gencpp.ml
+- + ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/gencpp.cmo ppxext/gencpp.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- File "ppxext/gencpp.ml", line 73, characters 31-47:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- File "ppxext/gencpp.ml", line 74, characters 31-47:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- File "ppxext/gencpp.ml", line 156, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/ppx_qt.cmo ppxext/ppx_qt.ml
+- + ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/ppx_qt.cmo ppxext/ppx_qt.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- File "ppxext/ppx_qt.ml", line 246, characters 79-88:
+- Error: This expression has type string but an expression was expected of type
+-          Ast_helper.str = string Location.loc
+- Command exited with code 2.
+- Makefile:11: recipe for target 'ppx_qt.native' failed
+- make[1]: *** [ppx_qt.native] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx'
+- Makefile:5: recipe for target 'generator' failed
+- make: *** [generator] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/lablqml/META
+- N.B. Don't forget to export right LD_LIBRARY_PATH and PKG_CONFIG_PATH for Qt5 before running this!
+- OCaml 4.07.0+rc2 found.
+- ocamlfind found.
+- qmake found for Qt 5.5.1
+- Compiling test C++&Qt application...
+- Test C++&Qt application is built successfully
+- ocamlfind: Package `lablqml' not found
+- Generating Makefile
+- cd /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx && make all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx'
+- ocamlbuild -use-ocamlfind -classic-display ppxext/ppx_qt.native
+- ocamlfind ocamldep -package compiler-libs.common,unix -modules ppxext/ppx_qt.ml > ppxext/ppx_qt.ml.depends
+- ocamlfind ocamldep -package compiler-libs.common,unix -modules ppxext/gencpp.ml > ppxext/gencpp.ml.depends
+- ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/gencpp.cmo ppxext/gencpp.ml
+- + ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/gencpp.cmo ppxext/gencpp.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- File "ppxext/gencpp.ml", line 73, characters 31-47:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- File "ppxext/gencpp.ml", line 74, characters 31-47:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- File "ppxext/gencpp.ml", line 156, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/ppx_qt.cmo ppxext/ppx_qt.ml
+- + ocamlfind ocamlc -c -package compiler-libs.common,unix -I ppxext -o ppxext/ppx_qt.cmo ppxext/ppx_qt.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- File "ppxext/ppx_qt.ml", line 246, characters 79-88:
+- Error: This expression has type string but an expression was expected of type
+-          Ast_helper.str = string Location.loc
+- Command exited with code 2.
+- Makefile:11: recipe for target 'ppx_qt.native' failed
+- make[1]: *** [ppx_qt.native] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx'
+- Makefile:5: recipe for target 'generator' failed
+- make: *** [generator] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/lablqml/META
+
+#=== ERROR while installing lablqml.0.5 =======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/lablqml-31354.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/lablqml-31354.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/lablqml-31354.out
+### stdout ###
+# [...]
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+# File "ppxext/ppx_qt.ml", line 246, characters 79-88:
+# Error: This expression has type string but an expression was expected of type
+#          Ast_helper.str = string Location.loc
+# Command exited with code 2.
+# Makefile:11: recipe for target 'ppx_qt.native' failed
+# make[1]: *** [ppx_qt.native] Error 10
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx'
+# Makefile:5: recipe for target 'generator' failed
+# make: *** [generator] Error 2
+### stderr ###
+# [...]
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+# File "ppxext/ppx_qt.ml", line 246, characters 79-88:
+# Error: This expression has type string but an expression was expected of type
+#          Ast_helper.str = string Location.loc
+# Command exited with code 2.
+# Makefile:11: recipe for target 'ppx_qt.native' failed
+# make[1]: *** [ppx_qt.native] Error 10
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/lablqml.0.5/ppx'
+# Makefile:5: recipe for target 'generator' failed
+# make: *** [generator] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install lablqml 0.5
+No changes have been performed
+'opam install lablqml.0.5' failed.

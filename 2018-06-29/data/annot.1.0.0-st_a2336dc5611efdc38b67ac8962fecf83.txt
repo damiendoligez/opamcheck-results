@@ -1,0 +1,179 @@
+The following actions will be performed:
+  - install annot 1.0.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[annot: http] Command started
+[annot: http] Command started
+[annot.1.0.0] http://github.com/avsm/ocaml-annot/tarball/ocaml-annot-1.0.0 downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[annot: ./configure] Command started
++ ./configure "--prefix=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0)
+- Use of uninitialized value in concatenation (.) or string at ./configure line 71.
+- Installation
+- ------------------------------------------------------------------
+- Hierachy prefix     /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2
+- Basename            annot
+- 
+- Compiler and tools
+- ------------------------------------------------------------------ 
+- OCaml               /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc
+- OCamlopt            /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt
+- OCaml Version       4.07
+- 
+- Literate Programming Tools
+- ------------------------------------------------------------------ 
+- Notangle            /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake
+- Noweave             
+- LaTeX               
+- 
+- Configuration successfully written to config.mk.
+- Use of uninitialized value in concatenation (.) or string at ./configure line 71.
+- Installation
+- ------------------------------------------------------------------
+- Hierachy prefix     /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2
+- Basename            annot
+- 
+- Compiler and tools
+- ------------------------------------------------------------------ 
+- OCaml               /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc
+- OCamlopt            /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt
+- OCaml Version       4.07
+- 
+- Literate Programming Tools
+- ------------------------------------------------------------------ 
+- Notangle            /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake
+- Noweave             
+- LaTeX               
+- 
+- Configuration successfully written to config.mk.
+[annot: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0)
+- Use of uninitialized value in concatenation (.) or string at ./configure line 71.
+- Installation
+- ------------------------------------------------------------------
+- Hierachy prefix     /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2
+- Basename            annot
+- 
+- Compiler and tools
+- ------------------------------------------------------------------ 
+- OCaml               /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc
+- OCamlopt            /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt
+- OCaml Version       4.07
+- 
+- Literate Programming Tools
+- ------------------------------------------------------------------ 
+- Notangle            /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake
+- Noweave             
+- LaTeX               
+- 
+- Configuration successfully written to config.mk.
+- make -C src Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/src'
+- Makefile:177: DEPEND: No such file or directory
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rintervalmap.ml intervalmap.nw > intervalmap.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rannot.ml annot.nw > annot.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rparser.mly syntax.nw > parser.mly
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlyacc parser.mly
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rscanner.mll syntax.nw > scanner.mll
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamllex scanner.mll
+- 33 states, 267 transitions, table size 1266 bytes
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rmain.ml main.nw > main.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rintervalmap.mli intervalmap.nw > intervalmap.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rannot.mli annot.nw > annot.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rscanner.mli syntax.nw > scanner.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rmain.mli main.nw > main.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep -I .  intervalmap.ml annot.ml parser.ml scanner.ml main.ml   intervalmap.mli  annot.mli  parser.mli  scanner.mli  main.mli > DEPEND	
+- File "intervalmap.nw", line 43, characters 4-5:
+- Error: Syntax error
+- Makefile:175: recipe for target 'DEPEND' failed
+- make[1]: *** [DEPEND] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/src'
+- Makefile:14: recipe for target 'Makefile' failed
+- make: *** [Makefile] Error 2
+- Use of uninitialized value in concatenation (.) or string at ./configure line 71.
+- Installation
+- ------------------------------------------------------------------
+- Hierachy prefix     /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2
+- Basename            annot
+- 
+- Compiler and tools
+- ------------------------------------------------------------------ 
+- OCaml               /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc
+- OCamlopt            /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt
+- OCaml Version       4.07
+- 
+- Literate Programming Tools
+- ------------------------------------------------------------------ 
+- Notangle            /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake
+- Noweave             
+- LaTeX               
+- 
+- Configuration successfully written to config.mk.
+- make -C src Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/src'
+- Makefile:177: DEPEND: No such file or directory
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rintervalmap.ml intervalmap.nw > intervalmap.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rannot.ml annot.nw > annot.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rparser.mly syntax.nw > parser.mly
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlyacc parser.mly
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rscanner.mll syntax.nw > scanner.mll
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamllex scanner.mll
+- 33 states, 267 transitions, table size 1266 bytes
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rmain.ml main.nw > main.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rintervalmap.mli intervalmap.nw > intervalmap.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rannot.mli annot.nw > annot.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rscanner.mli syntax.nw > scanner.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rmain.mli main.nw > main.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep -I .  intervalmap.ml annot.ml parser.ml scanner.ml main.ml   intervalmap.mli  annot.mli  parser.mli  scanner.mli  main.mli > DEPEND	
+- File "intervalmap.nw", line 43, characters 4-5:
+- Error: Syntax error
+- Makefile:175: recipe for target 'DEPEND' failed
+- make[1]: *** [DEPEND] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/src'
+- Makefile:14: recipe for target 'Makefile' failed
+- make: *** [Makefile] Error 2
+[ERROR] The compilation of annot failed at "make".
+
+#=== ERROR while installing annot.1.0.0 =======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/annot-29563.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/annot-29563.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/annot-29563.out
+### stdout ###
+# [...]
+# /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rscanner.mli syntax.nw > scanner.mli
+# /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rmain.mli main.nw > main.mli
+# /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep -I .  intervalmap.ml annot.ml parser.ml scanner.ml main.ml   intervalmap.mli  annot.mli  parser.mli  scanner.mli  main.mli > DEPEND	
+# File "intervalmap.nw", line 43, characters 4-5:
+# Error: Syntax error
+# Makefile:175: recipe for target 'DEPEND' failed
+# make[1]: *** [DEPEND] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/src'
+# Makefile:14: recipe for target 'Makefile' failed
+# make: *** [Makefile] Error 2
+### stderr ###
+# [...]
+# /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rscanner.mli syntax.nw > scanner.mli
+# /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/tools/nofake '-L# %L "%F"%N' -Rmain.mli main.nw > main.mli
+# /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep -I .  intervalmap.ml annot.ml parser.ml scanner.ml main.ml   intervalmap.mli  annot.mli  parser.mli  scanner.mli  main.mli > DEPEND	
+# File "intervalmap.nw", line 43, characters 4-5:
+# Error: Syntax error
+# Makefile:175: recipe for target 'DEPEND' failed
+# make[1]: *** [DEPEND] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/annot.1.0.0/src'
+# Makefile:14: recipe for target 'Makefile' failed
+# make: *** [Makefile] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install annot 1.0.0
+No changes have been performed
+'opam install annot.1.0.0' failed.

@@ -1,0 +1,55 @@
+The following actions will be performed:
+  - install kyotocabinet 0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[kyotocabinet: http] Command started
+[kyotocabinet: http] Command started
+[kyotocabinet.0.1] https://github.com/didier-wenzek/ocaml-kyotocabinet/archive/1.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[kyotocabinet: jbuilder build] Command started
++ jbuilder "build" "--only" "kyotocabinet" "--root" "." "-j" "4" "@install" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/kyotocabinet.0.1)
+- Workspace root: .
+- File "test/jbuild", line 3, characters 0-57:
+- Error: Unknown constructor executable
+- Hint: did you mean executables?
+- Workspace root: .
+- File "test/jbuild", line 3, characters 0-57:
+- Error: Unknown constructor executable
+- Hint: did you mean executables?
+[ERROR] The compilation of kyotocabinet failed at "jbuilder build --only
+        kyotocabinet --root . -j 4 @install".
+
+#=== ERROR while installing kyotocabinet.0.1 ==================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build --only kyotocabinet --root . -j 4 @install
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/kyotocabinet.0.1
+# compiler             4.04.2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/kyotocabinet.0.1/kyotocabinet-26724.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/kyotocabinet.0.1/kyotocabinet-26724.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/kyotocabinet.0.1/kyotocabinet-26724.out
+### stdout ###
+# Workspace root: .
+# File "test/jbuild", line 3, characters 0-57:
+# Error: Unknown constructor executable
+# Hint: did you mean executables?
+### stderr ###
+# Workspace root: .
+# File "test/jbuild", line 3, characters 0-57:
+# Error: Unknown constructor executable
+# Hint: did you mean executables?
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install kyotocabinet 0.1
+No changes have been performed
+
+=-=- kyotocabinet.0.1 troobleshooting -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package relies on external (system) dependencies that may be missing.
+   `opam depext kyotocabinet.0.1' may help you find the correct installation
+   for your system.
+'opam install kyotocabinet.0.1' failed.

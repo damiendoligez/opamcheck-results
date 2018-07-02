@@ -1,0 +1,135 @@
+The following actions will be performed:
+  - install ptmap 2.0.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ptmap: http] Command started
+[ptmap: http] Command started
+[ptmap.2.0.2] https://github.com/backtracking/ptmap/archive/v2.0.2.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ptmap: obuild configure] Command started
++ obuild "configure" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ptmap.2.0.2)
+- Configuring ptmap-1.0...
+- Configuring ptmap-1.0...
+[ptmap: obuild build] Command started
++ obuild "build" "lib-ptmap" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ptmap.2.0.2)
+- Configuring ptmap-1.0...
+- [1 of 4] Intfing Ptmap                         
+- [2 of 4] Compiling Ptmap                         
+- 
+- File "ptmap.ml", line 1:
+- Error: The implementation ptmap.ml
+-        does not match the interface dist/build/lib-ptmap/ptmap.cmi:
+-        The value `of_seq' is required but not provided
+-        File "map.mli", line 324, characters 4-41: Expected declaration
+-        The value `add_seq' is required but not provided
+-        File "map.mli", line 320, characters 4-50: Expected declaration
+-        The value `to_seq_from' is required but not provided
+-        File "map.mli", line 315, characters 4-53: Expected declaration
+-        The value `to_seq' is required but not provided
+-        File "map.mli", line 311, characters 4-41: Expected declaration
+-        The value `update' is required but not provided
+-        File "map.mli", line 89, characters 4-63: Expected declaration
+- 
+- Configuring ptmap-1.0...
+- [1 of 4] Intfing Ptmap                         
+- [2 of 4] Compiling Ptmap                         
+- 
+- File "ptmap.ml", line 1:
+- Error: The implementation ptmap.ml
+-        does not match the interface dist/build/lib-ptmap/ptmap.cmi:
+-        The value `of_seq' is required but not provided
+-        File "map.mli", line 324, characters 4-41: Expected declaration
+-        The value `add_seq' is required but not provided
+-        File "map.mli", line 320, characters 4-50: Expected declaration
+-        The value `to_seq_from' is required but not provided
+-        File "map.mli", line 315, characters 4-53: Expected declaration
+-        The value `to_seq' is required but not provided
+-        File "map.mli", line 311, characters 4-41: Expected declaration
+-        The value `update' is required but not provided
+-        File "map.mli", line 89, characters 4-63: Expected declaration
+- 
+[ERROR] The compilation of ptmap failed at "obuild build lib-ptmap".
+[ptmap: ocamlfind remove] Command started
++ ocamlfind "remove" "ptmap" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ptmap.2.0.2)
+- Configuring ptmap-1.0...
+- [1 of 4] Intfing Ptmap                         
+- [2 of 4] Compiling Ptmap                         
+- 
+- File "ptmap.ml", line 1:
+- Error: The implementation ptmap.ml
+-        does not match the interface dist/build/lib-ptmap/ptmap.cmi:
+-        The value `of_seq' is required but not provided
+-        File "map.mli", line 324, characters 4-41: Expected declaration
+-        The value `add_seq' is required but not provided
+-        File "map.mli", line 320, characters 4-50: Expected declaration
+-        The value `to_seq_from' is required but not provided
+-        File "map.mli", line 315, characters 4-53: Expected declaration
+-        The value `to_seq' is required but not provided
+-        File "map.mli", line 311, characters 4-41: Expected declaration
+-        The value `update' is required but not provided
+-        File "map.mli", line 89, characters 4-63: Expected declaration
+- 
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ptmap/META
+- Configuring ptmap-1.0...
+- [1 of 4] Intfing Ptmap                         
+- [2 of 4] Compiling Ptmap                         
+- 
+- File "ptmap.ml", line 1:
+- Error: The implementation ptmap.ml
+-        does not match the interface dist/build/lib-ptmap/ptmap.cmi:
+-        The value `of_seq' is required but not provided
+-        File "map.mli", line 324, characters 4-41: Expected declaration
+-        The value `add_seq' is required but not provided
+-        File "map.mli", line 320, characters 4-50: Expected declaration
+-        The value `to_seq_from' is required but not provided
+-        File "map.mli", line 315, characters 4-53: Expected declaration
+-        The value `to_seq' is required but not provided
+-        File "map.mli", line 311, characters 4-41: Expected declaration
+-        The value `update' is required but not provided
+-        File "map.mli", line 89, characters 4-63: Expected declaration
+- 
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ptmap/META
+
+#=== ERROR while installing ptmap.2.0.2 =======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              obuild build lib-ptmap
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ptmap.2.0.2
+# compiler             4.07.0+rc2
+# exit-code            6
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ptmap.2.0.2/ptmap-15904.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ptmap.2.0.2/ptmap-15904.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ptmap.2.0.2/ptmap-15904.out
+### stdout ###
+# Error: The implementation ptmap.ml
+# [...]
+#        The value `add_seq' is required but not provided
+#        File "map.mli", line 320, characters 4-50: Expected declaration
+#        The value `to_seq_from' is required but not provided
+#        File "map.mli", line 315, characters 4-53: Expected declaration
+#        The value `to_seq' is required but not provided
+#        File "map.mli", line 311, characters 4-41: Expected declaration
+#        The value `update' is required but not provided
+#        File "map.mli", line 89, characters 4-63: Expected declaration
+# 
+### stderr ###
+# Error: The implementation ptmap.ml
+# [...]
+#        The value `add_seq' is required but not provided
+#        File "map.mli", line 320, characters 4-50: Expected declaration
+#        The value `to_seq_from' is required but not provided
+#        File "map.mli", line 315, characters 4-53: Expected declaration
+#        The value `to_seq' is required but not provided
+#        File "map.mli", line 311, characters 4-41: Expected declaration
+#        The value `update' is required but not provided
+#        File "map.mli", line 89, characters 4-63: Expected declaration
+# 
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ptmap 2.0.2
+No changes have been performed
+'opam install ptmap.2.0.2' failed.

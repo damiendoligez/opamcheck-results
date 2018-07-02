@@ -1,0 +1,61 @@
+The following actions will be performed:
+  - install xxhash 0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[xxhash: http] Command started
+[xxhash: http] Command started
+[xxhash.0.1] https://github.com/314eter/ocaml-xxhash/archive/v0.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[xxhash: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/xxhash.0.1)
+- Exception: PropList.Unknown_field ("BugReports", "Package").
+- File "./setup.ml", line 36, characters 14-49:
+- Error: Unbound module BaseCompat
+- Exception: PropList.Unknown_field ("BugReports", "Package").
+- File "./setup.ml", line 36, characters 14-49:
+- Error: Unbound module BaseCompat
+[ERROR] The compilation of xxhash failed at "ocaml setup.ml -configure --prefix
+        /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2".
+[xxhash: ocamlfind remove] Command started
++ ocamlfind "remove" "xxhash" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/xxhash.0.1)
+- Exception: PropList.Unknown_field ("BugReports", "Package").
+- File "./setup.ml", line 36, characters 14-49:
+- Error: Unbound module BaseCompat
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/xxhash/META
+- Exception: PropList.Unknown_field ("BugReports", "Package").
+- File "./setup.ml", line 36, characters 14-49:
+- Error: Unbound module BaseCompat
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/xxhash/META
+
+#=== ERROR while installing xxhash.0.1 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -configure --prefix /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/xxhash.0.1
+# compiler             4.04.2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/xxhash.0.1/xxhash-15054.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/xxhash.0.1/xxhash-15054.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/xxhash.0.1/xxhash-15054.out
+### stdout ###
+# Exception: PropList.Unknown_field ("BugReports", "Package").
+# File "./setup.ml", line 36, characters 14-49:
+# Error: Unbound module BaseCompat
+### stderr ###
+# Exception: PropList.Unknown_field ("BugReports", "Package").
+# File "./setup.ml", line 36, characters 14-49:
+# Error: Unbound module BaseCompat
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install xxhash 0.1
+No changes have been performed
+
+=-=- xxhash.0.1 troobleshooting -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package relies on external (system) dependencies that may be missing.
+   `opam depext xxhash.0.1' may help you find the correct installation for your
+   system.
+'opam install xxhash.0.1' failed.

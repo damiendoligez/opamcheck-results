@@ -1,0 +1,143 @@
+The following actions will be performed:
+  - install pipebang 109.12.00
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pipebang: http] Command started
+[pipebang: http] Command started
+[pipebang.109.12.00] https://github.com/janestreet/pipebang/archive/109.12.00.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pipebang: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/pipebang.109.12.00)
+- ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+- File "setup.ml", line 211, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 211, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "setup.ml", line 211, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 211, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "setup.ml", line 211, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 211, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:17: recipe for target 'setup.exe' failed
+- make: *** [setup.exe] Error 2
+- ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+- File "setup.ml", line 211, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 211, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "setup.ml", line 211, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 211, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "setup.ml", line 211, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 211, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:17: recipe for target 'setup.exe' failed
+- make: *** [setup.exe] Error 2
+[ERROR] The compilation of pipebang failed at "make".
+[pipebang: ocamlfind remove] Command started
++ ocamlfind "remove" "pa_pipebang" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/pipebang.109.12.00)
+- ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+- File "setup.ml", line 211, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 211, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "setup.ml", line 211, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 211, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "setup.ml", line 211, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 211, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:17: recipe for target 'setup.exe' failed
+- make: *** [setup.exe] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/pa_pipebang/META
+- ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+- File "setup.ml", line 211, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 211, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "setup.ml", line 211, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 211, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "setup.ml", line 211, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 211, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:17: recipe for target 'setup.exe' failed
+- make: *** [setup.exe] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/pa_pipebang/META
+
+#=== ERROR while installing pipebang.109.12.00 ================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/pipebang.109.12.00
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/pipebang.109.12.00/pipebang-18558.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/pipebang.109.12.00/pipebang-18558.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/pipebang.109.12.00/pipebang-18558.out
+### stdout ###
+# [...]
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# File "setup.ml", line 211, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "setup.ml", line 211, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:17: recipe for target 'setup.exe' failed
+# make: *** [setup.exe] Error 2
+### stderr ###
+# [...]
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# File "setup.ml", line 211, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "setup.ml", line 211, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:17: recipe for target 'setup.exe' failed
+# make: *** [setup.exe] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install pipebang 109.12.00
+No changes have been performed
+'opam install pipebang.109.12.00' failed.

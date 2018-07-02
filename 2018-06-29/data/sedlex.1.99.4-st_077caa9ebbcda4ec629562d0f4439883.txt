@@ -1,0 +1,163 @@
+The following actions will be performed:
+  - install sedlex 1.99.4
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sedlex: http] Command started
+[sedlex: http] Command started
+[sedlex.1.99.4] https://github.com/alainfrisch/sedlex/archive/v1.99.4.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sedlex: make all] Command started
++ make "all" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4)
+- (cd src/lib && make all doc)
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/lib'
+- ocamlfind ocamlc -package gen -w +A-4-9 -safe-string -c sedlexing.mli sedlexing.ml
+- ocamlfind ocamlc -package gen -a -o sedlexing.cma sedlexing.cmo
+- rm -rf ../../libdoc
+- mkdir ../../libdoc
+- ocamlfind ocamldoc -package gen -html sedlexing.mli -d ../../libdoc
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/lib'
+- (cd src/syntax && make all)
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/syntax'
+- ocamlfind ocamlc -package ppx_tools_versioned.metaquot_405 -package ocaml-migrate-parsetree -linkall -w +A-4-9-42 -annot -a -o sedlex.cma sedlex_cset.mli sedlex_cset.ml unicode63.mli unicode63.ml sedlex.mli sedlex.ml ppx_sedlex.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- ocamlfind ocamlc \
+- 	-predicates ppx_driver \
+- 	-o ppx_sedlex -linkpkg -linkall \
+- 	-package ppx_tools_versioned \
+- 	sedlex.cma \
+- 	/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-migrate-parsetree/driver-main/migrate_parsetree_driver_main.cma
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- File "_none_", line 1:
+- Error: Required module `Ast_402' is unavailable
+- Makefile:38: recipe for target 'ppx_sedlex' failed
+- make[1]: *** [ppx_sedlex] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/syntax'
+- Makefile:13: recipe for target 'all' failed
+- make: *** [all] Error 2
+- (cd src/lib && make all doc)
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/lib'
+- ocamlfind ocamlc -package gen -w +A-4-9 -safe-string -c sedlexing.mli sedlexing.ml
+- ocamlfind ocamlc -package gen -a -o sedlexing.cma sedlexing.cmo
+- rm -rf ../../libdoc
+- mkdir ../../libdoc
+- ocamlfind ocamldoc -package gen -html sedlexing.mli -d ../../libdoc
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/lib'
+- (cd src/syntax && make all)
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/syntax'
+- ocamlfind ocamlc -package ppx_tools_versioned.metaquot_405 -package ocaml-migrate-parsetree -linkall -w +A-4-9-42 -annot -a -o sedlex.cma sedlex_cset.mli sedlex_cset.ml unicode63.mli unicode63.ml sedlex.mli sedlex.ml ppx_sedlex.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- ocamlfind ocamlc \
+- 	-predicates ppx_driver \
+- 	-o ppx_sedlex -linkpkg -linkall \
+- 	-package ppx_tools_versioned \
+- 	sedlex.cma \
+- 	/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-migrate-parsetree/driver-main/migrate_parsetree_driver_main.cma
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- File "_none_", line 1:
+- Error: Required module `Ast_402' is unavailable
+- Makefile:38: recipe for target 'ppx_sedlex' failed
+- make[1]: *** [ppx_sedlex] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/syntax'
+- Makefile:13: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of sedlex failed at "make all".
+[sedlex: ocamlfind remove] Command started
++ ocamlfind "remove" "sedlex" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4)
+- (cd src/lib && make all doc)
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/lib'
+- ocamlfind ocamlc -package gen -w +A-4-9 -safe-string -c sedlexing.mli sedlexing.ml
+- ocamlfind ocamlc -package gen -a -o sedlexing.cma sedlexing.cmo
+- rm -rf ../../libdoc
+- mkdir ../../libdoc
+- ocamlfind ocamldoc -package gen -html sedlexing.mli -d ../../libdoc
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/lib'
+- (cd src/syntax && make all)
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/syntax'
+- ocamlfind ocamlc -package ppx_tools_versioned.metaquot_405 -package ocaml-migrate-parsetree -linkall -w +A-4-9-42 -annot -a -o sedlex.cma sedlex_cset.mli sedlex_cset.ml unicode63.mli unicode63.ml sedlex.mli sedlex.ml ppx_sedlex.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- ocamlfind ocamlc \
+- 	-predicates ppx_driver \
+- 	-o ppx_sedlex -linkpkg -linkall \
+- 	-package ppx_tools_versioned \
+- 	sedlex.cma \
+- 	/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-migrate-parsetree/driver-main/migrate_parsetree_driver_main.cma
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- File "_none_", line 1:
+- Error: Required module `Ast_402' is unavailable
+- Makefile:38: recipe for target 'ppx_sedlex' failed
+- make[1]: *** [ppx_sedlex] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/syntax'
+- Makefile:13: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/sedlex/META
+- (cd src/lib && make all doc)
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/lib'
+- ocamlfind ocamlc -package gen -w +A-4-9 -safe-string -c sedlexing.mli sedlexing.ml
+- ocamlfind ocamlc -package gen -a -o sedlexing.cma sedlexing.cmo
+- rm -rf ../../libdoc
+- mkdir ../../libdoc
+- ocamlfind ocamldoc -package gen -html sedlexing.mli -d ../../libdoc
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/lib'
+- (cd src/syntax && make all)
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/syntax'
+- ocamlfind ocamlc -package ppx_tools_versioned.metaquot_405 -package ocaml-migrate-parsetree -linkall -w +A-4-9-42 -annot -a -o sedlex.cma sedlex_cset.mli sedlex_cset.ml unicode63.mli unicode63.ml sedlex.mli sedlex.ml ppx_sedlex.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- ocamlfind ocamlc \
+- 	-predicates ppx_driver \
+- 	-o ppx_sedlex -linkpkg -linkall \
+- 	-package ppx_tools_versioned \
+- 	sedlex.cma \
+- 	/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-migrate-parsetree/driver-main/migrate_parsetree_driver_main.cma
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+- File "_none_", line 1:
+- Error: Required module `Ast_402' is unavailable
+- Makefile:38: recipe for target 'ppx_sedlex' failed
+- make[1]: *** [ppx_sedlex] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/syntax'
+- Makefile:13: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/sedlex/META
+
+#=== ERROR while installing sedlex.1.99.4 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make all
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/sedlex-13003.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/sedlex-13003.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/sedlex-13003.out
+### stdout ###
+# ocamlfind ocamlc \
+# [...]
+# 	/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-migrate-parsetree/driver-main/migrate_parsetree_driver_main.cma
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+# File "_none_", line 1:
+# Error: Required module `Ast_402' is unavailable
+# Makefile:38: recipe for target 'ppx_sedlex' failed
+# make[1]: *** [ppx_sedlex] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/syntax'
+# Makefile:13: recipe for target 'all' failed
+# make: *** [all] Error 2
+### stderr ###
+# ocamlfind ocamlc \
+# [...]
+# 	/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-migrate-parsetree/driver-main/migrate_parsetree_driver_main.cma
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml, /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs
+# File "_none_", line 1:
+# Error: Required module `Ast_402' is unavailable
+# Makefile:38: recipe for target 'ppx_sedlex' failed
+# make[1]: *** [ppx_sedlex] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sedlex.1.99.4/src/syntax'
+# Makefile:13: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install sedlex 1.99.4
+No changes have been performed
+'opam install sedlex.1.99.4' failed.

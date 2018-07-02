@@ -1,0 +1,91 @@
+The following actions will be performed:
+  - install dlm 0.3.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[dlm: http] Command started
+[dlm: http] Command started
+[dlm.0.3.0] https://github.com/xapi-project/ocaml-dlm/releases/download/v0.3.0/dlm-0.3.0.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[dlm: jbuilder build] Command started
++ jbuilder "build" "--only" "dlm" "--root" "." "-j" "4" "@install" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/dlm.0.3.0)
+-     ocamldep lib_gen/types/bindings_structs_lib.depends.ocamldep-output
+-     ocamldep test/dlm_test.depends.ocamldep-output
+-       ocamlc lib_gen/types/bindings_structs_lib.{cmi,cmo,cmt}
+-   pkg-config lib_gen/types/dlm_cflags (exit 1)
+- (cd _build/default/lib_gen/types && /usr/bin/pkg-config libdlm --cflags) > _build/default/lib_gen/types/dlm_cflags
+- Package libdlm was not found in the pkg-config search path.
+- Perhaps you should add the directory containing `libdlm.pc'
+- to the PKG_CONFIG_PATH environment variable
+- No package 'libdlm' found
+-   pkg-config lib_gen/types/dlm_libs (exit 1)
+- (cd _build/default/lib_gen/types && /usr/bin/pkg-config libdlm --libs) > _build/default/lib_gen/types/dlm_libs
+- Package libdlm was not found in the pkg-config search path.
+- Perhaps you should add the directory containing `libdlm.pc'
+- to the PKG_CONFIG_PATH environment variable
+- No package 'libdlm' found
+-     ocamldep lib_gen/types/bindings_structs_lib.depends.ocamldep-output
+-     ocamldep test/dlm_test.depends.ocamldep-output
+-       ocamlc lib_gen/types/bindings_structs_lib.{cmi,cmo,cmt}
+-   pkg-config lib_gen/types/dlm_cflags (exit 1)
+- (cd _build/default/lib_gen/types && /usr/bin/pkg-config libdlm --cflags) > _build/default/lib_gen/types/dlm_cflags
+- Package libdlm was not found in the pkg-config search path.
+- Perhaps you should add the directory containing `libdlm.pc'
+- to the PKG_CONFIG_PATH environment variable
+- No package 'libdlm' found
+-   pkg-config lib_gen/types/dlm_libs (exit 1)
+- (cd _build/default/lib_gen/types && /usr/bin/pkg-config libdlm --libs) > _build/default/lib_gen/types/dlm_libs
+- Package libdlm was not found in the pkg-config search path.
+- Perhaps you should add the directory containing `libdlm.pc'
+- to the PKG_CONFIG_PATH environment variable
+- No package 'libdlm' found
+[ERROR] The compilation of dlm failed at "jbuilder build --only dlm --root . -j
+        4 @install".
+
+#=== ERROR while installing dlm.0.3.0 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build --only dlm --root . -j 4 @install
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/dlm.0.3.0
+# compiler             4.04.2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/dlm.0.3.0/dlm-24582.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/dlm.0.3.0/dlm-24582.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/dlm.0.3.0/dlm-24582.out
+### stdout ###
+# [...]
+# Package libdlm was not found in the pkg-config search path.
+# Perhaps you should add the directory containing `libdlm.pc'
+# to the PKG_CONFIG_PATH environment variable
+# No package 'libdlm' found
+#   pkg-config lib_gen/types/dlm_libs (exit 1)
+# (cd _build/default/lib_gen/types && /usr/bin/pkg-config libdlm --libs) > _build/default/lib_gen/types/dlm_libs
+# Package libdlm was not found in the pkg-config search path.
+# Perhaps you should add the directory containing `libdlm.pc'
+# to the PKG_CONFIG_PATH environment variable
+# No package 'libdlm' found
+### stderr ###
+# [...]
+# Package libdlm was not found in the pkg-config search path.
+# Perhaps you should add the directory containing `libdlm.pc'
+# to the PKG_CONFIG_PATH environment variable
+# No package 'libdlm' found
+#   pkg-config lib_gen/types/dlm_libs (exit 1)
+# (cd _build/default/lib_gen/types && /usr/bin/pkg-config libdlm --libs) > _build/default/lib_gen/types/dlm_libs
+# Package libdlm was not found in the pkg-config search path.
+# Perhaps you should add the directory containing `libdlm.pc'
+# to the PKG_CONFIG_PATH environment variable
+# No package 'libdlm' found
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install dlm 0.3.0
+No changes have been performed
+
+=-=- dlm.0.3.0 troobleshooting =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package relies on external (system) dependencies that may be missing.
+   `opam depext dlm.0.3.0' may help you find the correct installation for your
+   system.
+'opam install dlm.0.3.0' failed.

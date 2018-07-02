@@ -1,0 +1,111 @@
+The following actions will be performed:
+  - install ocs 1.0.3
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocs: http] Command started
+[ocs: http] Command started
+[ocs.1.0.3] https://github.com/freehck/ocs/archive/ocs-1.0.3.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocs: make src] Command started
++ make "-C" "src" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocs.1.0.3)
+- make: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocs.1.0.3/src'
+- ocamlc  -c ocs_error.ml
+- ocamlc  -c ocs_port.mli
+- ocamlc  -c ocs_port.ml
+- File "ocs_port.ml", line 32, characters 2-15:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "ocs_port.ml", line 63, characters 27-34:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile.common:20: recipe for target 'ocs_port.cmo' failed
+- make: *** [ocs_port.cmo] Error 2
+- make: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocs.1.0.3/src'
+- make: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocs.1.0.3/src'
+- ocamlc  -c ocs_error.ml
+- ocamlc  -c ocs_port.mli
+- ocamlc  -c ocs_port.ml
+- File "ocs_port.ml", line 32, characters 2-15:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "ocs_port.ml", line 63, characters 27-34:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile.common:20: recipe for target 'ocs_port.cmo' failed
+- make: *** [ocs_port.cmo] Error 2
+- make: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocs.1.0.3/src'
+[ERROR] The compilation of ocs failed at "make -C src".
+[ocs: ocamlfind remove] Command started
++ ocamlfind "remove" "ocs" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocs.1.0.3)
+- make: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocs.1.0.3/src'
+- ocamlc  -c ocs_error.ml
+- ocamlc  -c ocs_port.mli
+- ocamlc  -c ocs_port.ml
+- File "ocs_port.ml", line 32, characters 2-15:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "ocs_port.ml", line 63, characters 27-34:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile.common:20: recipe for target 'ocs_port.cmo' failed
+- make: *** [ocs_port.cmo] Error 2
+- make: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocs.1.0.3/src'
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocs/META
+- make: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocs.1.0.3/src'
+- ocamlc  -c ocs_error.ml
+- ocamlc  -c ocs_port.mli
+- ocamlc  -c ocs_port.ml
+- File "ocs_port.ml", line 32, characters 2-15:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "ocs_port.ml", line 63, characters 27-34:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile.common:20: recipe for target 'ocs_port.cmo' failed
+- make: *** [ocs_port.cmo] Error 2
+- make: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocs.1.0.3/src'
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocs/META
+
+#=== ERROR while installing ocs.1.0.3 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make -C src
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocs.1.0.3
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocs.1.0.3/ocs-1665.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocs.1.0.3/ocs-1665.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocs.1.0.3/ocs-1665.out
+### stdout ###
+# [...]
+# ocamlc  -c ocs_port.ml
+# File "ocs_port.ml", line 32, characters 2-15:
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "ocs_port.ml", line 63, characters 27-34:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile.common:20: recipe for target 'ocs_port.cmo' failed
+# make: *** [ocs_port.cmo] Error 2
+# make: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocs.1.0.3/src'
+### stderr ###
+# [...]
+# ocamlc  -c ocs_port.ml
+# File "ocs_port.ml", line 32, characters 2-15:
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "ocs_port.ml", line 63, characters 27-34:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile.common:20: recipe for target 'ocs_port.cmo' failed
+# make: *** [ocs_port.cmo] Error 2
+# make: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/ocs.1.0.3/src'
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ocs 1.0.3
+No changes have been performed
+'opam install ocs.1.0.3' failed.

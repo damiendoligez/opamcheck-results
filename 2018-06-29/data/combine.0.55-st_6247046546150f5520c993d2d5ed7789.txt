@@ -1,0 +1,409 @@
+The following actions will be performed:
+  - install combine 0.55
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[combine: http] Command started
+[combine: http] Command started
+[combine.0.55] https://github.com/backtracking/combine/archive/opam-packaged.zip downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[combine: ./configure] Command started
++ ./configure "--prefix=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/combine.0.55)
+- checking for ocamlc... ocamlc
+- ocaml version is 4.06.1
+- ocaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for menhir... menhir
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- checking for ocamlc... ocamlc
+- ocaml version is 4.06.1
+- ocaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for menhir... menhir
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+[combine: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/combine.0.55)
+- checking for ocamlc... ocamlc
+- ocaml version is 4.06.1
+- ocaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for menhir... menhir
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- Makefile:306: .depend: No such file or directory
+- menhir  -v parser.mly
+- Note: the nonterminal symbol option (from parser.mly) is renamed parser_option.
+- Warning: you are using the standard library and/or the %inline keyword. We
+- recommend switching on --infer in order to avoid obscure type error messages.
+- perl -pi -e 's/4611686018427387903/max_int/g' parser.ml
+- ocamllex.opt lexer.mll
+- 60 states, 510 transitions, table size 2400 bytes
+- 1475 additional bytes used for bindings
+- echo "let version = \""0.55"\"" > version.ml
+- echo "let date = \""`date`"\"" >> version.ml
+- rm -f .depend
+- ocamldep.opt  *.ml *.mli > .depend
+- ocamlc.opt -c -g  matrix.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine matrix.ml
+- ocamlc.opt -c -g  dlx.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine dlx.ml
+- ocamlc.opt -c -g  zdd.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine zdd.ml
+- File "zdd.ml", line 84, characters 14-26:
+- Warning 3: deprecated: Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  emc.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine emc.ml
+- ocamlc.opt -c -g  d4.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine d4.ml
+- ocamlc.opt -c -g  tiling.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine tiling.ml
+- ocamlc.opt -c -g  backtracking.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine backtracking.ml
+- ocamlc.opt -c -g  ast.mli
+- ocamlc.opt -c -g  parser.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine parser.ml
+- ocamlopt.opt -c -g -annot  -for-pack Combine lexer.ml
+- ocamlc.opt -c -g  interp.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine interp.ml
+- ocamlopt.opt  -pack -o combine.cmx matrix.cmx dlx.cmx zdd.cmx emc.cmx d4.cmx tiling.cmx backtracking.cmx ast.cmi parser.cmx lexer.cmx interp.cmx
+- ocamlopt.opt  -a -o combine.cmxa combine.cmx
+- ocamlc.opt -c -g  matrix.ml
+- ocamlc.opt -c -g  dlx.ml
+- ocamlc.opt -c -g  zdd.ml
+- File "zdd.ml", line 84, characters 14-26:
+- Warning 3: deprecated: Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  emc.ml
+- ocamlc.opt -c -g  d4.ml
+- ocamlc.opt -c -g  tiling.ml
+- ocamlc.opt -c -g  backtracking.ml
+- ocamlc.opt -c -g  parser.ml
+- checking for ocamlc... ocamlc
+- ocaml version is 4.06.1
+- ocaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for menhir... menhir
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- Makefile:306: .depend: No such file or directory
+- menhir  -v parser.mly
+- Note: the nonterminal symbol option (from parser.mly) is renamed parser_option.
+- Warning: you are using the standard library and/or the %inline keyword. We
+- recommend switching on --infer in order to avoid obscure type error messages.
+- perl -pi -e 's/4611686018427387903/max_int/g' parser.ml
+- ocamllex.opt lexer.mll
+- 60 states, 510 transitions, table size 2400 bytes
+- 1475 additional bytes used for bindings
+- echo "let version = \""0.55"\"" > version.ml
+- echo "let date = \""`date`"\"" >> version.ml
+- rm -f .depend
+- ocamldep.opt  *.ml *.mli > .depend
+- ocamlc.opt -c -g  matrix.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine matrix.ml
+- ocamlc.opt -c -g  dlx.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine dlx.ml
+- ocamlc.opt -c -g  zdd.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine zdd.ml
+- File "zdd.ml", line 84, characters 14-26:
+- Warning 3: deprecated: Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  emc.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine emc.ml
+- ocamlc.opt -c -g  d4.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine d4.ml
+- ocamlc.opt -c -g  tiling.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine tiling.ml
+- ocamlc.opt -c -g  backtracking.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine backtracking.ml
+- ocamlc.opt -c -g  ast.mli
+- ocamlc.opt -c -g  parser.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine parser.ml
+- ocamlopt.opt -c -g -annot  -for-pack Combine lexer.ml
+- ocamlc.opt -c -g  interp.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine interp.ml
+- ocamlopt.opt  -pack -o combine.cmx matrix.cmx dlx.cmx zdd.cmx emc.cmx d4.cmx tiling.cmx backtracking.cmx ast.cmi parser.cmx lexer.cmx interp.cmx
+- ocamlopt.opt  -a -o combine.cmxa combine.cmx
+- ocamlc.opt -c -g  matrix.ml
+- ocamlc.opt -c -g  dlx.ml
+- ocamlc.opt -c -g  zdd.ml
+- File "zdd.ml", line 84, characters 14-26:
+- Warning 3: deprecated: Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  emc.ml
+- ocamlc.opt -c -g  d4.ml
+- ocamlc.opt -c -g  tiling.ml
+- ocamlc.opt -c -g  backtracking.ml
+- ocamlc.opt -c -g  parser.ml
+- ocamlc.opt -c -g  lexer.ml
+- ocamlc.opt -c -g  interp.ml
+- ocamlc.opt  -pack -g -o combine.cmo matrix.cmo dlx.cmo zdd.cmo emc.cmo d4.cmo tiling.cmo backtracking.cmo ast.cmi parser.cmo lexer.cmo interp.cmo
+- ocamlopt.opt -c -g -annot  main.ml
+- ocamlopt.opt -g -annot  -o combine.opt nums.cmxa unix.cmxa combine.cmxa main.cmx
+- ocamlopt.opt -c -g -annot  sudoku.ml
+- File "sudoku.ml", line 124, characters 21-22:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:233: recipe for target 'sudoku.cmx' failed
+- make: *** [sudoku.cmx] Error 2
+- ocamlc.opt -c -g  lexer.ml
+- ocamlc.opt -c -g  interp.ml
+- ocamlc.opt  -pack -g -o combine.cmo matrix.cmo dlx.cmo zdd.cmo emc.cmo d4.cmo tiling.cmo backtracking.cmo ast.cmi parser.cmo lexer.cmo interp.cmo
+- ocamlopt.opt -c -g -annot  main.ml
+- ocamlopt.opt -g -annot  -o combine.opt nums.cmxa unix.cmxa combine.cmxa main.cmx
+- ocamlopt.opt -c -g -annot  sudoku.ml
+- File "sudoku.ml", line 124, characters 21-22:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:233: recipe for target 'sudoku.cmx' failed
+- make: *** [sudoku.cmx] Error 2
+[ERROR] The compilation of combine failed at "make".
+[combine: ocamlfind remove] Command started
++ ocamlfind "remove" "combine" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/combine.0.55)
+- checking for ocamlc... ocamlc
+- ocaml version is 4.06.1
+- ocaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for menhir... menhir
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- Makefile:306: .depend: No such file or directory
+- menhir  -v parser.mly
+- Note: the nonterminal symbol option (from parser.mly) is renamed parser_option.
+- Warning: you are using the standard library and/or the %inline keyword. We
+- recommend switching on --infer in order to avoid obscure type error messages.
+- perl -pi -e 's/4611686018427387903/max_int/g' parser.ml
+- ocamllex.opt lexer.mll
+- 60 states, 510 transitions, table size 2400 bytes
+- 1475 additional bytes used for bindings
+- echo "let version = \""0.55"\"" > version.ml
+- echo "let date = \""`date`"\"" >> version.ml
+- rm -f .depend
+- ocamldep.opt  *.ml *.mli > .depend
+- ocamlc.opt -c -g  matrix.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine matrix.ml
+- ocamlc.opt -c -g  dlx.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine dlx.ml
+- ocamlc.opt -c -g  zdd.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine zdd.ml
+- File "zdd.ml", line 84, characters 14-26:
+- Warning 3: deprecated: Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  emc.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine emc.ml
+- ocamlc.opt -c -g  d4.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine d4.ml
+- ocamlc.opt -c -g  tiling.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine tiling.ml
+- ocamlc.opt -c -g  backtracking.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine backtracking.ml
+- ocamlc.opt -c -g  ast.mli
+- ocamlc.opt -c -g  parser.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine parser.ml
+- ocamlopt.opt -c -g -annot  -for-pack Combine lexer.ml
+- ocamlc.opt -c -g  interp.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine interp.ml
+- ocamlopt.opt  -pack -o combine.cmx matrix.cmx dlx.cmx zdd.cmx emc.cmx d4.cmx tiling.cmx backtracking.cmx ast.cmi parser.cmx lexer.cmx interp.cmx
+- ocamlopt.opt  -a -o combine.cmxa combine.cmx
+- ocamlc.opt -c -g  matrix.ml
+- ocamlc.opt -c -g  dlx.ml
+- ocamlc.opt -c -g  zdd.ml
+- File "zdd.ml", line 84, characters 14-26:
+- Warning 3: deprecated: Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  emc.ml
+- ocamlc.opt -c -g  d4.ml
+- ocamlc.opt -c -g  tiling.ml
+- ocamlc.opt -c -g  backtracking.ml
+- ocamlc.opt -c -g  parser.ml
+- ocamlc.opt -c -g  lexer.ml
+- ocamlc.opt -c -g  interp.ml
+- ocamlc.opt  -pack -g -o combine.cmo matrix.cmo dlx.cmo zdd.cmo emc.cmo d4.cmo tiling.cmo backtracking.cmo ast.cmi parser.cmo lexer.cmo interp.cmo
+- ocamlopt.opt -c -g -annot  main.ml
+- ocamlopt.opt -g -annot  -o combine.opt nums.cmxa unix.cmxa combine.cmxa main.cmx
+- ocamlopt.opt -c -g -annot  sudoku.ml
+- File "sudoku.ml", line 124, characters 21-22:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:233: recipe for target 'sudoku.cmx' failed
+- make: *** [sudoku.cmx] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/combine/META
+- checking for ocamlc... ocamlc
+- ocaml version is 4.06.1
+- ocaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for menhir... menhir
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- Makefile:306: .depend: No such file or directory
+- menhir  -v parser.mly
+- Note: the nonterminal symbol option (from parser.mly) is renamed parser_option.
+- Warning: you are using the standard library and/or the %inline keyword. We
+- recommend switching on --infer in order to avoid obscure type error messages.
+- perl -pi -e 's/4611686018427387903/max_int/g' parser.ml
+- ocamllex.opt lexer.mll
+- 60 states, 510 transitions, table size 2400 bytes
+- 1475 additional bytes used for bindings
+- echo "let version = \""0.55"\"" > version.ml
+- echo "let date = \""`date`"\"" >> version.ml
+- rm -f .depend
+- ocamldep.opt  *.ml *.mli > .depend
+- ocamlc.opt -c -g  matrix.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine matrix.ml
+- ocamlc.opt -c -g  dlx.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine dlx.ml
+- ocamlc.opt -c -g  zdd.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine zdd.ml
+- File "zdd.ml", line 84, characters 14-26:
+- Warning 3: deprecated: Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  emc.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine emc.ml
+- ocamlc.opt -c -g  d4.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine d4.ml
+- ocamlc.opt -c -g  tiling.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine tiling.ml
+- ocamlc.opt -c -g  backtracking.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine backtracking.ml
+- ocamlc.opt -c -g  ast.mli
+- ocamlc.opt -c -g  parser.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine parser.ml
+- ocamlopt.opt -c -g -annot  -for-pack Combine lexer.ml
+- ocamlc.opt -c -g  interp.mli
+- ocamlopt.opt -c -g -annot  -for-pack Combine interp.ml
+- ocamlopt.opt  -pack -o combine.cmx matrix.cmx dlx.cmx zdd.cmx emc.cmx d4.cmx tiling.cmx backtracking.cmx ast.cmi parser.cmx lexer.cmx interp.cmx
+- ocamlopt.opt  -a -o combine.cmxa combine.cmx
+- ocamlc.opt -c -g  matrix.ml
+- ocamlc.opt -c -g  dlx.ml
+- ocamlc.opt -c -g  zdd.ml
+- File "zdd.ml", line 84, characters 14-26:
+- Warning 3: deprecated: Array.create
+- Use Array.make instead.
+- ocamlc.opt -c -g  emc.ml
+- ocamlc.opt -c -g  d4.ml
+- ocamlc.opt -c -g  tiling.ml
+- ocamlc.opt -c -g  backtracking.ml
+- ocamlc.opt -c -g  parser.ml
+- ocamlc.opt -c -g  lexer.ml
+- ocamlc.opt -c -g  interp.ml
+- ocamlc.opt  -pack -g -o combine.cmo matrix.cmo dlx.cmo zdd.cmo emc.cmo d4.cmo tiling.cmo backtracking.cmo ast.cmi parser.cmo lexer.cmo interp.cmo
+- ocamlopt.opt -c -g -annot  main.ml
+- ocamlopt.opt -g -annot  -o combine.opt nums.cmxa unix.cmxa combine.cmxa main.cmx
+- ocamlopt.opt -c -g -annot  sudoku.ml
+- File "sudoku.ml", line 124, characters 21-22:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:233: recipe for target 'sudoku.cmx' failed
+- make: *** [sudoku.cmx] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/combine/META
+
+#=== ERROR while installing combine.0.55 ======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/combine.0.55
+# compiler             4.06.1
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/combine.0.55/combine-32543.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/combine.0.55/combine-32543.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/combine.0.55/combine-32543.out
+### stdout ###
+# [...]
+# ocamlc.opt -c -g  interp.ml
+# ocamlc.opt  -pack -g -o combine.cmo matrix.cmo dlx.cmo zdd.cmo emc.cmo d4.cmo tiling.cmo backtracking.cmo ast.cmi parser.cmo lexer.cmo interp.cmo
+# ocamlopt.opt -c -g -annot  main.ml
+# ocamlopt.opt -g -annot  -o combine.opt nums.cmxa unix.cmxa combine.cmxa main.cmx
+# ocamlopt.opt -c -g -annot  sudoku.ml
+# File "sudoku.ml", line 124, characters 21-22:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:233: recipe for target 'sudoku.cmx' failed
+# make: *** [sudoku.cmx] Error 2
+### stderr ###
+# [...]
+# ocamlc.opt -c -g  interp.ml
+# ocamlc.opt  -pack -g -o combine.cmo matrix.cmo dlx.cmo zdd.cmo emc.cmo d4.cmo tiling.cmo backtracking.cmo ast.cmi parser.cmo lexer.cmo interp.cmo
+# ocamlopt.opt -c -g -annot  main.ml
+# ocamlopt.opt -g -annot  -o combine.opt nums.cmxa unix.cmxa combine.cmxa main.cmx
+# ocamlopt.opt -c -g -annot  sudoku.ml
+# File "sudoku.ml", line 124, characters 21-22:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:233: recipe for target 'sudoku.cmx' failed
+# make: *** [sudoku.cmx] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install combine 0.55
+No changes have been performed
+'opam install combine.0.55' failed.

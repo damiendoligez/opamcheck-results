@@ -1,0 +1,66 @@
+The following actions will be performed:
+  - install yajl 0.7.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[yajl: http] Command started
+[yajl: http] Command started
+[yajl.0.7.0] https://raw.github.com/mlin/yajl-ocaml/tarball/yajl-ocaml-0.7.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[yajl: make install] Command started
++ make "install" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0)
+- cd upstream && ./configure --prefix /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local && make install
+- /usr/bin/env: 'ruby': No such file or directory
+- Makefile:36: recipe for target '/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local/lib/libyajl_s.a' failed
+- make: *** [/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local/lib/libyajl_s.a] Error 127
+- cd upstream && ./configure --prefix /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local && make install
+- /usr/bin/env: 'ruby': No such file or directory
+- Makefile:36: recipe for target '/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local/lib/libyajl_s.a' failed
+- make: *** [/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local/lib/libyajl_s.a] Error 127
+[ERROR] The compilation of yajl failed at "make install".
+[yajl: ocamlfind remove] Command started
++ ocamlfind "remove" "yajl" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0)
+- cd upstream && ./configure --prefix /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local && make install
+- /usr/bin/env: 'ruby': No such file or directory
+- Makefile:36: recipe for target '/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local/lib/libyajl_s.a' failed
+- make: *** [/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local/lib/libyajl_s.a] Error 127
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/yajl/META
+- cd upstream && ./configure --prefix /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local && make install
+- /usr/bin/env: 'ruby': No such file or directory
+- Makefile:36: recipe for target '/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local/lib/libyajl_s.a' failed
+- make: *** [/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local/lib/libyajl_s.a] Error 127
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/yajl/META
+
+#=== ERROR while installing yajl.0.7.0 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make install
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0
+# compiler             4.04.2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/yajl-30429.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/yajl-30429.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/yajl-30429.out
+### stdout ###
+# cd upstream && ./configure --prefix /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local && make install
+# /usr/bin/env: 'ruby': No such file or directory
+# Makefile:36: recipe for target '/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local/lib/libyajl_s.a' failed
+# make: *** [/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local/lib/libyajl_s.a] Error 127
+### stderr ###
+# cd upstream && ./configure --prefix /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local && make install
+# /usr/bin/env: 'ruby': No such file or directory
+# Makefile:36: recipe for target '/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local/lib/libyajl_s.a' failed
+# make: *** [/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/yajl.0.7.0/upstream/local/lib/libyajl_s.a] Error 127
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install yajl 0.7.0
+No changes have been performed
+
+=-=- yajl.0.7.0 troobleshooting -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package relies on external (system) dependencies that may be missing.
+   `opam depext yajl.0.7.0' may help you find the correct installation for your
+   system.
+'opam install yajl.0.7.0' failed.

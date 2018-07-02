@@ -1,0 +1,50 @@
+The following actions will be performed:
+  - install bitstring 3.0.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bitstring: http] Command started
+[bitstring: http] Command started
+[bitstring.3.0.0] https://bitbucket.org/thanatonauts/bitstring/get/v3.0.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bitstring: jbuilder build] Command started
++ jbuilder "build" "-p" "bitstring" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/bitstring.3.0.0)
+-       ocamlc ppx/.ppx_bitstring.objs/ppx_bitstring.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I ppx/.ppx_bitstring.objs -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/result -no-alias-deps -o ppx/.ppx_bitstring.objs/ppx_bitstring.cmo -c -impl ppx/ppx_bitstring.pp.ml)
+- File "ppx/ppx_bitstring.ml", line 318, characters 6-10:
+- Error: Uninterpreted extension 'expr'.
+-       ocamlc ppx/.ppx_bitstring.objs/ppx_bitstring.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I ppx/.ppx_bitstring.objs -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/result -no-alias-deps -o ppx/.ppx_bitstring.objs/ppx_bitstring.cmo -c -impl ppx/ppx_bitstring.pp.ml)
+- File "ppx/ppx_bitstring.ml", line 318, characters 6-10:
+- Error: Uninterpreted extension 'expr'.
+[ERROR] The compilation of bitstring failed at "jbuilder build -p bitstring -j
+        4".
+
+#=== ERROR while installing bitstring.3.0.0 ===================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p bitstring -j 4
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/bitstring.3.0.0
+# compiler             4.07.0+rc2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/bitstring.3.0.0/bitstring-1050.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/bitstring.3.0.0/bitstring-1050.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/bitstring.3.0.0/bitstring-1050.out
+### stdout ###
+#       ocamlc ppx/.ppx_bitstring.objs/ppx_bitstring.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I ppx/.ppx_bitstring.objs -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/result -no-alias-deps -o ppx/.ppx_bitstring.objs/ppx_bitstring.cmo -c -impl ppx/ppx_bitstring.pp.ml)
+# File "ppx/ppx_bitstring.ml", line 318, characters 6-10:
+# Error: Uninterpreted extension 'expr'.
+### stderr ###
+#       ocamlc ppx/.ppx_bitstring.objs/ppx_bitstring.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -w -40 -g -bin-annot -I ppx/.ppx_bitstring.objs -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/result -no-alias-deps -o ppx/.ppx_bitstring.objs/ppx_bitstring.cmo -c -impl ppx/ppx_bitstring.pp.ml)
+# File "ppx/ppx_bitstring.ml", line 318, characters 6-10:
+# Error: Uninterpreted extension 'expr'.
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install bitstring 3.0.0
+No changes have been performed
+'opam install bitstring.3.0.0' failed.

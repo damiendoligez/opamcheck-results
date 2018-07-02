@@ -1,0 +1,175 @@
+The following actions will be performed:
+  - install operf-micro 0.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[operf-micro: http] Command started
+[operf-micro: http] Command started
+[operf-micro.0.2] https://github.com/OCamlPro/operf-micro/archive/0.2.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[operf-micro: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/operf-micro.0.2)
+- make -C builder all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/operf-micro.0.2/builder'
+- echo "let name = \"operf-micro\"" > static_config.ml
+- echo "let prefix = \"/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1\"" >> static_config.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c static_config.mli
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c static_config.ml
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c utils.ml
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c files.ml
+- ocamlyacc parser.mly
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c files.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c parser.mli
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c parser.ml
+- ocamllex lexer.mll
+- 21 states, 475 transitions, table size 2026 bytes
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c lexer.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c loc.mli
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c loc.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c utils.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c command.mli
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c command.ml
+- File "command.ml", line 85, characters 27-30:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:30: recipe for target 'command.cmx' failed
+- make[1]: *** [command.cmx] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/operf-micro.0.2/builder'
+- Makefile:9: recipe for target 'all' failed
+- make: *** [all] Error 2
+- make -C builder all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/operf-micro.0.2/builder'
+- echo "let name = \"operf-micro\"" > static_config.ml
+- echo "let prefix = \"/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1\"" >> static_config.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c static_config.mli
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c static_config.ml
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c utils.ml
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c files.ml
+- ocamlyacc parser.mly
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c files.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c parser.mli
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c parser.ml
+- ocamllex lexer.mll
+- 21 states, 475 transitions, table size 2026 bytes
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c lexer.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c loc.mli
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c loc.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c utils.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c command.mli
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c command.ml
+- File "command.ml", line 85, characters 27-30:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:30: recipe for target 'command.cmx' failed
+- make[1]: *** [command.cmx] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/operf-micro.0.2/builder'
+- Makefile:9: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of operf-micro failed at "make".
+[operf-micro: make uninstall] Command started
++ make "uninstall" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/operf-micro.0.2)
+- make -C builder all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/operf-micro.0.2/builder'
+- echo "let name = \"operf-micro\"" > static_config.ml
+- echo "let prefix = \"/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1\"" >> static_config.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c static_config.mli
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c static_config.ml
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c utils.ml
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c files.ml
+- ocamlyacc parser.mly
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c files.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c parser.mli
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c parser.ml
+- ocamllex lexer.mll
+- 21 states, 475 transitions, table size 2026 bytes
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c lexer.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c loc.mli
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c loc.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c utils.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c command.mli
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c command.ml
+- File "command.ml", line 85, characters 27-30:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:30: recipe for target 'command.cmx' failed
+- make[1]: *** [command.cmx] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/operf-micro.0.2/builder'
+- Makefile:9: recipe for target 'all' failed
+- make: *** [all] Error 2
+- rm -rf /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/share//operf-micro/benchmarks
+- rm -f /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin//operf-micro
+- rm -rf /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/share//operf-micro
+- make -C builder all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/operf-micro.0.2/builder'
+- echo "let name = \"operf-micro\"" > static_config.ml
+- echo "let prefix = \"/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1\"" >> static_config.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c static_config.mli
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c static_config.ml
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c utils.ml
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c files.ml
+- ocamlyacc parser.mly
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c files.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c parser.mli
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c parser.ml
+- ocamllex lexer.mll
+- 21 states, 475 transitions, table size 2026 bytes
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c lexer.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c loc.mli
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c loc.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c utils.ml
+- ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c command.mli
+- ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c command.ml
+- File "command.ml", line 85, characters 27-30:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:30: recipe for target 'command.cmx' failed
+- make[1]: *** [command.cmx] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/operf-micro.0.2/builder'
+- Makefile:9: recipe for target 'all' failed
+- make: *** [all] Error 2
+- rm -rf /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/share//operf-micro/benchmarks
+- rm -f /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin//operf-micro
+- rm -rf /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/share//operf-micro
+
+#=== ERROR while installing operf-micro.0.2 ===================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/operf-micro.0.2
+# compiler             4.06.1
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/operf-micro.0.2/operf-micro-27496.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/operf-micro.0.2/operf-micro-27496.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/operf-micro.0.2/operf-micro-27496.out
+### stdout ###
+# [...]
+# ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c command.mli
+# ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c command.ml
+# File "command.ml", line 85, characters 27-30:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:30: recipe for target 'command.cmx' failed
+# make[1]: *** [command.cmx] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/operf-micro.0.2/builder'
+# Makefile:9: recipe for target 'all' failed
+# make: *** [all] Error 2
+### stderr ###
+# [...]
+# ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c command.mli
+# ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c command.ml
+# File "command.ml", line 85, characters 27-30:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:30: recipe for target 'command.cmx' failed
+# make[1]: *** [command.cmx] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/operf-micro.0.2/builder'
+# Makefile:9: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install operf-micro 0.2
+No changes have been performed
+'opam install operf-micro.0.2' failed.

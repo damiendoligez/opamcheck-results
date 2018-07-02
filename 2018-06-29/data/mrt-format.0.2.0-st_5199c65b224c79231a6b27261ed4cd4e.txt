@@ -1,0 +1,58 @@
+The following actions will be performed:
+  - install mrt-format 0.2.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mrt-format: http] Command started
+[mrt-format: http] Command started
+[mrt-format.0.2.0] https://github.com/mor1/mrt-format/releases/download/0.2.0/mrt-format-0.2.0.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mrt-format: jbuilder build] Command started
++ jbuilder "build" "-p" "mrt-format" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mrt-format.0.2.0)
+- File "lib/jbuild", line 7, characters 20-31:
+- Error: Library "ppx_cstruct" not found.
+- Hint: try: jbuilder external-lib-deps --missing -p mrt-format @install
+- Error: Library "ppx_cstruct" not found.
+- -> required by (pps (ppx_cstruct ocaml-migrate-parsetree.driver-main))
+- Hint: try: jbuilder external-lib-deps --missing -p mrt-format @install
+- File "lib/jbuild", line 7, characters 20-31:
+- Error: Library "ppx_cstruct" not found.
+- Hint: try: jbuilder external-lib-deps --missing -p mrt-format @install
+- Error: Library "ppx_cstruct" not found.
+- -> required by (pps (ppx_cstruct ocaml-migrate-parsetree.driver-main))
+- Hint: try: jbuilder external-lib-deps --missing -p mrt-format @install
+[ERROR] The compilation of mrt-format failed at "jbuilder build -p mrt-format
+        -j 4".
+
+#=== ERROR while installing mrt-format.0.2.0 ==================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p mrt-format -j 4
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mrt-format.0.2.0
+# compiler             4.07.0+rc2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mrt-format.0.2.0/mrt-format-1334.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mrt-format.0.2.0/mrt-format-1334.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mrt-format.0.2.0/mrt-format-1334.out
+### stdout ###
+# File "lib/jbuild", line 7, characters 20-31:
+# Error: Library "ppx_cstruct" not found.
+# Hint: try: jbuilder external-lib-deps --missing -p mrt-format @install
+# Error: Library "ppx_cstruct" not found.
+# -> required by (pps (ppx_cstruct ocaml-migrate-parsetree.driver-main))
+# Hint: try: jbuilder external-lib-deps --missing -p mrt-format @install
+### stderr ###
+# File "lib/jbuild", line 7, characters 20-31:
+# Error: Library "ppx_cstruct" not found.
+# Hint: try: jbuilder external-lib-deps --missing -p mrt-format @install
+# Error: Library "ppx_cstruct" not found.
+# -> required by (pps (ppx_cstruct ocaml-migrate-parsetree.driver-main))
+# Hint: try: jbuilder external-lib-deps --missing -p mrt-format @install
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install mrt-format 0.2.0
+No changes have been performed
+'opam install mrt-format.0.2.0' failed.

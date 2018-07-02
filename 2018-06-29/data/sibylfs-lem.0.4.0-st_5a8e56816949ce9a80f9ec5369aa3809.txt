@@ -1,0 +1,267 @@
+The following actions will be performed:
+  - install sibylfs-lem 0.4.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sibylfs-lem: http] Command started
+[sibylfs-lem: http] Command started
+[sibylfs-lem.0.4.0] https://bitbucket.org/dsheets/lem/get/0.4.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sibylfs-lem: make] Command started
++ make "-e" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sibylfs-lem.0.4.0)
+- printf 'let v="%s"\n' `git describe --dirty --always` > src/version.ml
+- error: /home/doligez/opamcheck/sandbox/bin/git describe --dirty --always
+- echo let d=\"/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/sibylfs-lem\" > src/build_directory.ml
+- make -C src all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sibylfs-lem.0.4.0/src'
+- ocamlbuild -cflag -g main.native
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules main.ml > main.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules main.mli > main.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o main.cmi main.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ast.ml > ast.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/ulib.ml > ulib/ulib.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batText.mli > ulib/batText.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batUChar.mli > ulib/batUChar.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/batUChar.cmi ulib/batUChar.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batUTF8.mli > ulib/batUTF8.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/batText.cmi ulib/batText.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/batUTF8.cmi ulib/batUTF8.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/ulib.cmo ulib/ulib.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ast.cmo ast.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batText.ml > ulib/batText.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batReturn.ml > ulib/batReturn.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batReturn.mli > ulib/batReturn.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/batReturn.cmi ulib/batReturn.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batUChar.ml > ulib/batUChar.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batUTF8.ml > ulib/batUTF8.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batUChar.cmx ulib/batUChar.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batUChar.cmx ulib/batUChar.ml
+- File "ulib/batUChar.ml", line 53, characters 29-31:
+- Warning 3: deprecated: Stdlib.or
+- Use (||) instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batReturn.cmx ulib/batReturn.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batUTF8.cmx ulib/batUTF8.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batUTF8.cmx ulib/batUTF8.ml
+- File "ulib/batUTF8.ml", line 200, characters 20-22:
+- Warning 3: deprecated: Stdlib.or
+- Use (||) instead.
+- File "ulib/batUTF8.ml", line 209, characters 2-13:
+- Warning 3: deprecated: Stdlib.String.copy
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batText.cmx ulib/batText.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batText.cmx ulib/batText.ml
+- File "ulib/batText.ml", line 46, characters 10-23:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "ulib/batText.ml", line 237, characters 20-21:
+- Error: This expression has type bytes but an expression was expected of type
+-          UTF8.t = string
+- Command exited with code 2.
+- Makefile:2: recipe for target 'all' failed
+- make[1]: *** [all] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sibylfs-lem.0.4.0/src'
+- Makefile:139: recipe for target 'build-lem' failed
+- make: *** [build-lem] Error 2
+- printf 'let v="%s"\n' `git describe --dirty --always` > src/version.ml
+- error: /home/doligez/opamcheck/sandbox/bin/git describe --dirty --always
+- echo let d=\"/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/sibylfs-lem\" > src/build_directory.ml
+- make -C src all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sibylfs-lem.0.4.0/src'
+- ocamlbuild -cflag -g main.native
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules main.ml > main.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules main.mli > main.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o main.cmi main.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ast.ml > ast.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/ulib.ml > ulib/ulib.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batText.mli > ulib/batText.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batUChar.mli > ulib/batUChar.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/batUChar.cmi ulib/batUChar.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batUTF8.mli > ulib/batUTF8.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/batText.cmi ulib/batText.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/batUTF8.cmi ulib/batUTF8.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/ulib.cmo ulib/ulib.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ast.cmo ast.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batText.ml > ulib/batText.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batReturn.ml > ulib/batReturn.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batReturn.mli > ulib/batReturn.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/batReturn.cmi ulib/batReturn.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batUChar.ml > ulib/batUChar.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batUTF8.ml > ulib/batUTF8.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batUChar.cmx ulib/batUChar.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batUChar.cmx ulib/batUChar.ml
+- File "ulib/batUChar.ml", line 53, characters 29-31:
+- Warning 3: deprecated: Stdlib.or
+- Use (||) instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batReturn.cmx ulib/batReturn.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batUTF8.cmx ulib/batUTF8.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batUTF8.cmx ulib/batUTF8.ml
+- File "ulib/batUTF8.ml", line 200, characters 20-22:
+- Warning 3: deprecated: Stdlib.or
+- Use (||) instead.
+- File "ulib/batUTF8.ml", line 209, characters 2-13:
+- Warning 3: deprecated: Stdlib.String.copy
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batText.cmx ulib/batText.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batText.cmx ulib/batText.ml
+- File "ulib/batText.ml", line 46, characters 10-23:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "ulib/batText.ml", line 237, characters 20-21:
+- Error: This expression has type bytes but an expression was expected of type
+-          UTF8.t = string
+- Command exited with code 2.
+- Makefile:2: recipe for target 'all' failed
+- make[1]: *** [all] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sibylfs-lem.0.4.0/src'
+- Makefile:139: recipe for target 'build-lem' failed
+- make: *** [build-lem] Error 2
+[ERROR] The compilation of sibylfs-lem failed at "make -e".
+[sibylfs-lem: rm] Command started
++ rm "-r" "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/sibylfs-lem" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sibylfs-lem.0.4.0)
+- printf 'let v="%s"\n' `git describe --dirty --always` > src/version.ml
+- error: /home/doligez/opamcheck/sandbox/bin/git describe --dirty --always
+- echo let d=\"/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/sibylfs-lem\" > src/build_directory.ml
+- make -C src all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sibylfs-lem.0.4.0/src'
+- ocamlbuild -cflag -g main.native
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules main.ml > main.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules main.mli > main.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o main.cmi main.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ast.ml > ast.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/ulib.ml > ulib/ulib.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batText.mli > ulib/batText.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batUChar.mli > ulib/batUChar.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/batUChar.cmi ulib/batUChar.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batUTF8.mli > ulib/batUTF8.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/batText.cmi ulib/batText.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/batUTF8.cmi ulib/batUTF8.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/ulib.cmo ulib/ulib.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ast.cmo ast.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batText.ml > ulib/batText.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batReturn.ml > ulib/batReturn.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batReturn.mli > ulib/batReturn.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/batReturn.cmi ulib/batReturn.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batUChar.ml > ulib/batUChar.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batUTF8.ml > ulib/batUTF8.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batUChar.cmx ulib/batUChar.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batUChar.cmx ulib/batUChar.ml
+- File "ulib/batUChar.ml", line 53, characters 29-31:
+- Warning 3: deprecated: Stdlib.or
+- Use (||) instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batReturn.cmx ulib/batReturn.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batUTF8.cmx ulib/batUTF8.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batUTF8.cmx ulib/batUTF8.ml
+- File "ulib/batUTF8.ml", line 200, characters 20-22:
+- Warning 3: deprecated: Stdlib.or
+- Use (||) instead.
+- File "ulib/batUTF8.ml", line 209, characters 2-13:
+- Warning 3: deprecated: Stdlib.String.copy
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batText.cmx ulib/batText.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batText.cmx ulib/batText.ml
+- File "ulib/batText.ml", line 46, characters 10-23:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "ulib/batText.ml", line 237, characters 20-21:
+- Error: This expression has type bytes but an expression was expected of type
+-          UTF8.t = string
+- Command exited with code 2.
+- Makefile:2: recipe for target 'all' failed
+- make[1]: *** [all] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sibylfs-lem.0.4.0/src'
+- Makefile:139: recipe for target 'build-lem' failed
+- make: *** [build-lem] Error 2
+- rm: cannot remove '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/sibylfs-lem': No such file or directory
+- printf 'let v="%s"\n' `git describe --dirty --always` > src/version.ml
+- error: /home/doligez/opamcheck/sandbox/bin/git describe --dirty --always
+- echo let d=\"/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/sibylfs-lem\" > src/build_directory.ml
+- make -C src all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sibylfs-lem.0.4.0/src'
+- ocamlbuild -cflag -g main.native
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules main.ml > main.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules main.mli > main.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o main.cmi main.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ast.ml > ast.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/ulib.ml > ulib/ulib.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batText.mli > ulib/batText.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batUChar.mli > ulib/batUChar.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/batUChar.cmi ulib/batUChar.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batUTF8.mli > ulib/batUTF8.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/batText.cmi ulib/batText.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/batUTF8.cmi ulib/batUTF8.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/ulib.cmo ulib/ulib.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ast.cmo ast.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batText.ml > ulib/batText.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batReturn.ml > ulib/batReturn.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batReturn.mli > ulib/batReturn.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -g -annot -I ulib -o ulib/batReturn.cmi ulib/batReturn.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batUChar.ml > ulib/batUChar.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules ulib/batUTF8.ml > ulib/batUTF8.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batUChar.cmx ulib/batUChar.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batUChar.cmx ulib/batUChar.ml
+- File "ulib/batUChar.ml", line 53, characters 29-31:
+- Warning 3: deprecated: Stdlib.or
+- Use (||) instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batReturn.cmx ulib/batReturn.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batUTF8.cmx ulib/batUTF8.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batUTF8.cmx ulib/batUTF8.ml
+- File "ulib/batUTF8.ml", line 200, characters 20-22:
+- Warning 3: deprecated: Stdlib.or
+- Use (||) instead.
+- File "ulib/batUTF8.ml", line 209, characters 2-13:
+- Warning 3: deprecated: Stdlib.String.copy
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batText.cmx ulib/batText.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlopt.opt -c -g -annot -I ulib -o ulib/batText.cmx ulib/batText.ml
+- File "ulib/batText.ml", line 46, characters 10-23:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "ulib/batText.ml", line 237, characters 20-21:
+- Error: This expression has type bytes but an expression was expected of type
+-          UTF8.t = string
+- Command exited with code 2.
+- Makefile:2: recipe for target 'all' failed
+- make[1]: *** [all] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sibylfs-lem.0.4.0/src'
+- Makefile:139: recipe for target 'build-lem' failed
+- make: *** [build-lem] Error 2
+- rm: cannot remove '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/sibylfs-lem': No such file or directory
+
+#=== ERROR while installing sibylfs-lem.0.4.0 =================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make -e
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sibylfs-lem.0.4.0
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sibylfs-lem.0.4.0/sibylfs-lem-11366.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sibylfs-lem.0.4.0/sibylfs-lem-11366.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sibylfs-lem.0.4.0/sibylfs-lem-11366.out
+### stdout ###
+# [...]
+# Use Bytes.create instead.
+# File "ulib/batText.ml", line 237, characters 20-21:
+# Error: This expression has type bytes but an expression was expected of type
+#          UTF8.t = string
+# Command exited with code 2.
+# Makefile:2: recipe for target 'all' failed
+# make[1]: *** [all] Error 10
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sibylfs-lem.0.4.0/src'
+# Makefile:139: recipe for target 'build-lem' failed
+# make: *** [build-lem] Error 2
+### stderr ###
+# [...]
+# Use Bytes.create instead.
+# File "ulib/batText.ml", line 237, characters 20-21:
+# Error: This expression has type bytes but an expression was expected of type
+#          UTF8.t = string
+# Command exited with code 2.
+# Makefile:2: recipe for target 'all' failed
+# make[1]: *** [all] Error 10
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/sibylfs-lem.0.4.0/src'
+# Makefile:139: recipe for target 'build-lem' failed
+# make: *** [build-lem] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install sibylfs-lem 0.4.0
+No changes have been performed
+'opam install sibylfs-lem.0.4.0' failed.

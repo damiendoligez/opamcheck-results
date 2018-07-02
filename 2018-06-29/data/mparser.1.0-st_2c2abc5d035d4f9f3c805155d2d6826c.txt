@@ -1,0 +1,91 @@
+The following actions will be performed:
+  - install mparser 1.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mparser: http] Command started
+[mparser: http] Command started
+[mparser.1.0] https://github.com/cakeplus/mparser/archive/1.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mparser: make build] Command started
++ make "build" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/mparser.1.0)
+- ocaml setup.ml -configure 
+- File "./setup.ml", line 213, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 213, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:34: recipe for target 'setup.data' failed
+- make: *** [setup.data] Error 2
+- ocaml setup.ml -configure 
+- File "./setup.ml", line 213, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 213, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:34: recipe for target 'setup.data' failed
+- make: *** [setup.data] Error 2
+[ERROR] The compilation of mparser failed at "make build".
+[mparser: ocamlfind remove] Command started
++ ocamlfind "remove" "mparser" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/mparser.1.0)
+- ocaml setup.ml -configure 
+- File "./setup.ml", line 213, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 213, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:34: recipe for target 'setup.data' failed
+- make: *** [setup.data] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/mparser/META
+- ocaml setup.ml -configure 
+- File "./setup.ml", line 213, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 213, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:34: recipe for target 'setup.data' failed
+- make: *** [setup.data] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/mparser/META
+
+#=== ERROR while installing mparser.1.0 =======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make build
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/mparser.1.0
+# compiler             4.06.1
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/mparser.1.0/mparser-25603.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/mparser.1.0/mparser-25603.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/mparser.1.0/mparser-25603.out
+### stdout ###
+# ocaml setup.ml -configure 
+# File "./setup.ml", line 213, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 213, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:34: recipe for target 'setup.data' failed
+# make: *** [setup.data] Error 2
+### stderr ###
+# ocaml setup.ml -configure 
+# File "./setup.ml", line 213, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 213, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:34: recipe for target 'setup.data' failed
+# make: *** [setup.data] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install mparser 1.0
+No changes have been performed
+'opam install mparser.1.0' failed.

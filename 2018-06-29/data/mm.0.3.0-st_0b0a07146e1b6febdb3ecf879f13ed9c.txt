@@ -1,0 +1,879 @@
+The following actions will be performed:
+  - install mm 0.3.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mm: http] Command started
+[mm: http] Command started
+[mm.0.3.0] https://github.com/savonet/ocaml-mm/releases/download/0.3.0/ocaml-mm-0.3.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mm: ./configure] Command started
++ ./configure "--prefix" "/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0)
+- configuring ocaml-mm 0.3.0
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- checking for a BSD-compatible install... /usr/bin/install -c
+- checking that calling user is not root... ok
+- checking for gcc... (cached) gcc
+- checking whether we are using the GNU C compiler... (cached) yes
+- checking whether gcc accepts -g... (cached) yes
+- checking for gcc option to accept ISO C89... (cached) none needed
+- checking for ar... ar
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.0+rc2
+- checking if ocaml compiler supports first-class modules... yes
+- OCaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamldoc.opt... ocamldoc.opt
+- checking for ocamlbuild... ocamlbuild
+- checking for camlidl... no
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for camlp4... camlp4
+- versions differs from ocamlc
+- checking for camlp4boot... camlp4boot
+- checking for camlp4o... camlp4o
+- checking for camlp4of... camlp4of
+- checking for camlp4oof... camlp4oof
+- checking for camlp4orf... camlp4orf
+- checking for camlp4prof... camlp4prof
+- checking for camlp4r... camlp4r
+- checking for camlp4rf... camlp4rf
+- checking for ocamlfind... ocamlfind
+- checking for ocaml standard library path... /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for caml/threads.h... yes
+- checking for gcc option to produce PIC... -fPIC
+- checking for memalign... yes
+- checking how to run the C preprocessor... gcc -E
+- checking for grep that handles long lines and -e... /bin/grep
+- checking for egrep... /bin/grep -E
+- checking for ANSI C header files... yes
+- checking for sys/types.h... yes
+- checking for sys/stat.h... yes
+- checking for stdlib.h... yes
+- checking for string.h... yes
+- checking for memory.h... yes
+- checking for strings.h... yes
+- checking for inttypes.h... yes
+- checking for stdint.h... yes
+- checking for unistd.h... yes
+- checking whether byte ordering is bigendian... no
+- checking for OCaml library alsa... not found
+- checking for OCaml library ao... not found
+- checking for OCaml library pulseaudio... not found
+- checking for OCaml library gstreamer... not found
+- checking for OCaml library mad... not found
+- checking for OCaml library ogg... not found
+- checking for OCaml library sdl... not found
+- checking for OCaml library theora... not found
+- checking sys/soundcard.h usability... yes
+- checking sys/soundcard.h presence... yes
+- checking for sys/soundcard.h... yes
+- checking libavcodec/avcodec.h usability... no
+- checking libavcodec/avcodec.h presence... no
+- checking for libavcodec/avcodec.h... no
+- checking linux/videodev.h usability... no
+- checking linux/videodev.h presence... no
+- checking for linux/videodev.h... no
+- checking for ocaml bytes module... ok
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating src/Makefile
+- config.status: creating external/Makefile
+- config.status: creating external/Makefile.defs
+- config.status: creating src/META
+- config.status: creating config.h
+- 
+- 
+- Supported external libraries:
+-   - Alsa      : no
+-   - AO        : no
+-   - FFmpeg    : no
+-   - Gstreamer : no
+-   - Mad       : no
+-   - ogg       : no
+-   - OSS       : yes
+-   - Pulseaudio: no
+-   - SDL       : no
+-   - Theora    : no
+-   - V4L       : no
+- 
+- configuring ocaml-mm 0.3.0
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- checking for a BSD-compatible install... /usr/bin/install -c
+- checking that calling user is not root... ok
+- checking for gcc... (cached) gcc
+- checking whether we are using the GNU C compiler... (cached) yes
+- checking whether gcc accepts -g... (cached) yes
+- checking for gcc option to accept ISO C89... (cached) none needed
+- checking for ar... ar
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.0+rc2
+- checking if ocaml compiler supports first-class modules... yes
+- OCaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamldoc.opt... ocamldoc.opt
+- checking for ocamlbuild... ocamlbuild
+- checking for camlidl... no
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for camlp4... camlp4
+- versions differs from ocamlc
+- checking for camlp4boot... camlp4boot
+- checking for camlp4o... camlp4o
+- checking for camlp4of... camlp4of
+- checking for camlp4oof... camlp4oof
+- checking for camlp4orf... camlp4orf
+- checking for camlp4prof... camlp4prof
+- checking for camlp4r... camlp4r
+- checking for camlp4rf... camlp4rf
+- checking for ocamlfind... ocamlfind
+- checking for ocaml standard library path... /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for caml/threads.h... yes
+- checking for gcc option to produce PIC... -fPIC
+- checking for memalign... yes
+- checking how to run the C preprocessor... gcc -E
+- checking for grep that handles long lines and -e... /bin/grep
+- checking for egrep... /bin/grep -E
+- checking for ANSI C header files... yes
+- checking for sys/types.h... yes
+- checking for sys/stat.h... yes
+- checking for stdlib.h... yes
+- checking for string.h... yes
+- checking for memory.h... yes
+- checking for strings.h... yes
+- checking for inttypes.h... yes
+- checking for stdint.h... yes
+- checking for unistd.h... yes
+- checking whether byte ordering is bigendian... no
+- checking for OCaml library alsa... not found
+- checking for OCaml library ao... not found
+- checking for OCaml library pulseaudio... not found
+- checking for OCaml library gstreamer... not found
+- checking for OCaml library mad... not found
+- checking for OCaml library ogg... not found
+- checking for OCaml library sdl... not found
+- checking for OCaml library theora... not found
+- checking sys/soundcard.h usability... yes
+- checking sys/soundcard.h presence... yes
+- checking for sys/soundcard.h... yes
+- checking libavcodec/avcodec.h usability... no
+- checking libavcodec/avcodec.h presence... no
+- checking for libavcodec/avcodec.h... no
+- checking linux/videodev.h usability... no
+- checking linux/videodev.h presence... no
+- checking for linux/videodev.h... no
+- checking for ocaml bytes module... ok
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating src/Makefile
+- config.status: creating external/Makefile
+- config.status: creating external/Makefile.defs
+- config.status: creating src/META
+- config.status: creating config.h
+- 
+- 
+- Supported external libraries:
+-   - Alsa      : no
+-   - AO        : no
+-   - FFmpeg    : no
+-   - Gstreamer : no
+-   - Mad       : no
+-   - ogg       : no
+-   - OSS       : yes
+-   - Pulseaudio: no
+-   - SDL       : no
+-   - Theora    : no
+-   - V4L       : no
+- 
+[mm: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0)
+- configuring ocaml-mm 0.3.0
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- checking for a BSD-compatible install... /usr/bin/install -c
+- checking that calling user is not root... ok
+- checking for gcc... (cached) gcc
+- checking whether we are using the GNU C compiler... (cached) yes
+- checking whether gcc accepts -g... (cached) yes
+- checking for gcc option to accept ISO C89... (cached) none needed
+- checking for ar... ar
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.0+rc2
+- checking if ocaml compiler supports first-class modules... yes
+- OCaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamldoc.opt... ocamldoc.opt
+- checking for ocamlbuild... ocamlbuild
+- checking for camlidl... no
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for camlp4... camlp4
+- versions differs from ocamlc
+- checking for camlp4boot... camlp4boot
+- checking for camlp4o... camlp4o
+- checking for camlp4of... camlp4of
+- checking for camlp4oof... camlp4oof
+- checking for camlp4orf... camlp4orf
+- checking for camlp4prof... camlp4prof
+- checking for camlp4r... camlp4r
+- checking for camlp4rf... camlp4rf
+- checking for ocamlfind... ocamlfind
+- checking for ocaml standard library path... /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for caml/threads.h... yes
+- checking for gcc option to produce PIC... -fPIC
+- checking for memalign... yes
+- checking how to run the C preprocessor... gcc -E
+- checking for grep that handles long lines and -e... /bin/grep
+- checking for egrep... /bin/grep -E
+- checking for ANSI C header files... yes
+- checking for sys/types.h... yes
+- checking for sys/stat.h... yes
+- checking for stdlib.h... yes
+- checking for string.h... yes
+- checking for memory.h... yes
+- checking for strings.h... yes
+- checking for inttypes.h... yes
+- checking for stdint.h... yes
+- checking for unistd.h... yes
+- checking whether byte ordering is bigendian... no
+- checking for OCaml library alsa... not found
+- checking for OCaml library ao... not found
+- checking for OCaml library pulseaudio... not found
+- checking for OCaml library gstreamer... not found
+- checking for OCaml library mad... not found
+- checking for OCaml library ogg... not found
+- checking for OCaml library sdl... not found
+- checking for OCaml library theora... not found
+- checking sys/soundcard.h usability... yes
+- checking sys/soundcard.h presence... yes
+- checking for sys/soundcard.h... yes
+- checking libavcodec/avcodec.h usability... no
+- checking libavcodec/avcodec.h presence... no
+- checking for libavcodec/avcodec.h... no
+- checking linux/videodev.h usability... no
+- checking linux/videodev.h presence... no
+- checking for linux/videodev.h... no
+- checking for ocaml bytes module... ok
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating src/Makefile
+- config.status: creating external/Makefile
+- config.status: creating external/Makefile.defs
+- config.status: creating src/META
+- config.status: creating config.h
+- 
+- 
+- Supported external libraries:
+-   - Alsa      : no
+-   - AO        : no
+-   - FFmpeg    : no
+-   - Gstreamer : no
+-   - Mad       : no
+-   - ogg       : no
+-   - OSS       : yes
+-   - Pulseaudio: no
+-   - SDL       : no
+-   - Theora    : no
+-   - V4L       : no
+- 
+- make -C src all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+- ocamldep.opt synth.mli > ._bcdi/synth.di
+- ocamldep.opt MIDI.mli > ._bcdi/MIDI.di
+- ocamldep.opt video.mli > ._bcdi/video.di
+- ocamldep.opt image.mli > ._bcdi/image.di
+- ocamldep.opt audio.mli > ._bcdi/audio.di
+- ocamldep.opt ringbuffer.mli > ._bcdi/ringbuffer.di
+- ocamldep.opt synth.ml > ._d/synth.d
+- ocamldep.opt MIDI.ml > ._d/MIDI.d
+- ocamldep.opt video.ml > ._d/video.d
+- ocamldep.opt image.ml > ._d/image.d
+- ocamldep.opt audio.ml > ._d/audio.d
+- ocamldep.opt IO.ml > ._d/IO.d
+- ocamldep.opt ringbuffer.ml > ._d/ringbuffer.d
+- ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/include -I.. -g -Wall -O3 \
+- 			-DPIC   \
+- 			  -I.. -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes  -o audio_c.o " audio_c.c
+- ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/include -I.. -g -Wall -O3 \
+- 			-DPIC   \
+- 			  -I.. -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes  -o image_c.o " image_c.c
+- image_c.c: In function 'caml_rgb_color_to_alpha':
+- image_c.c:1325:10: warning: variable 'd' set but not used [-Wunused-but-set-variable]
+-    double d;
+-           ^
+- image_c.c:1324:22: warning: variable 'aa' set but not used [-Wunused-but-set-variable]
+-    double rr, gg, bb, aa;
+-                       ^
+- configuring ocaml-mm 0.3.0
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- checking for a BSD-compatible install... /usr/bin/install -c
+- checking that calling user is not root... ok
+- checking for gcc... (cached) gcc
+- checking whether we are using the GNU C compiler... (cached) yes
+- checking whether gcc accepts -g... (cached) yes
+- checking for gcc option to accept ISO C89... (cached) none needed
+- checking for ar... ar
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.0+rc2
+- checking if ocaml compiler supports first-class modules... yes
+- OCaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamldoc.opt... ocamldoc.opt
+- checking for ocamlbuild... ocamlbuild
+- checking for camlidl... no
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for camlp4... camlp4
+- versions differs from ocamlc
+- checking for camlp4boot... camlp4boot
+- checking for camlp4o... camlp4o
+- checking for camlp4of... camlp4of
+- checking for camlp4oof... camlp4oof
+- checking for camlp4orf... camlp4orf
+- checking for camlp4prof... camlp4prof
+- checking for camlp4r... camlp4r
+- checking for camlp4rf... camlp4rf
+- checking for ocamlfind... ocamlfind
+- checking for ocaml standard library path... /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for caml/threads.h... yes
+- checking for gcc option to produce PIC... -fPIC
+- checking for memalign... yes
+- checking how to run the C preprocessor... gcc -E
+- checking for grep that handles long lines and -e... /bin/grep
+- checking for egrep... /bin/grep -E
+- checking for ANSI C header files... yes
+- checking for sys/types.h... yes
+- checking for sys/stat.h... yes
+- checking for stdlib.h... yes
+- checking for string.h... yes
+- checking for memory.h... yes
+- checking for strings.h... yes
+- checking for inttypes.h... yes
+- checking for stdint.h... yes
+- checking for unistd.h... yes
+- checking whether byte ordering is bigendian... no
+- checking for OCaml library alsa... not found
+- checking for OCaml library ao... not found
+- checking for OCaml library pulseaudio... not found
+- checking for OCaml library gstreamer... not found
+- checking for OCaml library mad... not found
+- checking for OCaml library ogg... not found
+- checking for OCaml library sdl... not found
+- checking for OCaml library theora... not found
+- checking sys/soundcard.h usability... yes
+- checking sys/soundcard.h presence... yes
+- checking for sys/soundcard.h... yes
+- checking libavcodec/avcodec.h usability... no
+- checking libavcodec/avcodec.h presence... no
+- checking for libavcodec/avcodec.h... no
+- checking linux/videodev.h usability... no
+- checking linux/videodev.h presence... no
+- checking for linux/videodev.h... no
+- checking for ocaml bytes module... ok
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating src/Makefile
+- config.status: creating external/Makefile
+- config.status: creating external/Makefile.defs
+- config.status: creating src/META
+- config.status: creating config.h
+- 
+- 
+- Supported external libraries:
+-   - Alsa      : no
+-   - AO        : no
+-   - FFmpeg    : no
+-   - Gstreamer : no
+-   - Mad       : no
+-   - ogg       : no
+-   - OSS       : yes
+-   - Pulseaudio: no
+-   - SDL       : no
+-   - Theora    : no
+-   - V4L       : no
+- 
+- make -C src all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+- ocamldep.opt synth.mli > ._bcdi/synth.di
+- ocamldep.opt MIDI.mli > ._bcdi/MIDI.di
+- ocamldep.opt video.mli > ._bcdi/video.di
+- ocamldep.opt image.mli > ._bcdi/image.di
+- ocamldep.opt audio.mli > ._bcdi/audio.di
+- ocamldep.opt ringbuffer.mli > ._bcdi/ringbuffer.di
+- ocamldep.opt synth.ml > ._d/synth.d
+- ocamldep.opt MIDI.ml > ._d/MIDI.d
+- ocamldep.opt video.ml > ._d/video.d
+- ocamldep.opt image.ml > ._d/image.d
+- ocamldep.opt audio.ml > ._d/audio.d
+- ocamldep.opt IO.ml > ._d/IO.d
+- ocamldep.opt ringbuffer.ml > ._d/ringbuffer.d
+- ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/include -I.. -g -Wall -O3 \
+- 			-DPIC   \
+- 			  -I.. -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes  -o audio_c.o " audio_c.c
+- ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/include -I.. -g -Wall -O3 \
+- 			-DPIC   \
+- 			  -I.. -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes  -o image_c.o " image_c.c
+- image_c.c: In function 'caml_rgb_color_to_alpha':
+- image_c.c:1325:10: warning: variable 'd' set but not used [-Wunused-but-set-variable]
+-    double d;
+-           ^
+- image_c.c:1324:22: warning: variable 'aa' set but not used [-Wunused-but-set-variable]
+-    double rr, gg, bb, aa;
+-                       ^
+- ar rcs libmm_stubs.a  audio_c.o image_c.o
+- ocamlc.opt -c -dtypes -g -w +A@5-7@8@11@12@20-35-44-45 -I .. -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes ringbuffer.mli
+- ocamlc.opt -c -dtypes -g -w +A@5-7@8@11@12@20-35-44-45 -I .. -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes ringbuffer.ml
+- ocamlc.opt -c -dtypes -g -w +A@5-7@8@11@12@20-35-44-45 -I .. -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes IO.ml
+- File "IO.ml", line 72, characters 29-32:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- OCamlMakefile:1055: recipe for target 'IO.cmi' failed
+- make[2]: *** [IO.cmi] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+- OCamlMakefile:781: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+- Makefile:12: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ar rcs libmm_stubs.a  audio_c.o image_c.o
+- ocamlc.opt -c -dtypes -g -w +A@5-7@8@11@12@20-35-44-45 -I .. -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes ringbuffer.mli
+- ocamlc.opt -c -dtypes -g -w +A@5-7@8@11@12@20-35-44-45 -I .. -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes ringbuffer.ml
+- ocamlc.opt -c -dtypes -g -w +A@5-7@8@11@12@20-35-44-45 -I .. -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes IO.ml
+- File "IO.ml", line 72, characters 29-32:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- OCamlMakefile:1055: recipe for target 'IO.cmi' failed
+- make[2]: *** [IO.cmi] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+- OCamlMakefile:781: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+- Makefile:12: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of mm failed at "make".
+[mm: ocamlfind remove] Command started
++ ocamlfind "remove" "mm" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0)
+- configuring ocaml-mm 0.3.0
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- checking for a BSD-compatible install... /usr/bin/install -c
+- checking that calling user is not root... ok
+- checking for gcc... (cached) gcc
+- checking whether we are using the GNU C compiler... (cached) yes
+- checking whether gcc accepts -g... (cached) yes
+- checking for gcc option to accept ISO C89... (cached) none needed
+- checking for ar... ar
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.0+rc2
+- checking if ocaml compiler supports first-class modules... yes
+- OCaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamldoc.opt... ocamldoc.opt
+- checking for ocamlbuild... ocamlbuild
+- checking for camlidl... no
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for camlp4... camlp4
+- versions differs from ocamlc
+- checking for camlp4boot... camlp4boot
+- checking for camlp4o... camlp4o
+- checking for camlp4of... camlp4of
+- checking for camlp4oof... camlp4oof
+- checking for camlp4orf... camlp4orf
+- checking for camlp4prof... camlp4prof
+- checking for camlp4r... camlp4r
+- checking for camlp4rf... camlp4rf
+- checking for ocamlfind... ocamlfind
+- checking for ocaml standard library path... /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for caml/threads.h... yes
+- checking for gcc option to produce PIC... -fPIC
+- checking for memalign... yes
+- checking how to run the C preprocessor... gcc -E
+- checking for grep that handles long lines and -e... /bin/grep
+- checking for egrep... /bin/grep -E
+- checking for ANSI C header files... yes
+- checking for sys/types.h... yes
+- checking for sys/stat.h... yes
+- checking for stdlib.h... yes
+- checking for string.h... yes
+- checking for memory.h... yes
+- checking for strings.h... yes
+- checking for inttypes.h... yes
+- checking for stdint.h... yes
+- checking for unistd.h... yes
+- checking whether byte ordering is bigendian... no
+- checking for OCaml library alsa... not found
+- checking for OCaml library ao... not found
+- checking for OCaml library pulseaudio... not found
+- checking for OCaml library gstreamer... not found
+- checking for OCaml library mad... not found
+- checking for OCaml library ogg... not found
+- checking for OCaml library sdl... not found
+- checking for OCaml library theora... not found
+- checking sys/soundcard.h usability... yes
+- checking sys/soundcard.h presence... yes
+- checking for sys/soundcard.h... yes
+- checking libavcodec/avcodec.h usability... no
+- checking libavcodec/avcodec.h presence... no
+- checking for libavcodec/avcodec.h... no
+- checking linux/videodev.h usability... no
+- checking linux/videodev.h presence... no
+- checking for linux/videodev.h... no
+- checking for ocaml bytes module... ok
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating src/Makefile
+- config.status: creating external/Makefile
+- config.status: creating external/Makefile.defs
+- config.status: creating src/META
+- config.status: creating config.h
+- 
+- 
+- Supported external libraries:
+-   - Alsa      : no
+-   - AO        : no
+-   - FFmpeg    : no
+-   - Gstreamer : no
+-   - Mad       : no
+-   - ogg       : no
+-   - OSS       : yes
+-   - Pulseaudio: no
+-   - SDL       : no
+-   - Theora    : no
+-   - V4L       : no
+- 
+- make -C src all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+- ocamldep.opt synth.mli > ._bcdi/synth.di
+- ocamldep.opt MIDI.mli > ._bcdi/MIDI.di
+- ocamldep.opt video.mli > ._bcdi/video.di
+- ocamldep.opt image.mli > ._bcdi/image.di
+- ocamldep.opt audio.mli > ._bcdi/audio.di
+- ocamldep.opt ringbuffer.mli > ._bcdi/ringbuffer.di
+- ocamldep.opt synth.ml > ._d/synth.d
+- ocamldep.opt MIDI.ml > ._d/MIDI.d
+- ocamldep.opt video.ml > ._d/video.d
+- ocamldep.opt image.ml > ._d/image.d
+- ocamldep.opt audio.ml > ._d/audio.d
+- ocamldep.opt IO.ml > ._d/IO.d
+- ocamldep.opt ringbuffer.ml > ._d/ringbuffer.d
+- ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/include -I.. -g -Wall -O3 \
+- 			-DPIC   \
+- 			  -I.. -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes  -o audio_c.o " audio_c.c
+- ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/include -I.. -g -Wall -O3 \
+- 			-DPIC   \
+- 			  -I.. -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes  -o image_c.o " image_c.c
+- image_c.c: In function 'caml_rgb_color_to_alpha':
+- image_c.c:1325:10: warning: variable 'd' set but not used [-Wunused-but-set-variable]
+-    double d;
+-           ^
+- image_c.c:1324:22: warning: variable 'aa' set but not used [-Wunused-but-set-variable]
+-    double rr, gg, bb, aa;
+-                       ^
+- ar rcs libmm_stubs.a  audio_c.o image_c.o
+- ocamlc.opt -c -dtypes -g -w +A@5-7@8@11@12@20-35-44-45 -I .. -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes ringbuffer.mli
+- ocamlc.opt -c -dtypes -g -w +A@5-7@8@11@12@20-35-44-45 -I .. -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes ringbuffer.ml
+- ocamlc.opt -c -dtypes -g -w +A@5-7@8@11@12@20-35-44-45 -I .. -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes IO.ml
+- File "IO.ml", line 72, characters 29-32:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- OCamlMakefile:1055: recipe for target 'IO.cmi' failed
+- make[2]: *** [IO.cmi] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+- OCamlMakefile:781: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+- Makefile:12: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/mm/META
+- configuring ocaml-mm 0.3.0
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- checking for a BSD-compatible install... /usr/bin/install -c
+- checking that calling user is not root... ok
+- checking for gcc... (cached) gcc
+- checking whether we are using the GNU C compiler... (cached) yes
+- checking whether gcc accepts -g... (cached) yes
+- checking for gcc option to accept ISO C89... (cached) none needed
+- checking for ar... ar
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.0+rc2
+- checking if ocaml compiler supports first-class modules... yes
+- OCaml library path is /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamldoc.opt... ocamldoc.opt
+- checking for ocamlbuild... ocamlbuild
+- checking for camlidl... no
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for camlp4... camlp4
+- versions differs from ocamlc
+- checking for camlp4boot... camlp4boot
+- checking for camlp4o... camlp4o
+- checking for camlp4of... camlp4of
+- checking for camlp4oof... camlp4oof
+- checking for camlp4orf... camlp4orf
+- checking for camlp4prof... camlp4prof
+- checking for camlp4r... camlp4r
+- checking for camlp4rf... camlp4rf
+- checking for ocamlfind... ocamlfind
+- checking for ocaml standard library path... /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml
+- checking for caml/threads.h... yes
+- checking for gcc option to produce PIC... -fPIC
+- checking for memalign... yes
+- checking how to run the C preprocessor... gcc -E
+- checking for grep that handles long lines and -e... /bin/grep
+- checking for egrep... /bin/grep -E
+- checking for ANSI C header files... yes
+- checking for sys/types.h... yes
+- checking for sys/stat.h... yes
+- checking for stdlib.h... yes
+- checking for string.h... yes
+- checking for memory.h... yes
+- checking for strings.h... yes
+- checking for inttypes.h... yes
+- checking for stdint.h... yes
+- checking for unistd.h... yes
+- checking whether byte ordering is bigendian... no
+- checking for OCaml library alsa... not found
+- checking for OCaml library ao... not found
+- checking for OCaml library pulseaudio... not found
+- checking for OCaml library gstreamer... not found
+- checking for OCaml library mad... not found
+- checking for OCaml library ogg... not found
+- checking for OCaml library sdl... not found
+- checking for OCaml library theora... not found
+- checking sys/soundcard.h usability... yes
+- checking sys/soundcard.h presence... yes
+- checking for sys/soundcard.h... yes
+- checking libavcodec/avcodec.h usability... no
+- checking libavcodec/avcodec.h presence... no
+- checking for libavcodec/avcodec.h... no
+- checking linux/videodev.h usability... no
+- checking linux/videodev.h presence... no
+- checking for linux/videodev.h... no
+- checking for ocaml bytes module... ok
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating src/Makefile
+- config.status: creating external/Makefile
+- config.status: creating external/Makefile.defs
+- config.status: creating src/META
+- config.status: creating config.h
+- 
+- 
+- Supported external libraries:
+-   - Alsa      : no
+-   - AO        : no
+-   - FFmpeg    : no
+-   - Gstreamer : no
+-   - Mad       : no
+-   - ogg       : no
+-   - OSS       : yes
+-   - Pulseaudio: no
+-   - SDL       : no
+-   - Theora    : no
+-   - V4L       : no
+- 
+- make -C src all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+- ocamldep.opt synth.mli > ._bcdi/synth.di
+- ocamldep.opt MIDI.mli > ._bcdi/MIDI.di
+- ocamldep.opt video.mli > ._bcdi/video.di
+- ocamldep.opt image.mli > ._bcdi/image.di
+- ocamldep.opt audio.mli > ._bcdi/audio.di
+- ocamldep.opt ringbuffer.mli > ._bcdi/ringbuffer.di
+- ocamldep.opt synth.ml > ._d/synth.d
+- ocamldep.opt MIDI.ml > ._d/MIDI.d
+- ocamldep.opt video.ml > ._d/video.d
+- ocamldep.opt image.ml > ._d/image.d
+- ocamldep.opt audio.ml > ._d/audio.d
+- ocamldep.opt IO.ml > ._d/IO.d
+- ocamldep.opt ringbuffer.ml > ._d/ringbuffer.d
+- ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/include -I.. -g -Wall -O3 \
+- 			-DPIC   \
+- 			  -I.. -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes  -o audio_c.o " audio_c.c
+- ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/include -I.. -g -Wall -O3 \
+- 			-DPIC   \
+- 			  -I.. -I/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes  -o image_c.o " image_c.c
+- image_c.c: In function 'caml_rgb_color_to_alpha':
+- image_c.c:1325:10: warning: variable 'd' set but not used [-Wunused-but-set-variable]
+-    double d;
+-           ^
+- image_c.c:1324:22: warning: variable 'aa' set but not used [-Wunused-but-set-variable]
+-    double rr, gg, bb, aa;
+-                       ^
+- ar rcs libmm_stubs.a  audio_c.o image_c.o
+- ocamlc.opt -c -dtypes -g -w +A@5-7@8@11@12@20-35-44-45 -I .. -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes ringbuffer.mli
+- ocamlc.opt -c -dtypes -g -w +A@5-7@8@11@12@20-35-44-45 -I .. -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes ringbuffer.ml
+- ocamlc.opt -c -dtypes -g -w +A@5-7@8@11@12@20-35-44-45 -I .. -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/bytes IO.ml
+- File "IO.ml", line 72, characters 29-32:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- OCamlMakefile:1055: recipe for target 'IO.cmi' failed
+- make[2]: *** [IO.cmi] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+- OCamlMakefile:781: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+- Makefile:12: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/mm/META
+
+#=== ERROR while installing mm.0.3.0 ==========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/mm-16220.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/mm-16220.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/mm-16220.out
+### stdout ###
+# [...]
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# OCamlMakefile:1055: recipe for target 'IO.cmi' failed
+# make[2]: *** [IO.cmi] Error 2
+# make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+# OCamlMakefile:781: recipe for target 'byte-code-library' failed
+# make[1]: *** [byte-code-library] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+# Makefile:12: recipe for target 'all' failed
+# make: *** [all] Error 2
+### stderr ###
+# [...]
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# OCamlMakefile:1055: recipe for target 'IO.cmi' failed
+# make[2]: *** [IO.cmi] Error 2
+# make[2]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+# OCamlMakefile:781: recipe for target 'byte-code-library' failed
+# make[1]: *** [byte-code-library] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/mm.0.3.0/src'
+# Makefile:12: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install mm 0.3.0
+No changes have been performed
+'opam install mm.0.3.0' failed.

@@ -1,0 +1,83 @@
+The following actions will be performed:
+  - install codept 0.9.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[codept: http] Command started
+[codept: http] Command started
+[codept.0.9.1] https://github.com/Octachron/codept/archive/0.9.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[codept: ./configure] Command started
++ ./configure "--enable-ocamlbuild" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1)
+[codept: make all] Command started
++ make "all" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1)
+- make -C build -j /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1/codept
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1/build'
+- mkdir -p full lib/sexp tests docs precomputed
+- File "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1/lib/ast_converter.ml", line 443, characters 51-55:
+- Error: This expression has type object_field list
+-        but an expression was expected of type ('a * 'b * core_type) list
+-        Type object_field is not compatible with type 'a * 'b * core_type 
+- Makefile:39: recipe for target 'lib/ast_converter.cmx' failed
+- make[1]: *** [lib/ast_converter.cmx] Error 2
+- make[1]: *** Waiting for unfinished jobs....
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1/build'
+- Makefile:17: recipe for target 'alt-codept' failed
+- make: *** [alt-codept] Error 2
+- make -C build -j /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1/codept
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1/build'
+- mkdir -p full lib/sexp tests docs precomputed
+- File "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1/lib/ast_converter.ml", line 443, characters 51-55:
+- Error: This expression has type object_field list
+-        but an expression was expected of type ('a * 'b * core_type) list
+-        Type object_field is not compatible with type 'a * 'b * core_type 
+- Makefile:39: recipe for target 'lib/ast_converter.cmx' failed
+- make[1]: *** [lib/ast_converter.cmx] Error 2
+- make[1]: *** Waiting for unfinished jobs....
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1/build'
+- Makefile:17: recipe for target 'alt-codept' failed
+- make: *** [alt-codept] Error 2
+[ERROR] The compilation of codept failed at "make all".
+
+#=== ERROR while installing codept.0.9.1 ======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make all
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1
+# compiler             4.06.1
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1/codept-21053.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1/codept-21053.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1/codept-21053.out
+### stdout ###
+# [...]
+# File "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1/lib/ast_converter.ml", line 443, characters 51-55:
+# Error: This expression has type object_field list
+#        but an expression was expected of type ('a * 'b * core_type) list
+#        Type object_field is not compatible with type 'a * 'b * core_type 
+# Makefile:39: recipe for target 'lib/ast_converter.cmx' failed
+# make[1]: *** [lib/ast_converter.cmx] Error 2
+# make[1]: *** Waiting for unfinished jobs....
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1/build'
+# Makefile:17: recipe for target 'alt-codept' failed
+# make: *** [alt-codept] Error 2
+### stderr ###
+# [...]
+# File "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1/lib/ast_converter.ml", line 443, characters 51-55:
+# Error: This expression has type object_field list
+#        but an expression was expected of type ('a * 'b * core_type) list
+#        Type object_field is not compatible with type 'a * 'b * core_type 
+# Makefile:39: recipe for target 'lib/ast_converter.cmx' failed
+# make[1]: *** [lib/ast_converter.cmx] Error 2
+# make[1]: *** Waiting for unfinished jobs....
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/codept.0.9.1/build'
+# Makefile:17: recipe for target 'alt-codept' failed
+# make: *** [alt-codept] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install codept 0.9.1
+No changes have been performed
+'opam install codept.0.9.1' failed.

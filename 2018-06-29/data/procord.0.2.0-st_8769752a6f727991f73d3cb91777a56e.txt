@@ -1,0 +1,211 @@
+The following actions will be performed:
+  - install procord 0.2.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[procord: http] Command started
+[procord: http] Command started
+[procord.0.2.0] https://github.com/cryptosense/procord/archive/v0.2.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[procord: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/procord.0.2.0)
+- ocamlbuild -no-links -I source -tag annot source/procord.cma source/procord.cmxa
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_connection.mli > source/procord_connection.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_connection.cmi source/procord_connection.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_connection.ml > source/procord_connection.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_rope.mli > source/procord_rope.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_rope.cmi source/procord_rope.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_process.mli > source/procord_process.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_task.mli > source/procord_task.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_task.cmi source/procord_task.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_process.cmi source/procord_process.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_process.ml > source/procord_process.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_protocol.mli > source/procord_protocol.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_worker.mli > source/procord_worker.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_protocol.cmi source/procord_protocol.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_worker.cmi source/procord_worker.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_protocol.ml > source/procord_protocol.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_rope.ml > source/procord_rope.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_task.ml > source/procord_task.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_worker.ml > source/procord_worker.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_connection.cmo source/procord_connection.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_connection.cmo source/procord_connection.ml
+- File "source/procord_connection.ml", line 480, characters 50-56:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:23: recipe for target 'lib' failed
+- make: *** [lib] Error 10
+- ocamlbuild -no-links -I source -tag annot source/procord.cma source/procord.cmxa
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_connection.mli > source/procord_connection.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_connection.cmi source/procord_connection.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_connection.ml > source/procord_connection.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_rope.mli > source/procord_rope.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_rope.cmi source/procord_rope.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_process.mli > source/procord_process.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_task.mli > source/procord_task.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_task.cmi source/procord_task.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_process.cmi source/procord_process.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_process.ml > source/procord_process.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_protocol.mli > source/procord_protocol.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_worker.mli > source/procord_worker.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_protocol.cmi source/procord_protocol.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_worker.cmi source/procord_worker.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_protocol.ml > source/procord_protocol.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_rope.ml > source/procord_rope.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_task.ml > source/procord_task.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_worker.ml > source/procord_worker.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_connection.cmo source/procord_connection.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_connection.cmo source/procord_connection.ml
+- File "source/procord_connection.ml", line 480, characters 50-56:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:23: recipe for target 'lib' failed
+- make: *** [lib] Error 10
+[ERROR] The compilation of procord failed at "make".
+[procord: ocamlfind remove] Command started
++ ocamlfind "remove" "procord" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/procord.0.2.0)
+- ocamlbuild -no-links -I source -tag annot source/procord.cma source/procord.cmxa
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_connection.mli > source/procord_connection.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_connection.cmi source/procord_connection.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_connection.ml > source/procord_connection.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_rope.mli > source/procord_rope.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_rope.cmi source/procord_rope.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_process.mli > source/procord_process.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_task.mli > source/procord_task.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_task.cmi source/procord_task.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_process.cmi source/procord_process.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_process.ml > source/procord_process.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_protocol.mli > source/procord_protocol.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_worker.mli > source/procord_worker.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_protocol.cmi source/procord_protocol.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_worker.cmi source/procord_worker.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_protocol.ml > source/procord_protocol.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_rope.ml > source/procord_rope.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_task.ml > source/procord_task.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_worker.ml > source/procord_worker.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_connection.cmo source/procord_connection.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_connection.cmo source/procord_connection.ml
+- File "source/procord_connection.ml", line 480, characters 50-56:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:23: recipe for target 'lib' failed
+- make: *** [lib] Error 10
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/procord/META
+- ocamlbuild -no-links -I source -tag annot source/procord.cma source/procord.cmxa
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_connection.mli > source/procord_connection.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_connection.cmi source/procord_connection.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_connection.ml > source/procord_connection.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_rope.mli > source/procord_rope.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_rope.cmi source/procord_rope.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_process.mli > source/procord_process.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_task.mli > source/procord_task.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_task.cmi source/procord_task.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_process.cmi source/procord_process.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_process.ml > source/procord_process.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_protocol.mli > source/procord_protocol.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_worker.mli > source/procord_worker.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_protocol.cmi source/procord_protocol.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_worker.cmi source/procord_worker.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_protocol.ml > source/procord_protocol.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_rope.ml > source/procord_rope.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_task.ml > source/procord_task.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamldep.opt -modules source/procord_worker.ml > source/procord_worker.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_connection.cmo source/procord_connection.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamlc.opt -c -annot -I source -o source/procord_connection.cmo source/procord_connection.ml
+- File "source/procord_connection.ml", line 480, characters 50-56:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:23: recipe for target 'lib' failed
+- make: *** [lib] Error 10
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/procord/META
+
+#=== ERROR while installing procord.0.2.0 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/procord.0.2.0
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/procord.0.2.0/procord-26066.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/procord.0.2.0/procord-26066.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/procord.0.2.0/procord-26066.out
+### stdout ###
+# Hint: Recursive traversal of subdirectories was not enabled for this build,
+# [...]
+#   
+#   To enable recursive traversal for some subdirectories only, you can use the
+#   following '_tags' file:
+#   
+#       true: -traverse
+#       <dir1> or <dir2>: traverse
+#       
+# Makefile:23: recipe for target 'lib' failed
+# make: *** [lib] Error 10
+### stderr ###
+# Hint: Recursive traversal of subdirectories was not enabled for this build,
+# [...]
+#   
+#   To enable recursive traversal for some subdirectories only, you can use the
+#   following '_tags' file:
+#   
+#       true: -traverse
+#       <dir1> or <dir2>: traverse
+#       
+# Makefile:23: recipe for target 'lib' failed
+# make: *** [lib] Error 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install procord 0.2.0
+No changes have been performed
+'opam install procord.0.2.0' failed.

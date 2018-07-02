@@ -1,0 +1,947 @@
+The following actions will be performed:
+  - install nunchaku 0.3.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[nunchaku: http] Command started
+[nunchaku: http] Command started
+[nunchaku.0.3.1] https://github.com/nunchaku-inria/nunchaku/archive/0.3.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[nunchaku: ./configure] Command started
++ ./configure "--prefix" "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1" "--disable-random" "--disable-tests" "--enable-docs" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/nunchaku.0.3.1)
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ nunchaku
+- Package version: ..................................... 0.3.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- enable the library for generating random data: ....... false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_containers: ...................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/containers
+- pkg_containers_data: ................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/containers
+- pkg_sequence: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sequence
+- pkg_num: ............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/num
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- menhir: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/menhir
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- 
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ nunchaku
+- Package version: ..................................... 0.3.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- enable the library for generating random data: ....... false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_containers: ...................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/containers
+- pkg_containers_data: ................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/containers
+- pkg_sequence: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sequence
+- pkg_num: ............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/num
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- menhir: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/menhir
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- 
+[nunchaku: make build] Command started
++ make "build" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/nunchaku.0.3.1)
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ nunchaku
+- Package version: ..................................... 0.3.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- enable the library for generating random data: ....... false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_containers: ...................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/containers
+- pkg_containers_data: ................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/containers
+- pkg_sequence: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sequence
+- pkg_num: ............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/num
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- menhir: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/menhir
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- 
+- ./setup.exe -build 
+- W: Cannot find source file matching module 'nunchaku_transformations' in library nunchaku_transformations.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'nunchaku_backends' in library nunchaku_backends.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'nunchaku_parsers' in library nunchaku_parsers.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'nunchaku_core' in library nunchaku_core.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/ID.mli > src/core/ID.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Intf.ml > src/core/Intf.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Polarity.ml > src/core/Polarity.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Intf.cmo src/core/Intf.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Polarity.cmo src/core/Polarity.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/ID.cmi src/core/ID.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/ID.ml > src/core/ID.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Utils.mli > src/core/Utils.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Utils.cmi src/core/Utils.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Var.mli > src/core/Var.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Var.cmi src/core/Var.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Var.ml > src/core/Var.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/MetaVar.mli > src/core/MetaVar.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/MetaVar.cmi src/core/MetaVar.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/MetaVar.ml > src/core/MetaVar.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Location.mli > src/core/Location.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Location.cmi src/core/Location.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Location.ml > src/core/Location.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Utils.ml > src/core/Utils.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Transform.mli > src/core/Transform.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Lazy_list.mli > src/core/Lazy_list.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Lazy_list.cmi src/core/Lazy_list.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Transform.cmi src/core/Transform.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Transform.ml > src/core/Transform.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/UntypedAST.ml > src/core/UntypedAST.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Model.mli > src/core/Model.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Sexp_lib.mli > src/core/Sexp_lib.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/terms/TermInner.ml > src/core/terms/TermInner.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Sexp_lib.cmi src/core/Sexp_lib.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/types -I src/core/terms -o src/core/terms/TermInner.cmo src/core/terms/TermInner.ml
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ nunchaku
+- Package version: ..................................... 0.3.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- enable the library for generating random data: ....... false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_containers: ...................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/containers
+- pkg_containers_data: ................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/containers
+- pkg_sequence: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sequence
+- pkg_num: ............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/num
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- menhir: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/menhir
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- 
+- ./setup.exe -build 
+- W: Cannot find source file matching module 'nunchaku_transformations' in library nunchaku_transformations.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'nunchaku_backends' in library nunchaku_backends.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'nunchaku_parsers' in library nunchaku_parsers.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'nunchaku_core' in library nunchaku_core.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/ID.mli > src/core/ID.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Intf.ml > src/core/Intf.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Polarity.ml > src/core/Polarity.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Intf.cmo src/core/Intf.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Polarity.cmo src/core/Polarity.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/ID.cmi src/core/ID.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/ID.ml > src/core/ID.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Utils.mli > src/core/Utils.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Utils.cmi src/core/Utils.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Var.mli > src/core/Var.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Var.cmi src/core/Var.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Var.ml > src/core/Var.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/MetaVar.mli > src/core/MetaVar.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/MetaVar.cmi src/core/MetaVar.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/MetaVar.ml > src/core/MetaVar.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Location.mli > src/core/Location.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Location.cmi src/core/Location.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Location.ml > src/core/Location.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Utils.ml > src/core/Utils.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Transform.mli > src/core/Transform.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Lazy_list.mli > src/core/Lazy_list.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Lazy_list.cmi src/core/Lazy_list.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Transform.cmi src/core/Transform.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Transform.ml > src/core/Transform.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/UntypedAST.ml > src/core/UntypedAST.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Model.mli > src/core/Model.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Sexp_lib.mli > src/core/Sexp_lib.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/terms/TermInner.ml > src/core/terms/TermInner.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Sexp_lib.cmi src/core/Sexp_lib.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/types -I src/core/terms -o src/core/terms/TermInner.cmo src/core/terms/TermInner.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Model.cmi src/core/Model.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Model.ml > src/core/Model.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/TypeUnify.mli > src/core/TypeUnify.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/TypeUnify.cmi src/core/TypeUnify.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/TypeUnify.ml > src/core/TypeUnify.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/types/TypePoly.ml > src/core/types/TypePoly.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/types/TypePoly.cmo src/core/types/TypePoly.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Problem.mli > src/core/Problem.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Env.mli > src/core/Env.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Statement.mli > src/core/Statement.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Cardinality.mli > src/core/Cardinality.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Cardinality.cmi src/core/Cardinality.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Statement.cmi src/core/Statement.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/ProblemMetadata.mli > src/core/ProblemMetadata.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Env.cmi src/core/Env.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/ProblemMetadata.cmi src/core/ProblemMetadata.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Problem.cmi src/core/Problem.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Problem.ml > src/core/Problem.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO.mli > src/core/FO.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO_tptp.mli > src/core/FO_tptp.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO_tptp.cmi src/core/FO_tptp.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO.cmi src/core/FO.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO.ml > src/core/FO.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Reduce.mli > src/core/Reduce.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Reduce.cmi src/core/Reduce.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Reduce.ml > src/core/Reduce.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Env.ml > src/core/Env.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Statement.ml > src/core/Statement.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO_tptp.ml > src/core/FO_tptp.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO_rel.mli > src/core/FO_rel.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO_rel.cmi src/core/FO_rel.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO_rel.ml > src/core/FO_rel.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Cardinality.ml > src/core/Cardinality.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Scheduling.mli > src/core/Scheduling.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Scheduling.cmi src/core/Scheduling.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Scheduling.ml > src/core/Scheduling.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Traversal.mli > src/core/Traversal.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Traversal.cmi src/core/Traversal.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Traversal.ml > src/core/Traversal.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/ProblemMetadata.ml > src/core/ProblemMetadata.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/AnalyzeType.mli > src/core/AnalyzeType.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/AnalyzeType.cmi src/core/AnalyzeType.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/AnalyzeType.ml > src/core/AnalyzeType.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Prelude.mli > src/core/Prelude.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/UntypedAST.cmo src/core/UntypedAST.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Prelude.cmi src/core/Prelude.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Prelude.ml > src/core/Prelude.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/TypeCheck.mli > src/core/TypeCheck.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/TypeCheck.cmi src/core/TypeCheck.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/TypeCheck.ml > src/core/TypeCheck.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Lazy_list.ml > src/core/Lazy_list.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Sexp_lib.ml > src/core/Sexp_lib.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamllex.opt -q src/core/Sexp_lex.mll
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Sexp_lex.ml > src/core/Sexp_lex.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Sexp_lex.cmo src/core/Sexp_lex.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/terms/TermTyped.ml > src/core/terms/TermTyped.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/terms/TermMono.ml > src/core/terms/TermMono.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/terms/Pattern.ml > src/core/terms/Pattern.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/types/TypeMono.ml > src/core/types/TypeMono.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/ID.cmo src/core/ID.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Var.cmo src/core/Var.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/MetaVar.cmo src/core/MetaVar.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Location.cmo src/core/Location.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Model.cmi src/core/Model.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Model.ml > src/core/Model.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/TypeUnify.mli > src/core/TypeUnify.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/TypeUnify.cmi src/core/TypeUnify.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/TypeUnify.ml > src/core/TypeUnify.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/types/TypePoly.ml > src/core/types/TypePoly.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/types/TypePoly.cmo src/core/types/TypePoly.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Problem.mli > src/core/Problem.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Env.mli > src/core/Env.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Statement.mli > src/core/Statement.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Cardinality.mli > src/core/Cardinality.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Cardinality.cmi src/core/Cardinality.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Statement.cmi src/core/Statement.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/ProblemMetadata.mli > src/core/ProblemMetadata.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Env.cmi src/core/Env.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/ProblemMetadata.cmi src/core/ProblemMetadata.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Problem.cmi src/core/Problem.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Problem.ml > src/core/Problem.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO.mli > src/core/FO.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO_tptp.mli > src/core/FO_tptp.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO_tptp.cmi src/core/FO_tptp.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO.cmi src/core/FO.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO.ml > src/core/FO.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Reduce.mli > src/core/Reduce.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Reduce.cmi src/core/Reduce.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Reduce.ml > src/core/Reduce.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Env.ml > src/core/Env.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Statement.ml > src/core/Statement.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO_tptp.ml > src/core/FO_tptp.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO_rel.mli > src/core/FO_rel.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO_rel.cmi src/core/FO_rel.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO_rel.ml > src/core/FO_rel.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Cardinality.ml > src/core/Cardinality.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Scheduling.mli > src/core/Scheduling.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Scheduling.cmi src/core/Scheduling.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Scheduling.ml > src/core/Scheduling.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Traversal.mli > src/core/Traversal.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Traversal.cmi src/core/Traversal.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Traversal.ml > src/core/Traversal.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/ProblemMetadata.ml > src/core/ProblemMetadata.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/AnalyzeType.mli > src/core/AnalyzeType.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/AnalyzeType.cmi src/core/AnalyzeType.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/AnalyzeType.ml > src/core/AnalyzeType.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Prelude.mli > src/core/Prelude.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/UntypedAST.cmo src/core/UntypedAST.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Prelude.cmi src/core/Prelude.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Prelude.ml > src/core/Prelude.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/TypeCheck.mli > src/core/TypeCheck.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/TypeCheck.cmi src/core/TypeCheck.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/TypeCheck.ml > src/core/TypeCheck.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Lazy_list.ml > src/core/Lazy_list.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Sexp_lib.ml > src/core/Sexp_lib.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamllex.opt -q src/core/Sexp_lex.mll
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Sexp_lex.ml > src/core/Sexp_lex.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Sexp_lex.cmo src/core/Sexp_lex.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/terms/TermTyped.ml > src/core/terms/TermTyped.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/terms/TermMono.ml > src/core/terms/TermMono.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/terms/Pattern.ml > src/core/terms/Pattern.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/types/TypeMono.ml > src/core/types/TypeMono.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/ID.cmo src/core/ID.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Var.cmo src/core/Var.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/MetaVar.cmo src/core/MetaVar.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Location.cmo src/core/Location.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Utils.cmo src/core/Utils.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Utils.cmo src/core/Utils.ml
+- [1mFile "[1msrc/core/Utils.ml", line 224, characters 32-48[0m[0m:
+- [1;35mWarning[0m 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Transform.cmo src/core/Transform.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Model.cmo src/core/Model.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/TypeUnify.cmo src/core/TypeUnify.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Problem.cmo src/core/Problem.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Problem.cmo src/core/Problem.ml
+- [1mFile "[1msrc/core/Problem.ml", line 194, characters 6-20[0m[0m:
+- [1;35mWarning[0m 32: unused value print_info_opt.
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO.cmo src/core/FO.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO.cmo src/core/FO.ml
+- [1mFile "[1msrc/core/FO.ml", line 308, characters 7-26[0m[0m:
+- [1;31mError[0m: Unbound value Sequence.flat_map_l
+- Hint: Did you mean flat_map?
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' src/core/nunchaku_core.cma src/core/nunchaku_core.cmxa src/core/nunchaku_core.a src/core/nunchaku_core.cmxs src/parsers/nunchaku_parsers.cma src/parsers/nunchaku_parsers.cmxa src/parsers/nunchaku_parsers.a src/parsers/nunchaku_parsers.cmxs src/backends/nunchaku_backends.cma src/backends/nunchaku_backends.cmxa src/backends/nunchaku_backends.a src/backends/nunchaku_backends.cmxs src/transformations/nunchaku_transformations.cma src/transformations/nunchaku_transformations.cmxa src/transformations/nunchaku_transformations.a src/transformations/nunchaku_transformations.cmxs src/main/nunchaku.native -use-ocamlfind -menhir 'menhir --dump --explain' -j 1 -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Utils.cmo src/core/Utils.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Utils.cmo src/core/Utils.ml
+- [1mFile "[1msrc/core/Utils.ml", line 224, characters 32-48[0m[0m:
+- [1;35mWarning[0m 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Transform.cmo src/core/Transform.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Model.cmo src/core/Model.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/TypeUnify.cmo src/core/TypeUnify.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Problem.cmo src/core/Problem.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Problem.cmo src/core/Problem.ml
+- [1mFile "[1msrc/core/Problem.ml", line 194, characters 6-20[0m[0m:
+- [1;35mWarning[0m 32: unused value print_info_opt.
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO.cmo src/core/FO.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO.cmo src/core/FO.ml
+- [1mFile "[1msrc/core/FO.ml", line 308, characters 7-26[0m[0m:
+- [1;31mError[0m: Unbound value Sequence.flat_map_l
+- Hint: Did you mean flat_map?
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' src/core/nunchaku_core.cma src/core/nunchaku_core.cmxa src/core/nunchaku_core.a src/core/nunchaku_core.cmxs src/parsers/nunchaku_parsers.cma src/parsers/nunchaku_parsers.cmxa src/parsers/nunchaku_parsers.a src/parsers/nunchaku_parsers.cmxs src/backends/nunchaku_backends.cma src/backends/nunchaku_backends.cmxa src/backends/nunchaku_backends.a src/backends/nunchaku_backends.cmxs src/transformations/nunchaku_transformations.cma src/transformations/nunchaku_transformations.cmxa src/transformations/nunchaku_transformations.a src/transformations/nunchaku_transformations.cmxs src/main/nunchaku.native -use-ocamlfind -menhir 'menhir --dump --explain' -j 1 -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+[ERROR] The compilation of nunchaku failed at "make build".
+[nunchaku: ocamlfind remove] Command started
++ ocamlfind "remove" "nunchaku" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/nunchaku.0.3.1)
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ nunchaku
+- Package version: ..................................... 0.3.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- enable the library for generating random data: ....... false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_containers: ...................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/containers
+- pkg_containers_data: ................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/containers
+- pkg_sequence: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sequence
+- pkg_num: ............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/num
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- menhir: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/menhir
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- 
+- ./setup.exe -build 
+- W: Cannot find source file matching module 'nunchaku_transformations' in library nunchaku_transformations.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'nunchaku_backends' in library nunchaku_backends.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'nunchaku_parsers' in library nunchaku_parsers.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'nunchaku_core' in library nunchaku_core.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/ID.mli > src/core/ID.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Intf.ml > src/core/Intf.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Polarity.ml > src/core/Polarity.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Intf.cmo src/core/Intf.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Polarity.cmo src/core/Polarity.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/ID.cmi src/core/ID.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/ID.ml > src/core/ID.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Utils.mli > src/core/Utils.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Utils.cmi src/core/Utils.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Var.mli > src/core/Var.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Var.cmi src/core/Var.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Var.ml > src/core/Var.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/MetaVar.mli > src/core/MetaVar.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/MetaVar.cmi src/core/MetaVar.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/MetaVar.ml > src/core/MetaVar.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Location.mli > src/core/Location.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Location.cmi src/core/Location.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Location.ml > src/core/Location.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Utils.ml > src/core/Utils.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Transform.mli > src/core/Transform.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Lazy_list.mli > src/core/Lazy_list.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Lazy_list.cmi src/core/Lazy_list.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Transform.cmi src/core/Transform.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Transform.ml > src/core/Transform.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/UntypedAST.ml > src/core/UntypedAST.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Model.mli > src/core/Model.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Sexp_lib.mli > src/core/Sexp_lib.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/terms/TermInner.ml > src/core/terms/TermInner.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Sexp_lib.cmi src/core/Sexp_lib.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/types -I src/core/terms -o src/core/terms/TermInner.cmo src/core/terms/TermInner.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Model.cmi src/core/Model.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Model.ml > src/core/Model.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/TypeUnify.mli > src/core/TypeUnify.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/TypeUnify.cmi src/core/TypeUnify.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/TypeUnify.ml > src/core/TypeUnify.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/types/TypePoly.ml > src/core/types/TypePoly.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/types/TypePoly.cmo src/core/types/TypePoly.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Problem.mli > src/core/Problem.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Env.mli > src/core/Env.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Statement.mli > src/core/Statement.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Cardinality.mli > src/core/Cardinality.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Cardinality.cmi src/core/Cardinality.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Statement.cmi src/core/Statement.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/ProblemMetadata.mli > src/core/ProblemMetadata.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Env.cmi src/core/Env.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/ProblemMetadata.cmi src/core/ProblemMetadata.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Problem.cmi src/core/Problem.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Problem.ml > src/core/Problem.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO.mli > src/core/FO.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO_tptp.mli > src/core/FO_tptp.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO_tptp.cmi src/core/FO_tptp.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO.cmi src/core/FO.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO.ml > src/core/FO.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Reduce.mli > src/core/Reduce.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Reduce.cmi src/core/Reduce.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Reduce.ml > src/core/Reduce.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Env.ml > src/core/Env.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Statement.ml > src/core/Statement.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO_tptp.ml > src/core/FO_tptp.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO_rel.mli > src/core/FO_rel.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO_rel.cmi src/core/FO_rel.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO_rel.ml > src/core/FO_rel.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Cardinality.ml > src/core/Cardinality.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Scheduling.mli > src/core/Scheduling.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Scheduling.cmi src/core/Scheduling.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Scheduling.ml > src/core/Scheduling.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Traversal.mli > src/core/Traversal.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Traversal.cmi src/core/Traversal.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Traversal.ml > src/core/Traversal.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/ProblemMetadata.ml > src/core/ProblemMetadata.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/AnalyzeType.mli > src/core/AnalyzeType.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/AnalyzeType.cmi src/core/AnalyzeType.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/AnalyzeType.ml > src/core/AnalyzeType.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Prelude.mli > src/core/Prelude.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/UntypedAST.cmo src/core/UntypedAST.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Prelude.cmi src/core/Prelude.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Prelude.ml > src/core/Prelude.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/TypeCheck.mli > src/core/TypeCheck.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/TypeCheck.cmi src/core/TypeCheck.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/TypeCheck.ml > src/core/TypeCheck.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Lazy_list.ml > src/core/Lazy_list.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Sexp_lib.ml > src/core/Sexp_lib.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamllex.opt -q src/core/Sexp_lex.mll
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Sexp_lex.ml > src/core/Sexp_lex.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Sexp_lex.cmo src/core/Sexp_lex.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/terms/TermTyped.ml > src/core/terms/TermTyped.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/terms/TermMono.ml > src/core/terms/TermMono.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/terms/Pattern.ml > src/core/terms/Pattern.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/types/TypeMono.ml > src/core/types/TypeMono.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/ID.cmo src/core/ID.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Var.cmo src/core/Var.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/MetaVar.cmo src/core/MetaVar.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Location.cmo src/core/Location.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Utils.cmo src/core/Utils.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Utils.cmo src/core/Utils.ml
+- [1mFile "[1msrc/core/Utils.ml", line 224, characters 32-48[0m[0m:
+- [1;35mWarning[0m 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Transform.cmo src/core/Transform.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Model.cmo src/core/Model.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/TypeUnify.cmo src/core/TypeUnify.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Problem.cmo src/core/Problem.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Problem.cmo src/core/Problem.ml
+- [1mFile "[1msrc/core/Problem.ml", line 194, characters 6-20[0m[0m:
+- [1;35mWarning[0m 32: unused value print_info_opt.
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO.cmo src/core/FO.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO.cmo src/core/FO.ml
+- [1mFile "[1msrc/core/FO.ml", line 308, characters 7-26[0m[0m:
+- [1;31mError[0m: Unbound value Sequence.flat_map_l
+- Hint: Did you mean flat_map?
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' src/core/nunchaku_core.cma src/core/nunchaku_core.cmxa src/core/nunchaku_core.a src/core/nunchaku_core.cmxs src/parsers/nunchaku_parsers.cma src/parsers/nunchaku_parsers.cmxa src/parsers/nunchaku_parsers.a src/parsers/nunchaku_parsers.cmxs src/backends/nunchaku_backends.cma src/backends/nunchaku_backends.cmxa src/backends/nunchaku_backends.a src/backends/nunchaku_backends.cmxs src/transformations/nunchaku_transformations.cma src/transformations/nunchaku_transformations.cmxa src/transformations/nunchaku_transformations.a src/transformations/nunchaku_transformations.cmxs src/main/nunchaku.native -use-ocamlfind -menhir 'menhir --dump --explain' -j 1 -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/nunchaku/META
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ nunchaku
+- Package version: ..................................... 0.3.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- enable the library for generating random data: ....... false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_containers: ...................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/containers
+- pkg_containers_data: ................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/containers
+- pkg_sequence: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sequence
+- pkg_num: ............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/num
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- menhir: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/menhir
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- 
+- ./setup.exe -build 
+- W: Cannot find source file matching module 'nunchaku_transformations' in library nunchaku_transformations.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'nunchaku_backends' in library nunchaku_backends.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'nunchaku_parsers' in library nunchaku_parsers.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'nunchaku_core' in library nunchaku_core.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/ID.mli > src/core/ID.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Intf.ml > src/core/Intf.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Polarity.ml > src/core/Polarity.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Intf.cmo src/core/Intf.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Polarity.cmo src/core/Polarity.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/ID.cmi src/core/ID.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/ID.ml > src/core/ID.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Utils.mli > src/core/Utils.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Utils.cmi src/core/Utils.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Var.mli > src/core/Var.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Var.cmi src/core/Var.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Var.ml > src/core/Var.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/MetaVar.mli > src/core/MetaVar.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/MetaVar.cmi src/core/MetaVar.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/MetaVar.ml > src/core/MetaVar.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Location.mli > src/core/Location.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Location.cmi src/core/Location.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Location.ml > src/core/Location.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Utils.ml > src/core/Utils.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Transform.mli > src/core/Transform.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Lazy_list.mli > src/core/Lazy_list.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Lazy_list.cmi src/core/Lazy_list.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Transform.cmi src/core/Transform.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Transform.ml > src/core/Transform.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/UntypedAST.ml > src/core/UntypedAST.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Model.mli > src/core/Model.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Sexp_lib.mli > src/core/Sexp_lib.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/terms/TermInner.ml > src/core/terms/TermInner.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Sexp_lib.cmi src/core/Sexp_lib.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/types -I src/core/terms -o src/core/terms/TermInner.cmo src/core/terms/TermInner.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Model.cmi src/core/Model.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Model.ml > src/core/Model.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/TypeUnify.mli > src/core/TypeUnify.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/TypeUnify.cmi src/core/TypeUnify.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/TypeUnify.ml > src/core/TypeUnify.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/types/TypePoly.ml > src/core/types/TypePoly.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/types/TypePoly.cmo src/core/types/TypePoly.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Problem.mli > src/core/Problem.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Env.mli > src/core/Env.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Statement.mli > src/core/Statement.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Cardinality.mli > src/core/Cardinality.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Cardinality.cmi src/core/Cardinality.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Statement.cmi src/core/Statement.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/ProblemMetadata.mli > src/core/ProblemMetadata.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Env.cmi src/core/Env.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/ProblemMetadata.cmi src/core/ProblemMetadata.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Problem.cmi src/core/Problem.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Problem.ml > src/core/Problem.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO.mli > src/core/FO.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO_tptp.mli > src/core/FO_tptp.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO_tptp.cmi src/core/FO_tptp.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO.cmi src/core/FO.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO.ml > src/core/FO.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Reduce.mli > src/core/Reduce.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Reduce.cmi src/core/Reduce.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Reduce.ml > src/core/Reduce.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Env.ml > src/core/Env.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Statement.ml > src/core/Statement.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO_tptp.ml > src/core/FO_tptp.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO_rel.mli > src/core/FO_rel.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO_rel.cmi src/core/FO_rel.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/FO_rel.ml > src/core/FO_rel.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Cardinality.ml > src/core/Cardinality.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Scheduling.mli > src/core/Scheduling.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Scheduling.cmi src/core/Scheduling.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Scheduling.ml > src/core/Scheduling.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Traversal.mli > src/core/Traversal.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Traversal.cmi src/core/Traversal.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Traversal.ml > src/core/Traversal.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/ProblemMetadata.ml > src/core/ProblemMetadata.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/AnalyzeType.mli > src/core/AnalyzeType.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/AnalyzeType.cmi src/core/AnalyzeType.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/AnalyzeType.ml > src/core/AnalyzeType.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Prelude.mli > src/core/Prelude.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/UntypedAST.cmo src/core/UntypedAST.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Prelude.cmi src/core/Prelude.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Prelude.ml > src/core/Prelude.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/TypeCheck.mli > src/core/TypeCheck.mli.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/TypeCheck.cmi src/core/TypeCheck.mli
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/TypeCheck.ml > src/core/TypeCheck.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Lazy_list.ml > src/core/Lazy_list.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Sexp_lib.ml > src/core/Sexp_lib.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamllex.opt -q src/core/Sexp_lex.mll
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/Sexp_lex.ml > src/core/Sexp_lex.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Sexp_lex.cmo src/core/Sexp_lex.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/terms/TermTyped.ml > src/core/terms/TermTyped.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/terms/TermMono.ml > src/core/terms/TermMono.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/terms/Pattern.ml > src/core/terms/Pattern.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamldep -package unix -package threads -package sequence -package num -package containers.data -package containers -modules src/core/types/TypeMono.ml > src/core/types/TypeMono.ml.depends
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/ID.cmo src/core/ID.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Var.cmo src/core/Var.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/MetaVar.cmo src/core/MetaVar.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Location.cmo src/core/Location.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Utils.cmo src/core/Utils.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Utils.cmo src/core/Utils.ml
+- [1mFile "[1msrc/core/Utils.ml", line 224, characters 32-48[0m[0m:
+- [1;35mWarning[0m 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Transform.cmo src/core/Transform.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Model.cmo src/core/Model.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/TypeUnify.cmo src/core/TypeUnify.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Problem.cmo src/core/Problem.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/Problem.cmo src/core/Problem.ml
+- [1mFile "[1msrc/core/Problem.ml", line 194, characters 6-20[0m[0m:
+- [1;35mWarning[0m 32: unused value print_info_opt.
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO.cmo src/core/FO.ml
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO.cmo src/core/FO.ml
+- [1mFile "[1msrc/core/FO.ml", line 308, characters 7-26[0m[0m:
+- [1;31mError[0m: Unbound value Sequence.flat_map_l
+- Hint: Did you mean flat_map?
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' src/core/nunchaku_core.cma src/core/nunchaku_core.cmxa src/core/nunchaku_core.a src/core/nunchaku_core.cmxs src/parsers/nunchaku_parsers.cma src/parsers/nunchaku_parsers.cmxa src/parsers/nunchaku_parsers.a src/parsers/nunchaku_parsers.cmxs src/backends/nunchaku_backends.cma src/backends/nunchaku_backends.cmxa src/backends/nunchaku_backends.a src/backends/nunchaku_backends.cmxs src/transformations/nunchaku_transformations.cma src/transformations/nunchaku_transformations.cmxa src/transformations/nunchaku_transformations.a src/transformations/nunchaku_transformations.cmxs src/main/nunchaku.native -use-ocamlfind -menhir 'menhir --dump --explain' -j 1 -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/nunchaku/META
+
+#=== ERROR while installing nunchaku.0.3.1 ====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make build
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/nunchaku.0.3.1
+# compiler             4.06.1
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/nunchaku.0.3.1/nunchaku-29108.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/nunchaku.0.3.1/nunchaku-29108.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/nunchaku.0.3.1/nunchaku-29108.out
+### stdout ###
+# [...]
+# [1;35mWarning[0m 32: unused value print_info_opt.
+# /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO.cmo src/core/FO.ml
+# + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO.cmo src/core/FO.ml
+# [1mFile "[1msrc/core/FO.ml", line 308, characters 7-26[0m[0m:
+# [1;31mError[0m: Unbound value Sequence.flat_map_l
+# Hint: Did you mean flat_map?
+# Command exited with code 2.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' src/core/nunchaku_core.cma src/core/nunchaku_core.cmxa src/core/nunchaku_core.a src/core/nunchaku_core.cmxs src/parsers/nunchaku_parsers.cma src/parsers/nunchaku_parsers.cmxa src/parsers/nunchaku_parsers.a src/parsers/nunchaku_parsers.cmxs src/backends/nunchaku_backends.cma src/backends/nunchaku_backends.cmxa src/backends/nunchaku_backends.a src/backends/nunchaku_backends.cmxs src/transformations/nunchaku_transformations.cma src/transformations/nunchaku_transformations.cmxa src/transformations/nunchaku_transformations.a src/transformations/nunchaku_transformations.cmxs src/main/nunchaku.native -use-ocamlfind -menhir 'menhir --dump --explain' -j 1 -tag debug' terminated with error code 10")
+# Makefile:7: recipe for target 'build' failed
+# make: *** [build] Error 1
+### stderr ###
+# [...]
+# [1;35mWarning[0m 32: unused value print_info_opt.
+# /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO.cmo src/core/FO.ml
+# + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -thread -w +a-4-44-48-50-29-58@8 -color always -package unix -package threads -package sequence -package num -package containers.data -package containers -I src/core -I src/core/terms -I src/core/types -o src/core/FO.cmo src/core/FO.ml
+# [1mFile "[1msrc/core/FO.ml", line 308, characters 7-26[0m[0m:
+# [1;31mError[0m: Unbound value Sequence.flat_map_l
+# Hint: Did you mean flat_map?
+# Command exited with code 2.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' src/core/nunchaku_core.cma src/core/nunchaku_core.cmxa src/core/nunchaku_core.a src/core/nunchaku_core.cmxs src/parsers/nunchaku_parsers.cma src/parsers/nunchaku_parsers.cmxa src/parsers/nunchaku_parsers.a src/parsers/nunchaku_parsers.cmxs src/backends/nunchaku_backends.cma src/backends/nunchaku_backends.cmxa src/backends/nunchaku_backends.a src/backends/nunchaku_backends.cmxs src/transformations/nunchaku_transformations.cma src/transformations/nunchaku_transformations.cmxa src/transformations/nunchaku_transformations.a src/transformations/nunchaku_transformations.cmxs src/main/nunchaku.native -use-ocamlfind -menhir 'menhir --dump --explain' -j 1 -tag debug' terminated with error code 10")
+# Makefile:7: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install nunchaku 0.3.1
+No changes have been performed
+'opam install nunchaku.0.3.1' failed.

@@ -1,0 +1,261 @@
+The following actions will be performed:
+  - install webidl 0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[webidl: http] Command started
+[webidl: http] Command started
+[webidl.0.1] https://github.com/0zat/webidl/archive/v0.1.zip downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[webidl: ocaml setup.ml] Command started
++ ocaml "setup.ml" "build" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/webidl.0.1)
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/types.ml > src/ast/types.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/types.cmo src/ast/types.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/const.ml > src/ast/const.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/const.cmo src/ast/const.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/types.cmx src/ast/types.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/argument.ml > src/ast/argument.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/argument.cmo src/ast/argument.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/const.cmx src/ast/const.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/extended.ml > src/ast/extended.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/extended.cmo src/ast/extended.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/argument.cmx src/ast/argument.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/operation.ml > src/ast/operation.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/operation.cmo src/ast/operation.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/extended.cmx src/ast/extended.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/attribute.ml > src/ast/attribute.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/attribute.cmo src/ast/attribute.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/interface.ml > src/ast/interface.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/interface.cmo src/ast/interface.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/attribute.cmx src/ast/attribute.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/operation.cmx src/ast/operation.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/dictionary.ml > src/ast/dictionary.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/dictionary.cmo src/ast/dictionary.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/namespace.ml > src/ast/namespace.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/namespace.cmo src/ast/namespace.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/definition.ml > src/ast/definition.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/definition.cmo src/ast/definition.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/dictionary.cmx src/ast/dictionary.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/interface.cmx src/ast/interface.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/namespace.cmx src/ast/namespace.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/ast.ml > src/ast/ast.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/ast.cmo src/ast/ast.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/definition.cmx src/ast/definition.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/types.ml > src/ast/types.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/types.cmo src/ast/types.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/const.ml > src/ast/const.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/const.cmo src/ast/const.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/types.cmx src/ast/types.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/argument.ml > src/ast/argument.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/argument.cmo src/ast/argument.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/const.cmx src/ast/const.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/extended.ml > src/ast/extended.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/extended.cmo src/ast/extended.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/argument.cmx src/ast/argument.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/operation.ml > src/ast/operation.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/operation.cmo src/ast/operation.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/extended.cmx src/ast/extended.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/attribute.ml > src/ast/attribute.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/attribute.cmo src/ast/attribute.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/interface.ml > src/ast/interface.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/interface.cmo src/ast/interface.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/attribute.cmx src/ast/attribute.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/operation.cmx src/ast/operation.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/dictionary.ml > src/ast/dictionary.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/dictionary.cmo src/ast/dictionary.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/namespace.ml > src/ast/namespace.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/namespace.cmo src/ast/namespace.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/definition.ml > src/ast/definition.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/definition.cmo src/ast/definition.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/dictionary.cmx src/ast/dictionary.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/interface.cmx src/ast/interface.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/namespace.cmx src/ast/namespace.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/ast.ml > src/ast/ast.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/ast.cmo src/ast/ast.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/definition.cmx src/ast/definition.ml
+- menhir --raw-depend --ocamldep 'ocamlfind ocamldep -modules' src/syntax/parser.mly > src/syntax/parser.mly.depends
+- menhir --ocamlc 'ocamlfind ocamlc -package ppx_deriving.show -I src/syntax -I src -I src/ast' --infer src/syntax/parser.mly
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/syntax/parser.ml > src/syntax/parser.ml.depends
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/syntax/parser.mli > src/syntax/parser.mli.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/syntax -I src -I src/ast -o src/syntax/parser.cmi src/syntax/parser.mli
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/ast.cmx src/ast/ast.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamllex.opt -q src/syntax/lexer.mll
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/syntax/lexer.ml > src/syntax/lexer.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/syntax -I src -I src/ast -o src/syntax/lexer.cmo src/syntax/lexer.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/syntax -I src -I src/ast -o src/syntax/parser.cmx src/syntax/parser.ml
+- menhir --raw-depend --ocamldep 'ocamlfind ocamldep -modules' src/syntax/parser.mly > src/syntax/parser.mly.depends
+- menhir --ocamlc 'ocamlfind ocamlc -package ppx_deriving.show -I src/syntax -I src -I src/ast' --infer src/syntax/parser.mly
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/syntax/parser.ml > src/syntax/parser.ml.depends
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/syntax/parser.mli > src/syntax/parser.mli.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/syntax -I src -I src/ast -o src/syntax/parser.cmi src/syntax/parser.mli
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/ast.cmx src/ast/ast.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamllex.opt -q src/syntax/lexer.mll
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/syntax/lexer.ml > src/syntax/lexer.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/syntax -I src -I src/ast -o src/syntax/lexer.cmo src/syntax/lexer.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/syntax -I src -I src/ast -o src/syntax/parser.cmx src/syntax/parser.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/webidl.ml > src/webidl.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src -I src/ast -I src/syntax -o src/webidl.cmo src/webidl.ml
+- + ocamlfind ocamlc -c -package ppx_deriving.show -I src -I src/ast -I src/syntax -o src/webidl.cmo src/webidl.ml
+- File "src/webidl.ml", line 15, characters 26-43:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- setup.ml exec:ocamlbuild -use-ocamlfind libwebidl.cmxa
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/webidl.ml > src/webidl.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src -I src/ast -I src/syntax -o src/webidl.cmo src/webidl.ml
+- + ocamlfind ocamlc -c -package ppx_deriving.show -I src -I src/ast -I src/syntax -o src/webidl.cmo src/webidl.ml
+- File "src/webidl.ml", line 15, characters 26-43:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- setup.ml exec:ocamlbuild -use-ocamlfind libwebidl.cmxa
+[ERROR] The compilation of webidl failed at "ocaml setup.ml build".
+[webidl: ocaml setup.ml] Command started
++ ocaml "setup.ml" "remove" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/webidl.0.1)
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/types.ml > src/ast/types.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/types.cmo src/ast/types.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/const.ml > src/ast/const.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/const.cmo src/ast/const.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/types.cmx src/ast/types.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/argument.ml > src/ast/argument.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/argument.cmo src/ast/argument.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/const.cmx src/ast/const.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/extended.ml > src/ast/extended.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/extended.cmo src/ast/extended.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/argument.cmx src/ast/argument.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/operation.ml > src/ast/operation.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/operation.cmo src/ast/operation.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/extended.cmx src/ast/extended.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/attribute.ml > src/ast/attribute.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/attribute.cmo src/ast/attribute.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/interface.ml > src/ast/interface.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/interface.cmo src/ast/interface.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/attribute.cmx src/ast/attribute.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/operation.cmx src/ast/operation.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/dictionary.ml > src/ast/dictionary.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/dictionary.cmo src/ast/dictionary.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/namespace.ml > src/ast/namespace.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/namespace.cmo src/ast/namespace.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/definition.ml > src/ast/definition.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/definition.cmo src/ast/definition.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/dictionary.cmx src/ast/dictionary.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/interface.cmx src/ast/interface.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/namespace.cmx src/ast/namespace.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/ast.ml > src/ast/ast.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/ast.cmo src/ast/ast.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/definition.cmx src/ast/definition.ml
+- menhir --raw-depend --ocamldep 'ocamlfind ocamldep -modules' src/syntax/parser.mly > src/syntax/parser.mly.depends
+- menhir --ocamlc 'ocamlfind ocamlc -package ppx_deriving.show -I src/syntax -I src -I src/ast' --infer src/syntax/parser.mly
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/syntax/parser.ml > src/syntax/parser.ml.depends
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/syntax/parser.mli > src/syntax/parser.mli.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/syntax -I src -I src/ast -o src/syntax/parser.cmi src/syntax/parser.mli
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/ast.cmx src/ast/ast.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamllex.opt -q src/syntax/lexer.mll
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/syntax/lexer.ml > src/syntax/lexer.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/syntax -I src -I src/ast -o src/syntax/lexer.cmo src/syntax/lexer.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/syntax -I src -I src/ast -o src/syntax/parser.cmx src/syntax/parser.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/webidl.ml > src/webidl.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src -I src/ast -I src/syntax -o src/webidl.cmo src/webidl.ml
+- + ocamlfind ocamlc -c -package ppx_deriving.show -I src -I src/ast -I src/syntax -o src/webidl.cmo src/webidl.ml
+- File "src/webidl.ml", line 15, characters 26-43:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- setup.ml exec:ocamlbuild -use-ocamlfind libwebidl.cmxa
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/webidl/META
+- setup.ml exec:ocamlfind remove webidl
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/types.ml > src/ast/types.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/types.cmo src/ast/types.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/const.ml > src/ast/const.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/const.cmo src/ast/const.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/types.cmx src/ast/types.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/argument.ml > src/ast/argument.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/argument.cmo src/ast/argument.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/const.cmx src/ast/const.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/extended.ml > src/ast/extended.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/extended.cmo src/ast/extended.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/argument.cmx src/ast/argument.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/operation.ml > src/ast/operation.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/operation.cmo src/ast/operation.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/extended.cmx src/ast/extended.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/attribute.ml > src/ast/attribute.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/attribute.cmo src/ast/attribute.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/interface.ml > src/ast/interface.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/interface.cmo src/ast/interface.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/attribute.cmx src/ast/attribute.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/operation.cmx src/ast/operation.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/dictionary.ml > src/ast/dictionary.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/dictionary.cmo src/ast/dictionary.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/namespace.ml > src/ast/namespace.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/namespace.cmo src/ast/namespace.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/definition.ml > src/ast/definition.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/definition.cmo src/ast/definition.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/dictionary.cmx src/ast/dictionary.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/interface.cmx src/ast/interface.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/namespace.cmx src/ast/namespace.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/ast/ast.ml > src/ast/ast.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/ast.cmo src/ast/ast.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/definition.cmx src/ast/definition.ml
+- menhir --raw-depend --ocamldep 'ocamlfind ocamldep -modules' src/syntax/parser.mly > src/syntax/parser.mly.depends
+- menhir --ocamlc 'ocamlfind ocamlc -package ppx_deriving.show -I src/syntax -I src -I src/ast' --infer src/syntax/parser.mly
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/syntax/parser.ml > src/syntax/parser.ml.depends
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/syntax/parser.mli > src/syntax/parser.mli.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/syntax -I src -I src/ast -o src/syntax/parser.cmi src/syntax/parser.mli
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/ast -I src -I src/syntax -o src/ast/ast.cmx src/ast/ast.ml
+- /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/bin/ocamllex.opt -q src/syntax/lexer.mll
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/syntax/lexer.ml > src/syntax/lexer.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src/syntax -I src -I src/ast -o src/syntax/lexer.cmo src/syntax/lexer.ml
+- ocamlfind ocamlopt -c -package ppx_deriving.show -I src/syntax -I src -I src/ast -o src/syntax/parser.cmx src/syntax/parser.ml
+- ocamlfind ocamldep -package ppx_deriving.show -modules src/webidl.ml > src/webidl.ml.depends
+- ocamlfind ocamlc -c -package ppx_deriving.show -I src -I src/ast -I src/syntax -o src/webidl.cmo src/webidl.ml
+- + ocamlfind ocamlc -c -package ppx_deriving.show -I src -I src/ast -I src/syntax -o src/webidl.cmo src/webidl.ml
+- File "src/webidl.ml", line 15, characters 26-43:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- setup.ml exec:ocamlbuild -use-ocamlfind libwebidl.cmxa
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/webidl/META
+- setup.ml exec:ocamlfind remove webidl
+
+#=== ERROR while installing webidl.0.1 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml build
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/webidl.0.1
+# compiler             4.07.0+rc2
+# exit-code            10
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/webidl.0.1/webidl-23080.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/webidl.0.1/webidl-23080.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/webidl.0.1/webidl-23080.out
+### stdout ###
+# [...]
+# ocamlfind ocamlc -c -package ppx_deriving.show -I src/syntax -I src -I src/ast -o src/syntax/lexer.cmo src/syntax/lexer.ml
+# ocamlfind ocamlopt -c -package ppx_deriving.show -I src/syntax -I src -I src/ast -o src/syntax/parser.cmx src/syntax/parser.ml
+# ocamlfind ocamldep -package ppx_deriving.show -modules src/webidl.ml > src/webidl.ml.depends
+# ocamlfind ocamlc -c -package ppx_deriving.show -I src -I src/ast -I src/syntax -o src/webidl.cmo src/webidl.ml
+# + ocamlfind ocamlc -c -package ppx_deriving.show -I src -I src/ast -I src/syntax -o src/webidl.cmo src/webidl.ml
+# File "src/webidl.ml", line 15, characters 26-43:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# setup.ml exec:ocamlbuild -use-ocamlfind libwebidl.cmxa
+### stderr ###
+# [...]
+# ocamlfind ocamlc -c -package ppx_deriving.show -I src/syntax -I src -I src/ast -o src/syntax/lexer.cmo src/syntax/lexer.ml
+# ocamlfind ocamlopt -c -package ppx_deriving.show -I src/syntax -I src -I src/ast -o src/syntax/parser.cmx src/syntax/parser.ml
+# ocamlfind ocamldep -package ppx_deriving.show -modules src/webidl.ml > src/webidl.ml.depends
+# ocamlfind ocamlc -c -package ppx_deriving.show -I src -I src/ast -I src/syntax -o src/webidl.cmo src/webidl.ml
+# + ocamlfind ocamlc -c -package ppx_deriving.show -I src -I src/ast -I src/syntax -o src/webidl.cmo src/webidl.ml
+# File "src/webidl.ml", line 15, characters 26-43:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# setup.ml exec:ocamlbuild -use-ocamlfind libwebidl.cmxa
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install webidl 0.1
+No changes have been performed
+'opam install webidl.0.1' failed.

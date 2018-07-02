@@ -1,0 +1,50 @@
+The following actions will be performed:
+  - install cmdliner 1.0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner: http] Command started
+[cmdliner: http] Command started
+[cmdliner.1.0.1] http://erratique.ch/software/cmdliner/releases/cmdliner-1.0.1.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner: ocaml build] Command started
++ ocaml "pkg/pkg.ml" "build" "--pinned" "false" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/cmdliner.1.0.1)
+- File "./pkg/pkg.ml", line 6, characters 13-24:
+- Error: Unbound value Pkg.flatten
+- pkg.ml: [ERROR] No package description found. A syntax error may have occured
+-                 or did you forget to call Topkg.Pkg.describe ?
+- File "./pkg/pkg.ml", line 6, characters 13-24:
+- Error: Unbound value Pkg.flatten
+- pkg.ml: [ERROR] No package description found. A syntax error may have occured
+-                 or did you forget to call Topkg.Pkg.describe ?
+[ERROR] The compilation of cmdliner failed at "ocaml pkg/pkg.ml build --pinned
+        false".
+
+#=== ERROR while installing cmdliner.1.0.1 ====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml pkg/pkg.ml build --pinned false
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/cmdliner.1.0.1
+# compiler             4.06.1
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/cmdliner.1.0.1/cmdliner-7697.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/cmdliner.1.0.1/cmdliner-7697.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/cmdliner.1.0.1/cmdliner-7697.out
+### stdout ###
+# File "./pkg/pkg.ml", line 6, characters 13-24:
+# Error: Unbound value Pkg.flatten
+# pkg.ml: [ERROR] No package description found. A syntax error may have occured
+#                 or did you forget to call Topkg.Pkg.describe ?
+### stderr ###
+# File "./pkg/pkg.ml", line 6, characters 13-24:
+# Error: Unbound value Pkg.flatten
+# pkg.ml: [ERROR] No package description found. A syntax error may have occured
+#                 or did you forget to call Topkg.Pkg.describe ?
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install cmdliner 1.0.1
+No changes have been performed
+'opam install cmdliner.1.0.1' failed.

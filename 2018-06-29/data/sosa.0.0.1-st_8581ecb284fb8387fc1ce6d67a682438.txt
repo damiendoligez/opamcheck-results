@@ -1,0 +1,145 @@
+The following actions will be performed:
+  - install sosa 0.0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sosa: http] Command started
+[sosa: http] Command started
+[sosa.0.0.1] https://bitbucket.org/smondet/sosa/get/sosa.0.0.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sosa: ocaml please.ml] Command started
++ ocaml "please.ml" "build" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/sosa.0.0.1)
+- Please-> Building
+- ! cp ../sosa.ml .
+- ! ocamlfind ocamlc  -c sosa.ml -o sosa.cmo
+- File "sosa.ml", line 449, characters 10-26:
+- Warning 3: deprecated: Internal_pervasives.String.set
+- Use BytesLabels.set instead.
+- File "sosa.ml", line 430, characters 45-760:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val write_to_native_string :
+-            char ->
+-            buf:bytes -> index:int -> (int, [> `out_of_bounds ]) result
+-        is not included in
+-          val write_to_native_string :
+-            t ->
+-            buf:String.t -> index:int -> (int, [> `out_of_bounds ]) result
+-        File "sosa.ml", line 84, characters 2-96: Expected declaration
+-        File "sosa.ml", line 448, characters 8-30: Actual declaration
+- Exception: Failure "\"ocamlfind ocamlc  -c sosa.ml -o sosa.cmo\" failed.".
+- Please-> Building
+- ! cp ../sosa.ml .
+- ! ocamlfind ocamlc  -c sosa.ml -o sosa.cmo
+- File "sosa.ml", line 449, characters 10-26:
+- Warning 3: deprecated: Internal_pervasives.String.set
+- Use BytesLabels.set instead.
+- File "sosa.ml", line 430, characters 45-760:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val write_to_native_string :
+-            char ->
+-            buf:bytes -> index:int -> (int, [> `out_of_bounds ]) result
+-        is not included in
+-          val write_to_native_string :
+-            t ->
+-            buf:String.t -> index:int -> (int, [> `out_of_bounds ]) result
+-        File "sosa.ml", line 84, characters 2-96: Expected declaration
+-        File "sosa.ml", line 448, characters 8-30: Actual declaration
+- Exception: Failure "\"ocamlfind ocamlc  -c sosa.ml -o sosa.cmo\" failed.".
+[ERROR] The compilation of sosa failed at "ocaml please.ml build".
+[sosa: ocaml please.ml] Command started
++ ocaml "please.ml" "uninstall" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/sosa.0.0.1)
+- Please-> Building
+- ! cp ../sosa.ml .
+- ! ocamlfind ocamlc  -c sosa.ml -o sosa.cmo
+- File "sosa.ml", line 449, characters 10-26:
+- Warning 3: deprecated: Internal_pervasives.String.set
+- Use BytesLabels.set instead.
+- File "sosa.ml", line 430, characters 45-760:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val write_to_native_string :
+-            char ->
+-            buf:bytes -> index:int -> (int, [> `out_of_bounds ]) result
+-        is not included in
+-          val write_to_native_string :
+-            t ->
+-            buf:String.t -> index:int -> (int, [> `out_of_bounds ]) result
+-        File "sosa.ml", line 84, characters 2-96: Expected declaration
+-        File "sosa.ml", line 448, characters 8-30: Actual declaration
+- Exception: Failure "\"ocamlfind ocamlc  -c sosa.ml -o sosa.cmo\" failed.".
+- Please-> Uninstalling
+- ! ocamlfind remove sosa
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sosa/META
+- Please-> Done.
+- Please-> Building
+- ! cp ../sosa.ml .
+- ! ocamlfind ocamlc  -c sosa.ml -o sosa.cmo
+- File "sosa.ml", line 449, characters 10-26:
+- Warning 3: deprecated: Internal_pervasives.String.set
+- Use BytesLabels.set instead.
+- File "sosa.ml", line 430, characters 45-760:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val write_to_native_string :
+-            char ->
+-            buf:bytes -> index:int -> (int, [> `out_of_bounds ]) result
+-        is not included in
+-          val write_to_native_string :
+-            t ->
+-            buf:String.t -> index:int -> (int, [> `out_of_bounds ]) result
+-        File "sosa.ml", line 84, characters 2-96: Expected declaration
+-        File "sosa.ml", line 448, characters 8-30: Actual declaration
+- Exception: Failure "\"ocamlfind ocamlc  -c sosa.ml -o sosa.cmo\" failed.".
+- Please-> Uninstalling
+- ! ocamlfind remove sosa
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/sosa/META
+- Please-> Done.
+
+#=== ERROR while installing sosa.0.0.1 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml please.ml build
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/sosa.0.0.1
+# compiler             4.06.1
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/sosa.0.0.1/sosa-22117.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/sosa.0.0.1/sosa-22117.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/sosa.0.0.1/sosa-22117.out
+### stdout ###
+# Error: Signature mismatch:
+# [...]
+#            char ->
+#            buf:bytes -> index:int -> (int, [> `out_of_bounds ]) result
+#        is not included in
+#          val write_to_native_string :
+#            t ->
+#            buf:String.t -> index:int -> (int, [> `out_of_bounds ]) result
+#        File "sosa.ml", line 84, characters 2-96: Expected declaration
+#        File "sosa.ml", line 448, characters 8-30: Actual declaration
+# Exception: Failure "\"ocamlfind ocamlc  -c sosa.ml -o sosa.cmo\" failed.".
+### stderr ###
+# Error: Signature mismatch:
+# [...]
+#            char ->
+#            buf:bytes -> index:int -> (int, [> `out_of_bounds ]) result
+#        is not included in
+#          val write_to_native_string :
+#            t ->
+#            buf:String.t -> index:int -> (int, [> `out_of_bounds ]) result
+#        File "sosa.ml", line 84, characters 2-96: Expected declaration
+#        File "sosa.ml", line 448, characters 8-30: Actual declaration
+# Exception: Failure "\"ocamlfind ocamlc  -c sosa.ml -o sosa.cmo\" failed.".
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install sosa 0.0.1
+No changes have been performed
+'opam install sosa.0.0.1' failed.

@@ -1,0 +1,1543 @@
+The following actions will be performed:
+  - install gsl 1.18.5
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[gsl: http] Command started
+[gsl: http] Command started
+[gsl.1.18.5] https://github.com/mmottl/gsl-ocaml/releases/download/v1.18.5/gsl-ocaml-1.18.5.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[gsl: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1" "--disable-camlp4" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/gsl.1.18.5)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- ocaml do_const.ml --mli > lib/gsl_const.mli
+- File "./do_const.ml", line 12, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 13, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 34, characters 22-38:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- File "./do_const.ml", line 35, characters 49-65:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- ocaml do_const.ml > lib/gsl_const.ml
+- File "./do_const.ml", line 12, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 13, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 34, characters 22-38:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- File "./do_const.ml", line 35, characters 49-65:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- ocaml do_sf.ml < lib/gsl_sf.mli.q > lib/gsl_sf.mli
+- cp lib/gsl_sf.mli lib/gsl_sf.ml
+- ocaml do_cdf.ml < /usr/include/gsl/gsl_cdf.h > lib/gsl_cdf.mli
+- File "./do_cdf.ml", line 53, characters 12-28:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- cp lib/gsl_cdf.mli lib/gsl_cdf.ml
+- ocaml do_cdf.ml --c < /usr/include/gsl/gsl_cdf.h > lib/mlgsl_cdf.c
+- File "./do_cdf.ml", line 53, characters 12-28:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ gsl
+- Package version: ..................................... 1.18.5
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Strict compile-time checks: .......................... true
+- Build examples: ...................................... true
+- Allow building of examples using camlp4: ............. false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- pkg_bigarray: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- 
+- ocaml do_const.ml --mli > lib/gsl_const.mli
+- File "./do_const.ml", line 12, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 13, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 34, characters 22-38:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- File "./do_const.ml", line 35, characters 49-65:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- ocaml do_const.ml > lib/gsl_const.ml
+- File "./do_const.ml", line 12, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 13, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 34, characters 22-38:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- File "./do_const.ml", line 35, characters 49-65:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- ocaml do_sf.ml < lib/gsl_sf.mli.q > lib/gsl_sf.mli
+- cp lib/gsl_sf.mli lib/gsl_sf.ml
+- ocaml do_cdf.ml < /usr/include/gsl/gsl_cdf.h > lib/gsl_cdf.mli
+- File "./do_cdf.ml", line 53, characters 12-28:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- cp lib/gsl_cdf.mli lib/gsl_cdf.ml
+- ocaml do_cdf.ml --c < /usr/include/gsl/gsl_cdf.h > lib/mlgsl_cdf.c
+- File "./do_cdf.ml", line 53, characters 12-28:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ gsl
+- Package version: ..................................... 1.18.5
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Strict compile-time checks: .......................... true
+- Build examples: ...................................... true
+- Allow building of examples using camlp4: ............. false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- pkg_bigarray: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- 
+[gsl: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-build" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/gsl.1.18.5)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- ocaml do_const.ml --mli > lib/gsl_const.mli
+- File "./do_const.ml", line 12, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 13, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 34, characters 22-38:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- File "./do_const.ml", line 35, characters 49-65:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- ocaml do_const.ml > lib/gsl_const.ml
+- File "./do_const.ml", line 12, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 13, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 34, characters 22-38:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- File "./do_const.ml", line 35, characters 49-65:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- ocaml do_sf.ml < lib/gsl_sf.mli.q > lib/gsl_sf.mli
+- cp lib/gsl_sf.mli lib/gsl_sf.ml
+- ocaml do_cdf.ml < /usr/include/gsl/gsl_cdf.h > lib/gsl_cdf.mli
+- File "./do_cdf.ml", line 53, characters 12-28:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- cp lib/gsl_cdf.mli lib/gsl_cdf.ml
+- ocaml do_cdf.ml --c < /usr/include/gsl/gsl_cdf.h > lib/mlgsl_cdf.c
+- File "./do_cdf.ml", line 53, characters 12-28:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ gsl
+- Package version: ..................................... 1.18.5
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Strict compile-time checks: .......................... true
+- Build examples: ...................................... true
+- Allow building of examples using camlp4: ............. false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- pkg_bigarray: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- ocaml do_const.ml --mli > lib/gsl_const.mli
+- File "./do_const.ml", line 12, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 13, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 34, characters 22-38:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- File "./do_const.ml", line 35, characters 49-65:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- ocaml do_const.ml > lib/gsl_const.ml
+- File "./do_const.ml", line 12, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 13, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 34, characters 22-38:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- File "./do_const.ml", line 35, characters 49-65:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- ocaml do_sf.ml < lib/gsl_sf.mli.q > lib/gsl_sf.mli
+- cp lib/gsl_sf.mli lib/gsl_sf.ml
+- ocaml do_cdf.ml < /usr/include/gsl/gsl_cdf.h > lib/gsl_cdf.mli
+- File "./do_cdf.ml", line 53, characters 12-28:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- cp lib/gsl_cdf.mli lib/gsl_cdf.ml
+- ocaml do_cdf.ml --c < /usr/include/gsl/gsl_cdf.h > lib/mlgsl_cdf.c
+- File "./do_cdf.ml", line 53, characters 12-28:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ gsl
+- Package version: ..................................... 1.18.5
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Strict compile-time checks: .......................... true
+- Build examples: ...................................... true
+- Allow building of examples using camlp4: ............. false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- pkg_bigarray: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas.c
+- In file included from lib/mlgsl_blas.c:11:0:
+- lib/mlgsl_blas.h: In function 'CBLAS_ORDER_val':
+- lib/mlgsl_blas.h:5:29: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_ORDER_t CBLAS_ORDER_val(v)
+-                              ^
+- lib/mlgsl_blas.h: In function 'CBLAS_TRANS_val':
+- lib/mlgsl_blas.h:11:33: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_TRANSPOSE_t CBLAS_TRANS_val(v)
+-                                  ^
+- lib/mlgsl_blas.h: In function 'CBLAS_UPLO_val':
+- lib/mlgsl_blas.h:17:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_UPLO_t CBLAS_UPLO_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_DIAG_val':
+- lib/mlgsl_blas.h:23:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_DIAG_t CBLAS_DIAG_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_SIDE_val':
+- lib/mlgsl_blas.h:29:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_SIDE_t CBLAS_SIDE_val(v)
+-                             ^
+- mv mlgsl_blas.o lib/mlgsl_blas.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex.c
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas.c
+- In file included from lib/mlgsl_blas.c:11:0:
+- lib/mlgsl_blas.h: In function 'CBLAS_ORDER_val':
+- lib/mlgsl_blas.h:5:29: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_ORDER_t CBLAS_ORDER_val(v)
+-                              ^
+- lib/mlgsl_blas.h: In function 'CBLAS_TRANS_val':
+- lib/mlgsl_blas.h:11:33: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_TRANSPOSE_t CBLAS_TRANS_val(v)
+-                                  ^
+- lib/mlgsl_blas.h: In function 'CBLAS_UPLO_val':
+- lib/mlgsl_blas.h:17:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_UPLO_t CBLAS_UPLO_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_DIAG_val':
+- lib/mlgsl_blas.h:23:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_DIAG_t CBLAS_DIAG_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_SIDE_val':
+- lib/mlgsl_blas.h:29:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_SIDE_t CBLAS_SIDE_val(v)
+-                             ^
+- mv mlgsl_blas.o lib/mlgsl_blas.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex.c
+- In file included from lib/mlgsl_blas_complex.c:11:0:
+- lib/mlgsl_blas.h: In function 'CBLAS_ORDER_val':
+- lib/mlgsl_blas.h:5:29: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_ORDER_t CBLAS_ORDER_val(v)
+-                              ^
+- lib/mlgsl_blas.h: In function 'CBLAS_TRANS_val':
+- lib/mlgsl_blas.h:11:33: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_TRANSPOSE_t CBLAS_TRANS_val(v)
+-                                  ^
+- lib/mlgsl_blas.h: In function 'CBLAS_UPLO_val':
+- lib/mlgsl_blas.h:17:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_UPLO_t CBLAS_UPLO_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_DIAG_val':
+- lib/mlgsl_blas.h:23:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_DIAG_t CBLAS_DIAG_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_SIDE_val':
+- lib/mlgsl_blas.h:29:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_SIDE_t CBLAS_SIDE_val(v)
+-                             ^
+- mv mlgsl_blas_complex.o lib/mlgsl_blas_complex.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex_float.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex_float.c
+- In file included from lib/mlgsl_blas_complex_float.c:13:0:
+- lib/mlgsl_blas.h: In function 'CBLAS_ORDER_val':
+- lib/mlgsl_blas.h:5:29: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_ORDER_t CBLAS_ORDER_val(v)
+-                              ^
+- lib/mlgsl_blas.h: In function 'CBLAS_TRANS_val':
+- lib/mlgsl_blas.h:11:33: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_TRANSPOSE_t CBLAS_TRANS_val(v)
+-                                  ^
+- lib/mlgsl_blas.h: In function 'CBLAS_UPLO_val':
+- lib/mlgsl_blas.h:17:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_UPLO_t CBLAS_UPLO_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_DIAG_val':
+- lib/mlgsl_blas.h:23:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_DIAG_t CBLAS_DIAG_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_SIDE_val':
+- lib/mlgsl_blas.h:29:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_SIDE_t CBLAS_SIDE_val(v)
+-                             ^
+- mv mlgsl_blas_complex_float.o lib/mlgsl_blas_complex_float.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_float.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_float.c
+- In file included from lib/mlgsl_blas_float.c:11:0:
+- lib/mlgsl_blas.h: In function 'CBLAS_ORDER_val':
+- lib/mlgsl_blas.h:5:29: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_ORDER_t CBLAS_ORDER_val(v)
+-                              ^
+- lib/mlgsl_blas.h: In function 'CBLAS_TRANS_val':
+- lib/mlgsl_blas.h:11:33: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_TRANSPOSE_t CBLAS_TRANS_val(v)
+-                                  ^
+- lib/mlgsl_blas.h: In function 'CBLAS_UPLO_val':
+- lib/mlgsl_blas.h:17:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_UPLO_t CBLAS_UPLO_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_DIAG_val':
+- lib/mlgsl_blas.h:23:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_DIAG_t CBLAS_DIAG_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_SIDE_val':
+- lib/mlgsl_blas.h:29:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_SIDE_t CBLAS_SIDE_val(v)
+-                             ^
+- mv mlgsl_blas_float.o lib/mlgsl_blas_float.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_bspline.c
+- mv mlgsl_bspline.o lib/mlgsl_bspline.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_cdf.c
+- mv mlgsl_cdf.o lib/mlgsl_cdf.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_cheb.c
+- mv mlgsl_cheb.o lib/mlgsl_cheb.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_combi.c
+- mv mlgsl_combi.o lib/mlgsl_combi.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_complex.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex.c
+- In file included from lib/mlgsl_blas_complex.c:11:0:
+- lib/mlgsl_blas.h: In function 'CBLAS_ORDER_val':
+- lib/mlgsl_blas.h:5:29: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_ORDER_t CBLAS_ORDER_val(v)
+-                              ^
+- lib/mlgsl_blas.h: In function 'CBLAS_TRANS_val':
+- lib/mlgsl_blas.h:11:33: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_TRANSPOSE_t CBLAS_TRANS_val(v)
+-                                  ^
+- lib/mlgsl_blas.h: In function 'CBLAS_UPLO_val':
+- lib/mlgsl_blas.h:17:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_UPLO_t CBLAS_UPLO_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_DIAG_val':
+- lib/mlgsl_blas.h:23:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_DIAG_t CBLAS_DIAG_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_SIDE_val':
+- lib/mlgsl_blas.h:29:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_SIDE_t CBLAS_SIDE_val(v)
+-                             ^
+- mv mlgsl_blas_complex.o lib/mlgsl_blas_complex.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex_float.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex_float.c
+- In file included from lib/mlgsl_blas_complex_float.c:13:0:
+- lib/mlgsl_blas.h: In function 'CBLAS_ORDER_val':
+- lib/mlgsl_blas.h:5:29: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_ORDER_t CBLAS_ORDER_val(v)
+-                              ^
+- lib/mlgsl_blas.h: In function 'CBLAS_TRANS_val':
+- lib/mlgsl_blas.h:11:33: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_TRANSPOSE_t CBLAS_TRANS_val(v)
+-                                  ^
+- lib/mlgsl_blas.h: In function 'CBLAS_UPLO_val':
+- lib/mlgsl_blas.h:17:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_UPLO_t CBLAS_UPLO_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_DIAG_val':
+- lib/mlgsl_blas.h:23:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_DIAG_t CBLAS_DIAG_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_SIDE_val':
+- lib/mlgsl_blas.h:29:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_SIDE_t CBLAS_SIDE_val(v)
+-                             ^
+- mv mlgsl_blas_complex_float.o lib/mlgsl_blas_complex_float.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_float.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_float.c
+- In file included from lib/mlgsl_blas_float.c:11:0:
+- lib/mlgsl_blas.h: In function 'CBLAS_ORDER_val':
+- lib/mlgsl_blas.h:5:29: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_ORDER_t CBLAS_ORDER_val(v)
+-                              ^
+- lib/mlgsl_blas.h: In function 'CBLAS_TRANS_val':
+- lib/mlgsl_blas.h:11:33: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_TRANSPOSE_t CBLAS_TRANS_val(v)
+-                                  ^
+- lib/mlgsl_blas.h: In function 'CBLAS_UPLO_val':
+- lib/mlgsl_blas.h:17:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_UPLO_t CBLAS_UPLO_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_DIAG_val':
+- lib/mlgsl_blas.h:23:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_DIAG_t CBLAS_DIAG_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_SIDE_val':
+- lib/mlgsl_blas.h:29:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_SIDE_t CBLAS_SIDE_val(v)
+-                             ^
+- mv mlgsl_blas_float.o lib/mlgsl_blas_float.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_bspline.c
+- mv mlgsl_bspline.o lib/mlgsl_bspline.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_cdf.c
+- mv mlgsl_cdf.o lib/mlgsl_cdf.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_cheb.c
+- mv mlgsl_cheb.o lib/mlgsl_cheb.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_combi.c
+- mv mlgsl_combi.o lib/mlgsl_combi.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_complex.c
+- mv mlgsl_complex.o lib/mlgsl_complex.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_deriv.c
+- mv mlgsl_deriv.o lib/mlgsl_deriv.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_eigen.c
+- mv mlgsl_eigen.o lib/mlgsl_eigen.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_error.c
+- mv mlgsl_error.o lib/mlgsl_error.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_fft.c
+- mv mlgsl_fft.o lib/mlgsl_fft.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_fit.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_fit.c
+- lib/mlgsl_fit.c: In function 'ml_gsl_multifit_linear_svd':
+- lib/mlgsl_fit.c:154:35: warning: passing argument 2 of 'gsl_multifit_linear_svd' from incompatible pointer type [-Wincompatible-pointer-types]
+-      gsl_multifit_linear_svd(&m_x, &v_y, 
+-                                    ^
+- In file included from lib/mlgsl_fit.c:6:0:
+- /usr/include/gsl/gsl_multifit.h:74:1: note: expected 'gsl_multifit_linear_workspace * {aka struct <anonymous> *}' but argument is of type 'gsl_vector * {aka struct <anonymous> *}'
+-  gsl_multifit_linear_svd (const gsl_matrix * X,
+-  ^
+- lib/mlgsl_fit.c:154:5: error: too many arguments to function 'gsl_multifit_linear_svd'
+-      gsl_multifit_linear_svd(&m_x, &v_y, 
+-      ^
+- In file included from lib/mlgsl_fit.c:6:0:
+- /usr/include/gsl/gsl_multifit.h:74:1: note: declared here
+-  gsl_multifit_linear_svd (const gsl_matrix * X,
+-  ^
+- Command exited with code 2.
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' lib/libgsl_stubs.a lib/dllgsl_stubs.so lib/gsl.cma lib/gsl.cmxa lib/gsl.a lib/gsl.cmxs examples/blas_ex.native examples/blas_speed_test.native examples/bspline_ex.native examples/cheb_ex.native examples/combi_ex.native examples/const_ex.native examples/deriv_ex.native examples/eigen_ex.native examples/fft_c.native examples/fft_c2.native examples/fft_hc.native examples/fit_ex.native examples/histo_ex.native examples/integration_ex.native examples/interp_ex.native examples/linalg_ex.native examples/min_ex.native examples/monte_ex.native examples/multifit_data_ex.native examples/multifit_nlin_ex.native examples/multimin_ex.native examples/multiroot_ex.native examples/odeiv_ex.native examples/permut_ex.native examples/qrng_ex.native examples/rng_ex.native examples/root_ex.native examples/siman_ex.native examples/siman_tsp_ex.native examples/stats_ex.native examples/sum_ex.native examples/wavelet_ex.native -tag debug' terminated with error code 10")
+- mv mlgsl_complex.o lib/mlgsl_complex.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_deriv.c
+- mv mlgsl_deriv.o lib/mlgsl_deriv.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_eigen.c
+- mv mlgsl_eigen.o lib/mlgsl_eigen.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_error.c
+- mv mlgsl_error.o lib/mlgsl_error.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_fft.c
+- mv mlgsl_fft.o lib/mlgsl_fft.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_fit.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_fit.c
+- lib/mlgsl_fit.c: In function 'ml_gsl_multifit_linear_svd':
+- lib/mlgsl_fit.c:154:35: warning: passing argument 2 of 'gsl_multifit_linear_svd' from incompatible pointer type [-Wincompatible-pointer-types]
+-      gsl_multifit_linear_svd(&m_x, &v_y, 
+-                                    ^
+- In file included from lib/mlgsl_fit.c:6:0:
+- /usr/include/gsl/gsl_multifit.h:74:1: note: expected 'gsl_multifit_linear_workspace * {aka struct <anonymous> *}' but argument is of type 'gsl_vector * {aka struct <anonymous> *}'
+-  gsl_multifit_linear_svd (const gsl_matrix * X,
+-  ^
+- lib/mlgsl_fit.c:154:5: error: too many arguments to function 'gsl_multifit_linear_svd'
+-      gsl_multifit_linear_svd(&m_x, &v_y, 
+-      ^
+- In file included from lib/mlgsl_fit.c:6:0:
+- /usr/include/gsl/gsl_multifit.h:74:1: note: declared here
+-  gsl_multifit_linear_svd (const gsl_matrix * X,
+-  ^
+- Command exited with code 2.
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' lib/libgsl_stubs.a lib/dllgsl_stubs.so lib/gsl.cma lib/gsl.cmxa lib/gsl.a lib/gsl.cmxs examples/blas_ex.native examples/blas_speed_test.native examples/bspline_ex.native examples/cheb_ex.native examples/combi_ex.native examples/const_ex.native examples/deriv_ex.native examples/eigen_ex.native examples/fft_c.native examples/fft_c2.native examples/fft_hc.native examples/fit_ex.native examples/histo_ex.native examples/integration_ex.native examples/interp_ex.native examples/linalg_ex.native examples/min_ex.native examples/monte_ex.native examples/multifit_data_ex.native examples/multifit_nlin_ex.native examples/multimin_ex.native examples/multiroot_ex.native examples/odeiv_ex.native examples/permut_ex.native examples/qrng_ex.native examples/rng_ex.native examples/root_ex.native examples/siman_ex.native examples/siman_tsp_ex.native examples/stats_ex.native examples/sum_ex.native examples/wavelet_ex.native -tag debug' terminated with error code 10")
+[ERROR] The compilation of gsl failed at "ocaml setup.ml -build".
+[gsl: ocamlfind remove] Command started
++ ocamlfind "remove" "gsl" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/gsl.1.18.5)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- ocaml do_const.ml --mli > lib/gsl_const.mli
+- File "./do_const.ml", line 12, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 13, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 34, characters 22-38:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- File "./do_const.ml", line 35, characters 49-65:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- ocaml do_const.ml > lib/gsl_const.ml
+- File "./do_const.ml", line 12, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 13, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 34, characters 22-38:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- File "./do_const.ml", line 35, characters 49-65:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- ocaml do_sf.ml < lib/gsl_sf.mli.q > lib/gsl_sf.mli
+- cp lib/gsl_sf.mli lib/gsl_sf.ml
+- ocaml do_cdf.ml < /usr/include/gsl/gsl_cdf.h > lib/gsl_cdf.mli
+- File "./do_cdf.ml", line 53, characters 12-28:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- cp lib/gsl_cdf.mli lib/gsl_cdf.ml
+- ocaml do_cdf.ml --c < /usr/include/gsl/gsl_cdf.h > lib/mlgsl_cdf.c
+- File "./do_cdf.ml", line 53, characters 12-28:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ gsl
+- Package version: ..................................... 1.18.5
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Strict compile-time checks: .......................... true
+- Build examples: ...................................... true
+- Allow building of examples using camlp4: ............. false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- pkg_bigarray: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas.c
+- In file included from lib/mlgsl_blas.c:11:0:
+- lib/mlgsl_blas.h: In function 'CBLAS_ORDER_val':
+- lib/mlgsl_blas.h:5:29: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_ORDER_t CBLAS_ORDER_val(v)
+-                              ^
+- lib/mlgsl_blas.h: In function 'CBLAS_TRANS_val':
+- lib/mlgsl_blas.h:11:33: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_TRANSPOSE_t CBLAS_TRANS_val(v)
+-                                  ^
+- lib/mlgsl_blas.h: In function 'CBLAS_UPLO_val':
+- lib/mlgsl_blas.h:17:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_UPLO_t CBLAS_UPLO_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_DIAG_val':
+- lib/mlgsl_blas.h:23:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_DIAG_t CBLAS_DIAG_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_SIDE_val':
+- lib/mlgsl_blas.h:29:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_SIDE_t CBLAS_SIDE_val(v)
+-                             ^
+- mv mlgsl_blas.o lib/mlgsl_blas.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex.c
+- In file included from lib/mlgsl_blas_complex.c:11:0:
+- lib/mlgsl_blas.h: In function 'CBLAS_ORDER_val':
+- lib/mlgsl_blas.h:5:29: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_ORDER_t CBLAS_ORDER_val(v)
+-                              ^
+- lib/mlgsl_blas.h: In function 'CBLAS_TRANS_val':
+- lib/mlgsl_blas.h:11:33: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_TRANSPOSE_t CBLAS_TRANS_val(v)
+-                                  ^
+- lib/mlgsl_blas.h: In function 'CBLAS_UPLO_val':
+- lib/mlgsl_blas.h:17:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_UPLO_t CBLAS_UPLO_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_DIAG_val':
+- lib/mlgsl_blas.h:23:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_DIAG_t CBLAS_DIAG_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_SIDE_val':
+- lib/mlgsl_blas.h:29:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_SIDE_t CBLAS_SIDE_val(v)
+-                             ^
+- mv mlgsl_blas_complex.o lib/mlgsl_blas_complex.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex_float.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex_float.c
+- In file included from lib/mlgsl_blas_complex_float.c:13:0:
+- lib/mlgsl_blas.h: In function 'CBLAS_ORDER_val':
+- lib/mlgsl_blas.h:5:29: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_ORDER_t CBLAS_ORDER_val(v)
+-                              ^
+- lib/mlgsl_blas.h: In function 'CBLAS_TRANS_val':
+- lib/mlgsl_blas.h:11:33: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_TRANSPOSE_t CBLAS_TRANS_val(v)
+-                                  ^
+- lib/mlgsl_blas.h: In function 'CBLAS_UPLO_val':
+- lib/mlgsl_blas.h:17:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_UPLO_t CBLAS_UPLO_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_DIAG_val':
+- lib/mlgsl_blas.h:23:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_DIAG_t CBLAS_DIAG_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_SIDE_val':
+- lib/mlgsl_blas.h:29:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_SIDE_t CBLAS_SIDE_val(v)
+-                             ^
+- mv mlgsl_blas_complex_float.o lib/mlgsl_blas_complex_float.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_float.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_float.c
+- In file included from lib/mlgsl_blas_float.c:11:0:
+- lib/mlgsl_blas.h: In function 'CBLAS_ORDER_val':
+- lib/mlgsl_blas.h:5:29: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_ORDER_t CBLAS_ORDER_val(v)
+-                              ^
+- lib/mlgsl_blas.h: In function 'CBLAS_TRANS_val':
+- lib/mlgsl_blas.h:11:33: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_TRANSPOSE_t CBLAS_TRANS_val(v)
+-                                  ^
+- lib/mlgsl_blas.h: In function 'CBLAS_UPLO_val':
+- lib/mlgsl_blas.h:17:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_UPLO_t CBLAS_UPLO_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_DIAG_val':
+- lib/mlgsl_blas.h:23:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_DIAG_t CBLAS_DIAG_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_SIDE_val':
+- lib/mlgsl_blas.h:29:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_SIDE_t CBLAS_SIDE_val(v)
+-                             ^
+- mv mlgsl_blas_float.o lib/mlgsl_blas_float.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_bspline.c
+- mv mlgsl_bspline.o lib/mlgsl_bspline.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_cdf.c
+- mv mlgsl_cdf.o lib/mlgsl_cdf.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_cheb.c
+- mv mlgsl_cheb.o lib/mlgsl_cheb.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_combi.c
+- mv mlgsl_combi.o lib/mlgsl_combi.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_complex.c
+- mv mlgsl_complex.o lib/mlgsl_complex.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_deriv.c
+- mv mlgsl_deriv.o lib/mlgsl_deriv.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_eigen.c
+- mv mlgsl_eigen.o lib/mlgsl_eigen.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_error.c
+- mv mlgsl_error.o lib/mlgsl_error.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_fft.c
+- mv mlgsl_fft.o lib/mlgsl_fft.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_fit.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_fit.c
+- lib/mlgsl_fit.c: In function 'ml_gsl_multifit_linear_svd':
+- lib/mlgsl_fit.c:154:35: warning: passing argument 2 of 'gsl_multifit_linear_svd' from incompatible pointer type [-Wincompatible-pointer-types]
+-      gsl_multifit_linear_svd(&m_x, &v_y, 
+-                                    ^
+- In file included from lib/mlgsl_fit.c:6:0:
+- /usr/include/gsl/gsl_multifit.h:74:1: note: expected 'gsl_multifit_linear_workspace * {aka struct <anonymous> *}' but argument is of type 'gsl_vector * {aka struct <anonymous> *}'
+-  gsl_multifit_linear_svd (const gsl_matrix * X,
+-  ^
+- lib/mlgsl_fit.c:154:5: error: too many arguments to function 'gsl_multifit_linear_svd'
+-      gsl_multifit_linear_svd(&m_x, &v_y, 
+-      ^
+- In file included from lib/mlgsl_fit.c:6:0:
+- /usr/include/gsl/gsl_multifit.h:74:1: note: declared here
+-  gsl_multifit_linear_svd (const gsl_matrix * X,
+-  ^
+- Command exited with code 2.
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' lib/libgsl_stubs.a lib/dllgsl_stubs.so lib/gsl.cma lib/gsl.cmxa lib/gsl.a lib/gsl.cmxs examples/blas_ex.native examples/blas_speed_test.native examples/bspline_ex.native examples/cheb_ex.native examples/combi_ex.native examples/const_ex.native examples/deriv_ex.native examples/eigen_ex.native examples/fft_c.native examples/fft_c2.native examples/fft_hc.native examples/fit_ex.native examples/histo_ex.native examples/integration_ex.native examples/interp_ex.native examples/linalg_ex.native examples/min_ex.native examples/monte_ex.native examples/multifit_data_ex.native examples/multifit_nlin_ex.native examples/multimin_ex.native examples/multiroot_ex.native examples/odeiv_ex.native examples/permut_ex.native examples/qrng_ex.native examples/rng_ex.native examples/root_ex.native examples/siman_ex.native examples/siman_tsp_ex.native examples/stats_ex.native examples/sum_ex.native examples/wavelet_ex.native -tag debug' terminated with error code 10")
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/gsl/META
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- ocaml do_const.ml --mli > lib/gsl_const.mli
+- File "./do_const.ml", line 12, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 13, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 34, characters 22-38:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- File "./do_const.ml", line 35, characters 49-65:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- ocaml do_const.ml > lib/gsl_const.ml
+- File "./do_const.ml", line 12, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 13, characters 24-40:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./do_const.ml", line 34, characters 22-38:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- File "./do_const.ml", line 35, characters 49-65:
+- Warning 3: deprecated: String.uppercase
+- Use String.uppercase_ascii instead.
+- ocaml do_sf.ml < lib/gsl_sf.mli.q > lib/gsl_sf.mli
+- cp lib/gsl_sf.mli lib/gsl_sf.ml
+- ocaml do_cdf.ml < /usr/include/gsl/gsl_cdf.h > lib/gsl_cdf.mli
+- File "./do_cdf.ml", line 53, characters 12-28:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- cp lib/gsl_cdf.mli lib/gsl_cdf.ml
+- ocaml do_cdf.ml --c < /usr/include/gsl/gsl_cdf.h > lib/mlgsl_cdf.c
+- File "./do_cdf.ml", line 53, characters 12-28:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild
+- Package name: ........................................ gsl
+- Package version: ..................................... 1.18.5
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Strict compile-time checks: .......................... true
+- Build examples: ...................................... true
+- Allow building of examples using camlp4: ............. false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamldoc
+- pkg_bigarray: ........................................ /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas.c
+- In file included from lib/mlgsl_blas.c:11:0:
+- lib/mlgsl_blas.h: In function 'CBLAS_ORDER_val':
+- lib/mlgsl_blas.h:5:29: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_ORDER_t CBLAS_ORDER_val(v)
+-                              ^
+- lib/mlgsl_blas.h: In function 'CBLAS_TRANS_val':
+- lib/mlgsl_blas.h:11:33: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_TRANSPOSE_t CBLAS_TRANS_val(v)
+-                                  ^
+- lib/mlgsl_blas.h: In function 'CBLAS_UPLO_val':
+- lib/mlgsl_blas.h:17:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_UPLO_t CBLAS_UPLO_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_DIAG_val':
+- lib/mlgsl_blas.h:23:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_DIAG_t CBLAS_DIAG_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_SIDE_val':
+- lib/mlgsl_blas.h:29:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_SIDE_t CBLAS_SIDE_val(v)
+-                             ^
+- mv mlgsl_blas.o lib/mlgsl_blas.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex.c
+- In file included from lib/mlgsl_blas_complex.c:11:0:
+- lib/mlgsl_blas.h: In function 'CBLAS_ORDER_val':
+- lib/mlgsl_blas.h:5:29: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_ORDER_t CBLAS_ORDER_val(v)
+-                              ^
+- lib/mlgsl_blas.h: In function 'CBLAS_TRANS_val':
+- lib/mlgsl_blas.h:11:33: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_TRANSPOSE_t CBLAS_TRANS_val(v)
+-                                  ^
+- lib/mlgsl_blas.h: In function 'CBLAS_UPLO_val':
+- lib/mlgsl_blas.h:17:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_UPLO_t CBLAS_UPLO_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_DIAG_val':
+- lib/mlgsl_blas.h:23:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_DIAG_t CBLAS_DIAG_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_SIDE_val':
+- lib/mlgsl_blas.h:29:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_SIDE_t CBLAS_SIDE_val(v)
+-                             ^
+- mv mlgsl_blas_complex.o lib/mlgsl_blas_complex.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex_float.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex_float.c
+- In file included from lib/mlgsl_blas_complex_float.c:13:0:
+- lib/mlgsl_blas.h: In function 'CBLAS_ORDER_val':
+- lib/mlgsl_blas.h:5:29: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_ORDER_t CBLAS_ORDER_val(v)
+-                              ^
+- lib/mlgsl_blas.h: In function 'CBLAS_TRANS_val':
+- lib/mlgsl_blas.h:11:33: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_TRANSPOSE_t CBLAS_TRANS_val(v)
+-                                  ^
+- lib/mlgsl_blas.h: In function 'CBLAS_UPLO_val':
+- lib/mlgsl_blas.h:17:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_UPLO_t CBLAS_UPLO_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_DIAG_val':
+- lib/mlgsl_blas.h:23:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_DIAG_t CBLAS_DIAG_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_SIDE_val':
+- lib/mlgsl_blas.h:29:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_SIDE_t CBLAS_SIDE_val(v)
+-                             ^
+- mv mlgsl_blas_complex_float.o lib/mlgsl_blas_complex_float.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_float.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_float.c
+- In file included from lib/mlgsl_blas_float.c:11:0:
+- lib/mlgsl_blas.h: In function 'CBLAS_ORDER_val':
+- lib/mlgsl_blas.h:5:29: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_ORDER_t CBLAS_ORDER_val(v)
+-                              ^
+- lib/mlgsl_blas.h: In function 'CBLAS_TRANS_val':
+- lib/mlgsl_blas.h:11:33: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_TRANSPOSE_t CBLAS_TRANS_val(v)
+-                                  ^
+- lib/mlgsl_blas.h: In function 'CBLAS_UPLO_val':
+- lib/mlgsl_blas.h:17:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_UPLO_t CBLAS_UPLO_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_DIAG_val':
+- lib/mlgsl_blas.h:23:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_DIAG_t CBLAS_DIAG_val(v)
+-                             ^
+- lib/mlgsl_blas.h: In function 'CBLAS_SIDE_val':
+- lib/mlgsl_blas.h:29:28: warning: type of 'v' defaults to 'int' [-Wimplicit-int]
+-  static inline CBLAS_SIDE_t CBLAS_SIDE_val(v)
+-                             ^
+- mv mlgsl_blas_float.o lib/mlgsl_blas_float.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_bspline.c
+- mv mlgsl_bspline.o lib/mlgsl_bspline.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_cdf.c
+- mv mlgsl_cdf.o lib/mlgsl_cdf.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_cheb.c
+- mv mlgsl_cheb.o lib/mlgsl_cheb.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_combi.c
+- mv mlgsl_combi.o lib/mlgsl_combi.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_complex.c
+- mv mlgsl_complex.o lib/mlgsl_complex.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_deriv.c
+- mv mlgsl_deriv.o lib/mlgsl_deriv.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_eigen.c
+- mv mlgsl_eigen.o lib/mlgsl_eigen.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_error.c
+- mv mlgsl_error.o lib/mlgsl_error.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_fft.c
+- mv mlgsl_fft.o lib/mlgsl_fft.o
+- /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_fit.c
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_fit.c
+- lib/mlgsl_fit.c: In function 'ml_gsl_multifit_linear_svd':
+- lib/mlgsl_fit.c:154:35: warning: passing argument 2 of 'gsl_multifit_linear_svd' from incompatible pointer type [-Wincompatible-pointer-types]
+-      gsl_multifit_linear_svd(&m_x, &v_y, 
+-                                    ^
+- In file included from lib/mlgsl_fit.c:6:0:
+- /usr/include/gsl/gsl_multifit.h:74:1: note: expected 'gsl_multifit_linear_workspace * {aka struct <anonymous> *}' but argument is of type 'gsl_vector * {aka struct <anonymous> *}'
+-  gsl_multifit_linear_svd (const gsl_matrix * X,
+-  ^
+- lib/mlgsl_fit.c:154:5: error: too many arguments to function 'gsl_multifit_linear_svd'
+-      gsl_multifit_linear_svd(&m_x, &v_y, 
+-      ^
+- In file included from lib/mlgsl_fit.c:6:0:
+- /usr/include/gsl/gsl_multifit.h:74:1: note: declared here
+-  gsl_multifit_linear_svd (const gsl_matrix * X,
+-  ^
+- Command exited with code 2.
+- + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' lib/libgsl_stubs.a lib/dllgsl_stubs.so lib/gsl.cma lib/gsl.cmxa lib/gsl.a lib/gsl.cmxs examples/blas_ex.native examples/blas_speed_test.native examples/bspline_ex.native examples/cheb_ex.native examples/combi_ex.native examples/const_ex.native examples/deriv_ex.native examples/eigen_ex.native examples/fft_c.native examples/fft_c2.native examples/fft_hc.native examples/fit_ex.native examples/histo_ex.native examples/integration_ex.native examples/interp_ex.native examples/linalg_ex.native examples/min_ex.native examples/monte_ex.native examples/multifit_data_ex.native examples/multifit_nlin_ex.native examples/multimin_ex.native examples/multiroot_ex.native examples/odeiv_ex.native examples/permut_ex.native examples/qrng_ex.native examples/rng_ex.native examples/root_ex.native examples/siman_ex.native examples/siman_tsp_ex.native examples/stats_ex.native examples/sum_ex.native examples/wavelet_ex.native -tag debug' terminated with error code 10")
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/gsl/META
+
+#=== ERROR while installing gsl.1.18.5 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/gsl.1.18.5
+# compiler             4.06.1
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/gsl.1.18.5/gsl-30636.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/gsl.1.18.5/gsl-30636.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/gsl.1.18.5/gsl-30636.out
+### stdout ###
+# /usr/include/gsl/gsl_multifit.h:74:1: note: declared here
+# [...]
+# Command exited with code 2.
+# + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' lib/libgsl_stubs.a lib/dllgsl_stubs.so lib/gsl.cma lib/gsl.cmxa lib/gsl.a lib/gsl.cmxs examples/blas_ex.native examples/blas_speed_test.native examples/bspline_ex.native examples/cheb_ex.native examples/combi_ex.native examples/const_ex.native examples/deriv_ex.native examples/eigen_ex.native examples/fft_c.native examples/fft_c2.native examples/fft_hc.native examples/fit_ex.native examples/histo_ex.native examples/integration_ex.native examples/interp_ex.native examples/linalg_ex.native examples/min_ex.native examples/monte_ex.native examples/multifit_data_ex.native examples/multifit_nlin_ex.native examples/multimin_ex.native examples/multiroot_ex.native examples/odeiv_ex.native examples/permut_ex.native examples/qrng_ex.native examples/rng_ex.native examples/root_ex.native examples/siman_ex.native examples/siman_tsp_ex.native examples/stats_ex.native examples/sum_ex.native examples/wavelet_ex.native -tag debug' terminated with error code 10")
+### stderr ###
+# /usr/include/gsl/gsl_multifit.h:74:1: note: declared here
+# [...]
+# Command exited with code 2.
+# + /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlbuild' lib/libgsl_stubs.a lib/dllgsl_stubs.so lib/gsl.cma lib/gsl.cmxa lib/gsl.a lib/gsl.cmxs examples/blas_ex.native examples/blas_speed_test.native examples/bspline_ex.native examples/cheb_ex.native examples/combi_ex.native examples/const_ex.native examples/deriv_ex.native examples/eigen_ex.native examples/fft_c.native examples/fft_c2.native examples/fft_hc.native examples/fit_ex.native examples/histo_ex.native examples/integration_ex.native examples/interp_ex.native examples/linalg_ex.native examples/min_ex.native examples/monte_ex.native examples/multifit_data_ex.native examples/multifit_nlin_ex.native examples/multimin_ex.native examples/multiroot_ex.native examples/odeiv_ex.native examples/permut_ex.native examples/qrng_ex.native examples/rng_ex.native examples/root_ex.native examples/siman_ex.native examples/siman_tsp_ex.native examples/stats_ex.native examples/sum_ex.native examples/wavelet_ex.native -tag debug' terminated with error code 10")
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install gsl 1.18.5
+No changes have been performed
+'opam install gsl.1.18.5' failed.

@@ -1,0 +1,131 @@
+The following actions will be performed:
+  - install text 0.7.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[text: http] Command started
+[text: http] Command started
+[text.0.7.1] https://github.com/vbmithr/ocaml-text/archive/0.7.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[text: ./configure] Command started
++ ./configure "--disable-pcre" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/text.0.7.1)
+- ocamlfind ocamlopt -o setup.exe setup.ml || ocamlfind ocamlc -o setup.exe setup.ml || true
+- File "setup.ml", line 254, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 254, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "setup.ml", line 254, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 254, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- rm -f setup.cmi setup.cmo setup.cmx setup.o
+- ./setup.exe -configure --disable-pcre
+- make: ./setup.exe: Command not found
+- Makefile:38: recipe for target 'configure' failed
+- make: *** [configure] Error 127
+- ocamlfind ocamlopt -o setup.exe setup.ml || ocamlfind ocamlc -o setup.exe setup.ml || true
+- File "setup.ml", line 254, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 254, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "setup.ml", line 254, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 254, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- rm -f setup.cmi setup.cmo setup.cmx setup.o
+- ./setup.exe -configure --disable-pcre
+- make: ./setup.exe: Command not found
+- Makefile:38: recipe for target 'configure' failed
+- make: *** [configure] Error 127
+[ERROR] The compilation of text failed at "./configure --disable-pcre".
+[text: ocamlfind remove] Command started
++ ocamlfind "remove" "text" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/text.0.7.1)
+- ocamlfind ocamlopt -o setup.exe setup.ml || ocamlfind ocamlc -o setup.exe setup.ml || true
+- File "setup.ml", line 254, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 254, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "setup.ml", line 254, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 254, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- rm -f setup.cmi setup.cmo setup.cmx setup.o
+- ./setup.exe -configure --disable-pcre
+- make: ./setup.exe: Command not found
+- Makefile:38: recipe for target 'configure' failed
+- make: *** [configure] Error 127
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/text/META
+- ocamlfind ocamlopt -o setup.exe setup.ml || ocamlfind ocamlc -o setup.exe setup.ml || true
+- File "setup.ml", line 254, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 254, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "setup.ml", line 254, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "setup.ml", line 254, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- rm -f setup.cmi setup.cmo setup.cmx setup.o
+- ./setup.exe -configure --disable-pcre
+- make: ./setup.exe: Command not found
+- Makefile:38: recipe for target 'configure' failed
+- make: *** [configure] Error 127
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/text/META
+
+#=== ERROR while installing text.0.7.1 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ./configure --disable-pcre
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/text.0.7.1
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/text.0.7.1/text-24543.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/text.0.7.1/text-24543.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/text.0.7.1/text-24543.out
+### stdout ###
+# [...]
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "setup.ml", line 254, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# rm -f setup.cmi setup.cmo setup.cmx setup.o
+# ./setup.exe -configure --disable-pcre
+# make: ./setup.exe: Command not found
+# Makefile:38: recipe for target 'configure' failed
+# make: *** [configure] Error 127
+### stderr ###
+# [...]
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "setup.ml", line 254, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# rm -f setup.cmi setup.cmo setup.cmx setup.o
+# ./setup.exe -configure --disable-pcre
+# make: ./setup.exe: Command not found
+# Makefile:38: recipe for target 'configure' failed
+# make: *** [configure] Error 127
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install text 0.7.1
+No changes have been performed
+'opam install text.0.7.1' failed.

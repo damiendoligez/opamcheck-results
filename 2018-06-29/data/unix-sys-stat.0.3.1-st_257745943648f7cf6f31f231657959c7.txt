@@ -1,0 +1,349 @@
+The following actions will be performed:
+  - install unix-sys-stat 0.3.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[unix-sys-stat: http] Command started
+[unix-sys-stat: http] Command started
+[unix-sys-stat.0.3.1] https://github.com/dsheets/ocaml-unix-sys-stat/archive/0.3.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[unix-sys-stat: make build] Command started
++ make "build" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/unix-sys-stat.0.3.1)
+- CTYPES_LIB_DIR=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ctypes OCAML_LIB_DIR=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml ocamlbuild -use-ocamlfind -classic-display sys_stat.cma sys_stat.cmxa unix_sys_stat.cma unix_sys_stat.cmxa libunix_sys_stat_stubs.a dllunix_sys_stat_stubs.so sys_stat_map.byte
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat.mli > lib/sys_stat.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmi lib/sys_stat.mli
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat.ml > lib/sys_stat.ml.depends
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat_host.mli > lib/sys_stat_host.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_host.cmi lib/sys_stat_host.mli
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat_host.ml > lib/sys_stat_host.ml.depends
+- ocamlfind ocamldep -package bytes -modules src/sys_stat_srcgen.ml > src/sys_stat_srcgen.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I src -I lib -I unix -o src/sys_stat_srcgen.cmo src/sys_stat_srcgen.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmo lib/sys_stat.ml
+- + ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmo lib/sys_stat.ml
+- File "lib/sys_stat.ml", line 227, characters 11-25:
+- Warning 3: deprecated: Stdlib.Char.uppercase
+- Use Char.uppercase_ascii instead.
+- ocamlfind ocamlc -linkpkg -g -package bytes -I lib -I src lib/sys_stat.cmo src/sys_stat_srcgen.cmo -o src/sys_stat_srcgen.byte
+- src/sys_stat_srcgen.byte < maps/linux_4_1_12_musl_1_1_12 > lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml > lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml.depends
+- src/sys_stat_srcgen.byte < maps/osx_10_11_2 > lib/sys_stat_map_osx_10_11_2.ml
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat_map_osx_10_11_2.ml > lib/sys_stat_map_osx_10_11_2.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_map_linux_4_1_12_musl_1_1_12.cmo lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_map_osx_10_11_2.cmo lib/sys_stat_map_osx_10_11_2.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_host.cmo lib/sys_stat_host.ml
+- ocamlfind ocamlc -a -package bytes -I lib lib/sys_stat.cmo lib/sys_stat_map_linux_4_1_12_musl_1_1_12.cmo lib/sys_stat_map_osx_10_11_2.cmo lib/sys_stat_host.cmo -o lib/sys_stat.cma
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmx lib/sys_stat.ml
+- + ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmx lib/sys_stat.ml
+- File "lib/sys_stat.ml", line 227, characters 11-25:
+- Warning 3: deprecated: Stdlib.Char.uppercase
+- Use Char.uppercase_ascii instead.
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_map_linux_4_1_12_musl_1_1_12.cmx lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_map_osx_10_11_2.cmx lib/sys_stat_map_osx_10_11_2.ml
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_host.cmx lib/sys_stat_host.ml
+- ocamlfind ocamlopt -a -package bytes -I lib lib/sys_stat.cmx lib/sys_stat_map_linux_4_1_12_musl_1_1_12.cmx lib/sys_stat_map_osx_10_11_2.cmx lib/sys_stat_host.cmx -o lib/sys_stat.cmxa
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/unix_sys_stat_bindgen.ml > lib_gen/unix_sys_stat_bindgen.ml.depends
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/unix_sys_stat_bindings.ml > lib_gen/unix_sys_stat_bindings.ml.depends
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/unix_sys_stat_types.ml > lib_gen/unix_sys_stat_types.ml.depends
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/unix_sys_stat_typegen.ml > lib_gen/unix_sys_stat_typegen.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I src -o lib_gen/unix_sys_stat_types.cmo lib_gen/unix_sys_stat_types.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I src -o lib_gen/unix_sys_stat_typegen.cmo lib_gen/unix_sys_stat_typegen.ml
+- ocamlfind ocamlc -linkpkg -g -package ctypes.stubs -I lib_gen lib_gen/unix_sys_stat_types.cmo lib_gen/unix_sys_stat_typegen.cmo -o lib_gen/unix_sys_stat_typegen.byte
+- lib_gen/unix_sys_stat_typegen.byte
+- cc -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ctypes -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -o lib_gen/unix_sys_stat_types_detect lib_gen/unix_sys_stat_types_detect.c
+- lib_gen/unix_sys_stat_types_detect > unix/unix_sys_stat_types_detected.ml
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_types_detected.ml > unix/unix_sys_stat_types_detected.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_types_detected.cmo unix/unix_sys_stat_types_detected.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I src -o lib_gen/unix_sys_stat_bindings.cmo lib_gen/unix_sys_stat_bindings.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I src -o lib_gen/unix_sys_stat_bindgen.cmo lib_gen/unix_sys_stat_bindgen.ml
+- ocamlfind ocamlc -linkpkg -g -package ctypes.stubs -I lib_gen -I unix lib_gen/unix_sys_stat_types.cmo unix/unix_sys_stat_types_detected.cmo lib_gen/unix_sys_stat_bindings.cmo lib_gen/unix_sys_stat_bindgen.cmo -o lib_gen/unix_sys_stat_bindgen.byte
+- lib_gen/unix_sys_stat_bindgen.byte
+- ocamlfind ocamlc -g -ccopt -I/usr/local/include -g -package ctypes.stubs -package bytes -package unix-errno.unix -c unix/unix_sys_stat_util.c
+- mv unix_sys_stat_util.o unix/unix_sys_stat_util.o
+- ocamlfind ocamlc -g -ccopt -I/usr/local/include -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ctypes -g -package ctypes.stubs -package bytes -package unix-errno.unix -c unix/unix_sys_stat_stubs.c
+- mv unix_sys_stat_stubs.o unix/unix_sys_stat_stubs.o
+- ocamlfind ocamlmklib -o unix/unix_sys_stat_stubs -L/usr/local/lib unix/unix_sys_stat_util.o unix/unix_sys_stat_stubs.o
+- CTYPES_LIB_DIR=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ctypes OCAML_LIB_DIR=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml ocamlbuild -use-ocamlfind -classic-display sys_stat.cma sys_stat.cmxa unix_sys_stat.cma unix_sys_stat.cmxa libunix_sys_stat_stubs.a dllunix_sys_stat_stubs.so sys_stat_map.byte
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat.mli > lib/sys_stat.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmi lib/sys_stat.mli
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat.ml > lib/sys_stat.ml.depends
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat_host.mli > lib/sys_stat_host.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_host.cmi lib/sys_stat_host.mli
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat_host.ml > lib/sys_stat_host.ml.depends
+- ocamlfind ocamldep -package bytes -modules src/sys_stat_srcgen.ml > src/sys_stat_srcgen.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I src -I lib -I unix -o src/sys_stat_srcgen.cmo src/sys_stat_srcgen.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmo lib/sys_stat.ml
+- + ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmo lib/sys_stat.ml
+- File "lib/sys_stat.ml", line 227, characters 11-25:
+- Warning 3: deprecated: Stdlib.Char.uppercase
+- Use Char.uppercase_ascii instead.
+- ocamlfind ocamlc -linkpkg -g -package bytes -I lib -I src lib/sys_stat.cmo src/sys_stat_srcgen.cmo -o src/sys_stat_srcgen.byte
+- src/sys_stat_srcgen.byte < maps/linux_4_1_12_musl_1_1_12 > lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml > lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml.depends
+- src/sys_stat_srcgen.byte < maps/osx_10_11_2 > lib/sys_stat_map_osx_10_11_2.ml
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat_map_osx_10_11_2.ml > lib/sys_stat_map_osx_10_11_2.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_map_linux_4_1_12_musl_1_1_12.cmo lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_map_osx_10_11_2.cmo lib/sys_stat_map_osx_10_11_2.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_host.cmo lib/sys_stat_host.ml
+- ocamlfind ocamlc -a -package bytes -I lib lib/sys_stat.cmo lib/sys_stat_map_linux_4_1_12_musl_1_1_12.cmo lib/sys_stat_map_osx_10_11_2.cmo lib/sys_stat_host.cmo -o lib/sys_stat.cma
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmx lib/sys_stat.ml
+- + ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmx lib/sys_stat.ml
+- File "lib/sys_stat.ml", line 227, characters 11-25:
+- Warning 3: deprecated: Stdlib.Char.uppercase
+- Use Char.uppercase_ascii instead.
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_map_linux_4_1_12_musl_1_1_12.cmx lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_map_osx_10_11_2.cmx lib/sys_stat_map_osx_10_11_2.ml
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_host.cmx lib/sys_stat_host.ml
+- ocamlfind ocamlopt -a -package bytes -I lib lib/sys_stat.cmx lib/sys_stat_map_linux_4_1_12_musl_1_1_12.cmx lib/sys_stat_map_osx_10_11_2.cmx lib/sys_stat_host.cmx -o lib/sys_stat.cmxa
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/unix_sys_stat_bindgen.ml > lib_gen/unix_sys_stat_bindgen.ml.depends
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/unix_sys_stat_bindings.ml > lib_gen/unix_sys_stat_bindings.ml.depends
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/unix_sys_stat_types.ml > lib_gen/unix_sys_stat_types.ml.depends
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/unix_sys_stat_typegen.ml > lib_gen/unix_sys_stat_typegen.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I src -o lib_gen/unix_sys_stat_types.cmo lib_gen/unix_sys_stat_types.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I src -o lib_gen/unix_sys_stat_typegen.cmo lib_gen/unix_sys_stat_typegen.ml
+- ocamlfind ocamlc -linkpkg -g -package ctypes.stubs -I lib_gen lib_gen/unix_sys_stat_types.cmo lib_gen/unix_sys_stat_typegen.cmo -o lib_gen/unix_sys_stat_typegen.byte
+- lib_gen/unix_sys_stat_typegen.byte
+- cc -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ctypes -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -o lib_gen/unix_sys_stat_types_detect lib_gen/unix_sys_stat_types_detect.c
+- lib_gen/unix_sys_stat_types_detect > unix/unix_sys_stat_types_detected.ml
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_types_detected.ml > unix/unix_sys_stat_types_detected.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_types_detected.cmo unix/unix_sys_stat_types_detected.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I src -o lib_gen/unix_sys_stat_bindings.cmo lib_gen/unix_sys_stat_bindings.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I src -o lib_gen/unix_sys_stat_bindgen.cmo lib_gen/unix_sys_stat_bindgen.ml
+- ocamlfind ocamlc -linkpkg -g -package ctypes.stubs -I lib_gen -I unix lib_gen/unix_sys_stat_types.cmo unix/unix_sys_stat_types_detected.cmo lib_gen/unix_sys_stat_bindings.cmo lib_gen/unix_sys_stat_bindgen.cmo -o lib_gen/unix_sys_stat_bindgen.byte
+- lib_gen/unix_sys_stat_bindgen.byte
+- ocamlfind ocamlc -g -ccopt -I/usr/local/include -g -package ctypes.stubs -package bytes -package unix-errno.unix -c unix/unix_sys_stat_util.c
+- mv unix_sys_stat_util.o unix/unix_sys_stat_util.o
+- ocamlfind ocamlc -g -ccopt -I/usr/local/include -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ctypes -g -package ctypes.stubs -package bytes -package unix-errno.unix -c unix/unix_sys_stat_stubs.c
+- mv unix_sys_stat_stubs.o unix/unix_sys_stat_stubs.o
+- ocamlfind ocamlmklib -o unix/unix_sys_stat_stubs -L/usr/local/lib unix/unix_sys_stat_util.o unix/unix_sys_stat_stubs.o
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/sys_stat_unix.mli > unix/sys_stat_unix.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/sys_stat_unix.cmi unix/sys_stat_unix.mli
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/sys_stat_unix.ml > unix/sys_stat_unix.ml.depends
+- cp -p lib_gen/unix_sys_stat_bindings.ml unix/unix_sys_stat_bindings.ml
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_bindings.ml > unix/unix_sys_stat_bindings.ml.depends
+- cp -p lib_gen/unix_sys_stat_types.ml unix/unix_sys_stat_types.ml
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_types.ml > unix/unix_sys_stat_types.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_types.cmo unix/unix_sys_stat_types.ml
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_generated.ml > unix/unix_sys_stat_generated.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_bindings.cmo unix/unix_sys_stat_bindings.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_generated.cmo unix/unix_sys_stat_generated.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/sys_stat_unix.cmo unix/sys_stat_unix.ml
+- + ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/sys_stat_unix.cmo unix/sys_stat_unix.ml
+- File "unix/sys_stat_unix.ml", line 162, characters 14-35:
+- Error: Unbound module PosixTypes.Dev
+- Command exited with code 2.
+- Makefile:49: recipe for target 'build' failed
+- make: *** [build] Error 10
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/sys_stat_unix.mli > unix/sys_stat_unix.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/sys_stat_unix.cmi unix/sys_stat_unix.mli
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/sys_stat_unix.ml > unix/sys_stat_unix.ml.depends
+- cp -p lib_gen/unix_sys_stat_bindings.ml unix/unix_sys_stat_bindings.ml
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_bindings.ml > unix/unix_sys_stat_bindings.ml.depends
+- cp -p lib_gen/unix_sys_stat_types.ml unix/unix_sys_stat_types.ml
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_types.ml > unix/unix_sys_stat_types.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_types.cmo unix/unix_sys_stat_types.ml
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_generated.ml > unix/unix_sys_stat_generated.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_bindings.cmo unix/unix_sys_stat_bindings.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_generated.cmo unix/unix_sys_stat_generated.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/sys_stat_unix.cmo unix/sys_stat_unix.ml
+- + ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/sys_stat_unix.cmo unix/sys_stat_unix.ml
+- File "unix/sys_stat_unix.ml", line 162, characters 14-35:
+- Error: Unbound module PosixTypes.Dev
+- Command exited with code 2.
+- Makefile:49: recipe for target 'build' failed
+- make: *** [build] Error 10
+[ERROR] The compilation of unix-sys-stat failed at "make build".
+[unix-sys-stat: make uninstall] Command started
++ make "uninstall" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/unix-sys-stat.0.3.1)
+- CTYPES_LIB_DIR=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ctypes OCAML_LIB_DIR=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml ocamlbuild -use-ocamlfind -classic-display sys_stat.cma sys_stat.cmxa unix_sys_stat.cma unix_sys_stat.cmxa libunix_sys_stat_stubs.a dllunix_sys_stat_stubs.so sys_stat_map.byte
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat.mli > lib/sys_stat.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmi lib/sys_stat.mli
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat.ml > lib/sys_stat.ml.depends
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat_host.mli > lib/sys_stat_host.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_host.cmi lib/sys_stat_host.mli
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat_host.ml > lib/sys_stat_host.ml.depends
+- ocamlfind ocamldep -package bytes -modules src/sys_stat_srcgen.ml > src/sys_stat_srcgen.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I src -I lib -I unix -o src/sys_stat_srcgen.cmo src/sys_stat_srcgen.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmo lib/sys_stat.ml
+- + ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmo lib/sys_stat.ml
+- File "lib/sys_stat.ml", line 227, characters 11-25:
+- Warning 3: deprecated: Stdlib.Char.uppercase
+- Use Char.uppercase_ascii instead.
+- ocamlfind ocamlc -linkpkg -g -package bytes -I lib -I src lib/sys_stat.cmo src/sys_stat_srcgen.cmo -o src/sys_stat_srcgen.byte
+- src/sys_stat_srcgen.byte < maps/linux_4_1_12_musl_1_1_12 > lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml > lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml.depends
+- src/sys_stat_srcgen.byte < maps/osx_10_11_2 > lib/sys_stat_map_osx_10_11_2.ml
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat_map_osx_10_11_2.ml > lib/sys_stat_map_osx_10_11_2.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_map_linux_4_1_12_musl_1_1_12.cmo lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_map_osx_10_11_2.cmo lib/sys_stat_map_osx_10_11_2.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_host.cmo lib/sys_stat_host.ml
+- ocamlfind ocamlc -a -package bytes -I lib lib/sys_stat.cmo lib/sys_stat_map_linux_4_1_12_musl_1_1_12.cmo lib/sys_stat_map_osx_10_11_2.cmo lib/sys_stat_host.cmo -o lib/sys_stat.cma
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmx lib/sys_stat.ml
+- + ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmx lib/sys_stat.ml
+- File "lib/sys_stat.ml", line 227, characters 11-25:
+- Warning 3: deprecated: Stdlib.Char.uppercase
+- Use Char.uppercase_ascii instead.
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_map_linux_4_1_12_musl_1_1_12.cmx lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_map_osx_10_11_2.cmx lib/sys_stat_map_osx_10_11_2.ml
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_host.cmx lib/sys_stat_host.ml
+- ocamlfind ocamlopt -a -package bytes -I lib lib/sys_stat.cmx lib/sys_stat_map_linux_4_1_12_musl_1_1_12.cmx lib/sys_stat_map_osx_10_11_2.cmx lib/sys_stat_host.cmx -o lib/sys_stat.cmxa
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/unix_sys_stat_bindgen.ml > lib_gen/unix_sys_stat_bindgen.ml.depends
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/unix_sys_stat_bindings.ml > lib_gen/unix_sys_stat_bindings.ml.depends
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/unix_sys_stat_types.ml > lib_gen/unix_sys_stat_types.ml.depends
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/unix_sys_stat_typegen.ml > lib_gen/unix_sys_stat_typegen.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I src -o lib_gen/unix_sys_stat_types.cmo lib_gen/unix_sys_stat_types.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I src -o lib_gen/unix_sys_stat_typegen.cmo lib_gen/unix_sys_stat_typegen.ml
+- ocamlfind ocamlc -linkpkg -g -package ctypes.stubs -I lib_gen lib_gen/unix_sys_stat_types.cmo lib_gen/unix_sys_stat_typegen.cmo -o lib_gen/unix_sys_stat_typegen.byte
+- lib_gen/unix_sys_stat_typegen.byte
+- cc -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ctypes -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -o lib_gen/unix_sys_stat_types_detect lib_gen/unix_sys_stat_types_detect.c
+- lib_gen/unix_sys_stat_types_detect > unix/unix_sys_stat_types_detected.ml
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_types_detected.ml > unix/unix_sys_stat_types_detected.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_types_detected.cmo unix/unix_sys_stat_types_detected.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I src -o lib_gen/unix_sys_stat_bindings.cmo lib_gen/unix_sys_stat_bindings.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I src -o lib_gen/unix_sys_stat_bindgen.cmo lib_gen/unix_sys_stat_bindgen.ml
+- ocamlfind ocamlc -linkpkg -g -package ctypes.stubs -I lib_gen -I unix lib_gen/unix_sys_stat_types.cmo unix/unix_sys_stat_types_detected.cmo lib_gen/unix_sys_stat_bindings.cmo lib_gen/unix_sys_stat_bindgen.cmo -o lib_gen/unix_sys_stat_bindgen.byte
+- lib_gen/unix_sys_stat_bindgen.byte
+- ocamlfind ocamlc -g -ccopt -I/usr/local/include -g -package ctypes.stubs -package bytes -package unix-errno.unix -c unix/unix_sys_stat_util.c
+- mv unix_sys_stat_util.o unix/unix_sys_stat_util.o
+- ocamlfind ocamlc -g -ccopt -I/usr/local/include -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ctypes -g -package ctypes.stubs -package bytes -package unix-errno.unix -c unix/unix_sys_stat_stubs.c
+- mv unix_sys_stat_stubs.o unix/unix_sys_stat_stubs.o
+- ocamlfind ocamlmklib -o unix/unix_sys_stat_stubs -L/usr/local/lib unix/unix_sys_stat_util.o unix/unix_sys_stat_stubs.o
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/sys_stat_unix.mli > unix/sys_stat_unix.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/sys_stat_unix.cmi unix/sys_stat_unix.mli
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/sys_stat_unix.ml > unix/sys_stat_unix.ml.depends
+- cp -p lib_gen/unix_sys_stat_bindings.ml unix/unix_sys_stat_bindings.ml
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_bindings.ml > unix/unix_sys_stat_bindings.ml.depends
+- cp -p lib_gen/unix_sys_stat_types.ml unix/unix_sys_stat_types.ml
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_types.ml > unix/unix_sys_stat_types.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_types.cmo unix/unix_sys_stat_types.ml
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_generated.ml > unix/unix_sys_stat_generated.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_bindings.cmo unix/unix_sys_stat_bindings.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_generated.cmo unix/unix_sys_stat_generated.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/sys_stat_unix.cmo unix/sys_stat_unix.ml
+- + ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/sys_stat_unix.cmo unix/sys_stat_unix.ml
+- File "unix/sys_stat_unix.ml", line 162, characters 14-35:
+- Error: Unbound module PosixTypes.Dev
+- Command exited with code 2.
+- Makefile:49: recipe for target 'build' failed
+- make: *** [build] Error 10
+- ocamlfind remove unix-sys-stat
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/unix-sys-stat/META
+- CTYPES_LIB_DIR=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ctypes OCAML_LIB_DIR=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml ocamlbuild -use-ocamlfind -classic-display sys_stat.cma sys_stat.cmxa unix_sys_stat.cma unix_sys_stat.cmxa libunix_sys_stat_stubs.a dllunix_sys_stat_stubs.so sys_stat_map.byte
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat.mli > lib/sys_stat.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmi lib/sys_stat.mli
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat.ml > lib/sys_stat.ml.depends
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat_host.mli > lib/sys_stat_host.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_host.cmi lib/sys_stat_host.mli
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat_host.ml > lib/sys_stat_host.ml.depends
+- ocamlfind ocamldep -package bytes -modules src/sys_stat_srcgen.ml > src/sys_stat_srcgen.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I src -I lib -I unix -o src/sys_stat_srcgen.cmo src/sys_stat_srcgen.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmo lib/sys_stat.ml
+- + ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmo lib/sys_stat.ml
+- File "lib/sys_stat.ml", line 227, characters 11-25:
+- Warning 3: deprecated: Stdlib.Char.uppercase
+- Use Char.uppercase_ascii instead.
+- ocamlfind ocamlc -linkpkg -g -package bytes -I lib -I src lib/sys_stat.cmo src/sys_stat_srcgen.cmo -o src/sys_stat_srcgen.byte
+- src/sys_stat_srcgen.byte < maps/linux_4_1_12_musl_1_1_12 > lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml > lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml.depends
+- src/sys_stat_srcgen.byte < maps/osx_10_11_2 > lib/sys_stat_map_osx_10_11_2.ml
+- ocamlfind ocamldep -package bytes -modules lib/sys_stat_map_osx_10_11_2.ml > lib/sys_stat_map_osx_10_11_2.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_map_linux_4_1_12_musl_1_1_12.cmo lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_map_osx_10_11_2.cmo lib/sys_stat_map_osx_10_11_2.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_host.cmo lib/sys_stat_host.ml
+- ocamlfind ocamlc -a -package bytes -I lib lib/sys_stat.cmo lib/sys_stat_map_linux_4_1_12_musl_1_1_12.cmo lib/sys_stat_map_osx_10_11_2.cmo lib/sys_stat_host.cmo -o lib/sys_stat.cma
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmx lib/sys_stat.ml
+- + ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat.cmx lib/sys_stat.ml
+- File "lib/sys_stat.ml", line 227, characters 11-25:
+- Warning 3: deprecated: Stdlib.Char.uppercase
+- Use Char.uppercase_ascii instead.
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_map_linux_4_1_12_musl_1_1_12.cmx lib/sys_stat_map_linux_4_1_12_musl_1_1_12.ml
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_map_osx_10_11_2.cmx lib/sys_stat_map_osx_10_11_2.ml
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I src -o lib/sys_stat_host.cmx lib/sys_stat_host.ml
+- ocamlfind ocamlopt -a -package bytes -I lib lib/sys_stat.cmx lib/sys_stat_map_linux_4_1_12_musl_1_1_12.cmx lib/sys_stat_map_osx_10_11_2.cmx lib/sys_stat_host.cmx -o lib/sys_stat.cmxa
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/unix_sys_stat_bindgen.ml > lib_gen/unix_sys_stat_bindgen.ml.depends
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/unix_sys_stat_bindings.ml > lib_gen/unix_sys_stat_bindings.ml.depends
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/unix_sys_stat_types.ml > lib_gen/unix_sys_stat_types.ml.depends
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/unix_sys_stat_typegen.ml > lib_gen/unix_sys_stat_typegen.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I src -o lib_gen/unix_sys_stat_types.cmo lib_gen/unix_sys_stat_types.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I src -o lib_gen/unix_sys_stat_typegen.cmo lib_gen/unix_sys_stat_typegen.ml
+- ocamlfind ocamlc -linkpkg -g -package ctypes.stubs -I lib_gen lib_gen/unix_sys_stat_types.cmo lib_gen/unix_sys_stat_typegen.cmo -o lib_gen/unix_sys_stat_typegen.byte
+- lib_gen/unix_sys_stat_typegen.byte
+- cc -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ctypes -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ocaml -o lib_gen/unix_sys_stat_types_detect lib_gen/unix_sys_stat_types_detect.c
+- lib_gen/unix_sys_stat_types_detect > unix/unix_sys_stat_types_detected.ml
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_types_detected.ml > unix/unix_sys_stat_types_detected.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_types_detected.cmo unix/unix_sys_stat_types_detected.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I src -o lib_gen/unix_sys_stat_bindings.cmo lib_gen/unix_sys_stat_bindings.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I src -o lib_gen/unix_sys_stat_bindgen.cmo lib_gen/unix_sys_stat_bindgen.ml
+- ocamlfind ocamlc -linkpkg -g -package ctypes.stubs -I lib_gen -I unix lib_gen/unix_sys_stat_types.cmo unix/unix_sys_stat_types_detected.cmo lib_gen/unix_sys_stat_bindings.cmo lib_gen/unix_sys_stat_bindgen.cmo -o lib_gen/unix_sys_stat_bindgen.byte
+- lib_gen/unix_sys_stat_bindgen.byte
+- ocamlfind ocamlc -g -ccopt -I/usr/local/include -g -package ctypes.stubs -package bytes -package unix-errno.unix -c unix/unix_sys_stat_util.c
+- mv unix_sys_stat_util.o unix/unix_sys_stat_util.o
+- ocamlfind ocamlc -g -ccopt -I/usr/local/include -I /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/ctypes -g -package ctypes.stubs -package bytes -package unix-errno.unix -c unix/unix_sys_stat_stubs.c
+- mv unix_sys_stat_stubs.o unix/unix_sys_stat_stubs.o
+- ocamlfind ocamlmklib -o unix/unix_sys_stat_stubs -L/usr/local/lib unix/unix_sys_stat_util.o unix/unix_sys_stat_stubs.o
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/sys_stat_unix.mli > unix/sys_stat_unix.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/sys_stat_unix.cmi unix/sys_stat_unix.mli
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/sys_stat_unix.ml > unix/sys_stat_unix.ml.depends
+- cp -p lib_gen/unix_sys_stat_bindings.ml unix/unix_sys_stat_bindings.ml
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_bindings.ml > unix/unix_sys_stat_bindings.ml.depends
+- cp -p lib_gen/unix_sys_stat_types.ml unix/unix_sys_stat_types.ml
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_types.ml > unix/unix_sys_stat_types.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_types.cmo unix/unix_sys_stat_types.ml
+- ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_generated.ml > unix/unix_sys_stat_generated.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_bindings.cmo unix/unix_sys_stat_bindings.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_generated.cmo unix/unix_sys_stat_generated.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/sys_stat_unix.cmo unix/sys_stat_unix.ml
+- + ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/sys_stat_unix.cmo unix/sys_stat_unix.ml
+- File "unix/sys_stat_unix.ml", line 162, characters 14-35:
+- Error: Unbound module PosixTypes.Dev
+- Command exited with code 2.
+- Makefile:49: recipe for target 'build' failed
+- make: *** [build] Error 10
+- ocamlfind remove unix-sys-stat
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/unix-sys-stat/META
+
+#=== ERROR while installing unix-sys-stat.0.3.1 ===============================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make build
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/unix-sys-stat.0.3.1
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/unix-sys-stat.0.3.1/unix-sys-stat-19542.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/unix-sys-stat.0.3.1/unix-sys-stat-19542.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/unix-sys-stat.0.3.1/unix-sys-stat-19542.out
+### stdout ###
+# [...]
+# ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_generated.ml > unix/unix_sys_stat_generated.ml.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_bindings.cmo unix/unix_sys_stat_bindings.ml
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_generated.cmo unix/unix_sys_stat_generated.ml
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/sys_stat_unix.cmo unix/sys_stat_unix.ml
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/sys_stat_unix.cmo unix/sys_stat_unix.ml
+# File "unix/sys_stat_unix.ml", line 162, characters 14-35:
+# Error: Unbound module PosixTypes.Dev
+# Command exited with code 2.
+# Makefile:49: recipe for target 'build' failed
+# make: *** [build] Error 10
+### stderr ###
+# [...]
+# ocamlfind ocamldep -package ctypes.stubs -package bytes -package unix-errno.unix -modules unix/unix_sys_stat_generated.ml > unix/unix_sys_stat_generated.ml.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_bindings.cmo unix/unix_sys_stat_bindings.ml
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/unix_sys_stat_generated.cmo unix/unix_sys_stat_generated.ml
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/sys_stat_unix.cmo unix/sys_stat_unix.ml
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -strict-sequence -package ctypes.stubs -package bytes -package unix-errno.unix -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I src -o unix/sys_stat_unix.cmo unix/sys_stat_unix.ml
+# File "unix/sys_stat_unix.ml", line 162, characters 14-35:
+# Error: Unbound module PosixTypes.Dev
+# Command exited with code 2.
+# Makefile:49: recipe for target 'build' failed
+# make: *** [build] Error 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install unix-sys-stat 0.3.1
+No changes have been performed
+'opam install unix-sys-stat.0.3.1' failed.

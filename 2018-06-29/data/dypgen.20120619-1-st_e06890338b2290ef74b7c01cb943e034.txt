@@ -1,0 +1,149 @@
+The following actions will be performed:
+  - install dypgen 20120619-1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[dypgen: http] Command started
+[dypgen: http] Command started
+[dypgen.20120619-1] http://dypgen.free.fr/dypgen-20120619-1.tar.bz2 downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[dypgen: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1)
+- cd dyplib; make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1/dyplib'
+- ocamlc  -c dyp.mli
+- ocamlc  -c priority_by_relation.ml
+- ocamlc  -c automaton.ml
+- ocamlc  -c dyplex.ml
+- File "dyplex.ml", line 590, characters 37-54:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:54: recipe for target 'dyplex.cmo' failed
+- make[1]: *** [dyplex.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1/dyplib'
+- Makefile:6: recipe for target 'dyp' failed
+- make: *** [dyp] Error 2
+- cd dyplib; make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1/dyplib'
+- ocamlc  -c dyp.mli
+- ocamlc  -c priority_by_relation.ml
+- ocamlc  -c automaton.ml
+- ocamlc  -c dyplex.ml
+- File "dyplex.ml", line 590, characters 37-54:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:54: recipe for target 'dyplex.cmo' failed
+- make[1]: *** [dyplex.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1/dyplib'
+- Makefile:6: recipe for target 'dyp' failed
+- make: *** [dyp] Error 2
+[ERROR] The compilation of dypgen failed at "make".
+[dypgen: ocamlfind remove] Command started
++ ocamlfind "remove" "dypgen" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1)
+- cd dyplib; make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1/dyplib'
+- ocamlc  -c dyp.mli
+- ocamlc  -c priority_by_relation.ml
+- ocamlc  -c automaton.ml
+- ocamlc  -c dyplex.ml
+- File "dyplex.ml", line 590, characters 37-54:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:54: recipe for target 'dyplex.cmo' failed
+- make[1]: *** [dyplex.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1/dyplib'
+- Makefile:6: recipe for target 'dyp' failed
+- make: *** [dyp] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/dypgen/META
+- cd dyplib; make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1/dyplib'
+- ocamlc  -c dyp.mli
+- ocamlc  -c priority_by_relation.ml
+- ocamlc  -c automaton.ml
+- ocamlc  -c dyplex.ml
+- File "dyplex.ml", line 590, characters 37-54:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:54: recipe for target 'dyplex.cmo' failed
+- make[1]: *** [dyplex.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1/dyplib'
+- Makefile:6: recipe for target 'dyp' failed
+- make: *** [dyp] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/dypgen/META
+[dypgen: ocamlfind remove] Command started
++ ocamlfind "remove" "dyp" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1)
+- cd dyplib; make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1/dyplib'
+- ocamlc  -c dyp.mli
+- ocamlc  -c priority_by_relation.ml
+- ocamlc  -c automaton.ml
+- ocamlc  -c dyplex.ml
+- File "dyplex.ml", line 590, characters 37-54:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:54: recipe for target 'dyplex.cmo' failed
+- make[1]: *** [dyplex.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1/dyplib'
+- Makefile:6: recipe for target 'dyp' failed
+- make: *** [dyp] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/dypgen/META
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/dyp/META
+- cd dyplib; make
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1/dyplib'
+- ocamlc  -c dyp.mli
+- ocamlc  -c priority_by_relation.ml
+- ocamlc  -c automaton.ml
+- ocamlc  -c dyplex.ml
+- File "dyplex.ml", line 590, characters 37-54:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:54: recipe for target 'dyplex.cmo' failed
+- make[1]: *** [dyplex.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1/dyplib'
+- Makefile:6: recipe for target 'dyp' failed
+- make: *** [dyp] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/dypgen/META
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/dyp/META
+
+#=== ERROR while installing dypgen.20120619-1 =================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1/dypgen-821.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1/dypgen-821.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1/dypgen-821.out
+### stdout ###
+# [...]
+# ocamlc  -c automaton.ml
+# ocamlc  -c dyplex.ml
+# File "dyplex.ml", line 590, characters 37-54:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:54: recipe for target 'dyplex.cmo' failed
+# make[1]: *** [dyplex.cmo] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1/dyplib'
+# Makefile:6: recipe for target 'dyp' failed
+# make: *** [dyp] Error 2
+### stderr ###
+# [...]
+# ocamlc  -c automaton.ml
+# ocamlc  -c dyplex.ml
+# File "dyplex.ml", line 590, characters 37-54:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:54: recipe for target 'dyplex.cmo' failed
+# make[1]: *** [dyplex.cmo] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/dypgen.20120619-1/dyplib'
+# Makefile:6: recipe for target 'dyp' failed
+# make: *** [dyp] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install dypgen 20120619-1
+No changes have been performed
+'opam install dypgen.20120619-1' failed.

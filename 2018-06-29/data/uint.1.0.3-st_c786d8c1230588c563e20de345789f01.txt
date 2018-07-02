@@ -1,0 +1,2845 @@
+The following actions will be performed:
+  - install uint 1.0.3
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[uint: http] Command started
+[uint: http] Command started
+[uint.1.0.3] https://github.com/andrenth/ocaml-uint/tarball/1.0.3 downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[uint: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/uint.1.0.3)
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ uint
+- Package version: ..................................... 1.0.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- 
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ uint
+- Package version: ..................................... 1.0.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- 
+[uint: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-build" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/uint.1.0.3)
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ uint
+- Package version: ..................................... 1.0.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- 
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ uint
+- Package version: ..................................... 1.0.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- 
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamldep -modules lib/uint.mli > lib/uint.mli.depends
+- ocamlfind ocamlc -c -g -I lib -I lib -o lib/uint.cmi lib/uint.mli
+- ocamlfind ocamldep -modules lib/uint.ml > lib/uint.ml.depends
+- ocamlfind ocamlc -c -g -I lib -I lib -o lib/uint.cmo lib/uint.ml
+- + ocamlfind ocamlc -c -g -I lib -I lib -o lib/uint.cmo lib/uint.ml
+- File "lib/uint.ml", line 109, characters 21-34:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "lib/uint.ml", line 117, characters 10-46:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- ocamlfind ocamlc -a lib/uint.cmo -o lib/uint.cma
+- ocamlfind ocamlopt -c -g -I lib -I lib -o lib/uint.cmx lib/uint.ml
+- + ocamlfind ocamlopt -c -g -I lib -I lib -o lib/uint.cmx lib/uint.ml
+- File "lib/uint.ml", line 109, characters 21-34:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "lib/uint.ml", line 117, characters 10-46:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- ocamlfind ocamlopt -a lib/uint.cmx -o lib/uint.cmxa
+- ocamlfind ocamlopt -shared lib/uint.cmx -o lib/uint.cmxs
+- ocamlfind ocamlc -g -c lib/uint32_stubs.c
+- + ocamlfind ocamlc -g -c lib/uint32_stubs.c
+- lib/uint32_stubs.c: In function 'uint32_cmp':
+- lib/uint32_stubs.c:17:5: error: unknown type name 'uint32'
+-      uint32 i1 = Uint32_val(v1);
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:17:17: note: in expansion of macro 'Uint32_val'
+-      uint32 i1 = Uint32_val(v1);
+-                  ^
+- lib/uint32_stubs.c:12:27: note: each undeclared identifier is reported only once for each function it appears in
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:17:17: note: in expansion of macro 'Uint32_val'
+-      uint32 i1 = Uint32_val(v1);
+-                  ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:17:17: note: in expansion of macro 'Uint32_val'
+-      uint32 i1 = Uint32_val(v1);
+-                  ^
+- lib/uint32_stubs.c:18:12: error: expected ';' before 'i2'
+-      uint32 i2 = Uint32_val(v2);
+-             ^
+- lib/uint32_stubs.c:19:18: error: 'i2' undeclared (first use in this function)
+-      return (i1 > i2) - (i1 < i2);
+-                   ^
+- lib/uint32_stubs.c: In function 'uint32_hash':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:25:12: note: in expansion of macro 'Uint32_val'
+-      return Uint32_val(v);
+-             ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:25:12: note: in expansion of macro 'Uint32_val'
+-      return Uint32_val(v);
+-             ^
+- lib/uint32_stubs.c: In function 'uint32_serialize':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:31:26: note: in expansion of macro 'Uint32_val'
+-      caml_serialize_int_4(Uint32_val(v));
+-                           ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:31:26: note: in expansion of macro 'Uint32_val'
+-      caml_serialize_int_4(Uint32_val(v));
+-                           ^
+- lib/uint32_stubs.c: In function 'uint32_deserialize':
+- lib/uint32_stubs.c:38:8: error: 'uint32' undeclared (first use in this function)
+-      *((uint32 *) dst) = caml_deserialize_uint_4();
+-         ^
+- lib/uint32_stubs.c:38:16: error: expected expression before ')' token
+-      *((uint32 *) dst) = caml_deserialize_uint_4();
+-                 ^
+- lib/uint32_stubs.c: At top level:
+- lib/uint32_stubs.c:52:13: error: unknown type name 'uint32'
+-  copy_uint32(uint32 i)
+-              ^
+- In file included from lib/uint32_stubs.c:9:0:
+- lib/uint32_stubs.c: In function 'uint32_add':
+- lib/uint32_stubs.c:64:17: warning: implicit declaration of function 'copy_uint32' [-Wimplicit-function-declaration]
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-                  ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:64:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:64:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:64:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:64:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:64:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_sub':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:71:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:71:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:71:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:71:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_mul':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:78:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:78:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:78:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:78:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_div':
+- lib/uint32_stubs.c:85:5: error: unknown type name 'uint32'
+-      uint32 divisor = Uint32_val(v2);
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:85:22: note: in expansion of macro 'Uint32_val'
+-      uint32 divisor = Uint32_val(v2);
+-                       ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:85:22: note: in expansion of macro 'Uint32_val'
+-      uint32 divisor = Uint32_val(v2);
+-                       ^
+- In file included from lib/uint32_stubs.c:9:0:
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:88:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) / divisor));
+-      ^
+- lib/uint32_stubs.c:88:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) / divisor));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_mod':
+- lib/uint32_stubs.c:95:5: error: unknown type name 'uint32'
+-      uint32 divisor = Uint32_val(v2);
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:95:22: note: in expansion of macro 'Uint32_val'
+-      uint32 divisor = Uint32_val(v2);
+-                       ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:95:22: note: in expansion of macro 'Uint32_val'
+-      uint32 divisor = Uint32_val(v2);
+-                       ^
+- In file included from lib/uint32_stubs.c:9:0:
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:98:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) % divisor));
+-      ^
+- lib/uint32_stubs.c:98:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) % divisor));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_and':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:105:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:105:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:105:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:105:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_or':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:112:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:112:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:112:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:112:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_xor':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:119:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:119:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:119:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:119:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_shift_left':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:126:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+-      ^
+- lib/uint32_stubs.c:126:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:126:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+-      ^
+- lib/uint32_stubs.c:126:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_shift_right':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:133:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+-      ^
+- lib/uint32_stubs.c:133:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:133:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+-      ^
+- lib/uint32_stubs.c:133:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_to_int':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:147:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:147:17: note: in expansion of macro 'Val_long'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-                  ^
+- lib/uint32_stubs.c:147:26: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-                           ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:147:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:147:17: note: in expansion of macro 'Val_long'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-                  ^
+- lib/uint32_stubs.c:147:26: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-                           ^
+- lib/uint32_stubs.c: In function 'uint32_of_float':
+- lib/uint32_stubs.c:154:30: error: 'uint32' undeclared (first use in this function)
+-      CAMLreturn (copy_uint32((uint32)Double_val(v)));
+-                               ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:154:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32((uint32)Double_val(v)));
+-      ^
+- lib/uint32_stubs.c: In function 'uint32_to_float':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:161:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:161:42: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+-                                           ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:161:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:161:42: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+-                                           ^
+- lib/uint32_stubs.c: In function 'uint32_of_int32':
+- lib/uint32_stubs.c:168:30: error: 'uint32' undeclared (first use in this function)
+-      CAMLreturn (copy_uint32((uint32)Int32_val(v)));
+-                               ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:168:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32((uint32)Int32_val(v)));
+-      ^
+- lib/uint32_stubs.c: In function 'uint32_to_int32':
+- lib/uint32_stubs.c:175:34: error: 'int32' undeclared (first use in this function)
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-                                   ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:175:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:175:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:175:40: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-                                         ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:175:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:175:40: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-                                         ^
+- lib/uint32_stubs.c: In function 'uint32_bits_of_float':
+- lib/uint32_stubs.c:182:22: error: unknown type name 'uint32'
+-      union { float d; uint32 i; } u;
+-                       ^
+- lib/uint32_stubs.c: In function 'uint32_float_of_bits':
+- lib/uint32_stubs.c:191:22: error: unknown type name 'uint32'
+-      union { float d; uint32 i; } u;
+-                       ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:192:11: note: in expansion of macro 'Uint32_val'
+-      u.i = Uint32_val(v);
+-            ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:192:11: note: in expansion of macro 'Uint32_val'
+-      u.i = Uint32_val(v);
+-            ^
+- lib/uint32_stubs.c: In function 'uint32_hash':
+- lib/uint32_stubs.c:26:1: warning: control reaches end of non-void function [-Wreturn-type]
+-  }
+-  ^
+- lib/uint32_stubs.c: In function 'uint32_cmp':
+- lib/uint32_stubs.c:20:1: warning: control reaches end of non-void function [-Wreturn-type]
+-  }
+-  ^
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' lib/uint.cma lib/uint.cmxa lib/uint.a lib/uint.cmxs lib/libuint32_stubs.a lib/dlluint32_stubs.so lib/uint32.cma lib/uint32.cmxa lib/uint32.a lib/uint32.cmxs lib/libuint64_stubs.a lib/dlluint64_stubs.so lib/uint64.cma lib/uint64.cmxa lib/uint64.a lib/uint64.cmxs lib/uint128.cma lib/uint128.cmxa lib/uint128.a lib/uint128.cmxs -tag debug' terminated with error code 10")
+- ocamlfind ocamldep -modules lib/uint.mli > lib/uint.mli.depends
+- ocamlfind ocamlc -c -g -I lib -I lib -o lib/uint.cmi lib/uint.mli
+- ocamlfind ocamldep -modules lib/uint.ml > lib/uint.ml.depends
+- ocamlfind ocamlc -c -g -I lib -I lib -o lib/uint.cmo lib/uint.ml
+- + ocamlfind ocamlc -c -g -I lib -I lib -o lib/uint.cmo lib/uint.ml
+- File "lib/uint.ml", line 109, characters 21-34:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "lib/uint.ml", line 117, characters 10-46:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- ocamlfind ocamlc -a lib/uint.cmo -o lib/uint.cma
+- ocamlfind ocamlopt -c -g -I lib -I lib -o lib/uint.cmx lib/uint.ml
+- + ocamlfind ocamlopt -c -g -I lib -I lib -o lib/uint.cmx lib/uint.ml
+- File "lib/uint.ml", line 109, characters 21-34:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "lib/uint.ml", line 117, characters 10-46:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- ocamlfind ocamlopt -a lib/uint.cmx -o lib/uint.cmxa
+- ocamlfind ocamlopt -shared lib/uint.cmx -o lib/uint.cmxs
+- ocamlfind ocamlc -g -c lib/uint32_stubs.c
+- + ocamlfind ocamlc -g -c lib/uint32_stubs.c
+- lib/uint32_stubs.c: In function 'uint32_cmp':
+- lib/uint32_stubs.c:17:5: error: unknown type name 'uint32'
+-      uint32 i1 = Uint32_val(v1);
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:17:17: note: in expansion of macro 'Uint32_val'
+-      uint32 i1 = Uint32_val(v1);
+-                  ^
+- lib/uint32_stubs.c:12:27: note: each undeclared identifier is reported only once for each function it appears in
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:17:17: note: in expansion of macro 'Uint32_val'
+-      uint32 i1 = Uint32_val(v1);
+-                  ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:17:17: note: in expansion of macro 'Uint32_val'
+-      uint32 i1 = Uint32_val(v1);
+-                  ^
+- lib/uint32_stubs.c:18:12: error: expected ';' before 'i2'
+-      uint32 i2 = Uint32_val(v2);
+-             ^
+- lib/uint32_stubs.c:19:18: error: 'i2' undeclared (first use in this function)
+-      return (i1 > i2) - (i1 < i2);
+-                   ^
+- lib/uint32_stubs.c: In function 'uint32_hash':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:25:12: note: in expansion of macro 'Uint32_val'
+-      return Uint32_val(v);
+-             ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:25:12: note: in expansion of macro 'Uint32_val'
+-      return Uint32_val(v);
+-             ^
+- lib/uint32_stubs.c: In function 'uint32_serialize':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:31:26: note: in expansion of macro 'Uint32_val'
+-      caml_serialize_int_4(Uint32_val(v));
+-                           ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:31:26: note: in expansion of macro 'Uint32_val'
+-      caml_serialize_int_4(Uint32_val(v));
+-                           ^
+- lib/uint32_stubs.c: In function 'uint32_deserialize':
+- lib/uint32_stubs.c:38:8: error: 'uint32' undeclared (first use in this function)
+-      *((uint32 *) dst) = caml_deserialize_uint_4();
+-         ^
+- lib/uint32_stubs.c:38:16: error: expected expression before ')' token
+-      *((uint32 *) dst) = caml_deserialize_uint_4();
+-                 ^
+- lib/uint32_stubs.c: At top level:
+- lib/uint32_stubs.c:52:13: error: unknown type name 'uint32'
+-  copy_uint32(uint32 i)
+-              ^
+- In file included from lib/uint32_stubs.c:9:0:
+- lib/uint32_stubs.c: In function 'uint32_add':
+- lib/uint32_stubs.c:64:17: warning: implicit declaration of function 'copy_uint32' [-Wimplicit-function-declaration]
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-                  ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:64:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:64:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:64:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:64:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:64:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_sub':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:71:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:71:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:71:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:71:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_mul':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:78:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:78:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:78:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:78:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_div':
+- lib/uint32_stubs.c:85:5: error: unknown type name 'uint32'
+-      uint32 divisor = Uint32_val(v2);
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:85:22: note: in expansion of macro 'Uint32_val'
+-      uint32 divisor = Uint32_val(v2);
+-                       ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:85:22: note: in expansion of macro 'Uint32_val'
+-      uint32 divisor = Uint32_val(v2);
+-                       ^
+- In file included from lib/uint32_stubs.c:9:0:
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:88:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) / divisor));
+-      ^
+- lib/uint32_stubs.c:88:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) / divisor));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_mod':
+- lib/uint32_stubs.c:95:5: error: unknown type name 'uint32'
+-      uint32 divisor = Uint32_val(v2);
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:95:22: note: in expansion of macro 'Uint32_val'
+-      uint32 divisor = Uint32_val(v2);
+-                       ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:95:22: note: in expansion of macro 'Uint32_val'
+-      uint32 divisor = Uint32_val(v2);
+-                       ^
+- In file included from lib/uint32_stubs.c:9:0:
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:98:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) % divisor));
+-      ^
+- lib/uint32_stubs.c:98:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) % divisor));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_and':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:105:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:105:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:105:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:105:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_or':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:112:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:112:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:112:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:112:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_xor':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:119:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:119:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:119:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:119:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_shift_left':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:126:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+-      ^
+- lib/uint32_stubs.c:126:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:126:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+-      ^
+- lib/uint32_stubs.c:126:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_shift_right':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:133:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+-      ^
+- lib/uint32_stubs.c:133:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:133:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+-      ^
+- lib/uint32_stubs.c:133:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_to_int':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:147:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:147:17: note: in expansion of macro 'Val_long'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-                  ^
+- lib/uint32_stubs.c:147:26: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-                           ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:147:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:147:17: note: in expansion of macro 'Val_long'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-                  ^
+- lib/uint32_stubs.c:147:26: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-                           ^
+- lib/uint32_stubs.c: In function 'uint32_of_float':
+- lib/uint32_stubs.c:154:30: error: 'uint32' undeclared (first use in this function)
+-      CAMLreturn (copy_uint32((uint32)Double_val(v)));
+-                               ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:154:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32((uint32)Double_val(v)));
+-      ^
+- lib/uint32_stubs.c: In function 'uint32_to_float':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:161:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:161:42: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+-                                           ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:161:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:161:42: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+-                                           ^
+- lib/uint32_stubs.c: In function 'uint32_of_int32':
+- lib/uint32_stubs.c:168:30: error: 'uint32' undeclared (first use in this function)
+-      CAMLreturn (copy_uint32((uint32)Int32_val(v)));
+-                               ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:168:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32((uint32)Int32_val(v)));
+-      ^
+- lib/uint32_stubs.c: In function 'uint32_to_int32':
+- lib/uint32_stubs.c:175:34: error: 'int32' undeclared (first use in this function)
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-                                   ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:175:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:175:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:175:40: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-                                         ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:175:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:175:40: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-                                         ^
+- lib/uint32_stubs.c: In function 'uint32_bits_of_float':
+- lib/uint32_stubs.c:182:22: error: unknown type name 'uint32'
+-      union { float d; uint32 i; } u;
+-                       ^
+- lib/uint32_stubs.c: In function 'uint32_float_of_bits':
+- lib/uint32_stubs.c:191:22: error: unknown type name 'uint32'
+-      union { float d; uint32 i; } u;
+-                       ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:192:11: note: in expansion of macro 'Uint32_val'
+-      u.i = Uint32_val(v);
+-            ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:192:11: note: in expansion of macro 'Uint32_val'
+-      u.i = Uint32_val(v);
+-            ^
+- lib/uint32_stubs.c: In function 'uint32_hash':
+- lib/uint32_stubs.c:26:1: warning: control reaches end of non-void function [-Wreturn-type]
+-  }
+-  ^
+- lib/uint32_stubs.c: In function 'uint32_cmp':
+- lib/uint32_stubs.c:20:1: warning: control reaches end of non-void function [-Wreturn-type]
+-  }
+-  ^
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' lib/uint.cma lib/uint.cmxa lib/uint.a lib/uint.cmxs lib/libuint32_stubs.a lib/dlluint32_stubs.so lib/uint32.cma lib/uint32.cmxa lib/uint32.a lib/uint32.cmxs lib/libuint64_stubs.a lib/dlluint64_stubs.so lib/uint64.cma lib/uint64.cmxa lib/uint64.a lib/uint64.cmxs lib/uint128.cma lib/uint128.cmxa lib/uint128.a lib/uint128.cmxs -tag debug' terminated with error code 10")
+[ERROR] The compilation of uint failed at "ocaml setup.ml -build".
+[uint: ocamlfind remove] Command started
++ ocamlfind "remove" "uint" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/uint.1.0.3)
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ uint
+- Package version: ..................................... 1.0.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- 
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamldep -modules lib/uint.mli > lib/uint.mli.depends
+- ocamlfind ocamlc -c -g -I lib -I lib -o lib/uint.cmi lib/uint.mli
+- ocamlfind ocamldep -modules lib/uint.ml > lib/uint.ml.depends
+- ocamlfind ocamlc -c -g -I lib -I lib -o lib/uint.cmo lib/uint.ml
+- + ocamlfind ocamlc -c -g -I lib -I lib -o lib/uint.cmo lib/uint.ml
+- File "lib/uint.ml", line 109, characters 21-34:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "lib/uint.ml", line 117, characters 10-46:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- ocamlfind ocamlc -a lib/uint.cmo -o lib/uint.cma
+- ocamlfind ocamlopt -c -g -I lib -I lib -o lib/uint.cmx lib/uint.ml
+- + ocamlfind ocamlopt -c -g -I lib -I lib -o lib/uint.cmx lib/uint.ml
+- File "lib/uint.ml", line 109, characters 21-34:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "lib/uint.ml", line 117, characters 10-46:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- ocamlfind ocamlopt -a lib/uint.cmx -o lib/uint.cmxa
+- ocamlfind ocamlopt -shared lib/uint.cmx -o lib/uint.cmxs
+- ocamlfind ocamlc -g -c lib/uint32_stubs.c
+- + ocamlfind ocamlc -g -c lib/uint32_stubs.c
+- lib/uint32_stubs.c: In function 'uint32_cmp':
+- lib/uint32_stubs.c:17:5: error: unknown type name 'uint32'
+-      uint32 i1 = Uint32_val(v1);
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:17:17: note: in expansion of macro 'Uint32_val'
+-      uint32 i1 = Uint32_val(v1);
+-                  ^
+- lib/uint32_stubs.c:12:27: note: each undeclared identifier is reported only once for each function it appears in
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:17:17: note: in expansion of macro 'Uint32_val'
+-      uint32 i1 = Uint32_val(v1);
+-                  ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:17:17: note: in expansion of macro 'Uint32_val'
+-      uint32 i1 = Uint32_val(v1);
+-                  ^
+- lib/uint32_stubs.c:18:12: error: expected ';' before 'i2'
+-      uint32 i2 = Uint32_val(v2);
+-             ^
+- lib/uint32_stubs.c:19:18: error: 'i2' undeclared (first use in this function)
+-      return (i1 > i2) - (i1 < i2);
+-                   ^
+- lib/uint32_stubs.c: In function 'uint32_hash':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:25:12: note: in expansion of macro 'Uint32_val'
+-      return Uint32_val(v);
+-             ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:25:12: note: in expansion of macro 'Uint32_val'
+-      return Uint32_val(v);
+-             ^
+- lib/uint32_stubs.c: In function 'uint32_serialize':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:31:26: note: in expansion of macro 'Uint32_val'
+-      caml_serialize_int_4(Uint32_val(v));
+-                           ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:31:26: note: in expansion of macro 'Uint32_val'
+-      caml_serialize_int_4(Uint32_val(v));
+-                           ^
+- lib/uint32_stubs.c: In function 'uint32_deserialize':
+- lib/uint32_stubs.c:38:8: error: 'uint32' undeclared (first use in this function)
+-      *((uint32 *) dst) = caml_deserialize_uint_4();
+-         ^
+- lib/uint32_stubs.c:38:16: error: expected expression before ')' token
+-      *((uint32 *) dst) = caml_deserialize_uint_4();
+-                 ^
+- lib/uint32_stubs.c: At top level:
+- lib/uint32_stubs.c:52:13: error: unknown type name 'uint32'
+-  copy_uint32(uint32 i)
+-              ^
+- In file included from lib/uint32_stubs.c:9:0:
+- lib/uint32_stubs.c: In function 'uint32_add':
+- lib/uint32_stubs.c:64:17: warning: implicit declaration of function 'copy_uint32' [-Wimplicit-function-declaration]
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-                  ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:64:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:64:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:64:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:64:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:64:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_sub':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:71:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:71:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:71:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:71:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_mul':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:78:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:78:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:78:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:78:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_div':
+- lib/uint32_stubs.c:85:5: error: unknown type name 'uint32'
+-      uint32 divisor = Uint32_val(v2);
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:85:22: note: in expansion of macro 'Uint32_val'
+-      uint32 divisor = Uint32_val(v2);
+-                       ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:85:22: note: in expansion of macro 'Uint32_val'
+-      uint32 divisor = Uint32_val(v2);
+-                       ^
+- In file included from lib/uint32_stubs.c:9:0:
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:88:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) / divisor));
+-      ^
+- lib/uint32_stubs.c:88:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) / divisor));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_mod':
+- lib/uint32_stubs.c:95:5: error: unknown type name 'uint32'
+-      uint32 divisor = Uint32_val(v2);
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:95:22: note: in expansion of macro 'Uint32_val'
+-      uint32 divisor = Uint32_val(v2);
+-                       ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:95:22: note: in expansion of macro 'Uint32_val'
+-      uint32 divisor = Uint32_val(v2);
+-                       ^
+- In file included from lib/uint32_stubs.c:9:0:
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:98:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) % divisor));
+-      ^
+- lib/uint32_stubs.c:98:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) % divisor));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_and':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:105:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:105:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:105:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:105:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_or':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:112:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:112:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:112:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:112:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_xor':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:119:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:119:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:119:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:119:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_shift_left':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:126:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+-      ^
+- lib/uint32_stubs.c:126:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:126:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+-      ^
+- lib/uint32_stubs.c:126:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_shift_right':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:133:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+-      ^
+- lib/uint32_stubs.c:133:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:133:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+-      ^
+- lib/uint32_stubs.c:133:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_to_int':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:147:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:147:17: note: in expansion of macro 'Val_long'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-                  ^
+- lib/uint32_stubs.c:147:26: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-                           ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:147:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:147:17: note: in expansion of macro 'Val_long'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-                  ^
+- lib/uint32_stubs.c:147:26: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-                           ^
+- lib/uint32_stubs.c: In function 'uint32_of_float':
+- lib/uint32_stubs.c:154:30: error: 'uint32' undeclared (first use in this function)
+-      CAMLreturn (copy_uint32((uint32)Double_val(v)));
+-                               ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:154:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32((uint32)Double_val(v)));
+-      ^
+- lib/uint32_stubs.c: In function 'uint32_to_float':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:161:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:161:42: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+-                                           ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:161:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:161:42: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+-                                           ^
+- lib/uint32_stubs.c: In function 'uint32_of_int32':
+- lib/uint32_stubs.c:168:30: error: 'uint32' undeclared (first use in this function)
+-      CAMLreturn (copy_uint32((uint32)Int32_val(v)));
+-                               ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:168:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32((uint32)Int32_val(v)));
+-      ^
+- lib/uint32_stubs.c: In function 'uint32_to_int32':
+- lib/uint32_stubs.c:175:34: error: 'int32' undeclared (first use in this function)
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-                                   ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:175:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:175:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:175:40: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-                                         ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:175:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:175:40: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-                                         ^
+- lib/uint32_stubs.c: In function 'uint32_bits_of_float':
+- lib/uint32_stubs.c:182:22: error: unknown type name 'uint32'
+-      union { float d; uint32 i; } u;
+-                       ^
+- lib/uint32_stubs.c: In function 'uint32_float_of_bits':
+- lib/uint32_stubs.c:191:22: error: unknown type name 'uint32'
+-      union { float d; uint32 i; } u;
+-                       ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:192:11: note: in expansion of macro 'Uint32_val'
+-      u.i = Uint32_val(v);
+-            ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:192:11: note: in expansion of macro 'Uint32_val'
+-      u.i = Uint32_val(v);
+-            ^
+- lib/uint32_stubs.c: In function 'uint32_hash':
+- lib/uint32_stubs.c:26:1: warning: control reaches end of non-void function [-Wreturn-type]
+-  }
+-  ^
+- lib/uint32_stubs.c: In function 'uint32_cmp':
+- lib/uint32_stubs.c:20:1: warning: control reaches end of non-void function [-Wreturn-type]
+-  }
+-  ^
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' lib/uint.cma lib/uint.cmxa lib/uint.a lib/uint.cmxs lib/libuint32_stubs.a lib/dlluint32_stubs.so lib/uint32.cma lib/uint32.cmxa lib/uint32.a lib/uint32.cmxs lib/libuint64_stubs.a lib/dlluint64_stubs.so lib/uint64.cma lib/uint64.cmxa lib/uint64.a lib/uint64.cmxs lib/uint128.cma lib/uint128.cmxa lib/uint128.a lib/uint128.cmxs -tag debug' terminated with error code 10")
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/uint/META
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild
+- Package name: ........................................ uint
+- Package version: ..................................... 1.0.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamldoc
+- 
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 46, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 54, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 57, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUtils.ml", line 87, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/PropList.ml", line 99, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 94, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISUnixPath.ml", line 99, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISLibrary.ml", line 402, characters 6-24:
+- Warning 3: deprecated: Lazy.lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 217, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 218, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 219, characters 31-50:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "/home/andre/src/oasis-0.3.0/src/plugins/internal/InternalInstallPlugin.ml", line 220, characters 31-48:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamldep -modules lib/uint.mli > lib/uint.mli.depends
+- ocamlfind ocamlc -c -g -I lib -I lib -o lib/uint.cmi lib/uint.mli
+- ocamlfind ocamldep -modules lib/uint.ml > lib/uint.ml.depends
+- ocamlfind ocamlc -c -g -I lib -I lib -o lib/uint.cmo lib/uint.ml
+- + ocamlfind ocamlc -c -g -I lib -I lib -o lib/uint.cmo lib/uint.ml
+- File "lib/uint.ml", line 109, characters 21-34:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "lib/uint.ml", line 117, characters 10-46:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- ocamlfind ocamlc -a lib/uint.cmo -o lib/uint.cma
+- ocamlfind ocamlopt -c -g -I lib -I lib -o lib/uint.cmx lib/uint.ml
+- + ocamlfind ocamlopt -c -g -I lib -I lib -o lib/uint.cmx lib/uint.ml
+- File "lib/uint.ml", line 109, characters 21-34:
+- Warning 3: deprecated: String.create
+- Use Bytes.create instead.
+- File "lib/uint.ml", line 117, characters 10-46:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- ocamlfind ocamlopt -a lib/uint.cmx -o lib/uint.cmxa
+- ocamlfind ocamlopt -shared lib/uint.cmx -o lib/uint.cmxs
+- ocamlfind ocamlc -g -c lib/uint32_stubs.c
+- + ocamlfind ocamlc -g -c lib/uint32_stubs.c
+- lib/uint32_stubs.c: In function 'uint32_cmp':
+- lib/uint32_stubs.c:17:5: error: unknown type name 'uint32'
+-      uint32 i1 = Uint32_val(v1);
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:17:17: note: in expansion of macro 'Uint32_val'
+-      uint32 i1 = Uint32_val(v1);
+-                  ^
+- lib/uint32_stubs.c:12:27: note: each undeclared identifier is reported only once for each function it appears in
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:17:17: note: in expansion of macro 'Uint32_val'
+-      uint32 i1 = Uint32_val(v1);
+-                  ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:17:17: note: in expansion of macro 'Uint32_val'
+-      uint32 i1 = Uint32_val(v1);
+-                  ^
+- lib/uint32_stubs.c:18:12: error: expected ';' before 'i2'
+-      uint32 i2 = Uint32_val(v2);
+-             ^
+- lib/uint32_stubs.c:19:18: error: 'i2' undeclared (first use in this function)
+-      return (i1 > i2) - (i1 < i2);
+-                   ^
+- lib/uint32_stubs.c: In function 'uint32_hash':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:25:12: note: in expansion of macro 'Uint32_val'
+-      return Uint32_val(v);
+-             ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:25:12: note: in expansion of macro 'Uint32_val'
+-      return Uint32_val(v);
+-             ^
+- lib/uint32_stubs.c: In function 'uint32_serialize':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:31:26: note: in expansion of macro 'Uint32_val'
+-      caml_serialize_int_4(Uint32_val(v));
+-                           ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:31:26: note: in expansion of macro 'Uint32_val'
+-      caml_serialize_int_4(Uint32_val(v));
+-                           ^
+- lib/uint32_stubs.c: In function 'uint32_deserialize':
+- lib/uint32_stubs.c:38:8: error: 'uint32' undeclared (first use in this function)
+-      *((uint32 *) dst) = caml_deserialize_uint_4();
+-         ^
+- lib/uint32_stubs.c:38:16: error: expected expression before ')' token
+-      *((uint32 *) dst) = caml_deserialize_uint_4();
+-                 ^
+- lib/uint32_stubs.c: At top level:
+- lib/uint32_stubs.c:52:13: error: unknown type name 'uint32'
+-  copy_uint32(uint32 i)
+-              ^
+- In file included from lib/uint32_stubs.c:9:0:
+- lib/uint32_stubs.c: In function 'uint32_add':
+- lib/uint32_stubs.c:64:17: warning: implicit declaration of function 'copy_uint32' [-Wimplicit-function-declaration]
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-                  ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:64:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:64:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:64:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:64:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:64:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_sub':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:71:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:71:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:71:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:71:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_mul':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:78:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:78:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:78:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:78:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_div':
+- lib/uint32_stubs.c:85:5: error: unknown type name 'uint32'
+-      uint32 divisor = Uint32_val(v2);
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:85:22: note: in expansion of macro 'Uint32_val'
+-      uint32 divisor = Uint32_val(v2);
+-                       ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:85:22: note: in expansion of macro 'Uint32_val'
+-      uint32 divisor = Uint32_val(v2);
+-                       ^
+- In file included from lib/uint32_stubs.c:9:0:
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:88:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) / divisor));
+-      ^
+- lib/uint32_stubs.c:88:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) / divisor));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_mod':
+- lib/uint32_stubs.c:95:5: error: unknown type name 'uint32'
+-      uint32 divisor = Uint32_val(v2);
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:95:22: note: in expansion of macro 'Uint32_val'
+-      uint32 divisor = Uint32_val(v2);
+-                       ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:95:22: note: in expansion of macro 'Uint32_val'
+-      uint32 divisor = Uint32_val(v2);
+-                       ^
+- In file included from lib/uint32_stubs.c:9:0:
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:98:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) % divisor));
+-      ^
+- lib/uint32_stubs.c:98:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) % divisor));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_and':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:105:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:105:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:105:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:105:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_or':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:112:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:112:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:112:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:112:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_xor':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:119:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:119:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:119:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+-      ^
+- lib/uint32_stubs.c:119:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_shift_left':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:126:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+-      ^
+- lib/uint32_stubs.c:126:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:126:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+-      ^
+- lib/uint32_stubs.c:126:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_shift_right':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:133:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+-      ^
+- lib/uint32_stubs.c:133:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+-                              ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:133:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+-      ^
+- lib/uint32_stubs.c:133:29: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+-                              ^
+- lib/uint32_stubs.c: In function 'uint32_to_int':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:147:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:147:17: note: in expansion of macro 'Val_long'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-                  ^
+- lib/uint32_stubs.c:147:26: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-                           ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:147:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:147:17: note: in expansion of macro 'Val_long'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-                  ^
+- lib/uint32_stubs.c:147:26: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (Val_long(Uint32_val(v)));
+-                           ^
+- lib/uint32_stubs.c: In function 'uint32_of_float':
+- lib/uint32_stubs.c:154:30: error: 'uint32' undeclared (first use in this function)
+-      CAMLreturn (copy_uint32((uint32)Double_val(v)));
+-                               ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:154:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32((uint32)Double_val(v)));
+-      ^
+- lib/uint32_stubs.c: In function 'uint32_to_float':
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:161:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:161:42: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+-                                           ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:161:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:161:42: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+-                                           ^
+- lib/uint32_stubs.c: In function 'uint32_of_int32':
+- lib/uint32_stubs.c:168:30: error: 'uint32' undeclared (first use in this function)
+-      CAMLreturn (copy_uint32((uint32)Int32_val(v)));
+-                               ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:168:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (copy_uint32((uint32)Int32_val(v)));
+-      ^
+- lib/uint32_stubs.c: In function 'uint32_to_int32':
+- lib/uint32_stubs.c:175:34: error: 'int32' undeclared (first use in this function)
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-                                   ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:175:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:175:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:175:40: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-                                         ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+-    type caml__temp_result = (result); \
+-                              ^
+- lib/uint32_stubs.c:175:5: note: in expansion of macro 'CAMLreturn'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-      ^
+- lib/uint32_stubs.c:175:40: note: in expansion of macro 'Uint32_val'
+-      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+-                                         ^
+- lib/uint32_stubs.c: In function 'uint32_bits_of_float':
+- lib/uint32_stubs.c:182:22: error: unknown type name 'uint32'
+-      union { float d; uint32 i; } u;
+-                       ^
+- lib/uint32_stubs.c: In function 'uint32_float_of_bits':
+- lib/uint32_stubs.c:191:22: error: unknown type name 'uint32'
+-      union { float d; uint32 i; } u;
+-                       ^
+- lib/uint32_stubs.c:12:27: error: 'uint32' undeclared (first use in this function)
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                            ^
+- lib/uint32_stubs.c:192:11: note: in expansion of macro 'Uint32_val'
+-      u.i = Uint32_val(v);
+-            ^
+- lib/uint32_stubs.c:12:35: error: expected expression before ')' token
+-  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+-                                    ^
+- lib/uint32_stubs.c:192:11: note: in expansion of macro 'Uint32_val'
+-      u.i = Uint32_val(v);
+-            ^
+- lib/uint32_stubs.c: In function 'uint32_hash':
+- lib/uint32_stubs.c:26:1: warning: control reaches end of non-void function [-Wreturn-type]
+-  }
+-  ^
+- lib/uint32_stubs.c: In function 'uint32_cmp':
+- lib/uint32_stubs.c:20:1: warning: control reaches end of non-void function [-Wreturn-type]
+-  }
+-  ^
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' lib/uint.cma lib/uint.cmxa lib/uint.a lib/uint.cmxs lib/libuint32_stubs.a lib/dlluint32_stubs.so lib/uint32.cma lib/uint32.cmxa lib/uint32.a lib/uint32.cmxs lib/libuint64_stubs.a lib/dlluint64_stubs.so lib/uint64.cma lib/uint64.cmxa lib/uint64.a lib/uint64.cmxs lib/uint128.cma lib/uint128.cmxa lib/uint128.a lib/uint128.cmxs -tag debug' terminated with error code 10")
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/lib/uint/META
+
+#=== ERROR while installing uint.1.0.3 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/uint.1.0.3
+# compiler             4.04.2
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/uint.1.0.3/uint-14116.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/uint.1.0.3/uint-14116.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/build/uint.1.0.3/uint-14116.out
+### stdout ###
+# [...]
+# lib/uint32_stubs.c: In function 'uint32_hash':
+# lib/uint32_stubs.c:26:1: warning: control reaches end of non-void function [-Wreturn-type]
+#  }
+#  ^
+# lib/uint32_stubs.c: In function 'uint32_cmp':
+# lib/uint32_stubs.c:20:1: warning: control reaches end of non-void function [-Wreturn-type]
+#  }
+#  ^
+# Command exited with code 2.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' lib/uint.cma lib/uint.cmxa lib/uint.a lib/uint.cmxs lib/libuint32_stubs.a lib/dlluint32_stubs.so lib/uint32.cma lib/uint32.cmxa lib/uint32.a lib/uint32.cmxs lib/libuint64_stubs.a lib/dlluint64_stubs.so lib/uint64.cma lib/uint64.cmxa lib/uint64.a lib/uint64.cmxs lib/uint128.cma lib/uint128.cmxa lib/uint128.a lib/uint128.cmxs -tag debug' terminated with error code 10")
+### stderr ###
+# [...]
+# lib/uint32_stubs.c: In function 'uint32_hash':
+# lib/uint32_stubs.c:26:1: warning: control reaches end of non-void function [-Wreturn-type]
+#  }
+#  ^
+# lib/uint32_stubs.c: In function 'uint32_cmp':
+# lib/uint32_stubs.c:20:1: warning: control reaches end of non-void function [-Wreturn-type]
+#  }
+#  ^
+# Command exited with code 2.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox/opamstate/4.04.2/dotopam/4.04.2/bin/ocamlbuild' lib/uint.cma lib/uint.cmxa lib/uint.a lib/uint.cmxs lib/libuint32_stubs.a lib/dlluint32_stubs.so lib/uint32.cma lib/uint32.cmxa lib/uint32.a lib/uint32.cmxs lib/libuint64_stubs.a lib/dlluint64_stubs.so lib/uint64.cma lib/uint64.cmxa lib/uint64.a lib/uint64.cmxs lib/uint128.cma lib/uint128.cmxa lib/uint128.a lib/uint128.cmxs -tag debug' terminated with error code 10")
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install uint 1.0.3
+No changes have been performed
+'opam install uint.1.0.3' failed.

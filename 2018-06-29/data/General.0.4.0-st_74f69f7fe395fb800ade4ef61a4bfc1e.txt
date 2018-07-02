@@ -1,0 +1,45 @@
+The following actions will be performed:
+  - install General 0.4.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[General: http] Command started
+[General: http] Command started
+[General.0.4.0] https://github.com/jacquev6/General/archive/0.4.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[General: jbuilder build] Command started
++ jbuilder "build" "-p" "General" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/General.0.4.0)
+- jbuilder: unknown option `-p'.
+- Usage: jbuilder build [OPTION]... TARGET...
+- Try `jbuilder build --help' or `jbuilder --help' for more information.
+- jbuilder: unknown option `-p'.
+- Usage: jbuilder build [OPTION]... TARGET...
+- Try `jbuilder build --help' or `jbuilder --help' for more information.
+[ERROR] The compilation of General failed at "jbuilder build -p General -j 4".
+
+#=== ERROR while installing General.0.4.0 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p General -j 4
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/General.0.4.0
+# compiler             4.06.1
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/General.0.4.0/General-23989.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/General.0.4.0/General-23989.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/General.0.4.0/General-23989.out
+### stdout ###
+# jbuilder: unknown option `-p'.
+# Usage: jbuilder build [OPTION]... TARGET...
+# Try `jbuilder build --help' or `jbuilder --help' for more information.
+### stderr ###
+# jbuilder: unknown option `-p'.
+# Usage: jbuilder build [OPTION]... TARGET...
+# Try `jbuilder build --help' or `jbuilder --help' for more information.
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install General 0.4.0
+No changes have been performed
+'opam install General.0.4.0' failed.

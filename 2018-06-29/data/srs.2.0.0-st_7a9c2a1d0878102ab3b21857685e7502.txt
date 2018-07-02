@@ -1,0 +1,49 @@
+The following actions will be performed:
+  - install srs 2.0.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[srs: http] Command started
+[srs: http] Command started
+[srs.2.0.0] https://github.com/andrenth/ocaml-srs/archive/2.0.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[srs: jbuilder build] Command started
++ jbuilder "build" "-p" "srs" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/srs.2.0.0)
+-       ocamlc src/srs_stubs.o (exit 2)
+- (cd _build/default/src && /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt -g -ccopt -Wall -ccopt -Werror -o srs_stubs.o srs_stubs.c)
+- srs_stubs.c:4:18: fatal error: srs2.h: No such file or directory
+- compilation terminated.
+-       ocamlc src/srs_stubs.o (exit 2)
+- (cd _build/default/src && /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt -g -ccopt -Wall -ccopt -Werror -o srs_stubs.o srs_stubs.c)
+- srs_stubs.c:4:18: fatal error: srs2.h: No such file or directory
+- compilation terminated.
+[ERROR] The compilation of srs failed at "jbuilder build -p srs -j 4".
+
+#=== ERROR while installing srs.2.0.0 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p srs -j 4
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/srs.2.0.0
+# compiler             4.06.1
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/srs.2.0.0/srs-2534.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/srs.2.0.0/srs-2534.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/srs.2.0.0/srs-2534.out
+### stdout ###
+#       ocamlc src/srs_stubs.o (exit 2)
+# (cd _build/default/src && /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt -g -ccopt -Wall -ccopt -Werror -o srs_stubs.o srs_stubs.c)
+# srs_stubs.c:4:18: fatal error: srs2.h: No such file or directory
+# compilation terminated.
+### stderr ###
+#       ocamlc src/srs_stubs.o (exit 2)
+# (cd _build/default/src && /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/bin/ocamlc.opt -g -ccopt -Wall -ccopt -Werror -o srs_stubs.o srs_stubs.c)
+# srs_stubs.c:4:18: fatal error: srs2.h: No such file or directory
+# compilation terminated.
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install srs 2.0.0
+No changes have been performed
+'opam install srs.2.0.0' failed.

@@ -1,0 +1,85 @@
+The following actions will be performed:
+  - install flowtype 0.57.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[flowtype: http] Command started
+[flowtype: http] Command started
+[flowtype.0.57.2] https://github.com/facebook/flow/archive/v0.57.2.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[flowtype: env make] Command started
++ env "FLOW_RELEASE=1" "make" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/flowtype.0.57.2)
+- ocamlbuild \
+- 	-use-ocamlfind -pkgs sedlex,compiler-libs.common,unix \
+- 	-I scripts \
+- 	scripts/ppx_gen_flowlibs.native
+- ocamlbuild \
+- 	-use-ocamlfind -pkgs sedlex,compiler-libs.common,unix \
+- 	-I scripts \
+- 	scripts/ppx_gen_flowlibs.native
+- ocamlfind ocamldep -package sedlex -package unix -package compiler-libs.common -modules scripts/ppx_gen_flowlibs.ml > scripts/ppx_gen_flowlibs.ml.depends
+- ocamlfind ocamldep -package sedlex -package unix -package compiler-libs.common -modules scripts/script_utils.ml > scripts/script_utils.ml.depends
+- ocamlfind ocamlc -c -w A -warn-error A -package sedlex -w -4-6-29-35-44-48-50 -package unix -package compiler-libs.common -I scripts -o scripts/script_utils.cmo scripts/script_utils.ml
+- + ocamlfind ocamlc -c -w A -warn-error A -package sedlex -w -4-6-29-35-44-48-50 -package unix -package compiler-libs.common -I scripts -o scripts/script_utils.cmo scripts/script_utils.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- File "scripts/script_utils.ml", line 64, characters 29-30:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Makefile:275: recipe for target '_build/scripts/ppx_gen_flowlibs.native' failed
+- make: *** [_build/scripts/ppx_gen_flowlibs.native] Error 10
+- ocamlfind ocamldep -package sedlex -package unix -package compiler-libs.common -modules scripts/ppx_gen_flowlibs.ml > scripts/ppx_gen_flowlibs.ml.depends
+- ocamlfind ocamldep -package sedlex -package unix -package compiler-libs.common -modules scripts/script_utils.ml > scripts/script_utils.ml.depends
+- ocamlfind ocamlc -c -w A -warn-error A -package sedlex -w -4-6-29-35-44-48-50 -package unix -package compiler-libs.common -I scripts -o scripts/script_utils.cmo scripts/script_utils.ml
+- + ocamlfind ocamlc -c -w A -warn-error A -package sedlex -w -4-6-29-35-44-48-50 -package unix -package compiler-libs.common -I scripts -o scripts/script_utils.cmo scripts/script_utils.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+- File "scripts/script_utils.ml", line 64, characters 29-30:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Makefile:275: recipe for target '_build/scripts/ppx_gen_flowlibs.native' failed
+- make: *** [_build/scripts/ppx_gen_flowlibs.native] Error 10
+[ERROR] The compilation of flowtype failed at "env FLOW_RELEASE=1 make".
+
+#=== ERROR while installing flowtype.0.57.2 ===================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              env FLOW_RELEASE=1 make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/flowtype.0.57.2
+# compiler             4.06.1
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/flowtype.0.57.2/flowtype-2581.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/flowtype.0.57.2/flowtype-2581.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/build/flowtype.0.57.2/flowtype-2581.out
+### stdout ###
+# [...]
+# ocamlfind ocamldep -package sedlex -package unix -package compiler-libs.common -modules scripts/script_utils.ml > scripts/script_utils.ml.depends
+# ocamlfind ocamlc -c -w A -warn-error A -package sedlex -w -4-6-29-35-44-48-50 -package unix -package compiler-libs.common -I scripts -o scripts/script_utils.cmo scripts/script_utils.ml
+# + ocamlfind ocamlc -c -w A -warn-error A -package sedlex -w -4-6-29-35-44-48-50 -package unix -package compiler-libs.common -I scripts -o scripts/script_utils.cmo scripts/script_utils.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+# File "scripts/script_utils.ml", line 64, characters 29-30:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# Makefile:275: recipe for target '_build/scripts/ppx_gen_flowlibs.native' failed
+# make: *** [_build/scripts/ppx_gen_flowlibs.native] Error 10
+### stderr ###
+# [...]
+# ocamlfind ocamldep -package sedlex -package unix -package compiler-libs.common -modules scripts/script_utils.ml > scripts/script_utils.ml.depends
+# ocamlfind ocamlc -c -w A -warn-error A -package sedlex -w -4-6-29-35-44-48-50 -package unix -package compiler-libs.common -I scripts -o scripts/script_utils.cmo scripts/script_utils.ml
+# + ocamlfind ocamlc -c -w A -warn-error A -package sedlex -w -4-6-29-35-44-48-50 -package unix -package compiler-libs.common -I scripts -o scripts/script_utils.cmo scripts/script_utils.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox/opamstate/4.06.1/dotopam/4.06.1/lib/ocaml
+# File "scripts/script_utils.ml", line 64, characters 29-30:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# Makefile:275: recipe for target '_build/scripts/ppx_gen_flowlibs.native' failed
+# make: *** [_build/scripts/ppx_gen_flowlibs.native] Error 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install flowtype 0.57.2
+No changes have been performed
+'opam install flowtype.0.57.2' failed.

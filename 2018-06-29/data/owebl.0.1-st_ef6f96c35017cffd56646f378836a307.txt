@@ -1,0 +1,171 @@
+The following actions will be performed:
+  - install owebl 0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owebl: http] Command started
+[owebl: http] Command started
+[owebl.0.1] https://github.com/eatonphil/owebl/archive/v0.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owebl: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/owebl.0.1)
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/owebl.0.1'
+- ocamlfind ocamldep -I src/ src/server.ml > ._d/src/server.d
+- ocamlfind ocamldep -I src/ src/handler.ml > ._d/src/handler.d
+- ocamlfind ocamldep -I src/ src/rule.ml > ._d/src/rule.d
+- ocamlfind ocamldep -I src/ src/response.ml > ._d/src/response.d
+- ocamlfind ocamldep -I src/ src/template.ml > ._d/src/template.d
+- ocamlfind ocamldep -I src/ src/request.ml > ._d/src/request.d
+- ocamlfind ocamldep -I src/ src/verb.ml > ._d/src/verb.d
+- ocamlfind ocamldep -I src/ src/utils.ml > ._d/src/utils.d
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/utils.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/verb.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/request.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/template.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/response.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/rule.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/handler.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/server.ml
+- File "src/server.ml", line 7, characters 21-34:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "src/server.ml", line 11, characters 38-44:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- OCamlMakeFile:1076: recipe for target 'src/server.cmx' failed
+- make[1]: *** [src/server.cmx] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/owebl.0.1'
+- OCamlMakeFile:801: recipe for target 'native-code-library' failed
+- make: *** [native-code-library] Error 2
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/owebl.0.1'
+- ocamlfind ocamldep -I src/ src/server.ml > ._d/src/server.d
+- ocamlfind ocamldep -I src/ src/handler.ml > ._d/src/handler.d
+- ocamlfind ocamldep -I src/ src/rule.ml > ._d/src/rule.d
+- ocamlfind ocamldep -I src/ src/response.ml > ._d/src/response.d
+- ocamlfind ocamldep -I src/ src/template.ml > ._d/src/template.d
+- ocamlfind ocamldep -I src/ src/request.ml > ._d/src/request.d
+- ocamlfind ocamldep -I src/ src/verb.ml > ._d/src/verb.d
+- ocamlfind ocamldep -I src/ src/utils.ml > ._d/src/utils.d
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/utils.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/verb.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/request.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/template.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/response.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/rule.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/handler.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/server.ml
+- File "src/server.ml", line 7, characters 21-34:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "src/server.ml", line 11, characters 38-44:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- OCamlMakeFile:1076: recipe for target 'src/server.cmx' failed
+- make[1]: *** [src/server.cmx] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/owebl.0.1'
+- OCamlMakeFile:801: recipe for target 'native-code-library' failed
+- make: *** [native-code-library] Error 2
+[ERROR] The compilation of owebl failed at "make".
+[owebl: ocamlfind remove] Command started
++ ocamlfind "remove" "owebl" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/owebl.0.1)
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/owebl.0.1'
+- ocamlfind ocamldep -I src/ src/server.ml > ._d/src/server.d
+- ocamlfind ocamldep -I src/ src/handler.ml > ._d/src/handler.d
+- ocamlfind ocamldep -I src/ src/rule.ml > ._d/src/rule.d
+- ocamlfind ocamldep -I src/ src/response.ml > ._d/src/response.d
+- ocamlfind ocamldep -I src/ src/template.ml > ._d/src/template.d
+- ocamlfind ocamldep -I src/ src/request.ml > ._d/src/request.d
+- ocamlfind ocamldep -I src/ src/verb.ml > ._d/src/verb.d
+- ocamlfind ocamldep -I src/ src/utils.ml > ._d/src/utils.d
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/utils.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/verb.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/request.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/template.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/response.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/rule.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/handler.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/server.ml
+- File "src/server.ml", line 7, characters 21-34:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "src/server.ml", line 11, characters 38-44:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- OCamlMakeFile:1076: recipe for target 'src/server.cmx' failed
+- make[1]: *** [src/server.cmx] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/owebl.0.1'
+- OCamlMakeFile:801: recipe for target 'native-code-library' failed
+- make: *** [native-code-library] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/owebl/META
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/owebl.0.1'
+- ocamlfind ocamldep -I src/ src/server.ml > ._d/src/server.d
+- ocamlfind ocamldep -I src/ src/handler.ml > ._d/src/handler.d
+- ocamlfind ocamldep -I src/ src/rule.ml > ._d/src/rule.d
+- ocamlfind ocamldep -I src/ src/response.ml > ._d/src/response.d
+- ocamlfind ocamldep -I src/ src/template.ml > ._d/src/template.d
+- ocamlfind ocamldep -I src/ src/request.ml > ._d/src/request.d
+- ocamlfind ocamldep -I src/ src/verb.ml > ._d/src/verb.d
+- ocamlfind ocamldep -I src/ src/utils.ml > ._d/src/utils.d
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/utils.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/verb.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/request.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/template.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/response.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/rule.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/handler.ml
+- ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/server.ml
+- File "src/server.ml", line 7, characters 21-34:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "src/server.ml", line 11, characters 38-44:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- OCamlMakeFile:1076: recipe for target 'src/server.cmx' failed
+- make[1]: *** [src/server.cmx] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/owebl.0.1'
+- OCamlMakeFile:801: recipe for target 'native-code-library' failed
+- make: *** [native-code-library] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/owebl/META
+
+#=== ERROR while installing owebl.0.1 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/owebl.0.1
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/owebl.0.1/owebl-8559.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/owebl.0.1/owebl-8559.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/owebl.0.1/owebl-8559.out
+### stdout ###
+# [...]
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "src/server.ml", line 11, characters 38-44:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# OCamlMakeFile:1076: recipe for target 'src/server.cmx' failed
+# make[1]: *** [src/server.cmx] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/owebl.0.1'
+# OCamlMakeFile:801: recipe for target 'native-code-library' failed
+# make: *** [native-code-library] Error 2
+### stderr ###
+# [...]
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "src/server.ml", line 11, characters 38-44:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# OCamlMakeFile:1076: recipe for target 'src/server.cmx' failed
+# make[1]: *** [src/server.cmx] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/owebl.0.1'
+# OCamlMakeFile:801: recipe for target 'native-code-library' failed
+# make: *** [native-code-library] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install owebl 0.1
+No changes have been performed
+'opam install owebl.0.1' failed.

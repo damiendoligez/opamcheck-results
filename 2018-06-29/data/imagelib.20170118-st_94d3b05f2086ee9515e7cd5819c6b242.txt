@@ -1,0 +1,151 @@
+The following actions will be performed:
+  - install imagelib 20170118
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[imagelib: http] Command started
+[imagelib: http] Command started
+[imagelib.20170118] https://github.com/rlepigre/ocaml-imagelib/archive/ocaml-imagelib_20170118.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[imagelib: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/imagelib.20170118)
+- ocamlbuild -cflags -w,-3 -use-ocamlfind imagelib.cma
+- ocamlfind ocamldep -package bigarray -package zip -modules imageUtil.ml > imageUtil.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules image.mli > image.mli.depends
+- ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o image.cmi image.mli
+- ocamlfind ocamldep -package bigarray -package zip -modules image.ml > image.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imageGIF.ml > imageGIF.ml.depends
+- ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageUtil.cmo imageUtil.ml
+- ocamlfind ocamldep -package bigarray -package zip -modules imageJPG.ml > imageJPG.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imagePNG.ml > imagePNG.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imagePPM.ml > imagePPM.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imageXCF.ml > imageXCF.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imageLib.mli > imageLib.mli.depends
+- ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageLib.cmi imageLib.mli
+- ocamlfind ocamldep -package bigarray -package zip -modules imageLib.ml > imageLib.ml.depends
+- ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageGIF.cmo imageGIF.ml
+- + ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageGIF.cmo imageGIF.ml
+- File "imageGIF.ml", line 40, characters 16-21:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Command exited with code 2.
+- GNUmakefile:49: recipe for target 'imagelib.cma' failed
+- make: *** [imagelib.cma] Error 10
+- ocamlbuild -cflags -w,-3 -use-ocamlfind imagelib.cma
+- ocamlfind ocamldep -package bigarray -package zip -modules imageUtil.ml > imageUtil.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules image.mli > image.mli.depends
+- ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o image.cmi image.mli
+- ocamlfind ocamldep -package bigarray -package zip -modules image.ml > image.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imageGIF.ml > imageGIF.ml.depends
+- ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageUtil.cmo imageUtil.ml
+- ocamlfind ocamldep -package bigarray -package zip -modules imageJPG.ml > imageJPG.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imagePNG.ml > imagePNG.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imagePPM.ml > imagePPM.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imageXCF.ml > imageXCF.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imageLib.mli > imageLib.mli.depends
+- ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageLib.cmi imageLib.mli
+- ocamlfind ocamldep -package bigarray -package zip -modules imageLib.ml > imageLib.ml.depends
+- ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageGIF.cmo imageGIF.ml
+- + ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageGIF.cmo imageGIF.ml
+- File "imageGIF.ml", line 40, characters 16-21:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Command exited with code 2.
+- GNUmakefile:49: recipe for target 'imagelib.cma' failed
+- make: *** [imagelib.cma] Error 10
+[ERROR] The compilation of imagelib failed at "make".
+[imagelib: make uninstall] Command started
++ make "uninstall" (CWD=/home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/imagelib.20170118)
+- ocamlbuild -cflags -w,-3 -use-ocamlfind imagelib.cma
+- ocamlfind ocamldep -package bigarray -package zip -modules imageUtil.ml > imageUtil.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules image.mli > image.mli.depends
+- ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o image.cmi image.mli
+- ocamlfind ocamldep -package bigarray -package zip -modules image.ml > image.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imageGIF.ml > imageGIF.ml.depends
+- ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageUtil.cmo imageUtil.ml
+- ocamlfind ocamldep -package bigarray -package zip -modules imageJPG.ml > imageJPG.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imagePNG.ml > imagePNG.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imagePPM.ml > imagePPM.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imageXCF.ml > imageXCF.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imageLib.mli > imageLib.mli.depends
+- ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageLib.cmi imageLib.mli
+- ocamlfind ocamldep -package bigarray -package zip -modules imageLib.ml > imageLib.ml.depends
+- ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageGIF.cmo imageGIF.ml
+- + ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageGIF.cmo imageGIF.ml
+- File "imageGIF.ml", line 40, characters 16-21:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Command exited with code 2.
+- GNUmakefile:49: recipe for target 'imagelib.cma' failed
+- make: *** [imagelib.cma] Error 10
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/imagelib/META
+- ocamlbuild -cflags -w,-3 -use-ocamlfind imagelib.cma
+- ocamlfind ocamldep -package bigarray -package zip -modules imageUtil.ml > imageUtil.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules image.mli > image.mli.depends
+- ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o image.cmi image.mli
+- ocamlfind ocamldep -package bigarray -package zip -modules image.ml > image.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imageGIF.ml > imageGIF.ml.depends
+- ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageUtil.cmo imageUtil.ml
+- ocamlfind ocamldep -package bigarray -package zip -modules imageJPG.ml > imageJPG.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imagePNG.ml > imagePNG.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imagePPM.ml > imagePPM.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imageXCF.ml > imageXCF.ml.depends
+- ocamlfind ocamldep -package bigarray -package zip -modules imageLib.mli > imageLib.mli.depends
+- ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageLib.cmi imageLib.mli
+- ocamlfind ocamldep -package bigarray -package zip -modules imageLib.ml > imageLib.ml.depends
+- ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageGIF.cmo imageGIF.ml
+- + ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageGIF.cmo imageGIF.ml
+- File "imageGIF.ml", line 40, characters 16-21:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Command exited with code 2.
+- GNUmakefile:49: recipe for target 'imagelib.cma' failed
+- make: *** [imagelib.cma] Error 10
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/lib/imagelib/META
+
+#=== ERROR while installing imagelib.20170118 =================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/imagelib.20170118
+# compiler             4.07.0+rc2
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/imagelib.20170118/imagelib-31476.env
+# stdout-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/imagelib.20170118/imagelib-31476.out
+# stderr-file          /home/doligez/opamcheck/sandbox/opamstate/4.07.0+rc2/dotopam/4.07.0+rc2/build/imagelib.20170118/imagelib-31476.out
+### stdout ###
+# [...]
+# ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageLib.cmi imageLib.mli
+# ocamlfind ocamldep -package bigarray -package zip -modules imageLib.ml > imageLib.ml.depends
+# ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageGIF.cmo imageGIF.ml
+# + ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageGIF.cmo imageGIF.ml
+# File "imageGIF.ml", line 40, characters 16-21:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Command exited with code 2.
+# GNUmakefile:49: recipe for target 'imagelib.cma' failed
+# make: *** [imagelib.cma] Error 10
+### stderr ###
+# [...]
+# ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageLib.cmi imageLib.mli
+# ocamlfind ocamldep -package bigarray -package zip -modules imageLib.ml > imageLib.ml.depends
+# ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageGIF.cmo imageGIF.ml
+# + ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageGIF.cmo imageGIF.ml
+# File "imageGIF.ml", line 40, characters 16-21:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Command exited with code 2.
+# GNUmakefile:49: recipe for target 'imagelib.cma' failed
+# make: *** [imagelib.cma] Error 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install imagelib 20170118
+No changes have been performed
+
+=-=- imagelib.20170118 troubleshooting =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> imagelib requires convert (imagemagick) to handle format other than png and
+   ppm.
+'opam install imagelib.20170118' failed.
