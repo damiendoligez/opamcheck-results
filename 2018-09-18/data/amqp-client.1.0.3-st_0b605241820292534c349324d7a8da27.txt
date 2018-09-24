@@ -1,0 +1,163 @@
+The following actions will be performed:
+  - install amqp-client 1.0.3
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[amqp-client: http] Command started
+[amqp-client: http] Command started
+[amqp-client.1.0.3] https://github.com/andersfugmann/amqp-client/archive/1.0.3.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[amqp-client: make install] Command started
++ make "install" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/amqp-client.1.0.3)
+- mkdir -p /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/amqp-client/lwt
+- omake clean
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- *** omake: finished reading OMakefiles (0.06 sec)
+- *** omake: done (0.06 sec, 0/0 scans, 1/1 rules, 48/81 digests)
+- omake -j4 _build/amqp-client.cma _build/amqp-client.cmxa _build/amqp-client.a
+- *** omake: reading OMakefiles
+- *** omake: finished reading OMakefiles (0.01 sec)
+- --- Checking if ocamldep understands -modules... (yes)
+- - build _build amqp0-9-1.extended
+- + curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml > _build/amqp0-9-1.extended
+- error: /home/doligez/opamcheck/sandbox2/bin/curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml
+- *** omake: 17/122 targets are up to date
+- *** omake: failed (0.16 sec, 2/2 scans, 2/2 rules, 22/80 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    _build/amqp0-9-1.extended
+- Makefile:19: recipe for target 'install-lwt' failed
+- make: *** [install-lwt] Error 1
+- mkdir -p /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/amqp-client/lwt
+- omake clean
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- *** omake: finished reading OMakefiles (0.06 sec)
+- *** omake: done (0.06 sec, 0/0 scans, 1/1 rules, 48/81 digests)
+- omake -j4 _build/amqp-client.cma _build/amqp-client.cmxa _build/amqp-client.a
+- *** omake: reading OMakefiles
+- *** omake: finished reading OMakefiles (0.01 sec)
+- --- Checking if ocamldep understands -modules... (yes)
+- - build _build amqp0-9-1.extended
+- + curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml > _build/amqp0-9-1.extended
+- error: /home/doligez/opamcheck/sandbox2/bin/curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml
+- *** omake: 17/122 targets are up to date
+- *** omake: failed (0.16 sec, 2/2 scans, 2/2 rules, 22/80 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    _build/amqp0-9-1.extended
+- Makefile:19: recipe for target 'install-lwt' failed
+- make: *** [install-lwt] Error 1
+[ERROR] The compilation of amqp-client failed at "make install".
+[amqp-client: make uninstall] Command started
++ make "uninstall" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/amqp-client.1.0.3)
+- mkdir -p /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/amqp-client/lwt
+- omake clean
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- *** omake: finished reading OMakefiles (0.06 sec)
+- *** omake: done (0.06 sec, 0/0 scans, 1/1 rules, 48/81 digests)
+- omake -j4 _build/amqp-client.cma _build/amqp-client.cmxa _build/amqp-client.a
+- *** omake: reading OMakefiles
+- *** omake: finished reading OMakefiles (0.01 sec)
+- --- Checking if ocamldep understands -modules... (yes)
+- - build _build amqp0-9-1.extended
+- + curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml > _build/amqp0-9-1.extended
+- error: /home/doligez/opamcheck/sandbox2/bin/curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml
+- *** omake: 17/122 targets are up to date
+- *** omake: failed (0.16 sec, 2/2 scans, 2/2 rules, 22/80 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    _build/amqp0-9-1.extended
+- Makefile:19: recipe for target 'install-lwt' failed
+- make: *** [install-lwt] Error 1
+- ocamlfind: Package `amqp-client' not found
+- Makefile:42: recipe for target 'uninstall' failed
+- make: *** [uninstall] Error 2
+- mkdir -p /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/amqp-client/lwt
+- omake clean
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- *** omake: finished reading OMakefiles (0.06 sec)
+- *** omake: done (0.06 sec, 0/0 scans, 1/1 rules, 48/81 digests)
+- omake -j4 _build/amqp-client.cma _build/amqp-client.cmxa _build/amqp-client.a
+- *** omake: reading OMakefiles
+- *** omake: finished reading OMakefiles (0.01 sec)
+- --- Checking if ocamldep understands -modules... (yes)
+- - build _build amqp0-9-1.extended
+- + curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml > _build/amqp0-9-1.extended
+- error: /home/doligez/opamcheck/sandbox2/bin/curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml
+- *** omake: 17/122 targets are up to date
+- *** omake: failed (0.16 sec, 2/2 scans, 2/2 rules, 22/80 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    _build/amqp0-9-1.extended
+- Makefile:19: recipe for target 'install-lwt' failed
+- make: *** [install-lwt] Error 1
+- ocamlfind: Package `amqp-client' not found
+- Makefile:42: recipe for target 'uninstall' failed
+- make: *** [uninstall] Error 2
+
+#=== ERROR while installing amqp-client.1.0.3 =================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make install
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/amqp-client.1.0.3
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/amqp-client.1.0.3/amqp-client-21193.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/amqp-client.1.0.3/amqp-client-21193.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/amqp-client.1.0.3/amqp-client-21193.out
+### stdout ###
+# [...]
+# --- Checking if ocamldep understands -modules... (yes)
+# - build _build amqp0-9-1.extended
+# + curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml > _build/amqp0-9-1.extended
+# error: /home/doligez/opamcheck/sandbox2/bin/curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml
+# *** omake: 17/122 targets are up to date
+# *** omake: failed (0.16 sec, 2/2 scans, 2/2 rules, 22/80 digests)
+# *** omake: targets were not rebuilt because of errors:
+#    _build/amqp0-9-1.extended
+# Makefile:19: recipe for target 'install-lwt' failed
+# make: *** [install-lwt] Error 1
+### stderr ###
+# [...]
+# --- Checking if ocamldep understands -modules... (yes)
+# - build _build amqp0-9-1.extended
+# + curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml > _build/amqp0-9-1.extended
+# error: /home/doligez/opamcheck/sandbox2/bin/curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml
+# *** omake: 17/122 targets are up to date
+# *** omake: failed (0.16 sec, 2/2 scans, 2/2 rules, 22/80 digests)
+# *** omake: targets were not rebuilt because of errors:
+#    _build/amqp0-9-1.extended
+# Makefile:19: recipe for target 'install-lwt' failed
+# make: *** [install-lwt] Error 1
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install amqp-client 1.0.3
+No changes have been performed
+'opam install amqp-client.1.0.3' failed.

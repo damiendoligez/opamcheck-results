@@ -1,0 +1,238 @@
+The following actions will be performed:
+  - install core_kernel v0.11.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[core_kernel: http] Command started
+[core_kernel: http] Command started
+[core_kernel.v0.11.0] https://ocaml.janestreet.com/ocaml-core/v0.11/files/core_kernel-v0.11.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[core_kernel: jbuilder build] Command started
++ jbuilder "build" "-p" "core_kernel" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/core_kernel.v0.11.0)
+-       ocamlc src/.core_kernel.objs/core_kernel__Sequence.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.core_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/variantslib -I base_for_tests/src/.base_for_tests.objs -no-alias-deps -open Core_kernel__ -o src/.core_kernel.objs/core_kernel__Sequence.cmi -c -intf src/sequence.pp.mli)
+- File "src/sequence.mli", line 14, characters 8-132:
+- Error: In this `with' constraint, the new definition of Merge_with_duplicates_element
+-        does not match its original definition in the constrained signature:
+-        Modules do not match:
+-          (module Merge_with_duplicates_element)
+-        is not included in
+-          (module Base.Sequence.Merge_with_duplicates_element)
+-       ocamlc src/.core_kernel.objs/core_kernel__Sequence.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.core_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/variantslib -I base_for_tests/src/.base_for_tests.objs -no-alias-deps -open Core_kernel__ -o src/.core_kernel.objs/core_kernel__Sequence.cmi -c -intf src/sequence.pp.mli)
+- File "src/sequence.mli", line 14, characters 8-132:
+- Error: In this `with' constraint, the new definition of Merge_with_duplicates_element
+-        does not match its original definition in the constrained signature:
+-        Modules do not match:
+-          (module Merge_with_duplicates_element)
+-        is not included in
+-          (module Base.Sequence.Merge_with_duplicates_element)
+-     ocamlopt src/.core_kernel.objs/core_kernel__Info.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -safe-string -g -I src/.core_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/variantslib -I base_for_tests/src/.base_for_tests.objs -intf-suffix .ml -no-alias-deps -open Core_kernel__ -o src/.core_kernel.objs/core_kernel__Info.cmx -c -impl src/info.pp.ml)
+- File "src/info.ml", line 1:
+- Error: The implementation src/info.pp.ml
+-        does not match the interface src/.core_kernel.objs/core_kernel__Info.cmi:
+-        In module Internal_repr:
+-        Modules do not match:
+-          sig
+-            module Stable = Internal_repr.Stable
+-            type t =
+-              Base.Info.Internal_repr.t =
+-                Could_not_construct of Sexp.t
+-              | String of Core_kernel__.Import.string
+-              | Exn of Stable.Binable_exn.V1.t
+-              | Sexp of Sexp.t
+-              | Tag_sexp of Core_kernel__.Import.string * Sexp.t *
+-                  Stable.Source_code_position.V1.t Core_kernel__.Import.option
+-              | Tag_t of Core_kernel__.Import.string * t
+-              | Tag_arg of Core_kernel__.Import.string * Sexp.t * t
+-              | Of_list of
+-                  Core_kernel__.Import.int Core_kernel__.Import.option *
+-                  t Core_kernel__.Import.list
+-              | With_backtrace of t * Core_kernel__.Import.string
+-            val bin_shape_t : Bin_prot.Shape.t
+-            val bin_size_t : t -> int
+-            val bin_write_t :
+-              Bin_prot.Common.buf ->
+-              pos:Bin_prot.Common.pos -> t -> Bin_prot.Common.pos
+-            val bin_writer_t : t Bin_prot.Type_class.writer
+-            val __bin_read_t__ :
+-              'a ->
+-              pos_ref:Bin_prot.Common.pos Core_kernel__.Import.ref -> 'b -> 'c
+-            val bin_read_t : t Bin_prot.Read.reader
+-            val bin_reader_t : t Bin_prot.Type_class.reader
+-            val bin_t : t Bin_prot.Type_class.t
+-            val sexp_of_t : t -> Ppx_sexp_conv_lib.Sexp.t
+-            val to_info : Base.Info.Internal_repr.t -> Base.Info.t
+-            val of_info : Base.Info.t -> Base.Info.Internal_repr.t
+-          end
+-        is not included in
+-          (module Base.Info.Internal_repr)
+-       ocamlc src/.core_kernel.objs/core_kernel__Info.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.core_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/variantslib -I base_for_tests/src/.base_for_tests.objs -intf-suffix .ml -no-alias-deps -open Core_kernel__ -o src/.core_kernel.objs/core_kernel__Info.cmo -c -impl src/info.pp.ml)
+- File "src/info.ml", line 1:
+- Error: The implementation src/info.pp.ml
+-        does not match the interface src/.core_kernel.objs/core_kernel__Info.cmi:
+-        In module Internal_repr:
+-        Modules do not match:
+-          sig
+-            module Stable = Internal_repr.Stable
+-            type t =
+-              Base.Info.Internal_repr.t =
+-                Could_not_construct of Sexp.t
+-              | String of Core_kernel__.Import.string
+-              | Exn of Stable.Binable_exn.V1.t
+-              | Sexp of Sexp.t
+-              | Tag_sexp of Core_kernel__.Import.string * Sexp.t *
+-                  Stable.Source_code_position.V1.t Core_kernel__.Import.option
+-              | Tag_t of Core_kernel__.Import.string * t
+-              | Tag_arg of Core_kernel__.Import.string * Sexp.t * t
+-              | Of_list of
+-                  Core_kernel__.Import.int Core_kernel__.Import.option *
+-                  t Core_kernel__.Import.list
+-              | With_backtrace of t * Core_kernel__.Import.string
+-            val bin_shape_t : Bin_prot.Shape.t
+-            val bin_size_t : t -> int
+-            val bin_write_t :
+-              Bin_prot.Common.buf ->
+-              pos:Bin_prot.Common.pos -> t -> Bin_prot.Common.pos
+-            val bin_writer_t : t Bin_prot.Type_class.writer
+-            val __bin_read_t__ :
+-              'a ->
+-              pos_ref:Bin_prot.Common.pos Core_kernel__.Import.ref -> 'b -> 'c
+-            val bin_read_t : t Bin_prot.Read.reader
+-            val bin_reader_t : t Bin_prot.Type_class.reader
+-            val bin_t : t Bin_prot.Type_class.t
+-            val sexp_of_t : t -> Ppx_sexp_conv_lib.Sexp.t
+-            val to_info : Base.Info.Internal_repr.t -> Base.Info.t
+-            val of_info : Base.Info.t -> Base.Info.Internal_repr.t
+-          end
+-        is not included in
+-          (module Base.Info.Internal_repr)
+-     ocamlopt src/.core_kernel.objs/core_kernel__Info.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -safe-string -g -I src/.core_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/variantslib -I base_for_tests/src/.base_for_tests.objs -intf-suffix .ml -no-alias-deps -open Core_kernel__ -o src/.core_kernel.objs/core_kernel__Info.cmx -c -impl src/info.pp.ml)
+- File "src/info.ml", line 1:
+- Error: The implementation src/info.pp.ml
+-        does not match the interface src/.core_kernel.objs/core_kernel__Info.cmi:
+-        In module Internal_repr:
+-        Modules do not match:
+-          sig
+-            module Stable = Internal_repr.Stable
+-            type t =
+-              Base.Info.Internal_repr.t =
+-                Could_not_construct of Sexp.t
+-              | String of Core_kernel__.Import.string
+-              | Exn of Stable.Binable_exn.V1.t
+-              | Sexp of Sexp.t
+-              | Tag_sexp of Core_kernel__.Import.string * Sexp.t *
+-                  Stable.Source_code_position.V1.t Core_kernel__.Import.option
+-              | Tag_t of Core_kernel__.Import.string * t
+-              | Tag_arg of Core_kernel__.Import.string * Sexp.t * t
+-              | Of_list of
+-                  Core_kernel__.Import.int Core_kernel__.Import.option *
+-                  t Core_kernel__.Import.list
+-              | With_backtrace of t * Core_kernel__.Import.string
+-            val bin_shape_t : Bin_prot.Shape.t
+-            val bin_size_t : t -> int
+-            val bin_write_t :
+-              Bin_prot.Common.buf ->
+-              pos:Bin_prot.Common.pos -> t -> Bin_prot.Common.pos
+-            val bin_writer_t : t Bin_prot.Type_class.writer
+-            val __bin_read_t__ :
+-              'a ->
+-              pos_ref:Bin_prot.Common.pos Core_kernel__.Import.ref -> 'b -> 'c
+-            val bin_read_t : t Bin_prot.Read.reader
+-            val bin_reader_t : t Bin_prot.Type_class.reader
+-            val bin_t : t Bin_prot.Type_class.t
+-            val sexp_of_t : t -> Ppx_sexp_conv_lib.Sexp.t
+-            val to_info : Base.Info.Internal_repr.t -> Base.Info.t
+-            val of_info : Base.Info.t -> Base.Info.Internal_repr.t
+-          end
+-        is not included in
+-          (module Base.Info.Internal_repr)
+-       ocamlc src/.core_kernel.objs/core_kernel__Info.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.core_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/variantslib -I base_for_tests/src/.base_for_tests.objs -intf-suffix .ml -no-alias-deps -open Core_kernel__ -o src/.core_kernel.objs/core_kernel__Info.cmo -c -impl src/info.pp.ml)
+- File "src/info.ml", line 1:
+- Error: The implementation src/info.pp.ml
+-        does not match the interface src/.core_kernel.objs/core_kernel__Info.cmi:
+-        In module Internal_repr:
+-        Modules do not match:
+-          sig
+-            module Stable = Internal_repr.Stable
+-            type t =
+-              Base.Info.Internal_repr.t =
+-                Could_not_construct of Sexp.t
+-              | String of Core_kernel__.Import.string
+-              | Exn of Stable.Binable_exn.V1.t
+-              | Sexp of Sexp.t
+-              | Tag_sexp of Core_kernel__.Import.string * Sexp.t *
+-                  Stable.Source_code_position.V1.t Core_kernel__.Import.option
+-              | Tag_t of Core_kernel__.Import.string * t
+-              | Tag_arg of Core_kernel__.Import.string * Sexp.t * t
+-              | Of_list of
+-                  Core_kernel__.Import.int Core_kernel__.Import.option *
+-                  t Core_kernel__.Import.list
+-              | With_backtrace of t * Core_kernel__.Import.string
+-            val bin_shape_t : Bin_prot.Shape.t
+-            val bin_size_t : t -> int
+-            val bin_write_t :
+-              Bin_prot.Common.buf ->
+-              pos:Bin_prot.Common.pos -> t -> Bin_prot.Common.pos
+-            val bin_writer_t : t Bin_prot.Type_class.writer
+-            val __bin_read_t__ :
+-              'a ->
+-              pos_ref:Bin_prot.Common.pos Core_kernel__.Import.ref -> 'b -> 'c
+-            val bin_read_t : t Bin_prot.Read.reader
+-            val bin_reader_t : t Bin_prot.Type_class.reader
+-            val bin_t : t Bin_prot.Type_class.t
+-            val sexp_of_t : t -> Ppx_sexp_conv_lib.Sexp.t
+-            val to_info : Base.Info.Internal_repr.t -> Base.Info.t
+-            val of_info : Base.Info.t -> Base.Info.Internal_repr.t
+-          end
+-        is not included in
+-          (module Base.Info.Internal_repr)
+[ERROR] The compilation of core_kernel failed at "jbuilder build -p core_kernel
+        -j 4".
+
+#=== ERROR while installing core_kernel.v0.11.0 ===============================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p core_kernel -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/core_kernel.v0.11.0
+# compiler             4.07.0+24fac73
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/core_kernel.v0.11.0/core_kernel-5167.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/core_kernel.v0.11.0/core_kernel-5167.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/core_kernel.v0.11.0/core_kernel-5167.out
+### stdout ###
+# Error: The implementation src/info.pp.ml
+# [...]
+#            val bin_read_t : t Bin_prot.Read.reader
+#            val bin_reader_t : t Bin_prot.Type_class.reader
+#            val bin_t : t Bin_prot.Type_class.t
+#            val sexp_of_t : t -> Ppx_sexp_conv_lib.Sexp.t
+#            val to_info : Base.Info.Internal_repr.t -> Base.Info.t
+#            val of_info : Base.Info.t -> Base.Info.Internal_repr.t
+#          end
+#        is not included in
+#          (module Base.Info.Internal_repr)
+### stderr ###
+# Error: The implementation src/info.pp.ml
+# [...]
+#            val bin_read_t : t Bin_prot.Read.reader
+#            val bin_reader_t : t Bin_prot.Type_class.reader
+#            val bin_t : t Bin_prot.Type_class.t
+#            val sexp_of_t : t -> Ppx_sexp_conv_lib.Sexp.t
+#            val to_info : Base.Info.Internal_repr.t -> Base.Info.t
+#            val of_info : Base.Info.t -> Base.Info.Internal_repr.t
+#          end
+#        is not included in
+#          (module Base.Info.Internal_repr)
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install core_kernel v0.11.0
+No changes have been performed
+'opam install core_kernel.v0.11.0' failed.

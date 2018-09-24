@@ -1,0 +1,53 @@
+The following actions will be performed:
+  - install minisat 0.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[minisat: http] Command started
+[minisat: http] Command started
+[minisat.0.2] https://github.com/c-cube/ocaml-minisat/archive/0.2.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[minisat: dune build] Command started
++ dune "build" "-p" "minisat" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/minisat.0.2)
+- File "dune-project", line 1, characters 11-14:
+- Error: Version 1.1 of dune is not supported.
+- Supported versions:
+- - 0.0
+- - 1.0
+- File "dune-project", line 1, characters 11-14:
+- Error: Version 1.1 of dune is not supported.
+- Supported versions:
+- - 0.0
+- - 1.0
+[ERROR] The compilation of minisat failed at "dune build -p minisat".
+
+#=== ERROR while installing minisat.0.2 =======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              dune build -p minisat
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/minisat.0.2
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/minisat.0.2/minisat-3234.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/minisat.0.2/minisat-3234.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/minisat.0.2/minisat-3234.out
+### stdout ###
+# File "dune-project", line 1, characters 11-14:
+# Error: Version 1.1 of dune is not supported.
+# Supported versions:
+# - 0.0
+# - 1.0
+### stderr ###
+# File "dune-project", line 1, characters 11-14:
+# Error: Version 1.1 of dune is not supported.
+# Supported versions:
+# - 0.0
+# - 1.0
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install minisat 0.2
+No changes have been performed
+'opam install minisat.0.2' failed.

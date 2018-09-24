@@ -1,0 +1,75 @@
+The following actions will be performed:
+  - install forkwork 0.3.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[forkwork: http] Command started
+[forkwork: http] Command started
+[forkwork.0.3.2] https://github.com/mlin/forkwork/archive/v0.3.2.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[forkwork: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/forkwork.0.3.2)
+- File "./setup.ml", line 213, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 213, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "./setup.ml", line 213, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 213, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+[ERROR] The compilation of forkwork failed at "ocaml setup.ml -configure
+        --prefix
+        /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051".
+[forkwork: ocamlfind remove] Command started
++ ocamlfind "remove" "forkwork" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/forkwork.0.3.2)
+- File "./setup.ml", line 213, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 213, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/forkwork/META
+- File "./setup.ml", line 213, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 213, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/forkwork/META
+
+#=== ERROR while installing forkwork.0.3.2 ====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -configure --prefix /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/forkwork.0.3.2
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/forkwork.0.3.2/forkwork-23410.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/forkwork.0.3.2/forkwork-23410.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/forkwork.0.3.2/forkwork-23410.out
+### stdout ###
+# File "./setup.ml", line 213, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 213, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+### stderr ###
+# File "./setup.ml", line 213, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 213, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install forkwork 0.3.2
+No changes have been performed
+'opam install forkwork.0.3.2' failed.

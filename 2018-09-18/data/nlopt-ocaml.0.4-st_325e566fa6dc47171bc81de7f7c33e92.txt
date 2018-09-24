@@ -1,0 +1,80 @@
+The following actions will be performed:
+  - install nlopt-ocaml 0.4
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[nlopt-ocaml: http] Command started
+[nlopt-ocaml: http] Command started
+[nlopt-ocaml.0.4] https://bitbucket.org/mkur/nlopt-ocaml/get/release-0.4.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[nlopt-ocaml: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/nlopt-ocaml.0.4)
+- File "/Users/mkur/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/Users/mkur/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "/Users/mkur/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/Users/mkur/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+[ERROR] The compilation of nlopt-ocaml failed at "ocaml setup.ml -configure
+        --prefix
+        /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73".
+[nlopt-ocaml: ocamlfind remove] Command started
++ ocamlfind "remove" "nlopt" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/nlopt-ocaml.0.4)
+- File "/Users/mkur/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/Users/mkur/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/nlopt/META
+- File "/Users/mkur/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/Users/mkur/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/nlopt/META
+
+#=== ERROR while installing nlopt-ocaml.0.4 ===================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -configure --prefix /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/nlopt-ocaml.0.4
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/nlopt-ocaml.0.4/nlopt-ocaml-3397.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/nlopt-ocaml.0.4/nlopt-ocaml-3397.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/nlopt-ocaml.0.4/nlopt-ocaml-3397.out
+### stdout ###
+# File "/Users/mkur/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "/Users/mkur/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+### stderr ###
+# File "/Users/mkur/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "/Users/mkur/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install nlopt-ocaml 0.4
+No changes have been performed
+
+=-=- nlopt-ocaml.0.4 troobleshooting =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package relies on external (system) dependencies that may be missing.
+   `opam depext nlopt-ocaml.0.4' may help you find the correct installation for
+   your system.
+'opam install nlopt-ocaml.0.4' failed.

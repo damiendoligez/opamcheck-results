@@ -1,0 +1,50 @@
+The following actions will be performed:
+  - install amqp-client-async 2.0.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[amqp-client-async: http] Command started
+[amqp-client-async: http] Command started
+[amqp-client-async.2.0.2] https://github.com/andersfugmann/amqp-client/archive/2.0.2.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[amqp-client-async: jbuilder build] Command started
++ jbuilder "build" "-p" "amqp-client-async" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/amqp-client-async.2.0.2)
+-     ocamldep async/src/.amqp_client_async.objs/spec.ml.d (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules -impl async/src/spec.ml) > _build/default/async/src/.amqp_client_async.objs/spec.ml.d
+- File "spec/gen_spec.ml", line 394, characters 2-3:
+- Error: Syntax error
+-     ocamldep async/src/.amqp_client_async.objs/spec.ml.d (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules -impl async/src/spec.ml) > _build/default/async/src/.amqp_client_async.objs/spec.ml.d
+- File "spec/gen_spec.ml", line 394, characters 2-3:
+- Error: Syntax error
+[ERROR] The compilation of amqp-client-async failed at "jbuilder build -p
+        amqp-client-async -j 4".
+
+#=== ERROR while installing amqp-client-async.2.0.2 ===========================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p amqp-client-async -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/amqp-client-async.2.0.2
+# compiler             4.07.0+24fac73
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/amqp-client-async.2.0.2/amqp-client-async-1134.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/amqp-client-async.2.0.2/amqp-client-async-1134.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/amqp-client-async.2.0.2/amqp-client-async-1134.out
+### stdout ###
+#     ocamldep async/src/.amqp_client_async.objs/spec.ml.d (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules -impl async/src/spec.ml) > _build/default/async/src/.amqp_client_async.objs/spec.ml.d
+# File "spec/gen_spec.ml", line 394, characters 2-3:
+# Error: Syntax error
+### stderr ###
+#     ocamldep async/src/.amqp_client_async.objs/spec.ml.d (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules -impl async/src/spec.ml) > _build/default/async/src/.amqp_client_async.objs/spec.ml.d
+# File "spec/gen_spec.ml", line 394, characters 2-3:
+# Error: Syntax error
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install amqp-client-async 2.0.2
+No changes have been performed
+'opam install amqp-client-async.2.0.2' failed.

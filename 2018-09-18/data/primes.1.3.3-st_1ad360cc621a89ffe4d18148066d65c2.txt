@@ -1,0 +1,72 @@
+The following actions will be performed:
+  - install primes 1.3.3
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[primes: http] Command started
+[primes: http] Command started
+[primes.1.3.3] https://github.com/KitFreddura/OCaml-Primes/archive/1.3.3.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[primes: mkdir] Command started
++ mkdir "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/primes" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/primes.1.3.3)
+[primes: ocamlfind ocamlc] Command started
++ ocamlfind "ocamlc" "-c" "-linkpkg" "-package" "zarith" "primes.mli" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/primes.1.3.3)
+[primes: ocamlfind ocamlc] Command started
++ ocamlfind "ocamlc" "-o" "primes.cma" "primes.ml" "-linkpkg" "-package" "zarith,core,gen" "-thread" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/primes.1.3.3)
+- File "primes.ml", line 1, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "primes.ml", line 53, characters 37-45:
+- Error: Unbound value Gen.peek
+- File "primes.ml", line 1, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "primes.ml", line 53, characters 37-45:
+- Error: Unbound value Gen.peek
+[ERROR] The compilation of primes failed at "ocamlfind ocamlc -o primes.cma
+        primes.ml -linkpkg -package zarith,core,gen -thread".
+[primes: ocamlfind remove] Command started
++ ocamlfind "remove" "primes" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/primes.1.3.3)
+- File "primes.ml", line 1, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "primes.ml", line 53, characters 37-45:
+- Error: Unbound value Gen.peek
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/primes/META
+- File "primes.ml", line 1, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "primes.ml", line 53, characters 37-45:
+- Error: Unbound value Gen.peek
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/primes/META
+
+#=== ERROR while installing primes.1.3.3 ======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocamlfind ocamlc -o primes.cma primes.ml -linkpkg -package zarith,core,gen -thread
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/primes.1.3.3
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/primes.1.3.3/primes-12326.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/primes.1.3.3/primes-12326.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/primes.1.3.3/primes-12326.out
+### stdout ###
+# File "primes.ml", line 1, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# File "primes.ml", line 53, characters 37-45:
+# Error: Unbound value Gen.peek
+### stderr ###
+# File "primes.ml", line 1, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# File "primes.ml", line 53, characters 37-45:
+# Error: Unbound value Gen.peek
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install primes 1.3.3
+No changes have been performed
+'opam install primes.1.3.3' failed.

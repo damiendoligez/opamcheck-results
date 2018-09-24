@@ -1,0 +1,545 @@
+The following actions will be performed:
+  - install owl 0.3.7
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owl: http] Command started
+[owl: http] Command started
+[owl.0.3.7] https://github.com/owlbarn/owl/releases/download/0.3.7/owl-base-0.3.7.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owl: jbuilder build] Command started
++ jbuilder "build" "-p" "owl" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.3.7)
+-       ocamlc src/owl/.owl.objs/owl_nlp_utils.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_nlp_utils.cmo -c -impl src/owl/owl_nlp_utils.ml)
+- File "src/owl/nlp/owl_nlp_utils.ml", line 93, characters 26-51:
+- Error: Unbound value Owl_utils.marshal_to_file
+-       ocamlc src/owl/.owl.objs/owl_nlp_utils.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_nlp_utils.cmo -c -impl src/owl/owl_nlp_utils.ml)
+- File "src/owl/nlp/owl_nlp_utils.ml", line 93, characters 26-51:
+- Error: Unbound value Owl_utils.marshal_to_file
+-       ocamlc src/owl/.owl.objs/owl_sparse_common.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_common.cmo -c -impl src/owl/owl_sparse_common.ml)
+- File "src/owl/sparse/owl_sparse_common.ml", line 273, characters 37-56:
+- Error: Unbound value Eigen.Sparse.S.gemm
+-     ocamlopt src/owl/.owl.objs/owl_stats.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -safe-string -g -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_stats.cmx -c -impl src/owl/owl_stats.ml)
+- File "src/owl/owl_stats.ml", line 1:
+- Error: The implementation src/owl/owl_stats.ml
+-        does not match the interface src/owl/.owl.objs/owl_stats.cmi:
+-        Values do not match:
+-          val histogram :
+-            [ `Bins of float array | `N of int ] ->
+-            ?weights:float array -> float array -> Owl_base_stats.histogram
+-        is not included in
+-          val histogram : float array -> int -> int array
+-        File "src/owl/stats/owl_stats.mli", line 156, characters 0-47:
+-          Expected declaration
+-        File "src/owl/stats/owl_stats.ml", line 178, characters 4-13:
+-          Actual declaration
+-       ocamlc src/owl/.owl.objs/owl_sparse_common.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_common.cmo -c -impl src/owl/owl_sparse_common.ml)
+- File "src/owl/sparse/owl_sparse_common.ml", line 273, characters 37-56:
+- Error: Unbound value Eigen.Sparse.S.gemm
+-     ocamlopt src/owl/.owl.objs/owl_stats.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -safe-string -g -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_stats.cmx -c -impl src/owl/owl_stats.ml)
+- File "src/owl/owl_stats.ml", line 1:
+- Error: The implementation src/owl/owl_stats.ml
+-        does not match the interface src/owl/.owl.objs/owl_stats.cmi:
+-        Values do not match:
+-          val histogram :
+-            [ `Bins of float array | `N of int ] ->
+-            ?weights:float array -> float array -> Owl_base_stats.histogram
+-        is not included in
+-          val histogram : float array -> int -> int array
+-        File "src/owl/stats/owl_stats.mli", line 156, characters 0-47:
+-          Expected declaration
+-        File "src/owl/stats/owl_stats.ml", line 178, characters 4-13:
+-          Actual declaration
+-       ocamlc src/owl/.owl.objs/owl_ppl.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_ppl.cmo -c -impl src/owl/owl_ppl.ml)
+- File "src/owl/ppl/owl_ppl.ml", line 26, characters 14-20:
+- Error: Unbound value to_arr
+-       ocamlc src/owl/.owl.objs/owl_ppl_random_variable.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_ppl_random_variable.cmo -c -impl src/owl/owl_ppl_random_variable.ml)
+- File "src/owl/ppl/owl_ppl_random_variable.ml", line 17, characters 19-22:
+- Error: Unbound type constructor L.t
+-       ocamlc src/owl/.owl.objs/owl_stats.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_stats.cmo -c -impl src/owl/owl_stats.ml)
+- File "src/owl/owl_stats.ml", line 1:
+- Error: The implementation src/owl/owl_stats.ml
+-        does not match the interface src/owl/.owl.objs/owl_stats.cmi:
+-        Values do not match:
+-          val histogram :
+-            [ `Bins of float array | `N of int ] ->
+-            ?weights:float array -> float array -> Owl_base_stats.histogram
+-        is not included in
+-          val histogram : float array -> int -> int array
+-        File "src/owl/stats/owl_stats.mli", line 156, characters 0-47:
+-          Expected declaration
+-        File "src/owl/stats/owl_stats.ml", line 178, characters 4-13:
+-          Actual declaration
+-       ocamlc src/owl/.owl.objs/owl_regression_generic.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_regression_generic.cmo -c -impl src/owl/owl_regression_generic.ml)
+- File "src/owl/optimise/owl_regression_generic.ml", line 13, characters 37-38:
+- Error: Signature mismatch:
+-        ...
+-        The value `pp_num' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 506, characters 2-44:
+-          Expected declaration
+-        The value `to_dot' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 499, characters 2-31:
+-          Expected declaration
+-        The value `to_trace' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 493, characters 2-33:
+-          Expected declaration
+-        The value `_f' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 481, characters 2-21:
+-          Expected declaration
+-        The value `copy_primal'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 478, characters 2-27:
+-          Expected declaration
+-        The value `type_info' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 472, characters 2-29:
+-          Expected declaration
+-        The value `reverse_prop' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 469, characters 2-35:
+-          Expected declaration
+-        The value `make_reverse' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 466, characters 2-34:
+-          Expected declaration
+-        The value `make_forward' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 463, characters 2-39:
+-          Expected declaration
+-        The value `tangent' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 460, characters 2-22:
+-          Expected declaration
+-        The value `adjref' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 457, characters 2-25:
+-          Expected declaration
+-        The value `adjval' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 454, characters 2-21:
+-          Expected declaration
+-        The value `primal'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 451, characters 2-22:
+-          Expected declaration
+-        The value `primal' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 448, characters 2-21:
+-          Expected declaration
+-        The value `tag' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 445, characters 2-23:
+-          Expected declaration
+-        The value `unpack_arr' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 442, characters 2-29:
+-          Expected declaration
+-        The value `pack_arr' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 439, characters 2-27:
+-          Expected declaration
+-        The value `unpack_flt' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 436, characters 2-29:
+-          Expected declaration
+-        The value `pack_flt' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 433, characters 2-27:
+-          Expected declaration
+-        The value `unpack_elt' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 430, characters 2-29:
+-          Expected declaration
+-        The value `pack_elt' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 427, characters 2-27:
+-          Expected declaration
+-        The value `gradhessianv'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 419, characters 2-53:
+-          Expected declaration
+-        The value `gradhessianv' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 416, characters 2-48:
+-          Expected declaration
+-        The value `gradhessian'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 413, characters 2-47:
+-          Expected declaration
+-        The value `gradhessian' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 410, characters 2-42:
+-          Expected declaration
+-        The value `laplacian'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 407, characters 2-41:
+-          Expected declaration
+-        The value `laplacian' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 404, characters 2-36:
+-          Expected declaration
+-        The value `hessianv'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 401, characters 2-45:
+-          Expected declaration
+-        The value `hessianv' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 395, characters 2-40:
+-          Expected declaration
+-        The value `hessian'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 392, characters 2-39:
+-          Expected declaration
+-        The value `hessian' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 389, characters 2-34:
+-          Expected declaration
+-        The value `jacobianTv'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 386, characters 2-47:
+-          Expected declaration
+-        The value `jacobianTv' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 380, characters 2-42:
+-          Expected declaration
+-        The value `jacobianv'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 377, characters 2-46:
+-          Expected declaration
+-        The value `jacobianv' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 371, characters 2-41:
+-          Expected declaration
+-        The value `jacobian'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 368, characters 2-40:
+-          Expected declaration
+-        The value `jacobian' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 365, characters 2-35:
+-          Expected declaration
+-        The value `grad'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 362, characters 2-36:
+-          Expected declaration
+-        The value `grad' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 359, characters 2-31:
+-          Expected declaration
+-        The value `diff'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 356, characters 2-36:
+-          Expected declaration
+-        The value `diff' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 346, characters 2-31:
+-          Expected declaration
+-        The module `Arr' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 313, characters 2-474:
+-          Expected declaration
+-        The module `Mat' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 264, characters 2-781:
+-          Expected declaration
+-        The module `Maths' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 30, characters 2-6716:
+-          Expected declaration
+-        The type `t' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 20, characters 2-308:
+-          Expected declaration
+-        The type `trace_op' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 17, characters 2-15:
+-          Expected declaration
+-        The module `A' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 11, characters 2-43:
+-          Expected declaration
+-       ocamlc src/owl/.owl.objs/owl_ppl.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_ppl.cmo -c -impl src/owl/owl_ppl.ml)
+- File "src/owl/ppl/owl_ppl.ml", line 26, characters 14-20:
+- Error: Unbound value to_arr
+-       ocamlc src/owl/.owl.objs/owl_ppl_random_variable.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_ppl_random_variable.cmo -c -impl src/owl/owl_ppl_random_variable.ml)
+- File "src/owl/ppl/owl_ppl_random_variable.ml", line 17, characters 19-22:
+- Error: Unbound type constructor L.t
+-       ocamlc src/owl/.owl.objs/owl_stats.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_stats.cmo -c -impl src/owl/owl_stats.ml)
+- File "src/owl/owl_stats.ml", line 1:
+- Error: The implementation src/owl/owl_stats.ml
+-        does not match the interface src/owl/.owl.objs/owl_stats.cmi:
+-        Values do not match:
+-          val histogram :
+-            [ `Bins of float array | `N of int ] ->
+-            ?weights:float array -> float array -> Owl_base_stats.histogram
+-        is not included in
+-          val histogram : float array -> int -> int array
+-        File "src/owl/stats/owl_stats.mli", line 156, characters 0-47:
+-          Expected declaration
+-        File "src/owl/stats/owl_stats.ml", line 178, characters 4-13:
+-          Actual declaration
+-       ocamlc src/owl/.owl.objs/owl_regression_generic.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_regression_generic.cmo -c -impl src/owl/owl_regression_generic.ml)
+- File "src/owl/optimise/owl_regression_generic.ml", line 13, characters 37-38:
+- Error: Signature mismatch:
+-        ...
+-        The value `pp_num' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 506, characters 2-44:
+-          Expected declaration
+-        The value `to_dot' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 499, characters 2-31:
+-          Expected declaration
+-        The value `to_trace' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 493, characters 2-33:
+-          Expected declaration
+-        The value `_f' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 481, characters 2-21:
+-          Expected declaration
+-        The value `copy_primal'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 478, characters 2-27:
+-          Expected declaration
+-        The value `type_info' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 472, characters 2-29:
+-          Expected declaration
+-        The value `reverse_prop' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 469, characters 2-35:
+-          Expected declaration
+-        The value `make_reverse' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 466, characters 2-34:
+-          Expected declaration
+-        The value `make_forward' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 463, characters 2-39:
+-          Expected declaration
+-        The value `tangent' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 460, characters 2-22:
+-          Expected declaration
+-        The value `adjref' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 457, characters 2-25:
+-          Expected declaration
+-        The value `adjval' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 454, characters 2-21:
+-          Expected declaration
+-        The value `primal'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 451, characters 2-22:
+-          Expected declaration
+-        The value `primal' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 448, characters 2-21:
+-          Expected declaration
+-        The value `tag' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 445, characters 2-23:
+-          Expected declaration
+-        The value `unpack_arr' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 442, characters 2-29:
+-          Expected declaration
+-        The value `pack_arr' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 439, characters 2-27:
+-          Expected declaration
+-        The value `unpack_flt' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 436, characters 2-29:
+-          Expected declaration
+-        The value `pack_flt' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 433, characters 2-27:
+-          Expected declaration
+-        The value `unpack_elt' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 430, characters 2-29:
+-          Expected declaration
+-        The value `pack_elt' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 427, characters 2-27:
+-          Expected declaration
+-        The value `gradhessianv'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 419, characters 2-53:
+-          Expected declaration
+-        The value `gradhessianv' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 416, characters 2-48:
+-          Expected declaration
+-        The value `gradhessian'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 413, characters 2-47:
+-          Expected declaration
+-        The value `gradhessian' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 410, characters 2-42:
+-          Expected declaration
+-        The value `laplacian'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 407, characters 2-41:
+-          Expected declaration
+-        The value `laplacian' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 404, characters 2-36:
+-          Expected declaration
+-        The value `hessianv'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 401, characters 2-45:
+-          Expected declaration
+-        The value `hessianv' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 395, characters 2-40:
+-          Expected declaration
+-        The value `hessian'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 392, characters 2-39:
+-          Expected declaration
+-        The value `hessian' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 389, characters 2-34:
+-          Expected declaration
+-        The value `jacobianTv'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 386, characters 2-47:
+-          Expected declaration
+-        The value `jacobianTv' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 380, characters 2-42:
+-          Expected declaration
+-        The value `jacobianv'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 377, characters 2-46:
+-          Expected declaration
+-        The value `jacobianv' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 371, characters 2-41:
+-          Expected declaration
+-        The value `jacobian'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 368, characters 2-40:
+-          Expected declaration
+-        The value `jacobian' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 365, characters 2-35:
+-          Expected declaration
+-        The value `grad'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 362, characters 2-36:
+-          Expected declaration
+-        The value `grad' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 359, characters 2-31:
+-          Expected declaration
+-        The value `diff'' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 356, characters 2-36:
+-          Expected declaration
+-        The value `diff' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 346, characters 2-31:
+-          Expected declaration
+-        The module `Arr' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 313, characters 2-474:
+-          Expected declaration
+-        The module `Mat' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 264, characters 2-781:
+-          Expected declaration
+-        The module `Maths' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 30, characters 2-6716:
+-          Expected declaration
+-        The type `t' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 20, characters 2-308:
+-          Expected declaration
+-        The type `trace_op' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 17, characters 2-15:
+-          Expected declaration
+-        The module `A' is required but not provided
+-        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 11, characters 2-43:
+-          Expected declaration
+-       ocamlc src/owl/.owl.objs/owl_linalg_generic.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_linalg_generic.cmo -c -impl src/owl/owl_linalg_generic.ml)
+- File "src/owl/linalg/owl_linalg_generic.ml", line 22, characters 36-60:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
+-        is not included in
+-          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
+-        File "src/base/types/owl_types_operator.ml", line 114, characters 2-64:
+-          Expected declaration
+-        File "src/owl/dense/owl_dense_matrix_generic.mli", line 2039, characters 0-43:
+-          Actual declaration
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_a.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_a.cmo -c -impl src/owl/owl_dense_ndarray_a.ml)
+- File "src/owl/dense/owl_dense_ndarray_a.ml", line 129, characters 41-48:
+- Error: This expression has type int but an expression was expected of type
+-          'a array array
+-       ocamlc src/owl/.owl.objs/owl_linalg_generic.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_linalg_generic.cmo -c -impl src/owl/owl_linalg_generic.ml)
+- File "src/owl/linalg/owl_linalg_generic.ml", line 22, characters 36-60:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
+-        is not included in
+-          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
+-        File "src/base/types/owl_types_operator.ml", line 114, characters 2-64:
+-          Expected declaration
+-        File "src/owl/dense/owl_dense_matrix_generic.mli", line 2039, characters 0-43:
+-          Actual declaration
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_a.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_a.cmo -c -impl src/owl/owl_dense_ndarray_a.ml)
+- File "src/owl/dense/owl_dense_ndarray_a.ml", line 129, characters 41-48:
+- Error: This expression has type int but an expression was expected of type
+-          'a array array
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_generic.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_generic.cmo -c -impl src/owl/owl_dense_ndarray_generic.ml)
+- File "src/owl/dense/owl_dense_ndarray_generic.ml", line 152, characters 54-61:
+- Error: This expression has type int but an expression was expected of type
+-          int array array
+-       ocamlc src/owl/.owl.objs/owl_sparse_ndarray_generic.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_ndarray_generic.cmo -c -impl src/owl/owl_sparse_ndarray_generic.ml)
+- File "src/owl/sparse/owl_sparse_ndarray_generic.ml", line 540, characters 15-40:
+- Error: Unbound value Owl_utils.marshal_to_file
+-       ocamlc src/owl/.owl.objs/owl_dense_matrix.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_matrix.cmo -c -impl src/owl/owl_dense_matrix.ml)
+- File "src/owl/dense/owl_dense_matrix.ml", line 11, characters 36-60:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
+-        is not included in
+-          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
+-        File "src/base/types/owl_types_operator.ml", line 114, characters 2-64:
+-          Expected declaration
+-        File "src/owl/dense/owl_dense_matrix_generic.mli", line 2039, characters 0-43:
+-          Actual declaration
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray.cmo -c -impl src/owl/owl_dense_ndarray.ml)
+- File "src/owl/dense/owl_dense_ndarray.ml", line 11, characters 36-61:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
+-        is not included in
+-          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
+-        File "src/base/types/owl_types_operator.ml", line 114, characters 2-64:
+-          Expected declaration
+-        File "src/owl/dense/owl_dense_ndarray_generic.mli", line 1983, characters 0-43:
+-          Actual declaration
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_generic.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_generic.cmo -c -impl src/owl/owl_dense_ndarray_generic.ml)
+- File "src/owl/dense/owl_dense_ndarray_generic.ml", line 152, characters 54-61:
+- Error: This expression has type int but an expression was expected of type
+-          int array array
+-       ocamlc src/owl/.owl.objs/owl_sparse_ndarray_generic.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_ndarray_generic.cmo -c -impl src/owl/owl_sparse_ndarray_generic.ml)
+- File "src/owl/sparse/owl_sparse_ndarray_generic.ml", line 540, characters 15-40:
+- Error: Unbound value Owl_utils.marshal_to_file
+-       ocamlc src/owl/.owl.objs/owl_dense_matrix.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_matrix.cmo -c -impl src/owl/owl_dense_matrix.ml)
+- File "src/owl/dense/owl_dense_matrix.ml", line 11, characters 36-60:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
+-        is not included in
+-          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
+-        File "src/base/types/owl_types_operator.ml", line 114, characters 2-64:
+-          Expected declaration
+-        File "src/owl/dense/owl_dense_matrix_generic.mli", line 2039, characters 0-43:
+-          Actual declaration
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray.cmo -c -impl src/owl/owl_dense_ndarray.ml)
+- File "src/owl/dense/owl_dense_ndarray.ml", line 11, characters 36-61:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
+-        is not included in
+-          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
+-        File "src/base/types/owl_types_operator.ml", line 114, characters 2-64:
+-          Expected declaration
+-        File "src/owl/dense/owl_dense_ndarray_generic.mli", line 1983, characters 0-43:
+-          Actual declaration
+[ERROR] The compilation of owl failed at "jbuilder build -p owl -j 4".
+
+#=== ERROR while installing owl.0.3.7 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p owl -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.3.7
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.3.7/owl-4795.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.3.7/owl-4795.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.3.7/owl-4795.out
+### stdout ###
+# [...]
+# Error: Signature mismatch:
+#        ...
+#        Values do not match:
+#          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
+#        is not included in
+#          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
+#        File "src/base/types/owl_types_operator.ml", line 114, characters 2-64:
+#          Expected declaration
+#        File "src/owl/dense/owl_dense_ndarray_generic.mli", line 1983, characters 0-43:
+#          Actual declaration
+### stderr ###
+# [...]
+# Error: Signature mismatch:
+#        ...
+#        Values do not match:
+#          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
+#        is not included in
+#          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
+#        File "src/base/types/owl_types_operator.ml", line 114, characters 2-64:
+#          Expected declaration
+#        File "src/owl/dense/owl_dense_ndarray_generic.mli", line 1983, characters 0-43:
+#          Actual declaration
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install owl 0.3.7
+No changes have been performed
+'opam install owl.0.3.7' failed.

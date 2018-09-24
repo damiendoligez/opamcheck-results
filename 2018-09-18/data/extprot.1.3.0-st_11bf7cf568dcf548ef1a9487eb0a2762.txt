@@ -1,0 +1,255 @@
+The following actions will be performed:
+  - install extprot 1.3.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[extprot: http] Command started
+[extprot: http] Command started
+[extprot.1.3.0] https://github.com/mfp/extprot/archive/1.3.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[extprot: omake] Command started
++ omake  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/extprot.1.3.0)
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- --- Checking if ocamldep understands -modules... (yes)
+- *** omake: finished reading OMakefiles (0.12 sec)
+- - build runtime random_gen.cmi
+- + ocamlfind ocamlc -package dynlink,camlp4,extlib,bytes,camlp4.macro -w +a-3-4-32-44-48 -warn-error +a-3-4-6-7-9-18-27..29-32..99 -bin-annot -syntax camlp4o -ppopt -DLITTLE_ENDIAN -for-pack Extprot -g -g -I . -c random_gen.ml
+- File "random_gen.ml", line 37, characters 0-2194:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val rand_string : ('a -> int * R.State.t) -> 'a -> bytes * R.State.t
+-        is not included in
+-          val rand_string : int t -> string t
+-        File "random_gen.ml", line 17, characters 2-37: Expected declaration
+-        File "random_gen.ml", line 64, characters 6-17: Actual declaration
+- *** omake: 95/217 targets are up to date
+- *** omake: failed (0.71 sec, 22/22 scans, 13/23 rules, 68/107 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    runtime/random_gen.cmi
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.cmo
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.cmx
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.o
+-       depends on: runtime/random_gen.ml
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- --- Checking if ocamldep understands -modules... (yes)
+- *** omake: finished reading OMakefiles (0.12 sec)
+- - build runtime random_gen.cmi
+- + ocamlfind ocamlc -package dynlink,camlp4,extlib,bytes,camlp4.macro -w +a-3-4-32-44-48 -warn-error +a-3-4-6-7-9-18-27..29-32..99 -bin-annot -syntax camlp4o -ppopt -DLITTLE_ENDIAN -for-pack Extprot -g -g -I . -c random_gen.ml
+- File "random_gen.ml", line 37, characters 0-2194:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val rand_string : ('a -> int * R.State.t) -> 'a -> bytes * R.State.t
+-        is not included in
+-          val rand_string : int t -> string t
+-        File "random_gen.ml", line 17, characters 2-37: Expected declaration
+-        File "random_gen.ml", line 64, characters 6-17: Actual declaration
+- *** omake: 95/217 targets are up to date
+- *** omake: failed (0.71 sec, 22/22 scans, 13/23 rules, 68/107 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    runtime/random_gen.cmi
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.cmo
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.cmx
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.o
+-       depends on: runtime/random_gen.ml
+[ERROR] The compilation of extprot failed at "omake".
+[extprot: ocamlfind remove] Command started
++ ocamlfind "remove" "extprot" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/extprot.1.3.0)
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- --- Checking if ocamldep understands -modules... (yes)
+- *** omake: finished reading OMakefiles (0.12 sec)
+- - build runtime random_gen.cmi
+- + ocamlfind ocamlc -package dynlink,camlp4,extlib,bytes,camlp4.macro -w +a-3-4-32-44-48 -warn-error +a-3-4-6-7-9-18-27..29-32..99 -bin-annot -syntax camlp4o -ppopt -DLITTLE_ENDIAN -for-pack Extprot -g -g -I . -c random_gen.ml
+- File "random_gen.ml", line 37, characters 0-2194:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val rand_string : ('a -> int * R.State.t) -> 'a -> bytes * R.State.t
+-        is not included in
+-          val rand_string : int t -> string t
+-        File "random_gen.ml", line 17, characters 2-37: Expected declaration
+-        File "random_gen.ml", line 64, characters 6-17: Actual declaration
+- *** omake: 95/217 targets are up to date
+- *** omake: failed (0.71 sec, 22/22 scans, 13/23 rules, 68/107 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    runtime/random_gen.cmi
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.cmo
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.cmx
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.o
+-       depends on: runtime/random_gen.ml
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extprot/META
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- --- Checking if ocamldep understands -modules... (yes)
+- *** omake: finished reading OMakefiles (0.12 sec)
+- - build runtime random_gen.cmi
+- + ocamlfind ocamlc -package dynlink,camlp4,extlib,bytes,camlp4.macro -w +a-3-4-32-44-48 -warn-error +a-3-4-6-7-9-18-27..29-32..99 -bin-annot -syntax camlp4o -ppopt -DLITTLE_ENDIAN -for-pack Extprot -g -g -I . -c random_gen.ml
+- File "random_gen.ml", line 37, characters 0-2194:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val rand_string : ('a -> int * R.State.t) -> 'a -> bytes * R.State.t
+-        is not included in
+-          val rand_string : int t -> string t
+-        File "random_gen.ml", line 17, characters 2-37: Expected declaration
+-        File "random_gen.ml", line 64, characters 6-17: Actual declaration
+- *** omake: 95/217 targets are up to date
+- *** omake: failed (0.71 sec, 22/22 scans, 13/23 rules, 68/107 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    runtime/random_gen.cmi
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.cmo
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.cmx
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.o
+-       depends on: runtime/random_gen.ml
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extprot/META
+[extprot: rm] Command started
++ rm "-f" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/extprotc" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/extprotc.exe" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/extprot.1.3.0)
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- --- Checking if ocamldep understands -modules... (yes)
+- *** omake: finished reading OMakefiles (0.12 sec)
+- - build runtime random_gen.cmi
+- + ocamlfind ocamlc -package dynlink,camlp4,extlib,bytes,camlp4.macro -w +a-3-4-32-44-48 -warn-error +a-3-4-6-7-9-18-27..29-32..99 -bin-annot -syntax camlp4o -ppopt -DLITTLE_ENDIAN -for-pack Extprot -g -g -I . -c random_gen.ml
+- File "random_gen.ml", line 37, characters 0-2194:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val rand_string : ('a -> int * R.State.t) -> 'a -> bytes * R.State.t
+-        is not included in
+-          val rand_string : int t -> string t
+-        File "random_gen.ml", line 17, characters 2-37: Expected declaration
+-        File "random_gen.ml", line 64, characters 6-17: Actual declaration
+- *** omake: 95/217 targets are up to date
+- *** omake: failed (0.71 sec, 22/22 scans, 13/23 rules, 68/107 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    runtime/random_gen.cmi
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.cmo
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.cmx
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.o
+-       depends on: runtime/random_gen.ml
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extprot/META
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- --- Checking if ocamldep understands -modules... (yes)
+- *** omake: finished reading OMakefiles (0.12 sec)
+- - build runtime random_gen.cmi
+- + ocamlfind ocamlc -package dynlink,camlp4,extlib,bytes,camlp4.macro -w +a-3-4-32-44-48 -warn-error +a-3-4-6-7-9-18-27..29-32..99 -bin-annot -syntax camlp4o -ppopt -DLITTLE_ENDIAN -for-pack Extprot -g -g -I . -c random_gen.ml
+- File "random_gen.ml", line 37, characters 0-2194:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val rand_string : ('a -> int * R.State.t) -> 'a -> bytes * R.State.t
+-        is not included in
+-          val rand_string : int t -> string t
+-        File "random_gen.ml", line 17, characters 2-37: Expected declaration
+-        File "random_gen.ml", line 64, characters 6-17: Actual declaration
+- *** omake: 95/217 targets are up to date
+- *** omake: failed (0.71 sec, 22/22 scans, 13/23 rules, 68/107 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    runtime/random_gen.cmi
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.cmo
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.cmx
+-       depends on: runtime/random_gen.ml
+-    runtime/random_gen.o
+-       depends on: runtime/random_gen.ml
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extprot/META
+
+#=== ERROR while installing extprot.1.3.0 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              omake
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/extprot.1.3.0
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/extprot.1.3.0/extprot-13972.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/extprot.1.3.0/extprot-13972.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/extprot.1.3.0/extprot-13972.out
+### stdout ###
+# [...]
+# *** omake: failed (0.71 sec, 22/22 scans, 13/23 rules, 68/107 digests)
+# *** omake: targets were not rebuilt because of errors:
+#    runtime/random_gen.cmi
+#       depends on: runtime/random_gen.ml
+#    runtime/random_gen.cmo
+#       depends on: runtime/random_gen.ml
+#    runtime/random_gen.cmx
+#       depends on: runtime/random_gen.ml
+#    runtime/random_gen.o
+#       depends on: runtime/random_gen.ml
+### stderr ###
+# [...]
+# *** omake: failed (0.71 sec, 22/22 scans, 13/23 rules, 68/107 digests)
+# *** omake: targets were not rebuilt because of errors:
+#    runtime/random_gen.cmi
+#       depends on: runtime/random_gen.ml
+#    runtime/random_gen.cmo
+#       depends on: runtime/random_gen.ml
+#    runtime/random_gen.cmx
+#       depends on: runtime/random_gen.ml
+#    runtime/random_gen.o
+#       depends on: runtime/random_gen.ml
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install extprot 1.3.0
+No changes have been performed
+'opam install extprot.1.3.0' failed.

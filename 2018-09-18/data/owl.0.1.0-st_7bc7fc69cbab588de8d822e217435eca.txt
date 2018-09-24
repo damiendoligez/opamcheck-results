@@ -1,0 +1,681 @@
+The following actions will be performed:
+  - install owl 0.1.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owl: http] Command started
+[owl: http] Command started
+[owl.0.1.0] https://github.com/ryanrhymes/owl/archive/0.1.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owl: oasis setup] Command started
++ oasis "setup" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.1.0)
+[owl: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.1.0)
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ owl
+- Package version: ..................................... 0.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_str: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_gsl: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl
+- pkg_ctypes: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_plplot: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot
+- pkg_dolog: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dolog
+- pkg_ctypes_stubs: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- 
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ owl
+- Package version: ..................................... 0.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_str: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_gsl: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl
+- pkg_ctypes: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_plplot: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot
+- pkg_dolog: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dolog
+- pkg_ctypes_stubs: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- 
+[owl: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-build" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.1.0)
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ owl
+- Package version: ..................................... 0.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_str: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_gsl: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl
+- pkg_ctypes: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_plplot: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot
+- pkg_dolog: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dolog
+- pkg_ctypes_stubs: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- 
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ owl
+- Package version: ..................................... 0.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_str: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_gsl: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl
+- pkg_ctypes: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_plplot: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot
+- pkg_dolog: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dolog
+- pkg_ctypes_stubs: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- 
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -c lib/ffi_generated_stub.c
+- mv ffi_generated_stub.o lib/ffi_generated_stub.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlmklib -o lib/owl_stubs lib/ffi_generated_stub.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl.ml > lib/owl.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_const.mli > lib/owl_const.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_dense.ml > lib/owl_dense.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_dense_complex.mli > lib/owl_dense_complex.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_dense_real.mli > lib/owl_dense_real.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_dense_real.cmi lib/owl_dense_real.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_dense_complex.cmi lib/owl_dense_complex.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_fft.mli > lib/owl_fft.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_linalg.mli > lib/owl_linalg.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_maths.mli > lib/owl_maths.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_plot.mli > lib/owl_plot.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_regression.mli > lib/owl_regression.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_sparse.ml > lib/owl_sparse.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_sparse_complex.mli > lib/owl_sparse_complex.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_sparse_real.mli > lib/owl_sparse_real.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_sparse_complex.cmi lib/owl_sparse_complex.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_sparse_real.cmi lib/owl_sparse_real.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_stats.mli > lib/owl_stats.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_const.cmi lib/owl_const.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -c lib/ffi_generated_stub.c
+- mv ffi_generated_stub.o lib/ffi_generated_stub.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlmklib -o lib/owl_stubs lib/ffi_generated_stub.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl.ml > lib/owl.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_const.mli > lib/owl_const.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_dense.ml > lib/owl_dense.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_dense_complex.mli > lib/owl_dense_complex.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_dense_real.mli > lib/owl_dense_real.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_dense_real.cmi lib/owl_dense_real.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_dense_complex.cmi lib/owl_dense_complex.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_fft.mli > lib/owl_fft.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_linalg.mli > lib/owl_linalg.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_maths.mli > lib/owl_maths.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_plot.mli > lib/owl_plot.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_regression.mli > lib/owl_regression.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_sparse.ml > lib/owl_sparse.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_sparse_complex.mli > lib/owl_sparse_complex.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_sparse_real.mli > lib/owl_sparse_real.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_sparse_complex.cmi lib/owl_sparse_complex.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_sparse_real.cmi lib/owl_sparse_real.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_stats.mli > lib/owl_stats.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_const.cmi lib/owl_const.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_dense.cmo lib/owl_dense.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_fft.cmi lib/owl_fft.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_linalg.cmi lib/owl_linalg.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_maths.cmi lib/owl_maths.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_plot.cmi lib/owl_plot.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_regression.cmi lib/owl_regression.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_sparse.cmo lib/owl_sparse.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_stats.cmi lib/owl_stats.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_types.ml > lib/owl_types.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_utils.ml > lib/owl_utils.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_maths.ml > lib/owl_maths.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_stats.ml > lib/owl_stats.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_utils.cmo lib/owl_utils.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_optimise.ml > lib/owl_optimise.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_dense_real.ml > lib/owl_dense_real.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_foreign.ml > lib/owl_foreign.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/ffi_bindings.ml > lib/ffi_bindings.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_types.cmo lib/owl_types.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/ffi_generated.ml > lib/ffi_generated.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/ffi_bindings.cmo lib/ffi_bindings.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/ffi_generated.cmo lib/ffi_generated.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_pretty.mli > lib/owl_pretty.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_foreign.cmo lib/owl_foreign.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_foreign.cmo lib/owl_foreign.ml
+- File "lib/owl_foreign.ml", line 9, characters 33-46:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val foreign : string -> ('a -> 'b) fn -> 'a -> 'b
+-        is not included in
+-          val foreign : string -> ('a -> 'b) Ctypes.fn -> ('a -> 'b) fn
+-        File "src/cstubs/cstubs.mli", line 75, characters 2-63:
+-          Expected declaration
+-        File "lib/ffi_generated.ml", line 118, characters 4-11:
+-          Actual declaration
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/libowl_stubs.a lib/dllowl_stubs.so lib/owl.cma lib/owl.cmxa lib/owl.a lib/owl.cmxs lib/bindings/Ffi_bindings_base.cma lib/bindings/Ffi_bindings_base.cmxa lib/bindings/Ffi_bindings_base.a lib/bindings/Ffi_bindings_base.cmxs lib/bindings/ffi_stubgen.byte examples/test_sgd.native examples/test_kmeans.native examples/test_log.native examples/test_svm.native examples/test_operation.native examples/test_dense.native examples/test_sparse.native examples/test_sparse_complex.native -tag debug' terminated with error code 10")
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_dense.cmo lib/owl_dense.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_fft.cmi lib/owl_fft.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_linalg.cmi lib/owl_linalg.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_maths.cmi lib/owl_maths.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_plot.cmi lib/owl_plot.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_regression.cmi lib/owl_regression.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_sparse.cmo lib/owl_sparse.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_stats.cmi lib/owl_stats.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_types.ml > lib/owl_types.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_utils.ml > lib/owl_utils.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_maths.ml > lib/owl_maths.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_stats.ml > lib/owl_stats.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_utils.cmo lib/owl_utils.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_optimise.ml > lib/owl_optimise.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_dense_real.ml > lib/owl_dense_real.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_foreign.ml > lib/owl_foreign.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/ffi_bindings.ml > lib/ffi_bindings.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_types.cmo lib/owl_types.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/ffi_generated.ml > lib/ffi_generated.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/ffi_bindings.cmo lib/ffi_bindings.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/ffi_generated.cmo lib/ffi_generated.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_pretty.mli > lib/owl_pretty.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_foreign.cmo lib/owl_foreign.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_foreign.cmo lib/owl_foreign.ml
+- File "lib/owl_foreign.ml", line 9, characters 33-46:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val foreign : string -> ('a -> 'b) fn -> 'a -> 'b
+-        is not included in
+-          val foreign : string -> ('a -> 'b) Ctypes.fn -> ('a -> 'b) fn
+-        File "src/cstubs/cstubs.mli", line 75, characters 2-63:
+-          Expected declaration
+-        File "lib/ffi_generated.ml", line 118, characters 4-11:
+-          Actual declaration
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/libowl_stubs.a lib/dllowl_stubs.so lib/owl.cma lib/owl.cmxa lib/owl.a lib/owl.cmxs lib/bindings/Ffi_bindings_base.cma lib/bindings/Ffi_bindings_base.cmxa lib/bindings/Ffi_bindings_base.a lib/bindings/Ffi_bindings_base.cmxs lib/bindings/ffi_stubgen.byte examples/test_sgd.native examples/test_kmeans.native examples/test_log.native examples/test_svm.native examples/test_operation.native examples/test_dense.native examples/test_sparse.native examples/test_sparse_complex.native -tag debug' terminated with error code 10")
+[ERROR] The compilation of owl failed at "ocaml setup.ml -build".
+[owl: ocaml] Command started
++ ocaml "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/etc/owl/_oasis_remove_.ml" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/etc/owl" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.1.0)
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ owl
+- Package version: ..................................... 0.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_str: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_gsl: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl
+- pkg_ctypes: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_plplot: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot
+- pkg_dolog: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dolog
+- pkg_ctypes_stubs: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- 
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -c lib/ffi_generated_stub.c
+- mv ffi_generated_stub.o lib/ffi_generated_stub.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlmklib -o lib/owl_stubs lib/ffi_generated_stub.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl.ml > lib/owl.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_const.mli > lib/owl_const.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_dense.ml > lib/owl_dense.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_dense_complex.mli > lib/owl_dense_complex.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_dense_real.mli > lib/owl_dense_real.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_dense_real.cmi lib/owl_dense_real.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_dense_complex.cmi lib/owl_dense_complex.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_fft.mli > lib/owl_fft.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_linalg.mli > lib/owl_linalg.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_maths.mli > lib/owl_maths.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_plot.mli > lib/owl_plot.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_regression.mli > lib/owl_regression.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_sparse.ml > lib/owl_sparse.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_sparse_complex.mli > lib/owl_sparse_complex.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_sparse_real.mli > lib/owl_sparse_real.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_sparse_complex.cmi lib/owl_sparse_complex.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_sparse_real.cmi lib/owl_sparse_real.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_stats.mli > lib/owl_stats.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_const.cmi lib/owl_const.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_dense.cmo lib/owl_dense.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_fft.cmi lib/owl_fft.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_linalg.cmi lib/owl_linalg.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_maths.cmi lib/owl_maths.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_plot.cmi lib/owl_plot.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_regression.cmi lib/owl_regression.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_sparse.cmo lib/owl_sparse.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_stats.cmi lib/owl_stats.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_types.ml > lib/owl_types.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_utils.ml > lib/owl_utils.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_maths.ml > lib/owl_maths.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_stats.ml > lib/owl_stats.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_utils.cmo lib/owl_utils.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_optimise.ml > lib/owl_optimise.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_dense_real.ml > lib/owl_dense_real.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_foreign.ml > lib/owl_foreign.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/ffi_bindings.ml > lib/ffi_bindings.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_types.cmo lib/owl_types.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/ffi_generated.ml > lib/ffi_generated.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/ffi_bindings.cmo lib/ffi_bindings.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/ffi_generated.cmo lib/ffi_generated.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_pretty.mli > lib/owl_pretty.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_foreign.cmo lib/owl_foreign.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_foreign.cmo lib/owl_foreign.ml
+- File "lib/owl_foreign.ml", line 9, characters 33-46:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val foreign : string -> ('a -> 'b) fn -> 'a -> 'b
+-        is not included in
+-          val foreign : string -> ('a -> 'b) Ctypes.fn -> ('a -> 'b) fn
+-        File "src/cstubs/cstubs.mli", line 75, characters 2-63:
+-          Expected declaration
+-        File "lib/ffi_generated.ml", line 118, characters 4-11:
+-          Actual declaration
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/libowl_stubs.a lib/dllowl_stubs.so lib/owl.cma lib/owl.cmxa lib/owl.a lib/owl.cmxs lib/bindings/Ffi_bindings_base.cma lib/bindings/Ffi_bindings_base.cmxa lib/bindings/Ffi_bindings_base.a lib/bindings/Ffi_bindings_base.cmxs lib/bindings/ffi_stubgen.byte examples/test_sgd.native examples/test_kmeans.native examples/test_log.native examples/test_svm.native examples/test_operation.native examples/test_dense.native examples/test_sparse.native examples/test_sparse_complex.native -tag debug' terminated with error code 10")
+- Cannot find file /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/etc/owl/_oasis_remove_.ml.
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ owl
+- Package version: ..................................... 0.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_str: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_gsl: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl
+- pkg_ctypes: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_plplot: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot
+- pkg_dolog: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dolog
+- pkg_ctypes_stubs: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- 
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -c lib/ffi_generated_stub.c
+- mv ffi_generated_stub.o lib/ffi_generated_stub.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlmklib -o lib/owl_stubs lib/ffi_generated_stub.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl.ml > lib/owl.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_const.mli > lib/owl_const.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_dense.ml > lib/owl_dense.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_dense_complex.mli > lib/owl_dense_complex.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_dense_real.mli > lib/owl_dense_real.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_dense_real.cmi lib/owl_dense_real.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_dense_complex.cmi lib/owl_dense_complex.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_fft.mli > lib/owl_fft.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_linalg.mli > lib/owl_linalg.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_maths.mli > lib/owl_maths.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_plot.mli > lib/owl_plot.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_regression.mli > lib/owl_regression.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_sparse.ml > lib/owl_sparse.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_sparse_complex.mli > lib/owl_sparse_complex.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_sparse_real.mli > lib/owl_sparse_real.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_sparse_complex.cmi lib/owl_sparse_complex.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_sparse_real.cmi lib/owl_sparse_real.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_stats.mli > lib/owl_stats.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_const.cmi lib/owl_const.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_dense.cmo lib/owl_dense.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_fft.cmi lib/owl_fft.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_linalg.cmi lib/owl_linalg.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_maths.cmi lib/owl_maths.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_plot.cmi lib/owl_plot.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_regression.cmi lib/owl_regression.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_sparse.cmo lib/owl_sparse.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_stats.cmi lib/owl_stats.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_types.ml > lib/owl_types.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_utils.ml > lib/owl_utils.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_maths.ml > lib/owl_maths.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_stats.ml > lib/owl_stats.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_utils.cmo lib/owl_utils.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_optimise.ml > lib/owl_optimise.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_dense_real.ml > lib/owl_dense_real.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_foreign.ml > lib/owl_foreign.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/ffi_bindings.ml > lib/ffi_bindings.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_types.cmo lib/owl_types.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/ffi_generated.ml > lib/ffi_generated.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/ffi_bindings.cmo lib/ffi_bindings.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/ffi_generated.cmo lib/ffi_generated.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -modules lib/owl_pretty.mli > lib/owl_pretty.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_foreign.cmo lib/owl_foreign.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package ctypes -package ctypes.stubs -package dolog -package gsl -package plplot -package str -I lib -o lib/owl_foreign.cmo lib/owl_foreign.ml
+- File "lib/owl_foreign.ml", line 9, characters 33-46:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val foreign : string -> ('a -> 'b) fn -> 'a -> 'b
+-        is not included in
+-          val foreign : string -> ('a -> 'b) Ctypes.fn -> ('a -> 'b) fn
+-        File "src/cstubs/cstubs.mli", line 75, characters 2-63:
+-          Expected declaration
+-        File "lib/ffi_generated.ml", line 118, characters 4-11:
+-          Actual declaration
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/libowl_stubs.a lib/dllowl_stubs.so lib/owl.cma lib/owl.cmxa lib/owl.a lib/owl.cmxs lib/bindings/Ffi_bindings_base.cma lib/bindings/Ffi_bindings_base.cmxa lib/bindings/Ffi_bindings_base.a lib/bindings/Ffi_bindings_base.cmxs lib/bindings/ffi_stubgen.byte examples/test_sgd.native examples/test_kmeans.native examples/test_log.native examples/test_svm.native examples/test_operation.native examples/test_dense.native examples/test_sparse.native examples/test_sparse_complex.native -tag debug' terminated with error code 10")
+- Cannot find file /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/etc/owl/_oasis_remove_.ml.
+
+#=== ERROR while installing owl.0.1.0 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.1.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.1.0/owl-20209.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.1.0/owl-20209.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.1.0/owl-20209.out
+### stdout ###
+# Error: Signature mismatch:
+# [...]
+#          val foreign : string -> ('a -> 'b) fn -> 'a -> 'b
+#        is not included in
+#          val foreign : string -> ('a -> 'b) Ctypes.fn -> ('a -> 'b) fn
+#        File "src/cstubs/cstubs.mli", line 75, characters 2-63:
+#          Expected declaration
+#        File "lib/ffi_generated.ml", line 118, characters 4-11:
+#          Actual declaration
+# Command exited with code 2.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/libowl_stubs.a lib/dllowl_stubs.so lib/owl.cma lib/owl.cmxa lib/owl.a lib/owl.cmxs lib/bindings/Ffi_bindings_base.cma lib/bindings/Ffi_bindings_base.cmxa lib/bindings/Ffi_bindings_base.a lib/bindings/Ffi_bindings_base.cmxs lib/bindings/ffi_stubgen.byte examples/test_sgd.native examples/test_kmeans.native examples/test_log.native examples/test_svm.native examples/test_operation.native examples/test_dense.native examples/test_sparse.native examples/test_sparse_complex.native -tag debug' terminated with error code 10")
+### stderr ###
+# Error: Signature mismatch:
+# [...]
+#          val foreign : string -> ('a -> 'b) fn -> 'a -> 'b
+#        is not included in
+#          val foreign : string -> ('a -> 'b) Ctypes.fn -> ('a -> 'b) fn
+#        File "src/cstubs/cstubs.mli", line 75, characters 2-63:
+#          Expected declaration
+#        File "lib/ffi_generated.ml", line 118, characters 4-11:
+#          Actual declaration
+# Command exited with code 2.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/libowl_stubs.a lib/dllowl_stubs.so lib/owl.cma lib/owl.cmxa lib/owl.a lib/owl.cmxs lib/bindings/Ffi_bindings_base.cma lib/bindings/Ffi_bindings_base.cmxa lib/bindings/Ffi_bindings_base.a lib/bindings/Ffi_bindings_base.cmxs lib/bindings/ffi_stubgen.byte examples/test_sgd.native examples/test_kmeans.native examples/test_log.native examples/test_svm.native examples/test_operation.native examples/test_dense.native examples/test_sparse.native examples/test_sparse_complex.native -tag debug' terminated with error code 10")
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install owl 0.1.0
+No changes have been performed
+'opam install owl.0.1.0' failed.

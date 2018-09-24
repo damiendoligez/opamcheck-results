@@ -1,0 +1,49 @@
+The following actions will be performed:
+  - install owl 0.4.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owl: http] Command started
+[owl: http] Command started
+[owl.0.4.0] https://github.com/owlbarn/owl/releases/download/0.4.0/owl-0.4.0.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owl: dune build] Command started
++ dune "build" "-p" "owl" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.4.0)
+-       ocamlc src/owl/.owl.objs/owl_sparse_common.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_common.cmo -c -impl src/owl/owl_sparse_common.ml)
+- File "src/owl/sparse/owl_sparse_common.ml", line 272, characters 37-56:
+- Error: Unbound value Eigen.Sparse.S.gemm
+-       ocamlc src/owl/.owl.objs/owl_sparse_common.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_common.cmo -c -impl src/owl/owl_sparse_common.ml)
+- File "src/owl/sparse/owl_sparse_common.ml", line 272, characters 37-56:
+- Error: Unbound value Eigen.Sparse.S.gemm
+[ERROR] The compilation of owl failed at "dune build -p owl -j 4".
+
+#=== ERROR while installing owl.0.4.0 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              dune build -p owl -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.4.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.4.0/owl-17514.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.4.0/owl-17514.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.4.0/owl-17514.out
+### stdout ###
+#       ocamlc src/owl/.owl.objs/owl_sparse_common.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_common.cmo -c -impl src/owl/owl_sparse_common.ml)
+# File "src/owl/sparse/owl_sparse_common.ml", line 272, characters 37-56:
+# Error: Unbound value Eigen.Sparse.S.gemm
+### stderr ###
+#       ocamlc src/owl/.owl.objs/owl_sparse_common.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_common.cmo -c -impl src/owl/owl_sparse_common.ml)
+# File "src/owl/sparse/owl_sparse_common.ml", line 272, characters 37-56:
+# Error: Unbound value Eigen.Sparse.S.gemm
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install owl 0.4.0
+No changes have been performed
+'opam install owl.0.4.0' failed.

@@ -1,0 +1,82 @@
+The following actions will be performed:
+  - install npy 0.0.5
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[npy: http] Command started
+[npy: http] Command started
+[npy.0.0.5] https://github.com/LaurentMazare/npy-ocaml/archive/0.0.6.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[npy: jbuilder build] Command started
++ jbuilder "build" "--only-packages" "npy" "--root" "." "-j" "4" "@install" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/npy.0.0.5)
+-     ocamldep src/npy.dependsi.ocamldep-output
+-     ocamldep src/npy.depends.ocamldep-output
+-       ocamlc src/npy.{cmi,cmti}
+-       ocamlc src/npy.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml -no-alias-deps -I src -o src/npy.cmo -c -impl src/npy.ml)
+- File "src/npy.ml", line 94, characters 29-40:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+-     ocamlopt src/npy.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml -no-alias-deps -I src -o src/npy.cmx -c -impl src/npy.ml)
+- File "src/npy.ml", line 94, characters 29-40:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+-     ocamldep src/npy.dependsi.ocamldep-output
+-     ocamldep src/npy.depends.ocamldep-output
+-       ocamlc src/npy.{cmi,cmti}
+-       ocamlc src/npy.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml -no-alias-deps -I src -o src/npy.cmo -c -impl src/npy.ml)
+- File "src/npy.ml", line 94, characters 29-40:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+-     ocamlopt src/npy.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml -no-alias-deps -I src -o src/npy.cmx -c -impl src/npy.ml)
+- File "src/npy.ml", line 94, characters 29-40:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+[ERROR] The compilation of npy failed at "jbuilder build --only-packages npy
+        --root . -j 4 @install".
+
+#=== ERROR while installing npy.0.0.5 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build --only-packages npy --root . -j 4 @install
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/npy.0.0.5
+# compiler             4.07.0+24fac73
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/npy.0.0.5/npy-19532.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/npy.0.0.5/npy-19532.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/npy.0.0.5/npy-19532.out
+### stdout ###
+# [...]
+#       ocamlc src/npy.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml -no-alias-deps -I src -o src/npy.cmo -c -impl src/npy.ml)
+# File "src/npy.ml", line 94, characters 29-40:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+#     ocamlopt src/npy.{cmx,o} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml -no-alias-deps -I src -o src/npy.cmx -c -impl src/npy.ml)
+# File "src/npy.ml", line 94, characters 29-40:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+### stderr ###
+# [...]
+#       ocamlc src/npy.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml -no-alias-deps -I src -o src/npy.cmo -c -impl src/npy.ml)
+# File "src/npy.ml", line 94, characters 29-40:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+#     ocamlopt src/npy.{cmx,o} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml -no-alias-deps -I src -o src/npy.cmx -c -impl src/npy.ml)
+# File "src/npy.ml", line 94, characters 29-40:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install npy 0.0.5
+No changes have been performed
+'opam install npy.0.0.5' failed.

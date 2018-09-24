@@ -1,0 +1,95 @@
+The following actions will be performed:
+  - install depext 1.0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[depext: http] Command started
+[depext: http] Command started
+[depext.1.0.1] https://github.com/ocaml/opam-depext/archive/v1.0.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[depext: ocamlopt unix.cmxa] Command started
++ ocamlopt "-I" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cmdliner" "unix.cmxa" "cmdliner.cmxa" "-o" "opam-depext" "depext.ml" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/depext.1.0.1)
+- File "depext.ml", line 61, characters 16-32:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "depext.ml", line 114, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "depext.ml", line 139, characters 17-33:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "depext.ml", line 151, characters 17-33:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "depext.ml", line 169, characters 24-40:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "depext.ml", line 539, characters 50-53:
+- Error: The function applied to this argument has type
+-          ?docv:string -> ?doc:string -> Cmdliner.Arg.info
+- This argument cannot be applied with label ?env
+- File "depext.ml", line 61, characters 16-32:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "depext.ml", line 114, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "depext.ml", line 139, characters 17-33:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "depext.ml", line 151, characters 17-33:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "depext.ml", line 169, characters 24-40:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "depext.ml", line 539, characters 50-53:
+- Error: The function applied to this argument has type
+-          ?docv:string -> ?doc:string -> Cmdliner.Arg.info
+- This argument cannot be applied with label ?env
+[ERROR] The compilation of depext failed at "ocamlopt -I
+        /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cmdliner
+        unix.cmxa cmdliner.cmxa -o opam-depext depext.ml".
+
+#=== ERROR while installing depext.1.0.1 ======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocamlopt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cmdliner unix.cmxa cmdliner.cmxa -o opam-depext depext.ml
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/depext.1.0.1
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/depext.1.0.1/depext-10852.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/depext.1.0.1/depext-10852.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/depext.1.0.1/depext-10852.out
+### stdout ###
+# [...]
+# File "depext.ml", line 151, characters 17-33:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "depext.ml", line 169, characters 24-40:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "depext.ml", line 539, characters 50-53:
+# Error: The function applied to this argument has type
+#          ?docv:string -> ?doc:string -> Cmdliner.Arg.info
+# This argument cannot be applied with label ?env
+### stderr ###
+# [...]
+# File "depext.ml", line 151, characters 17-33:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "depext.ml", line 169, characters 24-40:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "depext.ml", line 539, characters 50-53:
+# Error: The function applied to this argument has type
+#          ?docv:string -> ?doc:string -> Cmdliner.Arg.info
+# This argument cannot be applied with label ?env
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install depext 1.0.1
+No changes have been performed
+'opam install depext.1.0.1' failed.

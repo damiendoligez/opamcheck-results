@@ -1,0 +1,75 @@
+The following actions will be performed:
+  - install doc-ock 1.2.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[doc-ock: http] Command started
+[doc-ock: http] Command started
+[doc-ock.1.2.0] https://github.com/ocaml-doc/doc-ock/archive/v1.2.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[doc-ock: jbuilder build] Command started
++ jbuilder "build" "-p" "doc-ock" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/doc-ock.1.2.0)
+-       ocamlc src/.docOck.objs/docOckAttrs.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.docOck.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/octavius -no-alias-deps -o src/.docOck.objs/docOckAttrs.cmo -c -impl src/docOckAttrs.pp.ml)
+- File "src/docOckAttrs.ml", line 478, characters 4-13:
+- Error: This variant pattern is expected to have type Octavius.Types.tag
+-        The constructor Canonical does not belong to type Octavius.Types.tag
+-     ocamlopt src/.docOck.objs/docOckAttrs.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -I src/.docOck.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/octavius -no-alias-deps -o src/.docOck.objs/docOckAttrs.cmx -c -impl src/docOckAttrs.pp.ml)
+- File "src/docOckAttrs.ml", line 478, characters 4-13:
+- Error: This variant pattern is expected to have type Octavius.Types.tag
+-        The constructor Canonical does not belong to type Octavius.Types.tag
+-       ocamlc src/.docOck.objs/docOckAttrs.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.docOck.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/octavius -no-alias-deps -o src/.docOck.objs/docOckAttrs.cmo -c -impl src/docOckAttrs.pp.ml)
+- File "src/docOckAttrs.ml", line 478, characters 4-13:
+- Error: This variant pattern is expected to have type Octavius.Types.tag
+-        The constructor Canonical does not belong to type Octavius.Types.tag
+-     ocamlopt src/.docOck.objs/docOckAttrs.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -I src/.docOck.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/octavius -no-alias-deps -o src/.docOck.objs/docOckAttrs.cmx -c -impl src/docOckAttrs.pp.ml)
+- File "src/docOckAttrs.ml", line 478, characters 4-13:
+- Error: This variant pattern is expected to have type Octavius.Types.tag
+-        The constructor Canonical does not belong to type Octavius.Types.tag
+[ERROR] The compilation of doc-ock failed at "jbuilder build -p doc-ock -j 4".
+
+#=== ERROR while installing doc-ock.1.2.0 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p doc-ock -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/doc-ock.1.2.0
+# compiler             4.07.0+24fac73
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/doc-ock.1.2.0/doc-ock-28116.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/doc-ock.1.2.0/doc-ock-28116.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/doc-ock.1.2.0/doc-ock-28116.out
+### stdout ###
+# [...]
+#       ocamlc src/.docOck.objs/docOckAttrs.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.docOck.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/octavius -no-alias-deps -o src/.docOck.objs/docOckAttrs.cmo -c -impl src/docOckAttrs.pp.ml)
+# File "src/docOckAttrs.ml", line 478, characters 4-13:
+# Error: This variant pattern is expected to have type Octavius.Types.tag
+#        The constructor Canonical does not belong to type Octavius.Types.tag
+#     ocamlopt src/.docOck.objs/docOckAttrs.{cmx,o} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -I src/.docOck.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/octavius -no-alias-deps -o src/.docOck.objs/docOckAttrs.cmx -c -impl src/docOckAttrs.pp.ml)
+# File "src/docOckAttrs.ml", line 478, characters 4-13:
+# Error: This variant pattern is expected to have type Octavius.Types.tag
+#        The constructor Canonical does not belong to type Octavius.Types.tag
+### stderr ###
+# [...]
+#       ocamlc src/.docOck.objs/docOckAttrs.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.docOck.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/octavius -no-alias-deps -o src/.docOck.objs/docOckAttrs.cmo -c -impl src/docOckAttrs.pp.ml)
+# File "src/docOckAttrs.ml", line 478, characters 4-13:
+# Error: This variant pattern is expected to have type Octavius.Types.tag
+#        The constructor Canonical does not belong to type Octavius.Types.tag
+#     ocamlopt src/.docOck.objs/docOckAttrs.{cmx,o} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -I src/.docOck.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/octavius -no-alias-deps -o src/.docOck.objs/docOckAttrs.cmx -c -impl src/docOckAttrs.pp.ml)
+# File "src/docOckAttrs.ml", line 478, characters 4-13:
+# Error: This variant pattern is expected to have type Octavius.Types.tag
+#        The constructor Canonical does not belong to type Octavius.Types.tag
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install doc-ock 1.2.0
+No changes have been performed
+'opam install doc-ock.1.2.0' failed.

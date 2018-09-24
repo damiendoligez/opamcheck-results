@@ -1,0 +1,69 @@
+The following actions will be performed:
+  - install shexp v0.11.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[shexp: http] Command started
+[shexp: http] Command started
+[shexp.v0.11.1] https://github.com/janestreet/shexp/releases/download/v0.11.1/shexp-v0.11.1.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[shexp: jbuilder build] Command started
++ jbuilder "build" "-p" "shexp" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/shexp.v0.11.1)
+-       ocamlc process-lib/src/.shexp_process.objs/shexp_process__Import.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I process-lib/src/.shexp_process.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/posixat -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/spawn -I bigstring-io-lib/src/.shexp_bigstring_io.objs -I bigstring-lib/src/.shexp_bigstring.objs -I sexp-lib/src/.shexp_sexp.objs -no-alias-deps -open Shexp_process__ -o process-lib/src/.shexp_process.objs/shexp_process__Import.cmo -c -impl process-lib/src/import.ml)
+- File "process-lib/src/import.ml", line 7, characters 21-89:
+- Error: In this `with' constraint, the new definition of List
+-        does not match its original definition in the constrained signature:
+-        Modules do not match:
+-          (module List)
+-        is not included in
+-          (module ListLabels)
+-       ocamlc process-lib/src/.shexp_process.objs/shexp_process__Import.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I process-lib/src/.shexp_process.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/posixat -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/spawn -I bigstring-io-lib/src/.shexp_bigstring_io.objs -I bigstring-lib/src/.shexp_bigstring.objs -I sexp-lib/src/.shexp_sexp.objs -no-alias-deps -open Shexp_process__ -o process-lib/src/.shexp_process.objs/shexp_process__Import.cmo -c -impl process-lib/src/import.ml)
+- File "process-lib/src/import.ml", line 7, characters 21-89:
+- Error: In this `with' constraint, the new definition of List
+-        does not match its original definition in the constrained signature:
+-        Modules do not match:
+-          (module List)
+-        is not included in
+-          (module ListLabels)
+[ERROR] The compilation of shexp failed at "jbuilder build -p shexp -j 4".
+
+#=== ERROR while installing shexp.v0.11.1 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p shexp -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/shexp.v0.11.1
+# compiler             4.07.0+24fac73
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/shexp.v0.11.1/shexp-5274.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/shexp.v0.11.1/shexp-5274.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/shexp.v0.11.1/shexp-5274.out
+### stdout ###
+#       ocamlc process-lib/src/.shexp_process.objs/shexp_process__Import.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I process-lib/src/.shexp_process.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/posixat -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/spawn -I bigstring-io-lib/src/.shexp_bigstring_io.objs -I bigstring-lib/src/.shexp_bigstring.objs -I sexp-lib/src/.shexp_sexp.objs -no-alias-deps -open Shexp_process__ -o process-lib/src/.shexp_process.objs/shexp_process__Import.cmo -c -impl process-lib/src/import.ml)
+# File "process-lib/src/import.ml", line 7, characters 21-89:
+# Error: In this `with' constraint, the new definition of List
+#        does not match its original definition in the constrained signature:
+#        Modules do not match:
+#          (module List)
+#        is not included in
+#          (module ListLabels)
+### stderr ###
+#       ocamlc process-lib/src/.shexp_process.objs/shexp_process__Import.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I process-lib/src/.shexp_process.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/posixat -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/spawn -I bigstring-io-lib/src/.shexp_bigstring_io.objs -I bigstring-lib/src/.shexp_bigstring.objs -I sexp-lib/src/.shexp_sexp.objs -no-alias-deps -open Shexp_process__ -o process-lib/src/.shexp_process.objs/shexp_process__Import.cmo -c -impl process-lib/src/import.ml)
+# File "process-lib/src/import.ml", line 7, characters 21-89:
+# Error: In this `with' constraint, the new definition of List
+#        does not match its original definition in the constrained signature:
+#        Modules do not match:
+#          (module List)
+#        is not included in
+#          (module ListLabels)
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install shexp v0.11.1
+No changes have been performed
+'opam install shexp.v0.11.1' failed.

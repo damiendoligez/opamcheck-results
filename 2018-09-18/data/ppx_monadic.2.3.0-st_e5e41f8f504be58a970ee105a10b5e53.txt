@@ -1,0 +1,80 @@
+The following actions will be performed:
+  - install ppx_monadic 2.3.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ppx_monadic: http] Command started
+[ppx_monadic: http] Command started
+[ppx_monadic.2.3.0] https://bitbucket.org/camlspotter/ppx_monadic/get/2.3.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ppx_monadic: jbuilder build] Command started
++ jbuilder "build" "-p" "ppx_monadic" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_monadic.2.3.0)
+-       ocamlc ppx/.ppx_monaidc.objs/ppx_monaidc__Comprehension.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppxx -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -no-alias-deps -I ppx/.ppx_monaidc.objs -open Ppx_monaidc -o ppx/.ppx_monaidc.objs/ppx_monaidc__Comprehension.cmo -c -impl ppx/comprehension.pp.ml)
+- File "ppx/comprehension.ml", line 10, characters 15-19:
+- Error: Uninterpreted extension 'expr'.
+-       ocamlc ppx/.ppx_monaidc.objs/ppx_monaidc__Do_.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppxx -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -no-alias-deps -I ppx/.ppx_monaidc.objs -open Ppx_monaidc -o ppx/.ppx_monaidc.objs/ppx_monaidc__Do_.cmo -c -impl ppx/do_.pp.ml)
+- File "ppx/do_.ml", line 60, characters 46-50:
+- Error: Uninterpreted extension 'expr'.
+-       ocamlc ppx/.ppx_monaidc.objs/ppx_monaidc__Pattern_guard.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppxx -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -no-alias-deps -I ppx/.ppx_monaidc.objs -open Ppx_monaidc -o ppx/.ppx_monaidc.objs/ppx_monaidc__Pattern_guard.cmo -c -impl ppx/pattern_guard.pp.ml)
+- File "ppx/pattern_guard.ml", line 61, characters 8-12:
+- Error: Uninterpreted extension 'expr'.
+-       ocamlc ppx/.ppx_monaidc.objs/ppx_monaidc__Comprehension.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppxx -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -no-alias-deps -I ppx/.ppx_monaidc.objs -open Ppx_monaidc -o ppx/.ppx_monaidc.objs/ppx_monaidc__Comprehension.cmo -c -impl ppx/comprehension.pp.ml)
+- File "ppx/comprehension.ml", line 10, characters 15-19:
+- Error: Uninterpreted extension 'expr'.
+-       ocamlc ppx/.ppx_monaidc.objs/ppx_monaidc__Do_.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppxx -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -no-alias-deps -I ppx/.ppx_monaidc.objs -open Ppx_monaidc -o ppx/.ppx_monaidc.objs/ppx_monaidc__Do_.cmo -c -impl ppx/do_.pp.ml)
+- File "ppx/do_.ml", line 60, characters 46-50:
+- Error: Uninterpreted extension 'expr'.
+-       ocamlc ppx/.ppx_monaidc.objs/ppx_monaidc__Pattern_guard.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppxx -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -no-alias-deps -I ppx/.ppx_monaidc.objs -open Ppx_monaidc -o ppx/.ppx_monaidc.objs/ppx_monaidc__Pattern_guard.cmo -c -impl ppx/pattern_guard.pp.ml)
+- File "ppx/pattern_guard.ml", line 61, characters 8-12:
+- Error: Uninterpreted extension 'expr'.
+[ERROR] The compilation of ppx_monadic failed at "jbuilder build -p ppx_monadic
+        -j 4".
+
+#=== ERROR while installing ppx_monadic.2.3.0 =================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p ppx_monadic -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_monadic.2.3.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_monadic.2.3.0/ppx_monadic-3364.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_monadic.2.3.0/ppx_monadic-3364.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_monadic.2.3.0/ppx_monadic-3364.out
+### stdout ###
+# [...]
+# File "ppx/comprehension.ml", line 10, characters 15-19:
+# Error: Uninterpreted extension 'expr'.
+#       ocamlc ppx/.ppx_monaidc.objs/ppx_monaidc__Do_.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppxx -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -no-alias-deps -I ppx/.ppx_monaidc.objs -open Ppx_monaidc -o ppx/.ppx_monaidc.objs/ppx_monaidc__Do_.cmo -c -impl ppx/do_.pp.ml)
+# File "ppx/do_.ml", line 60, characters 46-50:
+# Error: Uninterpreted extension 'expr'.
+#       ocamlc ppx/.ppx_monaidc.objs/ppx_monaidc__Pattern_guard.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppxx -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -no-alias-deps -I ppx/.ppx_monaidc.objs -open Ppx_monaidc -o ppx/.ppx_monaidc.objs/ppx_monaidc__Pattern_guard.cmo -c -impl ppx/pattern_guard.pp.ml)
+# File "ppx/pattern_guard.ml", line 61, characters 8-12:
+# Error: Uninterpreted extension 'expr'.
+### stderr ###
+# [...]
+# File "ppx/comprehension.ml", line 10, characters 15-19:
+# Error: Uninterpreted extension 'expr'.
+#       ocamlc ppx/.ppx_monaidc.objs/ppx_monaidc__Do_.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppxx -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -no-alias-deps -I ppx/.ppx_monaidc.objs -open Ppx_monaidc -o ppx/.ppx_monaidc.objs/ppx_monaidc__Do_.cmo -c -impl ppx/do_.pp.ml)
+# File "ppx/do_.ml", line 60, characters 46-50:
+# Error: Uninterpreted extension 'expr'.
+#       ocamlc ppx/.ppx_monaidc.objs/ppx_monaidc__Pattern_guard.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppxx -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -no-alias-deps -I ppx/.ppx_monaidc.objs -open Ppx_monaidc -o ppx/.ppx_monaidc.objs/ppx_monaidc__Pattern_guard.cmo -c -impl ppx/pattern_guard.pp.ml)
+# File "ppx/pattern_guard.ml", line 61, characters 8-12:
+# Error: Uninterpreted extension 'expr'.
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ppx_monadic 2.3.0
+No changes have been performed
+'opam install ppx_monadic.2.3.0' failed.

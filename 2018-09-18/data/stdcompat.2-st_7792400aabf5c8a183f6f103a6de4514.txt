@@ -1,0 +1,170 @@
+The following actions will be performed:
+  - install stdcompat 2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[stdcompat: http] Command started
+[stdcompat: http] Command started
+[stdcompat.2] https://github.com/thierry-martinez/stdcompat/archive/2.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[stdcompat: make all] Command started
++ make "all" "PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/stdcompat.2)
+- cppo -D 'OCAMLVERSION 407' stdcompat.mlip >stdcompat.mli || rm stdcompat.mli
+- ocamlfind ocamlc -c stdcompat.mli
+- ocamlfind ocamlc -pp "cppo -D 'OCAMLVERSION 407'" -c -impl stdcompat.mlp
+- File "stdcompat.mlp", line 1:
+- Error: The implementation stdcompat.mlp
+-        does not match the interface stdcompat.cmi:
+-        ...
+-        In module Hashtbl:
+-        The value `to_seq_values' is required but not provided
+-        File "stdcompat.mlip", line 299, characters 2-44: Expected declaration
+-        In module Hashtbl:
+-        The value `to_seq_keys' is required but not provided
+-        File "stdcompat.mlip", line 297, characters 2-42: Expected declaration
+-        In module Hashtbl:
+-        The value `to_seq' is required but not provided
+-        File "stdcompat.mlip", line 295, characters 2-44: Expected declaration
+-        In module Hashtbl:
+-        The value `replace_seq' is required but not provided
+-        File "stdcompat.mlip", line 293, characters 2-57: Expected declaration
+-        In module Hashtbl:
+-        The value `add_seq' is required but not provided
+-        File "stdcompat.mlip", line 291, characters 2-53: Expected declaration
+-        In module Hashtbl:
+-        The value `of_seq' is required but not provided
+-        File "stdcompat.mlip", line 289, characters 2-44: Expected declaration
+- Makefile:132: recipe for target 'stdcompat.cmo' failed
+- make: *** [stdcompat.cmo] Error 2
+- cppo -D 'OCAMLVERSION 407' stdcompat.mlip >stdcompat.mli || rm stdcompat.mli
+- ocamlfind ocamlc -c stdcompat.mli
+- ocamlfind ocamlc -pp "cppo -D 'OCAMLVERSION 407'" -c -impl stdcompat.mlp
+- File "stdcompat.mlp", line 1:
+- Error: The implementation stdcompat.mlp
+-        does not match the interface stdcompat.cmi:
+-        ...
+-        In module Hashtbl:
+-        The value `to_seq_values' is required but not provided
+-        File "stdcompat.mlip", line 299, characters 2-44: Expected declaration
+-        In module Hashtbl:
+-        The value `to_seq_keys' is required but not provided
+-        File "stdcompat.mlip", line 297, characters 2-42: Expected declaration
+-        In module Hashtbl:
+-        The value `to_seq' is required but not provided
+-        File "stdcompat.mlip", line 295, characters 2-44: Expected declaration
+-        In module Hashtbl:
+-        The value `replace_seq' is required but not provided
+-        File "stdcompat.mlip", line 293, characters 2-57: Expected declaration
+-        In module Hashtbl:
+-        The value `add_seq' is required but not provided
+-        File "stdcompat.mlip", line 291, characters 2-53: Expected declaration
+-        In module Hashtbl:
+-        The value `of_seq' is required but not provided
+-        File "stdcompat.mlip", line 289, characters 2-44: Expected declaration
+- Makefile:132: recipe for target 'stdcompat.cmo' failed
+- make: *** [stdcompat.cmo] Error 2
+[ERROR] The compilation of stdcompat failed at "make all
+        PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73".
+[stdcompat: make uninstall] Command started
++ make "uninstall" "PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/stdcompat.2)
+- cppo -D 'OCAMLVERSION 407' stdcompat.mlip >stdcompat.mli || rm stdcompat.mli
+- ocamlfind ocamlc -c stdcompat.mli
+- ocamlfind ocamlc -pp "cppo -D 'OCAMLVERSION 407'" -c -impl stdcompat.mlp
+- File "stdcompat.mlp", line 1:
+- Error: The implementation stdcompat.mlp
+-        does not match the interface stdcompat.cmi:
+-        ...
+-        In module Hashtbl:
+-        The value `to_seq_values' is required but not provided
+-        File "stdcompat.mlip", line 299, characters 2-44: Expected declaration
+-        In module Hashtbl:
+-        The value `to_seq_keys' is required but not provided
+-        File "stdcompat.mlip", line 297, characters 2-42: Expected declaration
+-        In module Hashtbl:
+-        The value `to_seq' is required but not provided
+-        File "stdcompat.mlip", line 295, characters 2-44: Expected declaration
+-        In module Hashtbl:
+-        The value `replace_seq' is required but not provided
+-        File "stdcompat.mlip", line 293, characters 2-57: Expected declaration
+-        In module Hashtbl:
+-        The value `add_seq' is required but not provided
+-        File "stdcompat.mlip", line 291, characters 2-53: Expected declaration
+-        In module Hashtbl:
+-        The value `of_seq' is required but not provided
+-        File "stdcompat.mlip", line 289, characters 2-44: Expected declaration
+- Makefile:132: recipe for target 'stdcompat.cmo' failed
+- make: *** [stdcompat.cmo] Error 2
+- ocamlfind remove stdcompat
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/stdcompat/META
+- cppo -D 'OCAMLVERSION 407' stdcompat.mlip >stdcompat.mli || rm stdcompat.mli
+- ocamlfind ocamlc -c stdcompat.mli
+- ocamlfind ocamlc -pp "cppo -D 'OCAMLVERSION 407'" -c -impl stdcompat.mlp
+- File "stdcompat.mlp", line 1:
+- Error: The implementation stdcompat.mlp
+-        does not match the interface stdcompat.cmi:
+-        ...
+-        In module Hashtbl:
+-        The value `to_seq_values' is required but not provided
+-        File "stdcompat.mlip", line 299, characters 2-44: Expected declaration
+-        In module Hashtbl:
+-        The value `to_seq_keys' is required but not provided
+-        File "stdcompat.mlip", line 297, characters 2-42: Expected declaration
+-        In module Hashtbl:
+-        The value `to_seq' is required but not provided
+-        File "stdcompat.mlip", line 295, characters 2-44: Expected declaration
+-        In module Hashtbl:
+-        The value `replace_seq' is required but not provided
+-        File "stdcompat.mlip", line 293, characters 2-57: Expected declaration
+-        In module Hashtbl:
+-        The value `add_seq' is required but not provided
+-        File "stdcompat.mlip", line 291, characters 2-53: Expected declaration
+-        In module Hashtbl:
+-        The value `of_seq' is required but not provided
+-        File "stdcompat.mlip", line 289, characters 2-44: Expected declaration
+- Makefile:132: recipe for target 'stdcompat.cmo' failed
+- make: *** [stdcompat.cmo] Error 2
+- ocamlfind remove stdcompat
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/stdcompat/META
+
+#=== ERROR while installing stdcompat.2 =======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make all PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/stdcompat.2
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/stdcompat.2/stdcompat-17907.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/stdcompat.2/stdcompat-17907.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/stdcompat.2/stdcompat-17907.out
+### stdout ###
+# Error: The implementation stdcompat.mlp
+# [...]
+#        File "stdcompat.mlip", line 293, characters 2-57: Expected declaration
+#        In module Hashtbl:
+#        The value `add_seq' is required but not provided
+#        File "stdcompat.mlip", line 291, characters 2-53: Expected declaration
+#        In module Hashtbl:
+#        The value `of_seq' is required but not provided
+#        File "stdcompat.mlip", line 289, characters 2-44: Expected declaration
+# Makefile:132: recipe for target 'stdcompat.cmo' failed
+# make: *** [stdcompat.cmo] Error 2
+### stderr ###
+# Error: The implementation stdcompat.mlp
+# [...]
+#        File "stdcompat.mlip", line 293, characters 2-57: Expected declaration
+#        In module Hashtbl:
+#        The value `add_seq' is required but not provided
+#        File "stdcompat.mlip", line 291, characters 2-53: Expected declaration
+#        In module Hashtbl:
+#        The value `of_seq' is required but not provided
+#        File "stdcompat.mlip", line 289, characters 2-44: Expected declaration
+# Makefile:132: recipe for target 'stdcompat.cmo' failed
+# make: *** [stdcompat.cmo] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install stdcompat 2
+No changes have been performed
+'opam install stdcompat.2' failed.

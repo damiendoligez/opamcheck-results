@@ -1,0 +1,74 @@
+The following actions will be performed:
+  - install pcre 7.1.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pcre: http] Command started
+[pcre: http] Command started
+[pcre.7.1.2] https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.2/pcre-ocaml-7.1.2.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pcre: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pcre.7.1.2)
+- File "./setup.ml", line 247, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 247, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "./setup.ml", line 247, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 247, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+[ERROR] The compilation of pcre failed at "ocaml setup.ml -configure --prefix
+        /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051".
+[pcre: ocamlfind remove] Command started
++ ocamlfind "remove" "pcre" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pcre.7.1.2)
+- File "./setup.ml", line 247, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 247, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/pcre/META
+- File "./setup.ml", line 247, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 247, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/pcre/META
+
+#=== ERROR while installing pcre.7.1.2 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -configure --prefix /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pcre.7.1.2
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pcre.7.1.2/pcre-31876.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pcre.7.1.2/pcre-31876.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pcre.7.1.2/pcre-31876.out
+### stdout ###
+# File "./setup.ml", line 247, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 247, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+### stderr ###
+# File "./setup.ml", line 247, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 247, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install pcre 7.1.2
+No changes have been performed
+'opam install pcre.7.1.2' failed.

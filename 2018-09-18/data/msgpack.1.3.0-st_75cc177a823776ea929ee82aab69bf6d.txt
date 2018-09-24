@@ -1,0 +1,605 @@
+The following actions will be performed:
+  - install msgpack 1.3.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[msgpack: http] Command started
+[msgpack: http] Command started
+[msgpack.1.3.0] https://github.com/msgpack/msgpack-ocaml/archive/1.3.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[msgpack: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051" "--enable-conv" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/msgpack.1.3.0)
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ msgpack
+- Package version: ..................................... 1.2.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- build and install everything: ........................ false
+- Build the core library: .............................. true
+- Build the meta_conv library: ......................... true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_num: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/num
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes
+- pkg_ppx_meta_conv: ................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_meta_conv
+- 
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ msgpack
+- Package version: ..................................... 1.2.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- build and install everything: ........................ false
+- Build the core library: .............................. true
+- Build the meta_conv library: ......................... true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_num: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/num
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes
+- pkg_ppx_meta_conv: ................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_meta_conv
+- 
+[msgpack: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-build" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/msgpack.1.3.0)
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ msgpack
+- Package version: ..................................... 1.2.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- build and install everything: ........................ false
+- Build the core library: .............................. true
+- Build the meta_conv library: ......................... true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_num: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/num
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes
+- pkg_ppx_meta_conv: ................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_meta_conv
+- 
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ msgpack
+- Package version: ..................................... 1.2.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- build and install everything: ........................ false
+- Build the core library: .............................. true
+- Build the meta_conv library: ......................... true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_num: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/num
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes
+- pkg_ppx_meta_conv: ................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_meta_conv
+- 
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpack.mli > lib/core/msgpack.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpack.cmi lib/core/msgpack.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpack.ml > lib/core/msgpack.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpackConfig.ml > lib/core/msgpackConfig.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpackCore.mli > lib/core/msgpackCore.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/pack.mli > lib/core/pack.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackCore.cmi lib/core/msgpackCore.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/serialize.mli > lib/core/serialize.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/pack.cmi lib/core/pack.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackConfig.cmo lib/core/msgpackConfig.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/serialize.cmi lib/core/serialize.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/hList.ml > lib/core/hList.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpackBase.ml > lib/core/msgpackBase.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackBase.cmo lib/core/msgpackBase.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpackCore.ml > lib/core/msgpackCore.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/pack.ml > lib/core/pack.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/serialize.ml > lib/core/serialize.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpack.cmo lib/core/msgpack.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/hList.cmo lib/core/hList.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackCore.cmo lib/core/msgpackCore.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpack.mli > lib/core/msgpack.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpack.cmi lib/core/msgpack.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpack.ml > lib/core/msgpack.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpackConfig.ml > lib/core/msgpackConfig.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpackCore.mli > lib/core/msgpackCore.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/pack.mli > lib/core/pack.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackCore.cmi lib/core/msgpackCore.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/serialize.mli > lib/core/serialize.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/pack.cmi lib/core/pack.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackConfig.cmo lib/core/msgpackConfig.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/serialize.cmi lib/core/serialize.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/hList.ml > lib/core/hList.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpackBase.ml > lib/core/msgpackBase.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackBase.cmo lib/core/msgpackBase.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpackCore.ml > lib/core/msgpackCore.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/pack.ml > lib/core/pack.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/serialize.ml > lib/core/serialize.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpack.cmo lib/core/msgpack.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/hList.cmo lib/core/hList.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackCore.cmo lib/core/msgpackCore.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/pack.cmo lib/core/pack.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/serialize.cmo lib/core/serialize.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a -g -w +a-27-39-4 -annot lib/core/msgpackConfig.cmo lib/core/msgpackCore.cmo lib/core/msgpackBase.cmo lib/core/pack.cmo lib/core/serialize.cmo lib/core/msgpack.cmo lib/core/hList.cmo -o lib/core/msgpack.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackCore.cmx lib/core/msgpackCore.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackBase.cmx lib/core/msgpackBase.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/pack.cmx lib/core/pack.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/pack.cmx lib/core/pack.ml
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module Big_int, and its interface was not compiled with -opaque
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackConfig.cmx lib/core/msgpackConfig.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/serialize.cmx lib/core/serialize.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpack.cmx lib/core/msgpack.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/hList.cmx lib/core/hList.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a -g -w +a-27-39-4 -annot lib/core/msgpackBase.cmx lib/core/msgpackConfig.cmx lib/core/msgpackCore.cmx lib/core/pack.cmx lib/core/serialize.cmx lib/core/msgpack.cmx lib/core/hList.cmx -o lib/core/msgpack.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared lib/core/msgpack.cmxa lib/core/msgpackBase.cmx lib/core/msgpackConfig.cmx lib/core/msgpackCore.cmx lib/core/pack.cmx lib/core/serialize.cmx lib/core/msgpack.cmx lib/core/hList.cmx -o lib/core/msgpack.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -package ppx_meta_conv -modules lib/conv/msgpack_conv.mli > lib/conv/msgpack_conv.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/core -g -w +a -annot -package bytes -package num -package ppx_meta_conv -I lib/conv -I lib/core -o lib/conv/msgpack_conv.cmi lib/conv/msgpack_conv.mli
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/core -g -w +a -annot -package bytes -package num -package ppx_meta_conv -I lib/conv -I lib/core -o lib/conv/msgpack_conv.cmi lib/conv/msgpack_conv.mli
+- File "lib/conv/msgpack_conv.mli", line 2, characters 5-20:
+- Error: Unbound module Meta_conv
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/core/msgpack.cma lib/core/msgpack.cmxa lib/core/msgpack.a lib/core/msgpack.cmxs lib/conv/msgpack_conv.cma lib/conv/msgpack_conv.cmxa lib/conv/msgpack_conv.a lib/conv/msgpack_conv.cmxs -tag debug' terminated with error code 10")
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/pack.cmo lib/core/pack.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/serialize.cmo lib/core/serialize.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a -g -w +a-27-39-4 -annot lib/core/msgpackConfig.cmo lib/core/msgpackCore.cmo lib/core/msgpackBase.cmo lib/core/pack.cmo lib/core/serialize.cmo lib/core/msgpack.cmo lib/core/hList.cmo -o lib/core/msgpack.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackCore.cmx lib/core/msgpackCore.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackBase.cmx lib/core/msgpackBase.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/pack.cmx lib/core/pack.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/pack.cmx lib/core/pack.ml
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module Big_int, and its interface was not compiled with -opaque
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackConfig.cmx lib/core/msgpackConfig.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/serialize.cmx lib/core/serialize.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpack.cmx lib/core/msgpack.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/hList.cmx lib/core/hList.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a -g -w +a-27-39-4 -annot lib/core/msgpackBase.cmx lib/core/msgpackConfig.cmx lib/core/msgpackCore.cmx lib/core/pack.cmx lib/core/serialize.cmx lib/core/msgpack.cmx lib/core/hList.cmx -o lib/core/msgpack.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared lib/core/msgpack.cmxa lib/core/msgpackBase.cmx lib/core/msgpackConfig.cmx lib/core/msgpackCore.cmx lib/core/pack.cmx lib/core/serialize.cmx lib/core/msgpack.cmx lib/core/hList.cmx -o lib/core/msgpack.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -package ppx_meta_conv -modules lib/conv/msgpack_conv.mli > lib/conv/msgpack_conv.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/core -g -w +a -annot -package bytes -package num -package ppx_meta_conv -I lib/conv -I lib/core -o lib/conv/msgpack_conv.cmi lib/conv/msgpack_conv.mli
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/core -g -w +a -annot -package bytes -package num -package ppx_meta_conv -I lib/conv -I lib/core -o lib/conv/msgpack_conv.cmi lib/conv/msgpack_conv.mli
+- File "lib/conv/msgpack_conv.mli", line 2, characters 5-20:
+- Error: Unbound module Meta_conv
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/core/msgpack.cma lib/core/msgpack.cmxa lib/core/msgpack.a lib/core/msgpack.cmxs lib/conv/msgpack_conv.cma lib/conv/msgpack_conv.cmxa lib/conv/msgpack_conv.a lib/conv/msgpack_conv.cmxs -tag debug' terminated with error code 10")
+[ERROR] The compilation of msgpack failed at "ocaml setup.ml -build".
+[msgpack: ocamlfind remove] Command started
++ ocamlfind "remove" "msgpack" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/msgpack.1.3.0)
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ msgpack
+- Package version: ..................................... 1.2.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- build and install everything: ........................ false
+- Build the core library: .............................. true
+- Build the meta_conv library: ......................... true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_num: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/num
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes
+- pkg_ppx_meta_conv: ................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_meta_conv
+- 
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpack.mli > lib/core/msgpack.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpack.cmi lib/core/msgpack.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpack.ml > lib/core/msgpack.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpackConfig.ml > lib/core/msgpackConfig.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpackCore.mli > lib/core/msgpackCore.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/pack.mli > lib/core/pack.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackCore.cmi lib/core/msgpackCore.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/serialize.mli > lib/core/serialize.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/pack.cmi lib/core/pack.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackConfig.cmo lib/core/msgpackConfig.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/serialize.cmi lib/core/serialize.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/hList.ml > lib/core/hList.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpackBase.ml > lib/core/msgpackBase.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackBase.cmo lib/core/msgpackBase.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpackCore.ml > lib/core/msgpackCore.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/pack.ml > lib/core/pack.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/serialize.ml > lib/core/serialize.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpack.cmo lib/core/msgpack.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/hList.cmo lib/core/hList.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackCore.cmo lib/core/msgpackCore.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/pack.cmo lib/core/pack.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/serialize.cmo lib/core/serialize.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a -g -w +a-27-39-4 -annot lib/core/msgpackConfig.cmo lib/core/msgpackCore.cmo lib/core/msgpackBase.cmo lib/core/pack.cmo lib/core/serialize.cmo lib/core/msgpack.cmo lib/core/hList.cmo -o lib/core/msgpack.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackCore.cmx lib/core/msgpackCore.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackBase.cmx lib/core/msgpackBase.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/pack.cmx lib/core/pack.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/pack.cmx lib/core/pack.ml
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module Big_int, and its interface was not compiled with -opaque
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackConfig.cmx lib/core/msgpackConfig.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/serialize.cmx lib/core/serialize.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpack.cmx lib/core/msgpack.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/hList.cmx lib/core/hList.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a -g -w +a-27-39-4 -annot lib/core/msgpackBase.cmx lib/core/msgpackConfig.cmx lib/core/msgpackCore.cmx lib/core/pack.cmx lib/core/serialize.cmx lib/core/msgpack.cmx lib/core/hList.cmx -o lib/core/msgpack.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared lib/core/msgpack.cmxa lib/core/msgpackBase.cmx lib/core/msgpackConfig.cmx lib/core/msgpackCore.cmx lib/core/pack.cmx lib/core/serialize.cmx lib/core/msgpack.cmx lib/core/hList.cmx -o lib/core/msgpack.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -package ppx_meta_conv -modules lib/conv/msgpack_conv.mli > lib/conv/msgpack_conv.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/core -g -w +a -annot -package bytes -package num -package ppx_meta_conv -I lib/conv -I lib/core -o lib/conv/msgpack_conv.cmi lib/conv/msgpack_conv.mli
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/core -g -w +a -annot -package bytes -package num -package ppx_meta_conv -I lib/conv -I lib/core -o lib/conv/msgpack_conv.cmi lib/conv/msgpack_conv.mli
+- File "lib/conv/msgpack_conv.mli", line 2, characters 5-20:
+- Error: Unbound module Meta_conv
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/core/msgpack.cma lib/core/msgpack.cmxa lib/core/msgpack.a lib/core/msgpack.cmxs lib/conv/msgpack_conv.cma lib/conv/msgpack_conv.cmxa lib/conv/msgpack_conv.a lib/conv/msgpack_conv.cmxs -tag debug' terminated with error code 10")
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/msgpack/META
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ msgpack
+- Package version: ..................................... 1.2.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- build and install everything: ........................ false
+- Build the core library: .............................. true
+- Build the meta_conv library: ......................... true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_num: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/num
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes
+- pkg_ppx_meta_conv: ................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_meta_conv
+- 
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpack.mli > lib/core/msgpack.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpack.cmi lib/core/msgpack.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpack.ml > lib/core/msgpack.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpackConfig.ml > lib/core/msgpackConfig.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpackCore.mli > lib/core/msgpackCore.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/pack.mli > lib/core/pack.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackCore.cmi lib/core/msgpackCore.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/serialize.mli > lib/core/serialize.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/pack.cmi lib/core/pack.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackConfig.cmo lib/core/msgpackConfig.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/serialize.cmi lib/core/serialize.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/hList.ml > lib/core/hList.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpackBase.ml > lib/core/msgpackBase.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackBase.cmo lib/core/msgpackBase.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/msgpackCore.ml > lib/core/msgpackCore.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/pack.ml > lib/core/pack.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -modules lib/core/serialize.ml > lib/core/serialize.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpack.cmo lib/core/msgpack.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/hList.cmo lib/core/hList.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackCore.cmo lib/core/msgpackCore.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/pack.cmo lib/core/pack.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/serialize.cmo lib/core/serialize.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a -g -w +a-27-39-4 -annot lib/core/msgpackConfig.cmo lib/core/msgpackCore.cmo lib/core/msgpackBase.cmo lib/core/pack.cmo lib/core/serialize.cmo lib/core/msgpack.cmo lib/core/hList.cmo -o lib/core/msgpack.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackCore.cmx lib/core/msgpackCore.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackBase.cmx lib/core/msgpackBase.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/pack.cmx lib/core/pack.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/pack.cmx lib/core/pack.ml
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module Big_int, and its interface was not compiled with -opaque
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpackConfig.cmx lib/core/msgpackConfig.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/serialize.cmx lib/core/serialize.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/msgpack.cmx lib/core/msgpack.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/hList.cmx lib/core/hList.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a -g -w +a-27-39-4 -annot lib/core/msgpackBase.cmx lib/core/msgpackConfig.cmx lib/core/msgpackCore.cmx lib/core/pack.cmx lib/core/serialize.cmx lib/core/msgpack.cmx lib/core/hList.cmx -o lib/core/msgpack.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared lib/core/msgpack.cmxa lib/core/msgpackBase.cmx lib/core/msgpackConfig.cmx lib/core/msgpackCore.cmx lib/core/pack.cmx lib/core/serialize.cmx lib/core/msgpack.cmx lib/core/hList.cmx -o lib/core/msgpack.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -package ppx_meta_conv -modules lib/conv/msgpack_conv.mli > lib/conv/msgpack_conv.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/core -g -w +a -annot -package bytes -package num -package ppx_meta_conv -I lib/conv -I lib/core -o lib/conv/msgpack_conv.cmi lib/conv/msgpack_conv.mli
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/core -g -w +a -annot -package bytes -package num -package ppx_meta_conv -I lib/conv -I lib/core -o lib/conv/msgpack_conv.cmi lib/conv/msgpack_conv.mli
+- File "lib/conv/msgpack_conv.mli", line 2, characters 5-20:
+- Error: Unbound module Meta_conv
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/core/msgpack.cma lib/core/msgpack.cmxa lib/core/msgpack.a lib/core/msgpack.cmxs lib/conv/msgpack_conv.cma lib/conv/msgpack_conv.cmxa lib/conv/msgpack_conv.a lib/conv/msgpack_conv.cmxs -tag debug' terminated with error code 10")
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/msgpack/META
+
+#=== ERROR while installing msgpack.1.3.0 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/msgpack.1.3.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/msgpack.1.3.0/msgpack-20165.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/msgpack.1.3.0/msgpack-20165.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/msgpack.1.3.0/msgpack-20165.out
+### stdout ###
+# [...]
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/hList.cmx lib/core/hList.ml
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a -g -w +a-27-39-4 -annot lib/core/msgpackBase.cmx lib/core/msgpackConfig.cmx lib/core/msgpackCore.cmx lib/core/pack.cmx lib/core/serialize.cmx lib/core/msgpack.cmx lib/core/hList.cmx -o lib/core/msgpack.cmxa
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared lib/core/msgpack.cmxa lib/core/msgpackBase.cmx lib/core/msgpackConfig.cmx lib/core/msgpackCore.cmx lib/core/pack.cmx lib/core/serialize.cmx lib/core/msgpack.cmx lib/core/hList.cmx -o lib/core/msgpack.cmxs
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -package ppx_meta_conv -modules lib/conv/msgpack_conv.mli > lib/conv/msgpack_conv.mli.depends
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/core -g -w +a -annot -package bytes -package num -package ppx_meta_conv -I lib/conv -I lib/core -o lib/conv/msgpack_conv.cmi lib/conv/msgpack_conv.mli
+# + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/core -g -w +a -annot -package bytes -package num -package ppx_meta_conv -I lib/conv -I lib/core -o lib/conv/msgpack_conv.cmi lib/conv/msgpack_conv.mli
+# File "lib/conv/msgpack_conv.mli", line 2, characters 5-20:
+# Error: Unbound module Meta_conv
+# Command exited with code 2.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/core/msgpack.cma lib/core/msgpack.cmxa lib/core/msgpack.a lib/core/msgpack.cmxs lib/conv/msgpack_conv.cma lib/conv/msgpack_conv.cmxa lib/conv/msgpack_conv.a lib/conv/msgpack_conv.cmxs -tag debug' terminated with error code 10")
+### stderr ###
+# [...]
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -g -w +a-27-39-4 -annot -package bytes -package num -I lib/core -o lib/core/hList.cmx lib/core/hList.ml
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a -g -w +a-27-39-4 -annot lib/core/msgpackBase.cmx lib/core/msgpackConfig.cmx lib/core/msgpackCore.cmx lib/core/pack.cmx lib/core/serialize.cmx lib/core/msgpack.cmx lib/core/hList.cmx -o lib/core/msgpack.cmxa
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared lib/core/msgpack.cmxa lib/core/msgpackBase.cmx lib/core/msgpackConfig.cmx lib/core/msgpackCore.cmx lib/core/pack.cmx lib/core/serialize.cmx lib/core/msgpack.cmx lib/core/hList.cmx -o lib/core/msgpack.cmxs
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bytes -package num -package ppx_meta_conv -modules lib/conv/msgpack_conv.mli > lib/conv/msgpack_conv.mli.depends
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/core -g -w +a -annot -package bytes -package num -package ppx_meta_conv -I lib/conv -I lib/core -o lib/conv/msgpack_conv.cmi lib/conv/msgpack_conv.mli
+# + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/core -g -w +a -annot -package bytes -package num -package ppx_meta_conv -I lib/conv -I lib/core -o lib/conv/msgpack_conv.cmi lib/conv/msgpack_conv.mli
+# File "lib/conv/msgpack_conv.mli", line 2, characters 5-20:
+# Error: Unbound module Meta_conv
+# Command exited with code 2.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/core/msgpack.cma lib/core/msgpack.cmxa lib/core/msgpack.a lib/core/msgpack.cmxs lib/conv/msgpack_conv.cma lib/conv/msgpack_conv.cmxa lib/conv/msgpack_conv.a lib/conv/msgpack_conv.cmxs -tag debug' terminated with error code 10")
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install msgpack 1.3.0
+No changes have been performed
+'opam install msgpack.1.3.0' failed.

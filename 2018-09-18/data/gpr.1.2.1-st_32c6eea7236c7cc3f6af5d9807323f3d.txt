@@ -1,0 +1,1553 @@
+The following actions will be performed:
+  - install gpr 1.2.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[gpr: http] Command started
+[gpr: http] Command started
+[gpr.1.2.1] https://github.com/mmottl/gpr/releases/download/v1.2.1/gpr-1.2.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[gpr: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/gpr.1.2.1)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ gpr
+- Package version: ..................................... 1.2.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_core: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core
+- pkg_lacaml: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lacaml
+- pkg_gsl: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl
+- pkg_str: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- make: ................................................ /usr/bin/make
+- 
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ gpr
+- Package version: ..................................... 1.2.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_core: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core
+- pkg_lacaml: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lacaml
+- pkg_gsl: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl
+- pkg_str: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- make: ................................................ /usr/bin/make
+- 
+[gpr: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-build" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/gpr.1.2.1)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ gpr
+- Package version: ..................................... 1.2.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_core: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core
+- pkg_lacaml: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lacaml
+- pkg_gsl: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl
+- pkg_str: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- make: ................................................ /usr/bin/make
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ gpr
+- Package version: ..................................... 1.2.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_core: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core
+- pkg_lacaml: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lacaml
+- pkg_gsl: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl
+- pkg_str: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- make: ................................................ /usr/bin/make
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr.ml > lib/gpr.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_block_diag.mli > lib/gpr_block_diag.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_const.mli > lib/gpr_cov_const.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_interfaces.ml > lib/gpr_interfaces.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_utils.ml > lib/gpr_utils.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmo lib/gpr_utils.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmo lib/gpr_utils.ml
+- File "lib/gpr_utils.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "lib/gpr_utils.ml", line 42, characters 15-19:
+- Warning 3: deprecated: Core.Std.atan
+- [since 2016-07] Use [Float.atan]
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmo lib/gpr_interfaces.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmo lib/gpr_interfaces.ml
+- File "lib/gpr_interfaces.ml", line 105, characters 12-33:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 715, characters 16-54:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 746, characters 16-62:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_ard.mli > lib/gpr_cov_lin_ard.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_one.mli > lib/gpr_cov_lin_one.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_fat.mli > lib/gpr_cov_se_fat.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_iso.mli > lib/gpr_cov_se_iso.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_fitc_gp.mli > lib/gpr_fitc_gp.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_version.ml > lib/gpr_version.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmi lib/gpr_block_diag.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmi lib/gpr_cov_const.mli
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr.ml > lib/gpr.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_block_diag.mli > lib/gpr_block_diag.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_const.mli > lib/gpr_cov_const.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_interfaces.ml > lib/gpr_interfaces.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_utils.ml > lib/gpr_utils.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmo lib/gpr_utils.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmo lib/gpr_utils.ml
+- File "lib/gpr_utils.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "lib/gpr_utils.ml", line 42, characters 15-19:
+- Warning 3: deprecated: Core.Std.atan
+- [since 2016-07] Use [Float.atan]
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmo lib/gpr_interfaces.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmo lib/gpr_interfaces.ml
+- File "lib/gpr_interfaces.ml", line 105, characters 12-33:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 715, characters 16-54:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 746, characters 16-62:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_ard.mli > lib/gpr_cov_lin_ard.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_one.mli > lib/gpr_cov_lin_one.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_fat.mli > lib/gpr_cov_se_fat.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_iso.mli > lib/gpr_cov_se_iso.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_fitc_gp.mli > lib/gpr_fitc_gp.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_version.ml > lib/gpr_version.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmi lib/gpr_block_diag.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmi lib/gpr_cov_const.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmi lib/gpr_cov_lin_ard.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmi lib/gpr_cov_lin_one.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmi lib/gpr_cov_se_fat.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmi lib/gpr_cov_se_iso.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmi lib/gpr_fitc_gp.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_version.cmo lib/gpr_version.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_block_diag.ml > lib/gpr_block_diag.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_const.ml > lib/gpr_cov_const.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_ard.ml > lib/gpr_cov_lin_ard.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_one.ml > lib/gpr_cov_lin_one.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_iso.ml > lib/gpr_cov_se_iso.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_fat.ml > lib/gpr_cov_se_fat.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_fitc_gp.ml > lib/gpr_fitc_gp.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr.cmo lib/gpr.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmo lib/gpr_block_diag.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmo lib/gpr_block_diag.ml
+- File "lib/gpr_block_diag.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmo lib/gpr_cov_const.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmo lib/gpr_cov_const.ml
+- File "lib/gpr_cov_const.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmo lib/gpr_cov_lin_ard.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmo lib/gpr_cov_lin_ard.ml
+- File "lib/gpr_cov_lin_ard.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmo lib/gpr_cov_lin_one.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmi lib/gpr_cov_lin_ard.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmi lib/gpr_cov_lin_one.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmi lib/gpr_cov_se_fat.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmi lib/gpr_cov_se_iso.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmi lib/gpr_fitc_gp.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_version.cmo lib/gpr_version.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_block_diag.ml > lib/gpr_block_diag.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_const.ml > lib/gpr_cov_const.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_ard.ml > lib/gpr_cov_lin_ard.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_one.ml > lib/gpr_cov_lin_one.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_iso.ml > lib/gpr_cov_se_iso.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_fat.ml > lib/gpr_cov_se_fat.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_fitc_gp.ml > lib/gpr_fitc_gp.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr.cmo lib/gpr.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmo lib/gpr_block_diag.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmo lib/gpr_block_diag.ml
+- File "lib/gpr_block_diag.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmo lib/gpr_cov_const.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmo lib/gpr_cov_const.ml
+- File "lib/gpr_cov_const.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmo lib/gpr_cov_lin_ard.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmo lib/gpr_cov_lin_ard.ml
+- File "lib/gpr_cov_lin_ard.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmo lib/gpr_cov_lin_one.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmo lib/gpr_cov_lin_one.ml
+- File "lib/gpr_cov_lin_one.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmo lib/gpr_cov_se_iso.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmo lib/gpr_cov_se_iso.ml
+- File "lib/gpr_cov_se_iso.ml", line 26, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmo lib/gpr_cov_se_fat.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmo lib/gpr_cov_se_fat.ml
+- File "lib/gpr_cov_se_fat.ml", line 27, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmo lib/gpr_fitc_gp.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmo lib/gpr_fitc_gp.ml
+- File "lib/gpr_fitc_gp.ml", line 27, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a lib/gpr_block_diag.cmo lib/gpr_utils.cmo lib/gpr_interfaces.cmo lib/gpr_cov_const.cmo lib/gpr_cov_lin_ard.cmo lib/gpr_cov_lin_one.cmo lib/gpr_cov_se_fat.cmo lib/gpr_cov_se_iso.cmo lib/gpr_fitc_gp.cmo lib/gpr_version.cmo lib/gpr.cmo -o lib/gpr.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmx lib/gpr_utils.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmx lib/gpr_utils.ml
+- File "lib/gpr_utils.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "lib/gpr_utils.ml", line 42, characters 15-19:
+- Warning 3: deprecated: Core.Std.atan
+- [since 2016-07] Use [Float.atan]
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmx lib/gpr_interfaces.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmo lib/gpr_cov_lin_one.ml
+- File "lib/gpr_cov_lin_one.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmo lib/gpr_cov_se_iso.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmo lib/gpr_cov_se_iso.ml
+- File "lib/gpr_cov_se_iso.ml", line 26, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmo lib/gpr_cov_se_fat.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmo lib/gpr_cov_se_fat.ml
+- File "lib/gpr_cov_se_fat.ml", line 27, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmo lib/gpr_fitc_gp.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmo lib/gpr_fitc_gp.ml
+- File "lib/gpr_fitc_gp.ml", line 27, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a lib/gpr_block_diag.cmo lib/gpr_utils.cmo lib/gpr_interfaces.cmo lib/gpr_cov_const.cmo lib/gpr_cov_lin_ard.cmo lib/gpr_cov_lin_one.cmo lib/gpr_cov_se_fat.cmo lib/gpr_cov_se_iso.cmo lib/gpr_fitc_gp.cmo lib/gpr_version.cmo lib/gpr.cmo -o lib/gpr.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmx lib/gpr_utils.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmx lib/gpr_utils.ml
+- File "lib/gpr_utils.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "lib/gpr_utils.ml", line 42, characters 15-19:
+- Warning 3: deprecated: Core.Std.atan
+- [since 2016-07] Use [Float.atan]
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmx lib/gpr_interfaces.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmx lib/gpr_interfaces.ml
+- File "lib/gpr_interfaces.ml", line 105, characters 12-33:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 715, characters 16-54:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 746, characters 16-62:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmx lib/gpr_block_diag.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmx lib/gpr_block_diag.ml
+- File "lib/gpr_block_diag.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmx lib/gpr_cov_const.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmx lib/gpr_cov_const.ml
+- File "lib/gpr_cov_const.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_ard.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_ard.ml
+- File "lib/gpr_cov_lin_ard.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmx lib/gpr_cov_lin_one.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmx lib/gpr_cov_lin_one.ml
+- File "lib/gpr_cov_lin_one.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_fat.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_fat.ml
+- File "lib/gpr_cov_se_fat.ml", line 27, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmx lib/gpr_cov_se_iso.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmx lib/gpr_cov_se_iso.ml
+- File "lib/gpr_cov_se_iso.ml", line 26, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmx lib/gpr_fitc_gp.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmx lib/gpr_interfaces.ml
+- File "lib/gpr_interfaces.ml", line 105, characters 12-33:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 715, characters 16-54:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 746, characters 16-62:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmx lib/gpr_block_diag.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmx lib/gpr_block_diag.ml
+- File "lib/gpr_block_diag.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmx lib/gpr_cov_const.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmx lib/gpr_cov_const.ml
+- File "lib/gpr_cov_const.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_ard.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_ard.ml
+- File "lib/gpr_cov_lin_ard.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmx lib/gpr_cov_lin_one.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmx lib/gpr_cov_lin_one.ml
+- File "lib/gpr_cov_lin_one.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_fat.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_fat.ml
+- File "lib/gpr_cov_se_fat.ml", line 27, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmx lib/gpr_cov_se_iso.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmx lib/gpr_cov_se_iso.ml
+- File "lib/gpr_cov_se_iso.ml", line 26, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmx lib/gpr_fitc_gp.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmx lib/gpr_fitc_gp.ml
+- File "lib/gpr_fitc_gp.ml", line 27, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_version.cmx lib/gpr_version.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr.cmx lib/gpr.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a lib/gpr_block_diag.cmx lib/gpr_utils.cmx lib/gpr_interfaces.cmx lib/gpr_cov_const.cmx lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_one.cmx lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_iso.cmx lib/gpr_fitc_gp.cmx lib/gpr_version.cmx lib/gpr.cmx -o lib/gpr.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared lib/gpr.cmxa lib/gpr_block_diag.cmx lib/gpr_utils.cmx lib/gpr_interfaces.cmx lib/gpr_cov_const.cmx lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_one.cmx lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_iso.cmx lib/gpr_fitc_gp.cmx lib/gpr_version.cmx lib/gpr.cmx -o lib/gpr.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -package str -modules app/ocaml_gpr.ml > app/ocaml_gpr.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmo app/ocaml_gpr.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmo app/ocaml_gpr.ml
+- File "app/ocaml_gpr.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "app/ocaml_gpr.ml", line 174, characters 18-27:
+- Warning 3: deprecated: Core.Std.read_line
+- [since 2016-04] Use
+- [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+- File "app/ocaml_gpr.ml", line 184, characters 24-33:
+- Warning 3: deprecated: Core.Std.read_line
+- [since 2016-04] Use
+- [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+- File "app/ocaml_gpr.ml", line 228, characters 11-19:
+- Warning 3: deprecated: Core.Std.open_out
+- [since 2016-04] Use [Out_channel.create]
+- File "app/ocaml_gpr.ml", line 377, characters 11-18:
+- Warning 3: deprecated: Core.Std.open_in
+- [since 2016-04] Use [In_channel.create]
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmx app/ocaml_gpr.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmx lib/gpr_fitc_gp.ml
+- File "lib/gpr_fitc_gp.ml", line 27, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_version.cmx lib/gpr_version.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr.cmx lib/gpr.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a lib/gpr_block_diag.cmx lib/gpr_utils.cmx lib/gpr_interfaces.cmx lib/gpr_cov_const.cmx lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_one.cmx lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_iso.cmx lib/gpr_fitc_gp.cmx lib/gpr_version.cmx lib/gpr.cmx -o lib/gpr.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared lib/gpr.cmxa lib/gpr_block_diag.cmx lib/gpr_utils.cmx lib/gpr_interfaces.cmx lib/gpr_cov_const.cmx lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_one.cmx lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_iso.cmx lib/gpr_fitc_gp.cmx lib/gpr_version.cmx lib/gpr.cmx -o lib/gpr.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -package str -modules app/ocaml_gpr.ml > app/ocaml_gpr.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmo app/ocaml_gpr.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmo app/ocaml_gpr.ml
+- File "app/ocaml_gpr.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "app/ocaml_gpr.ml", line 174, characters 18-27:
+- Warning 3: deprecated: Core.Std.read_line
+- [since 2016-04] Use
+- [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+- File "app/ocaml_gpr.ml", line 184, characters 24-33:
+- Warning 3: deprecated: Core.Std.read_line
+- [since 2016-04] Use
+- [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+- File "app/ocaml_gpr.ml", line 228, characters 11-19:
+- Warning 3: deprecated: Core.Std.open_out
+- [since 2016-04] Use [Out_channel.create]
+- File "app/ocaml_gpr.ml", line 377, characters 11-18:
+- Warning 3: deprecated: Core.Std.open_in
+- [since 2016-04] Use [In_channel.create]
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmx app/ocaml_gpr.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmx app/ocaml_gpr.ml
+- File "app/ocaml_gpr.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "app/ocaml_gpr.ml", line 174, characters 18-27:
+- Warning 3: deprecated: Core.Std.read_line
+- [since 2016-04] Use
+- [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+- File "app/ocaml_gpr.ml", line 184, characters 24-33:
+- Warning 3: deprecated: Core.Std.read_line
+- [since 2016-04] Use
+- [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+- File "app/ocaml_gpr.ml", line 228, characters 11-19:
+- Warning 3: deprecated: Core.Std.open_out
+- [since 2016-04] Use [Out_channel.create]
+- File "app/ocaml_gpr.ml", line 377, characters 11-18:
+- Warning 3: deprecated: Core.Std.open_in
+- [since 2016-04] Use [In_channel.create]
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -linkpkg -g -linkpkg -thread -package threads -package lacaml -package gsl -package core -package str lib/gpr.cmxa app/ocaml_gpr.cmx -o app/ocaml_gpr.native
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -linkpkg -g -linkpkg -thread -package threads -package lacaml -package gsl -package core -package str lib/gpr.cmxa app/ocaml_gpr.cmx -o app/ocaml_gpr.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl/libgsl_stubs.a(mlgsl_randist.o): In function `ml_gsl_ran_multivariate_gaussian':
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/gsl.1.22.0/_build/default/src/mlgsl_randist.c:56: undefined reference to `gsl_ran_multivariate_gaussian'
+- collect2: error: ld returned 1 exit status
+- File "caml_startup", line 1:
+- Error: Error during linking
+- Command exited with code 2.
+- + ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/gpr.cma lib/gpr.cmxa lib/gpr.a lib/gpr.cmxs app/ocaml_gpr.native -use-ocamlfind -tag debug' terminated with error code 10")
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmx app/ocaml_gpr.ml
+- File "app/ocaml_gpr.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "app/ocaml_gpr.ml", line 174, characters 18-27:
+- Warning 3: deprecated: Core.Std.read_line
+- [since 2016-04] Use
+- [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+- File "app/ocaml_gpr.ml", line 184, characters 24-33:
+- Warning 3: deprecated: Core.Std.read_line
+- [since 2016-04] Use
+- [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+- File "app/ocaml_gpr.ml", line 228, characters 11-19:
+- Warning 3: deprecated: Core.Std.open_out
+- [since 2016-04] Use [Out_channel.create]
+- File "app/ocaml_gpr.ml", line 377, characters 11-18:
+- Warning 3: deprecated: Core.Std.open_in
+- [since 2016-04] Use [In_channel.create]
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -linkpkg -g -linkpkg -thread -package threads -package lacaml -package gsl -package core -package str lib/gpr.cmxa app/ocaml_gpr.cmx -o app/ocaml_gpr.native
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -linkpkg -g -linkpkg -thread -package threads -package lacaml -package gsl -package core -package str lib/gpr.cmxa app/ocaml_gpr.cmx -o app/ocaml_gpr.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl/libgsl_stubs.a(mlgsl_randist.o): In function `ml_gsl_ran_multivariate_gaussian':
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/gsl.1.22.0/_build/default/src/mlgsl_randist.c:56: undefined reference to `gsl_ran_multivariate_gaussian'
+- collect2: error: ld returned 1 exit status
+- File "caml_startup", line 1:
+- Error: Error during linking
+- Command exited with code 2.
+- + ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/gpr.cma lib/gpr.cmxa lib/gpr.a lib/gpr.cmxs app/ocaml_gpr.native -use-ocamlfind -tag debug' terminated with error code 10")
+[ERROR] The compilation of gpr failed at "ocaml setup.ml -build".
+[gpr: ocamlfind remove] Command started
++ ocamlfind "remove" "gpr" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/gpr.1.2.1)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ gpr
+- Package version: ..................................... 1.2.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_core: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core
+- pkg_lacaml: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lacaml
+- pkg_gsl: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl
+- pkg_str: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- make: ................................................ /usr/bin/make
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr.ml > lib/gpr.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_block_diag.mli > lib/gpr_block_diag.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_const.mli > lib/gpr_cov_const.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_interfaces.ml > lib/gpr_interfaces.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_utils.ml > lib/gpr_utils.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmo lib/gpr_utils.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmo lib/gpr_utils.ml
+- File "lib/gpr_utils.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "lib/gpr_utils.ml", line 42, characters 15-19:
+- Warning 3: deprecated: Core.Std.atan
+- [since 2016-07] Use [Float.atan]
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmo lib/gpr_interfaces.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmo lib/gpr_interfaces.ml
+- File "lib/gpr_interfaces.ml", line 105, characters 12-33:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 715, characters 16-54:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 746, characters 16-62:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_ard.mli > lib/gpr_cov_lin_ard.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_one.mli > lib/gpr_cov_lin_one.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_fat.mli > lib/gpr_cov_se_fat.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_iso.mli > lib/gpr_cov_se_iso.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_fitc_gp.mli > lib/gpr_fitc_gp.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_version.ml > lib/gpr_version.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmi lib/gpr_block_diag.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmi lib/gpr_cov_const.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmi lib/gpr_cov_lin_ard.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmi lib/gpr_cov_lin_one.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmi lib/gpr_cov_se_fat.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmi lib/gpr_cov_se_iso.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmi lib/gpr_fitc_gp.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_version.cmo lib/gpr_version.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_block_diag.ml > lib/gpr_block_diag.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_const.ml > lib/gpr_cov_const.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_ard.ml > lib/gpr_cov_lin_ard.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_one.ml > lib/gpr_cov_lin_one.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_iso.ml > lib/gpr_cov_se_iso.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_fat.ml > lib/gpr_cov_se_fat.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_fitc_gp.ml > lib/gpr_fitc_gp.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr.cmo lib/gpr.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmo lib/gpr_block_diag.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmo lib/gpr_block_diag.ml
+- File "lib/gpr_block_diag.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmo lib/gpr_cov_const.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmo lib/gpr_cov_const.ml
+- File "lib/gpr_cov_const.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmo lib/gpr_cov_lin_ard.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmo lib/gpr_cov_lin_ard.ml
+- File "lib/gpr_cov_lin_ard.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmo lib/gpr_cov_lin_one.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmo lib/gpr_cov_lin_one.ml
+- File "lib/gpr_cov_lin_one.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmo lib/gpr_cov_se_iso.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmo lib/gpr_cov_se_iso.ml
+- File "lib/gpr_cov_se_iso.ml", line 26, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmo lib/gpr_cov_se_fat.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmo lib/gpr_cov_se_fat.ml
+- File "lib/gpr_cov_se_fat.ml", line 27, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmo lib/gpr_fitc_gp.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmo lib/gpr_fitc_gp.ml
+- File "lib/gpr_fitc_gp.ml", line 27, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a lib/gpr_block_diag.cmo lib/gpr_utils.cmo lib/gpr_interfaces.cmo lib/gpr_cov_const.cmo lib/gpr_cov_lin_ard.cmo lib/gpr_cov_lin_one.cmo lib/gpr_cov_se_fat.cmo lib/gpr_cov_se_iso.cmo lib/gpr_fitc_gp.cmo lib/gpr_version.cmo lib/gpr.cmo -o lib/gpr.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmx lib/gpr_utils.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmx lib/gpr_utils.ml
+- File "lib/gpr_utils.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "lib/gpr_utils.ml", line 42, characters 15-19:
+- Warning 3: deprecated: Core.Std.atan
+- [since 2016-07] Use [Float.atan]
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmx lib/gpr_interfaces.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmx lib/gpr_interfaces.ml
+- File "lib/gpr_interfaces.ml", line 105, characters 12-33:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 715, characters 16-54:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 746, characters 16-62:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmx lib/gpr_block_diag.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmx lib/gpr_block_diag.ml
+- File "lib/gpr_block_diag.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmx lib/gpr_cov_const.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmx lib/gpr_cov_const.ml
+- File "lib/gpr_cov_const.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_ard.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_ard.ml
+- File "lib/gpr_cov_lin_ard.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmx lib/gpr_cov_lin_one.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmx lib/gpr_cov_lin_one.ml
+- File "lib/gpr_cov_lin_one.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_fat.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_fat.ml
+- File "lib/gpr_cov_se_fat.ml", line 27, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmx lib/gpr_cov_se_iso.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmx lib/gpr_cov_se_iso.ml
+- File "lib/gpr_cov_se_iso.ml", line 26, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmx lib/gpr_fitc_gp.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmx lib/gpr_fitc_gp.ml
+- File "lib/gpr_fitc_gp.ml", line 27, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_version.cmx lib/gpr_version.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr.cmx lib/gpr.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a lib/gpr_block_diag.cmx lib/gpr_utils.cmx lib/gpr_interfaces.cmx lib/gpr_cov_const.cmx lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_one.cmx lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_iso.cmx lib/gpr_fitc_gp.cmx lib/gpr_version.cmx lib/gpr.cmx -o lib/gpr.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared lib/gpr.cmxa lib/gpr_block_diag.cmx lib/gpr_utils.cmx lib/gpr_interfaces.cmx lib/gpr_cov_const.cmx lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_one.cmx lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_iso.cmx lib/gpr_fitc_gp.cmx lib/gpr_version.cmx lib/gpr.cmx -o lib/gpr.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -package str -modules app/ocaml_gpr.ml > app/ocaml_gpr.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmo app/ocaml_gpr.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmo app/ocaml_gpr.ml
+- File "app/ocaml_gpr.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "app/ocaml_gpr.ml", line 174, characters 18-27:
+- Warning 3: deprecated: Core.Std.read_line
+- [since 2016-04] Use
+- [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+- File "app/ocaml_gpr.ml", line 184, characters 24-33:
+- Warning 3: deprecated: Core.Std.read_line
+- [since 2016-04] Use
+- [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+- File "app/ocaml_gpr.ml", line 228, characters 11-19:
+- Warning 3: deprecated: Core.Std.open_out
+- [since 2016-04] Use [Out_channel.create]
+- File "app/ocaml_gpr.ml", line 377, characters 11-18:
+- Warning 3: deprecated: Core.Std.open_in
+- [since 2016-04] Use [In_channel.create]
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmx app/ocaml_gpr.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmx app/ocaml_gpr.ml
+- File "app/ocaml_gpr.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "app/ocaml_gpr.ml", line 174, characters 18-27:
+- Warning 3: deprecated: Core.Std.read_line
+- [since 2016-04] Use
+- [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+- File "app/ocaml_gpr.ml", line 184, characters 24-33:
+- Warning 3: deprecated: Core.Std.read_line
+- [since 2016-04] Use
+- [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+- File "app/ocaml_gpr.ml", line 228, characters 11-19:
+- Warning 3: deprecated: Core.Std.open_out
+- [since 2016-04] Use [Out_channel.create]
+- File "app/ocaml_gpr.ml", line 377, characters 11-18:
+- Warning 3: deprecated: Core.Std.open_in
+- [since 2016-04] Use [In_channel.create]
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -linkpkg -g -linkpkg -thread -package threads -package lacaml -package gsl -package core -package str lib/gpr.cmxa app/ocaml_gpr.cmx -o app/ocaml_gpr.native
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -linkpkg -g -linkpkg -thread -package threads -package lacaml -package gsl -package core -package str lib/gpr.cmxa app/ocaml_gpr.cmx -o app/ocaml_gpr.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl/libgsl_stubs.a(mlgsl_randist.o): In function `ml_gsl_ran_multivariate_gaussian':
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/gsl.1.22.0/_build/default/src/mlgsl_randist.c:56: undefined reference to `gsl_ran_multivariate_gaussian'
+- collect2: error: ld returned 1 exit status
+- File "caml_startup", line 1:
+- Error: Error during linking
+- Command exited with code 2.
+- + ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/gpr.cma lib/gpr.cmxa lib/gpr.a lib/gpr.cmxs app/ocaml_gpr.native -use-ocamlfind -tag debug' terminated with error code 10")
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gpr/META
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ gpr
+- Package version: ..................................... 1.2.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_core: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core
+- pkg_lacaml: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lacaml
+- pkg_gsl: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl
+- pkg_str: ............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- make: ................................................ /usr/bin/make
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr.ml > lib/gpr.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_block_diag.mli > lib/gpr_block_diag.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_const.mli > lib/gpr_cov_const.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_interfaces.ml > lib/gpr_interfaces.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_utils.ml > lib/gpr_utils.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmo lib/gpr_utils.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmo lib/gpr_utils.ml
+- File "lib/gpr_utils.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "lib/gpr_utils.ml", line 42, characters 15-19:
+- Warning 3: deprecated: Core.Std.atan
+- [since 2016-07] Use [Float.atan]
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmo lib/gpr_interfaces.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmo lib/gpr_interfaces.ml
+- File "lib/gpr_interfaces.ml", line 105, characters 12-33:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 715, characters 16-54:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 746, characters 16-62:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_ard.mli > lib/gpr_cov_lin_ard.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_one.mli > lib/gpr_cov_lin_one.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_fat.mli > lib/gpr_cov_se_fat.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_iso.mli > lib/gpr_cov_se_iso.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_fitc_gp.mli > lib/gpr_fitc_gp.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_version.ml > lib/gpr_version.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmi lib/gpr_block_diag.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmi lib/gpr_cov_const.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmi lib/gpr_cov_lin_ard.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmi lib/gpr_cov_lin_one.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmi lib/gpr_cov_se_fat.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmi lib/gpr_cov_se_iso.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmi lib/gpr_fitc_gp.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_version.cmo lib/gpr_version.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_block_diag.ml > lib/gpr_block_diag.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_const.ml > lib/gpr_cov_const.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_ard.ml > lib/gpr_cov_lin_ard.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_one.ml > lib/gpr_cov_lin_one.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_iso.ml > lib/gpr_cov_se_iso.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_fat.ml > lib/gpr_cov_se_fat.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_fitc_gp.ml > lib/gpr_fitc_gp.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr.cmo lib/gpr.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmo lib/gpr_block_diag.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmo lib/gpr_block_diag.ml
+- File "lib/gpr_block_diag.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmo lib/gpr_cov_const.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmo lib/gpr_cov_const.ml
+- File "lib/gpr_cov_const.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmo lib/gpr_cov_lin_ard.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmo lib/gpr_cov_lin_ard.ml
+- File "lib/gpr_cov_lin_ard.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmo lib/gpr_cov_lin_one.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmo lib/gpr_cov_lin_one.ml
+- File "lib/gpr_cov_lin_one.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmo lib/gpr_cov_se_iso.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmo lib/gpr_cov_se_iso.ml
+- File "lib/gpr_cov_se_iso.ml", line 26, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmo lib/gpr_cov_se_fat.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmo lib/gpr_cov_se_fat.ml
+- File "lib/gpr_cov_se_fat.ml", line 27, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmo lib/gpr_fitc_gp.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmo lib/gpr_fitc_gp.ml
+- File "lib/gpr_fitc_gp.ml", line 27, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a lib/gpr_block_diag.cmo lib/gpr_utils.cmo lib/gpr_interfaces.cmo lib/gpr_cov_const.cmo lib/gpr_cov_lin_ard.cmo lib/gpr_cov_lin_one.cmo lib/gpr_cov_se_fat.cmo lib/gpr_cov_se_iso.cmo lib/gpr_fitc_gp.cmo lib/gpr_version.cmo lib/gpr.cmo -o lib/gpr.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmx lib/gpr_utils.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmx lib/gpr_utils.ml
+- File "lib/gpr_utils.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "lib/gpr_utils.ml", line 42, characters 15-19:
+- Warning 3: deprecated: Core.Std.atan
+- [since 2016-07] Use [Float.atan]
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmx lib/gpr_interfaces.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmx lib/gpr_interfaces.ml
+- File "lib/gpr_interfaces.ml", line 105, characters 12-33:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 715, characters 16-54:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 746, characters 16-62:
+- Warning 50: ambiguous documentation comment
+- File "lib/gpr_interfaces.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmx lib/gpr_block_diag.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmx lib/gpr_block_diag.ml
+- File "lib/gpr_block_diag.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmx lib/gpr_cov_const.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmx lib/gpr_cov_const.ml
+- File "lib/gpr_cov_const.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_ard.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_ard.ml
+- File "lib/gpr_cov_lin_ard.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmx lib/gpr_cov_lin_one.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmx lib/gpr_cov_lin_one.ml
+- File "lib/gpr_cov_lin_one.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_fat.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_fat.ml
+- File "lib/gpr_cov_se_fat.ml", line 27, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmx lib/gpr_cov_se_iso.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmx lib/gpr_cov_se_iso.ml
+- File "lib/gpr_cov_se_iso.ml", line 26, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmx lib/gpr_fitc_gp.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmx lib/gpr_fitc_gp.ml
+- File "lib/gpr_fitc_gp.ml", line 27, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_version.cmx lib/gpr_version.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr.cmx lib/gpr.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a lib/gpr_block_diag.cmx lib/gpr_utils.cmx lib/gpr_interfaces.cmx lib/gpr_cov_const.cmx lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_one.cmx lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_iso.cmx lib/gpr_fitc_gp.cmx lib/gpr_version.cmx lib/gpr.cmx -o lib/gpr.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared lib/gpr.cmxa lib/gpr_block_diag.cmx lib/gpr_utils.cmx lib/gpr_interfaces.cmx lib/gpr_cov_const.cmx lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_one.cmx lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_iso.cmx lib/gpr_fitc_gp.cmx lib/gpr_version.cmx lib/gpr.cmx -o lib/gpr.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -package str -modules app/ocaml_gpr.ml > app/ocaml_gpr.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmo app/ocaml_gpr.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmo app/ocaml_gpr.ml
+- File "app/ocaml_gpr.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "app/ocaml_gpr.ml", line 174, characters 18-27:
+- Warning 3: deprecated: Core.Std.read_line
+- [since 2016-04] Use
+- [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+- File "app/ocaml_gpr.ml", line 184, characters 24-33:
+- Warning 3: deprecated: Core.Std.read_line
+- [since 2016-04] Use
+- [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+- File "app/ocaml_gpr.ml", line 228, characters 11-19:
+- Warning 3: deprecated: Core.Std.open_out
+- [since 2016-04] Use [Out_channel.create]
+- File "app/ocaml_gpr.ml", line 377, characters 11-18:
+- Warning 3: deprecated: Core.Std.open_in
+- [since 2016-04] Use [In_channel.create]
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmx app/ocaml_gpr.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmx app/ocaml_gpr.ml
+- File "app/ocaml_gpr.ml", line 24, characters 5-13:
+- Warning 3: deprecated: module Core.Std
+- [since 2017-02] Use Core. The Std sub-module is no longer needed
+- File "app/ocaml_gpr.ml", line 174, characters 18-27:
+- Warning 3: deprecated: Core.Std.read_line
+- [since 2016-04] Use
+- [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+- File "app/ocaml_gpr.ml", line 184, characters 24-33:
+- Warning 3: deprecated: Core.Std.read_line
+- [since 2016-04] Use
+- [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+- File "app/ocaml_gpr.ml", line 228, characters 11-19:
+- Warning 3: deprecated: Core.Std.open_out
+- [since 2016-04] Use [Out_channel.create]
+- File "app/ocaml_gpr.ml", line 377, characters 11-18:
+- Warning 3: deprecated: Core.Std.open_in
+- [since 2016-04] Use [In_channel.create]
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -linkpkg -g -linkpkg -thread -package threads -package lacaml -package gsl -package core -package str lib/gpr.cmxa app/ocaml_gpr.cmx -o app/ocaml_gpr.native
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -linkpkg -g -linkpkg -thread -package threads -package lacaml -package gsl -package core -package str lib/gpr.cmxa app/ocaml_gpr.cmx -o app/ocaml_gpr.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl/libgsl_stubs.a(mlgsl_randist.o): In function `ml_gsl_ran_multivariate_gaussian':
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/gsl.1.22.0/_build/default/src/mlgsl_randist.c:56: undefined reference to `gsl_ran_multivariate_gaussian'
+- collect2: error: ld returned 1 exit status
+- File "caml_startup", line 1:
+- Error: Error during linking
+- Command exited with code 2.
+- + ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/gpr.cma lib/gpr.cmxa lib/gpr.a lib/gpr.cmxs app/ocaml_gpr.native -use-ocamlfind -tag debug' terminated with error code 10")
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gpr/META
+
+#=== ERROR while installing gpr.1.2.1 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/gpr.1.2.1
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/gpr.1.2.1/gpr-26854.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/gpr.1.2.1/gpr-26854.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/gpr.1.2.1/gpr-26854.out
+### stdout ###
+# [...]
+# Error: Error during linking
+# Command exited with code 2.
+# + ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/gpr.cma lib/gpr.cmxa lib/gpr.a lib/gpr.cmxs app/ocaml_gpr.native -use-ocamlfind -tag debug' terminated with error code 10")
+### stderr ###
+# [...]
+# Error: Error during linking
+# Command exited with code 2.
+# + ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/gpr.cma lib/gpr.cmxa lib/gpr.a lib/gpr.cmxs app/ocaml_gpr.native -use-ocamlfind -tag debug' terminated with error code 10")
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install gpr 1.2.1
+No changes have been performed
+'opam install gpr.1.2.1' failed.

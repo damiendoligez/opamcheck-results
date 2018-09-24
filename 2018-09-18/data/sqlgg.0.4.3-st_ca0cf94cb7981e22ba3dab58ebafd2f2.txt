@@ -1,0 +1,631 @@
+The following actions will be performed:
+  - install sqlgg 0.4.3
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sqlgg: http] Command started
+[sqlgg: http] Command started
+[sqlgg.0.4.3] http://ygrek.org.ua/p/release/sqlgg/sqlgg-0.4.3.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sqlgg: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--enable-tests" "--disable-mysql" "--enable-sqlite3" "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/sqlgg.0.4.3)
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ sqlgg
+- Package version: ..................................... 0.4.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Build mysql traits implementation: ................... false
+- Build sqlite3 traits implementation: ................. true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... true
+- camlp4: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- menhir: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/menhir
+- pkg_extlib: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extlib
+- pkg_deriving: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/deriving
+- pkg_ounit: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/oUnit
+- pkg_sqlite3: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sqlite3
+- 
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ sqlgg
+- Package version: ..................................... 0.4.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Build mysql traits implementation: ................... false
+- Build sqlite3 traits implementation: ................. true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... true
+- camlp4: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- menhir: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/menhir
+- pkg_extlib: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extlib
+- pkg_deriving: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/deriving
+- pkg_ounit: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/oUnit
+- pkg_sqlite3: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sqlite3
+- 
+[sqlgg: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-build" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/sqlgg.0.4.3)
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ sqlgg
+- Package version: ..................................... 0.4.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Build mysql traits implementation: ................... false
+- Build sqlite3 traits implementation: ................. true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... true
+- camlp4: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- menhir: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/menhir
+- pkg_extlib: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extlib
+- pkg_deriving: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/deriving
+- pkg_ounit: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/oUnit
+- pkg_sqlite3: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sqlite3
+- 
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ sqlgg
+- Package version: ..................................... 0.4.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Build mysql traits implementation: ................... false
+- Build sqlite3 traits implementation: ................. true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... true
+- camlp4: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- menhir: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/menhir
+- pkg_extlib: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extlib
+- pkg_deriving: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/deriving
+- pkg_ounit: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/oUnit
+- pkg_sqlite3: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sqlite3
+- 
+- W: Cannot find source file matching module 'sqlgg' in library sqlgg.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package mybuild myocamlbuild_config.ml myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- + ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package mybuild myocamlbuild_config.ml myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild_config.ml", line 5, characters 2-14:
+- Error: This function has type string -> unit
+-        It is applied to too many arguments; maybe you forgot a `;'.
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/sqlgg.cma lib/sqlgg.cmxa lib/sqlgg.a lib/sqlgg.cmxs src/cli.native impl/ocaml/sqlgg_traits.cma impl/ocaml/sqlgg_traits.cmxa impl/ocaml/sqlgg_traits.a impl/ocaml/sqlgg_traits.cmxs impl/ocaml/sqlite3/sqlgg_sqlite3.cma impl/ocaml/sqlite3/sqlgg_sqlite3.cmxa impl/ocaml/sqlite3/sqlgg_sqlite3.a impl/ocaml/sqlite3/sqlgg_sqlite3.cmxs -use-ocamlfind -plugin-tags 'package(mybuild)' -j 0 -tag debug -tag tests' terminated with error code 10")
+- W: Cannot find source file matching module 'sqlgg' in library sqlgg.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package mybuild myocamlbuild_config.ml myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- + ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package mybuild myocamlbuild_config.ml myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild_config.ml", line 5, characters 2-14:
+- Error: This function has type string -> unit
+-        It is applied to too many arguments; maybe you forgot a `;'.
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/sqlgg.cma lib/sqlgg.cmxa lib/sqlgg.a lib/sqlgg.cmxs src/cli.native impl/ocaml/sqlgg_traits.cma impl/ocaml/sqlgg_traits.cmxa impl/ocaml/sqlgg_traits.a impl/ocaml/sqlgg_traits.cmxs impl/ocaml/sqlite3/sqlgg_sqlite3.cma impl/ocaml/sqlite3/sqlgg_sqlite3.cmxa impl/ocaml/sqlite3/sqlgg_sqlite3.a impl/ocaml/sqlite3/sqlgg_sqlite3.cmxs -use-ocamlfind -plugin-tags 'package(mybuild)' -j 0 -tag debug -tag tests' terminated with error code 10")
+[ERROR] The compilation of sqlgg failed at "ocaml setup.ml -build".
+[sqlgg: ocamlfind remove] Command started
++ ocamlfind "remove" "sqlgg" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/sqlgg.0.4.3)
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ sqlgg
+- Package version: ..................................... 0.4.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Build mysql traits implementation: ................... false
+- Build sqlite3 traits implementation: ................. true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... true
+- camlp4: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- menhir: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/menhir
+- pkg_extlib: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extlib
+- pkg_deriving: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/deriving
+- pkg_ounit: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/oUnit
+- pkg_sqlite3: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sqlite3
+- 
+- W: Cannot find source file matching module 'sqlgg' in library sqlgg.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package mybuild myocamlbuild_config.ml myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- + ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package mybuild myocamlbuild_config.ml myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild_config.ml", line 5, characters 2-14:
+- Error: This function has type string -> unit
+-        It is applied to too many arguments; maybe you forgot a `;'.
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/sqlgg.cma lib/sqlgg.cmxa lib/sqlgg.a lib/sqlgg.cmxs src/cli.native impl/ocaml/sqlgg_traits.cma impl/ocaml/sqlgg_traits.cmxa impl/ocaml/sqlgg_traits.a impl/ocaml/sqlgg_traits.cmxs impl/ocaml/sqlite3/sqlgg_sqlite3.cma impl/ocaml/sqlite3/sqlgg_sqlite3.cmxa impl/ocaml/sqlite3/sqlgg_sqlite3.a impl/ocaml/sqlite3/sqlgg_sqlite3.cmxs -use-ocamlfind -plugin-tags 'package(mybuild)' -j 0 -tag debug -tag tests' terminated with error code 10")
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sqlgg/META
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ sqlgg
+- Package version: ..................................... 0.4.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Build mysql traits implementation: ................... false
+- Build sqlite3 traits implementation: ................. true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... true
+- camlp4: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- menhir: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/menhir
+- pkg_extlib: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extlib
+- pkg_deriving: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/deriving
+- pkg_ounit: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/oUnit
+- pkg_sqlite3: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sqlite3
+- 
+- W: Cannot find source file matching module 'sqlgg' in library sqlgg.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package mybuild myocamlbuild_config.ml myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- + ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package mybuild myocamlbuild_config.ml myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild_config.ml", line 5, characters 2-14:
+- Error: This function has type string -> unit
+-        It is applied to too many arguments; maybe you forgot a `;'.
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/sqlgg.cma lib/sqlgg.cmxa lib/sqlgg.a lib/sqlgg.cmxs src/cli.native impl/ocaml/sqlgg_traits.cma impl/ocaml/sqlgg_traits.cmxa impl/ocaml/sqlgg_traits.a impl/ocaml/sqlgg_traits.cmxs impl/ocaml/sqlite3/sqlgg_sqlite3.cma impl/ocaml/sqlite3/sqlgg_sqlite3.cmxa impl/ocaml/sqlite3/sqlgg_sqlite3.a impl/ocaml/sqlite3/sqlgg_sqlite3.cmxs -use-ocamlfind -plugin-tags 'package(mybuild)' -j 0 -tag debug -tag tests' terminated with error code 10")
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sqlgg/META
+[sqlgg: rm] Command started
++ rm "-f" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/sqlgg" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/sqlgg.exe" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/sqlgg.0.4.3)
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ sqlgg
+- Package version: ..................................... 0.4.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Build mysql traits implementation: ................... false
+- Build sqlite3 traits implementation: ................. true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... true
+- camlp4: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- menhir: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/menhir
+- pkg_extlib: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extlib
+- pkg_deriving: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/deriving
+- pkg_ounit: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/oUnit
+- pkg_sqlite3: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sqlite3
+- 
+- W: Cannot find source file matching module 'sqlgg' in library sqlgg.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package mybuild myocamlbuild_config.ml myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- + ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package mybuild myocamlbuild_config.ml myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild_config.ml", line 5, characters 2-14:
+- Error: This function has type string -> unit
+-        It is applied to too many arguments; maybe you forgot a `;'.
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/sqlgg.cma lib/sqlgg.cmxa lib/sqlgg.a lib/sqlgg.cmxs src/cli.native impl/ocaml/sqlgg_traits.cma impl/ocaml/sqlgg_traits.cmxa impl/ocaml/sqlgg_traits.a impl/ocaml/sqlgg_traits.cmxs impl/ocaml/sqlite3/sqlgg_sqlite3.cma impl/ocaml/sqlite3/sqlgg_sqlite3.cmxa impl/ocaml/sqlite3/sqlgg_sqlite3.a impl/ocaml/sqlite3/sqlgg_sqlite3.cmxs -use-ocamlfind -plugin-tags 'package(mybuild)' -j 0 -tag debug -tag tests' terminated with error code 10")
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sqlgg/META
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ sqlgg
+- Package version: ..................................... 0.4.3
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Build mysql traits implementation: ................... false
+- Build sqlite3 traits implementation: ................. true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... true
+- camlp4: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- menhir: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/menhir
+- pkg_extlib: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extlib
+- pkg_deriving: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/deriving
+- pkg_ounit: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/oUnit
+- pkg_sqlite3: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sqlite3
+- 
+- W: Cannot find source file matching module 'sqlgg' in library sqlgg.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package mybuild myocamlbuild_config.ml myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- + ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package mybuild myocamlbuild_config.ml myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild_config.ml", line 5, characters 2-14:
+- Error: This function has type string -> unit
+-        It is applied to too many arguments; maybe you forgot a `;'.
+- Command exited with code 2.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/sqlgg.cma lib/sqlgg.cmxa lib/sqlgg.a lib/sqlgg.cmxs src/cli.native impl/ocaml/sqlgg_traits.cma impl/ocaml/sqlgg_traits.cmxa impl/ocaml/sqlgg_traits.a impl/ocaml/sqlgg_traits.cmxs impl/ocaml/sqlite3/sqlgg_sqlite3.cma impl/ocaml/sqlite3/sqlgg_sqlite3.cmxa impl/ocaml/sqlite3/sqlgg_sqlite3.a impl/ocaml/sqlite3/sqlgg_sqlite3.cmxs -use-ocamlfind -plugin-tags 'package(mybuild)' -j 0 -tag debug -tag tests' terminated with error code 10")
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sqlgg/META
+
+#=== ERROR while installing sqlgg.0.4.3 =======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/sqlgg.0.4.3
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/sqlgg.0.4.3/sqlgg-11050.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/sqlgg.0.4.3/sqlgg-11050.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/sqlgg.0.4.3/sqlgg-11050.out
+### stdout ###
+# pkg_sqlite3: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sqlite3
+# [...]
+# W: Cannot find source file matching module 'sqlgg' in library sqlgg.
+# W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+# ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package mybuild myocamlbuild_config.ml myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# + ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package mybuild myocamlbuild_config.ml myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild_config.ml", line 5, characters 2-14:
+# Error: This function has type string -> unit
+#        It is applied to too many arguments; maybe you forgot a `;'.
+# Command exited with code 2.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/sqlgg.cma lib/sqlgg.cmxa lib/sqlgg.a lib/sqlgg.cmxs src/cli.native impl/ocaml/sqlgg_traits.cma impl/ocaml/sqlgg_traits.cmxa impl/ocaml/sqlgg_traits.a impl/ocaml/sqlgg_traits.cmxs impl/ocaml/sqlite3/sqlgg_sqlite3.cma impl/ocaml/sqlite3/sqlgg_sqlite3.cmxa impl/ocaml/sqlite3/sqlgg_sqlite3.a impl/ocaml/sqlite3/sqlgg_sqlite3.cmxs -use-ocamlfind -plugin-tags 'package(mybuild)' -j 0 -tag debug -tag tests' terminated with error code 10")
+### stderr ###
+# pkg_sqlite3: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sqlite3
+# [...]
+# W: Cannot find source file matching module 'sqlgg' in library sqlgg.
+# W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+# ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package mybuild myocamlbuild_config.ml myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# + ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package mybuild myocamlbuild_config.ml myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild_config.ml", line 5, characters 2-14:
+# Error: This function has type string -> unit
+#        It is applied to too many arguments; maybe you forgot a `;'.
+# Command exited with code 2.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/sqlgg.cma lib/sqlgg.cmxa lib/sqlgg.a lib/sqlgg.cmxs src/cli.native impl/ocaml/sqlgg_traits.cma impl/ocaml/sqlgg_traits.cmxa impl/ocaml/sqlgg_traits.a impl/ocaml/sqlgg_traits.cmxs impl/ocaml/sqlite3/sqlgg_sqlite3.cma impl/ocaml/sqlite3/sqlgg_sqlite3.cmxa impl/ocaml/sqlite3/sqlgg_sqlite3.a impl/ocaml/sqlite3/sqlgg_sqlite3.cmxs -use-ocamlfind -plugin-tags 'package(mybuild)' -j 0 -tag debug -tag tests' terminated with error code 10")
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install sqlgg 0.4.3
+No changes have been performed
+'opam install sqlgg.0.4.3' failed.

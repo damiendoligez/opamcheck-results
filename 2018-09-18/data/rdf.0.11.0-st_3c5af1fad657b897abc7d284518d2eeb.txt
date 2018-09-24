@@ -1,0 +1,481 @@
+The following actions will be performed:
+  - install rdf 0.11.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[rdf: http] Command started
+[rdf: http] Command started
+[rdf.0.11.0] https://zoggy.github.io/ocaml-rdf/ocaml-rdf-0.11.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[rdf: ./configure] Command started
++ ./configure "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0)
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc
+- found OCaml version 4.7.1 (4.07.1+dev0-2018-07-10)
+- checking for ocamlfind... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- checking for camlp4... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- checking for ocamlprof... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlprof
+- checking for ocamlmktop... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmktop
+- checking for ocamlmklib... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmklib
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex
+- checking for ocamldoc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt
+- checking for ocaml... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocaml
+- checking for ocamllex.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- checking for ocamldoc.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- checking for ocamldep.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- checking for ocamlopt.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- checking for ocamlc.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- Objective-Caml version 4.7.1 (4.07.1+dev0-2018-07-10)
+- interpreter:                /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocaml
+- bytecode compiler:          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- native code compiler:       /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- documentation generator(s): /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc, /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- lexer generator:            /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- parser generator:           /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlyacc
+- dependencies generator:     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- library builder:            /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmklib
+- toplevel builder:           /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmktop
+- profiler:                   /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlprof
+- camlp4:                     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- ocamlfind:                  /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- 
+- ### checking required tools and libraries ###
+- checking for menhir... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/menhir
+- checking for calendar... ok
+- checking for sedlex... ok
+- checking for iri... ok
+- checking for uri... ok
+- checking for pcre... ok
+- checking for cryptokit... ok
+- checking for yojson... ok
+- checking for jsonm... ok
+- checking for calendar... ok
+- checking for uutf... ok
+- checking for uuidm... ok
+- checking for xmlm... ok
+- checking for mysql... ok
+- checking for postgresql... ok
+- checking for cohttp.lwt... ok
+- 
+- ###
+- configure: creating ./config.status
+- config.status: creating master.Makefile
+- config.status: creating src/META
+- config.status: creating src/rdf_config.ml
+- ====
+- The following packages will be installed with findlib:
+-   rdf, rdf.js, rdf.ppx, rdf.mysql, rdf.postgresql, rdf.lwt
+- 
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc
+- found OCaml version 4.7.1 (4.07.1+dev0-2018-07-10)
+- checking for ocamlfind... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- checking for camlp4... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- checking for ocamlprof... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlprof
+- checking for ocamlmktop... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmktop
+- checking for ocamlmklib... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmklib
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex
+- checking for ocamldoc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt
+- checking for ocaml... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocaml
+- checking for ocamllex.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- checking for ocamldoc.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- checking for ocamldep.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- checking for ocamlopt.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- checking for ocamlc.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- Objective-Caml version 4.7.1 (4.07.1+dev0-2018-07-10)
+- interpreter:                /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocaml
+- bytecode compiler:          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- native code compiler:       /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- documentation generator(s): /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc, /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- lexer generator:            /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- parser generator:           /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlyacc
+- dependencies generator:     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- library builder:            /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmklib
+- toplevel builder:           /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmktop
+- profiler:                   /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlprof
+- camlp4:                     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- ocamlfind:                  /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- 
+- ### checking required tools and libraries ###
+- checking for menhir... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/menhir
+- checking for calendar... ok
+- checking for sedlex... ok
+- checking for iri... ok
+- checking for uri... ok
+- checking for pcre... ok
+- checking for cryptokit... ok
+- checking for yojson... ok
+- checking for jsonm... ok
+- checking for calendar... ok
+- checking for uutf... ok
+- checking for uuidm... ok
+- checking for xmlm... ok
+- checking for mysql... ok
+- checking for postgresql... ok
+- checking for cohttp.lwt... ok
+- 
+- ###
+- configure: creating ./config.status
+- config.status: creating master.Makefile
+- config.status: creating src/META
+- config.status: creating src/rdf_config.ml
+- ====
+- The following packages will be installed with findlib:
+-   rdf, rdf.js, rdf.ppx, rdf.mysql, rdf.postgresql, rdf.lwt
+- 
+[rdf: make all] Command started
++ make "all" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0)
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc
+- found OCaml version 4.7.1 (4.07.1+dev0-2018-07-10)
+- checking for ocamlfind... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- checking for camlp4... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- checking for ocamlprof... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlprof
+- checking for ocamlmktop... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmktop
+- checking for ocamlmklib... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmklib
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex
+- checking for ocamldoc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt
+- checking for ocaml... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocaml
+- checking for ocamllex.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- checking for ocamldoc.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- checking for ocamldep.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- checking for ocamlopt.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- checking for ocamlc.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- Objective-Caml version 4.7.1 (4.07.1+dev0-2018-07-10)
+- interpreter:                /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocaml
+- bytecode compiler:          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- native code compiler:       /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- documentation generator(s): /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc, /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- lexer generator:            /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- parser generator:           /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlyacc
+- dependencies generator:     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- library builder:            /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmklib
+- toplevel builder:           /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmktop
+- profiler:                   /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlprof
+- camlp4:                     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- ocamlfind:                  /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- 
+- ### checking required tools and libraries ###
+- checking for menhir... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/menhir
+- checking for calendar... ok
+- checking for sedlex... ok
+- checking for iri... ok
+- checking for uri... ok
+- checking for pcre... ok
+- checking for cryptokit... ok
+- checking for yojson... ok
+- checking for jsonm... ok
+- checking for calendar... ok
+- checking for uutf... ok
+- checking for uuidm... ok
+- checking for xmlm... ok
+- checking for mysql... ok
+- checking for postgresql... ok
+- checking for cohttp.lwt... ok
+- 
+- ###
+- configure: creating ./config.status
+- config.status: creating master.Makefile
+- config.status: creating src/META
+- config.status: creating src/rdf_config.ml
+- ====
+- The following packages will be installed with findlib:
+-   rdf, rdf.js, rdf.ppx, rdf.mysql, rdf.postgresql, rdf.lwt
+- 
+- cd src && make all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0/src'
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -package calendar,uri,uuidm,uutf,xmlm,sedlex,menhirLib,cryptokit,pcre,yojson,iri,jsonm,mysql,postgresql,cohttp.lwt,lwt.ppx   -safe-string -g -thread  -c rdf_config.mli
+- ocamlfind: Package `cohttp-lwt-unix' not found - required by `cohttp.lwt'
+- ../master.Makefile:79: recipe for target 'rdf_config.cmi' failed
+- make[1]: *** [rdf_config.cmi] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0/src'
+- Makefile:33: recipe for target 'src' failed
+- make: *** [src] Error 2
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc
+- found OCaml version 4.7.1 (4.07.1+dev0-2018-07-10)
+- checking for ocamlfind... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- checking for camlp4... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- checking for ocamlprof... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlprof
+- checking for ocamlmktop... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmktop
+- checking for ocamlmklib... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmklib
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex
+- checking for ocamldoc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt
+- checking for ocaml... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocaml
+- checking for ocamllex.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- checking for ocamldoc.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- checking for ocamldep.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- checking for ocamlopt.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- checking for ocamlc.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- Objective-Caml version 4.7.1 (4.07.1+dev0-2018-07-10)
+- interpreter:                /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocaml
+- bytecode compiler:          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- native code compiler:       /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- documentation generator(s): /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc, /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- lexer generator:            /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- parser generator:           /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlyacc
+- dependencies generator:     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- library builder:            /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmklib
+- toplevel builder:           /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmktop
+- profiler:                   /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlprof
+- camlp4:                     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- ocamlfind:                  /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- 
+- ### checking required tools and libraries ###
+- checking for menhir... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/menhir
+- checking for calendar... ok
+- checking for sedlex... ok
+- checking for iri... ok
+- checking for uri... ok
+- checking for pcre... ok
+- checking for cryptokit... ok
+- checking for yojson... ok
+- checking for jsonm... ok
+- checking for calendar... ok
+- checking for uutf... ok
+- checking for uuidm... ok
+- checking for xmlm... ok
+- checking for mysql... ok
+- checking for postgresql... ok
+- checking for cohttp.lwt... ok
+- 
+- ###
+- configure: creating ./config.status
+- config.status: creating master.Makefile
+- config.status: creating src/META
+- config.status: creating src/rdf_config.ml
+- ====
+- The following packages will be installed with findlib:
+-   rdf, rdf.js, rdf.ppx, rdf.mysql, rdf.postgresql, rdf.lwt
+- 
+- cd src && make all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0/src'
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -package calendar,uri,uuidm,uutf,xmlm,sedlex,menhirLib,cryptokit,pcre,yojson,iri,jsonm,mysql,postgresql,cohttp.lwt,lwt.ppx   -safe-string -g -thread  -c rdf_config.mli
+- ocamlfind: Package `cohttp-lwt-unix' not found - required by `cohttp.lwt'
+- ../master.Makefile:79: recipe for target 'rdf_config.cmi' failed
+- make[1]: *** [rdf_config.cmi] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0/src'
+- Makefile:33: recipe for target 'src' failed
+- make: *** [src] Error 2
+[ERROR] The compilation of rdf failed at "make all".
+[rdf: ocamlfind remove] Command started
++ ocamlfind "remove" "rdf" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0)
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc
+- found OCaml version 4.7.1 (4.07.1+dev0-2018-07-10)
+- checking for ocamlfind... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- checking for camlp4... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- checking for ocamlprof... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlprof
+- checking for ocamlmktop... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmktop
+- checking for ocamlmklib... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmklib
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex
+- checking for ocamldoc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt
+- checking for ocaml... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocaml
+- checking for ocamllex.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- checking for ocamldoc.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- checking for ocamldep.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- checking for ocamlopt.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- checking for ocamlc.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- Objective-Caml version 4.7.1 (4.07.1+dev0-2018-07-10)
+- interpreter:                /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocaml
+- bytecode compiler:          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- native code compiler:       /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- documentation generator(s): /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc, /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- lexer generator:            /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- parser generator:           /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlyacc
+- dependencies generator:     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- library builder:            /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmklib
+- toplevel builder:           /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmktop
+- profiler:                   /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlprof
+- camlp4:                     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- ocamlfind:                  /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- 
+- ### checking required tools and libraries ###
+- checking for menhir... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/menhir
+- checking for calendar... ok
+- checking for sedlex... ok
+- checking for iri... ok
+- checking for uri... ok
+- checking for pcre... ok
+- checking for cryptokit... ok
+- checking for yojson... ok
+- checking for jsonm... ok
+- checking for calendar... ok
+- checking for uutf... ok
+- checking for uuidm... ok
+- checking for xmlm... ok
+- checking for mysql... ok
+- checking for postgresql... ok
+- checking for cohttp.lwt... ok
+- 
+- ###
+- configure: creating ./config.status
+- config.status: creating master.Makefile
+- config.status: creating src/META
+- config.status: creating src/rdf_config.ml
+- ====
+- The following packages will be installed with findlib:
+-   rdf, rdf.js, rdf.ppx, rdf.mysql, rdf.postgresql, rdf.lwt
+- 
+- cd src && make all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0/src'
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -package calendar,uri,uuidm,uutf,xmlm,sedlex,menhirLib,cryptokit,pcre,yojson,iri,jsonm,mysql,postgresql,cohttp.lwt,lwt.ppx   -safe-string -g -thread  -c rdf_config.mli
+- ocamlfind: Package `cohttp-lwt-unix' not found - required by `cohttp.lwt'
+- ../master.Makefile:79: recipe for target 'rdf_config.cmi' failed
+- make[1]: *** [rdf_config.cmi] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0/src'
+- Makefile:33: recipe for target 'src' failed
+- make: *** [src] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/rdf/META
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc
+- found OCaml version 4.7.1 (4.07.1+dev0-2018-07-10)
+- checking for ocamlfind... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- checking for camlp4... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- checking for ocamlprof... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlprof
+- checking for ocamlmktop... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmktop
+- checking for ocamlmklib... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmklib
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex
+- checking for ocamldoc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt
+- checking for ocaml... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocaml
+- checking for ocamllex.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- checking for ocamldoc.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- checking for ocamldep.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- checking for ocamlopt.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- checking for ocamlc.opt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- we can use /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- Objective-Caml version 4.7.1 (4.07.1+dev0-2018-07-10)
+- interpreter:                /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocaml
+- bytecode compiler:          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- native code compiler:       /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- documentation generator(s): /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc, /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc.opt
+- lexer generator:            /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt
+- parser generator:           /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlyacc
+- dependencies generator:     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt
+- library builder:            /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmklib
+- toplevel builder:           /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmktop
+- profiler:                   /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlprof
+- camlp4:                     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/camlp4
+- ocamlfind:                  /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- 
+- ### checking required tools and libraries ###
+- checking for menhir... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/menhir
+- checking for calendar... ok
+- checking for sedlex... ok
+- checking for iri... ok
+- checking for uri... ok
+- checking for pcre... ok
+- checking for cryptokit... ok
+- checking for yojson... ok
+- checking for jsonm... ok
+- checking for calendar... ok
+- checking for uutf... ok
+- checking for uuidm... ok
+- checking for xmlm... ok
+- checking for mysql... ok
+- checking for postgresql... ok
+- checking for cohttp.lwt... ok
+- 
+- ###
+- configure: creating ./config.status
+- config.status: creating master.Makefile
+- config.status: creating src/META
+- config.status: creating src/rdf_config.ml
+- ====
+- The following packages will be installed with findlib:
+-   rdf, rdf.js, rdf.ppx, rdf.mysql, rdf.postgresql, rdf.lwt
+- 
+- cd src && make all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0/src'
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -package calendar,uri,uuidm,uutf,xmlm,sedlex,menhirLib,cryptokit,pcre,yojson,iri,jsonm,mysql,postgresql,cohttp.lwt,lwt.ppx   -safe-string -g -thread  -c rdf_config.mli
+- ocamlfind: Package `cohttp-lwt-unix' not found - required by `cohttp.lwt'
+- ../master.Makefile:79: recipe for target 'rdf_config.cmi' failed
+- make[1]: *** [rdf_config.cmi] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0/src'
+- Makefile:33: recipe for target 'src' failed
+- make: *** [src] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/rdf/META
+
+#=== ERROR while installing rdf.0.11.0 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make all
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0/rdf-9339.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0/rdf-9339.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0/rdf-9339.out
+### stdout ###
+# The following packages will be installed with findlib:
+# [...]
+# cd src && make all
+# make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0/src'
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -package calendar,uri,uuidm,uutf,xmlm,sedlex,menhirLib,cryptokit,pcre,yojson,iri,jsonm,mysql,postgresql,cohttp.lwt,lwt.ppx   -safe-string -g -thread  -c rdf_config.mli
+# ocamlfind: Package `cohttp-lwt-unix' not found - required by `cohttp.lwt'
+# ../master.Makefile:79: recipe for target 'rdf_config.cmi' failed
+# make[1]: *** [rdf_config.cmi] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0/src'
+# Makefile:33: recipe for target 'src' failed
+# make: *** [src] Error 2
+### stderr ###
+# The following packages will be installed with findlib:
+# [...]
+# cd src && make all
+# make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0/src'
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -package calendar,uri,uuidm,uutf,xmlm,sedlex,menhirLib,cryptokit,pcre,yojson,iri,jsonm,mysql,postgresql,cohttp.lwt,lwt.ppx   -safe-string -g -thread  -c rdf_config.mli
+# ocamlfind: Package `cohttp-lwt-unix' not found - required by `cohttp.lwt'
+# ../master.Makefile:79: recipe for target 'rdf_config.cmi' failed
+# make[1]: *** [rdf_config.cmi] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/rdf.0.11.0/src'
+# Makefile:33: recipe for target 'src' failed
+# make: *** [src] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install rdf 0.11.0
+No changes have been performed
+'opam install rdf.0.11.0' failed.

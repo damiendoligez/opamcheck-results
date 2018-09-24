@@ -1,0 +1,46 @@
+The following actions will be performed:
+  - install dokeysto 2.0.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[dokeysto: http] Command started
+[dokeysto: http] Command started
+[dokeysto.2.0.0] https://github.com/UnixJunkie/dokeysto/archive/v2.0.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[dokeysto: jbuilder build] Command started
++ jbuilder "build" "-p" "dokeysto" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dokeysto.2.0.0)
+- Error: External library "dokeysto_lz4" not found.
+- -> required by "src/jbuild (context default)"
+- Hint: try: jbuilder external-lib-deps --missing -p dokeysto @install
+- Error: External library "dokeysto_lz4" not found.
+- -> required by "src/jbuild (context default)"
+- Hint: try: jbuilder external-lib-deps --missing -p dokeysto @install
+[ERROR] The compilation of dokeysto failed at "jbuilder build -p dokeysto -j
+        4".
+
+#=== ERROR while installing dokeysto.2.0.0 ====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p dokeysto -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dokeysto.2.0.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dokeysto.2.0.0/dokeysto-27399.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dokeysto.2.0.0/dokeysto-27399.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dokeysto.2.0.0/dokeysto-27399.out
+### stdout ###
+# Error: External library "dokeysto_lz4" not found.
+# -> required by "src/jbuild (context default)"
+# Hint: try: jbuilder external-lib-deps --missing -p dokeysto @install
+### stderr ###
+# Error: External library "dokeysto_lz4" not found.
+# -> required by "src/jbuild (context default)"
+# Hint: try: jbuilder external-lib-deps --missing -p dokeysto @install
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install dokeysto 2.0.0
+No changes have been performed
+'opam install dokeysto.2.0.0' failed.

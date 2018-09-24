@@ -1,0 +1,50 @@
+The following actions will be performed:
+  - install secp256k1 0.4.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[secp256k1: http] Command started
+[secp256k1: http] Command started
+[secp256k1.0.4.0] https://github.com/dakk/secp256k1-ml/archive/0.4.0-r1.zip downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[secp256k1: jbuilder build] Command started
++ jbuilder "build" "-p" "secp256k1" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/secp256k1.0.4.0)
+-       ocamlc src/secp256k1_wrap.o (exit 2)
+- (cd _build/default/src && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -g -o secp256k1_wrap.o secp256k1_wrap.c)
+- secp256k1_wrap.c:3:23: fatal error: secp256k1.h: No such file or directory
+- compilation terminated.
+-       ocamlc src/secp256k1_wrap.o (exit 2)
+- (cd _build/default/src && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -g -o secp256k1_wrap.o secp256k1_wrap.c)
+- secp256k1_wrap.c:3:23: fatal error: secp256k1.h: No such file or directory
+- compilation terminated.
+[ERROR] The compilation of secp256k1 failed at "jbuilder build -p secp256k1 -j
+        4".
+
+#=== ERROR while installing secp256k1.0.4.0 ===================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p secp256k1 -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/secp256k1.0.4.0
+# compiler             4.07.0+24fac73
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/secp256k1.0.4.0/secp256k1-3077.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/secp256k1.0.4.0/secp256k1-3077.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/secp256k1.0.4.0/secp256k1-3077.out
+### stdout ###
+#       ocamlc src/secp256k1_wrap.o (exit 2)
+# (cd _build/default/src && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -g -o secp256k1_wrap.o secp256k1_wrap.c)
+# secp256k1_wrap.c:3:23: fatal error: secp256k1.h: No such file or directory
+# compilation terminated.
+### stderr ###
+#       ocamlc src/secp256k1_wrap.o (exit 2)
+# (cd _build/default/src && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -g -o secp256k1_wrap.o secp256k1_wrap.c)
+# secp256k1_wrap.c:3:23: fatal error: secp256k1.h: No such file or directory
+# compilation terminated.
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install secp256k1 0.4.0
+No changes have been performed
+'opam install secp256k1.0.4.0' failed.

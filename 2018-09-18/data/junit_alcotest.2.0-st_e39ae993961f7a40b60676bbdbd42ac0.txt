@@ -1,0 +1,42 @@
+The following actions will be performed:
+  - install junit_alcotest 2.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[junit_alcotest: http] Command started
+[junit_alcotest: http] Command started
+[junit_alcotest.2.0] https://github.com/Khady/ocaml-junit/releases/download/2.0/junit-2.0.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[junit_alcotest: jbuilder build] Command started
++ jbuilder "build" "-p" "junit_alcotest" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/junit_alcotest.2.0)
+- File "alcotest/test/jbuild", line 19, characters 10-77:
+- Error: Unknown constructor diff
+- File "alcotest/test/jbuild", line 19, characters 10-77:
+- Error: Unknown constructor diff
+[ERROR] The compilation of junit_alcotest failed at "jbuilder build -p
+        junit_alcotest -j 4".
+
+#=== ERROR while installing junit_alcotest.2.0 ================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p junit_alcotest -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/junit_alcotest.2.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/junit_alcotest.2.0/junit_alcotest-21177.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/junit_alcotest.2.0/junit_alcotest-21177.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/junit_alcotest.2.0/junit_alcotest-21177.out
+### stdout ###
+# File "alcotest/test/jbuild", line 19, characters 10-77:
+# Error: Unknown constructor diff
+### stderr ###
+# File "alcotest/test/jbuild", line 19, characters 10-77:
+# Error: Unknown constructor diff
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install junit_alcotest 2.0
+No changes have been performed
+'opam install junit_alcotest.2.0' failed.

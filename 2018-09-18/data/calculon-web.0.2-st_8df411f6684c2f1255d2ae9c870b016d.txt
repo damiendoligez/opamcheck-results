@@ -1,0 +1,46 @@
+The following actions will be performed:
+  - install calculon-web 0.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[calculon-web: http] Command started
+[calculon-web: http] Command started
+[calculon-web.0.2] https://github.com/c-cube/calculon/archive/0.2.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[calculon-web: jbuilder build] Command started
++ jbuilder "build" "-p" "calculon-web" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/calculon-web.0.2)
+- File "src/web/jbuild", line 9, characters 15-29:
+- Error: Library "irc-client.lwt" not found.
+- Hint: try: jbuilder external-lib-deps --missing -p calculon-web @install
+- File "src/web/jbuild", line 9, characters 15-29:
+- Error: Library "irc-client.lwt" not found.
+- Hint: try: jbuilder external-lib-deps --missing -p calculon-web @install
+[ERROR] The compilation of calculon-web failed at "jbuilder build -p
+        calculon-web".
+
+#=== ERROR while installing calculon-web.0.2 ==================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p calculon-web
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/calculon-web.0.2
+# compiler             4.07.0+24fac73
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/calculon-web.0.2/calculon-web-30072.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/calculon-web.0.2/calculon-web-30072.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/calculon-web.0.2/calculon-web-30072.out
+### stdout ###
+# File "src/web/jbuild", line 9, characters 15-29:
+# Error: Library "irc-client.lwt" not found.
+# Hint: try: jbuilder external-lib-deps --missing -p calculon-web @install
+### stderr ###
+# File "src/web/jbuild", line 9, characters 15-29:
+# Error: Library "irc-client.lwt" not found.
+# Hint: try: jbuilder external-lib-deps --missing -p calculon-web @install
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install calculon-web 0.2
+No changes have been performed
+'opam install calculon-web.0.2' failed.

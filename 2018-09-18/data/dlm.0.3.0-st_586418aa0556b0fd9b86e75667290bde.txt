@@ -1,0 +1,409 @@
+The following actions will be performed:
+  - install dlm 0.3.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[dlm: http] Command started
+[dlm: http] Command started
+[dlm.0.3.0] https://github.com/xapi-project/ocaml-dlm/releases/download/v0.3.0/dlm-0.3.0.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[dlm: jbuilder build] Command started
++ jbuilder "build" "--only" "dlm" "--root" "." "-j" "4" "@install" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dlm.0.3.0)
+- # Workspace root: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dlm.0.3.0
+- Running[0]: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -config > /tmp/dune6368d5.output
+- # # Workspace root: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dlm.0.3.0
+- # Jbuilder context:
+- #  ((name default)
+- #   (kind default)
+- #   (profile release)
+- #   (merlin true)
+- #   (for_host ())
+- #   (build_dir (In_build_dir default))
+- #   (toplevel_path
+- #    ((External
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/toplevel)))
+- #   (ocaml_bin
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin))
+- #   (ocaml
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocaml))
+- #   (ocamlc
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt))
+- #   (ocamlopt
+- #    ((External
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)))
+- #   (ocamldep
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt))
+- #   (ocamlmklib
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmklib.opt))
+- #   (env
+- #    ((DUNE_CONFIGURATOR
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- #     (INSIDE_DUNE 1)
+- #     (OCAMLPATH
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dlm.0.3.0/_build/install/default/lib)))
+- #   (findlib_path
+- #    ((External
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib)))
+- #   (arch_sixtyfour true)
+- #   (natdynlink_supported true)
+- #   (opam_vars ())
+- #   (ocaml_config
+- #    ((version 4.07.1+dev0-2018-07-10)
+- #     (standard_library_default
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml)
+- #     (standard_library
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml)
+- #     (standard_runtime
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun)
+- #     (ccomp_type cc)
+- #     (c_compiler gcc)
+- #     (ocamlc_cflags (-O2 -fno-strict-aliasing -fwrapv -fPIC))
+- #     (ocamlopt_cflags (-O2 -fno-strict-aliasing -fwrapv))
+- #     (bytecomp_c_compiler
+- #      (gcc
+- #       -O2
+- #       -fno-strict-aliasing
+- #       -fwrapv
+- #       -fPIC
+- #       -D_FILE_OFFSET_BITS=64
+- #       -D_REENTRANT))
+- #     (bytecomp_c_libraries (-lm -ldl -lpthread))
+- #     (native_c_compiler
+- #      (gcc
+- #       -O2
+- #       -fno-strict-aliasing
+- #       -fwrapv
+- #       -D_FILE_OFFSET_BITS=64
+- #       -D_REENTRANT))
+- #     (native_c_libraries (-lm -ldl))
+- #     (cc_profile (-pg))
+- #     (architecture amd64)
+- #     (model default)
+- #     (int_size 63)
+- #     (word_size 64)
+- #     (system linux)
+- #     (asm (as))
+- #     (asm_cfi_supported true)
+- #     (with_frame_pointers false)
+- #     (ext_exe "")
+- #     (ext_obj .o)
+- #     (ext_asm .s)
+- #     (ext_lib .a)
+- #     (ext_dll .so)
+- #     (os_type Unix)
+- #     (default_executable_name a.out)
+- #     (systhread_supported true)
+- #     (host x86_64-unknown-linux-gnu)
+- #     (target x86_64-unknown-linux-gnu)
+- #     (profiling true)
+- #     (flambda false)
+- #     (spacetime false)
+- #     (safe_string false)
+- #     (exec_magic_number Caml1999X023)
+- #     (cmi_magic_number Caml1999I024)
+- #     (cmo_magic_number Caml1999O023)
+- #     (cma_magic_number Caml1999A023)
+- #     (cmx_magic_number Caml1999Y023)
+- #     (cmxa_magic_number Caml1999Z023)
+- #     (ast_impl_magic_number Caml1999M023)
+- #     (ast_intf_magic_number Caml1999N023)
+- #     (cmxs_magic_number Caml1999D023)
+- #     (cmt_magic_number Caml1999T024)
+- #     (natdynlink_supported true)))
+- #   (which
+- #    ((ocaml
+- #      ((External
+- #        /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocaml)))
+- #     (ocamlc
+- #      ((External
+- #        /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt))))))
+- # Actual targets:
+- # - recursive alias install
+- File "lib_gen/jbuild", line 1, characters 0-0:
+- Warning: Module "Bindings" is used in several stanzas:
+- - lib_gen/jbuild:9
+- - lib_gen/jbuild:2
+- To remove this warning, you must specify an explicit "modules" field in every
+- library, executable, and executables stanzas in this jbuild file. Note that
+- each module cannot appear in more than one "modules" field - it must belong
+- to a single library or executable.
+- This warning will become an error in the future.
+- File "lib_gen/jbuild", line 1, characters 0-0:
+- Warning: Module "Generated_types" is used in several stanzas:
+- - lib_gen/jbuild:9
+- - lib_gen/jbuild:2
+- To remove this warning, you must specify an explicit "modules" field in every
+- library, executable, and executables stanzas in this jbuild file. Note that
+- each module cannot appear in more than one "modules" field - it must belong
+- to a single library or executable.
+- This warning will become an error in the future.
+- Running[1]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl test/dlm_test.ml) > _build/default/test/.dlm_test.eobjs/dlm_test.ml.d
+- Running[2]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl test/nodlm_test.ml) > _build/default/test/.dlm_test.eobjs/nodlm_test.ml.d
+- Running[3]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl lib/dlm.ml) > _build/default/lib/.dlm.objs/dlm.ml.d
+- Running[4]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl lib_gen/bindings.ml) > _build/default/lib_gen/.stubgen_c.eobjs/bindings.ml.d
+- Running[5]: (cd _build/default/lib_gen/types && /usr/bin/pkg-config libdlm --cflags) > _build/default/lib_gen/types/dlm_cflags
+- Running[6]: (cd _build/default/lib_gen/types && /usr/bin/pkg-config libdlm --libs) > _build/default/lib_gen/types/dlm_libs
+- Running[7]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl lib_gen/types/stubgen.ml) > _build/default/lib_gen/types/.stubgen.eobjs/stubgen.ml.d
+- Running[8]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl lib_gen/types/bindings_structs.ml) > _build/default/lib_gen/types/.bindings_structs_lib.objs/bindings_structs.ml.d
+- 
+- Command [5] exited with code 1:
+- $ (cd _build/default/lib_gen/types && /usr/bin/pkg-config libdlm --cflags) > _build/default/lib_gen/types/dlm_cflags
+- Package libdlm was not found in the pkg-config search path.
+- Perhaps you should add the directory containing `libdlm.pc'
+- to the PKG_CONFIG_PATH environment variable
+- No package 'libdlm' found
+- Running[9]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -w -49 -g -bin-annot -I lib_gen/types/.bindings_structs_lib.objs -no-alias-deps -o lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib.cmo -c -impl lib_gen/types/bindings_structs_lib.ml-gen)
+- 
+- Command [6] exited with code 1:
+- $ (cd _build/default/lib_gen/types && /usr/bin/pkg-config libdlm --libs) > _build/default/lib_gen/types/dlm_libs
+- Package libdlm was not found in the pkg-config search path.
+- Perhaps you should add the directory containing `libdlm.pc'
+- to the PKG_CONFIG_PATH environment variable
+- No package 'libdlm' found
+- Running[10]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl lib_gen/stubgen_c.ml) > _build/default/lib_gen/.stubgen_c.eobjs/stubgen_c.ml.d
+- Running[11]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl lib_gen/stubgen_ml.ml) > _build/default/lib_gen/.stubgen_c.eobjs/stubgen_ml.ml.d
+- Running[12]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -w -49 -g -bin-annot -I lib_gen/.dlm_bindings.objs -no-alias-deps -o lib_gen/.dlm_bindings.objs/dlm_bindings.cmo -c -impl lib_gen/dlm_bindings.ml-gen)
+- Running[13]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl lib_gen/bindings.ml) > _build/default/lib_gen/.dlm_bindings.objs/bindings.ml.d
+- Running[14]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -w -49 -g -I lib_gen/types/.bindings_structs_lib.objs -intf-suffix .ml-gen -no-alias-deps -o lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib.cmx -c -impl lib_gen/types/bindings_structs_lib.ml-gen)
+- Running[15]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -intf lib/dlm.mli) > _build/default/lib/.dlm.objs/dlm.mli.d
+- Running[16]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -w -49 -g -I lib_gen/.dlm_bindings.objs -intf-suffix .ml-gen -no-alias-deps -o lib_gen/.dlm_bindings.objs/dlm_bindings.cmx -c -impl lib_gen/dlm_bindings.ml-gen)
+- Running[17]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -w -49 -g -bin-annot -I lib/.dlm.objs -no-alias-deps -o lib/.dlm.objs/dlm__.cmo -c -impl lib/dlm__.ml-gen)
+- Running[18]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I lib_gen/types/.bindings_structs_lib.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -no-alias-deps -open Bindings_structs_lib -o lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib__Bindings_structs.cmo -c -impl lib_gen/types/bindings_structs.ml)
+- Running[19]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -w -49 -g -I lib/.dlm.objs -intf-suffix .ml-gen -no-alias-deps -o lib/.dlm.objs/dlm__.cmx -c -impl lib/dlm__.ml-gen)
+- Running[20]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I lib_gen/types/.bindings_structs_lib.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -intf-suffix .ml -no-alias-deps -open Bindings_structs_lib -o lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib__Bindings_structs.cmx -c -impl lib_gen/types/bindings_structs.ml)
+- Running[21]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I lib_gen/types/.stubgen.eobjs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I lib_gen/types/.bindings_structs_lib.objs -no-alias-deps -o lib_gen/types/.stubgen.eobjs/stubgen.cmo -c -impl lib_gen/types/stubgen.ml)
+- Running[22]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -a -o lib_gen/types/bindings_structs_lib.cma lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib.cmo lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib__Bindings_structs.cmo)
+- Running[23]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -a -o lib_gen/types/bindings_structs_lib.cmxa lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib.cmx lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib__Bindings_structs.cmx)
+- Running[24]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I lib_gen/types/.stubgen.eobjs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I lib_gen/types/.bindings_structs_lib.objs -intf-suffix .ml -no-alias-deps -o lib_gen/types/.stubgen.eobjs/stubgen.cmx -c -impl lib_gen/types/stubgen.ml)
+- Running[25]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -shared -linkall -I lib_gen/types -o lib_gen/types/bindings_structs_lib.cmxs lib_gen/types/bindings_structs_lib.cmxa)
+- Running[26]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -o lib_gen/types/stubgen.exe -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I lib_gen/types /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/unix.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/bigarray.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/str.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers/integers.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes/ctypes.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes/cstubs.cmxa lib_gen/types/bindings_structs_lib.cmxa lib_gen/types/.stubgen.eobjs/stubgen.cmx)
+- Running[27]: (cd _build/default/lib_gen/types && ./stubgen.exe) > _build/default/lib_gen/types/types_stubgen.c
+- # Workspace root: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dlm.0.3.0
+- Running[0]: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -config > /tmp/dune6368d5.output
+- # # Workspace root: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dlm.0.3.0
+- # Jbuilder context:
+- #  ((name default)
+- #   (kind default)
+- #   (profile release)
+- #   (merlin true)
+- #   (for_host ())
+- #   (build_dir (In_build_dir default))
+- #   (toplevel_path
+- #    ((External
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/toplevel)))
+- #   (ocaml_bin
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin))
+- #   (ocaml
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocaml))
+- #   (ocamlc
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt))
+- #   (ocamlopt
+- #    ((External
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)))
+- #   (ocamldep
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt))
+- #   (ocamlmklib
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlmklib.opt))
+- #   (env
+- #    ((DUNE_CONFIGURATOR
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- #     (INSIDE_DUNE 1)
+- #     (OCAMLPATH
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dlm.0.3.0/_build/install/default/lib)))
+- #   (findlib_path
+- #    ((External
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib)))
+- #   (arch_sixtyfour true)
+- #   (natdynlink_supported true)
+- #   (opam_vars ())
+- #   (ocaml_config
+- #    ((version 4.07.1+dev0-2018-07-10)
+- #     (standard_library_default
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml)
+- #     (standard_library
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml)
+- #     (standard_runtime
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun)
+- #     (ccomp_type cc)
+- #     (c_compiler gcc)
+- #     (ocamlc_cflags (-O2 -fno-strict-aliasing -fwrapv -fPIC))
+- #     (ocamlopt_cflags (-O2 -fno-strict-aliasing -fwrapv))
+- #     (bytecomp_c_compiler
+- #      (gcc
+- #       -O2
+- #       -fno-strict-aliasing
+- #       -fwrapv
+- #       -fPIC
+- #       -D_FILE_OFFSET_BITS=64
+- #       -D_REENTRANT))
+- #     (bytecomp_c_libraries (-lm -ldl -lpthread))
+- #     (native_c_compiler
+- #      (gcc
+- #       -O2
+- #       -fno-strict-aliasing
+- #       -fwrapv
+- #       -D_FILE_OFFSET_BITS=64
+- #       -D_REENTRANT))
+- #     (native_c_libraries (-lm -ldl))
+- #     (cc_profile (-pg))
+- #     (architecture amd64)
+- #     (model default)
+- #     (int_size 63)
+- #     (word_size 64)
+- #     (system linux)
+- #     (asm (as))
+- #     (asm_cfi_supported true)
+- #     (with_frame_pointers false)
+- #     (ext_exe "")
+- #     (ext_obj .o)
+- #     (ext_asm .s)
+- #     (ext_lib .a)
+- #     (ext_dll .so)
+- #     (os_type Unix)
+- #     (default_executable_name a.out)
+- #     (systhread_supported true)
+- #     (host x86_64-unknown-linux-gnu)
+- #     (target x86_64-unknown-linux-gnu)
+- #     (profiling true)
+- #     (flambda false)
+- #     (spacetime false)
+- #     (safe_string false)
+- #     (exec_magic_number Caml1999X023)
+- #     (cmi_magic_number Caml1999I024)
+- #     (cmo_magic_number Caml1999O023)
+- #     (cma_magic_number Caml1999A023)
+- #     (cmx_magic_number Caml1999Y023)
+- #     (cmxa_magic_number Caml1999Z023)
+- #     (ast_impl_magic_number Caml1999M023)
+- #     (ast_intf_magic_number Caml1999N023)
+- #     (cmxs_magic_number Caml1999D023)
+- #     (cmt_magic_number Caml1999T024)
+- #     (natdynlink_supported true)))
+- #   (which
+- #    ((ocaml
+- #      ((External
+- #        /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocaml)))
+- #     (ocamlc
+- #      ((External
+- #        /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt))))))
+- # Actual targets:
+- # - recursive alias install
+- File "lib_gen/jbuild", line 1, characters 0-0:
+- Warning: Module "Bindings" is used in several stanzas:
+- - lib_gen/jbuild:9
+- - lib_gen/jbuild:2
+- To remove this warning, you must specify an explicit "modules" field in every
+- library, executable, and executables stanzas in this jbuild file. Note that
+- each module cannot appear in more than one "modules" field - it must belong
+- to a single library or executable.
+- This warning will become an error in the future.
+- File "lib_gen/jbuild", line 1, characters 0-0:
+- Warning: Module "Generated_types" is used in several stanzas:
+- - lib_gen/jbuild:9
+- - lib_gen/jbuild:2
+- To remove this warning, you must specify an explicit "modules" field in every
+- library, executable, and executables stanzas in this jbuild file. Note that
+- each module cannot appear in more than one "modules" field - it must belong
+- to a single library or executable.
+- This warning will become an error in the future.
+- Running[1]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl test/dlm_test.ml) > _build/default/test/.dlm_test.eobjs/dlm_test.ml.d
+- Running[2]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl test/nodlm_test.ml) > _build/default/test/.dlm_test.eobjs/nodlm_test.ml.d
+- Running[3]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl lib/dlm.ml) > _build/default/lib/.dlm.objs/dlm.ml.d
+- Running[4]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl lib_gen/bindings.ml) > _build/default/lib_gen/.stubgen_c.eobjs/bindings.ml.d
+- Running[5]: (cd _build/default/lib_gen/types && /usr/bin/pkg-config libdlm --cflags) > _build/default/lib_gen/types/dlm_cflags
+- Running[6]: (cd _build/default/lib_gen/types && /usr/bin/pkg-config libdlm --libs) > _build/default/lib_gen/types/dlm_libs
+- Running[7]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl lib_gen/types/stubgen.ml) > _build/default/lib_gen/types/.stubgen.eobjs/stubgen.ml.d
+- Running[8]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl lib_gen/types/bindings_structs.ml) > _build/default/lib_gen/types/.bindings_structs_lib.objs/bindings_structs.ml.d
+- 
+- Command [5] exited with code 1:
+- $ (cd _build/default/lib_gen/types && /usr/bin/pkg-config libdlm --cflags) > _build/default/lib_gen/types/dlm_cflags
+- Package libdlm was not found in the pkg-config search path.
+- Perhaps you should add the directory containing `libdlm.pc'
+- to the PKG_CONFIG_PATH environment variable
+- No package 'libdlm' found
+- Running[9]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -w -49 -g -bin-annot -I lib_gen/types/.bindings_structs_lib.objs -no-alias-deps -o lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib.cmo -c -impl lib_gen/types/bindings_structs_lib.ml-gen)
+- 
+- Command [6] exited with code 1:
+- $ (cd _build/default/lib_gen/types && /usr/bin/pkg-config libdlm --libs) > _build/default/lib_gen/types/dlm_libs
+- Package libdlm was not found in the pkg-config search path.
+- Perhaps you should add the directory containing `libdlm.pc'
+- to the PKG_CONFIG_PATH environment variable
+- No package 'libdlm' found
+- Running[10]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl lib_gen/stubgen_c.ml) > _build/default/lib_gen/.stubgen_c.eobjs/stubgen_c.ml.d
+- Running[11]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl lib_gen/stubgen_ml.ml) > _build/default/lib_gen/.stubgen_c.eobjs/stubgen_ml.ml.d
+- Running[12]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -w -49 -g -bin-annot -I lib_gen/.dlm_bindings.objs -no-alias-deps -o lib_gen/.dlm_bindings.objs/dlm_bindings.cmo -c -impl lib_gen/dlm_bindings.ml-gen)
+- Running[13]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -impl lib_gen/bindings.ml) > _build/default/lib_gen/.dlm_bindings.objs/bindings.ml.d
+- Running[14]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -w -49 -g -I lib_gen/types/.bindings_structs_lib.objs -intf-suffix .ml-gen -no-alias-deps -o lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib.cmx -c -impl lib_gen/types/bindings_structs_lib.ml-gen)
+- Running[15]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt -modules -intf lib/dlm.mli) > _build/default/lib/.dlm.objs/dlm.mli.d
+- Running[16]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -w -49 -g -I lib_gen/.dlm_bindings.objs -intf-suffix .ml-gen -no-alias-deps -o lib_gen/.dlm_bindings.objs/dlm_bindings.cmx -c -impl lib_gen/dlm_bindings.ml-gen)
+- Running[17]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -w -49 -g -bin-annot -I lib/.dlm.objs -no-alias-deps -o lib/.dlm.objs/dlm__.cmo -c -impl lib/dlm__.ml-gen)
+- Running[18]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I lib_gen/types/.bindings_structs_lib.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -no-alias-deps -open Bindings_structs_lib -o lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib__Bindings_structs.cmo -c -impl lib_gen/types/bindings_structs.ml)
+- Running[19]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -w -49 -g -I lib/.dlm.objs -intf-suffix .ml-gen -no-alias-deps -o lib/.dlm.objs/dlm__.cmx -c -impl lib/dlm__.ml-gen)
+- Running[20]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I lib_gen/types/.bindings_structs_lib.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -intf-suffix .ml -no-alias-deps -open Bindings_structs_lib -o lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib__Bindings_structs.cmx -c -impl lib_gen/types/bindings_structs.ml)
+- Running[21]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I lib_gen/types/.stubgen.eobjs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I lib_gen/types/.bindings_structs_lib.objs -no-alias-deps -o lib_gen/types/.stubgen.eobjs/stubgen.cmo -c -impl lib_gen/types/stubgen.ml)
+- Running[22]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -a -o lib_gen/types/bindings_structs_lib.cma lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib.cmo lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib__Bindings_structs.cmo)
+- Running[23]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -a -o lib_gen/types/bindings_structs_lib.cmxa lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib.cmx lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib__Bindings_structs.cmx)
+- Running[24]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I lib_gen/types/.stubgen.eobjs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I lib_gen/types/.bindings_structs_lib.objs -intf-suffix .ml -no-alias-deps -o lib_gen/types/.stubgen.eobjs/stubgen.cmx -c -impl lib_gen/types/stubgen.ml)
+- Running[25]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -shared -linkall -I lib_gen/types -o lib_gen/types/bindings_structs_lib.cmxs lib_gen/types/bindings_structs_lib.cmxa)
+- Running[26]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -o lib_gen/types/stubgen.exe -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I lib_gen/types /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/unix.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/bigarray.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/str.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers/integers.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes/ctypes.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes/cstubs.cmxa lib_gen/types/bindings_structs_lib.cmxa lib_gen/types/.stubgen.eobjs/stubgen.cmx)
+- Running[27]: (cd _build/default/lib_gen/types && ./stubgen.exe) > _build/default/lib_gen/types/types_stubgen.c
+[ERROR] The compilation of dlm failed at "jbuilder build --only dlm --root . -j
+        4 @install".
+
+#=== ERROR while installing dlm.0.3.0 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build --only dlm --root . -j 4 @install
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dlm.0.3.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dlm.0.3.0/dlm-1880.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dlm.0.3.0/dlm-1880.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dlm.0.3.0/dlm-1880.out
+### stdout ###
+# [...]
+# Running[18]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I lib_gen/types/.bindings_structs_lib.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -no-alias-deps -open Bindings_structs_lib -o lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib__Bindings_structs.cmo -c -impl lib_gen/types/bindings_structs.ml)
+# Running[19]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -w -49 -g -I lib/.dlm.objs -intf-suffix .ml-gen -no-alias-deps -o lib/.dlm.objs/dlm__.cmx -c -impl lib/dlm__.ml-gen)
+# Running[20]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I lib_gen/types/.bindings_structs_lib.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -intf-suffix .ml -no-alias-deps -open Bindings_structs_lib -o lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib__Bindings_structs.cmx -c -impl lib_gen/types/bindings_structs.ml)
+# Running[21]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I lib_gen/types/.stubgen.eobjs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I lib_gen/types/.bindings_structs_lib.objs -no-alias-deps -o lib_gen/types/.stubgen.eobjs/stubgen.cmo -c -impl lib_gen/types/stubgen.ml)
+# Running[22]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -a -o lib_gen/types/bindings_structs_lib.cma lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib.cmo lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib__Bindings_structs.cmo)
+# Running[23]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -a -o lib_gen/types/bindings_structs_lib.cmxa lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib.cmx lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib__Bindings_structs.cmx)
+# Running[24]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I lib_gen/types/.stubgen.eobjs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I lib_gen/types/.bindings_structs_lib.objs -intf-suffix .ml -no-alias-deps -o lib_gen/types/.stubgen.eobjs/stubgen.cmx -c -impl lib_gen/types/stubgen.ml)
+# Running[25]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -shared -linkall -I lib_gen/types -o lib_gen/types/bindings_structs_lib.cmxs lib_gen/types/bindings_structs_lib.cmxa)
+# Running[26]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -o lib_gen/types/stubgen.exe -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I lib_gen/types /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/unix.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/bigarray.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/str.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers/integers.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes/ctypes.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes/cstubs.cmxa lib_gen/types/bindings_structs_lib.cmxa lib_gen/types/.stubgen.eobjs/stubgen.cmx)
+# Running[27]: (cd _build/default/lib_gen/types && ./stubgen.exe) > _build/default/lib_gen/types/types_stubgen.c
+### stderr ###
+# [...]
+# Running[18]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I lib_gen/types/.bindings_structs_lib.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -no-alias-deps -open Bindings_structs_lib -o lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib__Bindings_structs.cmo -c -impl lib_gen/types/bindings_structs.ml)
+# Running[19]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -w -49 -g -I lib/.dlm.objs -intf-suffix .ml-gen -no-alias-deps -o lib/.dlm.objs/dlm__.cmx -c -impl lib/dlm__.ml-gen)
+# Running[20]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I lib_gen/types/.bindings_structs_lib.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -intf-suffix .ml -no-alias-deps -open Bindings_structs_lib -o lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib__Bindings_structs.cmx -c -impl lib_gen/types/bindings_structs.ml)
+# Running[21]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I lib_gen/types/.stubgen.eobjs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I lib_gen/types/.bindings_structs_lib.objs -no-alias-deps -o lib_gen/types/.stubgen.eobjs/stubgen.cmo -c -impl lib_gen/types/stubgen.ml)
+# Running[22]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -a -o lib_gen/types/bindings_structs_lib.cma lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib.cmo lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib__Bindings_structs.cmo)
+# Running[23]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -a -o lib_gen/types/bindings_structs_lib.cmxa lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib.cmx lib_gen/types/.bindings_structs_lib.objs/bindings_structs_lib__Bindings_structs.cmx)
+# Running[24]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I lib_gen/types/.stubgen.eobjs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I lib_gen/types/.bindings_structs_lib.objs -intf-suffix .ml -no-alias-deps -o lib_gen/types/.stubgen.eobjs/stubgen.cmx -c -impl lib_gen/types/stubgen.ml)
+# Running[25]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -shared -linkall -I lib_gen/types -o lib_gen/types/bindings_structs_lib.cmxs lib_gen/types/bindings_structs_lib.cmxa)
+# Running[26]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -o lib_gen/types/stubgen.exe -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I lib_gen/types /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/unix.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/bigarray.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/str.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers/integers.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes/ctypes.cmxa /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes/cstubs.cmxa lib_gen/types/bindings_structs_lib.cmxa lib_gen/types/.stubgen.eobjs/stubgen.cmx)
+# Running[27]: (cd _build/default/lib_gen/types && ./stubgen.exe) > _build/default/lib_gen/types/types_stubgen.c
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install dlm 0.3.0
+No changes have been performed
+
+=-=- dlm.0.3.0 troobleshooting =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package relies on external (system) dependencies that may be missing.
+   `opam depext dlm.0.3.0' may help you find the correct installation for your
+   system.
+'opam install dlm.0.3.0' failed.

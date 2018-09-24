@@ -1,0 +1,85 @@
+The following actions will be performed:
+  - install pa_ovisitor 1.0.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pa_ovisitor: http] Command started
+[pa_ovisitor: http] Command started
+[pa_ovisitor.1.0.0] https://bitbucket.org/camlspotter/pa_ovisitor/get/1.0.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pa_ovisitor: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pa_ovisitor.1.0.0)
+- File "/somewhere/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/somewhere/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "/somewhere/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/somewhere/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+[ERROR] The compilation of pa_ovisitor failed at "ocaml setup.ml -configure
+        --prefix
+        /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051".
+[pa_ovisitor: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-uninstall" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pa_ovisitor.1.0.0)
+- File "/somewhere/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/somewhere/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "/somewhere/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/somewhere/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "/somewhere/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/somewhere/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "/somewhere/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/somewhere/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+
+#=== ERROR while installing pa_ovisitor.1.0.0 =================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -configure --prefix /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pa_ovisitor.1.0.0
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pa_ovisitor.1.0.0/pa_ovisitor-4224.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pa_ovisitor.1.0.0/pa_ovisitor-4224.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pa_ovisitor.1.0.0/pa_ovisitor-4224.out
+### stdout ###
+# File "/somewhere/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "/somewhere/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+### stderr ###
+# File "/somewhere/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "/somewhere/.opam/system/build/oasis.0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install pa_ovisitor 1.0.0
+No changes have been performed
+'opam install pa_ovisitor.1.0.0' failed.

@@ -1,0 +1,53 @@
+The following actions will be performed:
+  - install slacko 0.14.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[slacko: http] Command started
+[slacko: http] Command started
+[slacko.0.14.1] https://github.com/Leonidas-from-XIV/slacko/releases/download/0.14.1/slacko-0.14.1.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[slacko: dune build] Command started
++ dune "build" "-p" "slacko" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/slacko.0.14.1)
+- File "dune-project", line 1, characters 11-14:
+- Error: Version 1.1 of dune is not supported.
+- Supported versions:
+- - 0.0
+- - 1.0
+- File "dune-project", line 1, characters 11-14:
+- Error: Version 1.1 of dune is not supported.
+- Supported versions:
+- - 0.0
+- - 1.0
+[ERROR] The compilation of slacko failed at "dune build -p slacko -j 4".
+
+#=== ERROR while installing slacko.0.14.1 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              dune build -p slacko -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/slacko.0.14.1
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/slacko.0.14.1/slacko-18895.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/slacko.0.14.1/slacko-18895.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/slacko.0.14.1/slacko-18895.out
+### stdout ###
+# File "dune-project", line 1, characters 11-14:
+# Error: Version 1.1 of dune is not supported.
+# Supported versions:
+# - 0.0
+# - 1.0
+### stderr ###
+# File "dune-project", line 1, characters 11-14:
+# Error: Version 1.1 of dune is not supported.
+# Supported versions:
+# - 0.0
+# - 1.0
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install slacko 0.14.1
+No changes have been performed
+'opam install slacko.0.14.1' failed.

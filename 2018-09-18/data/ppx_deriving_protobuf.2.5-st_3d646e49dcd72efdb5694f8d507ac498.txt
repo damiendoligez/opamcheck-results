@@ -1,0 +1,92 @@
+The following actions will be performed:
+  - install ppx_deriving_protobuf 2.5
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ppx_deriving_protobuf: http] Command started
+[ppx_deriving_protobuf: http] Command started
+[ppx_deriving_protobuf.2.5] https://github.com/whitequark/ppx_deriving_protobuf/archive/v2.5.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ppx_deriving_protobuf: ocaml] Command started
++ ocaml "pkg/build.ml" "native=true" "native-dynlink=true" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_deriving_protobuf.2.5)
+- ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package cppo_ocamlbuild myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- cppo -V OCAML:4.07.1+dev0-2018-07-10 -o src/ppx_deriving_protobuf.ml src/ppx_deriving_protobuf.cppo.ml
+- ocamlfind ocamldep -package ppx_deriving.api -package ppx_tools.metaquot -modules src/ppx_deriving_protobuf.ml > src/ppx_deriving_protobuf.ml.depends
+- ocamlfind ocamlc -c -bin-annot -safe-string -package ppx_deriving.api -package ppx_tools.metaquot -w @5@8@10@11@12@14@23@24@26@40 -I src -o src/ppx_deriving_protobuf.cmo src/ppx_deriving_protobuf.ml
+- + ocamlfind ocamlc -c -bin-annot -safe-string -package ppx_deriving.api -package ppx_tools.metaquot -w @5@8@10@11@12@14@23@24@26@40 -I src -o src/ppx_deriving_protobuf.cmo src/ppx_deriving_protobuf.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- File "src/ppx_deriving_protobuf.cppo.ml", line 373, characters 6-33:
+- Error: This expression has type
+-          (string * Parsetree.core_type list * Parsetree.attributes *
+-           Location.t)
+-          list -> pb_field list
+-        but an expression was expected of type
+-          (Asttypes.label Asttypes.loc * Parsetree.core_type list *
+-           Parsetree.attributes * Location.t)
+-          list -> 'a
+-        Type string is not compatible with type
+-          Asttypes.label Asttypes.loc = Asttypes.label Location.loc 
+- Command exited with code 2.
+- ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package cppo_ocamlbuild myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- cppo -V OCAML:4.07.1+dev0-2018-07-10 -o src/ppx_deriving_protobuf.ml src/ppx_deriving_protobuf.cppo.ml
+- ocamlfind ocamldep -package ppx_deriving.api -package ppx_tools.metaquot -modules src/ppx_deriving_protobuf.ml > src/ppx_deriving_protobuf.ml.depends
+- ocamlfind ocamlc -c -bin-annot -safe-string -package ppx_deriving.api -package ppx_tools.metaquot -w @5@8@10@11@12@14@23@24@26@40 -I src -o src/ppx_deriving_protobuf.cmo src/ppx_deriving_protobuf.ml
+- + ocamlfind ocamlc -c -bin-annot -safe-string -package ppx_deriving.api -package ppx_tools.metaquot -w @5@8@10@11@12@14@23@24@26@40 -I src -o src/ppx_deriving_protobuf.cmo src/ppx_deriving_protobuf.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs, /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- File "src/ppx_deriving_protobuf.cppo.ml", line 373, characters 6-33:
+- Error: This expression has type
+-          (string * Parsetree.core_type list * Parsetree.attributes *
+-           Location.t)
+-          list -> pb_field list
+-        but an expression was expected of type
+-          (Asttypes.label Asttypes.loc * Parsetree.core_type list *
+-           Parsetree.attributes * Location.t)
+-          list -> 'a
+-        Type string is not compatible with type
+-          Asttypes.label Asttypes.loc = Asttypes.label Location.loc 
+- Command exited with code 2.
+[ERROR] The compilation of ppx_deriving_protobuf failed at "ocaml pkg/build.ml
+        native=true native-dynlink=true".
+
+#=== ERROR while installing ppx_deriving_protobuf.2.5 =========================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml pkg/build.ml native=true native-dynlink=true
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_deriving_protobuf.2.5
+# compiler             4.07.0+pr2051
+# exit-code            10
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_deriving_protobuf.2.5/ppx_deriving_protobuf-10376.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_deriving_protobuf.2.5/ppx_deriving_protobuf-10376.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_deriving_protobuf.2.5/ppx_deriving_protobuf-10376.out
+### stdout ###
+# Error: This expression has type
+# [...]
+#           Location.t)
+#          list -> pb_field list
+#        but an expression was expected of type
+#          (Asttypes.label Asttypes.loc * Parsetree.core_type list *
+#           Parsetree.attributes * Location.t)
+#          list -> 'a
+#        Type string is not compatible with type
+#          Asttypes.label Asttypes.loc = Asttypes.label Location.loc 
+# Command exited with code 2.
+### stderr ###
+# Error: This expression has type
+# [...]
+#           Location.t)
+#          list -> pb_field list
+#        but an expression was expected of type
+#          (Asttypes.label Asttypes.loc * Parsetree.core_type list *
+#           Parsetree.attributes * Location.t)
+#          list -> 'a
+#        Type string is not compatible with type
+#          Asttypes.label Asttypes.loc = Asttypes.label Location.loc 
+# Command exited with code 2.
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ppx_deriving_protobuf 2.5
+No changes have been performed
+'opam install ppx_deriving_protobuf.2.5' failed.

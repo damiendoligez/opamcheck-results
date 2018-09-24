@@ -1,0 +1,46 @@
+The following actions will be performed:
+  - install pcap-format 0.5.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pcap-format: http] Command started
+[pcap-format: http] Command started
+[pcap-format.0.5.1] https://github.com/mirage/ocaml-pcap/archive/0.5.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pcap-format: jbuilder build] Command started
++ jbuilder "build" "-p" "pcap-format" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pcap-format.0.5.1)
+- File "lib/jbuild", line 5, characters 20-31:
+- Error: Library "ppx_cstruct" not found.
+- Hint: try: dune external-lib-deps --missing --profile release -p pcap-format @install
+- File "lib/jbuild", line 5, characters 20-31:
+- Error: Library "ppx_cstruct" not found.
+- Hint: try: dune external-lib-deps --missing --profile release -p pcap-format @install
+[ERROR] The compilation of pcap-format failed at "jbuilder build -p pcap-format
+        -j 4".
+
+#=== ERROR while installing pcap-format.0.5.1 =================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p pcap-format -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pcap-format.0.5.1
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pcap-format.0.5.1/pcap-format-26699.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pcap-format.0.5.1/pcap-format-26699.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pcap-format.0.5.1/pcap-format-26699.out
+### stdout ###
+# File "lib/jbuild", line 5, characters 20-31:
+# Error: Library "ppx_cstruct" not found.
+# Hint: try: dune external-lib-deps --missing --profile release -p pcap-format @install
+### stderr ###
+# File "lib/jbuild", line 5, characters 20-31:
+# Error: Library "ppx_cstruct" not found.
+# Hint: try: dune external-lib-deps --missing --profile release -p pcap-format @install
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install pcap-format 0.5.1
+No changes have been performed
+'opam install pcap-format.0.5.1' failed.

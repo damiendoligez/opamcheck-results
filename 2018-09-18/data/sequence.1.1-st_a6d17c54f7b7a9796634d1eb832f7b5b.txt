@@ -1,0 +1,42 @@
+The following actions will be performed:
+  - install sequence 1.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sequence: http] Command started
+[sequence: http] Command started
+[sequence.1.1] https://github.com/c-cube/sequence/archive/1.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sequence: jbuilder build] Command started
++ jbuilder "build" "-p" "sequence" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/sequence.1.1)
+- File "qtest/jbuild", line 5, characters 4-12:
+- Error: Unknown field fallback
+- File "qtest/jbuild", line 5, characters 4-12:
+- Error: Unknown field fallback
+[ERROR] The compilation of sequence failed at "jbuilder build -p sequence -j
+        4".
+
+#=== ERROR while installing sequence.1.1 ======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p sequence -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/sequence.1.1
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/sequence.1.1/sequence-24670.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/sequence.1.1/sequence-24670.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/sequence.1.1/sequence-24670.out
+### stdout ###
+# File "qtest/jbuild", line 5, characters 4-12:
+# Error: Unknown field fallback
+### stderr ###
+# File "qtest/jbuild", line 5, characters 4-12:
+# Error: Unknown field fallback
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install sequence 1.1
+No changes have been performed
+'opam install sequence.1.1' failed.

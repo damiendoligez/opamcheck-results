@@ -1,0 +1,463 @@
+The following actions will be performed:
+  - install opass 2.15
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[opass: http] Command started
+[opass: http] Command started
+[opass.2.15] https://github.com/orbitz/opass/archive/2.15.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[opass: make] Command started
++ make "-j4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15)
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- pds
+- make -f pds.mk all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db \
+- -C build/release/db
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable \
+- -C build/release/editable
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/password \
+- -C build/release/password
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/password'
+- cd ../../../src/db && \
+- ocamlfind ocamldep   \
+- db.ml  db.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db/.d
+- cd ../../../src/editable && \
+- ocamlfind ocamldep   \
+- editable.ml editable_entry.ml editable_form.ml  editable.mli editable_entry.mli editable_form.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable/.d
+- cd ../../../src/password && \
+- ocamlfind ocamldep   \
+- password.ml  password.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/password/.d
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers,ppx_deriving,ppx_sexp_conv,sexplib -c ../../../src/db/db.mli -o db.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers -c ../../../src/password/password.mli -o password.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers -c ../../../src/editable/editable_entry.mli -o editable_entry.cmi
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/password/password.ml -o password.cmx
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_entry.ml -o editable_entry.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers -c ../../../src/editable/editable_form.mli -o editable_form.cmi
+- File "../../../src/password/password.ml", line 14, characters 30-33:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/password/password.ml -o password.cmo
+- ../../../Ocamlrules.mk.in:109: recipe for target 'password.cmx' failed
+- make[2]: *** [password.cmx] Error 2
+- make[2]: *** Waiting for unfinished jobs....
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_entry.ml -o editable_entry.cmo
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_form.ml -o editable_form.cmo
+- File "../../../src/password/password.ml", line 14, characters 30-33:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_form.ml -o editable_form.cmx
+- ../../../Ocamlrules.mk.in:115: recipe for target 'password.cmo' failed
+- make[2]: *** [password.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/password'
+- pds.mk:65: recipe for target 'release_password' failed
+- make[1]: *** [release_password] Error 2
+- make[1]: *** Waiting for unfinished jobs....
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers -c ../../../src/editable/editable.mli -o editable.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable.ml -o editable.cmo
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers,ppx_deriving,ppx_sexp_conv,sexplib  -c ../../../src/db/db.ml -o db.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers,ppx_deriving,ppx_sexp_conv,sexplib  -c ../../../src/db/db.ml -o db.cmo
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable.ml -o editable.cmx
+- ocamlfind ocamlc  -w '@f@p@u@s@40' -g -package containers -custom -a -thread -I +camlp4 -o editable.cma \
+- 	editable_entry.cmo editable_form.cmo editable.cmo
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module CCString, and its interface was not compiled with -opaque
+- File "../../../src/db/db.ml", line 6, characters 37-41:
+- Error: Cannot locate deriver sexp
+- File "../../../src/db/db.ml", line 6, characters 37-41:
+- Error: Cannot locate deriver sexp
+- ../../../Ocamlrules.mk.in:115: recipe for target 'db.cmo' failed
+- make[2]: *** [db.cmo] Error 2
+- make[2]: *** Waiting for unfinished jobs....
+- ../../../Ocamlrules.mk.in:109: recipe for target 'db.cmx' failed
+- make[2]: *** [db.cmx] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db'
+- pds.mk:65: recipe for target 'release_db' failed
+- make[1]: *** [release_db] Error 2
+- ocamlfind ocamlopt  -w '@f@p@u@s@40' -g -package containers -a -thread -I +camlp4 -o editable.cmxa \
+- 	editable_entry.cmx editable_form.cmx editable.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- Makefile:4: recipe for target 'all' failed
+- make: *** [all] Error 2
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- pds
+- make -f pds.mk all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db \
+- -C build/release/db
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable \
+- -C build/release/editable
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/password \
+- -C build/release/password
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/password'
+- cd ../../../src/db && \
+- ocamlfind ocamldep   \
+- db.ml  db.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db/.d
+- cd ../../../src/editable && \
+- ocamlfind ocamldep   \
+- editable.ml editable_entry.ml editable_form.ml  editable.mli editable_entry.mli editable_form.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable/.d
+- cd ../../../src/password && \
+- ocamlfind ocamldep   \
+- password.ml  password.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/password/.d
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers,ppx_deriving,ppx_sexp_conv,sexplib -c ../../../src/db/db.mli -o db.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers -c ../../../src/password/password.mli -o password.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers -c ../../../src/editable/editable_entry.mli -o editable_entry.cmi
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/password/password.ml -o password.cmx
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_entry.ml -o editable_entry.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers -c ../../../src/editable/editable_form.mli -o editable_form.cmi
+- File "../../../src/password/password.ml", line 14, characters 30-33:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/password/password.ml -o password.cmo
+- ../../../Ocamlrules.mk.in:109: recipe for target 'password.cmx' failed
+- make[2]: *** [password.cmx] Error 2
+- make[2]: *** Waiting for unfinished jobs....
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_entry.ml -o editable_entry.cmo
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_form.ml -o editable_form.cmo
+- File "../../../src/password/password.ml", line 14, characters 30-33:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_form.ml -o editable_form.cmx
+- ../../../Ocamlrules.mk.in:115: recipe for target 'password.cmo' failed
+- make[2]: *** [password.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/password'
+- pds.mk:65: recipe for target 'release_password' failed
+- make[1]: *** [release_password] Error 2
+- make[1]: *** Waiting for unfinished jobs....
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers -c ../../../src/editable/editable.mli -o editable.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable.ml -o editable.cmo
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers,ppx_deriving,ppx_sexp_conv,sexplib  -c ../../../src/db/db.ml -o db.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers,ppx_deriving,ppx_sexp_conv,sexplib  -c ../../../src/db/db.ml -o db.cmo
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable.ml -o editable.cmx
+- ocamlfind ocamlc  -w '@f@p@u@s@40' -g -package containers -custom -a -thread -I +camlp4 -o editable.cma \
+- 	editable_entry.cmo editable_form.cmo editable.cmo
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module CCString, and its interface was not compiled with -opaque
+- File "../../../src/db/db.ml", line 6, characters 37-41:
+- Error: Cannot locate deriver sexp
+- File "../../../src/db/db.ml", line 6, characters 37-41:
+- Error: Cannot locate deriver sexp
+- ../../../Ocamlrules.mk.in:115: recipe for target 'db.cmo' failed
+- make[2]: *** [db.cmo] Error 2
+- make[2]: *** Waiting for unfinished jobs....
+- ../../../Ocamlrules.mk.in:109: recipe for target 'db.cmx' failed
+- make[2]: *** [db.cmx] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db'
+- pds.mk:65: recipe for target 'release_db' failed
+- make[1]: *** [release_db] Error 2
+- ocamlfind ocamlopt  -w '@f@p@u@s@40' -g -package containers -a -thread -I +camlp4 -o editable.cmxa \
+- 	editable_entry.cmx editable_form.cmx editable.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- Makefile:4: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of opass failed at "make -j4".
+[opass: make remove] Command started
++ make "PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051" "remove" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15)
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- pds
+- make -f pds.mk all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db \
+- -C build/release/db
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable \
+- -C build/release/editable
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/password \
+- -C build/release/password
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/password'
+- cd ../../../src/db && \
+- ocamlfind ocamldep   \
+- db.ml  db.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db/.d
+- cd ../../../src/editable && \
+- ocamlfind ocamldep   \
+- editable.ml editable_entry.ml editable_form.ml  editable.mli editable_entry.mli editable_form.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable/.d
+- cd ../../../src/password && \
+- ocamlfind ocamldep   \
+- password.ml  password.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/password/.d
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers,ppx_deriving,ppx_sexp_conv,sexplib -c ../../../src/db/db.mli -o db.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers -c ../../../src/password/password.mli -o password.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers -c ../../../src/editable/editable_entry.mli -o editable_entry.cmi
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/password/password.ml -o password.cmx
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_entry.ml -o editable_entry.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers -c ../../../src/editable/editable_form.mli -o editable_form.cmi
+- File "../../../src/password/password.ml", line 14, characters 30-33:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/password/password.ml -o password.cmo
+- ../../../Ocamlrules.mk.in:109: recipe for target 'password.cmx' failed
+- make[2]: *** [password.cmx] Error 2
+- make[2]: *** Waiting for unfinished jobs....
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_entry.ml -o editable_entry.cmo
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_form.ml -o editable_form.cmo
+- File "../../../src/password/password.ml", line 14, characters 30-33:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_form.ml -o editable_form.cmx
+- ../../../Ocamlrules.mk.in:115: recipe for target 'password.cmo' failed
+- make[2]: *** [password.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/password'
+- pds.mk:65: recipe for target 'release_password' failed
+- make[1]: *** [release_password] Error 2
+- make[1]: *** Waiting for unfinished jobs....
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers -c ../../../src/editable/editable.mli -o editable.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable.ml -o editable.cmo
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers,ppx_deriving,ppx_sexp_conv,sexplib  -c ../../../src/db/db.ml -o db.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers,ppx_deriving,ppx_sexp_conv,sexplib  -c ../../../src/db/db.ml -o db.cmo
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable.ml -o editable.cmx
+- ocamlfind ocamlc  -w '@f@p@u@s@40' -g -package containers -custom -a -thread -I +camlp4 -o editable.cma \
+- 	editable_entry.cmo editable_form.cmo editable.cmo
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module CCString, and its interface was not compiled with -opaque
+- File "../../../src/db/db.ml", line 6, characters 37-41:
+- Error: Cannot locate deriver sexp
+- File "../../../src/db/db.ml", line 6, characters 37-41:
+- Error: Cannot locate deriver sexp
+- ../../../Ocamlrules.mk.in:115: recipe for target 'db.cmo' failed
+- make[2]: *** [db.cmo] Error 2
+- make[2]: *** Waiting for unfinished jobs....
+- ../../../Ocamlrules.mk.in:109: recipe for target 'db.cmx' failed
+- make[2]: *** [db.cmx] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db'
+- pds.mk:65: recipe for target 'release_db' failed
+- make[1]: *** [release_db] Error 2
+- ocamlfind ocamlopt  -w '@f@p@u@s@40' -g -package containers -a -thread -I +camlp4 -o editable.cmxa \
+- 	editable_entry.cmx editable_form.cmx editable.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- Makefile:4: recipe for target 'all' failed
+- make: *** [all] Error 2
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- pds
+- make -f pds.mk remove
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- make -C build/release/db remove
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db'
+- make[2]: Nothing to be done for 'remove'.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db'
+- make -C build/release/editable remove
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable'
+- make[2]: Nothing to be done for 'remove'.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable'
+- make -C build/release/opass remove
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/opass'
+- cd ../../../src/opass && \
+- ocamlfind ocamldep   \
+- db_io.ml forms.ml import_1password.ml import_csv.ml import_txt.ml opass_shell.ml oui.ml opass.ml db_io.mli forms.mli import_1password.mli import_csv.mli import_txt.mli opass_shell.mli oui.mli > /.d
+- /bin/sh: line 1: /.d: Permission denied
+- rm -v /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/opass
+- rm: cannot remove '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/opass': No such file or directory
+- Makefile:49: recipe for target 'remove' failed
+- make[2]: *** [remove] Error 1
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/opass'
+- pds.mk:111: recipe for target 'remove_opass' failed
+- make[1]: *** [remove_opass] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- Makefile:8: recipe for target 'remove' failed
+- make: *** [remove] Error 2
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- pds
+- make -f pds.mk all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db \
+- -C build/release/db
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable \
+- -C build/release/editable
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/password \
+- -C build/release/password
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/password'
+- cd ../../../src/db && \
+- ocamlfind ocamldep   \
+- db.ml  db.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db/.d
+- cd ../../../src/editable && \
+- ocamlfind ocamldep   \
+- editable.ml editable_entry.ml editable_form.ml  editable.mli editable_entry.mli editable_form.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable/.d
+- cd ../../../src/password && \
+- ocamlfind ocamldep   \
+- password.ml  password.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/password/.d
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers,ppx_deriving,ppx_sexp_conv,sexplib -c ../../../src/db/db.mli -o db.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers -c ../../../src/password/password.mli -o password.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers -c ../../../src/editable/editable_entry.mli -o editable_entry.cmi
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/password/password.ml -o password.cmx
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_entry.ml -o editable_entry.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers -c ../../../src/editable/editable_form.mli -o editable_form.cmi
+- File "../../../src/password/password.ml", line 14, characters 30-33:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/password/password.ml -o password.cmo
+- ../../../Ocamlrules.mk.in:109: recipe for target 'password.cmx' failed
+- make[2]: *** [password.cmx] Error 2
+- make[2]: *** Waiting for unfinished jobs....
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_entry.ml -o editable_entry.cmo
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_form.ml -o editable_form.cmo
+- File "../../../src/password/password.ml", line 14, characters 30-33:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_form.ml -o editable_form.cmx
+- ../../../Ocamlrules.mk.in:115: recipe for target 'password.cmo' failed
+- make[2]: *** [password.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/password'
+- pds.mk:65: recipe for target 'release_password' failed
+- make[1]: *** [release_password] Error 2
+- make[1]: *** Waiting for unfinished jobs....
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers -c ../../../src/editable/editable.mli -o editable.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable.ml -o editable.cmo
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers,ppx_deriving,ppx_sexp_conv,sexplib  -c ../../../src/db/db.ml -o db.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers,ppx_deriving,ppx_sexp_conv,sexplib  -c ../../../src/db/db.ml -o db.cmo
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable.ml -o editable.cmx
+- ocamlfind ocamlc  -w '@f@p@u@s@40' -g -package containers -custom -a -thread -I +camlp4 -o editable.cma \
+- 	editable_entry.cmo editable_form.cmo editable.cmo
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module CCString, and its interface was not compiled with -opaque
+- File "../../../src/db/db.ml", line 6, characters 37-41:
+- Error: Cannot locate deriver sexp
+- File "../../../src/db/db.ml", line 6, characters 37-41:
+- Error: Cannot locate deriver sexp
+- ../../../Ocamlrules.mk.in:115: recipe for target 'db.cmo' failed
+- make[2]: *** [db.cmo] Error 2
+- make[2]: *** Waiting for unfinished jobs....
+- ../../../Ocamlrules.mk.in:109: recipe for target 'db.cmx' failed
+- make[2]: *** [db.cmx] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db'
+- pds.mk:65: recipe for target 'release_db' failed
+- make[1]: *** [release_db] Error 2
+- ocamlfind ocamlopt  -w '@f@p@u@s@40' -g -package containers -a -thread -I +camlp4 -o editable.cmxa \
+- 	editable_entry.cmx editable_form.cmx editable.cmx
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- Makefile:4: recipe for target 'all' failed
+- make: *** [all] Error 2
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- pds
+- make -f pds.mk remove
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- make -C build/release/db remove
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db'
+- make[2]: Nothing to be done for 'remove'.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db'
+- make -C build/release/editable remove
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable'
+- make[2]: Nothing to be done for 'remove'.
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable'
+- make -C build/release/opass remove
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/opass'
+- cd ../../../src/opass && \
+- ocamlfind ocamldep   \
+- db_io.ml forms.ml import_1password.ml import_csv.ml import_txt.ml opass_shell.ml oui.ml opass.ml db_io.mli forms.mli import_1password.mli import_csv.mli import_txt.mli opass_shell.mli oui.mli > /.d
+- /bin/sh: line 1: /.d: Permission denied
+- rm -v /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/opass
+- rm: cannot remove '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/opass': No such file or directory
+- Makefile:49: recipe for target 'remove' failed
+- make[2]: *** [remove] Error 1
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/opass'
+- pds.mk:111: recipe for target 'remove_opass' failed
+- make[1]: *** [remove_opass] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+- Makefile:8: recipe for target 'remove' failed
+- make: *** [remove] Error 2
+
+#=== ERROR while installing opass.2.15 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make -j4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/opass-3362.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/opass-3362.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/opass-3362.out
+### stdout ###
+# [...]
+# make[2]: *** [db.cmx] Error 2
+# make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db'
+# pds.mk:65: recipe for target 'release_db' failed
+# make[1]: *** [release_db] Error 2
+# ocamlfind ocamlopt  -w '@f@p@u@s@40' -g -package containers -a -thread -I +camlp4 -o editable.cmxa \
+# 	editable_entry.cmx editable_form.cmx editable.cmx
+# make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable'
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+# Makefile:4: recipe for target 'all' failed
+# make: *** [all] Error 2
+### stderr ###
+# [...]
+# make[2]: *** [db.cmx] Error 2
+# make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/db'
+# pds.mk:65: recipe for target 'release_db' failed
+# make[1]: *** [release_db] Error 2
+# ocamlfind ocamlopt  -w '@f@p@u@s@40' -g -package containers -a -thread -I +camlp4 -o editable.cmxa \
+# 	editable_entry.cmx editable_form.cmx editable.cmx
+# make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15/build/release/editable'
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opass.2.15'
+# Makefile:4: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install opass 2.15
+No changes have been performed
+'opam install opass.2.15' failed.

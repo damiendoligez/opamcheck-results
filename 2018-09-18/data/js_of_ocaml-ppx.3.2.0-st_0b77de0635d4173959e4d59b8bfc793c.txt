@@ -1,0 +1,46 @@
+The following actions will be performed:
+  - install js_of_ocaml-ppx 3.2.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[js_of_ocaml-ppx: http] Command started
+[js_of_ocaml-ppx: http] Command started
+[js_of_ocaml-ppx.3.2.0] https://github.com/ocsigen/js_of_ocaml/archive/3.2.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[js_of_ocaml-ppx: jbuilder build] Command started
++ jbuilder "build" "-p" "js_of_ocaml-ppx" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/js_of_ocaml-ppx.3.2.0)
+- File "ppx/ppx_js/lib/jbuild", line 11, characters 20-52:
+- Error: Library "ppx_tools_versioned.metaquot_406" not found.
+- Hint: try: dune external-lib-deps --missing --profile release -p js_of_ocaml-ppx @install
+- File "ppx/ppx_js/lib/jbuild", line 11, characters 20-52:
+- Error: Library "ppx_tools_versioned.metaquot_406" not found.
+- Hint: try: dune external-lib-deps --missing --profile release -p js_of_ocaml-ppx @install
+[ERROR] The compilation of js_of_ocaml-ppx failed at "jbuilder build -p
+        js_of_ocaml-ppx -j 4".
+
+#=== ERROR while installing js_of_ocaml-ppx.3.2.0 =============================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p js_of_ocaml-ppx -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/js_of_ocaml-ppx.3.2.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/js_of_ocaml-ppx.3.2.0/js_of_ocaml-ppx-1404.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/js_of_ocaml-ppx.3.2.0/js_of_ocaml-ppx-1404.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/js_of_ocaml-ppx.3.2.0/js_of_ocaml-ppx-1404.out
+### stdout ###
+# File "ppx/ppx_js/lib/jbuild", line 11, characters 20-52:
+# Error: Library "ppx_tools_versioned.metaquot_406" not found.
+# Hint: try: dune external-lib-deps --missing --profile release -p js_of_ocaml-ppx @install
+### stderr ###
+# File "ppx/ppx_js/lib/jbuild", line 11, characters 20-52:
+# Error: Library "ppx_tools_versioned.metaquot_406" not found.
+# Hint: try: dune external-lib-deps --missing --profile release -p js_of_ocaml-ppx @install
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install js_of_ocaml-ppx 3.2.0
+No changes have been performed
+'opam install js_of_ocaml-ppx.3.2.0' failed.

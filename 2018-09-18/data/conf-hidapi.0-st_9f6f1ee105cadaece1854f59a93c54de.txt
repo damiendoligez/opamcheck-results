@@ -1,0 +1,33 @@
+The following actions will be performed:
+  - install conf-hidapi 0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[conf-hidapi: pkg-config hidapi-libusb] Command started
++ pkg-config "hidapi-libusb" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/conf-hidapi.0)
+[ERROR] The compilation of conf-hidapi failed at "pkg-config hidapi-libusb".
+
+#=== ERROR while installing conf-hidapi.0 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              pkg-config hidapi-libusb
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/conf-hidapi.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/conf-hidapi.0/conf-hidapi-7340.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/conf-hidapi.0/conf-hidapi-7340.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/conf-hidapi.0/conf-hidapi-7340.out
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install conf-hidapi 0
+No changes have been performed
+
+=-=- conf-hidapi.0 troobleshooting =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package relies on external (system) dependencies that may be missing.
+   `opam depext conf-hidapi.0' may help you find the correct installation for
+   your system.
+'opam install conf-hidapi.0' failed.

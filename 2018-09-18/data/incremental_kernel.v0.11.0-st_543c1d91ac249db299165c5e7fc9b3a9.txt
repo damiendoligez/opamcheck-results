@@ -1,0 +1,204 @@
+The following actions will be performed:
+  - install incremental_kernel v0.11.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[incremental_kernel: http] Command started
+[incremental_kernel: http] Command started
+[incremental_kernel.v0.11.0] https://ocaml.janestreet.com/ocaml-core/v0.11/files/incremental_kernel-v0.11.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[incremental_kernel: jbuilder build] Command started
++ jbuilder "build" "-p" "incremental_kernel" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/incremental_kernel.v0.11.0)
+-       ocamlc src/.incremental_kernel.objs/incremental_kernel__Alarm_value.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.incremental_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel/base_for_tests -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/variantslib -no-alias-deps -open Incremental_kernel__ -o src/.incremental_kernel.objs/incremental_kernel__Alarm_value.cmo -c -impl src/alarm_value.pp.ml)
+- File "src/alarm_value.ml", line 1:
+- Error: The implementation src/alarm_value.pp.ml
+-        does not match the interface src/.incremental_kernel.objs/incremental_kernel__Alarm_value.cmi:
+-        In module Action:
+-        Modules do not match:
+-          sig
+-            type t =
+-              Incremental_kernel__.Types.Alarm_value.Action.t =
+-                At of Incremental_kernel__.At.t
+-              | At_intervals of Incremental_kernel__.At_intervals.t
+-              | Snapshot : 'a Incremental_kernel__.Snapshot.t -> t
+-              | Step_function : 'b Incremental_kernel__.Step_function.t -> t
+-            val sexp_of_t : t -> Ppx_sexp_conv_lib.Sexp.t
+-            val invariant : t -> unit
+-          end
+-        is not included in
+-          (module Incremental_kernel__Types.Alarm_value.Action)
+-       ocamlc src/.incremental_kernel.objs/incremental_kernel__Internal_observer.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.incremental_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel/base_for_tests -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/variantslib -no-alias-deps -open Incremental_kernel__ -o src/.incremental_kernel.objs/incremental_kernel__Internal_observer.cmo -c -impl src/internal_observer.pp.ml)
+- File "src/internal_observer.ml", line 1:
+- Error: The implementation src/internal_observer.pp.ml
+-        does not match the interface src/.incremental_kernel.objs/incremental_kernel__Internal_observer.cmi:
+-        In module State:
+-        Modules do not match:
+-          sig
+-            type t =
+-              Incremental_kernel__.Types.Internal_observer.State.t =
+-                Created
+-              | In_use
+-              | Disallowed
+-              | Unlinked
+-            val sexp_of_t : t -> Ppx_sexp_conv_lib.Sexp.t
+-          end
+-        is not included in
+-          (module Incremental_kernel__Types.Internal_observer.State)
+-     ocamlopt src/.incremental_kernel.objs/incremental_kernel__Alarm_value.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -safe-string -g -I src/.incremental_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel/base_for_tests -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/variantslib -no-alias-deps -open Incremental_kernel__ -o src/.incremental_kernel.objs/incremental_kernel__Alarm_value.cmx -c -impl src/alarm_value.pp.ml)
+- File "src/alarm_value.ml", line 1:
+- Error: The implementation src/alarm_value.pp.ml
+-        does not match the interface src/.incremental_kernel.objs/incremental_kernel__Alarm_value.cmi:
+-        In module Action:
+-        Modules do not match:
+-          sig
+-            type t =
+-              Incremental_kernel__.Types.Alarm_value.Action.t =
+-                At of Incremental_kernel__.At.t
+-              | At_intervals of Incremental_kernel__.At_intervals.t
+-              | Snapshot : 'a Incremental_kernel__.Snapshot.t -> t
+-              | Step_function : 'b Incremental_kernel__.Step_function.t -> t
+-            val sexp_of_t : t -> Ppx_sexp_conv_lib.Sexp.t
+-            val invariant : t -> unit
+-          end
+-        is not included in
+-          (module Incremental_kernel__Types.Alarm_value.Action)
+-       ocamlc src/.incremental_kernel.objs/incremental_kernel__Alarm_value.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.incremental_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel/base_for_tests -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/variantslib -no-alias-deps -open Incremental_kernel__ -o src/.incremental_kernel.objs/incremental_kernel__Alarm_value.cmo -c -impl src/alarm_value.pp.ml)
+- File "src/alarm_value.ml", line 1:
+- Error: The implementation src/alarm_value.pp.ml
+-        does not match the interface src/.incremental_kernel.objs/incremental_kernel__Alarm_value.cmi:
+-        In module Action:
+-        Modules do not match:
+-          sig
+-            type t =
+-              Incremental_kernel__.Types.Alarm_value.Action.t =
+-                At of Incremental_kernel__.At.t
+-              | At_intervals of Incremental_kernel__.At_intervals.t
+-              | Snapshot : 'a Incremental_kernel__.Snapshot.t -> t
+-              | Step_function : 'b Incremental_kernel__.Step_function.t -> t
+-            val sexp_of_t : t -> Ppx_sexp_conv_lib.Sexp.t
+-            val invariant : t -> unit
+-          end
+-        is not included in
+-          (module Incremental_kernel__Types.Alarm_value.Action)
+-       ocamlc src/.incremental_kernel.objs/incremental_kernel__Internal_observer.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.incremental_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel/base_for_tests -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/variantslib -no-alias-deps -open Incremental_kernel__ -o src/.incremental_kernel.objs/incremental_kernel__Internal_observer.cmo -c -impl src/internal_observer.pp.ml)
+- File "src/internal_observer.ml", line 1:
+- Error: The implementation src/internal_observer.pp.ml
+-        does not match the interface src/.incremental_kernel.objs/incremental_kernel__Internal_observer.cmi:
+-        In module State:
+-        Modules do not match:
+-          sig
+-            type t =
+-              Incremental_kernel__.Types.Internal_observer.State.t =
+-                Created
+-              | In_use
+-              | Disallowed
+-              | Unlinked
+-            val sexp_of_t : t -> Ppx_sexp_conv_lib.Sexp.t
+-          end
+-        is not included in
+-          (module Incremental_kernel__Types.Internal_observer.State)
+-     ocamlopt src/.incremental_kernel.objs/incremental_kernel__Alarm_value.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -safe-string -g -I src/.incremental_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel/base_for_tests -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/variantslib -no-alias-deps -open Incremental_kernel__ -o src/.incremental_kernel.objs/incremental_kernel__Alarm_value.cmx -c -impl src/alarm_value.pp.ml)
+- File "src/alarm_value.ml", line 1:
+- Error: The implementation src/alarm_value.pp.ml
+-        does not match the interface src/.incremental_kernel.objs/incremental_kernel__Alarm_value.cmi:
+-        In module Action:
+-        Modules do not match:
+-          sig
+-            type t =
+-              Incremental_kernel__.Types.Alarm_value.Action.t =
+-                At of Incremental_kernel__.At.t
+-              | At_intervals of Incremental_kernel__.At_intervals.t
+-              | Snapshot : 'a Incremental_kernel__.Snapshot.t -> t
+-              | Step_function : 'b Incremental_kernel__.Step_function.t -> t
+-            val sexp_of_t : t -> Ppx_sexp_conv_lib.Sexp.t
+-            val invariant : t -> unit
+-          end
+-        is not included in
+-          (module Incremental_kernel__Types.Alarm_value.Action)
+-     ocamlopt src/.incremental_kernel.objs/incremental_kernel__Internal_observer.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -safe-string -g -I src/.incremental_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel/base_for_tests -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/variantslib -no-alias-deps -open Incremental_kernel__ -o src/.incremental_kernel.objs/incremental_kernel__Internal_observer.cmx -c -impl src/internal_observer.pp.ml)
+- File "src/internal_observer.ml", line 1:
+- Error: The implementation src/internal_observer.pp.ml
+-        does not match the interface src/.incremental_kernel.objs/incremental_kernel__Internal_observer.cmi:
+-        In module State:
+-        Modules do not match:
+-          sig
+-            type t =
+-              Incremental_kernel__.Types.Internal_observer.State.t =
+-                Created
+-              | In_use
+-              | Disallowed
+-              | Unlinked
+-            val sexp_of_t : t -> Ppx_sexp_conv_lib.Sexp.t
+-          end
+-        is not included in
+-          (module Incremental_kernel__Types.Internal_observer.State)
+-     ocamlopt src/.incremental_kernel.objs/incremental_kernel__Internal_observer.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -safe-string -g -I src/.incremental_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel/base_for_tests -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/variantslib -no-alias-deps -open Incremental_kernel__ -o src/.incremental_kernel.objs/incremental_kernel__Internal_observer.cmx -c -impl src/internal_observer.pp.ml)
+- File "src/internal_observer.ml", line 1:
+- Error: The implementation src/internal_observer.pp.ml
+-        does not match the interface src/.incremental_kernel.objs/incremental_kernel__Internal_observer.cmi:
+-        In module State:
+-        Modules do not match:
+-          sig
+-            type t =
+-              Incremental_kernel__.Types.Internal_observer.State.t =
+-                Created
+-              | In_use
+-              | Disallowed
+-              | Unlinked
+-            val sexp_of_t : t -> Ppx_sexp_conv_lib.Sexp.t
+-          end
+-        is not included in
+-          (module Incremental_kernel__Types.Internal_observer.State)
+[ERROR] The compilation of incremental_kernel failed at "jbuilder build -p
+        incremental_kernel -j 4".
+
+#=== ERROR while installing incremental_kernel.v0.11.0 ========================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p incremental_kernel -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/incremental_kernel.v0.11.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/incremental_kernel.v0.11.0/incremental_kernel-17848.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/incremental_kernel.v0.11.0/incremental_kernel-17848.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/incremental_kernel.v0.11.0/incremental_kernel-17848.out
+### stdout ###
+# Error: The implementation src/internal_observer.pp.ml
+# [...]
+#              Incremental_kernel__.Types.Internal_observer.State.t =
+#                Created
+#              | In_use
+#              | Disallowed
+#              | Unlinked
+#            val sexp_of_t : t -> Ppx_sexp_conv_lib.Sexp.t
+#          end
+#        is not included in
+#          (module Incremental_kernel__Types.Internal_observer.State)
+### stderr ###
+# Error: The implementation src/internal_observer.pp.ml
+# [...]
+#              Incremental_kernel__.Types.Internal_observer.State.t =
+#                Created
+#              | In_use
+#              | Disallowed
+#              | Unlinked
+#            val sexp_of_t : t -> Ppx_sexp_conv_lib.Sexp.t
+#          end
+#        is not included in
+#          (module Incremental_kernel__Types.Internal_observer.State)
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install incremental_kernel v0.11.0
+No changes have been performed
+'opam install incremental_kernel.v0.11.0' failed.

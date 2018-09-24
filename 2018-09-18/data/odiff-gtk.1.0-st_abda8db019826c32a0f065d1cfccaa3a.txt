@@ -1,0 +1,99 @@
+The following actions will be performed:
+  - install odiff-gtk 1.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[odiff-gtk: http] Command started
+[odiff-gtk: http] Command started
+[odiff-gtk.1.0] http://zoggy.github.io/odiff-gtk/odiff-gtk-1.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[odiff-gtk: make all] Command started
++ make "all" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/odiff-gtk.1.0)
+- ocamlfind ocamlc -package unix,diff,lablgtk2 -annot -c odiff_messages.ml
+- ocamlfind ocamlc -package unix,diff,lablgtk2 -annot -c odiff_merge.ml
+- File "odiff_merge.ml", line 75, characters 10-23:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "odiff_merge.ml", line 84, characters 34-35:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:120: recipe for target 'odiff_merge.cmi' failed
+- make: *** [odiff_merge.cmi] Error 2
+- ocamlfind ocamlc -package unix,diff,lablgtk2 -annot -c odiff_messages.ml
+- ocamlfind ocamlc -package unix,diff,lablgtk2 -annot -c odiff_merge.ml
+- File "odiff_merge.ml", line 75, characters 10-23:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "odiff_merge.ml", line 84, characters 34-35:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:120: recipe for target 'odiff_merge.cmi' failed
+- make: *** [odiff_merge.cmi] Error 2
+[ERROR] The compilation of odiff-gtk failed at "make all".
+[odiff-gtk: ocamlfind remove] Command started
++ ocamlfind "remove" "diff-gtk" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/odiff-gtk.1.0)
+- ocamlfind ocamlc -package unix,diff,lablgtk2 -annot -c odiff_messages.ml
+- ocamlfind ocamlc -package unix,diff,lablgtk2 -annot -c odiff_merge.ml
+- File "odiff_merge.ml", line 75, characters 10-23:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "odiff_merge.ml", line 84, characters 34-35:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:120: recipe for target 'odiff_merge.cmi' failed
+- make: *** [odiff_merge.cmi] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/diff-gtk/META
+- ocamlfind ocamlc -package unix,diff,lablgtk2 -annot -c odiff_messages.ml
+- ocamlfind ocamlc -package unix,diff,lablgtk2 -annot -c odiff_merge.ml
+- File "odiff_merge.ml", line 75, characters 10-23:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "odiff_merge.ml", line 84, characters 34-35:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:120: recipe for target 'odiff_merge.cmi' failed
+- make: *** [odiff_merge.cmi] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/diff-gtk/META
+
+#=== ERROR while installing odiff-gtk.1.0 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make all
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/odiff-gtk.1.0
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/odiff-gtk.1.0/odiff-gtk-27227.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/odiff-gtk.1.0/odiff-gtk-27227.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/odiff-gtk.1.0/odiff-gtk-27227.out
+### stdout ###
+# [...]
+# ocamlfind ocamlc -package unix,diff,lablgtk2 -annot -c odiff_messages.ml
+# ocamlfind ocamlc -package unix,diff,lablgtk2 -annot -c odiff_merge.ml
+# File "odiff_merge.ml", line 75, characters 10-23:
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "odiff_merge.ml", line 84, characters 34-35:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:120: recipe for target 'odiff_merge.cmi' failed
+# make: *** [odiff_merge.cmi] Error 2
+### stderr ###
+# [...]
+# ocamlfind ocamlc -package unix,diff,lablgtk2 -annot -c odiff_messages.ml
+# ocamlfind ocamlc -package unix,diff,lablgtk2 -annot -c odiff_merge.ml
+# File "odiff_merge.ml", line 75, characters 10-23:
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "odiff_merge.ml", line 84, characters 34-35:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:120: recipe for target 'odiff_merge.cmi' failed
+# make: *** [odiff_merge.cmi] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install odiff-gtk 1.0
+No changes have been performed
+'opam install odiff-gtk.1.0' failed.

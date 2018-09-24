@@ -1,0 +1,185 @@
+The following actions will be performed:
+  - install doc-ock 1.2.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[doc-ock: http] Command started
+[doc-ock: http] Command started
+[doc-ock.1.2.1] https://github.com/ocaml-doc/doc-ock/archive/v1.2.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[doc-ock: jbuilder build] Command started
++ jbuilder "build" "-p" "doc-ock" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/doc-ock.1.2.1)
+-         cppo src/docOck.pp.ml
+-         cppo src/docOckCmi.pp.ml
+-         cppo src/docOckCmt.pp.ml
+-         cppo src/docOckCmti.pp.ml
+-         cppo src/docOckAttrs.pp.ml
+-         cppo src/docOckIdentEnv.pp.ml
+-         cppo src/docOckComponentTbl.pp.ml
+-         cppo src/docOckLookup.pp.ml
+-         cppo src/docOckExpand.pp.ml
+-         cppo src/docOckComponents.pp.ml
+-         cppo src/docOckPayload.pp.ml
+-         cppo src/docOckNameEnv.pp.ml
+-         cppo src/docOckPredef.pp.ml
+-         cppo src/docOckSubst.pp.ml
+-         cppo src/docOckMaps.pp.ml
+-         cppo src/docOckTypes.pp.ml
+-         cppo src/docOck.pp.mli
+-         cppo src/docOckAttrs.pp.mli
+-         cppo src/docOckCmi.pp.mli
+-         cppo src/docOckCmt.pp.mli
+-         cppo src/docOckCmti.pp.mli
+-         cppo src/docOckComponentTbl.pp.mli
+-         cppo src/docOckExpand.pp.mli
+-         cppo src/docOckComponents.pp.mli
+-         cppo src/docOckIdentEnv.pp.mli
+-         cppo src/docOckLookup.pp.mli
+-         cppo src/docOckNameEnv.pp.mli
+-         cppo src/docOckResolve.pp.ml
+-         cppo src/docOckPaths.pp.ml
+-         cppo src/docOckPayload.pp.mli
+-         cppo src/docOckMaps.pp.mli
+-         cppo src/docOckPaths.pp.mli
+-         cppo src/docOckResolve.pp.mli
+-         cppo src/docOckSubst.pp.mli
+-         cppo src/docOckPredef.pp.mli
+-     ocamldep test/ocamlary.depends.ocamldep-output
+-     ocamldep test/ocamlary.dependsi.ocamldep-output
+-     ocamldep src/docOck.dependsi.ocamldep-output
+-       ocamlc test/ocamlary.{cmi,cmti}
+-     ocamldep src/docOck.depends.ocamldep-output
+-       ocamlc src/docOckPayload.{cmi,cmti}
+-       ocamlc src/docOckPayload.{cmo,cmt}
+-       ocamlc test/ocamlary.{cmo,cmt}
+-       ocamlc test/ocamlary.cma
+-       ocamlc src/docOckPaths.{cmi,cmti}
+-     ocamlopt src/docOckPayload.{cmx,o}
+-     ocamlopt test/ocamlary.{cmx,o}
+-       ocamlc src/docOckIdentEnv.{cmi,cmti}
+-     ocamlopt test/ocamlary.{a,cmxa}
+-     ocamlopt test/ocamlary.cmxs
+-       ocamlc src/docOckTypes.{cmi,cmo,cmt}
+-       ocamlc src/docOckAttrs.{cmi,cmti}
+-       ocamlc src/docOckCmi.{cmi,cmti}
+-       ocamlc src/docOckCmt.{cmi,cmti}
+-       ocamlc src/docOckCmti.{cmi,cmti}
+-       ocamlc src/docOckLookup.{cmi,cmti}
+-       ocamlc src/docOckComponents.{cmi,cmti}
+-       ocamlc src/docOckNameEnv.{cmi,cmti}
+-       ocamlc src/docOckPredef.{cmi,cmti}
+-       ocamlc src/docOckSubst.{cmi,cmti}
+-       ocamlc src/docOckAttrs.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/octavius -no-alias-deps -I src -o src/docOckAttrs.cmo -c -impl src/docOckAttrs.pp.ml)
+- File "src/docOckAttrs.ml", line 478, characters 4-13:
+- Error: This variant pattern is expected to have type Octavius.Types.tag
+-        The constructor Canonical does not belong to type Octavius.Types.tag
+-         cppo src/docOck.pp.ml
+-         cppo src/docOckCmi.pp.ml
+-         cppo src/docOckCmt.pp.ml
+-         cppo src/docOckCmti.pp.ml
+-         cppo src/docOckAttrs.pp.ml
+-         cppo src/docOckIdentEnv.pp.ml
+-         cppo src/docOckComponentTbl.pp.ml
+-         cppo src/docOckLookup.pp.ml
+-         cppo src/docOckExpand.pp.ml
+-         cppo src/docOckComponents.pp.ml
+-         cppo src/docOckPayload.pp.ml
+-         cppo src/docOckNameEnv.pp.ml
+-         cppo src/docOckPredef.pp.ml
+-         cppo src/docOckSubst.pp.ml
+-         cppo src/docOckMaps.pp.ml
+-         cppo src/docOckTypes.pp.ml
+-         cppo src/docOck.pp.mli
+-         cppo src/docOckAttrs.pp.mli
+-         cppo src/docOckCmi.pp.mli
+-         cppo src/docOckCmt.pp.mli
+-         cppo src/docOckCmti.pp.mli
+-         cppo src/docOckComponentTbl.pp.mli
+-         cppo src/docOckExpand.pp.mli
+-         cppo src/docOckComponents.pp.mli
+-         cppo src/docOckIdentEnv.pp.mli
+-         cppo src/docOckLookup.pp.mli
+-         cppo src/docOckNameEnv.pp.mli
+-         cppo src/docOckResolve.pp.ml
+-         cppo src/docOckPaths.pp.ml
+-         cppo src/docOckPayload.pp.mli
+-         cppo src/docOckMaps.pp.mli
+-         cppo src/docOckPaths.pp.mli
+-         cppo src/docOckResolve.pp.mli
+-         cppo src/docOckSubst.pp.mli
+-         cppo src/docOckPredef.pp.mli
+-     ocamldep test/ocamlary.depends.ocamldep-output
+-     ocamldep test/ocamlary.dependsi.ocamldep-output
+-     ocamldep src/docOck.dependsi.ocamldep-output
+-       ocamlc test/ocamlary.{cmi,cmti}
+-     ocamldep src/docOck.depends.ocamldep-output
+-       ocamlc src/docOckPayload.{cmi,cmti}
+-       ocamlc src/docOckPayload.{cmo,cmt}
+-       ocamlc test/ocamlary.{cmo,cmt}
+-       ocamlc test/ocamlary.cma
+-       ocamlc src/docOckPaths.{cmi,cmti}
+-     ocamlopt src/docOckPayload.{cmx,o}
+-     ocamlopt test/ocamlary.{cmx,o}
+-       ocamlc src/docOckIdentEnv.{cmi,cmti}
+-     ocamlopt test/ocamlary.{a,cmxa}
+-     ocamlopt test/ocamlary.cmxs
+-       ocamlc src/docOckTypes.{cmi,cmo,cmt}
+-       ocamlc src/docOckAttrs.{cmi,cmti}
+-       ocamlc src/docOckCmi.{cmi,cmti}
+-       ocamlc src/docOckCmt.{cmi,cmti}
+-       ocamlc src/docOckCmti.{cmi,cmti}
+-       ocamlc src/docOckLookup.{cmi,cmti}
+-       ocamlc src/docOckComponents.{cmi,cmti}
+-       ocamlc src/docOckNameEnv.{cmi,cmti}
+-       ocamlc src/docOckPredef.{cmi,cmti}
+-       ocamlc src/docOckSubst.{cmi,cmti}
+-       ocamlc src/docOckAttrs.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/octavius -no-alias-deps -I src -o src/docOckAttrs.cmo -c -impl src/docOckAttrs.pp.ml)
+- File "src/docOckAttrs.ml", line 478, characters 4-13:
+- Error: This variant pattern is expected to have type Octavius.Types.tag
+-        The constructor Canonical does not belong to type Octavius.Types.tag
+[ERROR] The compilation of doc-ock failed at "jbuilder build -p doc-ock -j 4".
+
+#=== ERROR while installing doc-ock.1.2.1 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p doc-ock -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/doc-ock.1.2.1
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/doc-ock.1.2.1/doc-ock-8212.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/doc-ock.1.2.1/doc-ock-8212.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/doc-ock.1.2.1/doc-ock-8212.out
+### stdout ###
+# [...]
+#       ocamlc src/docOckLookup.{cmi,cmti}
+#       ocamlc src/docOckComponents.{cmi,cmti}
+#       ocamlc src/docOckNameEnv.{cmi,cmti}
+#       ocamlc src/docOckPredef.{cmi,cmti}
+#       ocamlc src/docOckSubst.{cmi,cmti}
+#       ocamlc src/docOckAttrs.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/octavius -no-alias-deps -I src -o src/docOckAttrs.cmo -c -impl src/docOckAttrs.pp.ml)
+# File "src/docOckAttrs.ml", line 478, characters 4-13:
+# Error: This variant pattern is expected to have type Octavius.Types.tag
+#        The constructor Canonical does not belong to type Octavius.Types.tag
+### stderr ###
+# [...]
+#       ocamlc src/docOckLookup.{cmi,cmti}
+#       ocamlc src/docOckComponents.{cmi,cmti}
+#       ocamlc src/docOckNameEnv.{cmi,cmti}
+#       ocamlc src/docOckPredef.{cmi,cmti}
+#       ocamlc src/docOckSubst.{cmi,cmti}
+#       ocamlc src/docOckAttrs.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/octavius -no-alias-deps -I src -o src/docOckAttrs.cmo -c -impl src/docOckAttrs.pp.ml)
+# File "src/docOckAttrs.ml", line 478, characters 4-13:
+# Error: This variant pattern is expected to have type Octavius.Types.tag
+#        The constructor Canonical does not belong to type Octavius.Types.tag
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install doc-ock 1.2.1
+No changes have been performed
+'opam install doc-ock.1.2.1' failed.

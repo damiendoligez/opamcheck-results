@@ -1,0 +1,101 @@
+The following actions will be performed:
+  - install ocaml-arg 0.3
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocaml-arg: http] Command started
+[ocaml-arg: http] Command started
+[ocaml-arg.0.3] https://github.com/samoht/ocaml-arg/tarball/0.3 downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocaml-arg: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocaml-arg.0.3)
+- ocamlbuild -I src arg.cma arg.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/argExt.ml > src/argExt.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/formatExt.ml > src/formatExt.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/subCommand.ml > src/subCommand.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -I src -o src/formatExt.cmo src/formatExt.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -I src -o src/formatExt.cmo src/formatExt.ml
+- File "src/formatExt.ml", line 39, characters 18-21:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:2: recipe for target 'all' failed
+- make: *** [all] Error 10
+- ocamlbuild -I src arg.cma arg.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/argExt.ml > src/argExt.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/formatExt.ml > src/formatExt.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/subCommand.ml > src/subCommand.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -I src -o src/formatExt.cmo src/formatExt.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -I src -o src/formatExt.cmo src/formatExt.ml
+- File "src/formatExt.ml", line 39, characters 18-21:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:2: recipe for target 'all' failed
+- make: *** [all] Error 10
+[ERROR] The compilation of ocaml-arg failed at "make".
+
+#=== ERROR while installing ocaml-arg.0.3 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocaml-arg.0.3
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocaml-arg.0.3/ocaml-arg-19036.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocaml-arg.0.3/ocaml-arg-19036.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocaml-arg.0.3/ocaml-arg-19036.out
+### stdout ###
+# Hint: Recursive traversal of subdirectories was not enabled for this build,
+# [...]
+#   
+#   To enable recursive traversal for some subdirectories only, you can use the
+#   following '_tags' file:
+#   
+#       true: -traverse
+#       <dir1> or <dir2>: traverse
+#       
+# Makefile:2: recipe for target 'all' failed
+# make: *** [all] Error 10
+### stderr ###
+# Hint: Recursive traversal of subdirectories was not enabled for this build,
+# [...]
+#   
+#   To enable recursive traversal for some subdirectories only, you can use the
+#   following '_tags' file:
+#   
+#       true: -traverse
+#       <dir1> or <dir2>: traverse
+#       
+# Makefile:2: recipe for target 'all' failed
+# make: *** [all] Error 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ocaml-arg 0.3
+No changes have been performed
+'opam install ocaml-arg.0.3' failed.

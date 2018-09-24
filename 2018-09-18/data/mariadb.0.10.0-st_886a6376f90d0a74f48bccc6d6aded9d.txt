@@ -1,0 +1,2033 @@
+The following actions will be performed:
+  - install mariadb 0.10.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mariadb: http] Command started
+[mariadb: http] Command started
+[mariadb.0.10.0] https://github.com/andrenth/ocaml-mariadb/archive/0.10.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mariadb: ./configure] Command started
++ ./configure "--prefix=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mariadb.0.10.0)
+- mariadb_connector: ................................... false
+- mariadb_include_base: ................................ mysql
+- mariadb_connector: ................................... false
+- mariadb_include_base: ................................ mysql
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ mariadb
+- Package version: ..................................... 0.10.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Link to the MariaDB C/Connector library: ............. false
+- Build the Lwt example: ............................... false
+- Build the Async example: ............................. false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_ctypes_stubs: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_ctypes_foreign: .................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- 
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ mariadb
+- Package version: ..................................... 0.10.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Link to the MariaDB C/Connector library: ............. false
+- Build the Lwt example: ............................... false
+- Build the Async example: ............................. false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_ctypes_stubs: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_ctypes_foreign: .................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- 
+[mariadb: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mariadb.0.10.0)
+- mariadb_connector: ................................... false
+- mariadb_include_base: ................................ mysql
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ mariadb
+- Package version: ..................................... 0.10.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Link to the MariaDB C/Connector library: ............. false
+- Build the Lwt example: ............................... false
+- Build the Async example: ............................. false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_ctypes_stubs: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_ctypes_foreign: .................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- 
+- ocaml setup.ml -build 
+- mariadb_connector: ................................... false
+- mariadb_include_base: ................................ mysql
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ mariadb
+- Package version: ..................................... 0.10.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Link to the MariaDB C/Connector library: ............. false
+- Build the Lwt example: ............................... false
+- Build the Async example: ............................. false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_ctypes_stubs: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_ctypes_foreign: .................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- 
+- ocaml setup.ml -build 
+- W: Cannot find source file matching module 'Ffi_generated' in library mariadb.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'Ffi_generated_types' in library mariadb.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules bindings/ffi_bindings.ml > bindings/ffi_bindings.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I bindings -o bindings/ffi_bindings.cmo bindings/ffi_bindings.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a -warn-error +1..45 bindings/ffi_bindings.cmo -o bindings/mariadb_bindings.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I bindings -o bindings/ffi_bindings.cmx bindings/ffi_bindings.ml
+- W: Cannot find source file matching module 'Ffi_generated' in library mariadb.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'Ffi_generated_types' in library mariadb.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules bindings/ffi_bindings.ml > bindings/ffi_bindings.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I bindings -o bindings/ffi_bindings.cmo bindings/ffi_bindings.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a -warn-error +1..45 bindings/ffi_bindings.cmo -o bindings/mariadb_bindings.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I bindings -o bindings/ffi_bindings.cmx bindings/ffi_bindings.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a -warn-error +1..45 bindings/ffi_bindings.cmx -o bindings/mariadb_bindings.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared bindings/mariadb_bindings.cmxa bindings/ffi_bindings.cmx -o bindings/mariadb_bindings.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules stubgen/ffi_stubgen.ml > stubgen/ffi_stubgen.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -warn-error +1..45 -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I stubgen -I bindings -o stubgen/ffi_stubgen.cmo stubgen/ffi_stubgen.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -linkpkg -g -warn-error +1..45 -linkpkg -package ctypes.stubs -package ctypes.foreign bindings/mariadb_bindings.cma stubgen/ffi_stubgen.cmo -o stubgen/ffi_stubgen.byte
+- stubgen/ffi_stubgen.byte -c > lib/ffi_generated_stubs.c
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -I lib -package ctypes -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package unix -package ctypes.stubs -package ctypes.foreign -c lib/ffi_generated_stubs.c
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -I lib -package ctypes -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package unix -package ctypes.stubs -package ctypes.foreign -c lib/ffi_generated_stubs.c
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_9_mysql_error':
+- lib/ffi_generated_stubs.c:61:16: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+-     char* x46 = mysql_error(x45);
+-                 ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_12_mysql_stmt_error':
+- lib/ffi_generated_stubs.c:79:16: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+-     char* x55 = mysql_stmt_error(x54);
+-                 ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_37_mysql_close_start':
+- lib/ffi_generated_stubs.c:268:15: warning: implicit declaration of function 'mysql_close_start' [-Wimplicit-function-declaration]
+-     int x194 = mysql_close_start(x193);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_38_mysql_close_cont':
+- lib/ffi_generated_stubs.c:275:15: warning: implicit declaration of function 'mysql_close_cont' [-Wimplicit-function-declaration]
+-     int x201 = mysql_close_cont(x197, x198);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_39_mysql_real_connect_start':
+- lib/ffi_generated_stubs.c:294:4: warning: implicit declaration of function 'mysql_real_connect_start' [-Wimplicit-function-declaration]
+-     mysql_real_connect_start(x211, x212, x213, x214, x215, x216, x217, 
+-     ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_40_mysql_real_connect_cont':
+- lib/ffi_generated_stubs.c:320:15: warning: implicit declaration of function 'mysql_real_connect_cont' [-Wimplicit-function-declaration]
+-     int x242 = mysql_real_connect_cont(x237, x238, x239);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_41_mysql_real_query_start':
+- lib/ffi_generated_stubs.c:330:15: warning: implicit declaration of function 'mysql_real_query_start' [-Wimplicit-function-declaration]
+-     int x253 = mysql_real_query_start(x247, x248, x249, x250);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_42_mysql_real_query_cont':
+- lib/ffi_generated_stubs.c:339:15: warning: implicit declaration of function 'mysql_real_query_cont' [-Wimplicit-function-declaration]
+-     int x262 = mysql_real_query_cont(x257, x258, x259);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_43_mysql_fetch_row_start':
+- lib/ffi_generated_stubs.c:346:15: warning: implicit declaration of function 'mysql_fetch_row_start' [-Wimplicit-function-declaration]
+-     int x267 = mysql_fetch_row_start(x265, x266);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_44_mysql_fetch_row_cont':
+- lib/ffi_generated_stubs.c:355:15: warning: implicit declaration of function 'mysql_fetch_row_cont' [-Wimplicit-function-declaration]
+-     int x276 = mysql_fetch_row_cont(x271, x272, x273);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_45_mysql_free_result_start':
+- lib/ffi_generated_stubs.c:361:15: warning: implicit declaration of function 'mysql_free_result_start' [-Wimplicit-function-declaration]
+-     int x279 = mysql_free_result_start(x278);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_46_mysql_free_result_cont':
+- lib/ffi_generated_stubs.c:368:15: warning: implicit declaration of function 'mysql_free_result_cont' [-Wimplicit-function-declaration]
+-     int x286 = mysql_free_result_cont(x282, x283);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_47_mysql_get_socket':
+- lib/ffi_generated_stubs.c:374:15: warning: implicit declaration of function 'mysql_get_socket' [-Wimplicit-function-declaration]
+-     int x289 = mysql_get_socket(x288);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_48_mysql_get_timeout_value':
+- lib/ffi_generated_stubs.c:380:24: warning: implicit declaration of function 'mysql_get_timeout_value' [-Wimplicit-function-declaration]
+-     unsigned int x292 = mysql_get_timeout_value(x291);
+-                         ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_49_mysql_get_timeout_value_ms':
+- lib/ffi_generated_stubs.c:386:24: warning: implicit declaration of function 'mysql_get_timeout_value_ms' [-Wimplicit-function-declaration]
+-     unsigned int x295 = mysql_get_timeout_value_ms(x294);
+-                         ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_50_mysql_set_character_set_start':
+- lib/ffi_generated_stubs.c:395:15: warning: implicit declaration of function 'mysql_set_character_set_start' [-Wimplicit-function-declaration]
+-     int x302 = mysql_set_character_set_start(x299, x300, x301);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_51_mysql_set_character_set_cont':
+- lib/ffi_generated_stubs.c:404:15: warning: implicit declaration of function 'mysql_set_character_set_cont' [-Wimplicit-function-declaration]
+-     int x311 = mysql_set_character_set_cont(x306, x307, x308);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_52_mysql_select_db_start':
+- lib/ffi_generated_stubs.c:413:15: warning: implicit declaration of function 'mysql_select_db_start' [-Wimplicit-function-declaration]
+-     int x318 = mysql_select_db_start(x315, x316, x317);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_53_mysql_select_db_cont':
+- lib/ffi_generated_stubs.c:422:15: warning: implicit declaration of function 'mysql_select_db_cont' [-Wimplicit-function-declaration]
+-     int x327 = mysql_select_db_cont(x322, x323, x324);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_54_mysql_change_user_start':
+- lib/ffi_generated_stubs.c:434:15: warning: implicit declaration of function 'mysql_change_user_start' [-Wimplicit-function-declaration]
+-     int x338 = mysql_change_user_start(x333, x334, x335, x336, x337);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_55_mysql_change_user_cont':
+- lib/ffi_generated_stubs.c:443:15: warning: implicit declaration of function 'mysql_change_user_cont' [-Wimplicit-function-declaration]
+-     int x347 = mysql_change_user_cont(x342, x343, x344);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_56_mysql_set_server_option_start':
+- lib/ffi_generated_stubs.c:452:15: warning: implicit declaration of function 'mysql_set_server_option_start' [-Wimplicit-function-declaration]
+-     int x356 = mysql_set_server_option_start(x351, x352, x353);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_57_mysql_set_server_option_cont':
+- lib/ffi_generated_stubs.c:461:15: warning: implicit declaration of function 'mysql_set_server_option_cont' [-Wimplicit-function-declaration]
+-     int x365 = mysql_set_server_option_cont(x360, x361, x362);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_58_mysql_ping_start':
+- lib/ffi_generated_stubs.c:468:15: warning: implicit declaration of function 'mysql_ping_start' [-Wimplicit-function-declaration]
+-     int x370 = mysql_ping_start(x368, x369);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_59_mysql_ping_cont':
+- lib/ffi_generated_stubs.c:476:15: warning: implicit declaration of function 'mysql_ping_cont' [-Wimplicit-function-declaration]
+-     int x379 = mysql_ping_cont(x374, x375, x376);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_60_mysql_stmt_prepare_start':
+- lib/ffi_generated_stubs.c:486:15: warning: implicit declaration of function 'mysql_stmt_prepare_start' [-Wimplicit-function-declaration]
+-     int x390 = mysql_stmt_prepare_start(x384, x385, x386, x387);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_61_mysql_stmt_prepare_cont':
+- lib/ffi_generated_stubs.c:495:15: warning: implicit declaration of function 'mysql_stmt_prepare_cont' [-Wimplicit-function-declaration]
+-     int x399 = mysql_stmt_prepare_cont(x394, x395, x396);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_62_mysql_stmt_reset_start':
+- lib/ffi_generated_stubs.c:502:15: warning: implicit declaration of function 'mysql_stmt_reset_start' [-Wimplicit-function-declaration]
+-     int x404 = mysql_stmt_reset_start(x402, x403);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_63_mysql_stmt_reset_cont':
+- lib/ffi_generated_stubs.c:511:15: warning: implicit declaration of function 'mysql_stmt_reset_cont' [-Wimplicit-function-declaration]
+-     int x413 = mysql_stmt_reset_cont(x408, x409, x410);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_64_mysql_stmt_execute_start':
+- lib/ffi_generated_stubs.c:518:15: warning: implicit declaration of function 'mysql_stmt_execute_start' [-Wimplicit-function-declaration]
+-     int x418 = mysql_stmt_execute_start(x416, x417);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_65_mysql_stmt_execute_cont':
+- lib/ffi_generated_stubs.c:527:15: warning: implicit declaration of function 'mysql_stmt_execute_cont' [-Wimplicit-function-declaration]
+-     int x427 = mysql_stmt_execute_cont(x422, x423, x424);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_66_mysql_stmt_fetch_start':
+- lib/ffi_generated_stubs.c:534:15: warning: implicit declaration of function 'mysql_stmt_fetch_start' [-Wimplicit-function-declaration]
+-     int x432 = mysql_stmt_fetch_start(x430, x431);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_67_mysql_stmt_fetch_cont':
+- lib/ffi_generated_stubs.c:543:15: warning: implicit declaration of function 'mysql_stmt_fetch_cont' [-Wimplicit-function-declaration]
+-     int x441 = mysql_stmt_fetch_cont(x436, x437, x438);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_68_mysql_stmt_store_result_start':
+- lib/ffi_generated_stubs.c:550:15: warning: implicit declaration of function 'mysql_stmt_store_result_start' [-Wimplicit-function-declaration]
+-     int x446 = mysql_stmt_store_result_start(x444, x445);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_69_mysql_stmt_store_result_cont':
+- lib/ffi_generated_stubs.c:559:15: warning: implicit declaration of function 'mysql_stmt_store_result_cont' [-Wimplicit-function-declaration]
+-     int x455 = mysql_stmt_store_result_cont(x450, x451, x452);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_70_mysql_stmt_close_start':
+- lib/ffi_generated_stubs.c:566:15: warning: implicit declaration of function 'mysql_stmt_close_start' [-Wimplicit-function-declaration]
+-     int x460 = mysql_stmt_close_start(x458, x459);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_71_mysql_stmt_close_cont':
+- lib/ffi_generated_stubs.c:575:15: warning: implicit declaration of function 'mysql_stmt_close_cont' [-Wimplicit-function-declaration]
+-     int x469 = mysql_stmt_close_cont(x464, x465, x466);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_72_mysql_stmt_free_result_start':
+- lib/ffi_generated_stubs.c:582:15: warning: implicit declaration of function 'mysql_stmt_free_result_start' [-Wimplicit-function-declaration]
+-     int x474 = mysql_stmt_free_result_start(x472, x473);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_73_mysql_stmt_free_result_cont':
+- lib/ffi_generated_stubs.c:591:15: warning: implicit declaration of function 'mysql_stmt_free_result_cont' [-Wimplicit-function-declaration]
+-     int x483 = mysql_stmt_free_result_cont(x478, x479, x480);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_74_mysql_commit_start':
+- lib/ffi_generated_stubs.c:598:15: warning: implicit declaration of function 'mysql_commit_start' [-Wimplicit-function-declaration]
+-     int x488 = mysql_commit_start(x486, x487);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_75_mysql_commit_cont':
+- lib/ffi_generated_stubs.c:606:15: warning: implicit declaration of function 'mysql_commit_cont' [-Wimplicit-function-declaration]
+-     int x497 = mysql_commit_cont(x492, x493, x494);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_76_mysql_rollback_start':
+- lib/ffi_generated_stubs.c:613:15: warning: implicit declaration of function 'mysql_rollback_start' [-Wimplicit-function-declaration]
+-     int x502 = mysql_rollback_start(x500, x501);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_77_mysql_rollback_cont':
+- lib/ffi_generated_stubs.c:621:15: warning: implicit declaration of function 'mysql_rollback_cont' [-Wimplicit-function-declaration]
+-     int x511 = mysql_rollback_cont(x506, x507, x508);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_78_mysql_autocommit_start':
+- lib/ffi_generated_stubs.c:630:15: warning: implicit declaration of function 'mysql_autocommit_start' [-Wimplicit-function-declaration]
+-     int x520 = mysql_autocommit_start(x515, x516, (char)x517);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_79_mysql_autocommit_cont':
+- lib/ffi_generated_stubs.c:639:15: warning: implicit declaration of function 'mysql_autocommit_cont' [-Wimplicit-function-declaration]
+-     int x529 = mysql_autocommit_cont(x524, x525, x526);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_80_mysql_stmt_next_result_start':
+- lib/ffi_generated_stubs.c:646:15: warning: implicit declaration of function 'mysql_stmt_next_result_start' [-Wimplicit-function-declaration]
+-     int x534 = mysql_stmt_next_result_start(x532, x533);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_81_mysql_stmt_next_result_cont':
+- lib/ffi_generated_stubs.c:655:15: warning: implicit declaration of function 'mysql_stmt_next_result_cont' [-Wimplicit-function-declaration]
+-     int x543 = mysql_stmt_next_result_cont(x538, x539, x540);
+-                ^
+- mv ffi_generated_stubs.o lib/ffi_generated_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlmklib -o lib/mariadb_stubs -lmysqlclient lib/ffi_generated_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/mariadb.mli > lib/mariadb.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -warn-error +1..45 -package unix -package ctypes.stubs -package ctypes.foreign -I lib -I bindings -o lib/mariadb.cmi lib/mariadb.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/mariadb.ml > lib/mariadb.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/binding_wrappers.ml > lib/binding_wrappers.ml.depends
+- stubgen/ffi_stubgen.byte -ml > lib/ffi_generated.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/ffi_generated.ml > lib/ffi_generated.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules stubgen/ffi_types_stubgen.ml > stubgen/ffi_types_stubgen.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -warn-error +1..45 -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I stubgen -I bindings -o stubgen/ffi_types_stubgen.cmo stubgen/ffi_types_stubgen.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -linkpkg -g -warn-error +1..45 -linkpkg -package ctypes.stubs -package ctypes.foreign bindings/mariadb_bindings.cma stubgen/ffi_types_stubgen.cmo -o stubgen/ffi_types_stubgen.byte
+- stubgen/ffi_types_stubgen.byte > stubgen/ffi_ml_types_stubgen.c
+- gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT stubgen/ffi_ml_types_stubgen.c -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml -o stubgen/ffi_ml_types_subgen
+- + gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT stubgen/ffi_ml_types_stubgen.c -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml -o stubgen/ffi_ml_types_subgen
+- stubgen/ffi_ml_types_stubgen.c: In function 'main':
+- stubgen/ffi_ml_types_stubgen.c:319:51: error: 'MYSQL_WAIT_TIMEOUT' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_TIMEOUT_const = (int)MYSQL_WAIT_TIMEOUT };
+-                                                    ^
+- stubgen/ffi_ml_types_stubgen.c:319:51: note: each undeclared identifier is reported only once for each function it appears in
+- stubgen/ffi_ml_types_stubgen.c:326:50: error: 'MYSQL_WAIT_EXCEPT' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_EXCEPT_const = (int)MYSQL_WAIT_EXCEPT };
+-                                                   ^
+- stubgen/ffi_ml_types_stubgen.c:333:49: error: 'MYSQL_WAIT_WRITE' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_WRITE_const = (int)MYSQL_WAIT_WRITE };
+-                                                  ^
+- stubgen/ffi_ml_types_stubgen.c:340:48: error: 'MYSQL_WAIT_READ' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_READ_const = (int)MYSQL_WAIT_READ };
+-                                                 ^
+- stubgen/ffi_ml_types_stubgen.c:445:51: error: 'MYSQL_OPT_NONBLOCK' undeclared (first use in this function)
+-       enum { check_MYSQL_OPT_NONBLOCK_const = (int)MYSQL_OPT_NONBLOCK };
+-                                                    ^
+- Command exited with code 1.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' bindings/mariadb_bindings.cma bindings/mariadb_bindings.cmxa bindings/mariadb_bindings.a bindings/mariadb_bindings.cmxs lib/libmariadb_stubs.a lib/dllmariadb_stubs.so lib/mariadb.cma lib/mariadb.cmxa lib/mariadb.a lib/mariadb.cmxs stubgen/ffi_stubgen.byte stubgen/ffi_types_stubgen.byte examples/select/nonblocking_select_example.native examples/blocking/blocking_example.native examples/blocking/blocking_stress_test.native -use-ocamlfind -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a -warn-error +1..45 bindings/ffi_bindings.cmx -o bindings/mariadb_bindings.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared bindings/mariadb_bindings.cmxa bindings/ffi_bindings.cmx -o bindings/mariadb_bindings.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules stubgen/ffi_stubgen.ml > stubgen/ffi_stubgen.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -warn-error +1..45 -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I stubgen -I bindings -o stubgen/ffi_stubgen.cmo stubgen/ffi_stubgen.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -linkpkg -g -warn-error +1..45 -linkpkg -package ctypes.stubs -package ctypes.foreign bindings/mariadb_bindings.cma stubgen/ffi_stubgen.cmo -o stubgen/ffi_stubgen.byte
+- stubgen/ffi_stubgen.byte -c > lib/ffi_generated_stubs.c
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -I lib -package ctypes -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package unix -package ctypes.stubs -package ctypes.foreign -c lib/ffi_generated_stubs.c
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -I lib -package ctypes -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package unix -package ctypes.stubs -package ctypes.foreign -c lib/ffi_generated_stubs.c
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_9_mysql_error':
+- lib/ffi_generated_stubs.c:61:16: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+-     char* x46 = mysql_error(x45);
+-                 ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_12_mysql_stmt_error':
+- lib/ffi_generated_stubs.c:79:16: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+-     char* x55 = mysql_stmt_error(x54);
+-                 ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_37_mysql_close_start':
+- lib/ffi_generated_stubs.c:268:15: warning: implicit declaration of function 'mysql_close_start' [-Wimplicit-function-declaration]
+-     int x194 = mysql_close_start(x193);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_38_mysql_close_cont':
+- lib/ffi_generated_stubs.c:275:15: warning: implicit declaration of function 'mysql_close_cont' [-Wimplicit-function-declaration]
+-     int x201 = mysql_close_cont(x197, x198);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_39_mysql_real_connect_start':
+- lib/ffi_generated_stubs.c:294:4: warning: implicit declaration of function 'mysql_real_connect_start' [-Wimplicit-function-declaration]
+-     mysql_real_connect_start(x211, x212, x213, x214, x215, x216, x217, 
+-     ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_40_mysql_real_connect_cont':
+- lib/ffi_generated_stubs.c:320:15: warning: implicit declaration of function 'mysql_real_connect_cont' [-Wimplicit-function-declaration]
+-     int x242 = mysql_real_connect_cont(x237, x238, x239);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_41_mysql_real_query_start':
+- lib/ffi_generated_stubs.c:330:15: warning: implicit declaration of function 'mysql_real_query_start' [-Wimplicit-function-declaration]
+-     int x253 = mysql_real_query_start(x247, x248, x249, x250);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_42_mysql_real_query_cont':
+- lib/ffi_generated_stubs.c:339:15: warning: implicit declaration of function 'mysql_real_query_cont' [-Wimplicit-function-declaration]
+-     int x262 = mysql_real_query_cont(x257, x258, x259);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_43_mysql_fetch_row_start':
+- lib/ffi_generated_stubs.c:346:15: warning: implicit declaration of function 'mysql_fetch_row_start' [-Wimplicit-function-declaration]
+-     int x267 = mysql_fetch_row_start(x265, x266);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_44_mysql_fetch_row_cont':
+- lib/ffi_generated_stubs.c:355:15: warning: implicit declaration of function 'mysql_fetch_row_cont' [-Wimplicit-function-declaration]
+-     int x276 = mysql_fetch_row_cont(x271, x272, x273);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_45_mysql_free_result_start':
+- lib/ffi_generated_stubs.c:361:15: warning: implicit declaration of function 'mysql_free_result_start' [-Wimplicit-function-declaration]
+-     int x279 = mysql_free_result_start(x278);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_46_mysql_free_result_cont':
+- lib/ffi_generated_stubs.c:368:15: warning: implicit declaration of function 'mysql_free_result_cont' [-Wimplicit-function-declaration]
+-     int x286 = mysql_free_result_cont(x282, x283);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_47_mysql_get_socket':
+- lib/ffi_generated_stubs.c:374:15: warning: implicit declaration of function 'mysql_get_socket' [-Wimplicit-function-declaration]
+-     int x289 = mysql_get_socket(x288);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_48_mysql_get_timeout_value':
+- lib/ffi_generated_stubs.c:380:24: warning: implicit declaration of function 'mysql_get_timeout_value' [-Wimplicit-function-declaration]
+-     unsigned int x292 = mysql_get_timeout_value(x291);
+-                         ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_49_mysql_get_timeout_value_ms':
+- lib/ffi_generated_stubs.c:386:24: warning: implicit declaration of function 'mysql_get_timeout_value_ms' [-Wimplicit-function-declaration]
+-     unsigned int x295 = mysql_get_timeout_value_ms(x294);
+-                         ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_50_mysql_set_character_set_start':
+- lib/ffi_generated_stubs.c:395:15: warning: implicit declaration of function 'mysql_set_character_set_start' [-Wimplicit-function-declaration]
+-     int x302 = mysql_set_character_set_start(x299, x300, x301);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_51_mysql_set_character_set_cont':
+- lib/ffi_generated_stubs.c:404:15: warning: implicit declaration of function 'mysql_set_character_set_cont' [-Wimplicit-function-declaration]
+-     int x311 = mysql_set_character_set_cont(x306, x307, x308);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_52_mysql_select_db_start':
+- lib/ffi_generated_stubs.c:413:15: warning: implicit declaration of function 'mysql_select_db_start' [-Wimplicit-function-declaration]
+-     int x318 = mysql_select_db_start(x315, x316, x317);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_53_mysql_select_db_cont':
+- lib/ffi_generated_stubs.c:422:15: warning: implicit declaration of function 'mysql_select_db_cont' [-Wimplicit-function-declaration]
+-     int x327 = mysql_select_db_cont(x322, x323, x324);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_54_mysql_change_user_start':
+- lib/ffi_generated_stubs.c:434:15: warning: implicit declaration of function 'mysql_change_user_start' [-Wimplicit-function-declaration]
+-     int x338 = mysql_change_user_start(x333, x334, x335, x336, x337);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_55_mysql_change_user_cont':
+- lib/ffi_generated_stubs.c:443:15: warning: implicit declaration of function 'mysql_change_user_cont' [-Wimplicit-function-declaration]
+-     int x347 = mysql_change_user_cont(x342, x343, x344);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_56_mysql_set_server_option_start':
+- lib/ffi_generated_stubs.c:452:15: warning: implicit declaration of function 'mysql_set_server_option_start' [-Wimplicit-function-declaration]
+-     int x356 = mysql_set_server_option_start(x351, x352, x353);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_57_mysql_set_server_option_cont':
+- lib/ffi_generated_stubs.c:461:15: warning: implicit declaration of function 'mysql_set_server_option_cont' [-Wimplicit-function-declaration]
+-     int x365 = mysql_set_server_option_cont(x360, x361, x362);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_58_mysql_ping_start':
+- lib/ffi_generated_stubs.c:468:15: warning: implicit declaration of function 'mysql_ping_start' [-Wimplicit-function-declaration]
+-     int x370 = mysql_ping_start(x368, x369);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_59_mysql_ping_cont':
+- lib/ffi_generated_stubs.c:476:15: warning: implicit declaration of function 'mysql_ping_cont' [-Wimplicit-function-declaration]
+-     int x379 = mysql_ping_cont(x374, x375, x376);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_60_mysql_stmt_prepare_start':
+- lib/ffi_generated_stubs.c:486:15: warning: implicit declaration of function 'mysql_stmt_prepare_start' [-Wimplicit-function-declaration]
+-     int x390 = mysql_stmt_prepare_start(x384, x385, x386, x387);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_61_mysql_stmt_prepare_cont':
+- lib/ffi_generated_stubs.c:495:15: warning: implicit declaration of function 'mysql_stmt_prepare_cont' [-Wimplicit-function-declaration]
+-     int x399 = mysql_stmt_prepare_cont(x394, x395, x396);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_62_mysql_stmt_reset_start':
+- lib/ffi_generated_stubs.c:502:15: warning: implicit declaration of function 'mysql_stmt_reset_start' [-Wimplicit-function-declaration]
+-     int x404 = mysql_stmt_reset_start(x402, x403);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_63_mysql_stmt_reset_cont':
+- lib/ffi_generated_stubs.c:511:15: warning: implicit declaration of function 'mysql_stmt_reset_cont' [-Wimplicit-function-declaration]
+-     int x413 = mysql_stmt_reset_cont(x408, x409, x410);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_64_mysql_stmt_execute_start':
+- lib/ffi_generated_stubs.c:518:15: warning: implicit declaration of function 'mysql_stmt_execute_start' [-Wimplicit-function-declaration]
+-     int x418 = mysql_stmt_execute_start(x416, x417);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_65_mysql_stmt_execute_cont':
+- lib/ffi_generated_stubs.c:527:15: warning: implicit declaration of function 'mysql_stmt_execute_cont' [-Wimplicit-function-declaration]
+-     int x427 = mysql_stmt_execute_cont(x422, x423, x424);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_66_mysql_stmt_fetch_start':
+- lib/ffi_generated_stubs.c:534:15: warning: implicit declaration of function 'mysql_stmt_fetch_start' [-Wimplicit-function-declaration]
+-     int x432 = mysql_stmt_fetch_start(x430, x431);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_67_mysql_stmt_fetch_cont':
+- lib/ffi_generated_stubs.c:543:15: warning: implicit declaration of function 'mysql_stmt_fetch_cont' [-Wimplicit-function-declaration]
+-     int x441 = mysql_stmt_fetch_cont(x436, x437, x438);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_68_mysql_stmt_store_result_start':
+- lib/ffi_generated_stubs.c:550:15: warning: implicit declaration of function 'mysql_stmt_store_result_start' [-Wimplicit-function-declaration]
+-     int x446 = mysql_stmt_store_result_start(x444, x445);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_69_mysql_stmt_store_result_cont':
+- lib/ffi_generated_stubs.c:559:15: warning: implicit declaration of function 'mysql_stmt_store_result_cont' [-Wimplicit-function-declaration]
+-     int x455 = mysql_stmt_store_result_cont(x450, x451, x452);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_70_mysql_stmt_close_start':
+- lib/ffi_generated_stubs.c:566:15: warning: implicit declaration of function 'mysql_stmt_close_start' [-Wimplicit-function-declaration]
+-     int x460 = mysql_stmt_close_start(x458, x459);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_71_mysql_stmt_close_cont':
+- lib/ffi_generated_stubs.c:575:15: warning: implicit declaration of function 'mysql_stmt_close_cont' [-Wimplicit-function-declaration]
+-     int x469 = mysql_stmt_close_cont(x464, x465, x466);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_72_mysql_stmt_free_result_start':
+- lib/ffi_generated_stubs.c:582:15: warning: implicit declaration of function 'mysql_stmt_free_result_start' [-Wimplicit-function-declaration]
+-     int x474 = mysql_stmt_free_result_start(x472, x473);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_73_mysql_stmt_free_result_cont':
+- lib/ffi_generated_stubs.c:591:15: warning: implicit declaration of function 'mysql_stmt_free_result_cont' [-Wimplicit-function-declaration]
+-     int x483 = mysql_stmt_free_result_cont(x478, x479, x480);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_74_mysql_commit_start':
+- lib/ffi_generated_stubs.c:598:15: warning: implicit declaration of function 'mysql_commit_start' [-Wimplicit-function-declaration]
+-     int x488 = mysql_commit_start(x486, x487);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_75_mysql_commit_cont':
+- lib/ffi_generated_stubs.c:606:15: warning: implicit declaration of function 'mysql_commit_cont' [-Wimplicit-function-declaration]
+-     int x497 = mysql_commit_cont(x492, x493, x494);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_76_mysql_rollback_start':
+- lib/ffi_generated_stubs.c:613:15: warning: implicit declaration of function 'mysql_rollback_start' [-Wimplicit-function-declaration]
+-     int x502 = mysql_rollback_start(x500, x501);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_77_mysql_rollback_cont':
+- lib/ffi_generated_stubs.c:621:15: warning: implicit declaration of function 'mysql_rollback_cont' [-Wimplicit-function-declaration]
+-     int x511 = mysql_rollback_cont(x506, x507, x508);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_78_mysql_autocommit_start':
+- lib/ffi_generated_stubs.c:630:15: warning: implicit declaration of function 'mysql_autocommit_start' [-Wimplicit-function-declaration]
+-     int x520 = mysql_autocommit_start(x515, x516, (char)x517);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_79_mysql_autocommit_cont':
+- lib/ffi_generated_stubs.c:639:15: warning: implicit declaration of function 'mysql_autocommit_cont' [-Wimplicit-function-declaration]
+-     int x529 = mysql_autocommit_cont(x524, x525, x526);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_80_mysql_stmt_next_result_start':
+- lib/ffi_generated_stubs.c:646:15: warning: implicit declaration of function 'mysql_stmt_next_result_start' [-Wimplicit-function-declaration]
+-     int x534 = mysql_stmt_next_result_start(x532, x533);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_81_mysql_stmt_next_result_cont':
+- lib/ffi_generated_stubs.c:655:15: warning: implicit declaration of function 'mysql_stmt_next_result_cont' [-Wimplicit-function-declaration]
+-     int x543 = mysql_stmt_next_result_cont(x538, x539, x540);
+-                ^
+- mv ffi_generated_stubs.o lib/ffi_generated_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlmklib -o lib/mariadb_stubs -lmysqlclient lib/ffi_generated_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/mariadb.mli > lib/mariadb.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -warn-error +1..45 -package unix -package ctypes.stubs -package ctypes.foreign -I lib -I bindings -o lib/mariadb.cmi lib/mariadb.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/mariadb.ml > lib/mariadb.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/binding_wrappers.ml > lib/binding_wrappers.ml.depends
+- stubgen/ffi_stubgen.byte -ml > lib/ffi_generated.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/ffi_generated.ml > lib/ffi_generated.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules stubgen/ffi_types_stubgen.ml > stubgen/ffi_types_stubgen.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -warn-error +1..45 -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I stubgen -I bindings -o stubgen/ffi_types_stubgen.cmo stubgen/ffi_types_stubgen.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -linkpkg -g -warn-error +1..45 -linkpkg -package ctypes.stubs -package ctypes.foreign bindings/mariadb_bindings.cma stubgen/ffi_types_stubgen.cmo -o stubgen/ffi_types_stubgen.byte
+- stubgen/ffi_types_stubgen.byte > stubgen/ffi_ml_types_stubgen.c
+- gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT stubgen/ffi_ml_types_stubgen.c -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml -o stubgen/ffi_ml_types_subgen
+- + gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT stubgen/ffi_ml_types_stubgen.c -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml -o stubgen/ffi_ml_types_subgen
+- stubgen/ffi_ml_types_stubgen.c: In function 'main':
+- stubgen/ffi_ml_types_stubgen.c:319:51: error: 'MYSQL_WAIT_TIMEOUT' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_TIMEOUT_const = (int)MYSQL_WAIT_TIMEOUT };
+-                                                    ^
+- stubgen/ffi_ml_types_stubgen.c:319:51: note: each undeclared identifier is reported only once for each function it appears in
+- stubgen/ffi_ml_types_stubgen.c:326:50: error: 'MYSQL_WAIT_EXCEPT' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_EXCEPT_const = (int)MYSQL_WAIT_EXCEPT };
+-                                                   ^
+- stubgen/ffi_ml_types_stubgen.c:333:49: error: 'MYSQL_WAIT_WRITE' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_WRITE_const = (int)MYSQL_WAIT_WRITE };
+-                                                  ^
+- stubgen/ffi_ml_types_stubgen.c:340:48: error: 'MYSQL_WAIT_READ' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_READ_const = (int)MYSQL_WAIT_READ };
+-                                                 ^
+- stubgen/ffi_ml_types_stubgen.c:445:51: error: 'MYSQL_OPT_NONBLOCK' undeclared (first use in this function)
+-       enum { check_MYSQL_OPT_NONBLOCK_const = (int)MYSQL_OPT_NONBLOCK };
+-                                                    ^
+- Command exited with code 1.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' bindings/mariadb_bindings.cma bindings/mariadb_bindings.cmxa bindings/mariadb_bindings.a bindings/mariadb_bindings.cmxs lib/libmariadb_stubs.a lib/dllmariadb_stubs.so lib/mariadb.cma lib/mariadb.cmxa lib/mariadb.a lib/mariadb.cmxs stubgen/ffi_stubgen.byte stubgen/ffi_types_stubgen.byte examples/select/nonblocking_select_example.native examples/blocking/blocking_example.native examples/blocking/blocking_stress_test.native -use-ocamlfind -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+[ERROR] The compilation of mariadb failed at "make".
+[mariadb: ocamlfind remove] Command started
++ ocamlfind "remove" "mariadb" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mariadb.0.10.0)
+- mariadb_connector: ................................... false
+- mariadb_include_base: ................................ mysql
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ mariadb
+- Package version: ..................................... 0.10.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Link to the MariaDB C/Connector library: ............. false
+- Build the Lwt example: ............................... false
+- Build the Async example: ............................. false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_ctypes_stubs: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_ctypes_foreign: .................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- 
+- ocaml setup.ml -build 
+- W: Cannot find source file matching module 'Ffi_generated' in library mariadb.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'Ffi_generated_types' in library mariadb.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules bindings/ffi_bindings.ml > bindings/ffi_bindings.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I bindings -o bindings/ffi_bindings.cmo bindings/ffi_bindings.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a -warn-error +1..45 bindings/ffi_bindings.cmo -o bindings/mariadb_bindings.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I bindings -o bindings/ffi_bindings.cmx bindings/ffi_bindings.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a -warn-error +1..45 bindings/ffi_bindings.cmx -o bindings/mariadb_bindings.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared bindings/mariadb_bindings.cmxa bindings/ffi_bindings.cmx -o bindings/mariadb_bindings.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules stubgen/ffi_stubgen.ml > stubgen/ffi_stubgen.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -warn-error +1..45 -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I stubgen -I bindings -o stubgen/ffi_stubgen.cmo stubgen/ffi_stubgen.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -linkpkg -g -warn-error +1..45 -linkpkg -package ctypes.stubs -package ctypes.foreign bindings/mariadb_bindings.cma stubgen/ffi_stubgen.cmo -o stubgen/ffi_stubgen.byte
+- stubgen/ffi_stubgen.byte -c > lib/ffi_generated_stubs.c
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -I lib -package ctypes -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package unix -package ctypes.stubs -package ctypes.foreign -c lib/ffi_generated_stubs.c
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -I lib -package ctypes -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package unix -package ctypes.stubs -package ctypes.foreign -c lib/ffi_generated_stubs.c
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_9_mysql_error':
+- lib/ffi_generated_stubs.c:61:16: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+-     char* x46 = mysql_error(x45);
+-                 ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_12_mysql_stmt_error':
+- lib/ffi_generated_stubs.c:79:16: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+-     char* x55 = mysql_stmt_error(x54);
+-                 ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_37_mysql_close_start':
+- lib/ffi_generated_stubs.c:268:15: warning: implicit declaration of function 'mysql_close_start' [-Wimplicit-function-declaration]
+-     int x194 = mysql_close_start(x193);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_38_mysql_close_cont':
+- lib/ffi_generated_stubs.c:275:15: warning: implicit declaration of function 'mysql_close_cont' [-Wimplicit-function-declaration]
+-     int x201 = mysql_close_cont(x197, x198);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_39_mysql_real_connect_start':
+- lib/ffi_generated_stubs.c:294:4: warning: implicit declaration of function 'mysql_real_connect_start' [-Wimplicit-function-declaration]
+-     mysql_real_connect_start(x211, x212, x213, x214, x215, x216, x217, 
+-     ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_40_mysql_real_connect_cont':
+- lib/ffi_generated_stubs.c:320:15: warning: implicit declaration of function 'mysql_real_connect_cont' [-Wimplicit-function-declaration]
+-     int x242 = mysql_real_connect_cont(x237, x238, x239);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_41_mysql_real_query_start':
+- lib/ffi_generated_stubs.c:330:15: warning: implicit declaration of function 'mysql_real_query_start' [-Wimplicit-function-declaration]
+-     int x253 = mysql_real_query_start(x247, x248, x249, x250);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_42_mysql_real_query_cont':
+- lib/ffi_generated_stubs.c:339:15: warning: implicit declaration of function 'mysql_real_query_cont' [-Wimplicit-function-declaration]
+-     int x262 = mysql_real_query_cont(x257, x258, x259);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_43_mysql_fetch_row_start':
+- lib/ffi_generated_stubs.c:346:15: warning: implicit declaration of function 'mysql_fetch_row_start' [-Wimplicit-function-declaration]
+-     int x267 = mysql_fetch_row_start(x265, x266);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_44_mysql_fetch_row_cont':
+- lib/ffi_generated_stubs.c:355:15: warning: implicit declaration of function 'mysql_fetch_row_cont' [-Wimplicit-function-declaration]
+-     int x276 = mysql_fetch_row_cont(x271, x272, x273);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_45_mysql_free_result_start':
+- lib/ffi_generated_stubs.c:361:15: warning: implicit declaration of function 'mysql_free_result_start' [-Wimplicit-function-declaration]
+-     int x279 = mysql_free_result_start(x278);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_46_mysql_free_result_cont':
+- lib/ffi_generated_stubs.c:368:15: warning: implicit declaration of function 'mysql_free_result_cont' [-Wimplicit-function-declaration]
+-     int x286 = mysql_free_result_cont(x282, x283);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_47_mysql_get_socket':
+- lib/ffi_generated_stubs.c:374:15: warning: implicit declaration of function 'mysql_get_socket' [-Wimplicit-function-declaration]
+-     int x289 = mysql_get_socket(x288);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_48_mysql_get_timeout_value':
+- lib/ffi_generated_stubs.c:380:24: warning: implicit declaration of function 'mysql_get_timeout_value' [-Wimplicit-function-declaration]
+-     unsigned int x292 = mysql_get_timeout_value(x291);
+-                         ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_49_mysql_get_timeout_value_ms':
+- lib/ffi_generated_stubs.c:386:24: warning: implicit declaration of function 'mysql_get_timeout_value_ms' [-Wimplicit-function-declaration]
+-     unsigned int x295 = mysql_get_timeout_value_ms(x294);
+-                         ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_50_mysql_set_character_set_start':
+- lib/ffi_generated_stubs.c:395:15: warning: implicit declaration of function 'mysql_set_character_set_start' [-Wimplicit-function-declaration]
+-     int x302 = mysql_set_character_set_start(x299, x300, x301);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_51_mysql_set_character_set_cont':
+- lib/ffi_generated_stubs.c:404:15: warning: implicit declaration of function 'mysql_set_character_set_cont' [-Wimplicit-function-declaration]
+-     int x311 = mysql_set_character_set_cont(x306, x307, x308);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_52_mysql_select_db_start':
+- lib/ffi_generated_stubs.c:413:15: warning: implicit declaration of function 'mysql_select_db_start' [-Wimplicit-function-declaration]
+-     int x318 = mysql_select_db_start(x315, x316, x317);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_53_mysql_select_db_cont':
+- lib/ffi_generated_stubs.c:422:15: warning: implicit declaration of function 'mysql_select_db_cont' [-Wimplicit-function-declaration]
+-     int x327 = mysql_select_db_cont(x322, x323, x324);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_54_mysql_change_user_start':
+- lib/ffi_generated_stubs.c:434:15: warning: implicit declaration of function 'mysql_change_user_start' [-Wimplicit-function-declaration]
+-     int x338 = mysql_change_user_start(x333, x334, x335, x336, x337);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_55_mysql_change_user_cont':
+- lib/ffi_generated_stubs.c:443:15: warning: implicit declaration of function 'mysql_change_user_cont' [-Wimplicit-function-declaration]
+-     int x347 = mysql_change_user_cont(x342, x343, x344);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_56_mysql_set_server_option_start':
+- lib/ffi_generated_stubs.c:452:15: warning: implicit declaration of function 'mysql_set_server_option_start' [-Wimplicit-function-declaration]
+-     int x356 = mysql_set_server_option_start(x351, x352, x353);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_57_mysql_set_server_option_cont':
+- lib/ffi_generated_stubs.c:461:15: warning: implicit declaration of function 'mysql_set_server_option_cont' [-Wimplicit-function-declaration]
+-     int x365 = mysql_set_server_option_cont(x360, x361, x362);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_58_mysql_ping_start':
+- lib/ffi_generated_stubs.c:468:15: warning: implicit declaration of function 'mysql_ping_start' [-Wimplicit-function-declaration]
+-     int x370 = mysql_ping_start(x368, x369);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_59_mysql_ping_cont':
+- lib/ffi_generated_stubs.c:476:15: warning: implicit declaration of function 'mysql_ping_cont' [-Wimplicit-function-declaration]
+-     int x379 = mysql_ping_cont(x374, x375, x376);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_60_mysql_stmt_prepare_start':
+- lib/ffi_generated_stubs.c:486:15: warning: implicit declaration of function 'mysql_stmt_prepare_start' [-Wimplicit-function-declaration]
+-     int x390 = mysql_stmt_prepare_start(x384, x385, x386, x387);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_61_mysql_stmt_prepare_cont':
+- lib/ffi_generated_stubs.c:495:15: warning: implicit declaration of function 'mysql_stmt_prepare_cont' [-Wimplicit-function-declaration]
+-     int x399 = mysql_stmt_prepare_cont(x394, x395, x396);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_62_mysql_stmt_reset_start':
+- lib/ffi_generated_stubs.c:502:15: warning: implicit declaration of function 'mysql_stmt_reset_start' [-Wimplicit-function-declaration]
+-     int x404 = mysql_stmt_reset_start(x402, x403);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_63_mysql_stmt_reset_cont':
+- lib/ffi_generated_stubs.c:511:15: warning: implicit declaration of function 'mysql_stmt_reset_cont' [-Wimplicit-function-declaration]
+-     int x413 = mysql_stmt_reset_cont(x408, x409, x410);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_64_mysql_stmt_execute_start':
+- lib/ffi_generated_stubs.c:518:15: warning: implicit declaration of function 'mysql_stmt_execute_start' [-Wimplicit-function-declaration]
+-     int x418 = mysql_stmt_execute_start(x416, x417);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_65_mysql_stmt_execute_cont':
+- lib/ffi_generated_stubs.c:527:15: warning: implicit declaration of function 'mysql_stmt_execute_cont' [-Wimplicit-function-declaration]
+-     int x427 = mysql_stmt_execute_cont(x422, x423, x424);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_66_mysql_stmt_fetch_start':
+- lib/ffi_generated_stubs.c:534:15: warning: implicit declaration of function 'mysql_stmt_fetch_start' [-Wimplicit-function-declaration]
+-     int x432 = mysql_stmt_fetch_start(x430, x431);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_67_mysql_stmt_fetch_cont':
+- lib/ffi_generated_stubs.c:543:15: warning: implicit declaration of function 'mysql_stmt_fetch_cont' [-Wimplicit-function-declaration]
+-     int x441 = mysql_stmt_fetch_cont(x436, x437, x438);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_68_mysql_stmt_store_result_start':
+- lib/ffi_generated_stubs.c:550:15: warning: implicit declaration of function 'mysql_stmt_store_result_start' [-Wimplicit-function-declaration]
+-     int x446 = mysql_stmt_store_result_start(x444, x445);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_69_mysql_stmt_store_result_cont':
+- lib/ffi_generated_stubs.c:559:15: warning: implicit declaration of function 'mysql_stmt_store_result_cont' [-Wimplicit-function-declaration]
+-     int x455 = mysql_stmt_store_result_cont(x450, x451, x452);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_70_mysql_stmt_close_start':
+- lib/ffi_generated_stubs.c:566:15: warning: implicit declaration of function 'mysql_stmt_close_start' [-Wimplicit-function-declaration]
+-     int x460 = mysql_stmt_close_start(x458, x459);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_71_mysql_stmt_close_cont':
+- lib/ffi_generated_stubs.c:575:15: warning: implicit declaration of function 'mysql_stmt_close_cont' [-Wimplicit-function-declaration]
+-     int x469 = mysql_stmt_close_cont(x464, x465, x466);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_72_mysql_stmt_free_result_start':
+- lib/ffi_generated_stubs.c:582:15: warning: implicit declaration of function 'mysql_stmt_free_result_start' [-Wimplicit-function-declaration]
+-     int x474 = mysql_stmt_free_result_start(x472, x473);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_73_mysql_stmt_free_result_cont':
+- lib/ffi_generated_stubs.c:591:15: warning: implicit declaration of function 'mysql_stmt_free_result_cont' [-Wimplicit-function-declaration]
+-     int x483 = mysql_stmt_free_result_cont(x478, x479, x480);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_74_mysql_commit_start':
+- lib/ffi_generated_stubs.c:598:15: warning: implicit declaration of function 'mysql_commit_start' [-Wimplicit-function-declaration]
+-     int x488 = mysql_commit_start(x486, x487);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_75_mysql_commit_cont':
+- lib/ffi_generated_stubs.c:606:15: warning: implicit declaration of function 'mysql_commit_cont' [-Wimplicit-function-declaration]
+-     int x497 = mysql_commit_cont(x492, x493, x494);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_76_mysql_rollback_start':
+- lib/ffi_generated_stubs.c:613:15: warning: implicit declaration of function 'mysql_rollback_start' [-Wimplicit-function-declaration]
+-     int x502 = mysql_rollback_start(x500, x501);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_77_mysql_rollback_cont':
+- lib/ffi_generated_stubs.c:621:15: warning: implicit declaration of function 'mysql_rollback_cont' [-Wimplicit-function-declaration]
+-     int x511 = mysql_rollback_cont(x506, x507, x508);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_78_mysql_autocommit_start':
+- lib/ffi_generated_stubs.c:630:15: warning: implicit declaration of function 'mysql_autocommit_start' [-Wimplicit-function-declaration]
+-     int x520 = mysql_autocommit_start(x515, x516, (char)x517);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_79_mysql_autocommit_cont':
+- lib/ffi_generated_stubs.c:639:15: warning: implicit declaration of function 'mysql_autocommit_cont' [-Wimplicit-function-declaration]
+-     int x529 = mysql_autocommit_cont(x524, x525, x526);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_80_mysql_stmt_next_result_start':
+- lib/ffi_generated_stubs.c:646:15: warning: implicit declaration of function 'mysql_stmt_next_result_start' [-Wimplicit-function-declaration]
+-     int x534 = mysql_stmt_next_result_start(x532, x533);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_81_mysql_stmt_next_result_cont':
+- lib/ffi_generated_stubs.c:655:15: warning: implicit declaration of function 'mysql_stmt_next_result_cont' [-Wimplicit-function-declaration]
+-     int x543 = mysql_stmt_next_result_cont(x538, x539, x540);
+-                ^
+- mv ffi_generated_stubs.o lib/ffi_generated_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlmklib -o lib/mariadb_stubs -lmysqlclient lib/ffi_generated_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/mariadb.mli > lib/mariadb.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -warn-error +1..45 -package unix -package ctypes.stubs -package ctypes.foreign -I lib -I bindings -o lib/mariadb.cmi lib/mariadb.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/mariadb.ml > lib/mariadb.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/binding_wrappers.ml > lib/binding_wrappers.ml.depends
+- stubgen/ffi_stubgen.byte -ml > lib/ffi_generated.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/ffi_generated.ml > lib/ffi_generated.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules stubgen/ffi_types_stubgen.ml > stubgen/ffi_types_stubgen.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -warn-error +1..45 -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I stubgen -I bindings -o stubgen/ffi_types_stubgen.cmo stubgen/ffi_types_stubgen.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -linkpkg -g -warn-error +1..45 -linkpkg -package ctypes.stubs -package ctypes.foreign bindings/mariadb_bindings.cma stubgen/ffi_types_stubgen.cmo -o stubgen/ffi_types_stubgen.byte
+- stubgen/ffi_types_stubgen.byte > stubgen/ffi_ml_types_stubgen.c
+- gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT stubgen/ffi_ml_types_stubgen.c -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml -o stubgen/ffi_ml_types_subgen
+- + gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT stubgen/ffi_ml_types_stubgen.c -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml -o stubgen/ffi_ml_types_subgen
+- stubgen/ffi_ml_types_stubgen.c: In function 'main':
+- stubgen/ffi_ml_types_stubgen.c:319:51: error: 'MYSQL_WAIT_TIMEOUT' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_TIMEOUT_const = (int)MYSQL_WAIT_TIMEOUT };
+-                                                    ^
+- stubgen/ffi_ml_types_stubgen.c:319:51: note: each undeclared identifier is reported only once for each function it appears in
+- stubgen/ffi_ml_types_stubgen.c:326:50: error: 'MYSQL_WAIT_EXCEPT' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_EXCEPT_const = (int)MYSQL_WAIT_EXCEPT };
+-                                                   ^
+- stubgen/ffi_ml_types_stubgen.c:333:49: error: 'MYSQL_WAIT_WRITE' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_WRITE_const = (int)MYSQL_WAIT_WRITE };
+-                                                  ^
+- stubgen/ffi_ml_types_stubgen.c:340:48: error: 'MYSQL_WAIT_READ' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_READ_const = (int)MYSQL_WAIT_READ };
+-                                                 ^
+- stubgen/ffi_ml_types_stubgen.c:445:51: error: 'MYSQL_OPT_NONBLOCK' undeclared (first use in this function)
+-       enum { check_MYSQL_OPT_NONBLOCK_const = (int)MYSQL_OPT_NONBLOCK };
+-                                                    ^
+- Command exited with code 1.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' bindings/mariadb_bindings.cma bindings/mariadb_bindings.cmxa bindings/mariadb_bindings.a bindings/mariadb_bindings.cmxs lib/libmariadb_stubs.a lib/dllmariadb_stubs.so lib/mariadb.cma lib/mariadb.cmxa lib/mariadb.a lib/mariadb.cmxs stubgen/ffi_stubgen.byte stubgen/ffi_types_stubgen.byte examples/select/nonblocking_select_example.native examples/blocking/blocking_example.native examples/blocking/blocking_stress_test.native -use-ocamlfind -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/mariadb/META
+- mariadb_connector: ................................... false
+- mariadb_include_base: ................................ mysql
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ mariadb
+- Package version: ..................................... 0.10.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Link to the MariaDB C/Connector library: ............. false
+- Build the Lwt example: ............................... false
+- Build the Async example: ............................. false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_ctypes_stubs: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_ctypes_foreign: .................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- 
+- ocaml setup.ml -build 
+- W: Cannot find source file matching module 'Ffi_generated' in library mariadb.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'Ffi_generated_types' in library mariadb.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules bindings/ffi_bindings.ml > bindings/ffi_bindings.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I bindings -o bindings/ffi_bindings.cmo bindings/ffi_bindings.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a -warn-error +1..45 bindings/ffi_bindings.cmo -o bindings/mariadb_bindings.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I bindings -o bindings/ffi_bindings.cmx bindings/ffi_bindings.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a -warn-error +1..45 bindings/ffi_bindings.cmx -o bindings/mariadb_bindings.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared bindings/mariadb_bindings.cmxa bindings/ffi_bindings.cmx -o bindings/mariadb_bindings.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules stubgen/ffi_stubgen.ml > stubgen/ffi_stubgen.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -warn-error +1..45 -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I stubgen -I bindings -o stubgen/ffi_stubgen.cmo stubgen/ffi_stubgen.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -linkpkg -g -warn-error +1..45 -linkpkg -package ctypes.stubs -package ctypes.foreign bindings/mariadb_bindings.cma stubgen/ffi_stubgen.cmo -o stubgen/ffi_stubgen.byte
+- stubgen/ffi_stubgen.byte -c > lib/ffi_generated_stubs.c
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -I lib -package ctypes -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package unix -package ctypes.stubs -package ctypes.foreign -c lib/ffi_generated_stubs.c
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -I lib -package ctypes -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package unix -package ctypes.stubs -package ctypes.foreign -c lib/ffi_generated_stubs.c
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_9_mysql_error':
+- lib/ffi_generated_stubs.c:61:16: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+-     char* x46 = mysql_error(x45);
+-                 ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_12_mysql_stmt_error':
+- lib/ffi_generated_stubs.c:79:16: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+-     char* x55 = mysql_stmt_error(x54);
+-                 ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_37_mysql_close_start':
+- lib/ffi_generated_stubs.c:268:15: warning: implicit declaration of function 'mysql_close_start' [-Wimplicit-function-declaration]
+-     int x194 = mysql_close_start(x193);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_38_mysql_close_cont':
+- lib/ffi_generated_stubs.c:275:15: warning: implicit declaration of function 'mysql_close_cont' [-Wimplicit-function-declaration]
+-     int x201 = mysql_close_cont(x197, x198);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_39_mysql_real_connect_start':
+- lib/ffi_generated_stubs.c:294:4: warning: implicit declaration of function 'mysql_real_connect_start' [-Wimplicit-function-declaration]
+-     mysql_real_connect_start(x211, x212, x213, x214, x215, x216, x217, 
+-     ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_40_mysql_real_connect_cont':
+- lib/ffi_generated_stubs.c:320:15: warning: implicit declaration of function 'mysql_real_connect_cont' [-Wimplicit-function-declaration]
+-     int x242 = mysql_real_connect_cont(x237, x238, x239);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_41_mysql_real_query_start':
+- lib/ffi_generated_stubs.c:330:15: warning: implicit declaration of function 'mysql_real_query_start' [-Wimplicit-function-declaration]
+-     int x253 = mysql_real_query_start(x247, x248, x249, x250);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_42_mysql_real_query_cont':
+- lib/ffi_generated_stubs.c:339:15: warning: implicit declaration of function 'mysql_real_query_cont' [-Wimplicit-function-declaration]
+-     int x262 = mysql_real_query_cont(x257, x258, x259);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_43_mysql_fetch_row_start':
+- lib/ffi_generated_stubs.c:346:15: warning: implicit declaration of function 'mysql_fetch_row_start' [-Wimplicit-function-declaration]
+-     int x267 = mysql_fetch_row_start(x265, x266);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_44_mysql_fetch_row_cont':
+- lib/ffi_generated_stubs.c:355:15: warning: implicit declaration of function 'mysql_fetch_row_cont' [-Wimplicit-function-declaration]
+-     int x276 = mysql_fetch_row_cont(x271, x272, x273);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_45_mysql_free_result_start':
+- lib/ffi_generated_stubs.c:361:15: warning: implicit declaration of function 'mysql_free_result_start' [-Wimplicit-function-declaration]
+-     int x279 = mysql_free_result_start(x278);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_46_mysql_free_result_cont':
+- lib/ffi_generated_stubs.c:368:15: warning: implicit declaration of function 'mysql_free_result_cont' [-Wimplicit-function-declaration]
+-     int x286 = mysql_free_result_cont(x282, x283);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_47_mysql_get_socket':
+- lib/ffi_generated_stubs.c:374:15: warning: implicit declaration of function 'mysql_get_socket' [-Wimplicit-function-declaration]
+-     int x289 = mysql_get_socket(x288);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_48_mysql_get_timeout_value':
+- lib/ffi_generated_stubs.c:380:24: warning: implicit declaration of function 'mysql_get_timeout_value' [-Wimplicit-function-declaration]
+-     unsigned int x292 = mysql_get_timeout_value(x291);
+-                         ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_49_mysql_get_timeout_value_ms':
+- lib/ffi_generated_stubs.c:386:24: warning: implicit declaration of function 'mysql_get_timeout_value_ms' [-Wimplicit-function-declaration]
+-     unsigned int x295 = mysql_get_timeout_value_ms(x294);
+-                         ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_50_mysql_set_character_set_start':
+- lib/ffi_generated_stubs.c:395:15: warning: implicit declaration of function 'mysql_set_character_set_start' [-Wimplicit-function-declaration]
+-     int x302 = mysql_set_character_set_start(x299, x300, x301);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_51_mysql_set_character_set_cont':
+- lib/ffi_generated_stubs.c:404:15: warning: implicit declaration of function 'mysql_set_character_set_cont' [-Wimplicit-function-declaration]
+-     int x311 = mysql_set_character_set_cont(x306, x307, x308);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_52_mysql_select_db_start':
+- lib/ffi_generated_stubs.c:413:15: warning: implicit declaration of function 'mysql_select_db_start' [-Wimplicit-function-declaration]
+-     int x318 = mysql_select_db_start(x315, x316, x317);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_53_mysql_select_db_cont':
+- lib/ffi_generated_stubs.c:422:15: warning: implicit declaration of function 'mysql_select_db_cont' [-Wimplicit-function-declaration]
+-     int x327 = mysql_select_db_cont(x322, x323, x324);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_54_mysql_change_user_start':
+- lib/ffi_generated_stubs.c:434:15: warning: implicit declaration of function 'mysql_change_user_start' [-Wimplicit-function-declaration]
+-     int x338 = mysql_change_user_start(x333, x334, x335, x336, x337);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_55_mysql_change_user_cont':
+- lib/ffi_generated_stubs.c:443:15: warning: implicit declaration of function 'mysql_change_user_cont' [-Wimplicit-function-declaration]
+-     int x347 = mysql_change_user_cont(x342, x343, x344);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_56_mysql_set_server_option_start':
+- lib/ffi_generated_stubs.c:452:15: warning: implicit declaration of function 'mysql_set_server_option_start' [-Wimplicit-function-declaration]
+-     int x356 = mysql_set_server_option_start(x351, x352, x353);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_57_mysql_set_server_option_cont':
+- lib/ffi_generated_stubs.c:461:15: warning: implicit declaration of function 'mysql_set_server_option_cont' [-Wimplicit-function-declaration]
+-     int x365 = mysql_set_server_option_cont(x360, x361, x362);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_58_mysql_ping_start':
+- lib/ffi_generated_stubs.c:468:15: warning: implicit declaration of function 'mysql_ping_start' [-Wimplicit-function-declaration]
+-     int x370 = mysql_ping_start(x368, x369);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_59_mysql_ping_cont':
+- lib/ffi_generated_stubs.c:476:15: warning: implicit declaration of function 'mysql_ping_cont' [-Wimplicit-function-declaration]
+-     int x379 = mysql_ping_cont(x374, x375, x376);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_60_mysql_stmt_prepare_start':
+- lib/ffi_generated_stubs.c:486:15: warning: implicit declaration of function 'mysql_stmt_prepare_start' [-Wimplicit-function-declaration]
+-     int x390 = mysql_stmt_prepare_start(x384, x385, x386, x387);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_61_mysql_stmt_prepare_cont':
+- lib/ffi_generated_stubs.c:495:15: warning: implicit declaration of function 'mysql_stmt_prepare_cont' [-Wimplicit-function-declaration]
+-     int x399 = mysql_stmt_prepare_cont(x394, x395, x396);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_62_mysql_stmt_reset_start':
+- lib/ffi_generated_stubs.c:502:15: warning: implicit declaration of function 'mysql_stmt_reset_start' [-Wimplicit-function-declaration]
+-     int x404 = mysql_stmt_reset_start(x402, x403);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_63_mysql_stmt_reset_cont':
+- lib/ffi_generated_stubs.c:511:15: warning: implicit declaration of function 'mysql_stmt_reset_cont' [-Wimplicit-function-declaration]
+-     int x413 = mysql_stmt_reset_cont(x408, x409, x410);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_64_mysql_stmt_execute_start':
+- lib/ffi_generated_stubs.c:518:15: warning: implicit declaration of function 'mysql_stmt_execute_start' [-Wimplicit-function-declaration]
+-     int x418 = mysql_stmt_execute_start(x416, x417);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_65_mysql_stmt_execute_cont':
+- lib/ffi_generated_stubs.c:527:15: warning: implicit declaration of function 'mysql_stmt_execute_cont' [-Wimplicit-function-declaration]
+-     int x427 = mysql_stmt_execute_cont(x422, x423, x424);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_66_mysql_stmt_fetch_start':
+- lib/ffi_generated_stubs.c:534:15: warning: implicit declaration of function 'mysql_stmt_fetch_start' [-Wimplicit-function-declaration]
+-     int x432 = mysql_stmt_fetch_start(x430, x431);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_67_mysql_stmt_fetch_cont':
+- lib/ffi_generated_stubs.c:543:15: warning: implicit declaration of function 'mysql_stmt_fetch_cont' [-Wimplicit-function-declaration]
+-     int x441 = mysql_stmt_fetch_cont(x436, x437, x438);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_68_mysql_stmt_store_result_start':
+- lib/ffi_generated_stubs.c:550:15: warning: implicit declaration of function 'mysql_stmt_store_result_start' [-Wimplicit-function-declaration]
+-     int x446 = mysql_stmt_store_result_start(x444, x445);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_69_mysql_stmt_store_result_cont':
+- lib/ffi_generated_stubs.c:559:15: warning: implicit declaration of function 'mysql_stmt_store_result_cont' [-Wimplicit-function-declaration]
+-     int x455 = mysql_stmt_store_result_cont(x450, x451, x452);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_70_mysql_stmt_close_start':
+- lib/ffi_generated_stubs.c:566:15: warning: implicit declaration of function 'mysql_stmt_close_start' [-Wimplicit-function-declaration]
+-     int x460 = mysql_stmt_close_start(x458, x459);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_71_mysql_stmt_close_cont':
+- lib/ffi_generated_stubs.c:575:15: warning: implicit declaration of function 'mysql_stmt_close_cont' [-Wimplicit-function-declaration]
+-     int x469 = mysql_stmt_close_cont(x464, x465, x466);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_72_mysql_stmt_free_result_start':
+- lib/ffi_generated_stubs.c:582:15: warning: implicit declaration of function 'mysql_stmt_free_result_start' [-Wimplicit-function-declaration]
+-     int x474 = mysql_stmt_free_result_start(x472, x473);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_73_mysql_stmt_free_result_cont':
+- lib/ffi_generated_stubs.c:591:15: warning: implicit declaration of function 'mysql_stmt_free_result_cont' [-Wimplicit-function-declaration]
+-     int x483 = mysql_stmt_free_result_cont(x478, x479, x480);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_74_mysql_commit_start':
+- lib/ffi_generated_stubs.c:598:15: warning: implicit declaration of function 'mysql_commit_start' [-Wimplicit-function-declaration]
+-     int x488 = mysql_commit_start(x486, x487);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_75_mysql_commit_cont':
+- lib/ffi_generated_stubs.c:606:15: warning: implicit declaration of function 'mysql_commit_cont' [-Wimplicit-function-declaration]
+-     int x497 = mysql_commit_cont(x492, x493, x494);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_76_mysql_rollback_start':
+- lib/ffi_generated_stubs.c:613:15: warning: implicit declaration of function 'mysql_rollback_start' [-Wimplicit-function-declaration]
+-     int x502 = mysql_rollback_start(x500, x501);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_77_mysql_rollback_cont':
+- lib/ffi_generated_stubs.c:621:15: warning: implicit declaration of function 'mysql_rollback_cont' [-Wimplicit-function-declaration]
+-     int x511 = mysql_rollback_cont(x506, x507, x508);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_78_mysql_autocommit_start':
+- lib/ffi_generated_stubs.c:630:15: warning: implicit declaration of function 'mysql_autocommit_start' [-Wimplicit-function-declaration]
+-     int x520 = mysql_autocommit_start(x515, x516, (char)x517);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_79_mysql_autocommit_cont':
+- lib/ffi_generated_stubs.c:639:15: warning: implicit declaration of function 'mysql_autocommit_cont' [-Wimplicit-function-declaration]
+-     int x529 = mysql_autocommit_cont(x524, x525, x526);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_80_mysql_stmt_next_result_start':
+- lib/ffi_generated_stubs.c:646:15: warning: implicit declaration of function 'mysql_stmt_next_result_start' [-Wimplicit-function-declaration]
+-     int x534 = mysql_stmt_next_result_start(x532, x533);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_81_mysql_stmt_next_result_cont':
+- lib/ffi_generated_stubs.c:655:15: warning: implicit declaration of function 'mysql_stmt_next_result_cont' [-Wimplicit-function-declaration]
+-     int x543 = mysql_stmt_next_result_cont(x538, x539, x540);
+-                ^
+- mv ffi_generated_stubs.o lib/ffi_generated_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlmklib -o lib/mariadb_stubs -lmysqlclient lib/ffi_generated_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/mariadb.mli > lib/mariadb.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -warn-error +1..45 -package unix -package ctypes.stubs -package ctypes.foreign -I lib -I bindings -o lib/mariadb.cmi lib/mariadb.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/mariadb.ml > lib/mariadb.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/binding_wrappers.ml > lib/binding_wrappers.ml.depends
+- stubgen/ffi_stubgen.byte -ml > lib/ffi_generated.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/ffi_generated.ml > lib/ffi_generated.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules stubgen/ffi_types_stubgen.ml > stubgen/ffi_types_stubgen.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -warn-error +1..45 -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I stubgen -I bindings -o stubgen/ffi_types_stubgen.cmo stubgen/ffi_types_stubgen.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -linkpkg -g -warn-error +1..45 -linkpkg -package ctypes.stubs -package ctypes.foreign bindings/mariadb_bindings.cma stubgen/ffi_types_stubgen.cmo -o stubgen/ffi_types_stubgen.byte
+- stubgen/ffi_types_stubgen.byte > stubgen/ffi_ml_types_stubgen.c
+- gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT stubgen/ffi_ml_types_stubgen.c -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml -o stubgen/ffi_ml_types_subgen
+- + gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT stubgen/ffi_ml_types_stubgen.c -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml -o stubgen/ffi_ml_types_subgen
+- stubgen/ffi_ml_types_stubgen.c: In function 'main':
+- stubgen/ffi_ml_types_stubgen.c:319:51: error: 'MYSQL_WAIT_TIMEOUT' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_TIMEOUT_const = (int)MYSQL_WAIT_TIMEOUT };
+-                                                    ^
+- stubgen/ffi_ml_types_stubgen.c:319:51: note: each undeclared identifier is reported only once for each function it appears in
+- stubgen/ffi_ml_types_stubgen.c:326:50: error: 'MYSQL_WAIT_EXCEPT' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_EXCEPT_const = (int)MYSQL_WAIT_EXCEPT };
+-                                                   ^
+- stubgen/ffi_ml_types_stubgen.c:333:49: error: 'MYSQL_WAIT_WRITE' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_WRITE_const = (int)MYSQL_WAIT_WRITE };
+-                                                  ^
+- stubgen/ffi_ml_types_stubgen.c:340:48: error: 'MYSQL_WAIT_READ' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_READ_const = (int)MYSQL_WAIT_READ };
+-                                                 ^
+- stubgen/ffi_ml_types_stubgen.c:445:51: error: 'MYSQL_OPT_NONBLOCK' undeclared (first use in this function)
+-       enum { check_MYSQL_OPT_NONBLOCK_const = (int)MYSQL_OPT_NONBLOCK };
+-                                                    ^
+- Command exited with code 1.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' bindings/mariadb_bindings.cma bindings/mariadb_bindings.cmxa bindings/mariadb_bindings.a bindings/mariadb_bindings.cmxs lib/libmariadb_stubs.a lib/dllmariadb_stubs.so lib/mariadb.cma lib/mariadb.cmxa lib/mariadb.a lib/mariadb.cmxs stubgen/ffi_stubgen.byte stubgen/ffi_types_stubgen.byte examples/select/nonblocking_select_example.native examples/blocking/blocking_example.native examples/blocking/blocking_stress_test.native -use-ocamlfind -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/mariadb/META
+[mariadb: ocamlfind remove] Command started
++ ocamlfind "remove" "mariadb_bindings" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mariadb.0.10.0)
+- mariadb_connector: ................................... false
+- mariadb_include_base: ................................ mysql
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ mariadb
+- Package version: ..................................... 0.10.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Link to the MariaDB C/Connector library: ............. false
+- Build the Lwt example: ............................... false
+- Build the Async example: ............................. false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_ctypes_stubs: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_ctypes_foreign: .................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- 
+- ocaml setup.ml -build 
+- W: Cannot find source file matching module 'Ffi_generated' in library mariadb.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'Ffi_generated_types' in library mariadb.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules bindings/ffi_bindings.ml > bindings/ffi_bindings.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I bindings -o bindings/ffi_bindings.cmo bindings/ffi_bindings.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a -warn-error +1..45 bindings/ffi_bindings.cmo -o bindings/mariadb_bindings.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I bindings -o bindings/ffi_bindings.cmx bindings/ffi_bindings.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a -warn-error +1..45 bindings/ffi_bindings.cmx -o bindings/mariadb_bindings.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared bindings/mariadb_bindings.cmxa bindings/ffi_bindings.cmx -o bindings/mariadb_bindings.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules stubgen/ffi_stubgen.ml > stubgen/ffi_stubgen.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -warn-error +1..45 -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I stubgen -I bindings -o stubgen/ffi_stubgen.cmo stubgen/ffi_stubgen.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -linkpkg -g -warn-error +1..45 -linkpkg -package ctypes.stubs -package ctypes.foreign bindings/mariadb_bindings.cma stubgen/ffi_stubgen.cmo -o stubgen/ffi_stubgen.byte
+- stubgen/ffi_stubgen.byte -c > lib/ffi_generated_stubs.c
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -I lib -package ctypes -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package unix -package ctypes.stubs -package ctypes.foreign -c lib/ffi_generated_stubs.c
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -I lib -package ctypes -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package unix -package ctypes.stubs -package ctypes.foreign -c lib/ffi_generated_stubs.c
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_9_mysql_error':
+- lib/ffi_generated_stubs.c:61:16: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+-     char* x46 = mysql_error(x45);
+-                 ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_12_mysql_stmt_error':
+- lib/ffi_generated_stubs.c:79:16: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+-     char* x55 = mysql_stmt_error(x54);
+-                 ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_37_mysql_close_start':
+- lib/ffi_generated_stubs.c:268:15: warning: implicit declaration of function 'mysql_close_start' [-Wimplicit-function-declaration]
+-     int x194 = mysql_close_start(x193);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_38_mysql_close_cont':
+- lib/ffi_generated_stubs.c:275:15: warning: implicit declaration of function 'mysql_close_cont' [-Wimplicit-function-declaration]
+-     int x201 = mysql_close_cont(x197, x198);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_39_mysql_real_connect_start':
+- lib/ffi_generated_stubs.c:294:4: warning: implicit declaration of function 'mysql_real_connect_start' [-Wimplicit-function-declaration]
+-     mysql_real_connect_start(x211, x212, x213, x214, x215, x216, x217, 
+-     ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_40_mysql_real_connect_cont':
+- lib/ffi_generated_stubs.c:320:15: warning: implicit declaration of function 'mysql_real_connect_cont' [-Wimplicit-function-declaration]
+-     int x242 = mysql_real_connect_cont(x237, x238, x239);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_41_mysql_real_query_start':
+- lib/ffi_generated_stubs.c:330:15: warning: implicit declaration of function 'mysql_real_query_start' [-Wimplicit-function-declaration]
+-     int x253 = mysql_real_query_start(x247, x248, x249, x250);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_42_mysql_real_query_cont':
+- lib/ffi_generated_stubs.c:339:15: warning: implicit declaration of function 'mysql_real_query_cont' [-Wimplicit-function-declaration]
+-     int x262 = mysql_real_query_cont(x257, x258, x259);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_43_mysql_fetch_row_start':
+- lib/ffi_generated_stubs.c:346:15: warning: implicit declaration of function 'mysql_fetch_row_start' [-Wimplicit-function-declaration]
+-     int x267 = mysql_fetch_row_start(x265, x266);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_44_mysql_fetch_row_cont':
+- lib/ffi_generated_stubs.c:355:15: warning: implicit declaration of function 'mysql_fetch_row_cont' [-Wimplicit-function-declaration]
+-     int x276 = mysql_fetch_row_cont(x271, x272, x273);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_45_mysql_free_result_start':
+- lib/ffi_generated_stubs.c:361:15: warning: implicit declaration of function 'mysql_free_result_start' [-Wimplicit-function-declaration]
+-     int x279 = mysql_free_result_start(x278);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_46_mysql_free_result_cont':
+- lib/ffi_generated_stubs.c:368:15: warning: implicit declaration of function 'mysql_free_result_cont' [-Wimplicit-function-declaration]
+-     int x286 = mysql_free_result_cont(x282, x283);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_47_mysql_get_socket':
+- lib/ffi_generated_stubs.c:374:15: warning: implicit declaration of function 'mysql_get_socket' [-Wimplicit-function-declaration]
+-     int x289 = mysql_get_socket(x288);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_48_mysql_get_timeout_value':
+- lib/ffi_generated_stubs.c:380:24: warning: implicit declaration of function 'mysql_get_timeout_value' [-Wimplicit-function-declaration]
+-     unsigned int x292 = mysql_get_timeout_value(x291);
+-                         ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_49_mysql_get_timeout_value_ms':
+- lib/ffi_generated_stubs.c:386:24: warning: implicit declaration of function 'mysql_get_timeout_value_ms' [-Wimplicit-function-declaration]
+-     unsigned int x295 = mysql_get_timeout_value_ms(x294);
+-                         ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_50_mysql_set_character_set_start':
+- lib/ffi_generated_stubs.c:395:15: warning: implicit declaration of function 'mysql_set_character_set_start' [-Wimplicit-function-declaration]
+-     int x302 = mysql_set_character_set_start(x299, x300, x301);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_51_mysql_set_character_set_cont':
+- lib/ffi_generated_stubs.c:404:15: warning: implicit declaration of function 'mysql_set_character_set_cont' [-Wimplicit-function-declaration]
+-     int x311 = mysql_set_character_set_cont(x306, x307, x308);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_52_mysql_select_db_start':
+- lib/ffi_generated_stubs.c:413:15: warning: implicit declaration of function 'mysql_select_db_start' [-Wimplicit-function-declaration]
+-     int x318 = mysql_select_db_start(x315, x316, x317);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_53_mysql_select_db_cont':
+- lib/ffi_generated_stubs.c:422:15: warning: implicit declaration of function 'mysql_select_db_cont' [-Wimplicit-function-declaration]
+-     int x327 = mysql_select_db_cont(x322, x323, x324);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_54_mysql_change_user_start':
+- lib/ffi_generated_stubs.c:434:15: warning: implicit declaration of function 'mysql_change_user_start' [-Wimplicit-function-declaration]
+-     int x338 = mysql_change_user_start(x333, x334, x335, x336, x337);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_55_mysql_change_user_cont':
+- lib/ffi_generated_stubs.c:443:15: warning: implicit declaration of function 'mysql_change_user_cont' [-Wimplicit-function-declaration]
+-     int x347 = mysql_change_user_cont(x342, x343, x344);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_56_mysql_set_server_option_start':
+- lib/ffi_generated_stubs.c:452:15: warning: implicit declaration of function 'mysql_set_server_option_start' [-Wimplicit-function-declaration]
+-     int x356 = mysql_set_server_option_start(x351, x352, x353);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_57_mysql_set_server_option_cont':
+- lib/ffi_generated_stubs.c:461:15: warning: implicit declaration of function 'mysql_set_server_option_cont' [-Wimplicit-function-declaration]
+-     int x365 = mysql_set_server_option_cont(x360, x361, x362);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_58_mysql_ping_start':
+- lib/ffi_generated_stubs.c:468:15: warning: implicit declaration of function 'mysql_ping_start' [-Wimplicit-function-declaration]
+-     int x370 = mysql_ping_start(x368, x369);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_59_mysql_ping_cont':
+- lib/ffi_generated_stubs.c:476:15: warning: implicit declaration of function 'mysql_ping_cont' [-Wimplicit-function-declaration]
+-     int x379 = mysql_ping_cont(x374, x375, x376);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_60_mysql_stmt_prepare_start':
+- lib/ffi_generated_stubs.c:486:15: warning: implicit declaration of function 'mysql_stmt_prepare_start' [-Wimplicit-function-declaration]
+-     int x390 = mysql_stmt_prepare_start(x384, x385, x386, x387);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_61_mysql_stmt_prepare_cont':
+- lib/ffi_generated_stubs.c:495:15: warning: implicit declaration of function 'mysql_stmt_prepare_cont' [-Wimplicit-function-declaration]
+-     int x399 = mysql_stmt_prepare_cont(x394, x395, x396);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_62_mysql_stmt_reset_start':
+- lib/ffi_generated_stubs.c:502:15: warning: implicit declaration of function 'mysql_stmt_reset_start' [-Wimplicit-function-declaration]
+-     int x404 = mysql_stmt_reset_start(x402, x403);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_63_mysql_stmt_reset_cont':
+- lib/ffi_generated_stubs.c:511:15: warning: implicit declaration of function 'mysql_stmt_reset_cont' [-Wimplicit-function-declaration]
+-     int x413 = mysql_stmt_reset_cont(x408, x409, x410);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_64_mysql_stmt_execute_start':
+- lib/ffi_generated_stubs.c:518:15: warning: implicit declaration of function 'mysql_stmt_execute_start' [-Wimplicit-function-declaration]
+-     int x418 = mysql_stmt_execute_start(x416, x417);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_65_mysql_stmt_execute_cont':
+- lib/ffi_generated_stubs.c:527:15: warning: implicit declaration of function 'mysql_stmt_execute_cont' [-Wimplicit-function-declaration]
+-     int x427 = mysql_stmt_execute_cont(x422, x423, x424);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_66_mysql_stmt_fetch_start':
+- lib/ffi_generated_stubs.c:534:15: warning: implicit declaration of function 'mysql_stmt_fetch_start' [-Wimplicit-function-declaration]
+-     int x432 = mysql_stmt_fetch_start(x430, x431);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_67_mysql_stmt_fetch_cont':
+- lib/ffi_generated_stubs.c:543:15: warning: implicit declaration of function 'mysql_stmt_fetch_cont' [-Wimplicit-function-declaration]
+-     int x441 = mysql_stmt_fetch_cont(x436, x437, x438);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_68_mysql_stmt_store_result_start':
+- lib/ffi_generated_stubs.c:550:15: warning: implicit declaration of function 'mysql_stmt_store_result_start' [-Wimplicit-function-declaration]
+-     int x446 = mysql_stmt_store_result_start(x444, x445);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_69_mysql_stmt_store_result_cont':
+- lib/ffi_generated_stubs.c:559:15: warning: implicit declaration of function 'mysql_stmt_store_result_cont' [-Wimplicit-function-declaration]
+-     int x455 = mysql_stmt_store_result_cont(x450, x451, x452);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_70_mysql_stmt_close_start':
+- lib/ffi_generated_stubs.c:566:15: warning: implicit declaration of function 'mysql_stmt_close_start' [-Wimplicit-function-declaration]
+-     int x460 = mysql_stmt_close_start(x458, x459);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_71_mysql_stmt_close_cont':
+- lib/ffi_generated_stubs.c:575:15: warning: implicit declaration of function 'mysql_stmt_close_cont' [-Wimplicit-function-declaration]
+-     int x469 = mysql_stmt_close_cont(x464, x465, x466);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_72_mysql_stmt_free_result_start':
+- lib/ffi_generated_stubs.c:582:15: warning: implicit declaration of function 'mysql_stmt_free_result_start' [-Wimplicit-function-declaration]
+-     int x474 = mysql_stmt_free_result_start(x472, x473);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_73_mysql_stmt_free_result_cont':
+- lib/ffi_generated_stubs.c:591:15: warning: implicit declaration of function 'mysql_stmt_free_result_cont' [-Wimplicit-function-declaration]
+-     int x483 = mysql_stmt_free_result_cont(x478, x479, x480);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_74_mysql_commit_start':
+- lib/ffi_generated_stubs.c:598:15: warning: implicit declaration of function 'mysql_commit_start' [-Wimplicit-function-declaration]
+-     int x488 = mysql_commit_start(x486, x487);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_75_mysql_commit_cont':
+- lib/ffi_generated_stubs.c:606:15: warning: implicit declaration of function 'mysql_commit_cont' [-Wimplicit-function-declaration]
+-     int x497 = mysql_commit_cont(x492, x493, x494);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_76_mysql_rollback_start':
+- lib/ffi_generated_stubs.c:613:15: warning: implicit declaration of function 'mysql_rollback_start' [-Wimplicit-function-declaration]
+-     int x502 = mysql_rollback_start(x500, x501);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_77_mysql_rollback_cont':
+- lib/ffi_generated_stubs.c:621:15: warning: implicit declaration of function 'mysql_rollback_cont' [-Wimplicit-function-declaration]
+-     int x511 = mysql_rollback_cont(x506, x507, x508);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_78_mysql_autocommit_start':
+- lib/ffi_generated_stubs.c:630:15: warning: implicit declaration of function 'mysql_autocommit_start' [-Wimplicit-function-declaration]
+-     int x520 = mysql_autocommit_start(x515, x516, (char)x517);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_79_mysql_autocommit_cont':
+- lib/ffi_generated_stubs.c:639:15: warning: implicit declaration of function 'mysql_autocommit_cont' [-Wimplicit-function-declaration]
+-     int x529 = mysql_autocommit_cont(x524, x525, x526);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_80_mysql_stmt_next_result_start':
+- lib/ffi_generated_stubs.c:646:15: warning: implicit declaration of function 'mysql_stmt_next_result_start' [-Wimplicit-function-declaration]
+-     int x534 = mysql_stmt_next_result_start(x532, x533);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_81_mysql_stmt_next_result_cont':
+- lib/ffi_generated_stubs.c:655:15: warning: implicit declaration of function 'mysql_stmt_next_result_cont' [-Wimplicit-function-declaration]
+-     int x543 = mysql_stmt_next_result_cont(x538, x539, x540);
+-                ^
+- mv ffi_generated_stubs.o lib/ffi_generated_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlmklib -o lib/mariadb_stubs -lmysqlclient lib/ffi_generated_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/mariadb.mli > lib/mariadb.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -warn-error +1..45 -package unix -package ctypes.stubs -package ctypes.foreign -I lib -I bindings -o lib/mariadb.cmi lib/mariadb.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/mariadb.ml > lib/mariadb.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/binding_wrappers.ml > lib/binding_wrappers.ml.depends
+- stubgen/ffi_stubgen.byte -ml > lib/ffi_generated.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/ffi_generated.ml > lib/ffi_generated.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules stubgen/ffi_types_stubgen.ml > stubgen/ffi_types_stubgen.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -warn-error +1..45 -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I stubgen -I bindings -o stubgen/ffi_types_stubgen.cmo stubgen/ffi_types_stubgen.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -linkpkg -g -warn-error +1..45 -linkpkg -package ctypes.stubs -package ctypes.foreign bindings/mariadb_bindings.cma stubgen/ffi_types_stubgen.cmo -o stubgen/ffi_types_stubgen.byte
+- stubgen/ffi_types_stubgen.byte > stubgen/ffi_ml_types_stubgen.c
+- gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT stubgen/ffi_ml_types_stubgen.c -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml -o stubgen/ffi_ml_types_subgen
+- + gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT stubgen/ffi_ml_types_stubgen.c -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml -o stubgen/ffi_ml_types_subgen
+- stubgen/ffi_ml_types_stubgen.c: In function 'main':
+- stubgen/ffi_ml_types_stubgen.c:319:51: error: 'MYSQL_WAIT_TIMEOUT' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_TIMEOUT_const = (int)MYSQL_WAIT_TIMEOUT };
+-                                                    ^
+- stubgen/ffi_ml_types_stubgen.c:319:51: note: each undeclared identifier is reported only once for each function it appears in
+- stubgen/ffi_ml_types_stubgen.c:326:50: error: 'MYSQL_WAIT_EXCEPT' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_EXCEPT_const = (int)MYSQL_WAIT_EXCEPT };
+-                                                   ^
+- stubgen/ffi_ml_types_stubgen.c:333:49: error: 'MYSQL_WAIT_WRITE' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_WRITE_const = (int)MYSQL_WAIT_WRITE };
+-                                                  ^
+- stubgen/ffi_ml_types_stubgen.c:340:48: error: 'MYSQL_WAIT_READ' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_READ_const = (int)MYSQL_WAIT_READ };
+-                                                 ^
+- stubgen/ffi_ml_types_stubgen.c:445:51: error: 'MYSQL_OPT_NONBLOCK' undeclared (first use in this function)
+-       enum { check_MYSQL_OPT_NONBLOCK_const = (int)MYSQL_OPT_NONBLOCK };
+-                                                    ^
+- Command exited with code 1.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' bindings/mariadb_bindings.cma bindings/mariadb_bindings.cmxa bindings/mariadb_bindings.a bindings/mariadb_bindings.cmxs lib/libmariadb_stubs.a lib/dllmariadb_stubs.so lib/mariadb.cma lib/mariadb.cmxa lib/mariadb.a lib/mariadb.cmxs stubgen/ffi_stubgen.byte stubgen/ffi_types_stubgen.byte examples/select/nonblocking_select_example.native examples/blocking/blocking_example.native examples/blocking/blocking_stress_test.native -use-ocamlfind -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/mariadb/META
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/mariadb_bindings/META
+- mariadb_connector: ................................... false
+- mariadb_include_base: ................................ mysql
+- 
+- Configuration:
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ mariadb
+- Package version: ..................................... 0.10.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Link to the MariaDB C/Connector library: ............. false
+- Build the Lwt example: ............................... false
+- Build the Async example: ............................. false
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_ctypes_stubs: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_ctypes_foreign: .................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes
+- pkg_unix: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- 
+- ocaml setup.ml -build 
+- W: Cannot find source file matching module 'Ffi_generated' in library mariadb.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'Ffi_generated_types' in library mariadb.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules bindings/ffi_bindings.ml > bindings/ffi_bindings.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I bindings -o bindings/ffi_bindings.cmo bindings/ffi_bindings.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a -warn-error +1..45 bindings/ffi_bindings.cmo -o bindings/mariadb_bindings.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I bindings -o bindings/ffi_bindings.cmx bindings/ffi_bindings.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a -warn-error +1..45 bindings/ffi_bindings.cmx -o bindings/mariadb_bindings.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared bindings/mariadb_bindings.cmxa bindings/ffi_bindings.cmx -o bindings/mariadb_bindings.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules stubgen/ffi_stubgen.ml > stubgen/ffi_stubgen.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -warn-error +1..45 -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I stubgen -I bindings -o stubgen/ffi_stubgen.cmo stubgen/ffi_stubgen.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -linkpkg -g -warn-error +1..45 -linkpkg -package ctypes.stubs -package ctypes.foreign bindings/mariadb_bindings.cma stubgen/ffi_stubgen.cmo -o stubgen/ffi_stubgen.byte
+- stubgen/ffi_stubgen.byte -c > lib/ffi_generated_stubs.c
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -I lib -package ctypes -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package unix -package ctypes.stubs -package ctypes.foreign -c lib/ffi_generated_stubs.c
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -I lib -package ctypes -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -package unix -package ctypes.stubs -package ctypes.foreign -c lib/ffi_generated_stubs.c
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_9_mysql_error':
+- lib/ffi_generated_stubs.c:61:16: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+-     char* x46 = mysql_error(x45);
+-                 ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_12_mysql_stmt_error':
+- lib/ffi_generated_stubs.c:79:16: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+-     char* x55 = mysql_stmt_error(x54);
+-                 ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_37_mysql_close_start':
+- lib/ffi_generated_stubs.c:268:15: warning: implicit declaration of function 'mysql_close_start' [-Wimplicit-function-declaration]
+-     int x194 = mysql_close_start(x193);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_38_mysql_close_cont':
+- lib/ffi_generated_stubs.c:275:15: warning: implicit declaration of function 'mysql_close_cont' [-Wimplicit-function-declaration]
+-     int x201 = mysql_close_cont(x197, x198);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_39_mysql_real_connect_start':
+- lib/ffi_generated_stubs.c:294:4: warning: implicit declaration of function 'mysql_real_connect_start' [-Wimplicit-function-declaration]
+-     mysql_real_connect_start(x211, x212, x213, x214, x215, x216, x217, 
+-     ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_40_mysql_real_connect_cont':
+- lib/ffi_generated_stubs.c:320:15: warning: implicit declaration of function 'mysql_real_connect_cont' [-Wimplicit-function-declaration]
+-     int x242 = mysql_real_connect_cont(x237, x238, x239);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_41_mysql_real_query_start':
+- lib/ffi_generated_stubs.c:330:15: warning: implicit declaration of function 'mysql_real_query_start' [-Wimplicit-function-declaration]
+-     int x253 = mysql_real_query_start(x247, x248, x249, x250);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_42_mysql_real_query_cont':
+- lib/ffi_generated_stubs.c:339:15: warning: implicit declaration of function 'mysql_real_query_cont' [-Wimplicit-function-declaration]
+-     int x262 = mysql_real_query_cont(x257, x258, x259);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_43_mysql_fetch_row_start':
+- lib/ffi_generated_stubs.c:346:15: warning: implicit declaration of function 'mysql_fetch_row_start' [-Wimplicit-function-declaration]
+-     int x267 = mysql_fetch_row_start(x265, x266);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_44_mysql_fetch_row_cont':
+- lib/ffi_generated_stubs.c:355:15: warning: implicit declaration of function 'mysql_fetch_row_cont' [-Wimplicit-function-declaration]
+-     int x276 = mysql_fetch_row_cont(x271, x272, x273);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_45_mysql_free_result_start':
+- lib/ffi_generated_stubs.c:361:15: warning: implicit declaration of function 'mysql_free_result_start' [-Wimplicit-function-declaration]
+-     int x279 = mysql_free_result_start(x278);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_46_mysql_free_result_cont':
+- lib/ffi_generated_stubs.c:368:15: warning: implicit declaration of function 'mysql_free_result_cont' [-Wimplicit-function-declaration]
+-     int x286 = mysql_free_result_cont(x282, x283);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_47_mysql_get_socket':
+- lib/ffi_generated_stubs.c:374:15: warning: implicit declaration of function 'mysql_get_socket' [-Wimplicit-function-declaration]
+-     int x289 = mysql_get_socket(x288);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_48_mysql_get_timeout_value':
+- lib/ffi_generated_stubs.c:380:24: warning: implicit declaration of function 'mysql_get_timeout_value' [-Wimplicit-function-declaration]
+-     unsigned int x292 = mysql_get_timeout_value(x291);
+-                         ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_49_mysql_get_timeout_value_ms':
+- lib/ffi_generated_stubs.c:386:24: warning: implicit declaration of function 'mysql_get_timeout_value_ms' [-Wimplicit-function-declaration]
+-     unsigned int x295 = mysql_get_timeout_value_ms(x294);
+-                         ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_50_mysql_set_character_set_start':
+- lib/ffi_generated_stubs.c:395:15: warning: implicit declaration of function 'mysql_set_character_set_start' [-Wimplicit-function-declaration]
+-     int x302 = mysql_set_character_set_start(x299, x300, x301);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_51_mysql_set_character_set_cont':
+- lib/ffi_generated_stubs.c:404:15: warning: implicit declaration of function 'mysql_set_character_set_cont' [-Wimplicit-function-declaration]
+-     int x311 = mysql_set_character_set_cont(x306, x307, x308);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_52_mysql_select_db_start':
+- lib/ffi_generated_stubs.c:413:15: warning: implicit declaration of function 'mysql_select_db_start' [-Wimplicit-function-declaration]
+-     int x318 = mysql_select_db_start(x315, x316, x317);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_53_mysql_select_db_cont':
+- lib/ffi_generated_stubs.c:422:15: warning: implicit declaration of function 'mysql_select_db_cont' [-Wimplicit-function-declaration]
+-     int x327 = mysql_select_db_cont(x322, x323, x324);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_54_mysql_change_user_start':
+- lib/ffi_generated_stubs.c:434:15: warning: implicit declaration of function 'mysql_change_user_start' [-Wimplicit-function-declaration]
+-     int x338 = mysql_change_user_start(x333, x334, x335, x336, x337);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_55_mysql_change_user_cont':
+- lib/ffi_generated_stubs.c:443:15: warning: implicit declaration of function 'mysql_change_user_cont' [-Wimplicit-function-declaration]
+-     int x347 = mysql_change_user_cont(x342, x343, x344);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_56_mysql_set_server_option_start':
+- lib/ffi_generated_stubs.c:452:15: warning: implicit declaration of function 'mysql_set_server_option_start' [-Wimplicit-function-declaration]
+-     int x356 = mysql_set_server_option_start(x351, x352, x353);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_57_mysql_set_server_option_cont':
+- lib/ffi_generated_stubs.c:461:15: warning: implicit declaration of function 'mysql_set_server_option_cont' [-Wimplicit-function-declaration]
+-     int x365 = mysql_set_server_option_cont(x360, x361, x362);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_58_mysql_ping_start':
+- lib/ffi_generated_stubs.c:468:15: warning: implicit declaration of function 'mysql_ping_start' [-Wimplicit-function-declaration]
+-     int x370 = mysql_ping_start(x368, x369);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_59_mysql_ping_cont':
+- lib/ffi_generated_stubs.c:476:15: warning: implicit declaration of function 'mysql_ping_cont' [-Wimplicit-function-declaration]
+-     int x379 = mysql_ping_cont(x374, x375, x376);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_60_mysql_stmt_prepare_start':
+- lib/ffi_generated_stubs.c:486:15: warning: implicit declaration of function 'mysql_stmt_prepare_start' [-Wimplicit-function-declaration]
+-     int x390 = mysql_stmt_prepare_start(x384, x385, x386, x387);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_61_mysql_stmt_prepare_cont':
+- lib/ffi_generated_stubs.c:495:15: warning: implicit declaration of function 'mysql_stmt_prepare_cont' [-Wimplicit-function-declaration]
+-     int x399 = mysql_stmt_prepare_cont(x394, x395, x396);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_62_mysql_stmt_reset_start':
+- lib/ffi_generated_stubs.c:502:15: warning: implicit declaration of function 'mysql_stmt_reset_start' [-Wimplicit-function-declaration]
+-     int x404 = mysql_stmt_reset_start(x402, x403);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_63_mysql_stmt_reset_cont':
+- lib/ffi_generated_stubs.c:511:15: warning: implicit declaration of function 'mysql_stmt_reset_cont' [-Wimplicit-function-declaration]
+-     int x413 = mysql_stmt_reset_cont(x408, x409, x410);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_64_mysql_stmt_execute_start':
+- lib/ffi_generated_stubs.c:518:15: warning: implicit declaration of function 'mysql_stmt_execute_start' [-Wimplicit-function-declaration]
+-     int x418 = mysql_stmt_execute_start(x416, x417);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_65_mysql_stmt_execute_cont':
+- lib/ffi_generated_stubs.c:527:15: warning: implicit declaration of function 'mysql_stmt_execute_cont' [-Wimplicit-function-declaration]
+-     int x427 = mysql_stmt_execute_cont(x422, x423, x424);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_66_mysql_stmt_fetch_start':
+- lib/ffi_generated_stubs.c:534:15: warning: implicit declaration of function 'mysql_stmt_fetch_start' [-Wimplicit-function-declaration]
+-     int x432 = mysql_stmt_fetch_start(x430, x431);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_67_mysql_stmt_fetch_cont':
+- lib/ffi_generated_stubs.c:543:15: warning: implicit declaration of function 'mysql_stmt_fetch_cont' [-Wimplicit-function-declaration]
+-     int x441 = mysql_stmt_fetch_cont(x436, x437, x438);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_68_mysql_stmt_store_result_start':
+- lib/ffi_generated_stubs.c:550:15: warning: implicit declaration of function 'mysql_stmt_store_result_start' [-Wimplicit-function-declaration]
+-     int x446 = mysql_stmt_store_result_start(x444, x445);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_69_mysql_stmt_store_result_cont':
+- lib/ffi_generated_stubs.c:559:15: warning: implicit declaration of function 'mysql_stmt_store_result_cont' [-Wimplicit-function-declaration]
+-     int x455 = mysql_stmt_store_result_cont(x450, x451, x452);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_70_mysql_stmt_close_start':
+- lib/ffi_generated_stubs.c:566:15: warning: implicit declaration of function 'mysql_stmt_close_start' [-Wimplicit-function-declaration]
+-     int x460 = mysql_stmt_close_start(x458, x459);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_71_mysql_stmt_close_cont':
+- lib/ffi_generated_stubs.c:575:15: warning: implicit declaration of function 'mysql_stmt_close_cont' [-Wimplicit-function-declaration]
+-     int x469 = mysql_stmt_close_cont(x464, x465, x466);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_72_mysql_stmt_free_result_start':
+- lib/ffi_generated_stubs.c:582:15: warning: implicit declaration of function 'mysql_stmt_free_result_start' [-Wimplicit-function-declaration]
+-     int x474 = mysql_stmt_free_result_start(x472, x473);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_73_mysql_stmt_free_result_cont':
+- lib/ffi_generated_stubs.c:591:15: warning: implicit declaration of function 'mysql_stmt_free_result_cont' [-Wimplicit-function-declaration]
+-     int x483 = mysql_stmt_free_result_cont(x478, x479, x480);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_74_mysql_commit_start':
+- lib/ffi_generated_stubs.c:598:15: warning: implicit declaration of function 'mysql_commit_start' [-Wimplicit-function-declaration]
+-     int x488 = mysql_commit_start(x486, x487);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_75_mysql_commit_cont':
+- lib/ffi_generated_stubs.c:606:15: warning: implicit declaration of function 'mysql_commit_cont' [-Wimplicit-function-declaration]
+-     int x497 = mysql_commit_cont(x492, x493, x494);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_76_mysql_rollback_start':
+- lib/ffi_generated_stubs.c:613:15: warning: implicit declaration of function 'mysql_rollback_start' [-Wimplicit-function-declaration]
+-     int x502 = mysql_rollback_start(x500, x501);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_77_mysql_rollback_cont':
+- lib/ffi_generated_stubs.c:621:15: warning: implicit declaration of function 'mysql_rollback_cont' [-Wimplicit-function-declaration]
+-     int x511 = mysql_rollback_cont(x506, x507, x508);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_78_mysql_autocommit_start':
+- lib/ffi_generated_stubs.c:630:15: warning: implicit declaration of function 'mysql_autocommit_start' [-Wimplicit-function-declaration]
+-     int x520 = mysql_autocommit_start(x515, x516, (char)x517);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_79_mysql_autocommit_cont':
+- lib/ffi_generated_stubs.c:639:15: warning: implicit declaration of function 'mysql_autocommit_cont' [-Wimplicit-function-declaration]
+-     int x529 = mysql_autocommit_cont(x524, x525, x526);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_80_mysql_stmt_next_result_start':
+- lib/ffi_generated_stubs.c:646:15: warning: implicit declaration of function 'mysql_stmt_next_result_start' [-Wimplicit-function-declaration]
+-     int x534 = mysql_stmt_next_result_start(x532, x533);
+-                ^
+- lib/ffi_generated_stubs.c: In function 'mariadb_stub_81_mysql_stmt_next_result_cont':
+- lib/ffi_generated_stubs.c:655:15: warning: implicit declaration of function 'mysql_stmt_next_result_cont' [-Wimplicit-function-declaration]
+-     int x543 = mysql_stmt_next_result_cont(x538, x539, x540);
+-                ^
+- mv ffi_generated_stubs.o lib/ffi_generated_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlmklib -o lib/mariadb_stubs -lmysqlclient lib/ffi_generated_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/mariadb.mli > lib/mariadb.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -ccopt -I -ccopt /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -warn-error +1..45 -package unix -package ctypes.stubs -package ctypes.foreign -I lib -I bindings -o lib/mariadb.cmi lib/mariadb.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/mariadb.ml > lib/mariadb.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/binding_wrappers.ml > lib/binding_wrappers.ml.depends
+- stubgen/ffi_stubgen.byte -ml > lib/ffi_generated.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package unix -package ctypes.stubs -package ctypes.foreign -modules lib/ffi_generated.ml > lib/ffi_generated.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules stubgen/ffi_types_stubgen.ml > stubgen/ffi_types_stubgen.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -warn-error +1..45 -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I stubgen -I bindings -o stubgen/ffi_types_stubgen.cmo stubgen/ffi_types_stubgen.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -linkpkg -g -warn-error +1..45 -linkpkg -package ctypes.stubs -package ctypes.foreign bindings/mariadb_bindings.cma stubgen/ffi_types_stubgen.cmo -o stubgen/ffi_types_stubgen.byte
+- stubgen/ffi_types_stubgen.byte > stubgen/ffi_ml_types_stubgen.c
+- gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT stubgen/ffi_ml_types_stubgen.c -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml -o stubgen/ffi_ml_types_subgen
+- + gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT stubgen/ffi_ml_types_stubgen.c -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml -o stubgen/ffi_ml_types_subgen
+- stubgen/ffi_ml_types_stubgen.c: In function 'main':
+- stubgen/ffi_ml_types_stubgen.c:319:51: error: 'MYSQL_WAIT_TIMEOUT' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_TIMEOUT_const = (int)MYSQL_WAIT_TIMEOUT };
+-                                                    ^
+- stubgen/ffi_ml_types_stubgen.c:319:51: note: each undeclared identifier is reported only once for each function it appears in
+- stubgen/ffi_ml_types_stubgen.c:326:50: error: 'MYSQL_WAIT_EXCEPT' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_EXCEPT_const = (int)MYSQL_WAIT_EXCEPT };
+-                                                   ^
+- stubgen/ffi_ml_types_stubgen.c:333:49: error: 'MYSQL_WAIT_WRITE' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_WRITE_const = (int)MYSQL_WAIT_WRITE };
+-                                                  ^
+- stubgen/ffi_ml_types_stubgen.c:340:48: error: 'MYSQL_WAIT_READ' undeclared (first use in this function)
+-       enum { check_MYSQL_WAIT_READ_const = (int)MYSQL_WAIT_READ };
+-                                                 ^
+- stubgen/ffi_ml_types_stubgen.c:445:51: error: 'MYSQL_OPT_NONBLOCK' undeclared (first use in this function)
+-       enum { check_MYSQL_OPT_NONBLOCK_const = (int)MYSQL_OPT_NONBLOCK };
+-                                                    ^
+- Command exited with code 1.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' bindings/mariadb_bindings.cma bindings/mariadb_bindings.cmxa bindings/mariadb_bindings.a bindings/mariadb_bindings.cmxs lib/libmariadb_stubs.a lib/dllmariadb_stubs.so lib/mariadb.cma lib/mariadb.cmxa lib/mariadb.a lib/mariadb.cmxs stubgen/ffi_stubgen.byte stubgen/ffi_types_stubgen.byte examples/select/nonblocking_select_example.native examples/blocking/blocking_example.native examples/blocking/blocking_stress_test.native -use-ocamlfind -tag debug' terminated with error code 10")
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 1
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/mariadb/META
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/mariadb_bindings/META
+
+#=== ERROR while installing mariadb.0.10.0 ====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mariadb.0.10.0
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mariadb.0.10.0/mariadb-22819.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mariadb.0.10.0/mariadb-22819.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mariadb.0.10.0/mariadb-22819.out
+### stdout ###
+# [...]
+# stubgen/ffi_ml_types_stubgen.c:340:48: error: 'MYSQL_WAIT_READ' undeclared (first use in this function)
+#       enum { check_MYSQL_WAIT_READ_const = (int)MYSQL_WAIT_READ };
+#                                                 ^
+# stubgen/ffi_ml_types_stubgen.c:445:51: error: 'MYSQL_OPT_NONBLOCK' undeclared (first use in this function)
+#       enum { check_MYSQL_OPT_NONBLOCK_const = (int)MYSQL_OPT_NONBLOCK };
+#                                                    ^
+# Command exited with code 1.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' bindings/mariadb_bindings.cma bindings/mariadb_bindings.cmxa bindings/mariadb_bindings.a bindings/mariadb_bindings.cmxs lib/libmariadb_stubs.a lib/dllmariadb_stubs.so lib/mariadb.cma lib/mariadb.cmxa lib/mariadb.a lib/mariadb.cmxs stubgen/ffi_stubgen.byte stubgen/ffi_types_stubgen.byte examples/select/nonblocking_select_example.native examples/blocking/blocking_example.native examples/blocking/blocking_stress_test.native -use-ocamlfind -tag debug' terminated with error code 10")
+# Makefile:7: recipe for target 'build' failed
+# make: *** [build] Error 1
+### stderr ###
+# [...]
+# stubgen/ffi_ml_types_stubgen.c:340:48: error: 'MYSQL_WAIT_READ' undeclared (first use in this function)
+#       enum { check_MYSQL_WAIT_READ_const = (int)MYSQL_WAIT_READ };
+#                                                 ^
+# stubgen/ffi_ml_types_stubgen.c:445:51: error: 'MYSQL_OPT_NONBLOCK' undeclared (first use in this function)
+#       enum { check_MYSQL_OPT_NONBLOCK_const = (int)MYSQL_OPT_NONBLOCK };
+#                                                    ^
+# Command exited with code 1.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' bindings/mariadb_bindings.cma bindings/mariadb_bindings.cmxa bindings/mariadb_bindings.a bindings/mariadb_bindings.cmxs lib/libmariadb_stubs.a lib/dllmariadb_stubs.so lib/mariadb.cma lib/mariadb.cmxa lib/mariadb.a lib/mariadb.cmxs stubgen/ffi_stubgen.byte stubgen/ffi_types_stubgen.byte examples/select/nonblocking_select_example.native examples/blocking/blocking_example.native examples/blocking/blocking_stress_test.native -use-ocamlfind -tag debug' terminated with error code 10")
+# Makefile:7: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install mariadb 0.10.0
+No changes have been performed
+'opam install mariadb.0.10.0' failed.

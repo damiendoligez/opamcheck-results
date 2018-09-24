@@ -1,0 +1,77 @@
+The following actions will be performed:
+  - install apalogretrieve 0.9.6-4
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[apalogretrieve: http] Command started
+[apalogretrieve: http] Command started
+[apalogretrieve.0.9.6-4] http://www.first.in-berlin.de/software/tools/apalogretrieve/apalogretrieve-0-9-6_4.tgz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[apalogretrieve: sh compile.native] Command started
++ sh "compile.native" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/apalogretrieve.0.9.6-4)
+- 134 states, 9618 transitions, table size 39276 bytes
+- 48 states, 715 transitions, table size 3148 bytes
+- File "main.ml", line 48, characters 15-27:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- File "main.ml", line 194, characters 40-64:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "main.ml", line 194, characters 40-47:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- 134 states, 9618 transitions, table size 39276 bytes
+- 48 states, 715 transitions, table size 3148 bytes
+- File "main.ml", line 48, characters 15-27:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- File "main.ml", line 194, characters 40-64:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "main.ml", line 194, characters 40-47:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+[ERROR] The compilation of apalogretrieve failed at "sh compile.native".
+
+#=== ERROR while installing apalogretrieve.0.9.6-4 ============================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              sh compile.native
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/apalogretrieve.0.9.6-4
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/apalogretrieve.0.9.6-4/apalogretrieve-4013.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/apalogretrieve.0.9.6-4/apalogretrieve-4013.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/apalogretrieve.0.9.6-4/apalogretrieve-4013.out
+### stdout ###
+# [...]
+# 48 states, 715 transitions, table size 3148 bytes
+# File "main.ml", line 48, characters 15-27:
+# Warning 3: deprecated: Stdlib.Array.create
+# Use Array.make instead.
+# File "main.ml", line 194, characters 40-64:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "main.ml", line 194, characters 40-47:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+### stderr ###
+# [...]
+# 48 states, 715 transitions, table size 3148 bytes
+# File "main.ml", line 48, characters 15-27:
+# Warning 3: deprecated: Stdlib.Array.create
+# Use Array.make instead.
+# File "main.ml", line 194, characters 40-64:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "main.ml", line 194, characters 40-47:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install apalogretrieve 0.9.6-4
+No changes have been performed
+'opam install apalogretrieve.0.9.6-4' failed.

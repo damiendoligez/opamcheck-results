@@ -1,0 +1,87 @@
+The following actions will be performed:
+  - install cloudi 1.7.3
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cloudi: http] Command started
+[cloudi: http] Command started
+[cloudi.1.7.3] https://github.com/CloudI/cloudi_api_ocaml/archive/v1.7.3.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cloudi: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/cloudi.1.7.3)
+- test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/nums.cmxa || \
+-     (cd external/num-1.1/src && \
+-      make OCAMLC="ocamlc" \
+-              OCAMLOPT="ocamlopt" \
+-              OCAMLDEP="ocamldep" \
+-              OCAMLMKLIB="ocamlmklib" \
+-              nums.cmxa libnums.a && \
+-      cp arith_flags.cmi arith_flags.cmx arith_status.cmi arith_status.cmx big_int.cmi big_int.cmx int_misc.cmi int_misc.cmx nat.cmi nat.cmx num.cmi num.cmx ratio.cmi ratio.cmx libnums.a nums.a nums.cmxa ../../..)
+- touch dependency_num
+- ocamlc -safe-string -w @A -o erlang.cmi -c erlang.mli
+- ocamlc -safe-string -w @A -o cloudi.cmi -c cloudi.mli
+- ocamlopt -safe-string -w @A -o erlang.cmx -c erlang.ml
+- File "_none_", line 1:
+- Error (warning 58): no cmx file was found in path for module Big_int, and its interface was not compiled with -opaque
+- makefile:68: recipe for target 'erlang.cmx' failed
+- make: *** [erlang.cmx] Error 2
+- test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/nums.cmxa || \
+-     (cd external/num-1.1/src && \
+-      make OCAMLC="ocamlc" \
+-              OCAMLOPT="ocamlopt" \
+-              OCAMLDEP="ocamldep" \
+-              OCAMLMKLIB="ocamlmklib" \
+-              nums.cmxa libnums.a && \
+-      cp arith_flags.cmi arith_flags.cmx arith_status.cmi arith_status.cmx big_int.cmi big_int.cmx int_misc.cmi int_misc.cmx nat.cmi nat.cmx num.cmi num.cmx ratio.cmi ratio.cmx libnums.a nums.a nums.cmxa ../../..)
+- touch dependency_num
+- ocamlc -safe-string -w @A -o erlang.cmi -c erlang.mli
+- ocamlc -safe-string -w @A -o cloudi.cmi -c cloudi.mli
+- ocamlopt -safe-string -w @A -o erlang.cmx -c erlang.ml
+- File "_none_", line 1:
+- Error (warning 58): no cmx file was found in path for module Big_int, and its interface was not compiled with -opaque
+- makefile:68: recipe for target 'erlang.cmx' failed
+- make: *** [erlang.cmx] Error 2
+[ERROR] The compilation of cloudi failed at "make".
+
+#=== ERROR while installing cloudi.1.7.3 ======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/cloudi.1.7.3
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/cloudi.1.7.3/cloudi-14684.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/cloudi.1.7.3/cloudi-14684.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/cloudi.1.7.3/cloudi-14684.out
+### stdout ###
+# test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/nums.cmxa || \
+# [...]
+#      cp arith_flags.cmi arith_flags.cmx arith_status.cmi arith_status.cmx big_int.cmi big_int.cmx int_misc.cmi int_misc.cmx nat.cmi nat.cmx num.cmi num.cmx ratio.cmi ratio.cmx libnums.a nums.a nums.cmxa ../../..)
+# touch dependency_num
+# ocamlc -safe-string -w @A -o erlang.cmi -c erlang.mli
+# ocamlc -safe-string -w @A -o cloudi.cmi -c cloudi.mli
+# ocamlopt -safe-string -w @A -o erlang.cmx -c erlang.ml
+# File "_none_", line 1:
+# Error (warning 58): no cmx file was found in path for module Big_int, and its interface was not compiled with -opaque
+# makefile:68: recipe for target 'erlang.cmx' failed
+# make: *** [erlang.cmx] Error 2
+### stderr ###
+# test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/nums.cmxa || \
+# [...]
+#      cp arith_flags.cmi arith_flags.cmx arith_status.cmi arith_status.cmx big_int.cmi big_int.cmx int_misc.cmi int_misc.cmx nat.cmi nat.cmx num.cmi num.cmx ratio.cmi ratio.cmx libnums.a nums.a nums.cmxa ../../..)
+# touch dependency_num
+# ocamlc -safe-string -w @A -o erlang.cmi -c erlang.mli
+# ocamlc -safe-string -w @A -o cloudi.cmi -c cloudi.mli
+# ocamlopt -safe-string -w @A -o erlang.cmx -c erlang.ml
+# File "_none_", line 1:
+# Error (warning 58): no cmx file was found in path for module Big_int, and its interface was not compiled with -opaque
+# makefile:68: recipe for target 'erlang.cmx' failed
+# make: *** [erlang.cmx] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install cloudi 1.7.3
+No changes have been performed
+'opam install cloudi.1.7.3' failed.

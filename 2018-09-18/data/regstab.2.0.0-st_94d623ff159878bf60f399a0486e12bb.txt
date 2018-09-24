@@ -1,0 +1,311 @@
+The following actions will be performed:
+  - install regstab 2.0.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[regstab: http] Command started
+[regstab: http] Command started
+[regstab.2.0.0] http://forge.ocamlcore.org/frs/download.php/859/regstab-2.0.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[regstab: make all] Command started
++ make "all" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/regstab.2.0.0)
+- ocamlbuild byte
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- Warning: your ocamlbuild rule "Bytecode" uses the ~tags parameter,
+-                      which is deprecated and ignored.
+- Warning: your ocamlbuild rule "Native" uses the ~tags parameter,
+-                      which is deprecated and ignored.
+- Warning: your ocamlbuild rule "Developer manual" uses the ~tags parameter,
+-                      which is deprecated and ignored.
+- Warning: your ocamlbuild rule "Manual" uses the ~tags parameter,
+-                      which is deprecated and ignored.
+- Warning: your ocamlbuild rule "Webfile" uses the ~tags parameter,
+-                      which is deprecated and ignored.
+- Warning: your ocamlbuild rule "Godi file" uses the ~tags parameter,
+-                      which is deprecated and ignored.
+- Warning: your ocamlbuild rule "Godi archive" uses the ~tags parameter,
+-                      which is deprecated and ignored.
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/executables/main.ml > src/executables/main.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/executables/dispatchOptions.ml > src/executables/dispatchOptions.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/atomicSchemaSet.ml > src/procedure/atomicSchemaSet.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/bounds.ml > src/schema/bounds.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/common/constraint.ml > src/common/constraint.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/common/human.ml > src/common/human.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/common/softcore.ml > src/common/softcore.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/common/extString.ml > src/common/extString.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/common/xmlm.mli > src/common/xmlm.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/extString.cmo src/common/extString.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/extString.cmo src/common/extString.ml
+- File "src/common/extString.ml", line 174, characters 2-517:
+- Warning 3: deprecated: lowercase
+- Use String.lowercase_ascii instead.
+-   File "stringLabels.mli", line 224, characters 0-93:
+-   Definition
+-   File "src/common/extString.ml", line 75, characters 4-26:
+-   Expected signature
+- File "src/common/extString.ml", line 202, characters 2-521:
+- Warning 3: deprecated: lowercase
+- Use String.lowercase_ascii instead.
+-   File "stringLabels.mli", line 224, characters 0-93:
+-   Definition
+-   File "src/common/extString.ml", line 75, characters 4-26:
+-   Expected signature
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/xmlm.cmi src/common/xmlm.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/softcore.cmo src/common/softcore.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/indexes.ml > src/schema/indexes.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/human.cmo src/common/human.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/common/inequality.ml > src/common/inequality.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/indexes.cmo src/schema/indexes.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/inequality.cmo src/common/inequality.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/constraint.cmo src/common/constraint.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/connective.ml > src/schema/connective.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/flat.ml > src/schema/flat.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/bounds.cmo src/schema/bounds.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/connective.cmo src/schema/connective.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/iteration.ml > src/schema/iteration.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/prop.ml > src/schema/prop.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/literal.ml > src/schema/literal.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/polarity.ml > src/schema/polarity.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/proposition.ml > src/schema/proposition.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/polarity.cmo src/schema/polarity.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/proposition.cmo src/schema/proposition.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/proposition.cmo src/schema/proposition.ml
+- File "src/schema/proposition.ml", line 81, characters 31-43:
+- Warning 3: deprecated: Softcore.Array.create
+- Use Array.make instead.
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/openProp.ml > src/schema/openProp.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/literal.cmo src/schema/literal.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/openProp.cmo src/schema/openProp.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/prop.cmo src/schema/prop.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/iteration.cmo src/schema/iteration.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/helpers.ml > src/procedure/helpers.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/literalset.ml > src/procedure/literalset.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/helpers.cmo src/procedure/helpers.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/witness/model.ml > src/witness/model.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/literalset.cmo src/procedure/literalset.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/schema.ml > src/schema/schema.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/flat.cmo src/schema/flat.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/schema.cmo src/schema/schema.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/witness/proof.ml > src/witness/proof.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/purity.ml > src/procedure/purity.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/witness -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/schema -o src/witness/model.cmo src/witness/model.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/witness -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/schema -o src/witness/proof.cmo src/witness/proof.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/purity.cmo src/procedure/purity.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/expandNode.ml > src/procedure/expandNode.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/lemmas.ml > src/procedure/lemmas.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/atomicSchemaSet.cmo src/procedure/atomicSchemaSet.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/node.ml > src/procedure/node.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/witness/preProof.ml > src/witness/preProof.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/ruleApplication.ml > src/procedure/ruleApplication.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/witness -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/schema -o src/witness/preProof.cmo src/witness/preProof.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/schemaSet.ml > src/procedure/schemaSet.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/schemaSet.cmo src/procedure/schemaSet.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/ruleApplication.cmo src/procedure/ruleApplication.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/node.cmo src/procedure/node.ml
+- ocamlbuild byte
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- Warning: your ocamlbuild rule "Bytecode" uses the ~tags parameter,
+-                      which is deprecated and ignored.
+- Warning: your ocamlbuild rule "Native" uses the ~tags parameter,
+-                      which is deprecated and ignored.
+- Warning: your ocamlbuild rule "Developer manual" uses the ~tags parameter,
+-                      which is deprecated and ignored.
+- Warning: your ocamlbuild rule "Manual" uses the ~tags parameter,
+-                      which is deprecated and ignored.
+- Warning: your ocamlbuild rule "Webfile" uses the ~tags parameter,
+-                      which is deprecated and ignored.
+- Warning: your ocamlbuild rule "Godi file" uses the ~tags parameter,
+-                      which is deprecated and ignored.
+- Warning: your ocamlbuild rule "Godi archive" uses the ~tags parameter,
+-                      which is deprecated and ignored.
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/executables/main.ml > src/executables/main.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/executables/dispatchOptions.ml > src/executables/dispatchOptions.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/atomicSchemaSet.ml > src/procedure/atomicSchemaSet.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/bounds.ml > src/schema/bounds.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/common/constraint.ml > src/common/constraint.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/common/human.ml > src/common/human.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/common/softcore.ml > src/common/softcore.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/common/extString.ml > src/common/extString.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/common/xmlm.mli > src/common/xmlm.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/extString.cmo src/common/extString.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/extString.cmo src/common/extString.ml
+- File "src/common/extString.ml", line 174, characters 2-517:
+- Warning 3: deprecated: lowercase
+- Use String.lowercase_ascii instead.
+-   File "stringLabels.mli", line 224, characters 0-93:
+-   Definition
+-   File "src/common/extString.ml", line 75, characters 4-26:
+-   Expected signature
+- File "src/common/extString.ml", line 202, characters 2-521:
+- Warning 3: deprecated: lowercase
+- Use String.lowercase_ascii instead.
+-   File "stringLabels.mli", line 224, characters 0-93:
+-   Definition
+-   File "src/common/extString.ml", line 75, characters 4-26:
+-   Expected signature
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/xmlm.cmi src/common/xmlm.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/softcore.cmo src/common/softcore.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/indexes.ml > src/schema/indexes.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/human.cmo src/common/human.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/common/inequality.ml > src/common/inequality.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/indexes.cmo src/schema/indexes.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/inequality.cmo src/common/inequality.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/constraint.cmo src/common/constraint.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/connective.ml > src/schema/connective.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/flat.ml > src/schema/flat.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/bounds.cmo src/schema/bounds.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/connective.cmo src/schema/connective.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/iteration.ml > src/schema/iteration.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/prop.ml > src/schema/prop.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/literal.ml > src/schema/literal.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/polarity.ml > src/schema/polarity.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/proposition.ml > src/schema/proposition.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/polarity.cmo src/schema/polarity.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/proposition.cmo src/schema/proposition.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/proposition.cmo src/schema/proposition.ml
+- File "src/schema/proposition.ml", line 81, characters 31-43:
+- Warning 3: deprecated: Softcore.Array.create
+- Use Array.make instead.
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/openProp.ml > src/schema/openProp.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/literal.cmo src/schema/literal.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/openProp.cmo src/schema/openProp.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/prop.cmo src/schema/prop.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/iteration.cmo src/schema/iteration.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/helpers.ml > src/procedure/helpers.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/literalset.ml > src/procedure/literalset.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/helpers.cmo src/procedure/helpers.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/witness/model.ml > src/witness/model.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/literalset.cmo src/procedure/literalset.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/schema/schema.ml > src/schema/schema.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/flat.cmo src/schema/flat.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/schema -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/witness -o src/schema/schema.cmo src/schema/schema.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/witness/proof.ml > src/witness/proof.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/purity.ml > src/procedure/purity.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/witness -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/schema -o src/witness/model.cmo src/witness/model.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/witness -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/schema -o src/witness/proof.cmo src/witness/proof.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/purity.cmo src/procedure/purity.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/expandNode.ml > src/procedure/expandNode.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/lemmas.ml > src/procedure/lemmas.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/atomicSchemaSet.cmo src/procedure/atomicSchemaSet.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/node.ml > src/procedure/node.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/witness/preProof.ml > src/witness/preProof.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/ruleApplication.ml > src/procedure/ruleApplication.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/witness -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/procedure -I src/schema -o src/witness/preProof.cmo src/witness/preProof.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/schemaSet.ml > src/procedure/schemaSet.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/schemaSet.cmo src/procedure/schemaSet.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/ruleApplication.cmo src/procedure/ruleApplication.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/node.cmo src/procedure/node.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/lemmas.cmo src/procedure/lemmas.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/regstab.ml > src/procedure/regstab.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/expandNode.cmo src/procedure/expandNode.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/regstab.cmo src/procedure/regstab.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/executables/lexer.mli > src/executables/lexer.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc src/executables/parser.mly
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/executables/parser.mli > src/executables/parser.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/executables -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/procedure -I src/schema -I src/witness -o src/executables/parser.cmi src/executables/parser.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/executables -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/procedure -I src/schema -I src/witness -o src/executables/dispatchOptions.cmo src/executables/dispatchOptions.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/lemmas.cmo src/procedure/lemmas.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/procedure/regstab.ml > src/procedure/regstab.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/expandNode.cmo src/procedure/expandNode.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/procedure -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/executables -I src/schema -I src/witness -o src/procedure/regstab.cmo src/procedure/regstab.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/executables/lexer.mli > src/executables/lexer.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc src/executables/parser.mly
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/executables/parser.mli > src/executables/parser.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/executables -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/procedure -I src/schema -I src/witness -o src/executables/parser.cmi src/executables/parser.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/executables -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/procedure -I src/schema -I src/witness -o src/executables/dispatchOptions.cmo src/executables/dispatchOptions.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/executables -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/procedure -I src/schema -I src/witness -o src/executables/lexer.cmi src/executables/lexer.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/executables -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/procedure -I src/schema -I src/witness -o src/executables/main.cmo src/executables/main.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex.opt -q src/executables/lexer.mll
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/executables/lexer.ml > src/executables/lexer.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/executables/parser.ml > src/executables/parser.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/executables -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/procedure -I src/schema -I src/witness -o src/executables/lexer.cmo src/executables/lexer.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/executables -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/procedure -I src/schema -I src/witness -o src/executables/parser.cmo src/executables/parser.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/common/xmlm.ml > src/common/xmlm.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/xmlm.cmo src/common/xmlm.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/xmlm.cmo src/common/xmlm.ml
+- File "src/common/xmlm.ml", line 554, characters 22-24:
+- Warning 3: deprecated: Stdlib.or
+- Use (||) instead.
+- File "src/common/xmlm.ml", line 574, characters 18-20:
+- Warning 3: deprecated: Stdlib.or
+- Use (||) instead.
+- File "src/common/xmlm.ml", line 771, characters 22-24:
+- Warning 3: deprecated: Stdlib.or
+- Use (||) instead.
+- File "src/common/xmlm.ml", line 963, characters 19-47:
+- Error: This expression has type string -> int -> int -> unit
+-        but an expression was expected of type bytes -> int -> int -> unit
+-        Type string is not compatible with type bytes 
+- Command exited with code 2.
+- Makefile:4: recipe for target 'all' failed
+- make: *** [all] Error 10
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/executables -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/procedure -I src/schema -I src/witness -o src/executables/lexer.cmi src/executables/lexer.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/executables -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/procedure -I src/schema -I src/witness -o src/executables/main.cmo src/executables/main.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex.opt -q src/executables/lexer.mll
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/executables/lexer.ml > src/executables/lexer.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/executables/parser.ml > src/executables/parser.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/executables -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/procedure -I src/schema -I src/witness -o src/executables/lexer.cmo src/executables/lexer.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/executables -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/common -I src/procedure -I src/schema -I src/witness -o src/executables/parser.cmo src/executables/parser.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules src/common/xmlm.ml > src/common/xmlm.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/xmlm.cmo src/common/xmlm.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -rectypes -I src/common -I distrib -I doc -I examples -I man -I src -I tools -I webpage -I doc/src -I src/executables -I src/procedure -I src/schema -I src/witness -o src/common/xmlm.cmo src/common/xmlm.ml
+- File "src/common/xmlm.ml", line 554, characters 22-24:
+- Warning 3: deprecated: Stdlib.or
+- Use (||) instead.
+- File "src/common/xmlm.ml", line 574, characters 18-20:
+- Warning 3: deprecated: Stdlib.or
+- Use (||) instead.
+- File "src/common/xmlm.ml", line 771, characters 22-24:
+- Warning 3: deprecated: Stdlib.or
+- Use (||) instead.
+- File "src/common/xmlm.ml", line 963, characters 19-47:
+- Error: This expression has type string -> int -> int -> unit
+-        but an expression was expected of type bytes -> int -> int -> unit
+-        Type string is not compatible with type bytes 
+- Command exited with code 2.
+- Makefile:4: recipe for target 'all' failed
+- make: *** [all] Error 10
+[ERROR] The compilation of regstab failed at "make all".
+
+#=== ERROR while installing regstab.2.0.0 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make all
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/regstab.2.0.0
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/regstab.2.0.0/regstab-25963.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/regstab.2.0.0/regstab-25963.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/regstab.2.0.0/regstab-25963.out
+### stdout ###
+# [...]
+# File "src/common/xmlm.ml", line 771, characters 22-24:
+# Warning 3: deprecated: Stdlib.or
+# Use (||) instead.
+# File "src/common/xmlm.ml", line 963, characters 19-47:
+# Error: This expression has type string -> int -> int -> unit
+#        but an expression was expected of type bytes -> int -> int -> unit
+#        Type string is not compatible with type bytes 
+# Command exited with code 2.
+# Makefile:4: recipe for target 'all' failed
+# make: *** [all] Error 10
+### stderr ###
+# [...]
+# File "src/common/xmlm.ml", line 771, characters 22-24:
+# Warning 3: deprecated: Stdlib.or
+# Use (||) instead.
+# File "src/common/xmlm.ml", line 963, characters 19-47:
+# Error: This expression has type string -> int -> int -> unit
+#        but an expression was expected of type bytes -> int -> int -> unit
+#        Type string is not compatible with type bytes 
+# Command exited with code 2.
+# Makefile:4: recipe for target 'all' failed
+# make: *** [all] Error 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install regstab 2.0.0
+No changes have been performed
+'opam install regstab.2.0.0' failed.

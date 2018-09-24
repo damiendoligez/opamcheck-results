@@ -1,0 +1,79 @@
+The following actions will be performed:
+  - install cloudi 1.7.1-rc1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cloudi: http] Command started
+[cloudi: http] Command started
+[cloudi.1.7.1-rc1] https://github.com/CloudI/cloudi_api_ocaml/archive/v1.7.1-rc1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cloudi: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/cloudi.1.7.1-rc1)
+- ocamlc -safe-string -w @A -o erlang.cmi -c erlang.mli
+- ocamlc -safe-string -w @A -o cloudi.cmi -c cloudi.mli
+- ocamlopt -safe-string -w @A -o erlang.cmx -c erlang.ml
+- File "_none_", line 1:
+- Error (warning 58): no cmx file was found in path for module Big_int, and its interface was not compiled with -opaque
+- makefile:29: recipe for target 'erlang.cmx' failed
+- make: *** [erlang.cmx] Error 2
+- ocamlc -safe-string -w @A -o erlang.cmi -c erlang.mli
+- ocamlc -safe-string -w @A -o cloudi.cmi -c cloudi.mli
+- ocamlopt -safe-string -w @A -o erlang.cmx -c erlang.ml
+- File "_none_", line 1:
+- Error (warning 58): no cmx file was found in path for module Big_int, and its interface was not compiled with -opaque
+- makefile:29: recipe for target 'erlang.cmx' failed
+- make: *** [erlang.cmx] Error 2
+[ERROR] The compilation of cloudi failed at "make".
+[cloudi: ocamlfind remove] Command started
++ ocamlfind "remove" "cloudi" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/cloudi.1.7.1-rc1)
+- ocamlc -safe-string -w @A -o erlang.cmi -c erlang.mli
+- ocamlc -safe-string -w @A -o cloudi.cmi -c cloudi.mli
+- ocamlopt -safe-string -w @A -o erlang.cmx -c erlang.ml
+- File "_none_", line 1:
+- Error (warning 58): no cmx file was found in path for module Big_int, and its interface was not compiled with -opaque
+- makefile:29: recipe for target 'erlang.cmx' failed
+- make: *** [erlang.cmx] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cloudi/META
+- ocamlc -safe-string -w @A -o erlang.cmi -c erlang.mli
+- ocamlc -safe-string -w @A -o cloudi.cmi -c cloudi.mli
+- ocamlopt -safe-string -w @A -o erlang.cmx -c erlang.ml
+- File "_none_", line 1:
+- Error (warning 58): no cmx file was found in path for module Big_int, and its interface was not compiled with -opaque
+- makefile:29: recipe for target 'erlang.cmx' failed
+- make: *** [erlang.cmx] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cloudi/META
+
+#=== ERROR while installing cloudi.1.7.1-rc1 ==================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/cloudi.1.7.1-rc1
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/cloudi.1.7.1-rc1/cloudi-15064.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/cloudi.1.7.1-rc1/cloudi-15064.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/cloudi.1.7.1-rc1/cloudi-15064.out
+### stdout ###
+# ocamlc -safe-string -w @A -o erlang.cmi -c erlang.mli
+# ocamlc -safe-string -w @A -o cloudi.cmi -c cloudi.mli
+# ocamlopt -safe-string -w @A -o erlang.cmx -c erlang.ml
+# File "_none_", line 1:
+# Error (warning 58): no cmx file was found in path for module Big_int, and its interface was not compiled with -opaque
+# makefile:29: recipe for target 'erlang.cmx' failed
+# make: *** [erlang.cmx] Error 2
+### stderr ###
+# ocamlc -safe-string -w @A -o erlang.cmi -c erlang.mli
+# ocamlc -safe-string -w @A -o cloudi.cmi -c cloudi.mli
+# ocamlopt -safe-string -w @A -o erlang.cmx -c erlang.ml
+# File "_none_", line 1:
+# Error (warning 58): no cmx file was found in path for module Big_int, and its interface was not compiled with -opaque
+# makefile:29: recipe for target 'erlang.cmx' failed
+# make: *** [erlang.cmx] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install cloudi 1.7.1-rc1
+No changes have been performed
+'opam install cloudi.1.7.1-rc1' failed.

@@ -1,0 +1,84 @@
+The following actions will be performed:
+  - install jupyter 2.3.3
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[jupyter: http] Command started
+[jupyter: http] Command started
+[jupyter.2.3.3] https://github.com/akabe/ocaml-jupyter/releases/download/v2.3.3/jupyter-2.3.3.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[jupyter: dune build] Command started
++ dune "build" "-p" "jupyter" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/jupyter.2.3.3)
+- File "jupyter/src/core/dune", line 15, characters 14-39:
+- Error: No ppx driver were found. It seems that ppx_deriving_yojson is not
+- compatible with Dune. Examples of ppx rewriters that are compatible with Dune
+- are ones using ocaml-migrate-parsetree, ppxlib or ppx_driver.
+- File "jupyter/src/comm/dune", line 13, characters 14-39:
+- Error: No ppx driver were found. It seems that ppx_deriving_yojson is not
+- compatible with Dune. Examples of ppx rewriters that are compatible with Dune
+- are ones using ocaml-migrate-parsetree, ppxlib or ppx_driver.
+- File "jupyter/src/notebook/dune", line 9, characters 14-39:
+- Error: No ppx driver were found. It seems that ppx_deriving_yojson is not
+- compatible with Dune. Examples of ppx rewriters that are compatible with Dune
+- are ones using ocaml-migrate-parsetree, ppxlib or ppx_driver.
+- File "jupyter/src/core/dune", line 15, characters 14-39:
+- Error: No ppx driver were found. It seems that ppx_deriving_yojson is not
+- compatible with Dune. Examples of ppx rewriters that are compatible with Dune
+- are ones using ocaml-migrate-parsetree, ppxlib or ppx_driver.
+- File "jupyter/src/comm/dune", line 13, characters 14-39:
+- Error: No ppx driver were found. It seems that ppx_deriving_yojson is not
+- compatible with Dune. Examples of ppx rewriters that are compatible with Dune
+- are ones using ocaml-migrate-parsetree, ppxlib or ppx_driver.
+- File "jupyter/src/notebook/dune", line 9, characters 14-39:
+- Error: No ppx driver were found. It seems that ppx_deriving_yojson is not
+- compatible with Dune. Examples of ppx rewriters that are compatible with Dune
+- are ones using ocaml-migrate-parsetree, ppxlib or ppx_driver.
+[ERROR] The compilation of jupyter failed at "dune build -p jupyter -j 4".
+
+#=== ERROR while installing jupyter.2.3.3 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              dune build -p jupyter -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/jupyter.2.3.3
+# compiler             4.07.0+24fac73
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/jupyter.2.3.3/jupyter-5541.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/jupyter.2.3.3/jupyter-5541.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/jupyter.2.3.3/jupyter-5541.out
+### stdout ###
+# [...]
+# compatible with Dune. Examples of ppx rewriters that are compatible with Dune
+# are ones using ocaml-migrate-parsetree, ppxlib or ppx_driver.
+# File "jupyter/src/comm/dune", line 13, characters 14-39:
+# Error: No ppx driver were found. It seems that ppx_deriving_yojson is not
+# compatible with Dune. Examples of ppx rewriters that are compatible with Dune
+# are ones using ocaml-migrate-parsetree, ppxlib or ppx_driver.
+# File "jupyter/src/notebook/dune", line 9, characters 14-39:
+# Error: No ppx driver were found. It seems that ppx_deriving_yojson is not
+# compatible with Dune. Examples of ppx rewriters that are compatible with Dune
+# are ones using ocaml-migrate-parsetree, ppxlib or ppx_driver.
+### stderr ###
+# [...]
+# compatible with Dune. Examples of ppx rewriters that are compatible with Dune
+# are ones using ocaml-migrate-parsetree, ppxlib or ppx_driver.
+# File "jupyter/src/comm/dune", line 13, characters 14-39:
+# Error: No ppx driver were found. It seems that ppx_deriving_yojson is not
+# compatible with Dune. Examples of ppx rewriters that are compatible with Dune
+# are ones using ocaml-migrate-parsetree, ppxlib or ppx_driver.
+# File "jupyter/src/notebook/dune", line 9, characters 14-39:
+# Error: No ppx driver were found. It seems that ppx_deriving_yojson is not
+# compatible with Dune. Examples of ppx rewriters that are compatible with Dune
+# are ones using ocaml-migrate-parsetree, ppxlib or ppx_driver.
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install jupyter 2.3.3
+No changes have been performed
+
+=-=- jupyter.2.3.3 troubleshooting =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> Please run for registration of ocaml-jupyter kernel:
+=> 
+=> $ jupyter kernelspec install --name ocaml-jupyter \
+'opam install jupyter.2.3.3' failed.

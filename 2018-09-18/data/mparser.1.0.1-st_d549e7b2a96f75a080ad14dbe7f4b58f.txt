@@ -1,0 +1,91 @@
+The following actions will be performed:
+  - install mparser 1.0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mparser: http] Command started
+[mparser: http] Command started
+[mparser.1.0.1] https://github.com/cakeplus/mparser/archive/1.0.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mparser: make build] Command started
++ make "build" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/mparser.1.0.1)
+- ocaml setup.ml -configure 
+- File "./setup.ml", line 213, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 213, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:34: recipe for target 'setup.data' failed
+- make: *** [setup.data] Error 2
+- ocaml setup.ml -configure 
+- File "./setup.ml", line 213, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 213, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:34: recipe for target 'setup.data' failed
+- make: *** [setup.data] Error 2
+[ERROR] The compilation of mparser failed at "make build".
+[mparser: ocamlfind remove] Command started
++ ocamlfind "remove" "mparser" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/mparser.1.0.1)
+- ocaml setup.ml -configure 
+- File "./setup.ml", line 213, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 213, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:34: recipe for target 'setup.data' failed
+- make: *** [setup.data] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/mparser/META
+- ocaml setup.ml -configure 
+- File "./setup.ml", line 213, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 213, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:34: recipe for target 'setup.data' failed
+- make: *** [setup.data] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/mparser/META
+
+#=== ERROR while installing mparser.1.0.1 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make build
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/mparser.1.0.1
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/mparser.1.0.1/mparser-5462.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/mparser.1.0.1/mparser-5462.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/mparser.1.0.1/mparser-5462.out
+### stdout ###
+# ocaml setup.ml -configure 
+# File "./setup.ml", line 213, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 213, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:34: recipe for target 'setup.data' failed
+# make: *** [setup.data] Error 2
+### stderr ###
+# ocaml setup.ml -configure 
+# File "./setup.ml", line 213, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 213, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:34: recipe for target 'setup.data' failed
+# make: *** [setup.data] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install mparser 1.0.1
+No changes have been performed
+'opam install mparser.1.0.1' failed.

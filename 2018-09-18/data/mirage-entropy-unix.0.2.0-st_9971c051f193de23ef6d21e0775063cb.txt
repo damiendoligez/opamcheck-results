@@ -1,0 +1,79 @@
+The following actions will be performed:
+  - install mirage-entropy-unix 0.2.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mirage-entropy-unix: http] Command started
+[mirage-entropy-unix: http] Command started
+[mirage-entropy-unix.0.2.0] https://github.com/mirage/mirage-entropy/archive/v0.2.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mirage-entropy-unix: make unix-build] Command started
++ make "unix-build" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mirage-entropy-unix.0.2.0)
+- OS=unix ./build
+- ocamlfind ocamldep -syntax camlp4o -package mirage-types -package lwt.syntax -package lwt.unix -package lwt -package cstruct.lwt -package cstruct -modules unix/entropy_unix.mli > unix/entropy_unix.mli.depends
+- + ocamlfind ocamldep -syntax camlp4o -package mirage-types -package lwt.syntax -package lwt.unix -package lwt -package cstruct.lwt -package cstruct -modules unix/entropy_unix.mli > unix/entropy_unix.mli.depends
+- ocamlfind: Package `lwt.syntax' not found
+- Command exited with code 2.
+- Makefile:11: recipe for target 'unix-build' failed
+- make: *** [unix-build] Error 10
+- OS=unix ./build
+- ocamlfind ocamldep -syntax camlp4o -package mirage-types -package lwt.syntax -package lwt.unix -package lwt -package cstruct.lwt -package cstruct -modules unix/entropy_unix.mli > unix/entropy_unix.mli.depends
+- + ocamlfind ocamldep -syntax camlp4o -package mirage-types -package lwt.syntax -package lwt.unix -package lwt -package cstruct.lwt -package cstruct -modules unix/entropy_unix.mli > unix/entropy_unix.mli.depends
+- ocamlfind: Package `lwt.syntax' not found
+- Command exited with code 2.
+- Makefile:11: recipe for target 'unix-build' failed
+- make: *** [unix-build] Error 10
+[ERROR] The compilation of mirage-entropy-unix failed at "make unix-build".
+[mirage-entropy-unix: ocamlfind remove] Command started
++ ocamlfind "remove" "mirage-entropy-unix" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mirage-entropy-unix.0.2.0)
+- OS=unix ./build
+- ocamlfind ocamldep -syntax camlp4o -package mirage-types -package lwt.syntax -package lwt.unix -package lwt -package cstruct.lwt -package cstruct -modules unix/entropy_unix.mli > unix/entropy_unix.mli.depends
+- + ocamlfind ocamldep -syntax camlp4o -package mirage-types -package lwt.syntax -package lwt.unix -package lwt -package cstruct.lwt -package cstruct -modules unix/entropy_unix.mli > unix/entropy_unix.mli.depends
+- ocamlfind: Package `lwt.syntax' not found
+- Command exited with code 2.
+- Makefile:11: recipe for target 'unix-build' failed
+- make: *** [unix-build] Error 10
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/mirage-entropy-unix/META
+- OS=unix ./build
+- ocamlfind ocamldep -syntax camlp4o -package mirage-types -package lwt.syntax -package lwt.unix -package lwt -package cstruct.lwt -package cstruct -modules unix/entropy_unix.mli > unix/entropy_unix.mli.depends
+- + ocamlfind ocamldep -syntax camlp4o -package mirage-types -package lwt.syntax -package lwt.unix -package lwt -package cstruct.lwt -package cstruct -modules unix/entropy_unix.mli > unix/entropy_unix.mli.depends
+- ocamlfind: Package `lwt.syntax' not found
+- Command exited with code 2.
+- Makefile:11: recipe for target 'unix-build' failed
+- make: *** [unix-build] Error 10
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/mirage-entropy-unix/META
+
+#=== ERROR while installing mirage-entropy-unix.0.2.0 =========================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make unix-build
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mirage-entropy-unix.0.2.0
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mirage-entropy-unix.0.2.0/mirage-entropy-unix-18108.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mirage-entropy-unix.0.2.0/mirage-entropy-unix-18108.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mirage-entropy-unix.0.2.0/mirage-entropy-unix-18108.out
+### stdout ###
+# OS=unix ./build
+# ocamlfind ocamldep -syntax camlp4o -package mirage-types -package lwt.syntax -package lwt.unix -package lwt -package cstruct.lwt -package cstruct -modules unix/entropy_unix.mli > unix/entropy_unix.mli.depends
+# + ocamlfind ocamldep -syntax camlp4o -package mirage-types -package lwt.syntax -package lwt.unix -package lwt -package cstruct.lwt -package cstruct -modules unix/entropy_unix.mli > unix/entropy_unix.mli.depends
+# ocamlfind: Package `lwt.syntax' not found
+# Command exited with code 2.
+# Makefile:11: recipe for target 'unix-build' failed
+# make: *** [unix-build] Error 10
+### stderr ###
+# OS=unix ./build
+# ocamlfind ocamldep -syntax camlp4o -package mirage-types -package lwt.syntax -package lwt.unix -package lwt -package cstruct.lwt -package cstruct -modules unix/entropy_unix.mli > unix/entropy_unix.mli.depends
+# + ocamlfind ocamldep -syntax camlp4o -package mirage-types -package lwt.syntax -package lwt.unix -package lwt -package cstruct.lwt -package cstruct -modules unix/entropy_unix.mli > unix/entropy_unix.mli.depends
+# ocamlfind: Package `lwt.syntax' not found
+# Command exited with code 2.
+# Makefile:11: recipe for target 'unix-build' failed
+# make: *** [unix-build] Error 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install mirage-entropy-unix 0.2.0
+No changes have been performed
+'opam install mirage-entropy-unix.0.2.0' failed.

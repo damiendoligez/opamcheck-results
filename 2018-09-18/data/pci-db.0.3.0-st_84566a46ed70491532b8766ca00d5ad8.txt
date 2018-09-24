@@ -1,0 +1,91 @@
+The following actions will be performed:
+  - install pci-db 0.3.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pci-db: http] Command started
+[pci-db: http] Command started
+[pci-db.0.3.0] https://github.com/simonjbeaumont/ocaml-pci-db/archive/0.3.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pci-db: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pci-db.0.3.0)
+- ocaml setup.ml -configure --enable-tests
+- File "./setup.ml", line 213, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 213, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:36: recipe for target 'setup.data' failed
+- make: *** [setup.data] Error 2
+- ocaml setup.ml -configure --enable-tests
+- File "./setup.ml", line 213, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 213, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:36: recipe for target 'setup.data' failed
+- make: *** [setup.data] Error 2
+[ERROR] The compilation of pci-db failed at "make".
+[pci-db: ocamlfind remove] Command started
++ ocamlfind "remove" "pci-db" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pci-db.0.3.0)
+- ocaml setup.ml -configure --enable-tests
+- File "./setup.ml", line 213, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 213, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:36: recipe for target 'setup.data' failed
+- make: *** [setup.data] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/pci-db/META
+- ocaml setup.ml -configure --enable-tests
+- File "./setup.ml", line 213, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 213, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:36: recipe for target 'setup.data' failed
+- make: *** [setup.data] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/pci-db/META
+
+#=== ERROR while installing pci-db.0.3.0 ======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pci-db.0.3.0
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pci-db.0.3.0/pci-db-26544.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pci-db.0.3.0/pci-db-26544.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pci-db.0.3.0/pci-db-26544.out
+### stdout ###
+# ocaml setup.ml -configure --enable-tests
+# File "./setup.ml", line 213, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 213, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:36: recipe for target 'setup.data' failed
+# make: *** [setup.data] Error 2
+### stderr ###
+# ocaml setup.ml -configure --enable-tests
+# File "./setup.ml", line 213, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 213, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:36: recipe for target 'setup.data' failed
+# make: *** [setup.data] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install pci-db 0.3.0
+No changes have been performed
+'opam install pci-db.0.3.0' failed.

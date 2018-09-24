@@ -1,0 +1,75 @@
+The following actions will be performed:
+  - install tsdl 0.8.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[tsdl: http] Command started
+[tsdl: http] Command started
+[tsdl.0.8.2] http://erratique.ch/software/tsdl/releases/tsdl-0.8.2.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[tsdl: ocaml] Command started
++ ocaml "pkg/git.ml" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/tsdl.0.8.2)
+- File "pkg/topkg-ext.ml", line 42, characters 12-25:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "pkg/topkg-ext.ml", line 71, characters 24-25:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "pkg/config.ml", line 6, characters 10-24:
+- Error: Unbound module Config_default
+- File "./pkg/git.ml", line 9, characters 5-15:
+- Error: Unbound module Dir
+- File "pkg/topkg-ext.ml", line 42, characters 12-25:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "pkg/topkg-ext.ml", line 71, characters 24-25:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "pkg/config.ml", line 6, characters 10-24:
+- Error: Unbound module Config_default
+- File "./pkg/git.ml", line 9, characters 5-15:
+- Error: Unbound module Dir
+[ERROR] The compilation of tsdl failed at "ocaml pkg/git.ml".
+
+#=== ERROR while installing tsdl.0.8.2 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml pkg/git.ml
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/tsdl.0.8.2
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/tsdl.0.8.2/tsdl-5191.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/tsdl.0.8.2/tsdl-5191.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/tsdl.0.8.2/tsdl-5191.out
+### stdout ###
+# [...]
+# File "pkg/topkg-ext.ml", line 42, characters 12-25:
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "pkg/topkg-ext.ml", line 71, characters 24-25:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# File "pkg/config.ml", line 6, characters 10-24:
+# Error: Unbound module Config_default
+# File "./pkg/git.ml", line 9, characters 5-15:
+# Error: Unbound module Dir
+### stderr ###
+# [...]
+# File "pkg/topkg-ext.ml", line 42, characters 12-25:
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "pkg/topkg-ext.ml", line 71, characters 24-25:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# File "pkg/config.ml", line 6, characters 10-24:
+# Error: Unbound module Config_default
+# File "./pkg/git.ml", line 9, characters 5-15:
+# Error: Unbound module Dir
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install tsdl 0.8.2
+No changes have been performed
+'opam install tsdl.0.8.2' failed.

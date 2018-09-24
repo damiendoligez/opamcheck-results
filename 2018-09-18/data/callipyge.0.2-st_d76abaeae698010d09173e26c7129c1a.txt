@@ -1,0 +1,31 @@
+The following actions will be performed:
+  - install callipyge 0.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[callipyge: http] Command started
+[callipyge: http] Command started
+[callipyge.0.2] https://github.com/oklm-wsh/callipyge/releases/download/v0.2/callipyge-0.2.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[callipyge: dune build] Command started
++ dune "build" "-p" "callipyge" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/callipyge.0.2)
+[ERROR] The compilation of callipyge failed at "dune build -p callipyge -j 4".
+
+#=== ERROR while installing callipyge.0.2 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              dune build -p callipyge -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/callipyge.0.2
+# compiler             4.07.0+pr2051
+# exit-code            127
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/callipyge.0.2/callipyge-12526.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/callipyge.0.2/callipyge-12526.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/callipyge.0.2/callipyge-12526.out
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install callipyge 0.2
+No changes have been performed
+'opam install callipyge.0.2' failed.

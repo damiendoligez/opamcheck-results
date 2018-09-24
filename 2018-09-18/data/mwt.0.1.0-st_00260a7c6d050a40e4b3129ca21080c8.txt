@@ -1,0 +1,53 @@
+The following actions will be performed:
+  - install mwt 0.1.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mwt: http] Command started
+[mwt: http] Command started
+[mwt.0.1.0] https://github.com/hcarty/mwt/releases/download/v0.1.0/mwt-0.1.0.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mwt: dune build] Command started
++ dune "build" "-p" "mwt" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mwt.0.1.0)
+- File "dune-project", line 1, characters 11-14:
+- Error: Version 1.1 of dune is not supported.
+- Supported versions:
+- - 0.0
+- - 1.0
+- File "dune-project", line 1, characters 11-14:
+- Error: Version 1.1 of dune is not supported.
+- Supported versions:
+- - 0.0
+- - 1.0
+[ERROR] The compilation of mwt failed at "dune build -p mwt -j 4".
+
+#=== ERROR while installing mwt.0.1.0 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              dune build -p mwt -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mwt.0.1.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mwt.0.1.0/mwt-24369.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mwt.0.1.0/mwt-24369.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mwt.0.1.0/mwt-24369.out
+### stdout ###
+# File "dune-project", line 1, characters 11-14:
+# Error: Version 1.1 of dune is not supported.
+# Supported versions:
+# - 0.0
+# - 1.0
+### stderr ###
+# File "dune-project", line 1, characters 11-14:
+# Error: Version 1.1 of dune is not supported.
+# Supported versions:
+# - 0.0
+# - 1.0
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install mwt 0.1.0
+No changes have been performed
+'opam install mwt.0.1.0' failed.

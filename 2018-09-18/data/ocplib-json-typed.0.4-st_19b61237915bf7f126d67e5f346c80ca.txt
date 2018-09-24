@@ -1,0 +1,183 @@
+The following actions will be performed:
+  - install ocplib-json-typed 0.4
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocplib-json-typed: http] Command started
+[ocplib-json-typed: http] Command started
+[ocplib-json-typed.0.4] https://github.com/OCamlPro/ocplib-json-typed/archive/v0.4.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocplib-json-typed: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocplib-json-typed.0.4)
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr.ml
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_query.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_query.ml
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_schema.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_schema.ml
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_encoding.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_encoding.ml
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml src/json_repr.cmx src/json_query.cmx src/json_schema.cmx src/json_encoding.cmx -a -o src/ocplib_json_typed.cmxa
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml src/json_repr.cmx src/json_query.cmx src/json_schema.cmx src/json_encoding.cmx -shared -o src/ocplib_json_typed.cmxs
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr.ml
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_query.ml
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_schema.ml
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_encoding.ml
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr.ml
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_query.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_query.ml
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_schema.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_schema.ml
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_encoding.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_encoding.ml
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml src/json_repr.cmx src/json_query.cmx src/json_schema.cmx src/json_encoding.cmx -a -o src/ocplib_json_typed.cmxa
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml src/json_repr.cmx src/json_query.cmx src/json_schema.cmx src/json_encoding.cmx -shared -o src/ocplib_json_typed.cmxs
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr.ml
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_query.ml
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_schema.ml
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_encoding.ml
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml src/json_repr.cmo src/json_query.cmo src/json_schema.cmo src/json_encoding.cmo -a -o src/ocplib_json_typed.cma
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr_bson.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr_bson.ml
+- File "src/json_repr_bson.ml", line 389, characters 43-47:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val repr_uid : '_weak1 Json_repr.repr_uid
+-        is not included in
+-          val repr_uid : value Json_repr.repr_uid
+-        File "src/json_repr.mli", line 67, characters 2-31:
+-          Expected declaration
+-        File "src/json_repr_bson.ml", line 374, characters 6-14:
+-          Actual declaration
+- Makefile:59: recipe for target 'src/json_repr_bson.cmx' failed
+- make: *** [src/json_repr_bson.cmx] Error 2
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml src/json_repr.cmo src/json_query.cmo src/json_schema.cmo src/json_encoding.cmo -a -o src/ocplib_json_typed.cma
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr_bson.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr_bson.ml
+- File "src/json_repr_bson.ml", line 389, characters 43-47:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val repr_uid : '_weak1 Json_repr.repr_uid
+-        is not included in
+-          val repr_uid : value Json_repr.repr_uid
+-        File "src/json_repr.mli", line 67, characters 2-31:
+-          Expected declaration
+-        File "src/json_repr_bson.ml", line 374, characters 6-14:
+-          Actual declaration
+- Makefile:59: recipe for target 'src/json_repr_bson.cmx' failed
+- make: *** [src/json_repr_bson.cmx] Error 2
+[ERROR] The compilation of ocplib-json-typed failed at "make".
+[ocplib-json-typed: make uninstall] Command started
++ make "uninstall" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocplib-json-typed.0.4)
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr.ml
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_query.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_query.ml
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_schema.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_schema.ml
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_encoding.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_encoding.ml
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml src/json_repr.cmx src/json_query.cmx src/json_schema.cmx src/json_encoding.cmx -a -o src/ocplib_json_typed.cmxa
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml src/json_repr.cmx src/json_query.cmx src/json_schema.cmx src/json_encoding.cmx -shared -o src/ocplib_json_typed.cmxs
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr.ml
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_query.ml
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_schema.ml
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_encoding.ml
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml src/json_repr.cmo src/json_query.cmo src/json_schema.cmo src/json_encoding.cmo -a -o src/ocplib_json_typed.cma
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr_bson.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr_bson.ml
+- File "src/json_repr_bson.ml", line 389, characters 43-47:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val repr_uid : '_weak1 Json_repr.repr_uid
+-        is not included in
+-          val repr_uid : value Json_repr.repr_uid
+-        File "src/json_repr.mli", line 67, characters 2-31:
+-          Expected declaration
+-        File "src/json_repr_bson.ml", line 374, characters 6-14:
+-          Actual declaration
+- Makefile:59: recipe for target 'src/json_repr_bson.cmx' failed
+- make: *** [src/json_repr_bson.cmx] Error 2
+- ocamlfind remove ocplib-json-typed
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-json-typed/META
+- rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/../doc/ocplib-json-typed/* -rf
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr.ml
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_query.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_query.ml
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_schema.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_schema.ml
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_encoding.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_encoding.ml
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml src/json_repr.cmx src/json_query.cmx src/json_schema.cmx src/json_encoding.cmx -a -o src/ocplib_json_typed.cmxa
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml src/json_repr.cmx src/json_query.cmx src/json_schema.cmx src/json_encoding.cmx -shared -o src/ocplib_json_typed.cmxs
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr.ml
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_query.ml
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_schema.ml
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_encoding.ml
+- ocamlfind ocamlc -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml src/json_repr.cmo src/json_query.cmo src/json_schema.cmo src/json_encoding.cmo -a -o src/ocplib_json_typed.cma
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr_bson.mli
+- ocamlfind ocamlopt -bin-annot -g -safe-string -I src  -package ocplib-endian  -package uri  -package js_of_ocaml -c src/json_repr_bson.ml
+- File "src/json_repr_bson.ml", line 389, characters 43-47:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val repr_uid : '_weak1 Json_repr.repr_uid
+-        is not included in
+-          val repr_uid : value Json_repr.repr_uid
+-        File "src/json_repr.mli", line 67, characters 2-31:
+-          Expected declaration
+-        File "src/json_repr_bson.ml", line 374, characters 6-14:
+-          Actual declaration
+- Makefile:59: recipe for target 'src/json_repr_bson.cmx' failed
+- make: *** [src/json_repr_bson.cmx] Error 2
+- ocamlfind remove ocplib-json-typed
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-json-typed/META
+- rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/../doc/ocplib-json-typed/* -rf
+
+#=== ERROR while installing ocplib-json-typed.0.4 =============================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocplib-json-typed.0.4
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocplib-json-typed.0.4/ocplib-json-typed-29822.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocplib-json-typed.0.4/ocplib-json-typed-29822.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocplib-json-typed.0.4/ocplib-json-typed-29822.out
+### stdout ###
+# Error: Signature mismatch:
+# [...]
+#          val repr_uid : '_weak1 Json_repr.repr_uid
+#        is not included in
+#          val repr_uid : value Json_repr.repr_uid
+#        File "src/json_repr.mli", line 67, characters 2-31:
+#          Expected declaration
+#        File "src/json_repr_bson.ml", line 374, characters 6-14:
+#          Actual declaration
+# Makefile:59: recipe for target 'src/json_repr_bson.cmx' failed
+# make: *** [src/json_repr_bson.cmx] Error 2
+### stderr ###
+# Error: Signature mismatch:
+# [...]
+#          val repr_uid : '_weak1 Json_repr.repr_uid
+#        is not included in
+#          val repr_uid : value Json_repr.repr_uid
+#        File "src/json_repr.mli", line 67, characters 2-31:
+#          Expected declaration
+#        File "src/json_repr_bson.ml", line 374, characters 6-14:
+#          Actual declaration
+# Makefile:59: recipe for target 'src/json_repr_bson.cmx' failed
+# make: *** [src/json_repr_bson.cmx] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ocplib-json-typed 0.4
+No changes have been performed
+'opam install ocplib-json-typed.0.4' failed.

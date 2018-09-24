@@ -1,0 +1,50 @@
+The following actions will be performed:
+  - install amqp-client-lwt 2.0.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[amqp-client-lwt: http] Command started
+[amqp-client-lwt: http] Command started
+[amqp-client-lwt.2.0.2] https://github.com/andersfugmann/amqp-client/archive/2.0.2.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[amqp-client-lwt: jbuilder build] Command started
++ jbuilder "build" "-p" "amqp-client-lwt" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/amqp-client-lwt.2.0.2)
+-     ocamldep lwt/src/.amqp_client_lwt.objs/spec.ml.d (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules -impl lwt/src/spec.ml) > _build/default/lwt/src/.amqp_client_lwt.objs/spec.ml.d
+- File "spec/gen_spec.ml", line 394, characters 2-3:
+- Error: Syntax error
+-     ocamldep lwt/src/.amqp_client_lwt.objs/spec.ml.d (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules -impl lwt/src/spec.ml) > _build/default/lwt/src/.amqp_client_lwt.objs/spec.ml.d
+- File "spec/gen_spec.ml", line 394, characters 2-3:
+- Error: Syntax error
+[ERROR] The compilation of amqp-client-lwt failed at "jbuilder build -p
+        amqp-client-lwt -j 4".
+
+#=== ERROR while installing amqp-client-lwt.2.0.2 =============================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p amqp-client-lwt -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/amqp-client-lwt.2.0.2
+# compiler             4.07.0+24fac73
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/amqp-client-lwt.2.0.2/amqp-client-lwt-6475.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/amqp-client-lwt.2.0.2/amqp-client-lwt-6475.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/amqp-client-lwt.2.0.2/amqp-client-lwt-6475.out
+### stdout ###
+#     ocamldep lwt/src/.amqp_client_lwt.objs/spec.ml.d (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules -impl lwt/src/spec.ml) > _build/default/lwt/src/.amqp_client_lwt.objs/spec.ml.d
+# File "spec/gen_spec.ml", line 394, characters 2-3:
+# Error: Syntax error
+### stderr ###
+#     ocamldep lwt/src/.amqp_client_lwt.objs/spec.ml.d (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules -impl lwt/src/spec.ml) > _build/default/lwt/src/.amqp_client_lwt.objs/spec.ml.d
+# File "spec/gen_spec.ml", line 394, characters 2-3:
+# Error: Syntax error
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install amqp-client-lwt 2.0.2
+No changes have been performed
+'opam install amqp-client-lwt.2.0.2' failed.

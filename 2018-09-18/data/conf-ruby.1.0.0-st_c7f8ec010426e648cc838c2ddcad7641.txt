@@ -1,0 +1,33 @@
+The following actions will be performed:
+  - install conf-ruby 1.0.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[conf-ruby: ruby] Command started
++ ruby "--version" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/conf-ruby.1.0.0)
+[ERROR] The compilation of conf-ruby failed at "ruby --version".
+
+#=== ERROR while installing conf-ruby.1.0.0 ===================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ruby --version
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/conf-ruby.1.0.0
+# compiler             4.07.0+pr2051
+# exit-code            127
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/conf-ruby.1.0.0/conf-ruby-5955.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/conf-ruby.1.0.0/conf-ruby-5955.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/conf-ruby.1.0.0/conf-ruby-5955.out
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install conf-ruby 1.0.0
+No changes have been performed
+
+=-=- conf-ruby.1.0.0 troobleshooting =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package relies on external (system) dependencies that may be missing.
+   `opam depext conf-ruby.1.0.0' may help you find the correct installation for
+   your system.
+'opam install conf-ruby.1.0.0' failed.

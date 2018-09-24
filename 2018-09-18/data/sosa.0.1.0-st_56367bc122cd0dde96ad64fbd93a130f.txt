@@ -1,0 +1,197 @@
+The following actions will be performed:
+  - install sosa 0.1.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sosa: http] Command started
+[sosa: http] Command started
+[sosa.0.1.0] https://github.com/smondet/sosa/archive/sosa.0.1.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sosa: make build] Command started
++ make "build" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/sosa.0.1.0)
+- ocamlbuild sosa.cmo sosa.cmx sosa.cma sosa.cmxa sosa.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules sosa.ml > sosa.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o sosa.cmo sosa.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o sosa.cmo sosa.ml
+- File "sosa.ml", line 603, characters 10-26:
+- Warning 3: deprecated: Internal_pervasives.String.set
+- Use BytesLabels.set instead.
+- File "sosa.ml", line 584, characters 45-760:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val write_to_native_string :
+-            char ->
+-            buf:bytes -> index:int -> (int, [> `out_of_bounds ]) result
+-        is not included in
+-          val write_to_native_string :
+-            t ->
+-            buf:String.t -> index:int -> (int, [> `out_of_bounds ]) result
+-        File "sosa.ml", line 84, characters 2-96: Expected declaration
+-        File "sosa.ml", line 602, characters 8-30: Actual declaration
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:17: recipe for target 'build' failed
+- make: *** [build] Error 10
+- ocamlbuild sosa.cmo sosa.cmx sosa.cma sosa.cmxa sosa.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules sosa.ml > sosa.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o sosa.cmo sosa.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o sosa.cmo sosa.ml
+- File "sosa.ml", line 603, characters 10-26:
+- Warning 3: deprecated: Internal_pervasives.String.set
+- Use BytesLabels.set instead.
+- File "sosa.ml", line 584, characters 45-760:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val write_to_native_string :
+-            char ->
+-            buf:bytes -> index:int -> (int, [> `out_of_bounds ]) result
+-        is not included in
+-          val write_to_native_string :
+-            t ->
+-            buf:String.t -> index:int -> (int, [> `out_of_bounds ]) result
+-        File "sosa.ml", line 84, characters 2-96: Expected declaration
+-        File "sosa.ml", line 602, characters 8-30: Actual declaration
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:17: recipe for target 'build' failed
+- make: *** [build] Error 10
+[ERROR] The compilation of sosa failed at "make build".
+[sosa: make uninstall] Command started
++ make "uninstall" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/sosa.0.1.0)
+- ocamlbuild sosa.cmo sosa.cmx sosa.cma sosa.cmxa sosa.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules sosa.ml > sosa.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o sosa.cmo sosa.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o sosa.cmo sosa.ml
+- File "sosa.ml", line 603, characters 10-26:
+- Warning 3: deprecated: Internal_pervasives.String.set
+- Use BytesLabels.set instead.
+- File "sosa.ml", line 584, characters 45-760:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val write_to_native_string :
+-            char ->
+-            buf:bytes -> index:int -> (int, [> `out_of_bounds ]) result
+-        is not included in
+-          val write_to_native_string :
+-            t ->
+-            buf:String.t -> index:int -> (int, [> `out_of_bounds ]) result
+-        File "sosa.ml", line 84, characters 2-96: Expected declaration
+-        File "sosa.ml", line 602, characters 8-30: Actual declaration
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:17: recipe for target 'build' failed
+- make: *** [build] Error 10
+- ocamlfind remove sosa
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sosa/META
+- ocamlbuild sosa.cmo sosa.cmx sosa.cma sosa.cmxa sosa.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules sosa.ml > sosa.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o sosa.cmo sosa.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o sosa.cmo sosa.ml
+- File "sosa.ml", line 603, characters 10-26:
+- Warning 3: deprecated: Internal_pervasives.String.set
+- Use BytesLabels.set instead.
+- File "sosa.ml", line 584, characters 45-760:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val write_to_native_string :
+-            char ->
+-            buf:bytes -> index:int -> (int, [> `out_of_bounds ]) result
+-        is not included in
+-          val write_to_native_string :
+-            t ->
+-            buf:String.t -> index:int -> (int, [> `out_of_bounds ]) result
+-        File "sosa.ml", line 84, characters 2-96: Expected declaration
+-        File "sosa.ml", line 602, characters 8-30: Actual declaration
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:17: recipe for target 'build' failed
+- make: *** [build] Error 10
+- ocamlfind remove sosa
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/sosa/META
+
+#=== ERROR while installing sosa.0.1.0 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make build
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/sosa.0.1.0
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/sosa.0.1.0/sosa-31983.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/sosa.0.1.0/sosa-31983.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/sosa.0.1.0/sosa-31983.out
+### stdout ###
+# Hint: Recursive traversal of subdirectories was not enabled for this build,
+# [...]
+#   
+#   To enable recursive traversal for some subdirectories only, you can use the
+#   following '_tags' file:
+#   
+#       true: -traverse
+#       <dir1> or <dir2>: traverse
+#       
+# Makefile:17: recipe for target 'build' failed
+# make: *** [build] Error 10
+### stderr ###
+# Hint: Recursive traversal of subdirectories was not enabled for this build,
+# [...]
+#   
+#   To enable recursive traversal for some subdirectories only, you can use the
+#   following '_tags' file:
+#   
+#       true: -traverse
+#       <dir1> or <dir2>: traverse
+#       
+# Makefile:17: recipe for target 'build' failed
+# make: *** [build] Error 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install sosa 0.1.0
+No changes have been performed
+'opam install sosa.0.1.0' failed.

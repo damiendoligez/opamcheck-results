@@ -1,0 +1,49 @@
+The following actions will be performed:
+  - install nsq 0.3.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[nsq: http] Command started
+[nsq: http] Command started
+[nsq.0.3.0] https://github.com/ryanslade/nsq-ocaml/archive/0.3.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[nsq: jbuilder build] Command started
++ jbuilder "build" "-p" "nsq" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/nsq.0.3.0)
+-          ppx src/nsq.pp.ml (exit 1)
+- (cd _build/default && .ppx/jbuild/ppx_compare+ppx_sexp_conv+ppx_deriving_yojson/ppx.exe --cookie 'library-name="nsq"' -o src/nsq.pp.ml --impl src/nsq.ml --dump-ast)
+- File "src/nsq.ml", line 115, characters 16-41:
+- Error: Ppxlib.Deriving: 'yojson' is not a supported type deriving generator
+-          ppx src/nsq.pp.ml (exit 1)
+- (cd _build/default && .ppx/jbuild/ppx_compare+ppx_sexp_conv+ppx_deriving_yojson/ppx.exe --cookie 'library-name="nsq"' -o src/nsq.pp.ml --impl src/nsq.ml --dump-ast)
+- File "src/nsq.ml", line 115, characters 16-41:
+- Error: Ppxlib.Deriving: 'yojson' is not a supported type deriving generator
+[ERROR] The compilation of nsq failed at "jbuilder build -p nsq -j 4".
+
+#=== ERROR while installing nsq.0.3.0 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p nsq -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/nsq.0.3.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/nsq.0.3.0/nsq-2919.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/nsq.0.3.0/nsq-2919.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/nsq.0.3.0/nsq-2919.out
+### stdout ###
+#          ppx src/nsq.pp.ml (exit 1)
+# (cd _build/default && .ppx/jbuild/ppx_compare+ppx_sexp_conv+ppx_deriving_yojson/ppx.exe --cookie 'library-name="nsq"' -o src/nsq.pp.ml --impl src/nsq.ml --dump-ast)
+# File "src/nsq.ml", line 115, characters 16-41:
+# Error: Ppxlib.Deriving: 'yojson' is not a supported type deriving generator
+### stderr ###
+#          ppx src/nsq.pp.ml (exit 1)
+# (cd _build/default && .ppx/jbuild/ppx_compare+ppx_sexp_conv+ppx_deriving_yojson/ppx.exe --cookie 'library-name="nsq"' -o src/nsq.pp.ml --impl src/nsq.ml --dump-ast)
+# File "src/nsq.ml", line 115, characters 16-41:
+# Error: Ppxlib.Deriving: 'yojson' is not a supported type deriving generator
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install nsq 0.3.0
+No changes have been performed
+'opam install nsq.0.3.0' failed.

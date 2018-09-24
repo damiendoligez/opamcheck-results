@@ -1,0 +1,80 @@
+The following actions will be performed:
+  - install tsdl 0.9.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[tsdl: http] Command started
+[tsdl: http] Command started
+[tsdl.0.9.2] http://erratique.ch/software/tsdl/releases/tsdl-0.9.2.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[tsdl: ocaml build] Command started
++ ocaml "pkg/pkg.ml" "build" "--pinned" "false" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/tsdl.0.9.2)
+- ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package ocb-stubblr myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- + ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package ocb-stubblr myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind: Package `bos.setup' not found - required by `ocb-stubblr'
+- Command exited with code 2.
+- pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-tag' 'debug'
+-      '-build-dir' '_build' '-plugin-tag' 'package(ocb-stubblr)' 'opam'
+-      'pkg/META' 'CHANGES.md' 'LICENSE.md' 'README.md' 'src/tsdl.a'
+-      'src/tsdl.cmxs' 'src/tsdl.cmxa' 'src/tsdl.cma' 'src/tsdl.cmx'
+-      'src/tsdl.cmi' 'src/tsdl.mli' 'src/tsdl_consts.cmx' 'src/tsdl_top.a'
+-      'src/tsdl_top.cmxs' 'src/tsdl_top.cmxa' 'src/tsdl_top.cma'
+-      'src/tsdl_top.cmx' 'src/tsdl_top_init.ml' 'src/dlltsdl.so'
+-      'src/libtsdl.a' 'README.md' 'CHANGES.md' 'test/min.ml' 'test/minc.c']: exited with 10
+- ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package ocb-stubblr myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- + ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package ocb-stubblr myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind: Package `bos.setup' not found - required by `ocb-stubblr'
+- Command exited with code 2.
+- pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-tag' 'debug'
+-      '-build-dir' '_build' '-plugin-tag' 'package(ocb-stubblr)' 'opam'
+-      'pkg/META' 'CHANGES.md' 'LICENSE.md' 'README.md' 'src/tsdl.a'
+-      'src/tsdl.cmxs' 'src/tsdl.cmxa' 'src/tsdl.cma' 'src/tsdl.cmx'
+-      'src/tsdl.cmi' 'src/tsdl.mli' 'src/tsdl_consts.cmx' 'src/tsdl_top.a'
+-      'src/tsdl_top.cmxs' 'src/tsdl_top.cmxa' 'src/tsdl_top.cma'
+-      'src/tsdl_top.cmx' 'src/tsdl_top_init.ml' 'src/dlltsdl.so'
+-      'src/libtsdl.a' 'README.md' 'CHANGES.md' 'test/min.ml' 'test/minc.c']: exited with 10
+[ERROR] The compilation of tsdl failed at "ocaml pkg/pkg.ml build --pinned
+        false".
+
+#=== ERROR while installing tsdl.0.9.2 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml pkg/pkg.ml build --pinned false
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/tsdl.0.9.2
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/tsdl.0.9.2/tsdl-30436.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/tsdl.0.9.2/tsdl-30436.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/tsdl.0.9.2/tsdl-30436.out
+### stdout ###
+# [...]
+# ocamlfind: Package `bos.setup' not found - required by `ocb-stubblr'
+# Command exited with code 2.
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-tag' 'debug'
+#      '-build-dir' '_build' '-plugin-tag' 'package(ocb-stubblr)' 'opam'
+#      'pkg/META' 'CHANGES.md' 'LICENSE.md' 'README.md' 'src/tsdl.a'
+#      'src/tsdl.cmxs' 'src/tsdl.cmxa' 'src/tsdl.cma' 'src/tsdl.cmx'
+#      'src/tsdl.cmi' 'src/tsdl.mli' 'src/tsdl_consts.cmx' 'src/tsdl_top.a'
+#      'src/tsdl_top.cmxs' 'src/tsdl_top.cmxa' 'src/tsdl_top.cma'
+#      'src/tsdl_top.cmx' 'src/tsdl_top_init.ml' 'src/dlltsdl.so'
+#      'src/libtsdl.a' 'README.md' 'CHANGES.md' 'test/min.ml' 'test/minc.c']: exited with 10
+### stderr ###
+# [...]
+# ocamlfind: Package `bos.setup' not found - required by `ocb-stubblr'
+# Command exited with code 2.
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-tag' 'debug'
+#      '-build-dir' '_build' '-plugin-tag' 'package(ocb-stubblr)' 'opam'
+#      'pkg/META' 'CHANGES.md' 'LICENSE.md' 'README.md' 'src/tsdl.a'
+#      'src/tsdl.cmxs' 'src/tsdl.cmxa' 'src/tsdl.cma' 'src/tsdl.cmx'
+#      'src/tsdl.cmi' 'src/tsdl.mli' 'src/tsdl_consts.cmx' 'src/tsdl_top.a'
+#      'src/tsdl_top.cmxs' 'src/tsdl_top.cmxa' 'src/tsdl_top.cma'
+#      'src/tsdl_top.cmx' 'src/tsdl_top_init.ml' 'src/dlltsdl.so'
+#      'src/libtsdl.a' 'README.md' 'CHANGES.md' 'test/min.ml' 'test/minc.c']: exited with 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install tsdl 0.9.2
+No changes have been performed
+'opam install tsdl.0.9.2' failed.

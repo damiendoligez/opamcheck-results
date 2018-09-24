@@ -1,0 +1,70 @@
+The following actions will be performed:
+  - install regenerate 0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[regenerate: http] Command started
+[regenerate: http] Command started
+[regenerate.0.1] https://github.com/Drup/regenerate/releases/download/0.1/regenerate-0.1.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[regenerate: jbuilder build] Command started
++ jbuilder "build" "-p" "regenerate" "-j" "4" "@install" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/regenerate.0.1)
+- File "bin/jbuild", line 6, characters 14-28:
+- Error: Library "mtime.clock.os" not found.
+- Hint: try: dune external-lib-deps --missing --profile release -p regenerate @install
+-     ocamlopt lib/.regenerate.objs/regenerate__Word.{cmx,o}
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module CCString, and its interface was not compiled with -opaque
+-     ocamlopt lib/.regenerate.objs/regenerate__Langgen.{cmx,o}
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module CCFun, and its interface was not compiled with -opaque
+- File "bin/jbuild", line 6, characters 14-28:
+- Error: Library "mtime.clock.os" not found.
+- Hint: try: dune external-lib-deps --missing --profile release -p regenerate @install
+-     ocamlopt lib/.regenerate.objs/regenerate__Word.{cmx,o}
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module CCString, and its interface was not compiled with -opaque
+-     ocamlopt lib/.regenerate.objs/regenerate__Langgen.{cmx,o}
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module CCFun, and its interface was not compiled with -opaque
+[ERROR] The compilation of regenerate failed at "jbuilder build -p regenerate
+        -j 4 @install".
+
+#=== ERROR while installing regenerate.0.1 ====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p regenerate -j 4 @install
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/regenerate.0.1
+# compiler             4.07.0+24fac73
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/regenerate.0.1/regenerate-15046.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/regenerate.0.1/regenerate-15046.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/regenerate.0.1/regenerate-15046.out
+### stdout ###
+# File "bin/jbuild", line 6, characters 14-28:
+# Error: Library "mtime.clock.os" not found.
+# Hint: try: dune external-lib-deps --missing --profile release -p regenerate @install
+#     ocamlopt lib/.regenerate.objs/regenerate__Word.{cmx,o}
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module CCString, and its interface was not compiled with -opaque
+#     ocamlopt lib/.regenerate.objs/regenerate__Langgen.{cmx,o}
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module CCFun, and its interface was not compiled with -opaque
+### stderr ###
+# File "bin/jbuild", line 6, characters 14-28:
+# Error: Library "mtime.clock.os" not found.
+# Hint: try: dune external-lib-deps --missing --profile release -p regenerate @install
+#     ocamlopt lib/.regenerate.objs/regenerate__Word.{cmx,o}
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module CCString, and its interface was not compiled with -opaque
+#     ocamlopt lib/.regenerate.objs/regenerate__Langgen.{cmx,o}
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module CCFun, and its interface was not compiled with -opaque
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install regenerate 0.1
+No changes have been performed
+'opam install regenerate.0.1' failed.

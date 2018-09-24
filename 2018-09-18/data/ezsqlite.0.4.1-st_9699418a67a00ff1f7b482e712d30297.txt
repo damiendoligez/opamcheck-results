@@ -1,0 +1,53 @@
+The following actions will be performed:
+  - install ezsqlite 0.4.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ezsqlite: http] Command started
+[ezsqlite: http] Command started
+[ezsqlite.0.4.1] https://github.com/zshipko/ocaml-ezsqlite/releases/download/0.4.1/ezsqlite-0.4.1.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ezsqlite: dune build] Command started
++ dune "build" "-p" "ezsqlite" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ezsqlite.0.4.1)
+- File "dune-project", line 1, characters 11-14:
+- Error: Version 1.1 of dune is not supported.
+- Supported versions:
+- - 0.0
+- - 1.0
+- File "dune-project", line 1, characters 11-14:
+- Error: Version 1.1 of dune is not supported.
+- Supported versions:
+- - 0.0
+- - 1.0
+[ERROR] The compilation of ezsqlite failed at "dune build -p ezsqlite -j 4".
+
+#=== ERROR while installing ezsqlite.0.4.1 ====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              dune build -p ezsqlite -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ezsqlite.0.4.1
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ezsqlite.0.4.1/ezsqlite-7250.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ezsqlite.0.4.1/ezsqlite-7250.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ezsqlite.0.4.1/ezsqlite-7250.out
+### stdout ###
+# File "dune-project", line 1, characters 11-14:
+# Error: Version 1.1 of dune is not supported.
+# Supported versions:
+# - 0.0
+# - 1.0
+### stderr ###
+# File "dune-project", line 1, characters 11-14:
+# Error: Version 1.1 of dune is not supported.
+# Supported versions:
+# - 0.0
+# - 1.0
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ezsqlite 0.4.1
+No changes have been performed
+'opam install ezsqlite.0.4.1' failed.

@@ -1,0 +1,560 @@
+The following actions will be performed:
+  - install ogg 0.5.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ogg: http] Command started
+[ogg: http] Command started
+[ogg.0.5.0] https://github.com/savonet/ocaml-ogg/releases/download/0.5.0/ocaml-ogg-0.5.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ogg: ./configure] Command started
++ ./configure "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0)
+- configuring ocaml-ogg 0.5.0
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- checking for a BSD-compatible install... /usr/bin/install -c
+- checking that calling user is not root... ok
+- checking for gcc... (cached) gcc
+- checking whether we are using the GNU C compiler... (cached) yes
+- checking whether gcc accepts -g... (cached) yes
+- checking for gcc option to accept ISO C89... (cached) none needed
+- checking for ar... ar
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.1+dev0-2018-07-10
+- checking if ocaml compiler supports first-class modules... yes
+- OCaml library path is /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamldoc.opt... ocamldoc.opt
+- checking for ocamlbuild... ocamlbuild
+- checking for camlidl... no
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for camlp4... camlp4
+- versions differs from ocamlc
+- checking for camlp4boot... camlp4boot
+- checking for camlp4o... camlp4o
+- checking for camlp4of... camlp4of
+- checking for camlp4oof... camlp4oof
+- checking for camlp4orf... camlp4orf
+- checking for camlp4prof... camlp4prof
+- checking for camlp4r... camlp4r
+- checking for camlp4rf... camlp4rf
+- checking for ocamlfind... ocamlfind
+- checking for ocaml standard library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- checking for caml/threads.h... yes
+- checking for gcc option to produce PIC... -fPIC
+- checking for pkg-config... /usr/bin/pkg-config
+- checking pkg-config is at least version 0.9.0... yes
+- checking whether pkg-config knows about ogg... ok
+- checking for ogg_stream_pageout_fill in -logg... yes
+- checking for ocaml bytes module... ok
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating src/META
+- config.status: creating src/Makefile
+- configuring ocaml-ogg 0.5.0
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- checking for a BSD-compatible install... /usr/bin/install -c
+- checking that calling user is not root... ok
+- checking for gcc... (cached) gcc
+- checking whether we are using the GNU C compiler... (cached) yes
+- checking whether gcc accepts -g... (cached) yes
+- checking for gcc option to accept ISO C89... (cached) none needed
+- checking for ar... ar
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.1+dev0-2018-07-10
+- checking if ocaml compiler supports first-class modules... yes
+- OCaml library path is /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamldoc.opt... ocamldoc.opt
+- checking for ocamlbuild... ocamlbuild
+- checking for camlidl... no
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for camlp4... camlp4
+- versions differs from ocamlc
+- checking for camlp4boot... camlp4boot
+- checking for camlp4o... camlp4o
+- checking for camlp4of... camlp4of
+- checking for camlp4oof... camlp4oof
+- checking for camlp4orf... camlp4orf
+- checking for camlp4prof... camlp4prof
+- checking for camlp4r... camlp4r
+- checking for camlp4rf... camlp4rf
+- checking for ocamlfind... ocamlfind
+- checking for ocaml standard library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- checking for caml/threads.h... yes
+- checking for gcc option to produce PIC... -fPIC
+- checking for pkg-config... /usr/bin/pkg-config
+- checking pkg-config is at least version 0.9.0... yes
+- checking whether pkg-config knows about ogg... ok
+- checking for ogg_stream_pageout_fill in -logg... yes
+- checking for ocaml bytes module... ok
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating src/META
+- config.status: creating src/Makefile
+[ogg: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0)
+- configuring ocaml-ogg 0.5.0
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- checking for a BSD-compatible install... /usr/bin/install -c
+- checking that calling user is not root... ok
+- checking for gcc... (cached) gcc
+- checking whether we are using the GNU C compiler... (cached) yes
+- checking whether gcc accepts -g... (cached) yes
+- checking for gcc option to accept ISO C89... (cached) none needed
+- checking for ar... ar
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.1+dev0-2018-07-10
+- checking if ocaml compiler supports first-class modules... yes
+- OCaml library path is /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamldoc.opt... ocamldoc.opt
+- checking for ocamlbuild... ocamlbuild
+- checking for camlidl... no
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for camlp4... camlp4
+- versions differs from ocamlc
+- checking for camlp4boot... camlp4boot
+- checking for camlp4o... camlp4o
+- checking for camlp4of... camlp4of
+- checking for camlp4oof... camlp4oof
+- checking for camlp4orf... camlp4orf
+- checking for camlp4prof... camlp4prof
+- checking for camlp4r... camlp4r
+- checking for camlp4rf... camlp4rf
+- checking for ocamlfind... ocamlfind
+- checking for ocaml standard library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- checking for caml/threads.h... yes
+- checking for gcc option to produce PIC... -fPIC
+- checking for pkg-config... /usr/bin/pkg-config
+- checking pkg-config is at least version 0.9.0... yes
+- checking whether pkg-config knows about ogg... ok
+- checking for ogg_stream_pageout_fill in -logg... yes
+- checking for ocaml bytes module... ok
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating src/META
+- config.status: creating src/Makefile
+- make -C src all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+- ocamldep.opt ogg_demuxer.mli > ._bcdi/ogg_demuxer.di
+- ocamldep.opt ogg.mli > ._bcdi/ogg.di
+- ocamldep.opt ogg_demuxer.ml > ._d/ogg_demuxer.d
+- ocamldep.opt ogg.ml > ._d/ogg.d
+- ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/include  -DHAVE_PAGEOUT_FILL -Wall -DCAML_NAME_SPACE \
+- 			-DPIC -fPIC -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/include   \
+- 			  -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes  -o ogg_stubs.o " ogg_stubs.c
+- ar rcs libogg_stubs.a  ogg_stubs.o
+- ocamlc.opt -c -g -w +A@5-7@8@11@12@20-35-44-45 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes ogg.mli
+- ocamlc.opt -c -g -w +A@5-7@8@11@12@20-35-44-45 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes ogg.ml
+- File "ogg.ml", line 1:
+- Error: The implementation ogg.ml does not match the interface ogg.cmi:
+-        ...
+-        In module Sync:
+-        Values do not match:
+-          val create_from_file :
+-            string -> ((int -> bytes * int) * sync) ref * Unix.file_descr
+-        is not included in
+-          val create_from_file : string -> t * Unix.file_descr
+-        File "ogg.mli", line 137, characters 2-54: Expected declaration
+-        File "ogg.ml", line 130, characters 6-22: Actual declaration
+- OCamlMakefile:967: recipe for target 'ogg.cmo' failed
+- make[2]: *** [ogg.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+- OCamlMakefile:736: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+- Makefile:11: recipe for target 'all' failed
+- make: *** [all] Error 2
+- configuring ocaml-ogg 0.5.0
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- checking for a BSD-compatible install... /usr/bin/install -c
+- checking that calling user is not root... ok
+- checking for gcc... (cached) gcc
+- checking whether we are using the GNU C compiler... (cached) yes
+- checking whether gcc accepts -g... (cached) yes
+- checking for gcc option to accept ISO C89... (cached) none needed
+- checking for ar... ar
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.1+dev0-2018-07-10
+- checking if ocaml compiler supports first-class modules... yes
+- OCaml library path is /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamldoc.opt... ocamldoc.opt
+- checking for ocamlbuild... ocamlbuild
+- checking for camlidl... no
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for camlp4... camlp4
+- versions differs from ocamlc
+- checking for camlp4boot... camlp4boot
+- checking for camlp4o... camlp4o
+- checking for camlp4of... camlp4of
+- checking for camlp4oof... camlp4oof
+- checking for camlp4orf... camlp4orf
+- checking for camlp4prof... camlp4prof
+- checking for camlp4r... camlp4r
+- checking for camlp4rf... camlp4rf
+- checking for ocamlfind... ocamlfind
+- checking for ocaml standard library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- checking for caml/threads.h... yes
+- checking for gcc option to produce PIC... -fPIC
+- checking for pkg-config... /usr/bin/pkg-config
+- checking pkg-config is at least version 0.9.0... yes
+- checking whether pkg-config knows about ogg... ok
+- checking for ogg_stream_pageout_fill in -logg... yes
+- checking for ocaml bytes module... ok
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating src/META
+- config.status: creating src/Makefile
+- make -C src all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+- ocamldep.opt ogg_demuxer.mli > ._bcdi/ogg_demuxer.di
+- ocamldep.opt ogg.mli > ._bcdi/ogg.di
+- ocamldep.opt ogg_demuxer.ml > ._d/ogg_demuxer.d
+- ocamldep.opt ogg.ml > ._d/ogg.d
+- ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/include  -DHAVE_PAGEOUT_FILL -Wall -DCAML_NAME_SPACE \
+- 			-DPIC -fPIC -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/include   \
+- 			  -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes  -o ogg_stubs.o " ogg_stubs.c
+- ar rcs libogg_stubs.a  ogg_stubs.o
+- ocamlc.opt -c -g -w +A@5-7@8@11@12@20-35-44-45 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes ogg.mli
+- ocamlc.opt -c -g -w +A@5-7@8@11@12@20-35-44-45 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes ogg.ml
+- File "ogg.ml", line 1:
+- Error: The implementation ogg.ml does not match the interface ogg.cmi:
+-        ...
+-        In module Sync:
+-        Values do not match:
+-          val create_from_file :
+-            string -> ((int -> bytes * int) * sync) ref * Unix.file_descr
+-        is not included in
+-          val create_from_file : string -> t * Unix.file_descr
+-        File "ogg.mli", line 137, characters 2-54: Expected declaration
+-        File "ogg.ml", line 130, characters 6-22: Actual declaration
+- OCamlMakefile:967: recipe for target 'ogg.cmo' failed
+- make[2]: *** [ogg.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+- OCamlMakefile:736: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+- Makefile:11: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of ogg failed at "make".
+[ogg: ocamlfind remove] Command started
++ ocamlfind "remove" "ogg" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0)
+- configuring ocaml-ogg 0.5.0
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- checking for a BSD-compatible install... /usr/bin/install -c
+- checking that calling user is not root... ok
+- checking for gcc... (cached) gcc
+- checking whether we are using the GNU C compiler... (cached) yes
+- checking whether gcc accepts -g... (cached) yes
+- checking for gcc option to accept ISO C89... (cached) none needed
+- checking for ar... ar
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.1+dev0-2018-07-10
+- checking if ocaml compiler supports first-class modules... yes
+- OCaml library path is /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamldoc.opt... ocamldoc.opt
+- checking for ocamlbuild... ocamlbuild
+- checking for camlidl... no
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for camlp4... camlp4
+- versions differs from ocamlc
+- checking for camlp4boot... camlp4boot
+- checking for camlp4o... camlp4o
+- checking for camlp4of... camlp4of
+- checking for camlp4oof... camlp4oof
+- checking for camlp4orf... camlp4orf
+- checking for camlp4prof... camlp4prof
+- checking for camlp4r... camlp4r
+- checking for camlp4rf... camlp4rf
+- checking for ocamlfind... ocamlfind
+- checking for ocaml standard library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- checking for caml/threads.h... yes
+- checking for gcc option to produce PIC... -fPIC
+- checking for pkg-config... /usr/bin/pkg-config
+- checking pkg-config is at least version 0.9.0... yes
+- checking whether pkg-config knows about ogg... ok
+- checking for ogg_stream_pageout_fill in -logg... yes
+- checking for ocaml bytes module... ok
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating src/META
+- config.status: creating src/Makefile
+- make -C src all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+- ocamldep.opt ogg_demuxer.mli > ._bcdi/ogg_demuxer.di
+- ocamldep.opt ogg.mli > ._bcdi/ogg.di
+- ocamldep.opt ogg_demuxer.ml > ._d/ogg_demuxer.d
+- ocamldep.opt ogg.ml > ._d/ogg.d
+- ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/include  -DHAVE_PAGEOUT_FILL -Wall -DCAML_NAME_SPACE \
+- 			-DPIC -fPIC -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/include   \
+- 			  -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes  -o ogg_stubs.o " ogg_stubs.c
+- ar rcs libogg_stubs.a  ogg_stubs.o
+- ocamlc.opt -c -g -w +A@5-7@8@11@12@20-35-44-45 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes ogg.mli
+- ocamlc.opt -c -g -w +A@5-7@8@11@12@20-35-44-45 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes ogg.ml
+- File "ogg.ml", line 1:
+- Error: The implementation ogg.ml does not match the interface ogg.cmi:
+-        ...
+-        In module Sync:
+-        Values do not match:
+-          val create_from_file :
+-            string -> ((int -> bytes * int) * sync) ref * Unix.file_descr
+-        is not included in
+-          val create_from_file : string -> t * Unix.file_descr
+-        File "ogg.mli", line 137, characters 2-54: Expected declaration
+-        File "ogg.ml", line 130, characters 6-22: Actual declaration
+- OCamlMakefile:967: recipe for target 'ogg.cmo' failed
+- make[2]: *** [ogg.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+- OCamlMakefile:736: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+- Makefile:11: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ogg/META
+- configuring ocaml-ogg 0.5.0
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- checking for a BSD-compatible install... /usr/bin/install -c
+- checking that calling user is not root... ok
+- checking for gcc... (cached) gcc
+- checking whether we are using the GNU C compiler... (cached) yes
+- checking whether gcc accepts -g... (cached) yes
+- checking for gcc option to accept ISO C89... (cached) none needed
+- checking for ar... ar
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.1+dev0-2018-07-10
+- checking if ocaml compiler supports first-class modules... yes
+- OCaml library path is /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamldoc.opt... ocamldoc.opt
+- checking for ocamlbuild... ocamlbuild
+- checking for camlidl... no
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for camlp4... camlp4
+- versions differs from ocamlc
+- checking for camlp4boot... camlp4boot
+- checking for camlp4o... camlp4o
+- checking for camlp4of... camlp4of
+- checking for camlp4oof... camlp4oof
+- checking for camlp4orf... camlp4orf
+- checking for camlp4prof... camlp4prof
+- checking for camlp4r... camlp4r
+- checking for camlp4rf... camlp4rf
+- checking for ocamlfind... ocamlfind
+- checking for ocaml standard library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- checking for caml/threads.h... yes
+- checking for gcc option to produce PIC... -fPIC
+- checking for pkg-config... /usr/bin/pkg-config
+- checking pkg-config is at least version 0.9.0... yes
+- checking whether pkg-config knows about ogg... ok
+- checking for ogg_stream_pageout_fill in -logg... yes
+- checking for ocaml bytes module... ok
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating src/META
+- config.status: creating src/Makefile
+- make -C src all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+- ocamldep.opt ogg_demuxer.mli > ._bcdi/ogg_demuxer.di
+- ocamldep.opt ogg.mli > ._bcdi/ogg.di
+- ocamldep.opt ogg_demuxer.ml > ._d/ogg_demuxer.d
+- ocamldep.opt ogg.ml > ._d/ogg.d
+- ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/include  -DHAVE_PAGEOUT_FILL -Wall -DCAML_NAME_SPACE \
+- 			-DPIC -fPIC -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/include   \
+- 			  -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes  -o ogg_stubs.o " ogg_stubs.c
+- ar rcs libogg_stubs.a  ogg_stubs.o
+- ocamlc.opt -c -g -w +A@5-7@8@11@12@20-35-44-45 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes ogg.mli
+- ocamlc.opt -c -g -w +A@5-7@8@11@12@20-35-44-45 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes ogg.ml
+- File "ogg.ml", line 1:
+- Error: The implementation ogg.ml does not match the interface ogg.cmi:
+-        ...
+-        In module Sync:
+-        Values do not match:
+-          val create_from_file :
+-            string -> ((int -> bytes * int) * sync) ref * Unix.file_descr
+-        is not included in
+-          val create_from_file : string -> t * Unix.file_descr
+-        File "ogg.mli", line 137, characters 2-54: Expected declaration
+-        File "ogg.ml", line 130, characters 6-22: Actual declaration
+- OCamlMakefile:967: recipe for target 'ogg.cmo' failed
+- make[2]: *** [ogg.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+- OCamlMakefile:736: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+- Makefile:11: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ogg/META
+
+#=== ERROR while installing ogg.0.5.0 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/ogg-7542.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/ogg-7542.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/ogg-7542.out
+### stdout ###
+# Error: The implementation ogg.ml does not match the interface ogg.cmi:
+# [...]
+#        File "ogg.ml", line 130, characters 6-22: Actual declaration
+# OCamlMakefile:967: recipe for target 'ogg.cmo' failed
+# make[2]: *** [ogg.cmo] Error 2
+# make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+# OCamlMakefile:736: recipe for target 'byte-code-library' failed
+# make[1]: *** [byte-code-library] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+# Makefile:11: recipe for target 'all' failed
+# make: *** [all] Error 2
+### stderr ###
+# Error: The implementation ogg.ml does not match the interface ogg.cmi:
+# [...]
+#        File "ogg.ml", line 130, characters 6-22: Actual declaration
+# OCamlMakefile:967: recipe for target 'ogg.cmo' failed
+# make[2]: *** [ogg.cmo] Error 2
+# make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+# OCamlMakefile:736: recipe for target 'byte-code-library' failed
+# make[1]: *** [byte-code-library] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ogg.0.5.0/src'
+# Makefile:11: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ogg 0.5.0
+No changes have been performed
+
+=-=- ogg.0.5.0 troobleshooting =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package relies on external (system) dependencies that may be missing.
+   `opam depext ogg.0.5.0' may help you find the correct installation for your
+   system.
+'opam install ogg.0.5.0' failed.

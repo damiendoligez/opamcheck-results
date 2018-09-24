@@ -1,0 +1,107 @@
+The following actions will be performed:
+  - install earley-ocaml 1.0.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[earley-ocaml: http] Command started
+[earley-ocaml: http] Command started
+[earley-ocaml.1.0.2] https://github.com/rlepigre/ocaml-earley-ocaml/archive/ocaml-earley-ocaml_1.0.2.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[earley-ocaml: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/earley-ocaml.1.0.2)
+- [93mCOMPILING FROM ./bootstrap/4.07.1[0m
+- /bin/sh: line 0: cd: ./bootstrap/4.07.1: No such file or directory
+- ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_default.ml > pa_default.ml.depends
+- ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_main.ml > pa_main.ml.depends
+- ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_lexing.ml > pa_lexing.ml.depends
+- + ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_lexing.ml > pa_lexing.ml.depends
+- File "pa_lexing.ml", line 329, characters 22-23:
+- Error: Syntax error
+- Command exited with code 2.
+- GNUmakefile:41: recipe for target 'cold' failed
+- make: *** [cold] Error 10
+- [93mCOMPILING FROM ./bootstrap/4.07.1[0m
+- /bin/sh: line 0: cd: ./bootstrap/4.07.1: No such file or directory
+- ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_default.ml > pa_default.ml.depends
+- ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_main.ml > pa_main.ml.depends
+- ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_lexing.ml > pa_lexing.ml.depends
+- + ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_lexing.ml > pa_lexing.ml.depends
+- File "pa_lexing.ml", line 329, characters 22-23:
+- Error: Syntax error
+- Command exited with code 2.
+- GNUmakefile:41: recipe for target 'cold' failed
+- make: *** [cold] Error 10
+[ERROR] The compilation of earley-ocaml failed at "make".
+[earley-ocaml: make uninstall] Command started
++ make "uninstall" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/earley-ocaml.1.0.2)
+- [93mCOMPILING FROM ./bootstrap/4.07.1[0m
+- /bin/sh: line 0: cd: ./bootstrap/4.07.1: No such file or directory
+- ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_default.ml > pa_default.ml.depends
+- ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_main.ml > pa_main.ml.depends
+- ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_lexing.ml > pa_lexing.ml.depends
+- + ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_lexing.ml > pa_lexing.ml.depends
+- File "pa_lexing.ml", line 329, characters 22-23:
+- Error: Syntax error
+- Command exited with code 2.
+- GNUmakefile:41: recipe for target 'cold' failed
+- make: *** [cold] Error 10
+- ocamlfind remove earley_ocaml
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/earley_ocaml/META
+- rm -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin//pa_ocaml
+- [93mCOMPILING FROM ./bootstrap/4.07.1[0m
+- /bin/sh: line 0: cd: ./bootstrap/4.07.1: No such file or directory
+- ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_default.ml > pa_default.ml.depends
+- ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_main.ml > pa_main.ml.depends
+- ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_lexing.ml > pa_lexing.ml.depends
+- + ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_lexing.ml > pa_lexing.ml.depends
+- File "pa_lexing.ml", line 329, characters 22-23:
+- Error: Syntax error
+- Command exited with code 2.
+- GNUmakefile:41: recipe for target 'cold' failed
+- make: *** [cold] Error 10
+- ocamlfind remove earley_ocaml
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/earley_ocaml/META
+- rm -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin//pa_ocaml
+
+#=== ERROR while installing earley-ocaml.1.0.2 ================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/earley-ocaml.1.0.2
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/earley-ocaml.1.0.2/earley-ocaml-30016.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/earley-ocaml.1.0.2/earley-ocaml-30016.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/earley-ocaml.1.0.2/earley-ocaml-30016.out
+### stdout ###
+# [...]
+# /bin/sh: line 0: cd: ./bootstrap/4.07.1: No such file or directory
+# ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_default.ml > pa_default.ml.depends
+# ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_main.ml > pa_main.ml.depends
+# ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_lexing.ml > pa_lexing.ml.depends
+# + ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_lexing.ml > pa_lexing.ml.depends
+# File "pa_lexing.ml", line 329, characters 22-23:
+# Error: Syntax error
+# Command exited with code 2.
+# GNUmakefile:41: recipe for target 'cold' failed
+# make: *** [cold] Error 10
+### stderr ###
+# [...]
+# /bin/sh: line 0: cd: ./bootstrap/4.07.1: No such file or directory
+# ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_default.ml > pa_default.ml.depends
+# ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_main.ml > pa_main.ml.depends
+# ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_lexing.ml > pa_lexing.ml.depends
+# + ocamlfind ocamldep -package compiler-libs -package str -package unix -package earley.str -package earley -modules pa_lexing.ml > pa_lexing.ml.depends
+# File "pa_lexing.ml", line 329, characters 22-23:
+# Error: Syntax error
+# Command exited with code 2.
+# GNUmakefile:41: recipe for target 'cold' failed
+# make: *** [cold] Error 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install earley-ocaml 1.0.2
+No changes have been performed
+'opam install earley-ocaml.1.0.2' failed.

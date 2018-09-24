@@ -1,0 +1,201 @@
+The following actions will be performed:
+  - install ocamlweb 1.38
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocamlweb: http] Command started
+[ocamlweb: http] Command started
+[ocamlweb.1.38] http://www.lri.fr/~filliatr/ftp/ocamlweb/ocamlweb-1.38.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocamlweb: ./configure] Command started
++ ./configure "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73" "--sbindir=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlweb/sbin" "--libexecdir=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlweb/libexec" "--sysconfdir=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlweb/etc" "--sharedstatedir=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlweb/com" "--localstatedir=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlweb/var" "--libdir=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlweb/lib" "--includedir=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlweb/include" "--datarootdir=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlweb/share" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocamlweb.1.38)
+- checking for ocamlc... ocamlc
+- ocaml version is 4.07.1+dev0-2018-07-10
+- ocaml library path is /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for mktexlsr... true
+- configure: WARNING: Cannot find mktexlsr.
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- checking for ocamlc... ocamlc
+- ocaml version is 4.07.1+dev0-2018-07-10
+- ocaml library path is /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for mktexlsr... true
+- configure: WARNING: Cannot find mktexlsr.
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+[ocamlweb: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocamlweb.1.38)
+- checking for ocamlc... ocamlc
+- ocaml version is 4.07.1+dev0-2018-07-10
+- ocaml library path is /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for mktexlsr... true
+- configure: WARNING: Cannot find mktexlsr.
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/misc.mli
+- ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/misc.ml
+- File "ocaml-parser/misc.ml", line 95, characters 14-33:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "ocaml-parser/misc.ml", line 131, characters 13-26:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "ocaml-parser/misc.ml", line 138, characters 13-26:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/clflags.ml
+- ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/terminfo.mli
+- ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/terminfo.ml
+- ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/warnings.mli
+- ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/warnings.ml
+- File "ocaml-parser/warnings.ml", line 51, characters 13-25:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- File "ocaml-parser/warnings.ml", line 52, characters 12-24:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- File "ocaml-parser/warnings.ml", line 128, characters 4-48:
+- Warning 3: deprecated: Stdlib.Format.pp_get_all_formatter_output_functions
+- Use Format.pp_get_formatter_out_functions instead.
+- File "ocaml-parser/warnings.ml", line 131, characters 2-46:
+- Warning 3: deprecated: Stdlib.Format.pp_set_all_formatter_output_functions
+- Use Format.pp_set_formatter_out_functions instead.
+- File "ocaml-parser/warnings.ml", line 134, characters 2-46:
+- Warning 3: deprecated: Stdlib.Format.pp_set_all_formatter_output_functions
+- Use Format.pp_set_formatter_out_functions instead.
+- ocamllex ocaml-parser/linenum.mll
+- 12 states, 323 transitions, table size 1364 bytes
+- ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/linenum.mli
+- ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/linenum.ml
+- ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/location.mli
+- ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/location.ml
+- File "ocaml-parser/location.ml", line 73, characters 7-20:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:227: recipe for target 'ocaml-parser/location.cmx' failed
+- make: *** [ocaml-parser/location.cmx] Error 2
+- checking for ocamlc... ocamlc
+- ocaml version is 4.07.1+dev0-2018-07-10
+- ocaml library path is /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for mktexlsr... true
+- configure: WARNING: Cannot find mktexlsr.
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/misc.mli
+- ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/misc.ml
+- File "ocaml-parser/misc.ml", line 95, characters 14-33:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "ocaml-parser/misc.ml", line 131, characters 13-26:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "ocaml-parser/misc.ml", line 138, characters 13-26:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/clflags.ml
+- ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/terminfo.mli
+- ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/terminfo.ml
+- ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/warnings.mli
+- ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/warnings.ml
+- File "ocaml-parser/warnings.ml", line 51, characters 13-25:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- File "ocaml-parser/warnings.ml", line 52, characters 12-24:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- File "ocaml-parser/warnings.ml", line 128, characters 4-48:
+- Warning 3: deprecated: Stdlib.Format.pp_get_all_formatter_output_functions
+- Use Format.pp_get_formatter_out_functions instead.
+- File "ocaml-parser/warnings.ml", line 131, characters 2-46:
+- Warning 3: deprecated: Stdlib.Format.pp_set_all_formatter_output_functions
+- Use Format.pp_set_formatter_out_functions instead.
+- File "ocaml-parser/warnings.ml", line 134, characters 2-46:
+- Warning 3: deprecated: Stdlib.Format.pp_set_all_formatter_output_functions
+- Use Format.pp_set_formatter_out_functions instead.
+- ocamllex ocaml-parser/linenum.mll
+- 12 states, 323 transitions, table size 1364 bytes
+- ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/linenum.mli
+- ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/linenum.ml
+- ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/location.mli
+- ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/location.ml
+- File "ocaml-parser/location.ml", line 73, characters 7-20:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:227: recipe for target 'ocaml-parser/location.cmx' failed
+- make: *** [ocaml-parser/location.cmx] Error 2
+[ERROR] The compilation of ocamlweb failed at "make".
+
+#=== ERROR while installing ocamlweb.1.38 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocamlweb.1.38
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocamlweb.1.38/ocamlweb-13883.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocamlweb.1.38/ocamlweb-13883.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocamlweb.1.38/ocamlweb-13883.out
+### stdout ###
+# [...]
+# 12 states, 323 transitions, table size 1364 bytes
+# ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/linenum.mli
+# ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/linenum.ml
+# ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/location.mli
+# ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/location.ml
+# File "ocaml-parser/location.ml", line 73, characters 7-20:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:227: recipe for target 'ocaml-parser/location.cmx' failed
+# make: *** [ocaml-parser/location.cmx] Error 2
+### stderr ###
+# [...]
+# 12 states, 323 transitions, table size 1364 bytes
+# ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/linenum.mli
+# ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/linenum.ml
+# ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/location.mli
+# ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/location.ml
+# File "ocaml-parser/location.ml", line 73, characters 7-20:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:227: recipe for target 'ocaml-parser/location.cmx' failed
+# make: *** [ocaml-parser/location.cmx] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ocamlweb 1.38
+No changes have been performed
+'opam install ocamlweb.1.38' failed.

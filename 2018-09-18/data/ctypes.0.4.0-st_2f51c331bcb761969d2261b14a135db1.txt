@@ -1,0 +1,85 @@
+The following actions will be performed:
+  - install ctypes 0.4.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ctypes: http] Command started
+[ctypes: http] Command started
+[ctypes.0.4.0] https://github.com/ocamllabs/ocaml-ctypes/archive/0.4.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ctypes: make libffi.config] Command started
++ make "XEN=disable" "libffi.config" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ctypes.0.4.0)
+- ./src/discover/determine_as_needed_flags.sh >> asneeded.config
+- File "src/discover/commands.ml", line 28, characters 2-239:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- File "src/discover/commands.ml", line 28, characters 2-239:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- make: *** No rule to make target 'libffi.config'.  Stop.
+- ./src/discover/determine_as_needed_flags.sh >> asneeded.config
+- File "src/discover/commands.ml", line 28, characters 2-239:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- File "src/discover/commands.ml", line 28, characters 2-239:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- make: *** No rule to make target 'libffi.config'.  Stop.
+[ERROR] The compilation of ctypes failed at "make XEN=disable libffi.config".
+[ctypes: ocamlfind remove] Command started
++ ocamlfind "remove" "ctypes" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ctypes.0.4.0)
+- ./src/discover/determine_as_needed_flags.sh >> asneeded.config
+- File "src/discover/commands.ml", line 28, characters 2-239:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- File "src/discover/commands.ml", line 28, characters 2-239:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- make: *** No rule to make target 'libffi.config'.  Stop.
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes/META
+- ./src/discover/determine_as_needed_flags.sh >> asneeded.config
+- File "src/discover/commands.ml", line 28, characters 2-239:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- File "src/discover/commands.ml", line 28, characters 2-239:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- make: *** No rule to make target 'libffi.config'.  Stop.
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes/META
+
+#=== ERROR while installing ctypes.0.4.0 ======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make XEN=disable libffi.config
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ctypes.0.4.0
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ctypes.0.4.0/ctypes-17920.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ctypes.0.4.0/ctypes-17920.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ctypes.0.4.0/ctypes-17920.out
+### stdout ###
+# ./src/discover/determine_as_needed_flags.sh >> asneeded.config
+# File "src/discover/commands.ml", line 28, characters 2-239:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# File "src/discover/commands.ml", line 28, characters 2-239:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# make: *** No rule to make target 'libffi.config'.  Stop.
+### stderr ###
+# ./src/discover/determine_as_needed_flags.sh >> asneeded.config
+# File "src/discover/commands.ml", line 28, characters 2-239:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# File "src/discover/commands.ml", line 28, characters 2-239:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# make: *** No rule to make target 'libffi.config'.  Stop.
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ctypes 0.4.0
+No changes have been performed
+'opam install ctypes.0.4.0' failed.

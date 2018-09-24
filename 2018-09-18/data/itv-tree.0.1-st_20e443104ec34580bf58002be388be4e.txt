@@ -1,0 +1,75 @@
+The following actions will be performed:
+  - install itv-tree 0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[itv-tree: http] Command started
+[itv-tree: http] Command started
+[itv-tree.0.1] https://github.com/UnixJunkie/interval-tree/archive/v1.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[itv-tree: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/itv-tree.0.1)
+- File "./setup.ml", line 247, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 247, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "./setup.ml", line 247, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 247, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+[ERROR] The compilation of itv-tree failed at "ocaml setup.ml -configure
+        --prefix
+        /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73".
+[itv-tree: ocamlfind remove] Command started
++ ocamlfind "remove" "itv-tree" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/itv-tree.0.1)
+- File "./setup.ml", line 247, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 247, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/itv-tree/META
+- File "./setup.ml", line 247, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "./setup.ml", line 247, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/itv-tree/META
+
+#=== ERROR while installing itv-tree.0.1 ======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -configure --prefix /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/itv-tree.0.1
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/itv-tree.0.1/itv-tree-20370.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/itv-tree.0.1/itv-tree-20370.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/itv-tree.0.1/itv-tree-20370.out
+### stdout ###
+# File "./setup.ml", line 247, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 247, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+### stderr ###
+# File "./setup.ml", line 247, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 247, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install itv-tree 0.1
+No changes have been performed
+'opam install itv-tree.0.1' failed.

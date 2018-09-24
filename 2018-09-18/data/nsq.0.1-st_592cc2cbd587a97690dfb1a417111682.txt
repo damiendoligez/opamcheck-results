@@ -1,0 +1,79 @@
+The following actions will be performed:
+  - install nsq 0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[nsq: http] Command started
+[nsq: http] Command started
+[nsq.0.1] https://github.com/ryanslade/nsq-ocaml/archive/0.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[nsq: jbuilder build] Command started
++ jbuilder "build" "-p" "nsq" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/nsq.0.1)
+-     ocamlopt src/.nsq.objs/nsq.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I src/.nsq.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/containers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -no-alias-deps -o src/.nsq.objs/nsq.cmx -c -impl src/nsq.ml)
+- File "src/nsq.ml", line 166, characters 5-20:
+- Error: This expression has type string -> unit Lwt.t
+-        but an expression was expected of type bytes -> 'a
+-        Type string is not compatible with type bytes 
+-       ocamlc src/.nsq.objs/nsq.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.nsq.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/containers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -no-alias-deps -o src/.nsq.objs/nsq.cmo -c -impl src/nsq.ml)
+- File "src/nsq.ml", line 166, characters 5-20:
+- Error: This expression has type string -> unit Lwt.t
+-        but an expression was expected of type bytes -> 'a
+-        Type string is not compatible with type bytes 
+-     ocamlopt src/.nsq.objs/nsq.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I src/.nsq.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/containers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -no-alias-deps -o src/.nsq.objs/nsq.cmx -c -impl src/nsq.ml)
+- File "src/nsq.ml", line 166, characters 5-20:
+- Error: This expression has type string -> unit Lwt.t
+-        but an expression was expected of type bytes -> 'a
+-        Type string is not compatible with type bytes 
+-       ocamlc src/.nsq.objs/nsq.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.nsq.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/containers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -no-alias-deps -o src/.nsq.objs/nsq.cmo -c -impl src/nsq.ml)
+- File "src/nsq.ml", line 166, characters 5-20:
+- Error: This expression has type string -> unit Lwt.t
+-        but an expression was expected of type bytes -> 'a
+-        Type string is not compatible with type bytes 
+[ERROR] The compilation of nsq failed at "jbuilder build -p nsq -j 4".
+
+#=== ERROR while installing nsq.0.1 ===========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p nsq -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/nsq.0.1
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/nsq.0.1/nsq-2684.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/nsq.0.1/nsq-2684.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/nsq.0.1/nsq-2684.out
+### stdout ###
+# [...]
+# File "src/nsq.ml", line 166, characters 5-20:
+# Error: This expression has type string -> unit Lwt.t
+#        but an expression was expected of type bytes -> 'a
+#        Type string is not compatible with type bytes 
+#       ocamlc src/.nsq.objs/nsq.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.nsq.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/containers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -no-alias-deps -o src/.nsq.objs/nsq.cmo -c -impl src/nsq.ml)
+# File "src/nsq.ml", line 166, characters 5-20:
+# Error: This expression has type string -> unit Lwt.t
+#        but an expression was expected of type bytes -> 'a
+#        Type string is not compatible with type bytes 
+### stderr ###
+# [...]
+# File "src/nsq.ml", line 166, characters 5-20:
+# Error: This expression has type string -> unit Lwt.t
+#        but an expression was expected of type bytes -> 'a
+#        Type string is not compatible with type bytes 
+#       ocamlc src/.nsq.objs/nsq.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.nsq.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/containers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -no-alias-deps -o src/.nsq.objs/nsq.cmo -c -impl src/nsq.ml)
+# File "src/nsq.ml", line 166, characters 5-20:
+# Error: This expression has type string -> unit Lwt.t
+#        but an expression was expected of type bytes -> 'a
+#        Type string is not compatible with type bytes 
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install nsq 0.1
+No changes have been performed
+'opam install nsq.0.1' failed.

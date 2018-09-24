@@ -1,0 +1,1576 @@
+The following actions will be performed:
+  - install postgresql 4.0.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[postgresql: http] Command started
+[postgresql: http] Command started
+[postgresql.4.0.0] https://github.com/mmottl/postgresql-ocaml/releases/download/v4.0.0/postgresql-ocaml-4.0.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[postgresql: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051" "--enable-lablgtk2" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/postgresql.4.0.0)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ postgresql
+- Package version: ..................................... 4.0.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Strict compile-time checks: .......................... true
+- Build examples: ...................................... true
+- Build applications depending on lablgtk2: ............ true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_bigarray: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes
+- pkg_lablgtk2: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lablgtk2
+- 
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ postgresql
+- Package version: ..................................... 4.0.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Strict compile-time checks: .......................... true
+- Build examples: ...................................... true
+- Build applications depending on lablgtk2: ............ true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_bigarray: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes
+- pkg_lablgtk2: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lablgtk2
+- 
+[postgresql: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-build" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/postgresql.4.0.0)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ postgresql
+- Package version: ..................................... 4.0.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Strict compile-time checks: .......................... true
+- Build examples: ...................................... true
+- Build applications depending on lablgtk2: ............ true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_bigarray: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes
+- pkg_lablgtk2: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lablgtk2
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ postgresql
+- Package version: ..................................... 4.0.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Strict compile-time checks: .......................... true
+- Build examples: ...................................... true
+- Build applications depending on lablgtk2: ............ true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_bigarray: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes
+- pkg_lablgtk2: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lablgtk2
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -ccopt -I/usr/include/postgresql -ccopt '-DPG_OCAML_MAJOR_VERSION=9' -ccopt '-DPG_OCAML_MINOR_VERSION=5' -c lib/postgresql_stubs.c
+- mv postgresql_stubs.o lib/postgresql_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlmklib -o lib/postgresql_stubs -lpq -L/usr/lib/x86_64-linux-gnu -lpq lib/postgresql_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package threads -modules lib/postgresql.mli > lib/postgresql.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmi lib/postgresql.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package threads -modules lib/postgresql.ml > lib/postgresql.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package threads -modules lib/postgresql_compat.ml > lib/postgresql_compat.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql_compat.cmo lib/postgresql_compat.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmo lib/postgresql.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmo lib/postgresql.ml
+- File "lib/postgresql.ml", line 338, characters 2-71:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 351, characters 2-94:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 355, characters 2-74:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 356, characters 2-80:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 360, characters 2-68:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 375, characters 2-88:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 383, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 386, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 388, characters 2-72:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 389, characters 2-76:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 390, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 393, characters 2-64:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 394, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 395, characters 2-75:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 402, characters 2-86:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 405, characters 2-85:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 410, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 415, characters 2-91:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 418, characters 2-79:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 421, characters 2-87:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 424, characters 2-94:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 427, characters 2-85:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 434, characters 2-100:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 449, characters 2-78:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 450, characters 2-67:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 451, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 452, characters 2-65:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 466, characters 2-107:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a -dllib -lpostgresql_stubs -cclib -lpostgresql_stubs -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq lib/postgresql_compat.cmo lib/postgresql.cmo -o lib/postgresql.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql_compat.cmx lib/postgresql_compat.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmx lib/postgresql.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -ccopt -I/usr/include/postgresql -ccopt '-DPG_OCAML_MAJOR_VERSION=9' -ccopt '-DPG_OCAML_MINOR_VERSION=5' -c lib/postgresql_stubs.c
+- mv postgresql_stubs.o lib/postgresql_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlmklib -o lib/postgresql_stubs -lpq -L/usr/lib/x86_64-linux-gnu -lpq lib/postgresql_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package threads -modules lib/postgresql.mli > lib/postgresql.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmi lib/postgresql.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package threads -modules lib/postgresql.ml > lib/postgresql.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package threads -modules lib/postgresql_compat.ml > lib/postgresql_compat.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql_compat.cmo lib/postgresql_compat.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmo lib/postgresql.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmo lib/postgresql.ml
+- File "lib/postgresql.ml", line 338, characters 2-71:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 351, characters 2-94:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 355, characters 2-74:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 356, characters 2-80:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 360, characters 2-68:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 375, characters 2-88:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 383, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 386, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 388, characters 2-72:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 389, characters 2-76:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 390, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 393, characters 2-64:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 394, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 395, characters 2-75:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 402, characters 2-86:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 405, characters 2-85:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 410, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 415, characters 2-91:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 418, characters 2-79:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 421, characters 2-87:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 424, characters 2-94:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 427, characters 2-85:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 434, characters 2-100:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 449, characters 2-78:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 450, characters 2-67:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 451, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 452, characters 2-65:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 466, characters 2-107:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a -dllib -lpostgresql_stubs -cclib -lpostgresql_stubs -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq lib/postgresql_compat.cmo lib/postgresql.cmo -o lib/postgresql.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql_compat.cmx lib/postgresql_compat.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmx lib/postgresql.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmx lib/postgresql.ml
+- File "lib/postgresql.ml", line 338, characters 2-71:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 351, characters 2-94:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 355, characters 2-74:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 356, characters 2-80:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 360, characters 2-68:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 375, characters 2-88:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 383, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 386, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 388, characters 2-72:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 389, characters 2-76:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 390, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 393, characters 2-64:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 394, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 395, characters 2-75:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 402, characters 2-86:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 405, characters 2-85:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 410, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 415, characters 2-91:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 418, characters 2-79:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 421, characters 2-87:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 424, characters 2-94:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 427, characters 2-85:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 434, characters 2-100:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 449, characters 2-78:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 450, characters 2-67:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 451, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 452, characters 2-65:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 466, characters 2-107:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a -cclib -lpostgresql_stubs -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq lib/postgresql_compat.cmx lib/postgresql.cmx -o lib/postgresql.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared -cclib -lpostgresql_stubs -I lib -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq lib/postgresql.cmxa lib/postgresql_compat.cmx lib/postgresql.cmx -o lib/postgresql.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/async.ml > examples/async.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmo examples/async.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmo examples/async.ml
+- File "examples/async.ml", line 2, characters 0-15:
+- Warning 45: this open statement shadows the constructor Ok (which is later used)
+- File "examples/async.ml", line 2, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmx examples/async.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmx examples/async.ml
+- File "examples/async.ml", line 2, characters 0-15:
+- Warning 45: this open statement shadows the constructor Ok (which is later used)
+- File "examples/async.ml", line 2, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/async.cmx -o examples/async.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/cursor.ml > examples/cursor.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmo examples/cursor.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmo examples/cursor.ml
+- File "examples/cursor.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmx examples/cursor.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmx examples/cursor.ml
+- File "examples/cursor.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/cursor.cmx -o examples/cursor.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/dump.ml > examples/dump.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmo examples/dump.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmo examples/dump.ml
+- File "examples/dump.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmx examples/dump.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmx examples/dump.ml
+- File "examples/dump.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/dump.cmx -o examples/dump.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/populate.ml > examples/populate.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmo examples/populate.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmo examples/populate.ml
+- File "examples/populate.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmx examples/populate.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmx examples/populate.ml
+- File "examples/populate.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/populate.cmx -o examples/populate.native
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmx lib/postgresql.ml
+- File "lib/postgresql.ml", line 338, characters 2-71:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 351, characters 2-94:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 355, characters 2-74:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 356, characters 2-80:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 360, characters 2-68:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 375, characters 2-88:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 383, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 386, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 388, characters 2-72:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 389, characters 2-76:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 390, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 393, characters 2-64:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 394, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 395, characters 2-75:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 402, characters 2-86:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 405, characters 2-85:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 410, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 415, characters 2-91:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 418, characters 2-79:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 421, characters 2-87:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 424, characters 2-94:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 427, characters 2-85:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 434, characters 2-100:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 449, characters 2-78:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 450, characters 2-67:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 451, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 452, characters 2-65:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 466, characters 2-107:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a -cclib -lpostgresql_stubs -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq lib/postgresql_compat.cmx lib/postgresql.cmx -o lib/postgresql.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared -cclib -lpostgresql_stubs -I lib -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq lib/postgresql.cmxa lib/postgresql_compat.cmx lib/postgresql.cmx -o lib/postgresql.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/async.ml > examples/async.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmo examples/async.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmo examples/async.ml
+- File "examples/async.ml", line 2, characters 0-15:
+- Warning 45: this open statement shadows the constructor Ok (which is later used)
+- File "examples/async.ml", line 2, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmx examples/async.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmx examples/async.ml
+- File "examples/async.ml", line 2, characters 0-15:
+- Warning 45: this open statement shadows the constructor Ok (which is later used)
+- File "examples/async.ml", line 2, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/async.cmx -o examples/async.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/cursor.ml > examples/cursor.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmo examples/cursor.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmo examples/cursor.ml
+- File "examples/cursor.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmx examples/cursor.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmx examples/cursor.ml
+- File "examples/cursor.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/cursor.cmx -o examples/cursor.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/dump.ml > examples/dump.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmo examples/dump.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmo examples/dump.ml
+- File "examples/dump.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmx examples/dump.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmx examples/dump.ml
+- File "examples/dump.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/dump.cmx -o examples/dump.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/populate.ml > examples/populate.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmo examples/populate.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmo examples/populate.ml
+- File "examples/populate.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmx examples/populate.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmx examples/populate.ml
+- File "examples/populate.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/populate.cmx -o examples/populate.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/prompt.ml > examples/prompt.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmo examples/prompt.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmo examples/prompt.ml
+- File "examples/prompt.ml", line 4, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmx examples/prompt.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmx examples/prompt.ml
+- File "examples/prompt.ml", line 4, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/prompt.cmx -o examples/prompt.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/prompt_gtk.ml > examples/prompt_gtk.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt_gtk.cmo examples/prompt_gtk.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt_gtk.cmo examples/prompt_gtk.ml
+- File "examples/prompt_gtk.ml", line 150, characters 11-28:
+- Error: This pattern matches values of type 'a * 'b * 'c
+-        but a pattern was expected which matches values of type
+-          Postgresql.Notification.t
+- Command exited with code 2.
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/libpostgresql_stubs.a lib/dllpostgresql_stubs.so lib/postgresql.cma lib/postgresql.cmxa lib/postgresql.a lib/postgresql.cmxs examples/async.native examples/cursor.native examples/dump.native examples/populate.native examples/prompt.native examples/prompt_gtk.native examples/test_lo.native -tag debug' terminated with error code 10")
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/prompt.ml > examples/prompt.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmo examples/prompt.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmo examples/prompt.ml
+- File "examples/prompt.ml", line 4, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmx examples/prompt.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmx examples/prompt.ml
+- File "examples/prompt.ml", line 4, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/prompt.cmx -o examples/prompt.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/prompt_gtk.ml > examples/prompt_gtk.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt_gtk.cmo examples/prompt_gtk.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt_gtk.cmo examples/prompt_gtk.ml
+- File "examples/prompt_gtk.ml", line 150, characters 11-28:
+- Error: This pattern matches values of type 'a * 'b * 'c
+-        but a pattern was expected which matches values of type
+-          Postgresql.Notification.t
+- Command exited with code 2.
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/libpostgresql_stubs.a lib/dllpostgresql_stubs.so lib/postgresql.cma lib/postgresql.cmxa lib/postgresql.a lib/postgresql.cmxs examples/async.native examples/cursor.native examples/dump.native examples/populate.native examples/prompt.native examples/prompt_gtk.native examples/test_lo.native -tag debug' terminated with error code 10")
+[ERROR] The compilation of postgresql failed at "ocaml setup.ml -build".
+[postgresql: ocamlfind remove] Command started
++ ocamlfind "remove" "postgresql" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/postgresql.4.0.0)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ postgresql
+- Package version: ..................................... 4.0.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Strict compile-time checks: .......................... true
+- Build examples: ...................................... true
+- Build applications depending on lablgtk2: ............ true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_bigarray: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes
+- pkg_lablgtk2: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lablgtk2
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -ccopt -I/usr/include/postgresql -ccopt '-DPG_OCAML_MAJOR_VERSION=9' -ccopt '-DPG_OCAML_MINOR_VERSION=5' -c lib/postgresql_stubs.c
+- mv postgresql_stubs.o lib/postgresql_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlmklib -o lib/postgresql_stubs -lpq -L/usr/lib/x86_64-linux-gnu -lpq lib/postgresql_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package threads -modules lib/postgresql.mli > lib/postgresql.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmi lib/postgresql.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package threads -modules lib/postgresql.ml > lib/postgresql.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package threads -modules lib/postgresql_compat.ml > lib/postgresql_compat.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql_compat.cmo lib/postgresql_compat.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmo lib/postgresql.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmo lib/postgresql.ml
+- File "lib/postgresql.ml", line 338, characters 2-71:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 351, characters 2-94:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 355, characters 2-74:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 356, characters 2-80:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 360, characters 2-68:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 375, characters 2-88:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 383, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 386, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 388, characters 2-72:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 389, characters 2-76:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 390, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 393, characters 2-64:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 394, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 395, characters 2-75:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 402, characters 2-86:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 405, characters 2-85:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 410, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 415, characters 2-91:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 418, characters 2-79:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 421, characters 2-87:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 424, characters 2-94:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 427, characters 2-85:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 434, characters 2-100:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 449, characters 2-78:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 450, characters 2-67:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 451, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 452, characters 2-65:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 466, characters 2-107:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a -dllib -lpostgresql_stubs -cclib -lpostgresql_stubs -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq lib/postgresql_compat.cmo lib/postgresql.cmo -o lib/postgresql.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql_compat.cmx lib/postgresql_compat.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmx lib/postgresql.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmx lib/postgresql.ml
+- File "lib/postgresql.ml", line 338, characters 2-71:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 351, characters 2-94:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 355, characters 2-74:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 356, characters 2-80:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 360, characters 2-68:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 375, characters 2-88:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 383, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 386, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 388, characters 2-72:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 389, characters 2-76:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 390, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 393, characters 2-64:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 394, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 395, characters 2-75:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 402, characters 2-86:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 405, characters 2-85:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 410, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 415, characters 2-91:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 418, characters 2-79:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 421, characters 2-87:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 424, characters 2-94:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 427, characters 2-85:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 434, characters 2-100:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 449, characters 2-78:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 450, characters 2-67:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 451, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 452, characters 2-65:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 466, characters 2-107:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a -cclib -lpostgresql_stubs -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq lib/postgresql_compat.cmx lib/postgresql.cmx -o lib/postgresql.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared -cclib -lpostgresql_stubs -I lib -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq lib/postgresql.cmxa lib/postgresql_compat.cmx lib/postgresql.cmx -o lib/postgresql.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/async.ml > examples/async.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmo examples/async.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmo examples/async.ml
+- File "examples/async.ml", line 2, characters 0-15:
+- Warning 45: this open statement shadows the constructor Ok (which is later used)
+- File "examples/async.ml", line 2, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmx examples/async.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmx examples/async.ml
+- File "examples/async.ml", line 2, characters 0-15:
+- Warning 45: this open statement shadows the constructor Ok (which is later used)
+- File "examples/async.ml", line 2, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/async.cmx -o examples/async.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/cursor.ml > examples/cursor.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmo examples/cursor.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmo examples/cursor.ml
+- File "examples/cursor.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmx examples/cursor.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmx examples/cursor.ml
+- File "examples/cursor.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/cursor.cmx -o examples/cursor.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/dump.ml > examples/dump.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmo examples/dump.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmo examples/dump.ml
+- File "examples/dump.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmx examples/dump.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmx examples/dump.ml
+- File "examples/dump.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/dump.cmx -o examples/dump.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/populate.ml > examples/populate.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmo examples/populate.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmo examples/populate.ml
+- File "examples/populate.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmx examples/populate.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmx examples/populate.ml
+- File "examples/populate.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/populate.cmx -o examples/populate.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/prompt.ml > examples/prompt.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmo examples/prompt.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmo examples/prompt.ml
+- File "examples/prompt.ml", line 4, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmx examples/prompt.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmx examples/prompt.ml
+- File "examples/prompt.ml", line 4, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/prompt.cmx -o examples/prompt.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/prompt_gtk.ml > examples/prompt_gtk.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt_gtk.cmo examples/prompt_gtk.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt_gtk.cmo examples/prompt_gtk.ml
+- File "examples/prompt_gtk.ml", line 150, characters 11-28:
+- Error: This pattern matches values of type 'a * 'b * 'c
+-        but a pattern was expected which matches values of type
+-          Postgresql.Notification.t
+- Command exited with code 2.
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/libpostgresql_stubs.a lib/dllpostgresql_stubs.so lib/postgresql.cma lib/postgresql.cmxa lib/postgresql.a lib/postgresql.cmxs examples/async.native examples/cursor.native examples/dump.native examples/populate.native examples/prompt.native examples/prompt_gtk.native examples/test_lo.native -tag debug' terminated with error code 10")
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/postgresql/META
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: .............................................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: ........................................ postgresql
+- Package version: ..................................... 4.0.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Strict compile-time checks: .......................... true
+- Build examples: ...................................... true
+- Build applications depending on lablgtk2: ............ true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldoc
+- pkg_threads: ......................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_bigarray: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- pkg_bytes: ........................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes
+- pkg_lablgtk2: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lablgtk2
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -ccopt -I/usr/include/postgresql -ccopt '-DPG_OCAML_MAJOR_VERSION=9' -ccopt '-DPG_OCAML_MINOR_VERSION=5' -c lib/postgresql_stubs.c
+- mv postgresql_stubs.o lib/postgresql_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlmklib -o lib/postgresql_stubs -lpq -L/usr/lib/x86_64-linux-gnu -lpq lib/postgresql_stubs.o
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package threads -modules lib/postgresql.mli > lib/postgresql.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmi lib/postgresql.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package threads -modules lib/postgresql.ml > lib/postgresql.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package threads -modules lib/postgresql_compat.ml > lib/postgresql_compat.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql_compat.cmo lib/postgresql_compat.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmo lib/postgresql.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmo lib/postgresql.ml
+- File "lib/postgresql.ml", line 338, characters 2-71:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 351, characters 2-94:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 355, characters 2-74:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 356, characters 2-80:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 360, characters 2-68:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 375, characters 2-88:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 383, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 386, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 388, characters 2-72:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 389, characters 2-76:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 390, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 393, characters 2-64:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 394, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 395, characters 2-75:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 402, characters 2-86:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 405, characters 2-85:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 410, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 415, characters 2-91:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 418, characters 2-79:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 421, characters 2-87:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 424, characters 2-94:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 427, characters 2-85:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 434, characters 2-100:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 449, characters 2-78:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 450, characters 2-67:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 451, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 452, characters 2-65:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 466, characters 2-107:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -a -dllib -lpostgresql_stubs -cclib -lpostgresql_stubs -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq lib/postgresql_compat.cmo lib/postgresql.cmo -o lib/postgresql.cma
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql_compat.cmx lib/postgresql_compat.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmx lib/postgresql.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmx lib/postgresql.ml
+- File "lib/postgresql.ml", line 338, characters 2-71:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 351, characters 2-94:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 355, characters 2-74:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 356, characters 2-80:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 360, characters 2-68:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 375, characters 2-88:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 383, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 386, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 388, characters 2-72:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 389, characters 2-76:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 390, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 393, characters 2-64:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 394, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 395, characters 2-75:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 402, characters 2-86:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 405, characters 2-85:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 410, characters 2-66:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 415, characters 2-91:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 418, characters 2-79:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 421, characters 2-87:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 424, characters 2-94:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 427, characters 2-85:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 434, characters 2-100:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 449, characters 2-78:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 450, characters 2-67:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 451, characters 2-63:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 452, characters 2-65:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 466, characters 2-107:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -a -cclib -lpostgresql_stubs -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq lib/postgresql_compat.cmx lib/postgresql.cmx -o lib/postgresql.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -shared -cclib -lpostgresql_stubs -I lib -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq lib/postgresql.cmxa lib/postgresql_compat.cmx lib/postgresql.cmx -o lib/postgresql.cmxs
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/async.ml > examples/async.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmo examples/async.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmo examples/async.ml
+- File "examples/async.ml", line 2, characters 0-15:
+- Warning 45: this open statement shadows the constructor Ok (which is later used)
+- File "examples/async.ml", line 2, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmx examples/async.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmx examples/async.ml
+- File "examples/async.ml", line 2, characters 0-15:
+- Warning 45: this open statement shadows the constructor Ok (which is later used)
+- File "examples/async.ml", line 2, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/async.cmx -o examples/async.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/cursor.ml > examples/cursor.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmo examples/cursor.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmo examples/cursor.ml
+- File "examples/cursor.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmx examples/cursor.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmx examples/cursor.ml
+- File "examples/cursor.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/cursor.cmx -o examples/cursor.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/dump.ml > examples/dump.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmo examples/dump.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmo examples/dump.ml
+- File "examples/dump.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmx examples/dump.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmx examples/dump.ml
+- File "examples/dump.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/dump.cmx -o examples/dump.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/populate.ml > examples/populate.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmo examples/populate.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmo examples/populate.ml
+- File "examples/populate.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmx examples/populate.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmx examples/populate.ml
+- File "examples/populate.ml", line 3, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/populate.cmx -o examples/populate.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/prompt.ml > examples/prompt.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmo examples/prompt.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmo examples/prompt.ml
+- File "examples/prompt.ml", line 4, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmx examples/prompt.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmx examples/prompt.ml
+- File "examples/prompt.ml", line 4, characters 0-15:
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread lib/postgresql.cmxa examples/prompt.cmx -o examples/prompt.native
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/prompt_gtk.ml > examples/prompt_gtk.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt_gtk.cmo examples/prompt_gtk.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt_gtk.cmo examples/prompt_gtk.ml
+- File "examples/prompt_gtk.ml", line 150, characters 11-28:
+- Error: This pattern matches values of type 'a * 'b * 'c
+-        but a pattern was expected which matches values of type
+-          Postgresql.Notification.t
+- Command exited with code 2.
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/libpostgresql_stubs.a lib/dllpostgresql_stubs.so lib/postgresql.cma lib/postgresql.cmxa lib/postgresql.a lib/postgresql.cmxs examples/async.native examples/cursor.native examples/dump.native examples/populate.native examples/prompt.native examples/prompt_gtk.native examples/test_lo.native -tag debug' terminated with error code 10")
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/postgresql/META
+
+#=== ERROR while installing postgresql.4.0.0 ==================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/postgresql.4.0.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/postgresql.4.0.0/postgresql-18018.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/postgresql.4.0.0/postgresql-18018.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/postgresql.4.0.0/postgresql-18018.out
+### stdout ###
+# Error: This pattern matches values of type 'a * 'b * 'c
+# [...]
+# Command exited with code 2.
+# + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/libpostgresql_stubs.a lib/dllpostgresql_stubs.so lib/postgresql.cma lib/postgresql.cmxa lib/postgresql.a lib/postgresql.cmxs examples/async.native examples/cursor.native examples/dump.native examples/populate.native examples/prompt.native examples/prompt_gtk.native examples/test_lo.native -tag debug' terminated with error code 10")
+### stderr ###
+# Error: This pattern matches values of type 'a * 'b * 'c
+# [...]
+# Command exited with code 2.
+# + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild' lib/libpostgresql_stubs.a lib/dllpostgresql_stubs.so lib/postgresql.cma lib/postgresql.cmxa lib/postgresql.a lib/postgresql.cmxs examples/async.native examples/cursor.native examples/dump.native examples/populate.native examples/prompt.native examples/prompt_gtk.native examples/test_lo.native -tag debug' terminated with error code 10")
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install postgresql 4.0.0
+No changes have been performed
+
+=-=- postgresql.4.0.0 troobleshooting -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package relies on external (system) dependencies that may be missing.
+   `opam depext postgresql.4.0.0' may help you find the correct installation
+   for your system.
+'opam install postgresql.4.0.0' failed.

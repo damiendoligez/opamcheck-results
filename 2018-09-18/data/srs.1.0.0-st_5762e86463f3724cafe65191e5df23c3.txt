@@ -1,0 +1,74 @@
+The following actions will be performed:
+  - install srs 1.0.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[srs: http] Command started
+[srs: http] Command started
+[srs.1.0.0] http://forge.ocamlcore.org/frs/download.php/1005/ocaml-srs-1.0.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[srs: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/srs.1.0.0)
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+[ERROR] The compilation of srs failed at "ocaml setup.ml -configure --prefix
+        /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051".
+[srs: ocamlfind remove] Command started
++ ocamlfind "remove" "srs" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/srs.1.0.0)
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/srs/META
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/srs/META
+
+#=== ERROR while installing srs.1.0.0 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -configure --prefix /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/srs.1.0.0
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/srs.1.0.0/srs-28770.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/srs.1.0.0/srs-28770.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/srs.1.0.0/srs-28770.out
+### stdout ###
+# File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+### stderr ###
+# File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "/home/andre/src/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install srs 1.0.0
+No changes have been performed
+'opam install srs.1.0.0' failed.

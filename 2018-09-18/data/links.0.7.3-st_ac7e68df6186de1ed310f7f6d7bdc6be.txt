@@ -1,0 +1,709 @@
+The following actions will be performed:
+  - install links 0.7.3
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[links: http] Command started
+[links: http] Command started
+[links.0.7.3] https://github.com/links-lang/links/releases/download/0.7.3/links-0.7.3.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[links: jbuilder build] Command started
++ jbuilder "build" "-p" "links" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/links.0.7.3)
+-       ocamlc core/.links.objs/closures.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -dtypes -w Ae-44-45-60 -g -cclib -lunix -thread -g -bin-annot -I core/.links.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ANSITerminal -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/astring -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base64 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/findlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr/unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/linenoise -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt_ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/magic-mime -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving_yojson -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/safepass -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stringext -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uchar -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri/services -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket-lwt/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -o core/.links.objs/closures.cmo -c -impl core/closures.pp.ml)
+- File "core/closures.ml", line 327, characters 26-27:
+- Error: This expression has type
+-          < binder : Ir.binder -> Ir.binder * 'b;
+-            binding : Ir.binding -> Ir.binding * 'b;
+-            bindings : Ir.binding list -> Ir.binding list * 'b;
+-            computation : Ir.computation ->
+-                          Ir.computation * Types.datatype * 'b;
+-            constant : Ir.constant -> Ir.constant * Types.datatype * 'b;
+-            get_type_environment : Ir.Transform.environment;
+-            list : 'a.
+-                     ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                     'a list -> 'a list * Types.datatype list * 'b;
+-            lookup_type : Ir.var -> Types.datatype;
+-            name_map : 'a.
+-                         ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                         'a Ir.name_map ->
+-                         'a Ir.name_map * Types.datatype Ir.name_map * 'b;
+-            option : 'a.
+-                       ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                       'a option -> 'a option * Types.datatype option * 'b;
+-            optionu : 'a. ('b -> 'a -> 'a * 'b) -> 'a option -> 'a option * 'b;
+-            pop_hoisted_bindings : Ir.binding list * 'b;
+-            program : Ir.program -> Ir.program * Types.datatype * 'b;
+-            push_binding : Ir.binding -> 'b;
+-            set_context : Ir.binder list -> Ir.var -> Utility.IntSet.t -> 'b;
+-            special : Ir.special -> Ir.special * Types.datatype * 'b;
+-            tail_computation : Ir.tail_computation ->
+-                               Ir.tail_computation * Types.datatype * 'b;
+-            value : Ir.value -> Ir.value * Types.datatype * 'b;
+-            var : Ir.var -> Ir.var * Types.datatype * 'b;
+-            var_map : 'a.
+-                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                        'a Ir.var_map ->
+-                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+-            .. >
+-          as 'b
+-        but an expression was expected of type 'weak6
+-        Self type cannot escape its class
+-       ocamlc core/.links.objs/closures.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -dtypes -w Ae-44-45-60 -g -cclib -lunix -thread -g -bin-annot -I core/.links.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ANSITerminal -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/astring -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base64 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/findlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr/unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/linenoise -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt_ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/magic-mime -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving_yojson -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/safepass -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stringext -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uchar -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri/services -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket-lwt/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -o core/.links.objs/closures.cmo -c -impl core/closures.pp.ml)
+- File "core/closures.ml", line 327, characters 26-27:
+- Error: This expression has type
+-          < binder : Ir.binder -> Ir.binder * 'b;
+-            binding : Ir.binding -> Ir.binding * 'b;
+-            bindings : Ir.binding list -> Ir.binding list * 'b;
+-            computation : Ir.computation ->
+-                          Ir.computation * Types.datatype * 'b;
+-            constant : Ir.constant -> Ir.constant * Types.datatype * 'b;
+-            get_type_environment : Ir.Transform.environment;
+-            list : 'a.
+-                     ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                     'a list -> 'a list * Types.datatype list * 'b;
+-            lookup_type : Ir.var -> Types.datatype;
+-            name_map : 'a.
+-                         ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                         'a Ir.name_map ->
+-                         'a Ir.name_map * Types.datatype Ir.name_map * 'b;
+-            option : 'a.
+-                       ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                       'a option -> 'a option * Types.datatype option * 'b;
+-            optionu : 'a. ('b -> 'a -> 'a * 'b) -> 'a option -> 'a option * 'b;
+-            pop_hoisted_bindings : Ir.binding list * 'b;
+-            program : Ir.program -> Ir.program * Types.datatype * 'b;
+-            push_binding : Ir.binding -> 'b;
+-            set_context : Ir.binder list -> Ir.var -> Utility.IntSet.t -> 'b;
+-            special : Ir.special -> Ir.special * Types.datatype * 'b;
+-            tail_computation : Ir.tail_computation ->
+-                               Ir.tail_computation * Types.datatype * 'b;
+-            value : Ir.value -> Ir.value * Types.datatype * 'b;
+-            var : Ir.var -> Ir.var * Types.datatype * 'b;
+-            var_map : 'a.
+-                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                        'a Ir.var_map ->
+-                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+-            .. >
+-          as 'b
+-        but an expression was expected of type 'weak6
+-        Self type cannot escape its class
+[ERROR] The compilation of links failed at "jbuilder build -p links -j 4".
+[links: rm] Command started
++ rm "-f" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/linx" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/links.0.7.3)
+-       ocamlc core/.links.objs/closures.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -dtypes -w Ae-44-45-60 -g -cclib -lunix -thread -g -bin-annot -I core/.links.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ANSITerminal -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/astring -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base64 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/findlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr/unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/linenoise -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt_ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/magic-mime -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving_yojson -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/safepass -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stringext -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uchar -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri/services -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket-lwt/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -o core/.links.objs/closures.cmo -c -impl core/closures.pp.ml)
+- File "core/closures.ml", line 327, characters 26-27:
+- Error: This expression has type
+-          < binder : Ir.binder -> Ir.binder * 'b;
+-            binding : Ir.binding -> Ir.binding * 'b;
+-            bindings : Ir.binding list -> Ir.binding list * 'b;
+-            computation : Ir.computation ->
+-                          Ir.computation * Types.datatype * 'b;
+-            constant : Ir.constant -> Ir.constant * Types.datatype * 'b;
+-            get_type_environment : Ir.Transform.environment;
+-            list : 'a.
+-                     ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                     'a list -> 'a list * Types.datatype list * 'b;
+-            lookup_type : Ir.var -> Types.datatype;
+-            name_map : 'a.
+-                         ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                         'a Ir.name_map ->
+-                         'a Ir.name_map * Types.datatype Ir.name_map * 'b;
+-            option : 'a.
+-                       ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                       'a option -> 'a option * Types.datatype option * 'b;
+-            optionu : 'a. ('b -> 'a -> 'a * 'b) -> 'a option -> 'a option * 'b;
+-            pop_hoisted_bindings : Ir.binding list * 'b;
+-            program : Ir.program -> Ir.program * Types.datatype * 'b;
+-            push_binding : Ir.binding -> 'b;
+-            set_context : Ir.binder list -> Ir.var -> Utility.IntSet.t -> 'b;
+-            special : Ir.special -> Ir.special * Types.datatype * 'b;
+-            tail_computation : Ir.tail_computation ->
+-                               Ir.tail_computation * Types.datatype * 'b;
+-            value : Ir.value -> Ir.value * Types.datatype * 'b;
+-            var : Ir.var -> Ir.var * Types.datatype * 'b;
+-            var_map : 'a.
+-                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                        'a Ir.var_map ->
+-                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+-            .. >
+-          as 'b
+-        but an expression was expected of type 'weak6
+-        Self type cannot escape its class
+-       ocamlc core/.links.objs/closures.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -dtypes -w Ae-44-45-60 -g -cclib -lunix -thread -g -bin-annot -I core/.links.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ANSITerminal -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/astring -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base64 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/findlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr/unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/linenoise -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt_ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/magic-mime -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving_yojson -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/safepass -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stringext -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uchar -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri/services -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket-lwt/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -o core/.links.objs/closures.cmo -c -impl core/closures.pp.ml)
+- File "core/closures.ml", line 327, characters 26-27:
+- Error: This expression has type
+-          < binder : Ir.binder -> Ir.binder * 'b;
+-            binding : Ir.binding -> Ir.binding * 'b;
+-            bindings : Ir.binding list -> Ir.binding list * 'b;
+-            computation : Ir.computation ->
+-                          Ir.computation * Types.datatype * 'b;
+-            constant : Ir.constant -> Ir.constant * Types.datatype * 'b;
+-            get_type_environment : Ir.Transform.environment;
+-            list : 'a.
+-                     ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                     'a list -> 'a list * Types.datatype list * 'b;
+-            lookup_type : Ir.var -> Types.datatype;
+-            name_map : 'a.
+-                         ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                         'a Ir.name_map ->
+-                         'a Ir.name_map * Types.datatype Ir.name_map * 'b;
+-            option : 'a.
+-                       ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                       'a option -> 'a option * Types.datatype option * 'b;
+-            optionu : 'a. ('b -> 'a -> 'a * 'b) -> 'a option -> 'a option * 'b;
+-            pop_hoisted_bindings : Ir.binding list * 'b;
+-            program : Ir.program -> Ir.program * Types.datatype * 'b;
+-            push_binding : Ir.binding -> 'b;
+-            set_context : Ir.binder list -> Ir.var -> Utility.IntSet.t -> 'b;
+-            special : Ir.special -> Ir.special * Types.datatype * 'b;
+-            tail_computation : Ir.tail_computation ->
+-                               Ir.tail_computation * Types.datatype * 'b;
+-            value : Ir.value -> Ir.value * Types.datatype * 'b;
+-            var : Ir.var -> Ir.var * Types.datatype * 'b;
+-            var_map : 'a.
+-                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                        'a Ir.var_map ->
+-                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+-            .. >
+-          as 'b
+-        but an expression was expected of type 'weak6
+-        Self type cannot escape its class
+[links: rm] Command started
++ rm "-f" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/links/prelude.links" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/links.0.7.3)
+-       ocamlc core/.links.objs/closures.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -dtypes -w Ae-44-45-60 -g -cclib -lunix -thread -g -bin-annot -I core/.links.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ANSITerminal -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/astring -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base64 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/findlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr/unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/linenoise -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt_ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/magic-mime -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving_yojson -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/safepass -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stringext -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uchar -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri/services -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket-lwt/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -o core/.links.objs/closures.cmo -c -impl core/closures.pp.ml)
+- File "core/closures.ml", line 327, characters 26-27:
+- Error: This expression has type
+-          < binder : Ir.binder -> Ir.binder * 'b;
+-            binding : Ir.binding -> Ir.binding * 'b;
+-            bindings : Ir.binding list -> Ir.binding list * 'b;
+-            computation : Ir.computation ->
+-                          Ir.computation * Types.datatype * 'b;
+-            constant : Ir.constant -> Ir.constant * Types.datatype * 'b;
+-            get_type_environment : Ir.Transform.environment;
+-            list : 'a.
+-                     ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                     'a list -> 'a list * Types.datatype list * 'b;
+-            lookup_type : Ir.var -> Types.datatype;
+-            name_map : 'a.
+-                         ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                         'a Ir.name_map ->
+-                         'a Ir.name_map * Types.datatype Ir.name_map * 'b;
+-            option : 'a.
+-                       ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                       'a option -> 'a option * Types.datatype option * 'b;
+-            optionu : 'a. ('b -> 'a -> 'a * 'b) -> 'a option -> 'a option * 'b;
+-            pop_hoisted_bindings : Ir.binding list * 'b;
+-            program : Ir.program -> Ir.program * Types.datatype * 'b;
+-            push_binding : Ir.binding -> 'b;
+-            set_context : Ir.binder list -> Ir.var -> Utility.IntSet.t -> 'b;
+-            special : Ir.special -> Ir.special * Types.datatype * 'b;
+-            tail_computation : Ir.tail_computation ->
+-                               Ir.tail_computation * Types.datatype * 'b;
+-            value : Ir.value -> Ir.value * Types.datatype * 'b;
+-            var : Ir.var -> Ir.var * Types.datatype * 'b;
+-            var_map : 'a.
+-                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                        'a Ir.var_map ->
+-                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+-            .. >
+-          as 'b
+-        but an expression was expected of type 'weak6
+-        Self type cannot escape its class
+-       ocamlc core/.links.objs/closures.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -dtypes -w Ae-44-45-60 -g -cclib -lunix -thread -g -bin-annot -I core/.links.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ANSITerminal -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/astring -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base64 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/findlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr/unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/linenoise -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt_ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/magic-mime -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving_yojson -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/safepass -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stringext -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uchar -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri/services -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket-lwt/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -o core/.links.objs/closures.cmo -c -impl core/closures.pp.ml)
+- File "core/closures.ml", line 327, characters 26-27:
+- Error: This expression has type
+-          < binder : Ir.binder -> Ir.binder * 'b;
+-            binding : Ir.binding -> Ir.binding * 'b;
+-            bindings : Ir.binding list -> Ir.binding list * 'b;
+-            computation : Ir.computation ->
+-                          Ir.computation * Types.datatype * 'b;
+-            constant : Ir.constant -> Ir.constant * Types.datatype * 'b;
+-            get_type_environment : Ir.Transform.environment;
+-            list : 'a.
+-                     ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                     'a list -> 'a list * Types.datatype list * 'b;
+-            lookup_type : Ir.var -> Types.datatype;
+-            name_map : 'a.
+-                         ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                         'a Ir.name_map ->
+-                         'a Ir.name_map * Types.datatype Ir.name_map * 'b;
+-            option : 'a.
+-                       ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                       'a option -> 'a option * Types.datatype option * 'b;
+-            optionu : 'a. ('b -> 'a -> 'a * 'b) -> 'a option -> 'a option * 'b;
+-            pop_hoisted_bindings : Ir.binding list * 'b;
+-            program : Ir.program -> Ir.program * Types.datatype * 'b;
+-            push_binding : Ir.binding -> 'b;
+-            set_context : Ir.binder list -> Ir.var -> Utility.IntSet.t -> 'b;
+-            special : Ir.special -> Ir.special * Types.datatype * 'b;
+-            tail_computation : Ir.tail_computation ->
+-                               Ir.tail_computation * Types.datatype * 'b;
+-            value : Ir.value -> Ir.value * Types.datatype * 'b;
+-            var : Ir.var -> Ir.var * Types.datatype * 'b;
+-            var_map : 'a.
+-                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                        'a Ir.var_map ->
+-                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+-            .. >
+-          as 'b
+-        but an expression was expected of type 'weak6
+-        Self type cannot escape its class
+[links: rm] Command started
++ rm "-rf" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/links/stdlib" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/links.0.7.3)
+-       ocamlc core/.links.objs/closures.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -dtypes -w Ae-44-45-60 -g -cclib -lunix -thread -g -bin-annot -I core/.links.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ANSITerminal -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/astring -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base64 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/findlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr/unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/linenoise -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt_ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/magic-mime -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving_yojson -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/safepass -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stringext -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uchar -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri/services -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket-lwt/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -o core/.links.objs/closures.cmo -c -impl core/closures.pp.ml)
+- File "core/closures.ml", line 327, characters 26-27:
+- Error: This expression has type
+-          < binder : Ir.binder -> Ir.binder * 'b;
+-            binding : Ir.binding -> Ir.binding * 'b;
+-            bindings : Ir.binding list -> Ir.binding list * 'b;
+-            computation : Ir.computation ->
+-                          Ir.computation * Types.datatype * 'b;
+-            constant : Ir.constant -> Ir.constant * Types.datatype * 'b;
+-            get_type_environment : Ir.Transform.environment;
+-            list : 'a.
+-                     ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                     'a list -> 'a list * Types.datatype list * 'b;
+-            lookup_type : Ir.var -> Types.datatype;
+-            name_map : 'a.
+-                         ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                         'a Ir.name_map ->
+-                         'a Ir.name_map * Types.datatype Ir.name_map * 'b;
+-            option : 'a.
+-                       ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                       'a option -> 'a option * Types.datatype option * 'b;
+-            optionu : 'a. ('b -> 'a -> 'a * 'b) -> 'a option -> 'a option * 'b;
+-            pop_hoisted_bindings : Ir.binding list * 'b;
+-            program : Ir.program -> Ir.program * Types.datatype * 'b;
+-            push_binding : Ir.binding -> 'b;
+-            set_context : Ir.binder list -> Ir.var -> Utility.IntSet.t -> 'b;
+-            special : Ir.special -> Ir.special * Types.datatype * 'b;
+-            tail_computation : Ir.tail_computation ->
+-                               Ir.tail_computation * Types.datatype * 'b;
+-            value : Ir.value -> Ir.value * Types.datatype * 'b;
+-            var : Ir.var -> Ir.var * Types.datatype * 'b;
+-            var_map : 'a.
+-                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                        'a Ir.var_map ->
+-                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+-            .. >
+-          as 'b
+-        but an expression was expected of type 'weak6
+-        Self type cannot escape its class
+-       ocamlc core/.links.objs/closures.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -dtypes -w Ae-44-45-60 -g -cclib -lunix -thread -g -bin-annot -I core/.links.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ANSITerminal -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/astring -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base64 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/findlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr/unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/linenoise -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt_ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/magic-mime -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving_yojson -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/safepass -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stringext -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uchar -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri/services -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket-lwt/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -o core/.links.objs/closures.cmo -c -impl core/closures.pp.ml)
+- File "core/closures.ml", line 327, characters 26-27:
+- Error: This expression has type
+-          < binder : Ir.binder -> Ir.binder * 'b;
+-            binding : Ir.binding -> Ir.binding * 'b;
+-            bindings : Ir.binding list -> Ir.binding list * 'b;
+-            computation : Ir.computation ->
+-                          Ir.computation * Types.datatype * 'b;
+-            constant : Ir.constant -> Ir.constant * Types.datatype * 'b;
+-            get_type_environment : Ir.Transform.environment;
+-            list : 'a.
+-                     ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                     'a list -> 'a list * Types.datatype list * 'b;
+-            lookup_type : Ir.var -> Types.datatype;
+-            name_map : 'a.
+-                         ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                         'a Ir.name_map ->
+-                         'a Ir.name_map * Types.datatype Ir.name_map * 'b;
+-            option : 'a.
+-                       ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                       'a option -> 'a option * Types.datatype option * 'b;
+-            optionu : 'a. ('b -> 'a -> 'a * 'b) -> 'a option -> 'a option * 'b;
+-            pop_hoisted_bindings : Ir.binding list * 'b;
+-            program : Ir.program -> Ir.program * Types.datatype * 'b;
+-            push_binding : Ir.binding -> 'b;
+-            set_context : Ir.binder list -> Ir.var -> Utility.IntSet.t -> 'b;
+-            special : Ir.special -> Ir.special * Types.datatype * 'b;
+-            tail_computation : Ir.tail_computation ->
+-                               Ir.tail_computation * Types.datatype * 'b;
+-            value : Ir.value -> Ir.value * Types.datatype * 'b;
+-            var : Ir.var -> Ir.var * Types.datatype * 'b;
+-            var_map : 'a.
+-                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                        'a Ir.var_map ->
+-                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+-            .. >
+-          as 'b
+-        but an expression was expected of type 'weak6
+-        Self type cannot escape its class
+[links: rm] Command started
++ rm "-rf" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/links/js" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/links.0.7.3)
+-       ocamlc core/.links.objs/closures.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -dtypes -w Ae-44-45-60 -g -cclib -lunix -thread -g -bin-annot -I core/.links.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ANSITerminal -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/astring -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base64 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/findlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr/unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/linenoise -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt_ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/magic-mime -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving_yojson -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/safepass -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stringext -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uchar -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri/services -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket-lwt/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -o core/.links.objs/closures.cmo -c -impl core/closures.pp.ml)
+- File "core/closures.ml", line 327, characters 26-27:
+- Error: This expression has type
+-          < binder : Ir.binder -> Ir.binder * 'b;
+-            binding : Ir.binding -> Ir.binding * 'b;
+-            bindings : Ir.binding list -> Ir.binding list * 'b;
+-            computation : Ir.computation ->
+-                          Ir.computation * Types.datatype * 'b;
+-            constant : Ir.constant -> Ir.constant * Types.datatype * 'b;
+-            get_type_environment : Ir.Transform.environment;
+-            list : 'a.
+-                     ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                     'a list -> 'a list * Types.datatype list * 'b;
+-            lookup_type : Ir.var -> Types.datatype;
+-            name_map : 'a.
+-                         ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                         'a Ir.name_map ->
+-                         'a Ir.name_map * Types.datatype Ir.name_map * 'b;
+-            option : 'a.
+-                       ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                       'a option -> 'a option * Types.datatype option * 'b;
+-            optionu : 'a. ('b -> 'a -> 'a * 'b) -> 'a option -> 'a option * 'b;
+-            pop_hoisted_bindings : Ir.binding list * 'b;
+-            program : Ir.program -> Ir.program * Types.datatype * 'b;
+-            push_binding : Ir.binding -> 'b;
+-            set_context : Ir.binder list -> Ir.var -> Utility.IntSet.t -> 'b;
+-            special : Ir.special -> Ir.special * Types.datatype * 'b;
+-            tail_computation : Ir.tail_computation ->
+-                               Ir.tail_computation * Types.datatype * 'b;
+-            value : Ir.value -> Ir.value * Types.datatype * 'b;
+-            var : Ir.var -> Ir.var * Types.datatype * 'b;
+-            var_map : 'a.
+-                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                        'a Ir.var_map ->
+-                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+-            .. >
+-          as 'b
+-        but an expression was expected of type 'weak6
+-        Self type cannot escape its class
+-       ocamlc core/.links.objs/closures.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -dtypes -w Ae-44-45-60 -g -cclib -lunix -thread -g -bin-annot -I core/.links.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ANSITerminal -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/astring -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base64 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/findlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr/unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/linenoise -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt_ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/magic-mime -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving_yojson -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/safepass -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stringext -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uchar -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri/services -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket-lwt/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -o core/.links.objs/closures.cmo -c -impl core/closures.pp.ml)
+- File "core/closures.ml", line 327, characters 26-27:
+- Error: This expression has type
+-          < binder : Ir.binder -> Ir.binder * 'b;
+-            binding : Ir.binding -> Ir.binding * 'b;
+-            bindings : Ir.binding list -> Ir.binding list * 'b;
+-            computation : Ir.computation ->
+-                          Ir.computation * Types.datatype * 'b;
+-            constant : Ir.constant -> Ir.constant * Types.datatype * 'b;
+-            get_type_environment : Ir.Transform.environment;
+-            list : 'a.
+-                     ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                     'a list -> 'a list * Types.datatype list * 'b;
+-            lookup_type : Ir.var -> Types.datatype;
+-            name_map : 'a.
+-                         ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                         'a Ir.name_map ->
+-                         'a Ir.name_map * Types.datatype Ir.name_map * 'b;
+-            option : 'a.
+-                       ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                       'a option -> 'a option * Types.datatype option * 'b;
+-            optionu : 'a. ('b -> 'a -> 'a * 'b) -> 'a option -> 'a option * 'b;
+-            pop_hoisted_bindings : Ir.binding list * 'b;
+-            program : Ir.program -> Ir.program * Types.datatype * 'b;
+-            push_binding : Ir.binding -> 'b;
+-            set_context : Ir.binder list -> Ir.var -> Utility.IntSet.t -> 'b;
+-            special : Ir.special -> Ir.special * Types.datatype * 'b;
+-            tail_computation : Ir.tail_computation ->
+-                               Ir.tail_computation * Types.datatype * 'b;
+-            value : Ir.value -> Ir.value * Types.datatype * 'b;
+-            var : Ir.var -> Ir.var * Types.datatype * 'b;
+-            var_map : 'a.
+-                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                        'a Ir.var_map ->
+-                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+-            .. >
+-          as 'b
+-        but an expression was expected of type 'weak6
+-        Self type cannot escape its class
+[links: rm] Command started
++ rm "-rf" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/share/links/examples" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/links.0.7.3)
+-       ocamlc core/.links.objs/closures.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -dtypes -w Ae-44-45-60 -g -cclib -lunix -thread -g -bin-annot -I core/.links.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ANSITerminal -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/astring -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base64 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/findlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr/unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/linenoise -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt_ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/magic-mime -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving_yojson -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/safepass -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stringext -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uchar -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri/services -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket-lwt/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -o core/.links.objs/closures.cmo -c -impl core/closures.pp.ml)
+- File "core/closures.ml", line 327, characters 26-27:
+- Error: This expression has type
+-          < binder : Ir.binder -> Ir.binder * 'b;
+-            binding : Ir.binding -> Ir.binding * 'b;
+-            bindings : Ir.binding list -> Ir.binding list * 'b;
+-            computation : Ir.computation ->
+-                          Ir.computation * Types.datatype * 'b;
+-            constant : Ir.constant -> Ir.constant * Types.datatype * 'b;
+-            get_type_environment : Ir.Transform.environment;
+-            list : 'a.
+-                     ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                     'a list -> 'a list * Types.datatype list * 'b;
+-            lookup_type : Ir.var -> Types.datatype;
+-            name_map : 'a.
+-                         ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                         'a Ir.name_map ->
+-                         'a Ir.name_map * Types.datatype Ir.name_map * 'b;
+-            option : 'a.
+-                       ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                       'a option -> 'a option * Types.datatype option * 'b;
+-            optionu : 'a. ('b -> 'a -> 'a * 'b) -> 'a option -> 'a option * 'b;
+-            pop_hoisted_bindings : Ir.binding list * 'b;
+-            program : Ir.program -> Ir.program * Types.datatype * 'b;
+-            push_binding : Ir.binding -> 'b;
+-            set_context : Ir.binder list -> Ir.var -> Utility.IntSet.t -> 'b;
+-            special : Ir.special -> Ir.special * Types.datatype * 'b;
+-            tail_computation : Ir.tail_computation ->
+-                               Ir.tail_computation * Types.datatype * 'b;
+-            value : Ir.value -> Ir.value * Types.datatype * 'b;
+-            var : Ir.var -> Ir.var * Types.datatype * 'b;
+-            var_map : 'a.
+-                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                        'a Ir.var_map ->
+-                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+-            .. >
+-          as 'b
+-        but an expression was expected of type 'weak6
+-        Self type cannot escape its class
+-       ocamlc core/.links.objs/closures.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -dtypes -w Ae-44-45-60 -g -cclib -lunix -thread -g -bin-annot -I core/.links.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ANSITerminal -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/astring -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base64 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/findlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr/unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/linenoise -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt_ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/magic-mime -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving_yojson -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/safepass -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stringext -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uchar -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri/services -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket-lwt/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -o core/.links.objs/closures.cmo -c -impl core/closures.pp.ml)
+- File "core/closures.ml", line 327, characters 26-27:
+- Error: This expression has type
+-          < binder : Ir.binder -> Ir.binder * 'b;
+-            binding : Ir.binding -> Ir.binding * 'b;
+-            bindings : Ir.binding list -> Ir.binding list * 'b;
+-            computation : Ir.computation ->
+-                          Ir.computation * Types.datatype * 'b;
+-            constant : Ir.constant -> Ir.constant * Types.datatype * 'b;
+-            get_type_environment : Ir.Transform.environment;
+-            list : 'a.
+-                     ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                     'a list -> 'a list * Types.datatype list * 'b;
+-            lookup_type : Ir.var -> Types.datatype;
+-            name_map : 'a.
+-                         ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                         'a Ir.name_map ->
+-                         'a Ir.name_map * Types.datatype Ir.name_map * 'b;
+-            option : 'a.
+-                       ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                       'a option -> 'a option * Types.datatype option * 'b;
+-            optionu : 'a. ('b -> 'a -> 'a * 'b) -> 'a option -> 'a option * 'b;
+-            pop_hoisted_bindings : Ir.binding list * 'b;
+-            program : Ir.program -> Ir.program * Types.datatype * 'b;
+-            push_binding : Ir.binding -> 'b;
+-            set_context : Ir.binder list -> Ir.var -> Utility.IntSet.t -> 'b;
+-            special : Ir.special -> Ir.special * Types.datatype * 'b;
+-            tail_computation : Ir.tail_computation ->
+-                               Ir.tail_computation * Types.datatype * 'b;
+-            value : Ir.value -> Ir.value * Types.datatype * 'b;
+-            var : Ir.var -> Ir.var * Types.datatype * 'b;
+-            var_map : 'a.
+-                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                        'a Ir.var_map ->
+-                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+-            .. >
+-          as 'b
+-        but an expression was expected of type 'weak6
+-        Self type cannot escape its class
+[links: rm] Command started
++ rm "-f" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/etc/links/config" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/links.0.7.3)
+-       ocamlc core/.links.objs/closures.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -dtypes -w Ae-44-45-60 -g -cclib -lunix -thread -g -bin-annot -I core/.links.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ANSITerminal -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/astring -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base64 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/findlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr/unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/linenoise -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt_ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/magic-mime -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving_yojson -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/safepass -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stringext -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uchar -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri/services -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket-lwt/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -o core/.links.objs/closures.cmo -c -impl core/closures.pp.ml)
+- File "core/closures.ml", line 327, characters 26-27:
+- Error: This expression has type
+-          < binder : Ir.binder -> Ir.binder * 'b;
+-            binding : Ir.binding -> Ir.binding * 'b;
+-            bindings : Ir.binding list -> Ir.binding list * 'b;
+-            computation : Ir.computation ->
+-                          Ir.computation * Types.datatype * 'b;
+-            constant : Ir.constant -> Ir.constant * Types.datatype * 'b;
+-            get_type_environment : Ir.Transform.environment;
+-            list : 'a.
+-                     ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                     'a list -> 'a list * Types.datatype list * 'b;
+-            lookup_type : Ir.var -> Types.datatype;
+-            name_map : 'a.
+-                         ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                         'a Ir.name_map ->
+-                         'a Ir.name_map * Types.datatype Ir.name_map * 'b;
+-            option : 'a.
+-                       ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                       'a option -> 'a option * Types.datatype option * 'b;
+-            optionu : 'a. ('b -> 'a -> 'a * 'b) -> 'a option -> 'a option * 'b;
+-            pop_hoisted_bindings : Ir.binding list * 'b;
+-            program : Ir.program -> Ir.program * Types.datatype * 'b;
+-            push_binding : Ir.binding -> 'b;
+-            set_context : Ir.binder list -> Ir.var -> Utility.IntSet.t -> 'b;
+-            special : Ir.special -> Ir.special * Types.datatype * 'b;
+-            tail_computation : Ir.tail_computation ->
+-                               Ir.tail_computation * Types.datatype * 'b;
+-            value : Ir.value -> Ir.value * Types.datatype * 'b;
+-            var : Ir.var -> Ir.var * Types.datatype * 'b;
+-            var_map : 'a.
+-                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                        'a Ir.var_map ->
+-                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+-            .. >
+-          as 'b
+-        but an expression was expected of type 'weak6
+-        Self type cannot escape its class
+-       ocamlc core/.links.objs/closures.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -dtypes -w Ae-44-45-60 -g -cclib -lunix -thread -g -bin-annot -I core/.links.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ANSITerminal -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/astring -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base64 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/findlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr/unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/linenoise -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt_ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/magic-mime -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving_yojson -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/safepass -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stringext -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uchar -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri/services -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket-lwt/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -o core/.links.objs/closures.cmo -c -impl core/closures.pp.ml)
+- File "core/closures.ml", line 327, characters 26-27:
+- Error: This expression has type
+-          < binder : Ir.binder -> Ir.binder * 'b;
+-            binding : Ir.binding -> Ir.binding * 'b;
+-            bindings : Ir.binding list -> Ir.binding list * 'b;
+-            computation : Ir.computation ->
+-                          Ir.computation * Types.datatype * 'b;
+-            constant : Ir.constant -> Ir.constant * Types.datatype * 'b;
+-            get_type_environment : Ir.Transform.environment;
+-            list : 'a.
+-                     ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                     'a list -> 'a list * Types.datatype list * 'b;
+-            lookup_type : Ir.var -> Types.datatype;
+-            name_map : 'a.
+-                         ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                         'a Ir.name_map ->
+-                         'a Ir.name_map * Types.datatype Ir.name_map * 'b;
+-            option : 'a.
+-                       ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                       'a option -> 'a option * Types.datatype option * 'b;
+-            optionu : 'a. ('b -> 'a -> 'a * 'b) -> 'a option -> 'a option * 'b;
+-            pop_hoisted_bindings : Ir.binding list * 'b;
+-            program : Ir.program -> Ir.program * Types.datatype * 'b;
+-            push_binding : Ir.binding -> 'b;
+-            set_context : Ir.binder list -> Ir.var -> Utility.IntSet.t -> 'b;
+-            special : Ir.special -> Ir.special * Types.datatype * 'b;
+-            tail_computation : Ir.tail_computation ->
+-                               Ir.tail_computation * Types.datatype * 'b;
+-            value : Ir.value -> Ir.value * Types.datatype * 'b;
+-            var : Ir.var -> Ir.var * Types.datatype * 'b;
+-            var_map : 'a.
+-                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                        'a Ir.var_map ->
+-                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+-            .. >
+-          as 'b
+-        but an expression was expected of type 'weak6
+-        Self type cannot escape its class
+[links: rm] Command started
++ rm "-f" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/doc/links/README" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/links.0.7.3)
+-       ocamlc core/.links.objs/closures.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -dtypes -w Ae-44-45-60 -g -cclib -lunix -thread -g -bin-annot -I core/.links.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ANSITerminal -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/astring -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base64 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/findlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr/unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/linenoise -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt_ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/magic-mime -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving_yojson -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/safepass -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stringext -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uchar -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri/services -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket-lwt/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -o core/.links.objs/closures.cmo -c -impl core/closures.pp.ml)
+- File "core/closures.ml", line 327, characters 26-27:
+- Error: This expression has type
+-          < binder : Ir.binder -> Ir.binder * 'b;
+-            binding : Ir.binding -> Ir.binding * 'b;
+-            bindings : Ir.binding list -> Ir.binding list * 'b;
+-            computation : Ir.computation ->
+-                          Ir.computation * Types.datatype * 'b;
+-            constant : Ir.constant -> Ir.constant * Types.datatype * 'b;
+-            get_type_environment : Ir.Transform.environment;
+-            list : 'a.
+-                     ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                     'a list -> 'a list * Types.datatype list * 'b;
+-            lookup_type : Ir.var -> Types.datatype;
+-            name_map : 'a.
+-                         ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                         'a Ir.name_map ->
+-                         'a Ir.name_map * Types.datatype Ir.name_map * 'b;
+-            option : 'a.
+-                       ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                       'a option -> 'a option * Types.datatype option * 'b;
+-            optionu : 'a. ('b -> 'a -> 'a * 'b) -> 'a option -> 'a option * 'b;
+-            pop_hoisted_bindings : Ir.binding list * 'b;
+-            program : Ir.program -> Ir.program * Types.datatype * 'b;
+-            push_binding : Ir.binding -> 'b;
+-            set_context : Ir.binder list -> Ir.var -> Utility.IntSet.t -> 'b;
+-            special : Ir.special -> Ir.special * Types.datatype * 'b;
+-            tail_computation : Ir.tail_computation ->
+-                               Ir.tail_computation * Types.datatype * 'b;
+-            value : Ir.value -> Ir.value * Types.datatype * 'b;
+-            var : Ir.var -> Ir.var * Types.datatype * 'b;
+-            var_map : 'a.
+-                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                        'a Ir.var_map ->
+-                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+-            .. >
+-          as 'b
+-        but an expression was expected of type 'weak6
+-        Self type cannot escape its class
+-       ocamlc core/.links.objs/closures.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -dtypes -w Ae-44-45-60 -g -cclib -lunix -thread -g -bin-annot -I core/.links.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ANSITerminal -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/astring -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base64 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/cohttp-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/conduit-lwt-unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/findlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ipaddr/unix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/linenoise -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt_ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/magic-mime -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocplib-endian -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_deriving_yojson -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/safepass -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ssl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stringext -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uchar -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uri/services -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/websocket-lwt/cohttp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -o core/.links.objs/closures.cmo -c -impl core/closures.pp.ml)
+- File "core/closures.ml", line 327, characters 26-27:
+- Error: This expression has type
+-          < binder : Ir.binder -> Ir.binder * 'b;
+-            binding : Ir.binding -> Ir.binding * 'b;
+-            bindings : Ir.binding list -> Ir.binding list * 'b;
+-            computation : Ir.computation ->
+-                          Ir.computation * Types.datatype * 'b;
+-            constant : Ir.constant -> Ir.constant * Types.datatype * 'b;
+-            get_type_environment : Ir.Transform.environment;
+-            list : 'a.
+-                     ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                     'a list -> 'a list * Types.datatype list * 'b;
+-            lookup_type : Ir.var -> Types.datatype;
+-            name_map : 'a.
+-                         ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                         'a Ir.name_map ->
+-                         'a Ir.name_map * Types.datatype Ir.name_map * 'b;
+-            option : 'a.
+-                       ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                       'a option -> 'a option * Types.datatype option * 'b;
+-            optionu : 'a. ('b -> 'a -> 'a * 'b) -> 'a option -> 'a option * 'b;
+-            pop_hoisted_bindings : Ir.binding list * 'b;
+-            program : Ir.program -> Ir.program * Types.datatype * 'b;
+-            push_binding : Ir.binding -> 'b;
+-            set_context : Ir.binder list -> Ir.var -> Utility.IntSet.t -> 'b;
+-            special : Ir.special -> Ir.special * Types.datatype * 'b;
+-            tail_computation : Ir.tail_computation ->
+-                               Ir.tail_computation * Types.datatype * 'b;
+-            value : Ir.value -> Ir.value * Types.datatype * 'b;
+-            var : Ir.var -> Ir.var * Types.datatype * 'b;
+-            var_map : 'a.
+-                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+-                        'a Ir.var_map ->
+-                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+-            .. >
+-          as 'b
+-        but an expression was expected of type 'weak6
+-        Self type cannot escape its class
+
+#=== ERROR while installing links.0.7.3 =======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p links -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/links.0.7.3
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/links.0.7.3/links-22213.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/links.0.7.3/links-22213.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/links.0.7.3/links-22213.out
+### stdout ###
+# Error: This expression has type
+# [...]
+#            var : Ir.var -> Ir.var * Types.datatype * 'b;
+#            var_map : 'a.
+#                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+#                        'a Ir.var_map ->
+#                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+#            .. >
+#          as 'b
+#        but an expression was expected of type 'weak6
+#        Self type cannot escape its class
+### stderr ###
+# Error: This expression has type
+# [...]
+#            var : Ir.var -> Ir.var * Types.datatype * 'b;
+#            var_map : 'a.
+#                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+#                        'a Ir.var_map ->
+#                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+#            .. >
+#          as 'b
+#        but an expression was expected of type 'weak6
+#        Self type cannot escape its class
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install links 0.7.3
+No changes have been performed
+'opam install links.0.7.3' failed.

@@ -1,0 +1,66 @@
+The following actions will be performed:
+  - install distributed-uwt 0.1.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[distributed-uwt: http] Command started
+[distributed-uwt: http] Command started
+[distributed-uwt.0.1.0] https://github.com/essdotteedot/distributed/archive/v0.5.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[distributed-uwt: jbuilder build] Command started
++ jbuilder "build" "-p" "distributed-uwt" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/distributed-uwt.0.1.0)
+-     ocamlopt uwt/.distributed_uwt.objs/distributed_uwt.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I uwt/.distributed_uwt.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/distributed -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uwt -no-alias-deps -o uwt/.distributed_uwt.objs/distributed_uwt.cmx -c -impl uwt/distributed_uwt.ml)
+- File "uwt/distributed_uwt.ml", line 57, characters 54-97:
+- Error: Unbound value Uwt_io.establish_server_with_client_address
+-       ocamlc uwt/.distributed_uwt.objs/distributed_uwt.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I uwt/.distributed_uwt.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/distributed -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uwt -no-alias-deps -o uwt/.distributed_uwt.objs/distributed_uwt.cmo -c -impl uwt/distributed_uwt.ml)
+- File "uwt/distributed_uwt.ml", line 57, characters 54-97:
+- Error: Unbound value Uwt_io.establish_server_with_client_address
+-     ocamlopt uwt/.distributed_uwt.objs/distributed_uwt.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I uwt/.distributed_uwt.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/distributed -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uwt -no-alias-deps -o uwt/.distributed_uwt.objs/distributed_uwt.cmx -c -impl uwt/distributed_uwt.ml)
+- File "uwt/distributed_uwt.ml", line 57, characters 54-97:
+- Error: Unbound value Uwt_io.establish_server_with_client_address
+-       ocamlc uwt/.distributed_uwt.objs/distributed_uwt.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I uwt/.distributed_uwt.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/distributed -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uwt -no-alias-deps -o uwt/.distributed_uwt.objs/distributed_uwt.cmo -c -impl uwt/distributed_uwt.ml)
+- File "uwt/distributed_uwt.ml", line 57, characters 54-97:
+- Error: Unbound value Uwt_io.establish_server_with_client_address
+[ERROR] The compilation of distributed-uwt failed at "jbuilder build -p
+        distributed-uwt -j 4".
+
+#=== ERROR while installing distributed-uwt.0.1.0 =============================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p distributed-uwt -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/distributed-uwt.0.1.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/distributed-uwt.0.1.0/distributed-uwt-10377.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/distributed-uwt.0.1.0/distributed-uwt-10377.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/distributed-uwt.0.1.0/distributed-uwt-10377.out
+### stdout ###
+#     ocamlopt uwt/.distributed_uwt.objs/distributed_uwt.{cmx,o} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I uwt/.distributed_uwt.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/distributed -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uwt -no-alias-deps -o uwt/.distributed_uwt.objs/distributed_uwt.cmx -c -impl uwt/distributed_uwt.ml)
+# File "uwt/distributed_uwt.ml", line 57, characters 54-97:
+# Error: Unbound value Uwt_io.establish_server_with_client_address
+#       ocamlc uwt/.distributed_uwt.objs/distributed_uwt.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I uwt/.distributed_uwt.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/distributed -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uwt -no-alias-deps -o uwt/.distributed_uwt.objs/distributed_uwt.cmo -c -impl uwt/distributed_uwt.ml)
+# File "uwt/distributed_uwt.ml", line 57, characters 54-97:
+# Error: Unbound value Uwt_io.establish_server_with_client_address
+### stderr ###
+#     ocamlopt uwt/.distributed_uwt.objs/distributed_uwt.{cmx,o} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I uwt/.distributed_uwt.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/distributed -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uwt -no-alias-deps -o uwt/.distributed_uwt.objs/distributed_uwt.cmx -c -impl uwt/distributed_uwt.ml)
+# File "uwt/distributed_uwt.ml", line 57, characters 54-97:
+# Error: Unbound value Uwt_io.establish_server_with_client_address
+#       ocamlc uwt/.distributed_uwt.objs/distributed_uwt.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I uwt/.distributed_uwt.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/distributed -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/logs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lwt -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/uwt -no-alias-deps -o uwt/.distributed_uwt.objs/distributed_uwt.cmo -c -impl uwt/distributed_uwt.ml)
+# File "uwt/distributed_uwt.ml", line 57, characters 54-97:
+# Error: Unbound value Uwt_io.establish_server_with_client_address
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install distributed-uwt 0.1.0
+No changes have been performed
+'opam install distributed-uwt.0.1.0' failed.

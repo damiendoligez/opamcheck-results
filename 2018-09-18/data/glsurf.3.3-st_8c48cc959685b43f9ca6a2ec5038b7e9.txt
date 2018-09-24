@@ -1,0 +1,221 @@
+The following actions will be performed:
+  - install glsurf 3.3
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[glsurf: http] Command started
+[glsurf: http] Command started
+[glsurf.3.3] https://lama.univ-savoie.fr/~raffalli/glsurf/glsurf-3.3.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[glsurf: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3)
+- make -C callbacks-0.1
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/callbacks-0.1'
+- ocamlfind  ocamlc -c  -I ../callbacks-0.1 -I ../lablcbglut direct_callback.mli
+- ocamlfind  ocamlc -c  -I ../callbacks-0.1 -I ../lablcbglut direct_callback.ml
+- ocamlfind  ocamlc -pp "camlp4o pa_extend.cmo q_MLast.cmo -loc loc" -I +camlp4 -c -o pa_callbacks.cmo pa_callbacks.ml
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/callbacks-0.1'
+- make -C lablcbglut opt
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/lablcbglut'
+- ocamlfind  ocamlc -c  -package lablgl -I ../callbacks-0.1 -I ../lablcbglut cbglut.mli
+- ocamlfind  ocamlopt -c  -package lablgl -I ../callbacks-0.1 -I ../lablcbglut cbglut.ml
+- ocamlfind  ocamlc -c  -package lablgl -I ../callbacks-0.1 -I ../lablcbglut glExt.mli
+- ocamlfind  ocamlopt -c  -package lablgl -I ../callbacks-0.1 -I ../lablcbglut glExt.ml
+- ocamlfind  ocamlc -c -ccopt "-c -O  -I/usr/X11R6/include" wrap_gl.c
+- ocamlfind  ocamlc -c -ccopt "-c -O  -I/usr/X11R6/include" wrap_cbglut.c
+- ocamlc -pp camlp4o var2switch.ml -o var2switch
+- File "var2switch.ml", line 25, characters 26-42:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- ./var2switch -table GL_ < gl_tags.var > gl_tags.c
+- ocamlc -pp camlp4o var2def.ml -o var2def
+- ./var2def -table GL_ < gl_tags.var > gl_tags.h
+- ocamlfind  ocamlc -c -ccopt "-c -O  -I/usr/X11R6/include" ml_glExt.c
+- ocamlfind  ocamlmklib -o lablcbglut wrap_gl.o	wrap_cbglut.o ml_glExt.o cbglut.cmx glExt.cmx -ldopt "-lglut" -linkpkg
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/lablcbglut'
+- make -C src opt
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/src'
+- ocamlfind  ocamlc -c -ccopt "-c -O " functionstubs.c
+- make -C callbacks-0.1
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/callbacks-0.1'
+- ocamlfind  ocamlc -c  -I ../callbacks-0.1 -I ../lablcbglut direct_callback.mli
+- ocamlfind  ocamlc -c  -I ../callbacks-0.1 -I ../lablcbglut direct_callback.ml
+- ocamlfind  ocamlc -pp "camlp4o pa_extend.cmo q_MLast.cmo -loc loc" -I +camlp4 -c -o pa_callbacks.cmo pa_callbacks.ml
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/callbacks-0.1'
+- make -C lablcbglut opt
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/lablcbglut'
+- ocamlfind  ocamlc -c  -package lablgl -I ../callbacks-0.1 -I ../lablcbglut cbglut.mli
+- ocamlfind  ocamlopt -c  -package lablgl -I ../callbacks-0.1 -I ../lablcbglut cbglut.ml
+- ocamlfind  ocamlc -c  -package lablgl -I ../callbacks-0.1 -I ../lablcbglut glExt.mli
+- ocamlfind  ocamlopt -c  -package lablgl -I ../callbacks-0.1 -I ../lablcbglut glExt.ml
+- ocamlfind  ocamlc -c -ccopt "-c -O  -I/usr/X11R6/include" wrap_gl.c
+- ocamlfind  ocamlc -c -ccopt "-c -O  -I/usr/X11R6/include" wrap_cbglut.c
+- ocamlc -pp camlp4o var2switch.ml -o var2switch
+- File "var2switch.ml", line 25, characters 26-42:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- ./var2switch -table GL_ < gl_tags.var > gl_tags.c
+- ocamlc -pp camlp4o var2def.ml -o var2def
+- ./var2def -table GL_ < gl_tags.var > gl_tags.h
+- ocamlfind  ocamlc -c -ccopt "-c -O  -I/usr/X11R6/include" ml_glExt.c
+- ocamlfind  ocamlmklib -o lablcbglut wrap_gl.o	wrap_cbglut.o ml_glExt.o cbglut.cmx glExt.cmx -ldopt "-lglut" -linkpkg
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/lablcbglut'
+- make -C src opt
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/src'
+- ocamlfind  ocamlc -c -ccopt "-c -O " functionstubs.c
+- ocamlfind  ocamlc -c -ccopt "-c -O " callbacks.c
+- ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut gctweak.ml
+- ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut glchar.ml
+- ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut dirty.ml
+- ocamlfind  ocamlc -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut input_util.mli
+- ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut input_util.ml
+- File "input_util.ml", line 142, characters 30-33:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ../Makefile.common:48: recipe for target 'input_util.cmx' failed
+- make[1]: *** [input_util.cmx] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/src'
+- Makefile:7: recipe for target 'opt' failed
+- make: *** [opt] Error 2
+- ocamlfind  ocamlc -c -ccopt "-c -O " callbacks.c
+- ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut gctweak.ml
+- ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut glchar.ml
+- ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut dirty.ml
+- ocamlfind  ocamlc -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut input_util.mli
+- ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut input_util.ml
+- File "input_util.ml", line 142, characters 30-33:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ../Makefile.common:48: recipe for target 'input_util.cmx' failed
+- make[1]: *** [input_util.cmx] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/src'
+- Makefile:7: recipe for target 'opt' failed
+- make: *** [opt] Error 2
+[ERROR] The compilation of glsurf failed at "make".
+[glsurf: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/glsurf] Command started
++ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/glsurf  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3)
+- make -C callbacks-0.1
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/callbacks-0.1'
+- ocamlfind  ocamlc -c  -I ../callbacks-0.1 -I ../lablcbglut direct_callback.mli
+- ocamlfind  ocamlc -c  -I ../callbacks-0.1 -I ../lablcbglut direct_callback.ml
+- ocamlfind  ocamlc -pp "camlp4o pa_extend.cmo q_MLast.cmo -loc loc" -I +camlp4 -c -o pa_callbacks.cmo pa_callbacks.ml
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/callbacks-0.1'
+- make -C lablcbglut opt
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/lablcbglut'
+- ocamlfind  ocamlc -c  -package lablgl -I ../callbacks-0.1 -I ../lablcbglut cbglut.mli
+- ocamlfind  ocamlopt -c  -package lablgl -I ../callbacks-0.1 -I ../lablcbglut cbglut.ml
+- ocamlfind  ocamlc -c  -package lablgl -I ../callbacks-0.1 -I ../lablcbglut glExt.mli
+- ocamlfind  ocamlopt -c  -package lablgl -I ../callbacks-0.1 -I ../lablcbglut glExt.ml
+- ocamlfind  ocamlc -c -ccopt "-c -O  -I/usr/X11R6/include" wrap_gl.c
+- ocamlfind  ocamlc -c -ccopt "-c -O  -I/usr/X11R6/include" wrap_cbglut.c
+- ocamlc -pp camlp4o var2switch.ml -o var2switch
+- File "var2switch.ml", line 25, characters 26-42:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- ./var2switch -table GL_ < gl_tags.var > gl_tags.c
+- ocamlc -pp camlp4o var2def.ml -o var2def
+- ./var2def -table GL_ < gl_tags.var > gl_tags.h
+- ocamlfind  ocamlc -c -ccopt "-c -O  -I/usr/X11R6/include" ml_glExt.c
+- ocamlfind  ocamlmklib -o lablcbglut wrap_gl.o	wrap_cbglut.o ml_glExt.o cbglut.cmx glExt.cmx -ldopt "-lglut" -linkpkg
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/lablcbglut'
+- make -C src opt
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/src'
+- ocamlfind  ocamlc -c -ccopt "-c -O " functionstubs.c
+- ocamlfind  ocamlc -c -ccopt "-c -O " callbacks.c
+- ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut gctweak.ml
+- ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut glchar.ml
+- ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut dirty.ml
+- ocamlfind  ocamlc -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut input_util.mli
+- ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut input_util.ml
+- File "input_util.ml", line 142, characters 30-33:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ../Makefile.common:48: recipe for target 'input_util.cmx' failed
+- make[1]: *** [input_util.cmx] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/src'
+- Makefile:7: recipe for target 'opt' failed
+- make: *** [opt] Error 2
+- make -C callbacks-0.1
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/callbacks-0.1'
+- ocamlfind  ocamlc -c  -I ../callbacks-0.1 -I ../lablcbglut direct_callback.mli
+- ocamlfind  ocamlc -c  -I ../callbacks-0.1 -I ../lablcbglut direct_callback.ml
+- ocamlfind  ocamlc -pp "camlp4o pa_extend.cmo q_MLast.cmo -loc loc" -I +camlp4 -c -o pa_callbacks.cmo pa_callbacks.ml
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/callbacks-0.1'
+- make -C lablcbglut opt
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/lablcbglut'
+- ocamlfind  ocamlc -c  -package lablgl -I ../callbacks-0.1 -I ../lablcbglut cbglut.mli
+- ocamlfind  ocamlopt -c  -package lablgl -I ../callbacks-0.1 -I ../lablcbglut cbglut.ml
+- ocamlfind  ocamlc -c  -package lablgl -I ../callbacks-0.1 -I ../lablcbglut glExt.mli
+- ocamlfind  ocamlopt -c  -package lablgl -I ../callbacks-0.1 -I ../lablcbglut glExt.ml
+- ocamlfind  ocamlc -c -ccopt "-c -O  -I/usr/X11R6/include" wrap_gl.c
+- ocamlfind  ocamlc -c -ccopt "-c -O  -I/usr/X11R6/include" wrap_cbglut.c
+- ocamlc -pp camlp4o var2switch.ml -o var2switch
+- File "var2switch.ml", line 25, characters 26-42:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- ./var2switch -table GL_ < gl_tags.var > gl_tags.c
+- ocamlc -pp camlp4o var2def.ml -o var2def
+- ./var2def -table GL_ < gl_tags.var > gl_tags.h
+- ocamlfind  ocamlc -c -ccopt "-c -O  -I/usr/X11R6/include" ml_glExt.c
+- ocamlfind  ocamlmklib -o lablcbglut wrap_gl.o	wrap_cbglut.o ml_glExt.o cbglut.cmx glExt.cmx -ldopt "-lglut" -linkpkg
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/lablcbglut'
+- make -C src opt
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/src'
+- ocamlfind  ocamlc -c -ccopt "-c -O " functionstubs.c
+- ocamlfind  ocamlc -c -ccopt "-c -O " callbacks.c
+- ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut gctweak.ml
+- ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut glchar.ml
+- ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut dirty.ml
+- ocamlfind  ocamlc -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut input_util.mli
+- ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut input_util.ml
+- File "input_util.ml", line 142, characters 30-33:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ../Makefile.common:48: recipe for target 'input_util.cmx' failed
+- make[1]: *** [input_util.cmx] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/src'
+- Makefile:7: recipe for target 'opt' failed
+- make: *** [opt] Error 2
+
+#=== ERROR while installing glsurf.3.3 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/glsurf-29623.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/glsurf-29623.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/glsurf-29623.out
+### stdout ###
+# [...]
+# ocamlfind  ocamlc -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut input_util.mli
+# ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut input_util.ml
+# File "input_util.ml", line 142, characters 30-33:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# ../Makefile.common:48: recipe for target 'input_util.cmx' failed
+# make[1]: *** [input_util.cmx] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/src'
+# Makefile:7: recipe for target 'opt' failed
+# make: *** [opt] Error 2
+### stderr ###
+# [...]
+# ocamlfind  ocamlc -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut input_util.mli
+# ocamlfind  ocamlopt -c -package bytes,str,num,camlimages,camlimages.all_formats,lablgl -w p -thread -pp "camlp4o pa_macro.cmo ../callbacks-0.1/pa_callbacks.cmo -DUNIX" -I ../callbacks-0.1 -I ../lablcbglut input_util.ml
+# File "input_util.ml", line 142, characters 30-33:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# ../Makefile.common:48: recipe for target 'input_util.cmx' failed
+# make[1]: *** [input_util.cmx] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/glsurf.3.3/src'
+# Makefile:7: recipe for target 'opt' failed
+# make: *** [opt] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install glsurf 3.3
+No changes have been performed
+'opam install glsurf.3.3' failed.

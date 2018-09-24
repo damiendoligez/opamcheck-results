@@ -1,0 +1,50 @@
+The following actions will be performed:
+  - install ppx_regexp 0.4.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ppx_regexp: http] Command started
+[ppx_regexp: http] Command started
+[ppx_regexp.0.4.0] https://github.com/paurkedal/ppx_regexp/releases/download/v0.4.0/ppx_regexp-0.4.0.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ppx_regexp: dune build] Command started
++ dune "build" "-p" "ppx_regexp" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_regexp.0.4.0)
+-       ocamlc ppx_regexp/.ppx_regexp.objs/ppx_regexp.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I ppx_regexp/.ppx_regexp.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re/perl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/seq -no-alias-deps -open Ppx_regexp__ -o ppx_regexp/.ppx_regexp.objs/ppx_regexp.cmo -c -impl ppx_regexp/ppx_regexp.pp.ml)
+- File "ppx_regexp/ppx_regexp.ml", line 135, characters 10-14:
+- Error: Uninterpreted extension 'expr'.
+-       ocamlc ppx_regexp/.ppx_regexp.objs/ppx_regexp.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I ppx_regexp/.ppx_regexp.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re/perl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/seq -no-alias-deps -open Ppx_regexp__ -o ppx_regexp/.ppx_regexp.objs/ppx_regexp.cmo -c -impl ppx_regexp/ppx_regexp.pp.ml)
+- File "ppx_regexp/ppx_regexp.ml", line 135, characters 10-14:
+- Error: Uninterpreted extension 'expr'.
+[ERROR] The compilation of ppx_regexp failed at "dune build -p ppx_regexp -j
+        4".
+
+#=== ERROR while installing ppx_regexp.0.4.0 ==================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              dune build -p ppx_regexp -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_regexp.0.4.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_regexp.0.4.0/ppx_regexp-23489.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_regexp.0.4.0/ppx_regexp-23489.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_regexp.0.4.0/ppx_regexp-23489.out
+### stdout ###
+#       ocamlc ppx_regexp/.ppx_regexp.objs/ppx_regexp.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I ppx_regexp/.ppx_regexp.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re/perl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/seq -no-alias-deps -open Ppx_regexp__ -o ppx_regexp/.ppx_regexp.objs/ppx_regexp.cmo -c -impl ppx_regexp/ppx_regexp.pp.ml)
+# File "ppx_regexp/ppx_regexp.ml", line 135, characters 10-14:
+# Error: Uninterpreted extension 'expr'.
+### stderr ###
+#       ocamlc ppx_regexp/.ppx_regexp.objs/ppx_regexp.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I ppx_regexp/.ppx_regexp.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml-migrate-parsetree -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_tools_versioned -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/re/perl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/seq -no-alias-deps -open Ppx_regexp__ -o ppx_regexp/.ppx_regexp.objs/ppx_regexp.cmo -c -impl ppx_regexp/ppx_regexp.pp.ml)
+# File "ppx_regexp/ppx_regexp.ml", line 135, characters 10-14:
+# Error: Uninterpreted extension 'expr'.
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ppx_regexp 0.4.0
+No changes have been performed
+'opam install ppx_regexp.0.4.0' failed.

@@ -1,0 +1,251 @@
+The following actions will be performed:
+  - install oth 2.10
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[oth: http] Command started
+[oth: http] Command started
+[oth.2.10] https://bitbucket.org/mimirops/oth/get/2.10.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[oth: make] Command started
++ make "-j4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10)
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- pds
+- make -f pds.mk all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth \
+- -C build/release/oth
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth'
+- cd ../../../src/oth && \
+- ocamlfind ocamldep   \
+- oth.ml  oth.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth/.d
+- ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers,duration,revops -c ../../../src/oth/oth.mli -o oth.cmi
+- ocamlfind ocamlopt -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers,duration,revops  -c ../../../src/oth/oth.ml -o oth.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers,duration,revops  -c ../../../src/oth/oth.ml -o oth.cmo
+- File "../../../src/oth/oth.ml", line 129, characters 8-23:
+- Error: This expression has type string list
+-        but an expression was expected of type ('a, 'b) CCList.Assoc.t list
+-        Type string is not compatible with type
+-          ('a, 'b) CCList.Assoc.t = ('a * 'b) list 
+- File "../../../src/oth/oth.ml", line 129, characters 8-23:
+- Error: This expression has type string list
+-        but an expression was expected of type ('a, 'b) CCList.Assoc.t list
+-        Type string is not compatible with type
+-          ('a, 'b) CCList.Assoc.t = ('a * 'b) list 
+- ../../../Ocamlrules.mk.in:113: recipe for target 'oth.cmx' failed
+- make[2]: *** [oth.cmx] Error 2
+- make[2]: *** Waiting for unfinished jobs....
+- ../../../Ocamlrules.mk.in:119: recipe for target 'oth.cmo' failed
+- make[2]: *** [oth.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth'
+- pds.mk:65: recipe for target 'release_oth' failed
+- make[1]: *** [release_oth] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- Makefile:4: recipe for target 'all' failed
+- make: *** [all] Error 2
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- pds
+- make -f pds.mk all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth \
+- -C build/release/oth
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth'
+- cd ../../../src/oth && \
+- ocamlfind ocamldep   \
+- oth.ml  oth.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth/.d
+- ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers,duration,revops -c ../../../src/oth/oth.mli -o oth.cmi
+- ocamlfind ocamlopt -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers,duration,revops  -c ../../../src/oth/oth.ml -o oth.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers,duration,revops  -c ../../../src/oth/oth.ml -o oth.cmo
+- File "../../../src/oth/oth.ml", line 129, characters 8-23:
+- Error: This expression has type string list
+-        but an expression was expected of type ('a, 'b) CCList.Assoc.t list
+-        Type string is not compatible with type
+-          ('a, 'b) CCList.Assoc.t = ('a * 'b) list 
+- File "../../../src/oth/oth.ml", line 129, characters 8-23:
+- Error: This expression has type string list
+-        but an expression was expected of type ('a, 'b) CCList.Assoc.t list
+-        Type string is not compatible with type
+-          ('a, 'b) CCList.Assoc.t = ('a * 'b) list 
+- ../../../Ocamlrules.mk.in:113: recipe for target 'oth.cmx' failed
+- make[2]: *** [oth.cmx] Error 2
+- make[2]: *** Waiting for unfinished jobs....
+- ../../../Ocamlrules.mk.in:119: recipe for target 'oth.cmo' failed
+- make[2]: *** [oth.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth'
+- pds.mk:65: recipe for target 'release_oth' failed
+- make[1]: *** [release_oth] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- Makefile:4: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of oth failed at "make -j4".
+[oth: make remove] Command started
++ make "PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051" "remove" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10)
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- pds
+- make -f pds.mk all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth \
+- -C build/release/oth
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth'
+- cd ../../../src/oth && \
+- ocamlfind ocamldep   \
+- oth.ml  oth.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth/.d
+- ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers,duration,revops -c ../../../src/oth/oth.mli -o oth.cmi
+- ocamlfind ocamlopt -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers,duration,revops  -c ../../../src/oth/oth.ml -o oth.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers,duration,revops  -c ../../../src/oth/oth.ml -o oth.cmo
+- File "../../../src/oth/oth.ml", line 129, characters 8-23:
+- Error: This expression has type string list
+-        but an expression was expected of type ('a, 'b) CCList.Assoc.t list
+-        Type string is not compatible with type
+-          ('a, 'b) CCList.Assoc.t = ('a * 'b) list 
+- File "../../../src/oth/oth.ml", line 129, characters 8-23:
+- Error: This expression has type string list
+-        but an expression was expected of type ('a, 'b) CCList.Assoc.t list
+-        Type string is not compatible with type
+-          ('a, 'b) CCList.Assoc.t = ('a * 'b) list 
+- ../../../Ocamlrules.mk.in:113: recipe for target 'oth.cmx' failed
+- make[2]: *** [oth.cmx] Error 2
+- make[2]: *** Waiting for unfinished jobs....
+- ../../../Ocamlrules.mk.in:119: recipe for target 'oth.cmo' failed
+- make[2]: *** [oth.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth'
+- pds.mk:65: recipe for target 'release_oth' failed
+- make[1]: *** [release_oth] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- Makefile:4: recipe for target 'all' failed
+- make: *** [all] Error 2
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- pds
+- make -f pds.mk remove
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- make -C build/release/oth remove
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth'
+- ocamlfind remove oth
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/oth/META
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- pds
+- make -f pds.mk all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth \
+- -C build/release/oth
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth'
+- cd ../../../src/oth && \
+- ocamlfind ocamldep   \
+- oth.ml  oth.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth/.d
+- ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers,duration,revops -c ../../../src/oth/oth.mli -o oth.cmi
+- ocamlfind ocamlopt -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers,duration,revops  -c ../../../src/oth/oth.ml -o oth.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers,duration,revops  -c ../../../src/oth/oth.ml -o oth.cmo
+- File "../../../src/oth/oth.ml", line 129, characters 8-23:
+- Error: This expression has type string list
+-        but an expression was expected of type ('a, 'b) CCList.Assoc.t list
+-        Type string is not compatible with type
+-          ('a, 'b) CCList.Assoc.t = ('a * 'b) list 
+- File "../../../src/oth/oth.ml", line 129, characters 8-23:
+- Error: This expression has type string list
+-        but an expression was expected of type ('a, 'b) CCList.Assoc.t list
+-        Type string is not compatible with type
+-          ('a, 'b) CCList.Assoc.t = ('a * 'b) list 
+- ../../../Ocamlrules.mk.in:113: recipe for target 'oth.cmx' failed
+- make[2]: *** [oth.cmx] Error 2
+- make[2]: *** Waiting for unfinished jobs....
+- ../../../Ocamlrules.mk.in:119: recipe for target 'oth.cmo' failed
+- make[2]: *** [oth.cmo] Error 2
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth'
+- pds.mk:65: recipe for target 'release_oth' failed
+- make[1]: *** [release_oth] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- Makefile:4: recipe for target 'all' failed
+- make: *** [all] Error 2
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- pds
+- make -f pds.mk remove
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+- make -C build/release/oth remove
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth'
+- ocamlfind remove oth
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/oth/META
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+
+#=== ERROR while installing oth.2.10 ==========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make -j4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/oth-15842.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/oth-15842.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/oth-15842.out
+### stdout ###
+# [...]
+# make[2]: *** [oth.cmx] Error 2
+# make[2]: *** Waiting for unfinished jobs....
+# ../../../Ocamlrules.mk.in:119: recipe for target 'oth.cmo' failed
+# make[2]: *** [oth.cmo] Error 2
+# make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth'
+# pds.mk:65: recipe for target 'release_oth' failed
+# make[1]: *** [release_oth] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+# Makefile:4: recipe for target 'all' failed
+# make: *** [all] Error 2
+### stderr ###
+# [...]
+# make[2]: *** [oth.cmx] Error 2
+# make[2]: *** Waiting for unfinished jobs....
+# ../../../Ocamlrules.mk.in:119: recipe for target 'oth.cmo' failed
+# make[2]: *** [oth.cmo] Error 2
+# make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10/build/release/oth'
+# pds.mk:65: recipe for target 'release_oth' failed
+# make[1]: *** [release_oth] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/oth.2.10'
+# Makefile:4: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install oth 2.10
+No changes have been performed
+'opam install oth.2.10' failed.

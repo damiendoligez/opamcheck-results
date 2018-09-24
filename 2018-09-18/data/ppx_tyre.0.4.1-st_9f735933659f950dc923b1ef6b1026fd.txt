@@ -1,0 +1,53 @@
+The following actions will be performed:
+  - install ppx_tyre 0.4.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ppx_tyre: http] Command started
+[ppx_tyre: http] Command started
+[ppx_tyre.0.4.1] https://github.com/paurkedal/ppx_regexp/releases/download/v0.4.1/ppx_regexp-0.4.1.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ppx_tyre: dune build] Command started
++ dune "build" "-p" "ppx_tyre" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_tyre.0.4.1)
+- File "ppx_tyre/dune", line 6, characters 14-52:
+- Error: No ppx driver were found. It seems that
+- ppx_tools_versioned.metaquot_404 is not compatible with Dune. Examples of ppx
+- rewriters that are compatible with Dune are ones using
+- ocaml-migrate-parsetree, ppxlib or ppx_driver.
+- File "ppx_tyre/dune", line 6, characters 14-52:
+- Error: No ppx driver were found. It seems that
+- ppx_tools_versioned.metaquot_404 is not compatible with Dune. Examples of ppx
+- rewriters that are compatible with Dune are ones using
+- ocaml-migrate-parsetree, ppxlib or ppx_driver.
+[ERROR] The compilation of ppx_tyre failed at "dune build -p ppx_tyre -j 4".
+
+#=== ERROR while installing ppx_tyre.0.4.1 ====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              dune build -p ppx_tyre -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_tyre.0.4.1
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_tyre.0.4.1/ppx_tyre-726.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_tyre.0.4.1/ppx_tyre-726.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_tyre.0.4.1/ppx_tyre-726.out
+### stdout ###
+# File "ppx_tyre/dune", line 6, characters 14-52:
+# Error: No ppx driver were found. It seems that
+# ppx_tools_versioned.metaquot_404 is not compatible with Dune. Examples of ppx
+# rewriters that are compatible with Dune are ones using
+# ocaml-migrate-parsetree, ppxlib or ppx_driver.
+### stderr ###
+# File "ppx_tyre/dune", line 6, characters 14-52:
+# Error: No ppx driver were found. It seems that
+# ppx_tools_versioned.metaquot_404 is not compatible with Dune. Examples of ppx
+# rewriters that are compatible with Dune are ones using
+# ocaml-migrate-parsetree, ppxlib or ppx_driver.
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ppx_tyre 0.4.1
+No changes have been performed
+'opam install ppx_tyre.0.4.1' failed.

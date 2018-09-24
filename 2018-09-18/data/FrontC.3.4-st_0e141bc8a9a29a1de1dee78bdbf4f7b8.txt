@@ -1,0 +1,483 @@
+The following actions will be performed:
+  - install FrontC 3.4
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[FrontC: http] Command started
+[FrontC: http] Command started
+[FrontC.3.4] http://www.irit.fr/recherches/ARCHI/MARCH/frontc/Frontc-3.4.tgz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[FrontC: make install] Command started
++ make "install" "PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib" "OCAML_SITE=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4)
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- ocamllex  -o clexer.ml clexer.mll
+- 140 states, 1484 transitions, table size 6776 bytes
+- ocamlyacc -v cparser.mly
+- 8 shift/reduce conflicts.
+- ocamlc  -o cabs.cmo -c cabs.ml
+- ocamlc  -o cxml.cmo -c cxml.ml
+- ocamlc  -o cprint.cmo -c cprint.ml
+- ocamlc  -o cparser.cmi -c cparser.mli
+- ocamlc  -o clexer.cmo -c clexer.ml
+- File "clexer.mll", line 421, characters 25-28:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../Makefile.tail:88: recipe for target 'clexer.cmo' failed
+- make[1]: *** [clexer.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- ocamlc -I ../frontc -o ctoxml_bin.cmo -c ctoxml_bin.ml
+- File "ctoxml_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'ctoxml_bin.cmo' failed
+- make[1]: *** [ctoxml_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- ocamlc -I ../frontc -o printc_bin.cmo -c printc_bin.ml
+- File "printc_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'printc_bin.cmo' failed
+- make[1]: *** [printc_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- ocamlc -I ../frontc -o gen.cmo -c gen.ml
+- ocamlc -I ../frontc -o reduce.cmo -c reduce.ml
+- ocamlc -I ../frontc -o label.cmo -c label.ml
+- File "label.ml", line 17, characters 28-40:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc -I ../frontc -o algo.cmo -c algo.ml
+- File "algo.ml", line 306, characters 14-26:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc -I ../frontc -o calipso.cmo -c calipso.ml
+- File "calipso.ml", line 178, characters 2-19:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'calipso.cmo' failed
+- make[1]: *** [calipso.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- ocamlc  -o clexer.cmo -c clexer.ml
+- File "clexer.mll", line 421, characters 25-28:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../Makefile.tail:88: recipe for target 'clexer.cmo' failed
+- make[1]: *** [clexer.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- ocamlc -I ../frontc -o ctoxml_bin.cmo -c ctoxml_bin.ml
+- File "ctoxml_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'ctoxml_bin.cmo' failed
+- make[1]: *** [ctoxml_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- ocamlc -I ../frontc -o printc_bin.cmo -c printc_bin.ml
+- File "printc_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'printc_bin.cmo' failed
+- make[1]: *** [printc_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- ocamlc -I ../frontc -o calipso.cmo -c calipso.ml
+- File "calipso.ml", line 178, characters 2-19:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'calipso.cmo' failed
+- make[1]: *** [calipso.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- ocamllex  -o clexer.ml clexer.mll
+- 140 states, 1484 transitions, table size 6776 bytes
+- ocamlyacc -v cparser.mly
+- 8 shift/reduce conflicts.
+- ocamlc  -o cabs.cmo -c cabs.ml
+- ocamlc  -o cxml.cmo -c cxml.ml
+- ocamlc  -o cprint.cmo -c cprint.ml
+- ocamlc  -o cparser.cmi -c cparser.mli
+- ocamlc  -o clexer.cmo -c clexer.ml
+- File "clexer.mll", line 421, characters 25-28:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../Makefile.tail:88: recipe for target 'clexer.cmo' failed
+- make[1]: *** [clexer.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- ocamlc -I ../frontc -o ctoxml_bin.cmo -c ctoxml_bin.ml
+- File "ctoxml_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'ctoxml_bin.cmo' failed
+- make[1]: *** [ctoxml_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- ocamlc -I ../frontc -o printc_bin.cmo -c printc_bin.ml
+- File "printc_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'printc_bin.cmo' failed
+- make[1]: *** [printc_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- ocamlc -I ../frontc -o gen.cmo -c gen.ml
+- ocamlc -I ../frontc -o reduce.cmo -c reduce.ml
+- ocamlc -I ../frontc -o label.cmo -c label.ml
+- File "label.ml", line 17, characters 28-40:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc -I ../frontc -o algo.cmo -c algo.ml
+- File "algo.ml", line 306, characters 14-26:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc -I ../frontc -o calipso.cmo -c calipso.ml
+- File "calipso.ml", line 178, characters 2-19:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'calipso.cmo' failed
+- make[1]: *** [calipso.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- ocamlc  -o clexer.cmo -c clexer.ml
+- File "clexer.mll", line 421, characters 25-28:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../Makefile.tail:88: recipe for target 'clexer.cmo' failed
+- make[1]: *** [clexer.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- ocamlc -I ../frontc -o ctoxml_bin.cmo -c ctoxml_bin.ml
+- File "ctoxml_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'ctoxml_bin.cmo' failed
+- make[1]: *** [ctoxml_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- ocamlc -I ../frontc -o printc_bin.cmo -c printc_bin.ml
+- File "printc_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'printc_bin.cmo' failed
+- make[1]: *** [printc_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- ocamlc -I ../frontc -o calipso.cmo -c calipso.ml
+- File "calipso.ml", line 178, characters 2-19:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'calipso.cmo' failed
+- make[1]: *** [calipso.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+[FrontC: cp META] Command started
++ cp "META" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/FrontC" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4)
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- ocamllex  -o clexer.ml clexer.mll
+- 140 states, 1484 transitions, table size 6776 bytes
+- ocamlyacc -v cparser.mly
+- 8 shift/reduce conflicts.
+- ocamlc  -o cabs.cmo -c cabs.ml
+- ocamlc  -o cxml.cmo -c cxml.ml
+- ocamlc  -o cprint.cmo -c cprint.ml
+- ocamlc  -o cparser.cmi -c cparser.mli
+- ocamlc  -o clexer.cmo -c clexer.ml
+- File "clexer.mll", line 421, characters 25-28:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../Makefile.tail:88: recipe for target 'clexer.cmo' failed
+- make[1]: *** [clexer.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- ocamlc -I ../frontc -o ctoxml_bin.cmo -c ctoxml_bin.ml
+- File "ctoxml_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'ctoxml_bin.cmo' failed
+- make[1]: *** [ctoxml_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- ocamlc -I ../frontc -o printc_bin.cmo -c printc_bin.ml
+- File "printc_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'printc_bin.cmo' failed
+- make[1]: *** [printc_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- ocamlc -I ../frontc -o gen.cmo -c gen.ml
+- ocamlc -I ../frontc -o reduce.cmo -c reduce.ml
+- ocamlc -I ../frontc -o label.cmo -c label.ml
+- File "label.ml", line 17, characters 28-40:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc -I ../frontc -o algo.cmo -c algo.ml
+- File "algo.ml", line 306, characters 14-26:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc -I ../frontc -o calipso.cmo -c calipso.ml
+- File "calipso.ml", line 178, characters 2-19:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'calipso.cmo' failed
+- make[1]: *** [calipso.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- ocamlc  -o clexer.cmo -c clexer.ml
+- File "clexer.mll", line 421, characters 25-28:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../Makefile.tail:88: recipe for target 'clexer.cmo' failed
+- make[1]: *** [clexer.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- ocamlc -I ../frontc -o ctoxml_bin.cmo -c ctoxml_bin.ml
+- File "ctoxml_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'ctoxml_bin.cmo' failed
+- make[1]: *** [ctoxml_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- ocamlc -I ../frontc -o printc_bin.cmo -c printc_bin.ml
+- File "printc_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'printc_bin.cmo' failed
+- make[1]: *** [printc_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- ocamlc -I ../frontc -o calipso.cmo -c calipso.ml
+- File "calipso.ml", line 178, characters 2-19:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'calipso.cmo' failed
+- make[1]: *** [calipso.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- ocamllex  -o clexer.ml clexer.mll
+- 140 states, 1484 transitions, table size 6776 bytes
+- ocamlyacc -v cparser.mly
+- 8 shift/reduce conflicts.
+- ocamlc  -o cabs.cmo -c cabs.ml
+- ocamlc  -o cxml.cmo -c cxml.ml
+- ocamlc  -o cprint.cmo -c cprint.ml
+- ocamlc  -o cparser.cmi -c cparser.mli
+- ocamlc  -o clexer.cmo -c clexer.ml
+- File "clexer.mll", line 421, characters 25-28:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../Makefile.tail:88: recipe for target 'clexer.cmo' failed
+- make[1]: *** [clexer.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- ocamlc -I ../frontc -o ctoxml_bin.cmo -c ctoxml_bin.ml
+- File "ctoxml_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'ctoxml_bin.cmo' failed
+- make[1]: *** [ctoxml_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- ocamlc -I ../frontc -o printc_bin.cmo -c printc_bin.ml
+- File "printc_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'printc_bin.cmo' failed
+- make[1]: *** [printc_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- ocamlc -I ../frontc -o gen.cmo -c gen.ml
+- ocamlc -I ../frontc -o reduce.cmo -c reduce.ml
+- ocamlc -I ../frontc -o label.cmo -c label.ml
+- File "label.ml", line 17, characters 28-40:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc -I ../frontc -o algo.cmo -c algo.ml
+- File "algo.ml", line 306, characters 14-26:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc -I ../frontc -o calipso.cmo -c calipso.ml
+- File "calipso.ml", line 178, characters 2-19:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'calipso.cmo' failed
+- make[1]: *** [calipso.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- ocamlc  -o clexer.cmo -c clexer.ml
+- File "clexer.mll", line 421, characters 25-28:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../Makefile.tail:88: recipe for target 'clexer.cmo' failed
+- make[1]: *** [clexer.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- ocamlc -I ../frontc -o ctoxml_bin.cmo -c ctoxml_bin.ml
+- File "ctoxml_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'ctoxml_bin.cmo' failed
+- make[1]: *** [ctoxml_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- ocamlc -I ../frontc -o printc_bin.cmo -c printc_bin.ml
+- File "printc_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'printc_bin.cmo' failed
+- make[1]: *** [printc_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- ocamlc -I ../frontc -o calipso.cmo -c calipso.ml
+- File "calipso.ml", line 178, characters 2-19:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'calipso.cmo' failed
+- make[1]: *** [calipso.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+[FrontC: ocamlfind remove] Command started
++ ocamlfind "remove" "FrontC" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4)
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- ocamllex  -o clexer.ml clexer.mll
+- 140 states, 1484 transitions, table size 6776 bytes
+- ocamlyacc -v cparser.mly
+- 8 shift/reduce conflicts.
+- ocamlc  -o cabs.cmo -c cabs.ml
+- ocamlc  -o cxml.cmo -c cxml.ml
+- ocamlc  -o cprint.cmo -c cprint.ml
+- ocamlc  -o cparser.cmi -c cparser.mli
+- ocamlc  -o clexer.cmo -c clexer.ml
+- File "clexer.mll", line 421, characters 25-28:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../Makefile.tail:88: recipe for target 'clexer.cmo' failed
+- make[1]: *** [clexer.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- ocamlc -I ../frontc -o ctoxml_bin.cmo -c ctoxml_bin.ml
+- File "ctoxml_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'ctoxml_bin.cmo' failed
+- make[1]: *** [ctoxml_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- ocamlc -I ../frontc -o printc_bin.cmo -c printc_bin.ml
+- File "printc_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'printc_bin.cmo' failed
+- make[1]: *** [printc_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- ocamlc -I ../frontc -o gen.cmo -c gen.ml
+- ocamlc -I ../frontc -o reduce.cmo -c reduce.ml
+- ocamlc -I ../frontc -o label.cmo -c label.ml
+- File "label.ml", line 17, characters 28-40:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc -I ../frontc -o algo.cmo -c algo.ml
+- File "algo.ml", line 306, characters 14-26:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc -I ../frontc -o calipso.cmo -c calipso.ml
+- File "calipso.ml", line 178, characters 2-19:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'calipso.cmo' failed
+- make[1]: *** [calipso.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- ocamlc  -o clexer.cmo -c clexer.ml
+- File "clexer.mll", line 421, characters 25-28:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../Makefile.tail:88: recipe for target 'clexer.cmo' failed
+- make[1]: *** [clexer.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- ocamlc -I ../frontc -o ctoxml_bin.cmo -c ctoxml_bin.ml
+- File "ctoxml_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'ctoxml_bin.cmo' failed
+- make[1]: *** [ctoxml_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- ocamlc -I ../frontc -o printc_bin.cmo -c printc_bin.ml
+- File "printc_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'printc_bin.cmo' failed
+- make[1]: *** [printc_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- ocamlc -I ../frontc -o calipso.cmo -c calipso.ml
+- File "calipso.ml", line 178, characters 2-19:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'calipso.cmo' failed
+- make[1]: *** [calipso.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- ocamlfind: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/FrontC/META: Not a directory
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- ocamllex  -o clexer.ml clexer.mll
+- 140 states, 1484 transitions, table size 6776 bytes
+- ocamlyacc -v cparser.mly
+- 8 shift/reduce conflicts.
+- ocamlc  -o cabs.cmo -c cabs.ml
+- ocamlc  -o cxml.cmo -c cxml.ml
+- ocamlc  -o cprint.cmo -c cprint.ml
+- ocamlc  -o cparser.cmi -c cparser.mli
+- ocamlc  -o clexer.cmo -c clexer.ml
+- File "clexer.mll", line 421, characters 25-28:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../Makefile.tail:88: recipe for target 'clexer.cmo' failed
+- make[1]: *** [clexer.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- ocamlc -I ../frontc -o ctoxml_bin.cmo -c ctoxml_bin.ml
+- File "ctoxml_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'ctoxml_bin.cmo' failed
+- make[1]: *** [ctoxml_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- ocamlc -I ../frontc -o printc_bin.cmo -c printc_bin.ml
+- File "printc_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'printc_bin.cmo' failed
+- make[1]: *** [printc_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- ocamlc -I ../frontc -o gen.cmo -c gen.ml
+- ocamlc -I ../frontc -o reduce.cmo -c reduce.ml
+- ocamlc -I ../frontc -o label.cmo -c label.ml
+- File "label.ml", line 17, characters 28-40:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc -I ../frontc -o algo.cmo -c algo.ml
+- File "algo.ml", line 306, characters 14-26:
+- Warning 3: deprecated: Stdlib.Array.create
+- Use Array.make instead.
+- ocamlc -I ../frontc -o calipso.cmo -c calipso.ml
+- File "calipso.ml", line 178, characters 2-19:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'calipso.cmo' failed
+- make[1]: *** [calipso.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- ocamlc  -o clexer.cmo -c clexer.ml
+- File "clexer.mll", line 421, characters 25-28:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- ../Makefile.tail:88: recipe for target 'clexer.cmo' failed
+- make[1]: *** [clexer.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/frontc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- ocamlc -I ../frontc -o ctoxml_bin.cmo -c ctoxml_bin.ml
+- File "ctoxml_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'ctoxml_bin.cmo' failed
+- make[1]: *** [ctoxml_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/ctoxml'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- ocamlc -I ../frontc -o printc_bin.cmo -c printc_bin.ml
+- File "printc_bin.ml", line 8, characters 5-11:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'printc_bin.cmo' failed
+- make[1]: *** [printc_bin.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/printc'
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- ocamlc -I ../frontc -o calipso.cmo -c calipso.ml
+- File "calipso.ml", line 178, characters 2-19:
+- Error: Unbound module Frontc
+- ../Makefile.tail:88: recipe for target 'calipso.cmo' failed
+- make[1]: *** [calipso.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/FrontC.3.4/calipso'
+- ocamlfind: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/FrontC/META: Not a directory
+
+#=== ERROR while installing FrontC.3.4 ========================================#
+OpamSystem.File_not_found("/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/FrontC/opam.config")
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install FrontC 3.4
+No changes have been performed
+'opam install FrontC.3.4' failed.

@@ -1,0 +1,180 @@
+The following actions will be performed:
+  - install flow_parser 0.36.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[flow_parser: http] Command started
+[flow_parser: http] Command started
+[flow_parser.0.36.0] https://github.com/facebook/flow/archive/v0.36.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[flow_parser: sh] Command started
++ sh "-c" "cd src/parser && make ocamlfind-install" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flow_parser.0.36.0)
+- ocamlbuild parser_flow.cma parser_flow.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules parser_flow.ml > parser_flow.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex.opt -q lexer_flow.mll
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules lexer_flow.ml > lexer_flow.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules loc.mli > loc.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules parse_error.ml > parse_error.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o loc.cmi loc.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules spider_monkey_ast.ml > spider_monkey_ast.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o parse_error.cmo parse_error.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o spider_monkey_ast.cmo spider_monkey_ast.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules parser_env.mli > parser_env.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o lexer_flow.cmo lexer_flow.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o lexer_flow.cmo lexer_flow.ml
+- File "lexer_flow.mll", line 332, characters 4-24:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:115: recipe for target 'ocamlfind-install' failed
+- make: *** [ocamlfind-install] Error 10
+- ocamlbuild parser_flow.cma parser_flow.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules parser_flow.ml > parser_flow.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex.opt -q lexer_flow.mll
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules lexer_flow.ml > lexer_flow.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules loc.mli > loc.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules parse_error.ml > parse_error.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o loc.cmi loc.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules spider_monkey_ast.ml > spider_monkey_ast.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o parse_error.cmo parse_error.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o spider_monkey_ast.cmo spider_monkey_ast.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules parser_env.mli > parser_env.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o lexer_flow.cmo lexer_flow.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o lexer_flow.cmo lexer_flow.ml
+- File "lexer_flow.mll", line 332, characters 4-24:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:115: recipe for target 'ocamlfind-install' failed
+- make: *** [ocamlfind-install] Error 10
+[ERROR] The compilation of flow_parser failed at "sh -c cd src/parser && make
+        ocamlfind-install".
+[flow_parser: ocamlfind remove] Command started
++ ocamlfind "remove" "flow_parser" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flow_parser.0.36.0)
+- ocamlbuild parser_flow.cma parser_flow.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules parser_flow.ml > parser_flow.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex.opt -q lexer_flow.mll
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules lexer_flow.ml > lexer_flow.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules loc.mli > loc.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules parse_error.ml > parse_error.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o loc.cmi loc.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules spider_monkey_ast.ml > spider_monkey_ast.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o parse_error.cmo parse_error.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o spider_monkey_ast.cmo spider_monkey_ast.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules parser_env.mli > parser_env.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o lexer_flow.cmo lexer_flow.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o lexer_flow.cmo lexer_flow.ml
+- File "lexer_flow.mll", line 332, characters 4-24:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:115: recipe for target 'ocamlfind-install' failed
+- make: *** [ocamlfind-install] Error 10
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flow_parser/META
+- ocamlbuild parser_flow.cma parser_flow.cmxa
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules parser_flow.ml > parser_flow.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex.opt -q lexer_flow.mll
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules lexer_flow.ml > lexer_flow.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules loc.mli > loc.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules parse_error.ml > parse_error.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o loc.cmi loc.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules spider_monkey_ast.ml > spider_monkey_ast.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o parse_error.cmo parse_error.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o spider_monkey_ast.cmo spider_monkey_ast.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules parser_env.mli > parser_env.mli.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o lexer_flow.cmo lexer_flow.ml
+- + /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -c -o lexer_flow.cmo lexer_flow.ml
+- File "lexer_flow.mll", line 332, characters 4-24:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Hint: Recursive traversal of subdirectories was not enabled for this build,
+-   as the working directory does not look like an ocamlbuild project (no
+-   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+-   you should add the option "-r" or create an empty '_tags' file.
+-   
+-   To enable recursive traversal for some subdirectories only, you can use the
+-   following '_tags' file:
+-   
+-       true: -traverse
+-       <dir1> or <dir2>: traverse
+-       
+- Makefile:115: recipe for target 'ocamlfind-install' failed
+- make: *** [ocamlfind-install] Error 10
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flow_parser/META
+
+#=== ERROR while installing flow_parser.0.36.0 ================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              sh -c cd src/parser && make ocamlfind-install
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flow_parser.0.36.0
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flow_parser.0.36.0/flow_parser-11458.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flow_parser.0.36.0/flow_parser-11458.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flow_parser.0.36.0/flow_parser-11458.out
+### stdout ###
+# Hint: Recursive traversal of subdirectories was not enabled for this build,
+# [...]
+#   
+#   To enable recursive traversal for some subdirectories only, you can use the
+#   following '_tags' file:
+#   
+#       true: -traverse
+#       <dir1> or <dir2>: traverse
+#       
+# Makefile:115: recipe for target 'ocamlfind-install' failed
+# make: *** [ocamlfind-install] Error 10
+### stderr ###
+# Hint: Recursive traversal of subdirectories was not enabled for this build,
+# [...]
+#   
+#   To enable recursive traversal for some subdirectories only, you can use the
+#   following '_tags' file:
+#   
+#       true: -traverse
+#       <dir1> or <dir2>: traverse
+#       
+# Makefile:115: recipe for target 'ocamlfind-install' failed
+# make: *** [ocamlfind-install] Error 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install flow_parser 0.36.0
+No changes have been performed
+'opam install flow_parser.0.36.0' failed.

@@ -1,0 +1,107 @@
+The following actions will be performed:
+  - install containers 2.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[containers: http] Command started
+[containers: http] Command started
+[containers.2.1] https://github.com/c-cube/ocaml-containers/archive/2.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[containers: jbuilder build] Command started
++ jbuilder "build" "-p" "containers" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/containers.2.1)
+-       ocamlc src/core/.containers.objs/CCArrayLabels.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -w +a-4-42-44-48-50-58-32-60@8 -safe-string -nolabels -open CCMonomorphic -g -bin-annot -I src/core/.containers.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/uchar -I src/monomorphic/.containers_monomorphic.objs -no-alias-deps -o src/core/.containers.objs/CCArrayLabels.cmo -c -impl src/core/CCArrayLabels.ml)
+- File "src/core/CCArrayLabels.ml", line 1:
+- Error: The implementation src/core/CCArrayLabels.ml
+-        does not match the interface src/core/.containers.objs/CCArrayLabels.cmi:
+-        In module Floatarray:
+-        Modules do not match:
+-          (module Array.Floatarray)
+-        is not included in
+-          (module ArrayLabels.Floatarray)
+-     ocamlopt src/core/.containers.objs/CCArrayLabels.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -w +a-4-42-44-48-50-58-32-60@8 -safe-string -nolabels -open CCMonomorphic -g -O3 -unbox-closures -unbox-closures-factor 20 -color always -I src/core/.containers.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/uchar -I src/monomorphic/.containers_monomorphic.objs -no-alias-deps -o src/core/.containers.objs/CCArrayLabels.cmx -c -impl src/core/CCArrayLabels.ml)
+- [1mFile "[1msrc/core/CCArrayLabels.ml", line 1[0m[0m:
+- [1;31mError[0m: The implementation src/core/CCArrayLabels.ml
+-        does not match the interface src/core/.containers.objs/CCArrayLabels.cmi:
+-        In module Floatarray:
+-        Modules do not match:
+-          (module Array.Floatarray)
+-        is not included in
+-          (module ArrayLabels.Floatarray)
+-       ocamlc src/core/.containers.objs/CCArrayLabels.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -w +a-4-42-44-48-50-58-32-60@8 -safe-string -nolabels -open CCMonomorphic -g -bin-annot -I src/core/.containers.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/uchar -I src/monomorphic/.containers_monomorphic.objs -no-alias-deps -o src/core/.containers.objs/CCArrayLabels.cmo -c -impl src/core/CCArrayLabels.ml)
+- File "src/core/CCArrayLabels.ml", line 1:
+- Error: The implementation src/core/CCArrayLabels.ml
+-        does not match the interface src/core/.containers.objs/CCArrayLabels.cmi:
+-        In module Floatarray:
+-        Modules do not match:
+-          (module Array.Floatarray)
+-        is not included in
+-          (module ArrayLabels.Floatarray)
+-     ocamlopt src/core/.containers.objs/CCArrayLabels.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -w +a-4-42-44-48-50-58-32-60@8 -safe-string -nolabels -open CCMonomorphic -g -O3 -unbox-closures -unbox-closures-factor 20 -color always -I src/core/.containers.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/uchar -I src/monomorphic/.containers_monomorphic.objs -no-alias-deps -o src/core/.containers.objs/CCArrayLabels.cmx -c -impl src/core/CCArrayLabels.ml)
+- [1mFile "[1msrc/core/CCArrayLabels.ml", line 1[0m[0m:
+- [1;31mError[0m: The implementation src/core/CCArrayLabels.ml
+-        does not match the interface src/core/.containers.objs/CCArrayLabels.cmi:
+-        In module Floatarray:
+-        Modules do not match:
+-          (module Array.Floatarray)
+-        is not included in
+-          (module ArrayLabels.Floatarray)
+[ERROR] The compilation of containers failed at "jbuilder build -p containers
+        -j 4".
+
+#=== ERROR while installing containers.2.1 ====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p containers -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/containers.2.1
+# compiler             4.07.0+24fac73
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/containers.2.1/containers-30676.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/containers.2.1/containers-30676.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/containers.2.1/containers-30676.out
+### stdout ###
+# Error: The implementation src/core/CCArrayLabels.ml
+# [...]
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -w +a-4-42-44-48-50-58-32-60@8 -safe-string -nolabels -open CCMonomorphic -g -O3 -unbox-closures -unbox-closures-factor 20 -color always -I src/core/.containers.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/uchar -I src/monomorphic/.containers_monomorphic.objs -no-alias-deps -o src/core/.containers.objs/CCArrayLabels.cmx -c -impl src/core/CCArrayLabels.ml)
+# [1mFile "[1msrc/core/CCArrayLabels.ml", line 1[0m[0m:
+# [1;31mError[0m: The implementation src/core/CCArrayLabels.ml
+#        does not match the interface src/core/.containers.objs/CCArrayLabels.cmi:
+#        In module Floatarray:
+#        Modules do not match:
+#          (module Array.Floatarray)
+#        is not included in
+#          (module ArrayLabels.Floatarray)
+### stderr ###
+# Error: The implementation src/core/CCArrayLabels.ml
+# [...]
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -w +a-4-42-44-48-50-58-32-60@8 -safe-string -nolabels -open CCMonomorphic -g -O3 -unbox-closures -unbox-closures-factor 20 -color always -I src/core/.containers.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/result -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/uchar -I src/monomorphic/.containers_monomorphic.objs -no-alias-deps -o src/core/.containers.objs/CCArrayLabels.cmx -c -impl src/core/CCArrayLabels.ml)
+# [1mFile "[1msrc/core/CCArrayLabels.ml", line 1[0m[0m:
+# [1;31mError[0m: The implementation src/core/CCArrayLabels.ml
+#        does not match the interface src/core/.containers.objs/CCArrayLabels.cmi:
+#        In module Floatarray:
+#        Modules do not match:
+#          (module Array.Floatarray)
+#        is not included in
+#          (module ArrayLabels.Floatarray)
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install containers 2.1
+No changes have been performed
+
+=-=- containers.2.1 troubleshooting -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> Feature release with many improvements and some new modules.
+
+   In particular:
+   - new `CCUtf8_string` to deal with UTF8 encoded bytestrings
+   - new `CCBijection` module in containers.data, for finite bijections
+   - infix operators for most arithmetic types
+
+   changelog:
+   https://github.com/c-cube/ocaml-containers/blob/2.1/CHANGELOG.adoc
+'opam install containers.2.1' failed.

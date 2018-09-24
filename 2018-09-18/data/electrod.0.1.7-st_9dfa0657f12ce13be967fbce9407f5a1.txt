@@ -1,0 +1,70 @@
+The following actions will be performed:
+  - install electrod 0.1.7
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[electrod: http] Command started
+[electrod: http] Command started
+[electrod.0.1.7] https://github.com/grayswandyr/electrod/releases/download/0.1.7/electrod-0.1.7.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[electrod: jbuilder build] Command started
++ jbuilder "build" "-p" "electrod" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/electrod.0.1.7)
+- File "src/jbuild", line 18, characters 22-36:
+- Error: Library "mtime.clock.os" not found.
+- Hint: try: dune external-lib-deps --missing --profile release -p electrod @install
+-       menhir src/Smv_trace_parser.{ml,mli}
+- Warning: you are using the standard library and/or the %inline keyword. We
+- recommend switching on --infer in order to avoid obscure type error messages.
+-       menhir src/Parser.{ml,mli}
+- Warning: you are using the standard library and/or the %inline keyword. We
+- recommend switching on --infer in order to avoid obscure type error messages.
+- File "src/jbuild", line 18, characters 22-36:
+- Error: Library "mtime.clock.os" not found.
+- Hint: try: dune external-lib-deps --missing --profile release -p electrod @install
+-       menhir src/Smv_trace_parser.{ml,mli}
+- Warning: you are using the standard library and/or the %inline keyword. We
+- recommend switching on --infer in order to avoid obscure type error messages.
+-       menhir src/Parser.{ml,mli}
+- Warning: you are using the standard library and/or the %inline keyword. We
+- recommend switching on --infer in order to avoid obscure type error messages.
+[ERROR] The compilation of electrod failed at "jbuilder build -p electrod -j
+        4".
+
+#=== ERROR while installing electrod.0.1.7 ====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p electrod -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/electrod.0.1.7
+# compiler             4.07.0+24fac73
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/electrod.0.1.7/electrod-13717.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/electrod.0.1.7/electrod-13717.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/electrod.0.1.7/electrod-13717.out
+### stdout ###
+# File "src/jbuild", line 18, characters 22-36:
+# Error: Library "mtime.clock.os" not found.
+# Hint: try: dune external-lib-deps --missing --profile release -p electrod @install
+#       menhir src/Smv_trace_parser.{ml,mli}
+# Warning: you are using the standard library and/or the %inline keyword. We
+# recommend switching on --infer in order to avoid obscure type error messages.
+#       menhir src/Parser.{ml,mli}
+# Warning: you are using the standard library and/or the %inline keyword. We
+# recommend switching on --infer in order to avoid obscure type error messages.
+### stderr ###
+# File "src/jbuild", line 18, characters 22-36:
+# Error: Library "mtime.clock.os" not found.
+# Hint: try: dune external-lib-deps --missing --profile release -p electrod @install
+#       menhir src/Smv_trace_parser.{ml,mli}
+# Warning: you are using the standard library and/or the %inline keyword. We
+# recommend switching on --infer in order to avoid obscure type error messages.
+#       menhir src/Parser.{ml,mli}
+# Warning: you are using the standard library and/or the %inline keyword. We
+# recommend switching on --infer in order to avoid obscure type error messages.
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install electrod 0.1.7
+No changes have been performed
+'opam install electrod.0.1.7' failed.

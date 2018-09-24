@@ -1,0 +1,49 @@
+The following actions will be performed:
+  - install General 0.5.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[General: http] Command started
+[General: http] Command started
+[General.0.5.0] https://github.com/jacquev6/General/archive/0.5.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[General: jbuilder build] Command started
++ jbuilder "build" "-p" "General" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/General.0.5.0)
+-       ocamlc src/.General.objs/General.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -nopervasives -w @A-4-33-44-45-48 -g -bin-annot -I src/.General.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/num -no-alias-deps -o src/.General.objs/General.cmi -c -intf src/General.mli)
+- File "General.cppo.mli", line 77, characters 20-48:
+- Error: The module OCamlStandard.Pervasives is an alias for module Pervasives, which is missing
+-       ocamlc src/.General.objs/General.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -nopervasives -w @A-4-33-44-45-48 -g -bin-annot -I src/.General.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/num -no-alias-deps -o src/.General.objs/General.cmi -c -intf src/General.mli)
+- File "General.cppo.mli", line 77, characters 20-48:
+- Error: The module OCamlStandard.Pervasives is an alias for module Pervasives, which is missing
+[ERROR] The compilation of General failed at "jbuilder build -p General -j 4".
+
+#=== ERROR while installing General.0.5.0 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p General -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/General.0.5.0
+# compiler             4.07.0+24fac73
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/General.0.5.0/General-20701.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/General.0.5.0/General-20701.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/General.0.5.0/General-20701.out
+### stdout ###
+#       ocamlc src/.General.objs/General.{cmi,cmti} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -nopervasives -w @A-4-33-44-45-48 -g -bin-annot -I src/.General.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/num -no-alias-deps -o src/.General.objs/General.cmi -c -intf src/General.mli)
+# File "General.cppo.mli", line 77, characters 20-48:
+# Error: The module OCamlStandard.Pervasives is an alias for module Pervasives, which is missing
+### stderr ###
+#       ocamlc src/.General.objs/General.{cmi,cmti} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -nopervasives -w @A-4-33-44-45-48 -g -bin-annot -I src/.General.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/num -no-alias-deps -o src/.General.objs/General.cmi -c -intf src/General.mli)
+# File "General.cppo.mli", line 77, characters 20-48:
+# Error: The module OCamlStandard.Pervasives is an alias for module Pervasives, which is missing
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install General 0.5.0
+No changes have been performed
+'opam install General.0.5.0' failed.

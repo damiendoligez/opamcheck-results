@@ -1,0 +1,145 @@
+The following actions will be performed:
+  - install owl 0.3.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owl: http] Command started
+[owl: http] Command started
+[owl.0.3.0] https://github.com/ryanrhymes/owl/archive/0.3.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owl: jbuilder build] Command started
++ jbuilder "build" "-p" "owl" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.3.0)
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_c.{cmo,cmt}
+- File "src/owl/owl_dense_ndarray_c.ml", line 46, characters 31-48:
+- Warning 3: deprecated: Bigarray.Genarray.map_file
+- Use Unix.map_file instead.
+- Note that Bigarray.Genarray.map_file raises Sys_error while
+- Unix.map_file raises Unix_error.
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_z.{cmo,cmt}
+- File "src/owl/owl_dense_ndarray_z.ml", line 46, characters 31-48:
+- Warning 3: deprecated: Bigarray.Genarray.map_file
+- Use Unix.map_file instead.
+- Note that Bigarray.Genarray.map_file raises Sys_error while
+- Unix.map_file raises Unix_error.
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_c.{cmo,cmt}
+- File "src/owl/owl_dense_ndarray_c.ml", line 46, characters 31-48:
+- Warning 3: deprecated: Bigarray.Genarray.map_file
+- Use Unix.map_file instead.
+- Note that Bigarray.Genarray.map_file raises Sys_error while
+- Unix.map_file raises Unix_error.
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_z.{cmo,cmt}
+- File "src/owl/owl_dense_ndarray_z.ml", line 46, characters 31-48:
+- Warning 3: deprecated: Bigarray.Genarray.map_file
+- Use Unix.map_file instead.
+- Note that Bigarray.Genarray.map_file raises Sys_error while
+- Unix.map_file raises Unix_error.
+-       ocamlc src/owl/.owl.objs/owl_sparse_common.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dolog -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_common.cmo -c -impl src/owl/owl_sparse_common.ml)
+- File "src/owl/owl_sparse_common.ml", line 273, characters 37-56:
+- Error: Unbound value Eigen.Sparse.S.gemm
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_d.{cmo,cmt}
+- File "src/owl/owl_dense_ndarray_d.ml", line 45, characters 31-48:
+- Warning 3: deprecated: Bigarray.Genarray.map_file
+- Use Unix.map_file instead.
+- Note that Bigarray.Genarray.map_file raises Sys_error while
+- Unix.map_file raises Unix_error.
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_s.{cmo,cmt}
+- File "src/owl/owl_dense_ndarray_s.ml", line 45, characters 31-48:
+- Warning 3: deprecated: Bigarray.Genarray.map_file
+- Use Unix.map_file instead.
+- Note that Bigarray.Genarray.map_file raises Sys_error while
+- Unix.map_file raises Unix_error.
+-       ocamlc src/owl/.owl.objs/owl_sparse_common.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dolog -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_common.cmo -c -impl src/owl/owl_sparse_common.ml)
+- File "src/owl/owl_sparse_common.ml", line 273, characters 37-56:
+- Error: Unbound value Eigen.Sparse.S.gemm
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_d.{cmo,cmt}
+- File "src/owl/owl_dense_ndarray_d.ml", line 45, characters 31-48:
+- Warning 3: deprecated: Bigarray.Genarray.map_file
+- Use Unix.map_file instead.
+- Note that Bigarray.Genarray.map_file raises Sys_error while
+- Unix.map_file raises Unix_error.
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_s.{cmo,cmt}
+- File "src/owl/owl_dense_ndarray_s.ml", line 45, characters 31-48:
+- Warning 3: deprecated: Bigarray.Genarray.map_file
+- Use Unix.map_file instead.
+- Note that Bigarray.Genarray.map_file raises Sys_error while
+- Unix.map_file raises Unix_error.
+-       ocamlc src/owl/.owl.objs/owl_dense_common.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dolog -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_common.cmo -c -impl src/owl/owl_dense_common.ml)
+- File "src/owl/owl_dense_common.ml", line 329, characters 17-34:
+- Error: Unbound value Eigen.Dense.S.inv
+-       ocamlc src/owl/.owl.objs/owl_dense_common.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dolog -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gsl -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_common.cmo -c -impl src/owl/owl_dense_common.ml)
+- File "src/owl/owl_dense_common.ml", line 329, characters 17-34:
+- Error: Unbound value Eigen.Dense.S.inv
+-   ocamlmklib src/owl/dllowl_stubs.so,src/owl/libowl_stubs.a
+- ar: src/owl/owl_dense_common_c.o: plugin needed to handle lto object
+- ar: src/owl/owl_dense_common_vec_cmp.o: plugin needed to handle lto object
+- ar: src/owl/owl_dense_common_vec_map.o: plugin needed to handle lto object
+- ar: src/owl/owl_dense_common_vec_fold.o: plugin needed to handle lto object
+- ar: src/owl/owl_cblas_generated_stub.o: plugin needed to handle lto object
+- ar: src/owl/owl_lapacke_generated_stub.o: plugin needed to handle lto object
+- ranlib: owl_dense_common_c.o: plugin needed to handle lto object
+- ranlib: owl_dense_common_vec_cmp.o: plugin needed to handle lto object
+- ranlib: owl_dense_common_vec_map.o: plugin needed to handle lto object
+- ranlib: owl_dense_common_vec_fold.o: plugin needed to handle lto object
+- ranlib: owl_cblas_generated_stub.o: plugin needed to handle lto object
+- ranlib: owl_lapacke_generated_stub.o: plugin needed to handle lto object
+-   ocamlmklib src/owl/dllowl_stubs.so,src/owl/libowl_stubs.a
+- ar: src/owl/owl_dense_common_c.o: plugin needed to handle lto object
+- ar: src/owl/owl_dense_common_vec_cmp.o: plugin needed to handle lto object
+- ar: src/owl/owl_dense_common_vec_map.o: plugin needed to handle lto object
+- ar: src/owl/owl_dense_common_vec_fold.o: plugin needed to handle lto object
+- ar: src/owl/owl_cblas_generated_stub.o: plugin needed to handle lto object
+- ar: src/owl/owl_lapacke_generated_stub.o: plugin needed to handle lto object
+- ranlib: owl_dense_common_c.o: plugin needed to handle lto object
+- ranlib: owl_dense_common_vec_cmp.o: plugin needed to handle lto object
+- ranlib: owl_dense_common_vec_map.o: plugin needed to handle lto object
+- ranlib: owl_dense_common_vec_fold.o: plugin needed to handle lto object
+- ranlib: owl_cblas_generated_stub.o: plugin needed to handle lto object
+- ranlib: owl_lapacke_generated_stub.o: plugin needed to handle lto object
+[ERROR] The compilation of owl failed at "jbuilder build -p owl -j 4".
+
+#=== ERROR while installing owl.0.3.0 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p owl -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.3.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.3.0/owl-29196.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.3.0/owl-29196.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.3.0/owl-29196.out
+### stdout ###
+# [...]
+# ar: src/owl/owl_dense_common_vec_map.o: plugin needed to handle lto object
+# ar: src/owl/owl_dense_common_vec_fold.o: plugin needed to handle lto object
+# ar: src/owl/owl_cblas_generated_stub.o: plugin needed to handle lto object
+# ar: src/owl/owl_lapacke_generated_stub.o: plugin needed to handle lto object
+# ranlib: owl_dense_common_c.o: plugin needed to handle lto object
+# ranlib: owl_dense_common_vec_cmp.o: plugin needed to handle lto object
+# ranlib: owl_dense_common_vec_map.o: plugin needed to handle lto object
+# ranlib: owl_dense_common_vec_fold.o: plugin needed to handle lto object
+# ranlib: owl_cblas_generated_stub.o: plugin needed to handle lto object
+# ranlib: owl_lapacke_generated_stub.o: plugin needed to handle lto object
+### stderr ###
+# [...]
+# ar: src/owl/owl_dense_common_vec_map.o: plugin needed to handle lto object
+# ar: src/owl/owl_dense_common_vec_fold.o: plugin needed to handle lto object
+# ar: src/owl/owl_cblas_generated_stub.o: plugin needed to handle lto object
+# ar: src/owl/owl_lapacke_generated_stub.o: plugin needed to handle lto object
+# ranlib: owl_dense_common_c.o: plugin needed to handle lto object
+# ranlib: owl_dense_common_vec_cmp.o: plugin needed to handle lto object
+# ranlib: owl_dense_common_vec_map.o: plugin needed to handle lto object
+# ranlib: owl_dense_common_vec_fold.o: plugin needed to handle lto object
+# ranlib: owl_cblas_generated_stub.o: plugin needed to handle lto object
+# ranlib: owl_lapacke_generated_stub.o: plugin needed to handle lto object
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install owl 0.3.0
+No changes have been performed
+'opam install owl.0.3.0' failed.

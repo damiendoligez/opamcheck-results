@@ -1,0 +1,93 @@
+The following actions will be performed:
+  - install ocaml-protoc-yojson 0.1.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocaml-protoc-yojson: http] Command started
+[ocaml-protoc-yojson: http] Command started
+[ocaml-protoc-yojson.0.1.0] https://github.com/mransan/ocaml-protoc-yojson/archive/0.1.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocaml-protoc-yojson: make lib.byte] Command started
++ make "lib.byte" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocaml-protoc-yojson.0.1.0)
+- ocamlbuild -use-ocamlfind -pkgs ocaml-protoc,yojson  -I src -I tests pbrt-yojson.cma
+- ocamlfind ocamldep -package yojson -package ocaml-protoc -modules src/pbrt_yojson.mli > src/pbrt_yojson.mli.depends
+- ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -keep-locs -w A-4-42-41 -package yojson -package ocaml-protoc -I src -I tests -o src/pbrt_yojson.cmi src/pbrt_yojson.mli
+- + ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -keep-locs -w A-4-42-41 -package yojson -package ocaml-protoc -I src -I tests -o src/pbrt_yojson.cmi src/pbrt_yojson.mli
+- File "src/pbrt_yojson.mli", line 5, characters 26-47:
+- Error: Unbound module Pbrt_json
+- Command exited with code 2.
+- Makefile.opamlib:20: recipe for target 'lib.byte' failed
+- make: *** [lib.byte] Error 10
+- ocamlbuild -use-ocamlfind -pkgs ocaml-protoc,yojson  -I src -I tests pbrt-yojson.cma
+- ocamlfind ocamldep -package yojson -package ocaml-protoc -modules src/pbrt_yojson.mli > src/pbrt_yojson.mli.depends
+- ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -keep-locs -w A-4-42-41 -package yojson -package ocaml-protoc -I src -I tests -o src/pbrt_yojson.cmi src/pbrt_yojson.mli
+- + ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -keep-locs -w A-4-42-41 -package yojson -package ocaml-protoc -I src -I tests -o src/pbrt_yojson.cmi src/pbrt_yojson.mli
+- File "src/pbrt_yojson.mli", line 5, characters 26-47:
+- Error: Unbound module Pbrt_json
+- Command exited with code 2.
+- Makefile.opamlib:20: recipe for target 'lib.byte' failed
+- make: *** [lib.byte] Error 10
+[ERROR] The compilation of ocaml-protoc-yojson failed at "make lib.byte".
+[ocaml-protoc-yojson: make lib.uninstall] Command started
++ make "lib.uninstall" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocaml-protoc-yojson.0.1.0)
+- ocamlbuild -use-ocamlfind -pkgs ocaml-protoc,yojson  -I src -I tests pbrt-yojson.cma
+- ocamlfind ocamldep -package yojson -package ocaml-protoc -modules src/pbrt_yojson.mli > src/pbrt_yojson.mli.depends
+- ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -keep-locs -w A-4-42-41 -package yojson -package ocaml-protoc -I src -I tests -o src/pbrt_yojson.cmi src/pbrt_yojson.mli
+- + ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -keep-locs -w A-4-42-41 -package yojson -package ocaml-protoc -I src -I tests -o src/pbrt_yojson.cmi src/pbrt_yojson.mli
+- File "src/pbrt_yojson.mli", line 5, characters 26-47:
+- Error: Unbound module Pbrt_json
+- Command exited with code 2.
+- Makefile.opamlib:20: recipe for target 'lib.byte' failed
+- make: *** [lib.byte] Error 10
+- ocamlfind remove ocaml-protoc-yojson
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml-protoc-yojson/META
+- ocamlbuild -use-ocamlfind -pkgs ocaml-protoc,yojson  -I src -I tests pbrt-yojson.cma
+- ocamlfind ocamldep -package yojson -package ocaml-protoc -modules src/pbrt_yojson.mli > src/pbrt_yojson.mli.depends
+- ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -keep-locs -w A-4-42-41 -package yojson -package ocaml-protoc -I src -I tests -o src/pbrt_yojson.cmi src/pbrt_yojson.mli
+- + ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -keep-locs -w A-4-42-41 -package yojson -package ocaml-protoc -I src -I tests -o src/pbrt_yojson.cmi src/pbrt_yojson.mli
+- File "src/pbrt_yojson.mli", line 5, characters 26-47:
+- Error: Unbound module Pbrt_json
+- Command exited with code 2.
+- Makefile.opamlib:20: recipe for target 'lib.byte' failed
+- make: *** [lib.byte] Error 10
+- ocamlfind remove ocaml-protoc-yojson
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml-protoc-yojson/META
+
+#=== ERROR while installing ocaml-protoc-yojson.0.1.0 =========================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make lib.byte
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocaml-protoc-yojson.0.1.0
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocaml-protoc-yojson.0.1.0/ocaml-protoc-yojson-11897.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocaml-protoc-yojson.0.1.0/ocaml-protoc-yojson-11897.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocaml-protoc-yojson.0.1.0/ocaml-protoc-yojson-11897.out
+### stdout ###
+# ocamlbuild -use-ocamlfind -pkgs ocaml-protoc,yojson  -I src -I tests pbrt-yojson.cma
+# ocamlfind ocamldep -package yojson -package ocaml-protoc -modules src/pbrt_yojson.mli > src/pbrt_yojson.mli.depends
+# ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -keep-locs -w A-4-42-41 -package yojson -package ocaml-protoc -I src -I tests -o src/pbrt_yojson.cmi src/pbrt_yojson.mli
+# + ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -keep-locs -w A-4-42-41 -package yojson -package ocaml-protoc -I src -I tests -o src/pbrt_yojson.cmi src/pbrt_yojson.mli
+# File "src/pbrt_yojson.mli", line 5, characters 26-47:
+# Error: Unbound module Pbrt_json
+# Command exited with code 2.
+# Makefile.opamlib:20: recipe for target 'lib.byte' failed
+# make: *** [lib.byte] Error 10
+### stderr ###
+# ocamlbuild -use-ocamlfind -pkgs ocaml-protoc,yojson  -I src -I tests pbrt-yojson.cma
+# ocamlfind ocamldep -package yojson -package ocaml-protoc -modules src/pbrt_yojson.mli > src/pbrt_yojson.mli.depends
+# ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -keep-locs -w A-4-42-41 -package yojson -package ocaml-protoc -I src -I tests -o src/pbrt_yojson.cmi src/pbrt_yojson.mli
+# + ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -keep-locs -w A-4-42-41 -package yojson -package ocaml-protoc -I src -I tests -o src/pbrt_yojson.cmi src/pbrt_yojson.mli
+# File "src/pbrt_yojson.mli", line 5, characters 26-47:
+# Error: Unbound module Pbrt_json
+# Command exited with code 2.
+# Makefile.opamlib:20: recipe for target 'lib.byte' failed
+# make: *** [lib.byte] Error 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ocaml-protoc-yojson 0.1.0
+No changes have been performed
+'opam install ocaml-protoc-yojson.0.1.0' failed.

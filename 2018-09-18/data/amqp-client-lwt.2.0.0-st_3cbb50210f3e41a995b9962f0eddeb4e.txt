@@ -1,0 +1,46 @@
+The following actions will be performed:
+  - install amqp-client-lwt 2.0.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[amqp-client-lwt: http] Command started
+[amqp-client-lwt: http] Command started
+[amqp-client-lwt.2.0.0] https://github.com/andersfugmann/amqp-client/archive/2.0.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[amqp-client-lwt: jbuilder build] Command started
++ jbuilder "build" "-p" "amqp-client-lwt" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/amqp-client-lwt.2.0.0)
+-         curl spec/amqp0-9-1.extended.xml (exit 1)
+- (cd _build/default/spec && /home/doligez/opamcheck/sandbox2/bin/curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml) > _build/default/spec/amqp0-9-1.extended.xml
+- error: /home/doligez/opamcheck/sandbox2/bin/curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml
+-         curl spec/amqp0-9-1.extended.xml (exit 1)
+- (cd _build/default/spec && /home/doligez/opamcheck/sandbox2/bin/curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml) > _build/default/spec/amqp0-9-1.extended.xml
+- error: /home/doligez/opamcheck/sandbox2/bin/curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml
+[ERROR] The compilation of amqp-client-lwt failed at "jbuilder build -p
+        amqp-client-lwt -j 4".
+
+#=== ERROR while installing amqp-client-lwt.2.0.0 =============================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p amqp-client-lwt -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/amqp-client-lwt.2.0.0
+# compiler             4.07.0+24fac73
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/amqp-client-lwt.2.0.0/amqp-client-lwt-29542.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/amqp-client-lwt.2.0.0/amqp-client-lwt-29542.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/amqp-client-lwt.2.0.0/amqp-client-lwt-29542.out
+### stdout ###
+#         curl spec/amqp0-9-1.extended.xml (exit 1)
+# (cd _build/default/spec && /home/doligez/opamcheck/sandbox2/bin/curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml) > _build/default/spec/amqp0-9-1.extended.xml
+# error: /home/doligez/opamcheck/sandbox2/bin/curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml
+### stderr ###
+#         curl spec/amqp0-9-1.extended.xml (exit 1)
+# (cd _build/default/spec && /home/doligez/opamcheck/sandbox2/bin/curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml) > _build/default/spec/amqp0-9-1.extended.xml
+# error: /home/doligez/opamcheck/sandbox2/bin/curl http://www.rabbitmq.com/resources/specs/amqp0-9-1.extended.xml
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install amqp-client-lwt 2.0.0
+No changes have been performed
+'opam install amqp-client-lwt.2.0.0' failed.

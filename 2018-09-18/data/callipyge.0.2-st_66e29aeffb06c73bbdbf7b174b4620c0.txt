@@ -1,0 +1,65 @@
+The following actions will be performed:
+  - install callipyge 0.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[callipyge: http] Command started
+[callipyge: http] Command started
+[callipyge.0.2] https://github.com/oklm-wsh/callipyge/releases/download/v0.2/callipyge-0.2.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[callipyge: dune build] Command started
++ dune "build" "-p" "callipyge" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/callipyge.0.2)
+-       ocamlc lib/.callipyge.objs/callipyge.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.callipyge.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eqaf -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -no-alias-deps -open Callipyge__ -o lib/.callipyge.objs/callipyge.cmo -c -impl lib/callipyge.ml)
+- File "lib/callipyge.ml", line 323, characters 7-22:
+- Error: Unbound value Fmt.invalid_arg
+-       ocamlc lib/.callipyge.objs/callipyge.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.callipyge.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eqaf -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -no-alias-deps -open Callipyge__ -o lib/.callipyge.objs/callipyge.cmo -c -impl lib/callipyge.ml)
+- File "lib/callipyge.ml", line 323, characters 7-22:
+- Error: Unbound value Fmt.invalid_arg
+-     ocamlopt lib/.callipyge.objs/callipyge.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I lib/.callipyge.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eqaf -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -no-alias-deps -open Callipyge__ -o lib/.callipyge.objs/callipyge.cmx -c -impl lib/callipyge.ml)
+- File "lib/callipyge.ml", line 323, characters 7-22:
+- Error: Unbound value Fmt.invalid_arg
+-     ocamlopt lib/.callipyge.objs/callipyge.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I lib/.callipyge.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eqaf -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -no-alias-deps -open Callipyge__ -o lib/.callipyge.objs/callipyge.cmx -c -impl lib/callipyge.ml)
+- File "lib/callipyge.ml", line 323, characters 7-22:
+- Error: Unbound value Fmt.invalid_arg
+[ERROR] The compilation of callipyge failed at "dune build -p callipyge -j 4".
+
+#=== ERROR while installing callipyge.0.2 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              dune build -p callipyge -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/callipyge.0.2
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/callipyge.0.2/callipyge-8566.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/callipyge.0.2/callipyge-8566.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/callipyge.0.2/callipyge-8566.out
+### stdout ###
+#       ocamlc lib/.callipyge.objs/callipyge.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.callipyge.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eqaf -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -no-alias-deps -open Callipyge__ -o lib/.callipyge.objs/callipyge.cmo -c -impl lib/callipyge.ml)
+# File "lib/callipyge.ml", line 323, characters 7-22:
+# Error: Unbound value Fmt.invalid_arg
+#     ocamlopt lib/.callipyge.objs/callipyge.{cmx,o} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I lib/.callipyge.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eqaf -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -no-alias-deps -open Callipyge__ -o lib/.callipyge.objs/callipyge.cmx -c -impl lib/callipyge.ml)
+# File "lib/callipyge.ml", line 323, characters 7-22:
+# Error: Unbound value Fmt.invalid_arg
+### stderr ###
+#       ocamlc lib/.callipyge.objs/callipyge.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.callipyge.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eqaf -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -no-alias-deps -open Callipyge__ -o lib/.callipyge.objs/callipyge.cmo -c -impl lib/callipyge.ml)
+# File "lib/callipyge.ml", line 323, characters 7-22:
+# Error: Unbound value Fmt.invalid_arg
+#     ocamlopt lib/.callipyge.objs/callipyge.{cmx,o} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I lib/.callipyge.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eqaf -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -no-alias-deps -open Callipyge__ -o lib/.callipyge.objs/callipyge.cmx -c -impl lib/callipyge.ml)
+# File "lib/callipyge.ml", line 323, characters 7-22:
+# Error: Unbound value Fmt.invalid_arg
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install callipyge 0.2
+No changes have been performed
+'opam install callipyge.0.2' failed.

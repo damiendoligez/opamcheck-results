@@ -1,0 +1,107 @@
+The following actions will be performed:
+  - install radis 0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[radis: http] Command started
+[radis: http] Command started
+[radis.0.1] https://github.com/dinosaure/radis/releases/download/v0.1/radis-0.1.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[radis: jbuilder build] Command started
++ jbuilder "build" "-p" "radis" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/radis.0.1)
+-     ocamlopt lib/.Radis.objs/radis.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I lib/.Radis.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -no-alias-deps -o lib/.Radis.objs/radis.cmx -c -impl lib/radis.ml)
+- File "lib/radis.ml", line 46, characters 0-12862:
+- Error: Signature mismatch:
+-        ...
+-        The value `of_seq' is required but not provided
+-        File "map.mli", line 324, characters 4-41: Expected declaration
+-        The value `add_seq' is required but not provided
+-        File "map.mli", line 320, characters 4-50: Expected declaration
+-        The value `to_seq_from' is required but not provided
+-        File "map.mli", line 315, characters 4-53: Expected declaration
+-        The value `to_seq' is required but not provided
+-        File "map.mli", line 311, characters 4-41: Expected declaration
+-       ocamlc lib/.Radis.objs/radis.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.Radis.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -no-alias-deps -o lib/.Radis.objs/radis.cmo -c -impl lib/radis.ml)
+- File "lib/radis.ml", line 46, characters 0-12862:
+- Error: Signature mismatch:
+-        ...
+-        The value `of_seq' is required but not provided
+-        File "map.mli", line 324, characters 4-41: Expected declaration
+-        The value `add_seq' is required but not provided
+-        File "map.mli", line 320, characters 4-50: Expected declaration
+-        The value `to_seq_from' is required but not provided
+-        File "map.mli", line 315, characters 4-53: Expected declaration
+-        The value `to_seq' is required but not provided
+-        File "map.mli", line 311, characters 4-41: Expected declaration
+-     ocamlopt lib/.Radis.objs/radis.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I lib/.Radis.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -no-alias-deps -o lib/.Radis.objs/radis.cmx -c -impl lib/radis.ml)
+- File "lib/radis.ml", line 46, characters 0-12862:
+- Error: Signature mismatch:
+-        ...
+-        The value `of_seq' is required but not provided
+-        File "map.mli", line 324, characters 4-41: Expected declaration
+-        The value `add_seq' is required but not provided
+-        File "map.mli", line 320, characters 4-50: Expected declaration
+-        The value `to_seq_from' is required but not provided
+-        File "map.mli", line 315, characters 4-53: Expected declaration
+-        The value `to_seq' is required but not provided
+-        File "map.mli", line 311, characters 4-41: Expected declaration
+-       ocamlc lib/.Radis.objs/radis.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.Radis.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fmt -no-alias-deps -o lib/.Radis.objs/radis.cmo -c -impl lib/radis.ml)
+- File "lib/radis.ml", line 46, characters 0-12862:
+- Error: Signature mismatch:
+-        ...
+-        The value `of_seq' is required but not provided
+-        File "map.mli", line 324, characters 4-41: Expected declaration
+-        The value `add_seq' is required but not provided
+-        File "map.mli", line 320, characters 4-50: Expected declaration
+-        The value `to_seq_from' is required but not provided
+-        File "map.mli", line 315, characters 4-53: Expected declaration
+-        The value `to_seq' is required but not provided
+-        File "map.mli", line 311, characters 4-41: Expected declaration
+[ERROR] The compilation of radis failed at "jbuilder build -p radis -j 4".
+
+#=== ERROR while installing radis.0.1 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p radis -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/radis.0.1
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/radis.0.1/radis-30078.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/radis.0.1/radis-30078.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/radis.0.1/radis-30078.out
+### stdout ###
+# [...]
+# Error: Signature mismatch:
+#        ...
+#        The value `of_seq' is required but not provided
+#        File "map.mli", line 324, characters 4-41: Expected declaration
+#        The value `add_seq' is required but not provided
+#        File "map.mli", line 320, characters 4-50: Expected declaration
+#        The value `to_seq_from' is required but not provided
+#        File "map.mli", line 315, characters 4-53: Expected declaration
+#        The value `to_seq' is required but not provided
+#        File "map.mli", line 311, characters 4-41: Expected declaration
+### stderr ###
+# [...]
+# Error: Signature mismatch:
+#        ...
+#        The value `of_seq' is required but not provided
+#        File "map.mli", line 324, characters 4-41: Expected declaration
+#        The value `add_seq' is required but not provided
+#        File "map.mli", line 320, characters 4-50: Expected declaration
+#        The value `to_seq_from' is required but not provided
+#        File "map.mli", line 315, characters 4-53: Expected declaration
+#        The value `to_seq' is required but not provided
+#        File "map.mli", line 311, characters 4-41: Expected declaration
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install radis 0.1
+No changes have been performed
+'opam install radis.0.1' failed.

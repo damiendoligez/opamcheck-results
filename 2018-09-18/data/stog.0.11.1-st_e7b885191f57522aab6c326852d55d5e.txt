@@ -1,0 +1,263 @@
+The following actions will be performed:
+  - install stog 0.11.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[stog: http] Command started
+[stog: http] Command started
+[stog.0.11.1] http://zoggy.github.com/stog/stog-0.11.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[stog: make all] Command started
++ make "all" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/stog.0.11.1)
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_msg.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_misc.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_highlight.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_config.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_trie.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_tmap.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_graph.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_path.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_filter_types.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_types.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_intl.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_find.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_tags.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_io.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_info.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_ocaml_types.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_deps.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_tmpl.mli
+- ocamlyacc -v stog_filter_parser.mly
+- 6 shift/reduce conflicts.
+- make: Circular stog_filter_parser.cmi <- stog_filter_parser.cmi dependency dropped.
+- if test -f `dirname stog_filter_parser.ml`/`basename stog_filter_parser.ml .ml`.mli && test ! -f `dirname stog_filter_parser.ml`/`basename stog_filter_parser.ml .ml`.cmi ; then \
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c `dirname stog_filter_parser.ml`/`basename stog_filter_parser.ml .ml`.mli; fi
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_filter_parser.ml
+- ocamllex stog_filter_lexer.mll
+- 22 states, 335 transitions, table size 1472 bytes
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -i stog_filter_lexer.ml > stog_filter_lexer.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_filter_lexer.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_filter.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_html5.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_engine.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_ocaml.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_svg.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_of_latex.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_latex.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_cut.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_list.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_html.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_blocks.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_plug.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_dyn.mli
+- ocamlfind ocamlopt -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_msg.ml
+- ocamlfind ocamlopt -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_misc.ml
+- File "stog_misc.ml", line 118, characters 10-23:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "stog_misc.ml", line 127, characters 34-35:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:323: recipe for target 'stog_misc.cmx' failed
+- make: *** [stog_misc.cmx] Error 2
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_msg.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_misc.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_highlight.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_config.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_trie.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_tmap.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_graph.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_path.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_filter_types.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_types.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_intl.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_find.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_tags.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_io.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_info.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_ocaml_types.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_deps.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_tmpl.mli
+- ocamlyacc -v stog_filter_parser.mly
+- 6 shift/reduce conflicts.
+- make: Circular stog_filter_parser.cmi <- stog_filter_parser.cmi dependency dropped.
+- if test -f `dirname stog_filter_parser.ml`/`basename stog_filter_parser.ml .ml`.mli && test ! -f `dirname stog_filter_parser.ml`/`basename stog_filter_parser.ml .ml`.cmi ; then \
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c `dirname stog_filter_parser.ml`/`basename stog_filter_parser.ml .ml`.mli; fi
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_filter_parser.ml
+- ocamllex stog_filter_lexer.mll
+- 22 states, 335 transitions, table size 1472 bytes
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -i stog_filter_lexer.ml > stog_filter_lexer.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_filter_lexer.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_filter.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_html5.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_engine.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_ocaml.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_svg.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_of_latex.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_latex.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_cut.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_list.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_html.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_blocks.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_plug.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_dyn.mli
+- ocamlfind ocamlopt -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_msg.ml
+- ocamlfind ocamlopt -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_misc.ml
+- File "stog_misc.ml", line 118, characters 10-23:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "stog_misc.ml", line 127, characters 34-35:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:323: recipe for target 'stog_misc.cmx' failed
+- make: *** [stog_misc.cmx] Error 2
+[ERROR] The compilation of stog failed at "make all".
+[stog: ocamlfind remove] Command started
++ ocamlfind "remove" "stog" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/stog.0.11.1)
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_msg.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_misc.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_highlight.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_config.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_trie.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_tmap.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_graph.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_path.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_filter_types.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_types.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_intl.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_find.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_tags.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_io.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_info.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_ocaml_types.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_deps.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_tmpl.mli
+- ocamlyacc -v stog_filter_parser.mly
+- 6 shift/reduce conflicts.
+- make: Circular stog_filter_parser.cmi <- stog_filter_parser.cmi dependency dropped.
+- if test -f `dirname stog_filter_parser.ml`/`basename stog_filter_parser.ml .ml`.mli && test ! -f `dirname stog_filter_parser.ml`/`basename stog_filter_parser.ml .ml`.cmi ; then \
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c `dirname stog_filter_parser.ml`/`basename stog_filter_parser.ml .ml`.mli; fi
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_filter_parser.ml
+- ocamllex stog_filter_lexer.mll
+- 22 states, 335 transitions, table size 1472 bytes
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -i stog_filter_lexer.ml > stog_filter_lexer.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_filter_lexer.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_filter.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_html5.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_engine.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_ocaml.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_svg.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_of_latex.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_latex.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_cut.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_list.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_html.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_blocks.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_plug.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_dyn.mli
+- ocamlfind ocamlopt -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_msg.ml
+- ocamlfind ocamlopt -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_misc.ml
+- File "stog_misc.ml", line 118, characters 10-23:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "stog_misc.ml", line 127, characters 34-35:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:323: recipe for target 'stog_misc.cmx' failed
+- make: *** [stog_misc.cmx] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/stog/META
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_msg.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_misc.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_highlight.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_config.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_trie.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_tmap.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_graph.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_path.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_filter_types.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_types.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_intl.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_find.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_tags.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_io.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_info.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_ocaml_types.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_deps.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_tmpl.mli
+- ocamlyacc -v stog_filter_parser.mly
+- 6 shift/reduce conflicts.
+- make: Circular stog_filter_parser.cmi <- stog_filter_parser.cmi dependency dropped.
+- if test -f `dirname stog_filter_parser.ml`/`basename stog_filter_parser.ml .ml`.mli && test ! -f `dirname stog_filter_parser.ml`/`basename stog_filter_parser.ml .ml`.cmi ; then \
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c `dirname stog_filter_parser.ml`/`basename stog_filter_parser.ml .ml`.mli; fi
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_filter_parser.ml
+- ocamllex stog_filter_lexer.mll
+- 22 states, 335 transitions, table size 1472 bytes
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -i stog_filter_lexer.ml > stog_filter_lexer.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_filter_lexer.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_filter.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_html5.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_engine.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_ocaml.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_svg.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_of_latex.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_latex.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_cut.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_list.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_html.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_blocks.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_plug.mli
+- ocamlfind ocamlc -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_dyn.mli
+- ocamlfind ocamlopt -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_msg.ml
+- ocamlfind ocamlopt -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_misc.ml
+- File "stog_misc.ml", line 118, characters 10-23:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "stog_misc.ml", line 127, characters 34-35:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:323: recipe for target 'stog_misc.cmx' failed
+- make: *** [stog_misc.cmx] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/stog/META
+
+#=== ERROR while installing stog.0.11.1 =======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make all
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/stog.0.11.1
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/stog.0.11.1/stog-25591.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/stog.0.11.1/stog-25591.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/stog.0.11.1/stog-25591.out
+### stdout ###
+# [...]
+# ocamlfind ocamlopt -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_msg.ml
+# ocamlfind ocamlopt -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_misc.ml
+# File "stog_misc.ml", line 118, characters 10-23:
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "stog_misc.ml", line 127, characters 34-35:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:323: recipe for target 'stog_misc.cmx' failed
+# make: *** [stog_misc.cmx] Error 2
+### stderr ###
+# [...]
+# ocamlfind ocamlopt -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_msg.ml
+# ocamlfind ocamlopt -package xmlm,xtmpl,netstring,config-file,dynlink,unix,str,higlo.lexers  -I +ocamldoc -annot -rectypes -g  -c stog_misc.ml
+# File "stog_misc.ml", line 118, characters 10-23:
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "stog_misc.ml", line 127, characters 34-35:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:323: recipe for target 'stog_misc.cmx' failed
+# make: *** [stog_misc.cmx] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install stog 0.11.1
+No changes have been performed
+'opam install stog.0.11.1' failed.

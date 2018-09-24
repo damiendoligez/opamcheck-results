@@ -1,0 +1,195 @@
+The following actions will be performed:
+  - install jingoo 1.2.13
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[jingoo: http] Command started
+[jingoo: http] Command started
+[jingoo.1.2.13] https://github.com/tategakibunko/jingoo/archive/v1.2.13.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[jingoo: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jingoo.1.2.13)
+- make -C src
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jingoo.1.2.13/src'
+- ocamlyacc jg_parser.mly
+- 1 rule never reduced
+- 228 shift/reduce conflicts, 121 reduce/reduce conflicts.
+- ocamllex jg_lexer.mll
+- 222 states, 11207 transitions, table size 46160 bytes
+- ocamlfind ocamlc -g -package unix,dynlink,pcre,uutf -c jg_types.mli jg_types.ml jg_utils.ml jg_stub.mli jg_stub.ml jg_parser.mli jg_parser.ml jg_lexer.ml jg_runtime.ml jg_interp.ml jg_template.mli jg_template.ml 
+- File "jg_utils.ml", line 113, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "jg_runtime.ml", line 520, characters 24-40:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- File "jg_runtime.ml", line 525, characters 24-40:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "jg_runtime.ml", line 590, characters 18-34:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "jg_runtime.ml", line 627, characters 24-41:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "jg_runtime.ml", line 779, characters 5-22:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "jg_interp.ml", line 198, characters 24-30:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:36: recipe for target 'jingoo.cma' failed
+- make[1]: *** [jingoo.cma] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jingoo.1.2.13/src'
+- Makefile:2: recipe for target 'all' failed
+- make: *** [all] Error 2
+- make -C src
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jingoo.1.2.13/src'
+- ocamlyacc jg_parser.mly
+- 1 rule never reduced
+- 228 shift/reduce conflicts, 121 reduce/reduce conflicts.
+- ocamllex jg_lexer.mll
+- 222 states, 11207 transitions, table size 46160 bytes
+- ocamlfind ocamlc -g -package unix,dynlink,pcre,uutf -c jg_types.mli jg_types.ml jg_utils.ml jg_stub.mli jg_stub.ml jg_parser.mli jg_parser.ml jg_lexer.ml jg_runtime.ml jg_interp.ml jg_template.mli jg_template.ml 
+- File "jg_utils.ml", line 113, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "jg_runtime.ml", line 520, characters 24-40:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- File "jg_runtime.ml", line 525, characters 24-40:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "jg_runtime.ml", line 590, characters 18-34:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "jg_runtime.ml", line 627, characters 24-41:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "jg_runtime.ml", line 779, characters 5-22:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "jg_interp.ml", line 198, characters 24-30:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:36: recipe for target 'jingoo.cma' failed
+- make[1]: *** [jingoo.cma] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jingoo.1.2.13/src'
+- Makefile:2: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of jingoo failed at "make".
+[jingoo: ocamlfind remove] Command started
++ ocamlfind "remove" "jingoo" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jingoo.1.2.13)
+- make -C src
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jingoo.1.2.13/src'
+- ocamlyacc jg_parser.mly
+- 1 rule never reduced
+- 228 shift/reduce conflicts, 121 reduce/reduce conflicts.
+- ocamllex jg_lexer.mll
+- 222 states, 11207 transitions, table size 46160 bytes
+- ocamlfind ocamlc -g -package unix,dynlink,pcre,uutf -c jg_types.mli jg_types.ml jg_utils.ml jg_stub.mli jg_stub.ml jg_parser.mli jg_parser.ml jg_lexer.ml jg_runtime.ml jg_interp.ml jg_template.mli jg_template.ml 
+- File "jg_utils.ml", line 113, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "jg_runtime.ml", line 520, characters 24-40:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- File "jg_runtime.ml", line 525, characters 24-40:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "jg_runtime.ml", line 590, characters 18-34:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "jg_runtime.ml", line 627, characters 24-41:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "jg_runtime.ml", line 779, characters 5-22:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "jg_interp.ml", line 198, characters 24-30:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:36: recipe for target 'jingoo.cma' failed
+- make[1]: *** [jingoo.cma] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jingoo.1.2.13/src'
+- Makefile:2: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jingoo/META
+- make -C src
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jingoo.1.2.13/src'
+- ocamlyacc jg_parser.mly
+- 1 rule never reduced
+- 228 shift/reduce conflicts, 121 reduce/reduce conflicts.
+- ocamllex jg_lexer.mll
+- 222 states, 11207 transitions, table size 46160 bytes
+- ocamlfind ocamlc -g -package unix,dynlink,pcre,uutf -c jg_types.mli jg_types.ml jg_utils.ml jg_stub.mli jg_stub.ml jg_parser.mli jg_parser.ml jg_lexer.ml jg_runtime.ml jg_interp.ml jg_template.mli jg_template.ml 
+- File "jg_utils.ml", line 113, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "jg_runtime.ml", line 520, characters 24-40:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- File "jg_runtime.ml", line 525, characters 24-40:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "jg_runtime.ml", line 590, characters 18-34:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "jg_runtime.ml", line 627, characters 24-41:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "jg_runtime.ml", line 779, characters 5-22:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "jg_interp.ml", line 198, characters 24-30:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:36: recipe for target 'jingoo.cma' failed
+- make[1]: *** [jingoo.cma] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jingoo.1.2.13/src'
+- Makefile:2: recipe for target 'all' failed
+- make: *** [all] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jingoo/META
+
+#=== ERROR while installing jingoo.1.2.13 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jingoo.1.2.13
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jingoo.1.2.13/jingoo-21359.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jingoo.1.2.13/jingoo-21359.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jingoo.1.2.13/jingoo-21359.out
+### stdout ###
+# [...]
+# Warning 3: deprecated: Stdlib.String.capitalize
+# Use String.capitalize_ascii instead.
+# File "jg_interp.ml", line 198, characters 24-30:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:36: recipe for target 'jingoo.cma' failed
+# make[1]: *** [jingoo.cma] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jingoo.1.2.13/src'
+# Makefile:2: recipe for target 'all' failed
+# make: *** [all] Error 2
+### stderr ###
+# [...]
+# Warning 3: deprecated: Stdlib.String.capitalize
+# Use String.capitalize_ascii instead.
+# File "jg_interp.ml", line 198, characters 24-30:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:36: recipe for target 'jingoo.cma' failed
+# make[1]: *** [jingoo.cma] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jingoo.1.2.13/src'
+# Makefile:2: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install jingoo 1.2.13
+No changes have been performed
+'opam install jingoo.1.2.13' failed.

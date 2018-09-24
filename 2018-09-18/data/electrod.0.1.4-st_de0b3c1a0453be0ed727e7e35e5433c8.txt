@@ -1,0 +1,76 @@
+The following actions will be performed:
+  - install electrod 0.1.4
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[electrod: http] Command started
+[electrod: http] Command started
+[electrod.0.1.4] https://github.com/grayswandyr/electrod/releases/download/0.1.4/electrod-0.1.4.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[electrod: jbuilder build] Command started
++ jbuilder "build" "-p" "electrod" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/electrod.0.1.4)
+-       menhir src/Parser.{ml,mli}
+- Warning: you are using the standard library and/or the %inline keyword. We
+- recommend switching on --infer in order to avoid obscure type error messages.
+-       menhir src/SMV_trace_parser.{ml,mli}
+- Warning: you are using the standard library and/or the %inline keyword. We
+- recommend switching on --infer in order to avoid obscure type error messages.
+-     ocamldep src/SMV.pp.ml.d (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules -impl src/SMV.pp.ml) > _build/default/src/SMV.pp.ml.d
+- File "src/SMV.ml", line 19, characters 34-64:
+- Error: [%blob] could not find or load file /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/electrod.0.1.4/_build/default/src/res/nuxmv-default-script.txt
+-       menhir src/Parser.{ml,mli}
+- Warning: you are using the standard library and/or the %inline keyword. We
+- recommend switching on --infer in order to avoid obscure type error messages.
+-       menhir src/SMV_trace_parser.{ml,mli}
+- Warning: you are using the standard library and/or the %inline keyword. We
+- recommend switching on --infer in order to avoid obscure type error messages.
+-     ocamldep src/SMV.pp.ml.d (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules -impl src/SMV.pp.ml) > _build/default/src/SMV.pp.ml.d
+- File "src/SMV.ml", line 19, characters 34-64:
+- Error: [%blob] could not find or load file /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/electrod.0.1.4/_build/default/src/res/nuxmv-default-script.txt
+[ERROR] The compilation of electrod failed at "jbuilder build -p electrod -j
+        4".
+
+#=== ERROR while installing electrod.0.1.4 ====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p electrod -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/electrod.0.1.4
+# compiler             4.07.0+24fac73
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/electrod.0.1.4/electrod-17617.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/electrod.0.1.4/electrod-17617.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/electrod.0.1.4/electrod-17617.out
+### stdout ###
+# [...]
+#       menhir src/Parser.{ml,mli}
+# Warning: you are using the standard library and/or the %inline keyword. We
+# recommend switching on --infer in order to avoid obscure type error messages.
+#       menhir src/SMV_trace_parser.{ml,mli}
+# Warning: you are using the standard library and/or the %inline keyword. We
+# recommend switching on --infer in order to avoid obscure type error messages.
+#     ocamldep src/SMV.pp.ml.d (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules -impl src/SMV.pp.ml) > _build/default/src/SMV.pp.ml.d
+# File "src/SMV.ml", line 19, characters 34-64:
+# Error: [%blob] could not find or load file /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/electrod.0.1.4/_build/default/src/res/nuxmv-default-script.txt
+### stderr ###
+# [...]
+#       menhir src/Parser.{ml,mli}
+# Warning: you are using the standard library and/or the %inline keyword. We
+# recommend switching on --infer in order to avoid obscure type error messages.
+#       menhir src/SMV_trace_parser.{ml,mli}
+# Warning: you are using the standard library and/or the %inline keyword. We
+# recommend switching on --infer in order to avoid obscure type error messages.
+#     ocamldep src/SMV.pp.ml.d (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules -impl src/SMV.pp.ml) > _build/default/src/SMV.pp.ml.d
+# File "src/SMV.ml", line 19, characters 34-64:
+# Error: [%blob] could not find or load file /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/electrod.0.1.4/_build/default/src/res/nuxmv-default-script.txt
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install electrod 0.1.4
+No changes have been performed
+'opam install electrod.0.1.4' failed.

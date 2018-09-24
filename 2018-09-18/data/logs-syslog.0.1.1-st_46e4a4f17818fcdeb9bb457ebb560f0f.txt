@@ -1,0 +1,269 @@
+The following actions will be performed:
+  - install logs-syslog 0.1.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[logs-syslog: http] Command started
+[logs-syslog: http] Command started
+[logs-syslog.0.1.1] https://github.com/hannesm/logs-syslog/releases/download/0.1.1/logs-syslog-0.1.1.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[logs-syslog: ocaml build] Command started
++ ocaml "pkg/pkg.ml" "build" "--pinned" "false" "--with-lwt" "true" "--with-lwt-tls" "false" "--with-mirage" "true" "--with-mirage-tls" "false" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/logs-syslog.0.1.1)
+- ocamlfind ocamldep -package 'syslog-message logs ptime' -modules src/logs_syslog.ml > src/logs_syslog.ml.depends
+- ocamlfind ocamldep -package 'syslog-message logs ptime' -modules src/logs_syslog.mli > src/logs_syslog.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog.cmi src/logs_syslog.mli
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog.cmx src/logs_syslog.ml
+- ocamlfind ocamlopt -a -package 'syslog-message logs ptime' src/logs_syslog.cmx -o src/logs-syslog.cmxa
+- ocamlfind ocamlopt -shared -linkall -package 'syslog-message logs ptime' src/logs-syslog.cmxa -o src/logs-syslog.cmxs
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog.cmo src/logs_syslog.ml
+- ocamlfind ocamlc -a -package 'syslog-message logs ptime' src/logs_syslog.cmo -o src/logs-syslog.cma
+- ocamlfind ocamldep -package ptime.clock.os -package 'syslog-message logs ptime' -modules src/logs_syslog_unix.ml > src/logs_syslog_unix.ml.depends
+- ocamlfind ocamldep -package ptime.clock.os -package 'syslog-message logs ptime' -modules src/logs_syslog_unix.mli > src/logs_syslog_unix.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package ptime.clock.os -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_unix.cmi src/logs_syslog_unix.mli
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -package ptime.clock.os -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_unix.cmx src/logs_syslog_unix.ml
+- ocamlfind ocamlopt -a -package 'syslog-message logs ptime' src/logs_syslog_unix.cmx -o src/logs-syslog-unix.cmxa
+- ocamlfind ocamlopt -shared -linkall -package 'syslog-message logs ptime' src/logs-syslog-unix.cmxa -o src/logs-syslog-unix.cmxs
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package ptime.clock.os -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_unix.cmo src/logs_syslog_unix.ml
+- ocamlfind ocamlc -a -package 'syslog-message logs ptime' src/logs_syslog_unix.cmo -o src/logs-syslog-unix.cma
+- ocamlfind ocamldep -package lwt -package 'syslog-message logs ptime' -modules src/logs_syslog_lwt_common.ml > src/logs_syslog_lwt_common.ml.depends
+- ocamlfind ocamldep -package lwt -package 'syslog-message logs ptime' -modules src/logs_syslog_lwt_common.mli > src/logs_syslog_lwt_common.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package lwt -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_lwt_common.cmi src/logs_syslog_lwt_common.mli
+- ocamlfind ocamldep -package 'ptime.clock.os lwt lwt.unix' -package 'syslog-message logs ptime' -modules src/logs_syslog_lwt.ml > src/logs_syslog_lwt.ml.depends
+- ocamlfind ocamldep -package 'ptime.clock.os lwt lwt.unix' -package 'syslog-message logs ptime' -modules src/logs_syslog_lwt.mli > src/logs_syslog_lwt.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package 'ptime.clock.os lwt lwt.unix' -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_lwt.cmi src/logs_syslog_lwt.mli
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -package lwt -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_lwt_common.cmx src/logs_syslog_lwt_common.ml
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -package 'ptime.clock.os lwt lwt.unix' -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_lwt.cmx src/logs_syslog_lwt.ml
+- + ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -package 'ptime.clock.os lwt lwt.unix' -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_lwt.cmx src/logs_syslog_lwt.ml
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 12, characters 6-297[0m[0m:
+- [1;35mWarning[0m 8: this pattern-matching is not exhaustive.
+- Here is an example of a case that is not matched:
+- *extension*
+- Matching over values of extensible variant types (the *extension* above)
+- must include a wild card pattern in order to be exhaustive.
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 8, characters 10-14[0m[0m:
+- [1;35mWarning[0m 39: unused rec flag.
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 38, characters 6-259[0m[0m:
+- [1;35mWarning[0m 8: this pattern-matching is not exhaustive.
+- Here is an example of a case that is not matched:
+- *extension*
+- Matching over values of extensible variant types (the *extension* above)
+- must include a wild card pattern in order to be exhaustive.
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 76, characters 19-66[0m[0m:
+- [1;35mWarning[0m 8: this pattern-matching is not exhaustive.
+- Here is an example of a case that is not matched:
+- *extension*
+- Matching over values of extensible variant types (the *extension* above)
+- must include a wild card pattern in order to be exhaustive.
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 69, characters 13-448[0m[0m:
+- [1;35mWarning[0m 8: this pattern-matching is not exhaustive.
+- Here is an example of a case that is not matched:
+- *extension*
+- Matching over values of extensible variant types (the *extension* above)
+- must include a wild card pattern in order to be exhaustive.
+- ocamlfind ocamlopt -a -package 'syslog-message logs ptime' src/logs_syslog_lwt_common.cmx src/logs_syslog_lwt.cmx -o src/logs-syslog-lwt.cmxa
+- ocamlfind ocamlopt -shared -linkall -package 'syslog-message logs ptime' src/logs-syslog-lwt.cmxa -o src/logs-syslog-lwt.cmxs
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package lwt -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_lwt_common.cmo src/logs_syslog_lwt_common.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package 'ptime.clock.os lwt lwt.unix' -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_lwt.cmo src/logs_syslog_lwt.ml
+- + ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package 'ptime.clock.os lwt lwt.unix' -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_lwt.cmo src/logs_syslog_lwt.ml
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 12, characters 6-297[0m[0m:
+- [1;35mWarning[0m 8: this pattern-matching is not exhaustive.
+- Here is an example of a case that is not matched:
+- *extension*
+- Matching over values of extensible variant types (the *extension* above)
+- must include a wild card pattern in order to be exhaustive.
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 8, characters 10-14[0m[0m:
+- [1;35mWarning[0m 39: unused rec flag.
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 38, characters 6-259[0m[0m:
+- [1;35mWarning[0m 8: this pattern-matching is not exhaustive.
+- Here is an example of a case that is not matched:
+- *extension*
+- Matching over values of extensible variant types (the *extension* above)
+- must include a wild card pattern in order to be exhaustive.
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 76, characters 19-66[0m[0m:
+- [1;35mWarning[0m 8: this pattern-matching is not exhaustive.
+- Here is an example of a case that is not matched:
+- *extension*
+- Matching over values of extensible variant types (the *extension* above)
+- must include a wild card pattern in order to be exhaustive.
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 69, characters 13-448[0m[0m:
+- [1;35mWarning[0m 8: this pattern-matching is not exhaustive.
+- Here is an example of a case that is not matched:
+- *extension*
+- Matching over values of extensible variant types (the *extension* above)
+- must include a wild card pattern in order to be exhaustive.
+- ocamlfind ocamlc -a -package 'syslog-message logs ptime' src/logs_syslog_lwt_common.cmo src/logs_syslog_lwt.cmo -o src/logs-syslog-lwt.cma
+- ocamlfind ocamldep -package 'lwt cstruct ipaddr mirage-stack-lwt mirage-console-lwt mirage-clock' -package 'syslog-message logs ptime' -modules src/logs_syslog_mirage.ml > src/logs_syslog_mirage.ml.depends
+- ocamlfind ocamldep -package 'lwt cstruct ipaddr mirage-stack-lwt mirage-console-lwt mirage-clock' -package 'syslog-message logs ptime' -modules src/logs_syslog_mirage.mli > src/logs_syslog_mirage.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package 'lwt cstruct ipaddr mirage-stack-lwt mirage-console-lwt mirage-clock' -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_mirage.cmi src/logs_syslog_mirage.mli
+- + ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package 'lwt cstruct ipaddr mirage-stack-lwt mirage-console-lwt mirage-clock' -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_mirage.cmi src/logs_syslog_mirage.mli
+- [1mFile "[1msrc/logs_syslog_mirage.mli", line 6, characters 47-66[0m[0m:
+- [1;31mError[0m: Unbound module Mirage_clock
+- Command exited with code 2.
+- pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+-      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+-      'README.md' 'src/logs-syslog.a' 'src/logs-syslog.cmxs'
+-      'src/logs-syslog.cmxa' 'src/logs-syslog.cma' 'src/logs_syslog.cmx'
+-      'src/logs_syslog.cmi' 'src/logs_syslog.mli' 'src/logs-syslog-unix.a'
+-      'src/logs-syslog-unix.cmxs' 'src/logs-syslog-unix.cmxa'
+-      'src/logs-syslog-unix.cma' 'src/logs_syslog_unix.cmx'
+-      'src/logs_syslog_unix.cmi' 'src/logs_syslog_unix.mli'
+-      'src/logs-syslog-lwt.a' 'src/logs-syslog-lwt.cmxs'
+-      'src/logs-syslog-lwt.cmxa' 'src/logs-syslog-lwt.cma'
+-      'src/logs_syslog_lwt.cmx' 'src/logs_syslog_lwt.cmi'
+-      'src/logs_syslog_lwt.mli' 'src/logs_syslog_lwt_common.cmx'
+-      'src/logs-syslog-mirage.a' 'src/logs-syslog-mirage.cmxs'
+-      'src/logs-syslog-mirage.cmxa' 'src/logs-syslog-mirage.cma'
+-      'src/logs_syslog_mirage.cmx' 'src/logs_syslog_mirage.cmi'
+-      'src/logs_syslog_mirage.mli' 'src/logs_syslog_lwt_common.cmx']: exited with 10
+- ocamlfind ocamldep -package 'syslog-message logs ptime' -modules src/logs_syslog.ml > src/logs_syslog.ml.depends
+- ocamlfind ocamldep -package 'syslog-message logs ptime' -modules src/logs_syslog.mli > src/logs_syslog.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog.cmi src/logs_syslog.mli
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog.cmx src/logs_syslog.ml
+- ocamlfind ocamlopt -a -package 'syslog-message logs ptime' src/logs_syslog.cmx -o src/logs-syslog.cmxa
+- ocamlfind ocamlopt -shared -linkall -package 'syslog-message logs ptime' src/logs-syslog.cmxa -o src/logs-syslog.cmxs
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog.cmo src/logs_syslog.ml
+- ocamlfind ocamlc -a -package 'syslog-message logs ptime' src/logs_syslog.cmo -o src/logs-syslog.cma
+- ocamlfind ocamldep -package ptime.clock.os -package 'syslog-message logs ptime' -modules src/logs_syslog_unix.ml > src/logs_syslog_unix.ml.depends
+- ocamlfind ocamldep -package ptime.clock.os -package 'syslog-message logs ptime' -modules src/logs_syslog_unix.mli > src/logs_syslog_unix.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package ptime.clock.os -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_unix.cmi src/logs_syslog_unix.mli
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -package ptime.clock.os -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_unix.cmx src/logs_syslog_unix.ml
+- ocamlfind ocamlopt -a -package 'syslog-message logs ptime' src/logs_syslog_unix.cmx -o src/logs-syslog-unix.cmxa
+- ocamlfind ocamlopt -shared -linkall -package 'syslog-message logs ptime' src/logs-syslog-unix.cmxa -o src/logs-syslog-unix.cmxs
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package ptime.clock.os -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_unix.cmo src/logs_syslog_unix.ml
+- ocamlfind ocamlc -a -package 'syslog-message logs ptime' src/logs_syslog_unix.cmo -o src/logs-syslog-unix.cma
+- ocamlfind ocamldep -package lwt -package 'syslog-message logs ptime' -modules src/logs_syslog_lwt_common.ml > src/logs_syslog_lwt_common.ml.depends
+- ocamlfind ocamldep -package lwt -package 'syslog-message logs ptime' -modules src/logs_syslog_lwt_common.mli > src/logs_syslog_lwt_common.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package lwt -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_lwt_common.cmi src/logs_syslog_lwt_common.mli
+- ocamlfind ocamldep -package 'ptime.clock.os lwt lwt.unix' -package 'syslog-message logs ptime' -modules src/logs_syslog_lwt.ml > src/logs_syslog_lwt.ml.depends
+- ocamlfind ocamldep -package 'ptime.clock.os lwt lwt.unix' -package 'syslog-message logs ptime' -modules src/logs_syslog_lwt.mli > src/logs_syslog_lwt.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package 'ptime.clock.os lwt lwt.unix' -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_lwt.cmi src/logs_syslog_lwt.mli
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -package lwt -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_lwt_common.cmx src/logs_syslog_lwt_common.ml
+- ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -package 'ptime.clock.os lwt lwt.unix' -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_lwt.cmx src/logs_syslog_lwt.ml
+- + ocamlfind ocamlopt -c -g -bin-annot -safe-string -principal -package 'ptime.clock.os lwt lwt.unix' -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_lwt.cmx src/logs_syslog_lwt.ml
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 12, characters 6-297[0m[0m:
+- [1;35mWarning[0m 8: this pattern-matching is not exhaustive.
+- Here is an example of a case that is not matched:
+- *extension*
+- Matching over values of extensible variant types (the *extension* above)
+- must include a wild card pattern in order to be exhaustive.
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 8, characters 10-14[0m[0m:
+- [1;35mWarning[0m 39: unused rec flag.
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 38, characters 6-259[0m[0m:
+- [1;35mWarning[0m 8: this pattern-matching is not exhaustive.
+- Here is an example of a case that is not matched:
+- *extension*
+- Matching over values of extensible variant types (the *extension* above)
+- must include a wild card pattern in order to be exhaustive.
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 76, characters 19-66[0m[0m:
+- [1;35mWarning[0m 8: this pattern-matching is not exhaustive.
+- Here is an example of a case that is not matched:
+- *extension*
+- Matching over values of extensible variant types (the *extension* above)
+- must include a wild card pattern in order to be exhaustive.
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 69, characters 13-448[0m[0m:
+- [1;35mWarning[0m 8: this pattern-matching is not exhaustive.
+- Here is an example of a case that is not matched:
+- *extension*
+- Matching over values of extensible variant types (the *extension* above)
+- must include a wild card pattern in order to be exhaustive.
+- ocamlfind ocamlopt -a -package 'syslog-message logs ptime' src/logs_syslog_lwt_common.cmx src/logs_syslog_lwt.cmx -o src/logs-syslog-lwt.cmxa
+- ocamlfind ocamlopt -shared -linkall -package 'syslog-message logs ptime' src/logs-syslog-lwt.cmxa -o src/logs-syslog-lwt.cmxs
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package lwt -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_lwt_common.cmo src/logs_syslog_lwt_common.ml
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package 'ptime.clock.os lwt lwt.unix' -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_lwt.cmo src/logs_syslog_lwt.ml
+- + ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package 'ptime.clock.os lwt lwt.unix' -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_lwt.cmo src/logs_syslog_lwt.ml
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 12, characters 6-297[0m[0m:
+- [1;35mWarning[0m 8: this pattern-matching is not exhaustive.
+- Here is an example of a case that is not matched:
+- *extension*
+- Matching over values of extensible variant types (the *extension* above)
+- must include a wild card pattern in order to be exhaustive.
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 8, characters 10-14[0m[0m:
+- [1;35mWarning[0m 39: unused rec flag.
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 38, characters 6-259[0m[0m:
+- [1;35mWarning[0m 8: this pattern-matching is not exhaustive.
+- Here is an example of a case that is not matched:
+- *extension*
+- Matching over values of extensible variant types (the *extension* above)
+- must include a wild card pattern in order to be exhaustive.
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 76, characters 19-66[0m[0m:
+- [1;35mWarning[0m 8: this pattern-matching is not exhaustive.
+- Here is an example of a case that is not matched:
+- *extension*
+- Matching over values of extensible variant types (the *extension* above)
+- must include a wild card pattern in order to be exhaustive.
+- [1mFile "[1msrc/logs_syslog_lwt.ml", line 69, characters 13-448[0m[0m:
+- [1;35mWarning[0m 8: this pattern-matching is not exhaustive.
+- Here is an example of a case that is not matched:
+- *extension*
+- Matching over values of extensible variant types (the *extension* above)
+- must include a wild card pattern in order to be exhaustive.
+- ocamlfind ocamlc -a -package 'syslog-message logs ptime' src/logs_syslog_lwt_common.cmo src/logs_syslog_lwt.cmo -o src/logs-syslog-lwt.cma
+- ocamlfind ocamldep -package 'lwt cstruct ipaddr mirage-stack-lwt mirage-console-lwt mirage-clock' -package 'syslog-message logs ptime' -modules src/logs_syslog_mirage.ml > src/logs_syslog_mirage.ml.depends
+- ocamlfind ocamldep -package 'lwt cstruct ipaddr mirage-stack-lwt mirage-console-lwt mirage-clock' -package 'syslog-message logs ptime' -modules src/logs_syslog_mirage.mli > src/logs_syslog_mirage.mli.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package 'lwt cstruct ipaddr mirage-stack-lwt mirage-console-lwt mirage-clock' -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_mirage.cmi src/logs_syslog_mirage.mli
+- + ocamlfind ocamlc -c -g -bin-annot -safe-string -principal -package 'lwt cstruct ipaddr mirage-stack-lwt mirage-console-lwt mirage-clock' -package 'syslog-message logs ptime' -w +A-4-44 -color always -I src -o src/logs_syslog_mirage.cmi src/logs_syslog_mirage.mli
+- [1mFile "[1msrc/logs_syslog_mirage.mli", line 6, characters 47-66[0m[0m:
+- [1;31mError[0m: Unbound module Mirage_clock
+- Command exited with code 2.
+- pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+-      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+-      'README.md' 'src/logs-syslog.a' 'src/logs-syslog.cmxs'
+-      'src/logs-syslog.cmxa' 'src/logs-syslog.cma' 'src/logs_syslog.cmx'
+-      'src/logs_syslog.cmi' 'src/logs_syslog.mli' 'src/logs-syslog-unix.a'
+-      'src/logs-syslog-unix.cmxs' 'src/logs-syslog-unix.cmxa'
+-      'src/logs-syslog-unix.cma' 'src/logs_syslog_unix.cmx'
+-      'src/logs_syslog_unix.cmi' 'src/logs_syslog_unix.mli'
+-      'src/logs-syslog-lwt.a' 'src/logs-syslog-lwt.cmxs'
+-      'src/logs-syslog-lwt.cmxa' 'src/logs-syslog-lwt.cma'
+-      'src/logs_syslog_lwt.cmx' 'src/logs_syslog_lwt.cmi'
+-      'src/logs_syslog_lwt.mli' 'src/logs_syslog_lwt_common.cmx'
+-      'src/logs-syslog-mirage.a' 'src/logs-syslog-mirage.cmxs'
+-      'src/logs-syslog-mirage.cmxa' 'src/logs-syslog-mirage.cma'
+-      'src/logs_syslog_mirage.cmx' 'src/logs_syslog_mirage.cmi'
+-      'src/logs_syslog_mirage.mli' 'src/logs_syslog_lwt_common.cmx']: exited with 10
+[ERROR] The compilation of logs-syslog failed at "ocaml pkg/pkg.ml build
+        --pinned false --with-lwt true --with-lwt-tls false --with-mirage true
+        --with-mirage-tls false".
+
+#=== ERROR while installing logs-syslog.0.1.1 =================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml pkg/pkg.ml build --pinned false --with-lwt true --with-lwt-tls false --with-mirage true --with-mirage-tls false
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/logs-syslog.0.1.1
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/logs-syslog.0.1.1/logs-syslog-31381.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/logs-syslog.0.1.1/logs-syslog-31381.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/logs-syslog.0.1.1/logs-syslog-31381.out
+### stdout ###
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+# [...]
+#      'src/logs_syslog_unix.cmi' 'src/logs_syslog_unix.mli'
+#      'src/logs-syslog-lwt.a' 'src/logs-syslog-lwt.cmxs'
+#      'src/logs-syslog-lwt.cmxa' 'src/logs-syslog-lwt.cma'
+#      'src/logs_syslog_lwt.cmx' 'src/logs_syslog_lwt.cmi'
+#      'src/logs_syslog_lwt.mli' 'src/logs_syslog_lwt_common.cmx'
+#      'src/logs-syslog-mirage.a' 'src/logs-syslog-mirage.cmxs'
+#      'src/logs-syslog-mirage.cmxa' 'src/logs-syslog-mirage.cma'
+#      'src/logs_syslog_mirage.cmx' 'src/logs_syslog_mirage.cmi'
+#      'src/logs_syslog_mirage.mli' 'src/logs_syslog_lwt_common.cmx']: exited with 10
+### stderr ###
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+# [...]
+#      'src/logs_syslog_unix.cmi' 'src/logs_syslog_unix.mli'
+#      'src/logs-syslog-lwt.a' 'src/logs-syslog-lwt.cmxs'
+#      'src/logs-syslog-lwt.cmxa' 'src/logs-syslog-lwt.cma'
+#      'src/logs_syslog_lwt.cmx' 'src/logs_syslog_lwt.cmi'
+#      'src/logs_syslog_lwt.mli' 'src/logs_syslog_lwt_common.cmx'
+#      'src/logs-syslog-mirage.a' 'src/logs-syslog-mirage.cmxs'
+#      'src/logs-syslog-mirage.cmxa' 'src/logs-syslog-mirage.cma'
+#      'src/logs_syslog_mirage.cmx' 'src/logs_syslog_mirage.cmi'
+#      'src/logs_syslog_mirage.mli' 'src/logs_syslog_lwt_common.cmx']: exited with 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install logs-syslog 0.1.1
+No changes have been performed
+'opam install logs-syslog.0.1.1' failed.

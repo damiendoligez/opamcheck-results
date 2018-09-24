@@ -1,0 +1,78 @@
+The following actions will be performed:
+  - install key-parsers 0.9.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[key-parsers: http] Command started
+[key-parsers: http] Command started
+[key-parsers.0.9.2] https://github.com/cryptosense/key-parsers/releases/download/0.9.2/key-parsers-0.9.2.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[key-parsers: ocaml build] Command started
++ ocaml "pkg/pkg.ml" "build" "--pinned" "false" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/key-parsers.0.9.2)
+- ocamlfind ocamldep -package ppx_deriving_yojson -package ppx_bin_prot -package zarith -package str -package result -package ppx_deriving -package ppx_deriving.std -package ppx_deriving_yojson.runtime -package hex -package bin_prot -package asn1-combinators -modules src/kp_asn1.ml > src/kp_asn1.ml.depends
+- + ocamlfind ocamldep -package ppx_deriving_yojson -package ppx_bin_prot -package zarith -package str -package result -package ppx_deriving -package ppx_deriving.std -package ppx_deriving_yojson.runtime -package hex -package bin_prot -package asn1-combinators -modules src/kp_asn1.ml > src/kp_asn1.ml.depends
+- File "src/kp_asn1.ml", line 31, characters 35-41:
+- Error: Cannot locate deriver bin_io
+- Command exited with code 2.
+- pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+-      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+-      'README.md' 'src/key_parsers.a' 'src/key_parsers.cmxs'
+-      'src/key_parsers.cmxa' 'src/key_parsers.cma' 'src/key_parsers.cmx'
+-      'src/key_parsers.cmi' 'src/key_parsers.mli' 'src/kp_derivable.cmx'
+-      'src/kp_cvc.cmx' 'src/kp_ltpa.cmx' 'src/kp_asn1.cmx']: exited with 10
+- ocamlfind ocamldep -package ppx_deriving_yojson -package ppx_bin_prot -package zarith -package str -package result -package ppx_deriving -package ppx_deriving.std -package ppx_deriving_yojson.runtime -package hex -package bin_prot -package asn1-combinators -modules src/kp_asn1.ml > src/kp_asn1.ml.depends
+- + ocamlfind ocamldep -package ppx_deriving_yojson -package ppx_bin_prot -package zarith -package str -package result -package ppx_deriving -package ppx_deriving.std -package ppx_deriving_yojson.runtime -package hex -package bin_prot -package asn1-combinators -modules src/kp_asn1.ml > src/kp_asn1.ml.depends
+- File "src/kp_asn1.ml", line 31, characters 35-41:
+- Error: Cannot locate deriver bin_io
+- Command exited with code 2.
+- pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+-      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+-      'README.md' 'src/key_parsers.a' 'src/key_parsers.cmxs'
+-      'src/key_parsers.cmxa' 'src/key_parsers.cma' 'src/key_parsers.cmx'
+-      'src/key_parsers.cmi' 'src/key_parsers.mli' 'src/kp_derivable.cmx'
+-      'src/kp_cvc.cmx' 'src/kp_ltpa.cmx' 'src/kp_asn1.cmx']: exited with 10
+[ERROR] The compilation of key-parsers failed at "ocaml pkg/pkg.ml build
+        --pinned false".
+
+#=== ERROR while installing key-parsers.0.9.2 =================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml pkg/pkg.ml build --pinned false
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/key-parsers.0.9.2
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/key-parsers.0.9.2/key-parsers-16567.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/key-parsers.0.9.2/key-parsers-16567.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/key-parsers.0.9.2/key-parsers-16567.out
+### stdout ###
+# [...]
+# + ocamlfind ocamldep -package ppx_deriving_yojson -package ppx_bin_prot -package zarith -package str -package result -package ppx_deriving -package ppx_deriving.std -package ppx_deriving_yojson.runtime -package hex -package bin_prot -package asn1-combinators -modules src/kp_asn1.ml > src/kp_asn1.ml.depends
+# File "src/kp_asn1.ml", line 31, characters 35-41:
+# Error: Cannot locate deriver bin_io
+# Command exited with code 2.
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+#      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+#      'README.md' 'src/key_parsers.a' 'src/key_parsers.cmxs'
+#      'src/key_parsers.cmxa' 'src/key_parsers.cma' 'src/key_parsers.cmx'
+#      'src/key_parsers.cmi' 'src/key_parsers.mli' 'src/kp_derivable.cmx'
+#      'src/kp_cvc.cmx' 'src/kp_ltpa.cmx' 'src/kp_asn1.cmx']: exited with 10
+### stderr ###
+# [...]
+# + ocamlfind ocamldep -package ppx_deriving_yojson -package ppx_bin_prot -package zarith -package str -package result -package ppx_deriving -package ppx_deriving.std -package ppx_deriving_yojson.runtime -package hex -package bin_prot -package asn1-combinators -modules src/kp_asn1.ml > src/kp_asn1.ml.depends
+# File "src/kp_asn1.ml", line 31, characters 35-41:
+# Error: Cannot locate deriver bin_io
+# Command exited with code 2.
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+#      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+#      'README.md' 'src/key_parsers.a' 'src/key_parsers.cmxs'
+#      'src/key_parsers.cmxa' 'src/key_parsers.cma' 'src/key_parsers.cmx'
+#      'src/key_parsers.cmi' 'src/key_parsers.mli' 'src/kp_derivable.cmx'
+#      'src/kp_cvc.cmx' 'src/kp_ltpa.cmx' 'src/kp_asn1.cmx']: exited with 10
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install key-parsers 0.9.2
+No changes have been performed
+'opam install key-parsers.0.9.2' failed.

@@ -1,0 +1,41 @@
+The following actions will be performed:
+  - install spawn v0.12.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[spawn: http] Command started
+[spawn: http] Command started
+[spawn.v0.12.0] https://github.com/janestreet/spawn/releases/download/v0.12.0/spawn-v0.12.0.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[spawn: jbuilder build] Command started
++ jbuilder "build" "-p" "spawn" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/spawn.v0.12.0)
+- File "test/jbuild", line 4, characters 2-16:
+- Error: field inline_tests needs a value
+- File "test/jbuild", line 4, characters 2-16:
+- Error: field inline_tests needs a value
+[ERROR] The compilation of spawn failed at "jbuilder build -p spawn -j 4".
+
+#=== ERROR while installing spawn.v0.12.0 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p spawn -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/spawn.v0.12.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/spawn.v0.12.0/spawn-25529.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/spawn.v0.12.0/spawn-25529.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/spawn.v0.12.0/spawn-25529.out
+### stdout ###
+# File "test/jbuild", line 4, characters 2-16:
+# Error: field inline_tests needs a value
+### stderr ###
+# File "test/jbuild", line 4, characters 2-16:
+# Error: field inline_tests needs a value
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install spawn v0.12.0
+No changes have been performed
+'opam install spawn.v0.12.0' failed.

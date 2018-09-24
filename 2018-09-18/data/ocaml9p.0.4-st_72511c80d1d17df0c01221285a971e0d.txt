@@ -1,0 +1,165 @@
+The following actions will be performed:
+  - install ocaml9p 0.4
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocaml9p: http] Command started
+[ocaml9p: http] Command started
+[ocaml9p.0.4] https://github.com/raphael-proust/ocaml9p/archive/0.4.2.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocaml9p: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocaml9p.0.4)
+- ocamlfind ocamlc -c -I lib -package "unix str" lib/fcall.mli
+- ocamlfind ocamlc -c -I lib -package "unix str" lib/o9pc.mli
+- ocamlfind ocamlc -c -I lib -package "unix str" lib/fcall.ml
+- File "lib/fcall.ml", line 97, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "lib/fcall.ml", line 99, characters 8-57:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "lib/fcall.ml", line 108, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "lib/fcall.ml", line 111, characters 8-50:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "lib/fcall.ml", line 117, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "lib/fcall.ml", line 120, characters 8-50:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "lib/fcall.ml", line 124, characters 14-41:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:52: recipe for target 'lib/fcall.cmo' failed
+- make: *** [lib/fcall.cmo] Error 2
+- ocamlfind ocamlc -c -I lib -package "unix str" lib/fcall.mli
+- ocamlfind ocamlc -c -I lib -package "unix str" lib/o9pc.mli
+- ocamlfind ocamlc -c -I lib -package "unix str" lib/fcall.ml
+- File "lib/fcall.ml", line 97, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "lib/fcall.ml", line 99, characters 8-57:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "lib/fcall.ml", line 108, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "lib/fcall.ml", line 111, characters 8-50:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "lib/fcall.ml", line 117, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "lib/fcall.ml", line 120, characters 8-50:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "lib/fcall.ml", line 124, characters 14-41:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:52: recipe for target 'lib/fcall.cmo' failed
+- make: *** [lib/fcall.cmo] Error 2
+[ERROR] The compilation of ocaml9p failed at "make".
+[ocaml9p: make uninstall] Command started
++ make "uninstall" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocaml9p.0.4)
+- ocamlfind ocamlc -c -I lib -package "unix str" lib/fcall.mli
+- ocamlfind ocamlc -c -I lib -package "unix str" lib/o9pc.mli
+- ocamlfind ocamlc -c -I lib -package "unix str" lib/fcall.ml
+- File "lib/fcall.ml", line 97, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "lib/fcall.ml", line 99, characters 8-57:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "lib/fcall.ml", line 108, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "lib/fcall.ml", line 111, characters 8-50:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "lib/fcall.ml", line 117, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "lib/fcall.ml", line 120, characters 8-50:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "lib/fcall.ml", line 124, characters 14-41:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:52: recipe for target 'lib/fcall.cmo' failed
+- make: *** [lib/fcall.cmo] Error 2
+- ocamlfind remove o9p
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/o9p/META
+- ocamlfind ocamlc -c -I lib -package "unix str" lib/fcall.mli
+- ocamlfind ocamlc -c -I lib -package "unix str" lib/o9pc.mli
+- ocamlfind ocamlc -c -I lib -package "unix str" lib/fcall.ml
+- File "lib/fcall.ml", line 97, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "lib/fcall.ml", line 99, characters 8-57:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "lib/fcall.ml", line 108, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "lib/fcall.ml", line 111, characters 8-50:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "lib/fcall.ml", line 117, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "lib/fcall.ml", line 120, characters 8-50:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "lib/fcall.ml", line 124, characters 14-41:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:52: recipe for target 'lib/fcall.cmo' failed
+- make: *** [lib/fcall.cmo] Error 2
+- ocamlfind remove o9p
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/o9p/META
+
+#=== ERROR while installing ocaml9p.0.4 =======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocaml9p.0.4
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocaml9p.0.4/ocaml9p-1976.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocaml9p.0.4/ocaml9p-1976.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ocaml9p.0.4/ocaml9p-1976.out
+### stdout ###
+# [...]
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "lib/fcall.ml", line 120, characters 8-50:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "lib/fcall.ml", line 124, characters 14-41:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:52: recipe for target 'lib/fcall.cmo' failed
+# make: *** [lib/fcall.cmo] Error 2
+### stderr ###
+# [...]
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "lib/fcall.ml", line 120, characters 8-50:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "lib/fcall.ml", line 124, characters 14-41:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:52: recipe for target 'lib/fcall.cmo' failed
+# make: *** [lib/fcall.cmo] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ocaml9p 0.4
+No changes have been performed
+'opam install ocaml9p.0.4' failed.

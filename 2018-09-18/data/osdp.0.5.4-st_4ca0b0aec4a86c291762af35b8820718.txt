@@ -1,0 +1,811 @@
+The following actions will be performed:
+  - install osdp 0.5.4
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[osdp: http] Command started
+[osdp: http] Command started
+[osdp.0.5.4] https://cavale.enseeiht.fr/osdp/osdp-0.5.4.tgz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[osdp: ./configure] Command started
++ ./configure  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4)
+- checking for ocamlc... ocamlc
+- checking OCaml version... 4.07.1+dev0-2018-07-10
+- checking for ocamlopt... ocamlopt
+- checking for ocamlbuild... ocamlbuild
+- checking for ocamlfind... ocamlfind
+- checking for SDPA... /usr/bin/sdpa
+- checking for SDPA-GMP... no
+- checking for SDPA-DD... no
+- ocamlfind found ocplib-simplex in -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocplib-simplex
+- checking for CSDP headers... no
+- checking for MOSEK headers... no
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking for fesetround in -lm... yes
+- checking how to run the C preprocessor... gcc -E
+- checking for grep that handles long lines and -e... /bin/grep
+- checking for egrep... /bin/grep -E
+- checking for ANSI C header files... yes
+- checking for sys/types.h... yes
+- checking for sys/stat.h... yes
+- checking for stdlib.h... yes
+- checking for string.h... yes
+- checking for memory.h... yes
+- checking for strings.h... yes
+- checking for inttypes.h... yes
+- checking for stdint.h... yes
+- checking for unistd.h... yes
+- checking math.h usability... yes
+- checking math.h presence... yes
+- checking for math.h... yes
+- checking fenv.h usability... yes
+- checking fenv.h presence... yes
+- checking for fenv.h... yes
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating opam
+- config.status: creating src/Makefile
+- config.status: creating src/myocamlbuild.ml
+- config.status: creating src/config.h
+- config.status: creating src/META
+- config.status: creating src/_tags
+- config.status: creating src/osdp.mlpack
+- config.status: creating src/osdp_top.ml
+- config.status: creating src/sdpa_paths.ml
+- 
+- *** Configuration for OSDP 0.5.4:
+- 
+-   Compiled with CSDP ......... : no
+-   Compiled with MOSEK ........ : no
+-   Compiled with SDPA ......... : yes
+-     SDPA_PATH ................ : /usr/bin/sdpa
+-   Compiled with SDPA-GMP ..... : no
+-   Compiled with SDPA-DD ...... : no
+-   Compiled with Camlp4 ....... : no
+- 
+-   Now type 'make' to build  
+-   then 'make install' to install.
+- 
+- checking for ocamlc... ocamlc
+- checking OCaml version... 4.07.1+dev0-2018-07-10
+- checking for ocamlopt... ocamlopt
+- checking for ocamlbuild... ocamlbuild
+- checking for ocamlfind... ocamlfind
+- checking for SDPA... /usr/bin/sdpa
+- checking for SDPA-GMP... no
+- checking for SDPA-DD... no
+- ocamlfind found ocplib-simplex in -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocplib-simplex
+- checking for CSDP headers... no
+- checking for MOSEK headers... no
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking for fesetround in -lm... yes
+- checking how to run the C preprocessor... gcc -E
+- checking for grep that handles long lines and -e... /bin/grep
+- checking for egrep... /bin/grep -E
+- checking for ANSI C header files... yes
+- checking for sys/types.h... yes
+- checking for sys/stat.h... yes
+- checking for stdlib.h... yes
+- checking for string.h... yes
+- checking for memory.h... yes
+- checking for strings.h... yes
+- checking for inttypes.h... yes
+- checking for stdint.h... yes
+- checking for unistd.h... yes
+- checking math.h usability... yes
+- checking math.h presence... yes
+- checking for math.h... yes
+- checking fenv.h usability... yes
+- checking fenv.h presence... yes
+- checking for fenv.h... yes
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating opam
+- config.status: creating src/Makefile
+- config.status: creating src/myocamlbuild.ml
+- config.status: creating src/config.h
+- config.status: creating src/META
+- config.status: creating src/_tags
+- config.status: creating src/osdp.mlpack
+- config.status: creating src/osdp_top.ml
+- config.status: creating src/sdpa_paths.ml
+- 
+- *** Configuration for OSDP 0.5.4:
+- 
+-   Compiled with CSDP ......... : no
+-   Compiled with MOSEK ........ : no
+-   Compiled with SDPA ......... : yes
+-     SDPA_PATH ................ : /usr/bin/sdpa
+-   Compiled with SDPA-GMP ..... : no
+-   Compiled with SDPA-DD ...... : no
+-   Compiled with Camlp4 ....... : no
+- 
+-   Now type 'make' to build  
+-   then 'make install' to install.
+- 
+[osdp: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4)
+- checking for ocamlc... ocamlc
+- checking OCaml version... 4.07.1+dev0-2018-07-10
+- checking for ocamlopt... ocamlopt
+- checking for ocamlbuild... ocamlbuild
+- checking for ocamlfind... ocamlfind
+- checking for SDPA... /usr/bin/sdpa
+- checking for SDPA-GMP... no
+- checking for SDPA-DD... no
+- ocamlfind found ocplib-simplex in -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocplib-simplex
+- checking for CSDP headers... no
+- checking for MOSEK headers... no
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking for fesetround in -lm... yes
+- checking how to run the C preprocessor... gcc -E
+- checking for grep that handles long lines and -e... /bin/grep
+- checking for egrep... /bin/grep -E
+- checking for ANSI C header files... yes
+- checking for sys/types.h... yes
+- checking for sys/stat.h... yes
+- checking for stdlib.h... yes
+- checking for string.h... yes
+- checking for memory.h... yes
+- checking for strings.h... yes
+- checking for inttypes.h... yes
+- checking for stdint.h... yes
+- checking for unistd.h... yes
+- checking math.h usability... yes
+- checking math.h presence... yes
+- checking for math.h... yes
+- checking fenv.h usability... yes
+- checking fenv.h presence... yes
+- checking for fenv.h... yes
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating opam
+- config.status: creating src/Makefile
+- config.status: creating src/myocamlbuild.ml
+- config.status: creating src/config.h
+- config.status: creating src/META
+- config.status: creating src/_tags
+- config.status: creating src/osdp.mlpack
+- config.status: creating src/osdp_top.ml
+- config.status: creating src/sdpa_paths.ml
+- 
+- *** Configuration for OSDP 0.5.4:
+- 
+-   Compiled with CSDP ......... : no
+-   Compiled with MOSEK ........ : no
+-   Compiled with SDPA ......... : yes
+-     SDPA_PATH ................ : /usr/bin/sdpa
+-   Compiled with SDPA-GMP ..... : no
+-   Compiled with SDPA-DD ...... : no
+-   Compiled with Camlp4 ....... : no
+- 
+-   Now type 'make' to build  
+-   then 'make install' to install.
+- 
+- make -C src osdp
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4/src'
+- ocamlbuild -use-ocamlfind -classic-display -no-links osdp.cma osdp_top.cmo osdp.cmxa osdp.cmxs 
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "_tags", line 7, characters 18-30:
+- Warning: the tag "use_rounding" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c csdp_stubs.c
+- ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c moseksdp_stubs.c
+- ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c posdef_stubs.c
+- ocamlfind ocamlmklib -o osdp csdp_stubs.o moseksdp_stubs.o posdef_stubs.o
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules csdp.mli > csdp.mli.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpRet.mli > sdpRet.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpRet.cmi sdpRet.mli
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o csdp.cmi csdp.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules csdp.ml > csdp.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules ident.mli > ident.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o ident.cmi ident.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules ident.ml > ident.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules linExpr.mli > linExpr.mli.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules scalar.mli > scalar.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o scalar.cmi scalar.mli
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o linExpr.cmi linExpr.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules linExpr.ml > linExpr.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules utils.mli > utils.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o utils.cmi utils.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules lmi.mli > lmi.mli.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules matrix.mli > matrix.mli.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdp.mli > sdp.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmi matrix.mli
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdp.cmi sdp.mli
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o lmi.cmi lmi.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules lmi.ml > lmi.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules posdef.mli > posdef.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o posdef.cmi posdef.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules matrix.ml > matrix.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules monomial.mli > monomial.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o monomial.cmi monomial.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules monomial.ml > monomial.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules moseksdp.mli > moseksdp.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o moseksdp.cmi moseksdp.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules moseksdp.ml > moseksdp.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules newtonPolytope.mli > newtonPolytope.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o newtonPolytope.cmi newtonPolytope.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules newtonPolytope.ml > newtonPolytope.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules polynomial.mli > polynomial.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o polynomial.cmi polynomial.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules polynomial.ml > polynomial.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules posdef.ml > posdef.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules preSdp.mli > preSdp.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o preSdp.cmi preSdp.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules preSdp.ml > preSdp.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules scalar.ml > scalar.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdp.ml > sdp.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa.mli > sdpa.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa.cmi sdpa.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa.ml > sdpa.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex.opt -q sdpa_lexer.mll
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_lexer.ml > sdpa_lexer.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc sdpa_parser.mly
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_parser.mli > sdpa_parser.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_parser.cmi sdpa_parser.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_paths.ml > sdpa_paths.ml.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_lexer.cmo sdpa_lexer.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_paths.cmo sdpa_paths.ml
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_parser.ml > sdpa_parser.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpRet.ml > sdpRet.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sos.mli > sos.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sos.cmi sos.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sos.ml > sos.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules utils.ml > utils.ml.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o csdp.cmo csdp.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o ident.cmo ident.ml
+- checking for ocamlc... ocamlc
+- checking OCaml version... 4.07.1+dev0-2018-07-10
+- checking for ocamlopt... ocamlopt
+- checking for ocamlbuild... ocamlbuild
+- checking for ocamlfind... ocamlfind
+- checking for SDPA... /usr/bin/sdpa
+- checking for SDPA-GMP... no
+- checking for SDPA-DD... no
+- ocamlfind found ocplib-simplex in -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocplib-simplex
+- checking for CSDP headers... no
+- checking for MOSEK headers... no
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking for fesetround in -lm... yes
+- checking how to run the C preprocessor... gcc -E
+- checking for grep that handles long lines and -e... /bin/grep
+- checking for egrep... /bin/grep -E
+- checking for ANSI C header files... yes
+- checking for sys/types.h... yes
+- checking for sys/stat.h... yes
+- checking for stdlib.h... yes
+- checking for string.h... yes
+- checking for memory.h... yes
+- checking for strings.h... yes
+- checking for inttypes.h... yes
+- checking for stdint.h... yes
+- checking for unistd.h... yes
+- checking math.h usability... yes
+- checking math.h presence... yes
+- checking for math.h... yes
+- checking fenv.h usability... yes
+- checking fenv.h presence... yes
+- checking for fenv.h... yes
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating opam
+- config.status: creating src/Makefile
+- config.status: creating src/myocamlbuild.ml
+- config.status: creating src/config.h
+- config.status: creating src/META
+- config.status: creating src/_tags
+- config.status: creating src/osdp.mlpack
+- config.status: creating src/osdp_top.ml
+- config.status: creating src/sdpa_paths.ml
+- 
+- *** Configuration for OSDP 0.5.4:
+- 
+-   Compiled with CSDP ......... : no
+-   Compiled with MOSEK ........ : no
+-   Compiled with SDPA ......... : yes
+-     SDPA_PATH ................ : /usr/bin/sdpa
+-   Compiled with SDPA-GMP ..... : no
+-   Compiled with SDPA-DD ...... : no
+-   Compiled with Camlp4 ....... : no
+- 
+-   Now type 'make' to build  
+-   then 'make install' to install.
+- 
+- make -C src osdp
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4/src'
+- ocamlbuild -use-ocamlfind -classic-display -no-links osdp.cma osdp_top.cmo osdp.cmxa osdp.cmxs 
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "_tags", line 7, characters 18-30:
+- Warning: the tag "use_rounding" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c csdp_stubs.c
+- ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c moseksdp_stubs.c
+- ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c posdef_stubs.c
+- ocamlfind ocamlmklib -o osdp csdp_stubs.o moseksdp_stubs.o posdef_stubs.o
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules csdp.mli > csdp.mli.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpRet.mli > sdpRet.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpRet.cmi sdpRet.mli
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o csdp.cmi csdp.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules csdp.ml > csdp.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules ident.mli > ident.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o ident.cmi ident.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules ident.ml > ident.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules linExpr.mli > linExpr.mli.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules scalar.mli > scalar.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o scalar.cmi scalar.mli
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o linExpr.cmi linExpr.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules linExpr.ml > linExpr.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules utils.mli > utils.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o utils.cmi utils.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules lmi.mli > lmi.mli.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules matrix.mli > matrix.mli.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdp.mli > sdp.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmi matrix.mli
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdp.cmi sdp.mli
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o lmi.cmi lmi.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules lmi.ml > lmi.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules posdef.mli > posdef.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o posdef.cmi posdef.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules matrix.ml > matrix.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules monomial.mli > monomial.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o monomial.cmi monomial.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules monomial.ml > monomial.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules moseksdp.mli > moseksdp.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o moseksdp.cmi moseksdp.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules moseksdp.ml > moseksdp.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules newtonPolytope.mli > newtonPolytope.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o newtonPolytope.cmi newtonPolytope.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules newtonPolytope.ml > newtonPolytope.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules polynomial.mli > polynomial.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o polynomial.cmi polynomial.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules polynomial.ml > polynomial.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules posdef.ml > posdef.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules preSdp.mli > preSdp.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o preSdp.cmi preSdp.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules preSdp.ml > preSdp.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules scalar.ml > scalar.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdp.ml > sdp.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa.mli > sdpa.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa.cmi sdpa.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa.ml > sdpa.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex.opt -q sdpa_lexer.mll
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_lexer.ml > sdpa_lexer.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc sdpa_parser.mly
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_parser.mli > sdpa_parser.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_parser.cmi sdpa_parser.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_paths.ml > sdpa_paths.ml.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_lexer.cmo sdpa_lexer.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_paths.cmo sdpa_paths.ml
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_parser.ml > sdpa_parser.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpRet.ml > sdpRet.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sos.mli > sos.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sos.cmi sos.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sos.ml > sos.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules utils.ml > utils.ml.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o csdp.cmo csdp.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o ident.cmo ident.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o linExpr.cmo linExpr.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o lmi.cmo lmi.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmo matrix.ml
+- + ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmo matrix.ml
+- File "matrix.ml", line 111, characters 41-63:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "matrix.ml", line 112, characters 27-34:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Makefile:24: recipe for target 'osdp' failed
+- make[1]: *** [osdp] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4/src'
+- Makefile:40: recipe for target 'osdp' failed
+- make: *** [osdp] Error 2
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o linExpr.cmo linExpr.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o lmi.cmo lmi.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmo matrix.ml
+- + ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmo matrix.ml
+- File "matrix.ml", line 111, characters 41-63:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "matrix.ml", line 112, characters 27-34:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Makefile:24: recipe for target 'osdp' failed
+- make[1]: *** [osdp] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4/src'
+- Makefile:40: recipe for target 'osdp' failed
+- make: *** [osdp] Error 2
+[ERROR] The compilation of osdp failed at "make".
+[osdp: make uninstall] Command started
++ make "uninstall" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4)
+- checking for ocamlc... ocamlc
+- checking OCaml version... 4.07.1+dev0-2018-07-10
+- checking for ocamlopt... ocamlopt
+- checking for ocamlbuild... ocamlbuild
+- checking for ocamlfind... ocamlfind
+- checking for SDPA... /usr/bin/sdpa
+- checking for SDPA-GMP... no
+- checking for SDPA-DD... no
+- ocamlfind found ocplib-simplex in -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocplib-simplex
+- checking for CSDP headers... no
+- checking for MOSEK headers... no
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking for fesetround in -lm... yes
+- checking how to run the C preprocessor... gcc -E
+- checking for grep that handles long lines and -e... /bin/grep
+- checking for egrep... /bin/grep -E
+- checking for ANSI C header files... yes
+- checking for sys/types.h... yes
+- checking for sys/stat.h... yes
+- checking for stdlib.h... yes
+- checking for string.h... yes
+- checking for memory.h... yes
+- checking for strings.h... yes
+- checking for inttypes.h... yes
+- checking for stdint.h... yes
+- checking for unistd.h... yes
+- checking math.h usability... yes
+- checking math.h presence... yes
+- checking for math.h... yes
+- checking fenv.h usability... yes
+- checking fenv.h presence... yes
+- checking for fenv.h... yes
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating opam
+- config.status: creating src/Makefile
+- config.status: creating src/myocamlbuild.ml
+- config.status: creating src/config.h
+- config.status: creating src/META
+- config.status: creating src/_tags
+- config.status: creating src/osdp.mlpack
+- config.status: creating src/osdp_top.ml
+- config.status: creating src/sdpa_paths.ml
+- 
+- *** Configuration for OSDP 0.5.4:
+- 
+-   Compiled with CSDP ......... : no
+-   Compiled with MOSEK ........ : no
+-   Compiled with SDPA ......... : yes
+-     SDPA_PATH ................ : /usr/bin/sdpa
+-   Compiled with SDPA-GMP ..... : no
+-   Compiled with SDPA-DD ...... : no
+-   Compiled with Camlp4 ....... : no
+- 
+-   Now type 'make' to build  
+-   then 'make install' to install.
+- 
+- make -C src osdp
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4/src'
+- ocamlbuild -use-ocamlfind -classic-display -no-links osdp.cma osdp_top.cmo osdp.cmxa osdp.cmxs 
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "_tags", line 7, characters 18-30:
+- Warning: the tag "use_rounding" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c csdp_stubs.c
+- ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c moseksdp_stubs.c
+- ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c posdef_stubs.c
+- ocamlfind ocamlmklib -o osdp csdp_stubs.o moseksdp_stubs.o posdef_stubs.o
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules csdp.mli > csdp.mli.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpRet.mli > sdpRet.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpRet.cmi sdpRet.mli
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o csdp.cmi csdp.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules csdp.ml > csdp.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules ident.mli > ident.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o ident.cmi ident.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules ident.ml > ident.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules linExpr.mli > linExpr.mli.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules scalar.mli > scalar.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o scalar.cmi scalar.mli
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o linExpr.cmi linExpr.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules linExpr.ml > linExpr.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules utils.mli > utils.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o utils.cmi utils.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules lmi.mli > lmi.mli.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules matrix.mli > matrix.mli.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdp.mli > sdp.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmi matrix.mli
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdp.cmi sdp.mli
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o lmi.cmi lmi.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules lmi.ml > lmi.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules posdef.mli > posdef.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o posdef.cmi posdef.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules matrix.ml > matrix.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules monomial.mli > monomial.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o monomial.cmi monomial.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules monomial.ml > monomial.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules moseksdp.mli > moseksdp.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o moseksdp.cmi moseksdp.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules moseksdp.ml > moseksdp.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules newtonPolytope.mli > newtonPolytope.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o newtonPolytope.cmi newtonPolytope.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules newtonPolytope.ml > newtonPolytope.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules polynomial.mli > polynomial.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o polynomial.cmi polynomial.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules polynomial.ml > polynomial.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules posdef.ml > posdef.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules preSdp.mli > preSdp.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o preSdp.cmi preSdp.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules preSdp.ml > preSdp.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules scalar.ml > scalar.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdp.ml > sdp.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa.mli > sdpa.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa.cmi sdpa.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa.ml > sdpa.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex.opt -q sdpa_lexer.mll
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_lexer.ml > sdpa_lexer.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc sdpa_parser.mly
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_parser.mli > sdpa_parser.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_parser.cmi sdpa_parser.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_paths.ml > sdpa_paths.ml.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_lexer.cmo sdpa_lexer.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_paths.cmo sdpa_paths.ml
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_parser.ml > sdpa_parser.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpRet.ml > sdpRet.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sos.mli > sos.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sos.cmi sos.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sos.ml > sos.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules utils.ml > utils.ml.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o csdp.cmo csdp.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o ident.cmo ident.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o linExpr.cmo linExpr.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o lmi.cmo lmi.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmo matrix.ml
+- + ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmo matrix.ml
+- File "matrix.ml", line 111, characters 41-63:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "matrix.ml", line 112, characters 27-34:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Makefile:24: recipe for target 'osdp' failed
+- make[1]: *** [osdp] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4/src'
+- Makefile:40: recipe for target 'osdp' failed
+- make: *** [osdp] Error 2
+- make -C src uninstall
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4/src'
+- ocamlfind remove osdp
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/osdp/META
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4/src'
+- checking for ocamlc... ocamlc
+- checking OCaml version... 4.07.1+dev0-2018-07-10
+- checking for ocamlopt... ocamlopt
+- checking for ocamlbuild... ocamlbuild
+- checking for ocamlfind... ocamlfind
+- checking for SDPA... /usr/bin/sdpa
+- checking for SDPA-GMP... no
+- checking for SDPA-DD... no
+- ocamlfind found ocplib-simplex in -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocplib-simplex
+- checking for CSDP headers... no
+- checking for MOSEK headers... no
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking for fesetround in -lm... yes
+- checking how to run the C preprocessor... gcc -E
+- checking for grep that handles long lines and -e... /bin/grep
+- checking for egrep... /bin/grep -E
+- checking for ANSI C header files... yes
+- checking for sys/types.h... yes
+- checking for sys/stat.h... yes
+- checking for stdlib.h... yes
+- checking for string.h... yes
+- checking for memory.h... yes
+- checking for strings.h... yes
+- checking for inttypes.h... yes
+- checking for stdint.h... yes
+- checking for unistd.h... yes
+- checking math.h usability... yes
+- checking math.h presence... yes
+- checking for math.h... yes
+- checking fenv.h usability... yes
+- checking fenv.h presence... yes
+- checking for fenv.h... yes
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating opam
+- config.status: creating src/Makefile
+- config.status: creating src/myocamlbuild.ml
+- config.status: creating src/config.h
+- config.status: creating src/META
+- config.status: creating src/_tags
+- config.status: creating src/osdp.mlpack
+- config.status: creating src/osdp_top.ml
+- config.status: creating src/sdpa_paths.ml
+- 
+- *** Configuration for OSDP 0.5.4:
+- 
+-   Compiled with CSDP ......... : no
+-   Compiled with MOSEK ........ : no
+-   Compiled with SDPA ......... : yes
+-     SDPA_PATH ................ : /usr/bin/sdpa
+-   Compiled with SDPA-GMP ..... : no
+-   Compiled with SDPA-DD ...... : no
+-   Compiled with Camlp4 ....... : no
+- 
+-   Now type 'make' to build  
+-   then 'make install' to install.
+- 
+- make -C src osdp
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4/src'
+- ocamlbuild -use-ocamlfind -classic-display -no-links osdp.cma osdp_top.cmo osdp.cmxa osdp.cmxs 
+- ocamlfind ocamlopt unix.cmxa -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "_tags", line 7, characters 18-30:
+- Warning: the tag "use_rounding" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c csdp_stubs.c
+- ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c moseksdp_stubs.c
+- ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c posdef_stubs.c
+- ocamlfind ocamlmklib -o osdp csdp_stubs.o moseksdp_stubs.o posdef_stubs.o
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules csdp.mli > csdp.mli.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpRet.mli > sdpRet.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpRet.cmi sdpRet.mli
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o csdp.cmi csdp.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules csdp.ml > csdp.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules ident.mli > ident.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o ident.cmi ident.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules ident.ml > ident.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules linExpr.mli > linExpr.mli.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules scalar.mli > scalar.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o scalar.cmi scalar.mli
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o linExpr.cmi linExpr.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules linExpr.ml > linExpr.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules utils.mli > utils.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o utils.cmi utils.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules lmi.mli > lmi.mli.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules matrix.mli > matrix.mli.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdp.mli > sdp.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmi matrix.mli
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdp.cmi sdp.mli
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o lmi.cmi lmi.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules lmi.ml > lmi.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules posdef.mli > posdef.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o posdef.cmi posdef.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules matrix.ml > matrix.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules monomial.mli > monomial.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o monomial.cmi monomial.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules monomial.ml > monomial.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules moseksdp.mli > moseksdp.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o moseksdp.cmi moseksdp.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules moseksdp.ml > moseksdp.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules newtonPolytope.mli > newtonPolytope.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o newtonPolytope.cmi newtonPolytope.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules newtonPolytope.ml > newtonPolytope.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules polynomial.mli > polynomial.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o polynomial.cmi polynomial.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules polynomial.ml > polynomial.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules posdef.ml > posdef.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules preSdp.mli > preSdp.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o preSdp.cmi preSdp.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules preSdp.ml > preSdp.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules scalar.ml > scalar.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdp.ml > sdp.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa.mli > sdpa.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa.cmi sdpa.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa.ml > sdpa.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex.opt -q sdpa_lexer.mll
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_lexer.ml > sdpa_lexer.ml.depends
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc sdpa_parser.mly
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_parser.mli > sdpa_parser.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_parser.cmi sdpa_parser.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_paths.ml > sdpa_paths.ml.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_lexer.cmo sdpa_lexer.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_paths.cmo sdpa_paths.ml
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_parser.ml > sdpa_parser.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpRet.ml > sdpRet.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sos.mli > sos.mli.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sos.cmi sos.mli
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sos.ml > sos.ml.depends
+- ocamlfind ocamldep -package zarith -package ocplib-simplex -modules utils.ml > utils.ml.depends
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o csdp.cmo csdp.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o ident.cmo ident.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o linExpr.cmo linExpr.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o lmi.cmo lmi.ml
+- ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmo matrix.ml
+- + ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmo matrix.ml
+- File "matrix.ml", line 111, characters 41-63:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "matrix.ml", line 112, characters 27-34:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- Makefile:24: recipe for target 'osdp' failed
+- make[1]: *** [osdp] Error 10
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4/src'
+- Makefile:40: recipe for target 'osdp' failed
+- make: *** [osdp] Error 2
+- make -C src uninstall
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4/src'
+- ocamlfind remove osdp
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/osdp/META
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4/src'
+
+#=== ERROR while installing osdp.0.5.4 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4/osdp-6612.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4/osdp-6612.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4/osdp-6612.out
+### stdout ###
+# [...]
+# Use Bytes.set instead.
+# File "matrix.ml", line 112, characters 27-34:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# Makefile:24: recipe for target 'osdp' failed
+# make[1]: *** [osdp] Error 10
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4/src'
+# Makefile:40: recipe for target 'osdp' failed
+# make: *** [osdp] Error 2
+### stderr ###
+# [...]
+# Use Bytes.set instead.
+# File "matrix.ml", line 112, characters 27-34:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# Makefile:24: recipe for target 'osdp' failed
+# make[1]: *** [osdp] Error 10
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/osdp.0.5.4/src'
+# Makefile:40: recipe for target 'osdp' failed
+# make: *** [osdp] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install osdp 0.5.4
+No changes have been performed
+'opam install osdp.0.5.4' failed.

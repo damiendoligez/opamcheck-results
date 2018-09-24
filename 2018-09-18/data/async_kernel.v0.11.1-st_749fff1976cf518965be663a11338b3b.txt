@@ -1,0 +1,736 @@
+The following actions will be performed:
+  - install async_kernel v0.11.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[async_kernel: http] Command started
+[async_kernel: http] Command started
+[async_kernel.v0.11.1] https://github.com/janestreet/async_kernel/archive/v0.11.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[async_kernel: jbuilder build] Command started
++ jbuilder "build" "-p" "async_kernel" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/async_kernel.v0.11.1)
+-       ocamlc src/.async_kernel.objs/async_kernel__Throttle_debug.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.async_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel/base_for_tests -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/variantslib -no-alias-deps -open Async_kernel__ -o src/.async_kernel.objs/async_kernel__Throttle_debug.cmo -c -impl src/throttle_debug.pp.ml)
+- File "src/throttle_debug.ml", line 6, characters 48-1493:
+- Error: Signature mismatch:
+-        ...
+-        In module Deferred:
+-        Modules do not match:
+-          sig
+-            module Scheduler = Deferred.Scheduler
+-            type 'a t = 'a Async_kernel__.Types.Deferred.t
+-            val sexp_of_t :
+-              ('a -> Ppx_sexp_conv_lib.Sexp.t) ->
+-              'a t -> Ppx_sexp_conv_lib.Sexp.t
+-            type 'a deferred = 'a t
+-            val invariant :
+-              'a Base__.Invariant_intf.inv -> 'a t Base__.Invariant_intf.inv
+-            val of_ivar : 'a Async_kernel__.Ivar0.t -> 'a t
+-            val create : ('a Async_kernel__.Ivar0.t -> unit) -> 'a t
+-            val peek : 'a t -> 'a option
+-            val value_exn : 'a t -> 'a
+-            val is_determined : 'a t -> bool
+-            val upon : 'a t -> ('a -> unit) -> unit
+-            module Handler = Deferred.Handler
+-            val add_handler :
+-              'a t ->
+-              ('a -> unit) ->
+-              Async_kernel__.Execution_context.t -> 'a Handler.t
+-            val remove_handler : 'a t -> 'a Handler.t -> unit
+-            val never : unit -> 'a Async_kernel__.Deferred0.t
+-            module M = Deferred.M
+-            val ( >>= ) :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              ('a -> 'b Async_kernel__.Types.Deferred.t) ->
+-              'b Async_kernel__.Types.Deferred.t
+-            val ( >>| ) :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              ('a -> 'b) -> 'b Async_kernel__.Types.Deferred.t
+-            module Monad_infix = Deferred.Monad_infix
+-            val bind :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              f:('a -> 'b Async_kernel__.Types.Deferred.t) ->
+-              'b Async_kernel__.Types.Deferred.t
+-            val map :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              f:('a -> 'b) -> 'b Async_kernel__.Types.Deferred.t
+-            val join :
+-              'a Async_kernel__.Types.Deferred.t
+-              Async_kernel__.Types.Deferred.t ->
+-              'a Async_kernel__.Types.Deferred.t
+-            val ignore_m :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              unit Async_kernel__.Types.Deferred.t
+-            val return : 'a -> 'a Async_kernel__.Deferred0.t
+-            module Let_syntax = Deferred.Let_syntax
+-            val unit : unit Async_kernel__.Types.Deferred.t
+-            val ignore :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              unit Async_kernel__.Types.Deferred.t
+-            val both : 'a t -> 'b t -> ('a * 'b) t
+-            module Infix = Deferred.Infix
+-            val don't_wait_for : unit t -> unit
+-            module Choice = Deferred.Choice
+-            type 'a choice = 'a Choice.t
+-            module Unregister = Deferred.Unregister
+-            val choice :
+-              'a Async_kernel__.Deferred0.t -> ('a -> 'b) -> 'b Choice.t
+-            val enabled :
+-              'a Choice.t Core_kernel.List.t ->
+-              (unit -> 'a Core_kernel.List.t) Async_kernel__.Deferred0.t
+-            val choose_result : 'a Choice.t list -> 'a
+-            val choose :
+-              'a Choice.t Core_kernel.List.t -> 'a Async_kernel__.Deferred0.t
+-            val any_f :
+-              'a Async_kernel__.Deferred0.t Core_kernel.List.t ->
+-              ('a -> 'b) -> 'b Async_kernel__.Deferred0.t
+-            val any :
+-              'a Async_kernel__.Deferred0.t Core_kernel.List.t ->
+-              'a Async_kernel__.Deferred0.t
+-            val any_unit :
+-              'a Async_kernel__.Deferred0.t Core_kernel.List.t ->
+-              unit Async_kernel__.Deferred0.t
+-            val for_ :
+-              int ->
+-              to_:int ->
+-              do_:(int -> unit Async_kernel__.Types.Deferred.t) ->
+-              unit Async_kernel__.Types.Deferred.t
+-            val repeat_until_finished :
+-              'a -> ('a -> [< `Finished of 'b | `Repeat of 'a ] t) -> 'b t
+-            val forever :
+-              'a -> ('a -> 'a Async_kernel__.Types.Deferred.t) -> unit
+-            type how = Async_kernel__.Monad_sequence.how
+-            val sexp_of_how : how -> Ppx_sexp_conv_lib.Sexp.t
+-            module type Monad_sequence =
+-              sig
+-                type 'a t
+-                val foldi :
+-                  'a t -> init:'b -> f:(int -> 'b -> 'a -> 'b t) -> 'b t
+-                val fold : 'a t -> init:'b -> f:('b -> 'a -> 'b t) -> 'b t
+-                val find : 'a t -> f:('a -> bool t) -> 'a option t
+-                val findi :
+-                  'a t -> f:(int -> 'a -> bool t) -> (int * 'a) option t
+-                val find_map : 'a t -> f:('a -> 'b option t) -> 'b option t
+-                val find_mapi :
+-                  'a t -> f:(int -> 'a -> 'b option t) -> 'b option t
+-                val exists : 'a t -> f:('a -> bool t) -> bool t
+-                val existsi : 'a t -> f:(int -> 'a -> bool t) -> bool t
+-                val for_all : 'a t -> f:('a -> bool t) -> bool t
+-                val for_alli : 'a t -> f:(int -> 'a -> bool t) -> bool t
+-                val all : 'a t t -> 'a t t
+-                val all_unit : unit t t -> unit t
+-                val init :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  int -> f:(int -> 'a t) -> 'a t t
+-                val iter :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> unit t) -> unit t
+-                val iteri :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> unit t) -> unit t
+-                val map :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> 'b t) -> 'b t t
+-                val mapi :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> 'b t) -> 'b t t
+-                val filter :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> bool t) -> 'a t t
+-                val filteri :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> bool t) -> 'a t t
+-                val filter_map :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> 'b option t) -> 'b t t
+-                val filter_mapi :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> 'b option t) -> 'b t t
+-                val concat_map :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> 'b t t) -> 'b t t
+-                val concat_mapi :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> 'b t t) -> 'b t t
+-              end
+-            val fold : 'a list -> init:'b -> f:('b -> 'a -> 'b t) -> 'b t
+-            val seqmap :
+-              'a list ->
+-              f:('a -> 'b Async_kernel__.Types.Deferred.t) ->
+-              'b Core_kernel.List.t Async_kernel__.Types.Deferred.t
+-            val all :
+-              'a Async_kernel__.Types.Deferred.t list ->
+-              'a Core_kernel.List.t Async_kernel__.Types.Deferred.t
+-            val all_unit : unit t list -> unit t
+-            val all_ignore : unit t list -> unit t
+-            val ok :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              ('a, 'b) Core_kernel._result Async_kernel__.Types.Deferred.t
+-          end
+-        is not included in
+-          (module Async_kernel__.Deferred1)
+-       ocamlc src/.async_kernel.objs/async_kernel__Throttle_debug.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.async_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel/base_for_tests -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/variantslib -no-alias-deps -open Async_kernel__ -o src/.async_kernel.objs/async_kernel__Throttle_debug.cmo -c -impl src/throttle_debug.pp.ml)
+- File "src/throttle_debug.ml", line 6, characters 48-1493:
+- Error: Signature mismatch:
+-        ...
+-        In module Deferred:
+-        Modules do not match:
+-          sig
+-            module Scheduler = Deferred.Scheduler
+-            type 'a t = 'a Async_kernel__.Types.Deferred.t
+-            val sexp_of_t :
+-              ('a -> Ppx_sexp_conv_lib.Sexp.t) ->
+-              'a t -> Ppx_sexp_conv_lib.Sexp.t
+-            type 'a deferred = 'a t
+-            val invariant :
+-              'a Base__.Invariant_intf.inv -> 'a t Base__.Invariant_intf.inv
+-            val of_ivar : 'a Async_kernel__.Ivar0.t -> 'a t
+-            val create : ('a Async_kernel__.Ivar0.t -> unit) -> 'a t
+-            val peek : 'a t -> 'a option
+-            val value_exn : 'a t -> 'a
+-            val is_determined : 'a t -> bool
+-            val upon : 'a t -> ('a -> unit) -> unit
+-            module Handler = Deferred.Handler
+-            val add_handler :
+-              'a t ->
+-              ('a -> unit) ->
+-              Async_kernel__.Execution_context.t -> 'a Handler.t
+-            val remove_handler : 'a t -> 'a Handler.t -> unit
+-            val never : unit -> 'a Async_kernel__.Deferred0.t
+-            module M = Deferred.M
+-            val ( >>= ) :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              ('a -> 'b Async_kernel__.Types.Deferred.t) ->
+-              'b Async_kernel__.Types.Deferred.t
+-            val ( >>| ) :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              ('a -> 'b) -> 'b Async_kernel__.Types.Deferred.t
+-            module Monad_infix = Deferred.Monad_infix
+-            val bind :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              f:('a -> 'b Async_kernel__.Types.Deferred.t) ->
+-              'b Async_kernel__.Types.Deferred.t
+-            val map :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              f:('a -> 'b) -> 'b Async_kernel__.Types.Deferred.t
+-            val join :
+-              'a Async_kernel__.Types.Deferred.t
+-              Async_kernel__.Types.Deferred.t ->
+-              'a Async_kernel__.Types.Deferred.t
+-            val ignore_m :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              unit Async_kernel__.Types.Deferred.t
+-            val return : 'a -> 'a Async_kernel__.Deferred0.t
+-            module Let_syntax = Deferred.Let_syntax
+-            val unit : unit Async_kernel__.Types.Deferred.t
+-            val ignore :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              unit Async_kernel__.Types.Deferred.t
+-            val both : 'a t -> 'b t -> ('a * 'b) t
+-            module Infix = Deferred.Infix
+-            val don't_wait_for : unit t -> unit
+-            module Choice = Deferred.Choice
+-            type 'a choice = 'a Choice.t
+-            module Unregister = Deferred.Unregister
+-            val choice :
+-              'a Async_kernel__.Deferred0.t -> ('a -> 'b) -> 'b Choice.t
+-            val enabled :
+-              'a Choice.t Core_kernel.List.t ->
+-              (unit -> 'a Core_kernel.List.t) Async_kernel__.Deferred0.t
+-            val choose_result : 'a Choice.t list -> 'a
+-            val choose :
+-              'a Choice.t Core_kernel.List.t -> 'a Async_kernel__.Deferred0.t
+-            val any_f :
+-              'a Async_kernel__.Deferred0.t Core_kernel.List.t ->
+-              ('a -> 'b) -> 'b Async_kernel__.Deferred0.t
+-            val any :
+-              'a Async_kernel__.Deferred0.t Core_kernel.List.t ->
+-              'a Async_kernel__.Deferred0.t
+-            val any_unit :
+-              'a Async_kernel__.Deferred0.t Core_kernel.List.t ->
+-              unit Async_kernel__.Deferred0.t
+-            val for_ :
+-              int ->
+-              to_:int ->
+-              do_:(int -> unit Async_kernel__.Types.Deferred.t) ->
+-              unit Async_kernel__.Types.Deferred.t
+-            val repeat_until_finished :
+-              'a -> ('a -> [< `Finished of 'b | `Repeat of 'a ] t) -> 'b t
+-            val forever :
+-              'a -> ('a -> 'a Async_kernel__.Types.Deferred.t) -> unit
+-            type how = Async_kernel__.Monad_sequence.how
+-            val sexp_of_how : how -> Ppx_sexp_conv_lib.Sexp.t
+-            module type Monad_sequence =
+-              sig
+-                type 'a t
+-                val foldi :
+-                  'a t -> init:'b -> f:(int -> 'b -> 'a -> 'b t) -> 'b t
+-                val fold : 'a t -> init:'b -> f:('b -> 'a -> 'b t) -> 'b t
+-                val find : 'a t -> f:('a -> bool t) -> 'a option t
+-                val findi :
+-                  'a t -> f:(int -> 'a -> bool t) -> (int * 'a) option t
+-                val find_map : 'a t -> f:('a -> 'b option t) -> 'b option t
+-                val find_mapi :
+-                  'a t -> f:(int -> 'a -> 'b option t) -> 'b option t
+-                val exists : 'a t -> f:('a -> bool t) -> bool t
+-                val existsi : 'a t -> f:(int -> 'a -> bool t) -> bool t
+-                val for_all : 'a t -> f:('a -> bool t) -> bool t
+-                val for_alli : 'a t -> f:(int -> 'a -> bool t) -> bool t
+-                val all : 'a t t -> 'a t t
+-                val all_unit : unit t t -> unit t
+-                val init :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  int -> f:(int -> 'a t) -> 'a t t
+-                val iter :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> unit t) -> unit t
+-                val iteri :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> unit t) -> unit t
+-                val map :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> 'b t) -> 'b t t
+-                val mapi :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> 'b t) -> 'b t t
+-                val filter :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> bool t) -> 'a t t
+-                val filteri :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> bool t) -> 'a t t
+-                val filter_map :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> 'b option t) -> 'b t t
+-                val filter_mapi :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> 'b option t) -> 'b t t
+-                val concat_map :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> 'b t t) -> 'b t t
+-                val concat_mapi :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> 'b t t) -> 'b t t
+-              end
+-            val fold : 'a list -> init:'b -> f:('b -> 'a -> 'b t) -> 'b t
+-            val seqmap :
+-              'a list ->
+-              f:('a -> 'b Async_kernel__.Types.Deferred.t) ->
+-              'b Core_kernel.List.t Async_kernel__.Types.Deferred.t
+-            val all :
+-              'a Async_kernel__.Types.Deferred.t list ->
+-              'a Core_kernel.List.t Async_kernel__.Types.Deferred.t
+-            val all_unit : unit t list -> unit t
+-            val all_ignore : unit t list -> unit t
+-            val ok :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              ('a, 'b) Core_kernel._result Async_kernel__.Types.Deferred.t
+-          end
+-        is not included in
+-          (module Async_kernel__.Deferred1)
+-       ocamlc src/.async_kernel.objs/async_kernel__Clock_intf.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.async_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel/base_for_tests -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/variantslib -no-alias-deps -open Async_kernel__ -o src/.async_kernel.objs/async_kernel__Clock_intf.cmo -c -impl src/clock_intf.pp.ml)
+- File "src/clock_intf.ml", line 399, characters 27-28:
+- Error: Signature mismatch:
+-        ...
+-        In module Event.Abort_result:
+-        Modules do not match:
+-          (module Event.Abort_result)
+-        is not included in
+-          (module Async_kernel__.Time_source.Event.Abort_result)
+-       ocamlc src/.async_kernel.objs/async_kernel__Throttle_unit_tests.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.async_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel/base_for_tests -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/variantslib -no-alias-deps -open Async_kernel__ -o src/.async_kernel.objs/async_kernel__Throttle_unit_tests.cmo -c -impl src/throttle_unit_tests.pp.ml)
+- File "src/throttle_unit_tests.ml", line 1:
+- Error: The implementation src/throttle_unit_tests.pp.ml
+-        does not match the interface src/.async_kernel.objs/async_kernel__Throttle_unit_tests.cmi:
+-        In module Deferred:
+-        Modules do not match:
+-          (module Throttle.Deferred)
+-        is not included in
+-          (module Async_kernel__.Deferred1)
+-       ocamlc src/.async_kernel.objs/async_kernel__Clock_intf.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.async_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel/base_for_tests -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/variantslib -no-alias-deps -open Async_kernel__ -o src/.async_kernel.objs/async_kernel__Clock_intf.cmo -c -impl src/clock_intf.pp.ml)
+- File "src/clock_intf.ml", line 399, characters 27-28:
+- Error: Signature mismatch:
+-        ...
+-        In module Event.Abort_result:
+-        Modules do not match:
+-          (module Event.Abort_result)
+-        is not included in
+-          (module Async_kernel__.Time_source.Event.Abort_result)
+-       ocamlc src/.async_kernel.objs/async_kernel__Throttle_unit_tests.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.async_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel/base_for_tests -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/variantslib -no-alias-deps -open Async_kernel__ -o src/.async_kernel.objs/async_kernel__Throttle_unit_tests.cmo -c -impl src/throttle_unit_tests.pp.ml)
+- File "src/throttle_unit_tests.ml", line 1:
+- Error: The implementation src/throttle_unit_tests.pp.ml
+-        does not match the interface src/.async_kernel.objs/async_kernel__Throttle_unit_tests.cmi:
+-        In module Deferred:
+-        Modules do not match:
+-          (module Throttle.Deferred)
+-        is not included in
+-          (module Async_kernel__.Deferred1)
+-     ocamlopt src/.async_kernel.objs/async_kernel__Throttle_debug.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -safe-string -g -I src/.async_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel/base_for_tests -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/variantslib -no-alias-deps -open Async_kernel__ -o src/.async_kernel.objs/async_kernel__Throttle_debug.cmx -c -impl src/throttle_debug.pp.ml)
+- File "src/throttle_debug.ml", line 6, characters 48-1493:
+- Error: Signature mismatch:
+-        ...
+-        In module Deferred:
+-        Modules do not match:
+-          sig
+-            module Scheduler = Deferred.Scheduler
+-            type 'a t = 'a Async_kernel__.Types.Deferred.t
+-            val sexp_of_t :
+-              ('a -> Ppx_sexp_conv_lib.Sexp.t) ->
+-              'a t -> Ppx_sexp_conv_lib.Sexp.t
+-            type 'a deferred = 'a t
+-            val invariant :
+-              'a Base__.Invariant_intf.inv -> 'a t Base__.Invariant_intf.inv
+-            val of_ivar : 'a Async_kernel__.Ivar0.t -> 'a t
+-            val create : ('a Async_kernel__.Ivar0.t -> unit) -> 'a t
+-            val peek : 'a t -> 'a option
+-            val value_exn : 'a t -> 'a
+-            val is_determined : 'a t -> bool
+-            val upon : 'a t -> ('a -> unit) -> unit
+-            module Handler = Deferred.Handler
+-            val add_handler :
+-              'a t ->
+-              ('a -> unit) ->
+-              Async_kernel__.Execution_context.t -> 'a Handler.t
+-            val remove_handler : 'a t -> 'a Handler.t -> unit
+-            val never : unit -> 'a Async_kernel__.Deferred0.t
+-            module M = Deferred.M
+-            val ( >>= ) :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              ('a -> 'b Async_kernel__.Types.Deferred.t) ->
+-              'b Async_kernel__.Types.Deferred.t
+-            val ( >>| ) :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              ('a -> 'b) -> 'b Async_kernel__.Types.Deferred.t
+-            module Monad_infix = Deferred.Monad_infix
+-            val bind :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              f:('a -> 'b Async_kernel__.Types.Deferred.t) ->
+-              'b Async_kernel__.Types.Deferred.t
+-            val map :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              f:('a -> 'b) -> 'b Async_kernel__.Types.Deferred.t
+-            val join :
+-              'a Async_kernel__.Types.Deferred.t
+-              Async_kernel__.Types.Deferred.t ->
+-              'a Async_kernel__.Types.Deferred.t
+-            val ignore_m :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              unit Async_kernel__.Types.Deferred.t
+-            val return : 'a -> 'a Async_kernel__.Deferred0.t
+-            module Let_syntax = Deferred.Let_syntax
+-            val unit : unit Async_kernel__.Types.Deferred.t
+-            val ignore :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              unit Async_kernel__.Types.Deferred.t
+-            val both : 'a t -> 'b t -> ('a * 'b) t
+-            module Infix = Deferred.Infix
+-            val don't_wait_for : unit t -> unit
+-            module Choice = Deferred.Choice
+-            type 'a choice = 'a Choice.t
+-            module Unregister = Deferred.Unregister
+-            val choice :
+-              'a Async_kernel__.Deferred0.t -> ('a -> 'b) -> 'b Choice.t
+-            val enabled :
+-              'a Choice.t Core_kernel.List.t ->
+-              (unit -> 'a Core_kernel.List.t) Async_kernel__.Deferred0.t
+-            val choose_result : 'a Choice.t list -> 'a
+-            val choose :
+-              'a Choice.t Core_kernel.List.t -> 'a Async_kernel__.Deferred0.t
+-            val any_f :
+-              'a Async_kernel__.Deferred0.t Core_kernel.List.t ->
+-              ('a -> 'b) -> 'b Async_kernel__.Deferred0.t
+-            val any :
+-              'a Async_kernel__.Deferred0.t Core_kernel.List.t ->
+-              'a Async_kernel__.Deferred0.t
+-            val any_unit :
+-              'a Async_kernel__.Deferred0.t Core_kernel.List.t ->
+-              unit Async_kernel__.Deferred0.t
+-            val for_ :
+-              int ->
+-              to_:int ->
+-              do_:(int -> unit Async_kernel__.Types.Deferred.t) ->
+-              unit Async_kernel__.Types.Deferred.t
+-            val repeat_until_finished :
+-              'a -> ('a -> [< `Finished of 'b | `Repeat of 'a ] t) -> 'b t
+-            val forever :
+-              'a -> ('a -> 'a Async_kernel__.Types.Deferred.t) -> unit
+-            type how = Async_kernel__.Monad_sequence.how
+-            val sexp_of_how : how -> Ppx_sexp_conv_lib.Sexp.t
+-            module type Monad_sequence =
+-              sig
+-                type 'a t
+-                val foldi :
+-                  'a t -> init:'b -> f:(int -> 'b -> 'a -> 'b t) -> 'b t
+-                val fold : 'a t -> init:'b -> f:('b -> 'a -> 'b t) -> 'b t
+-                val find : 'a t -> f:('a -> bool t) -> 'a option t
+-                val findi :
+-                  'a t -> f:(int -> 'a -> bool t) -> (int * 'a) option t
+-                val find_map : 'a t -> f:('a -> 'b option t) -> 'b option t
+-                val find_mapi :
+-                  'a t -> f:(int -> 'a -> 'b option t) -> 'b option t
+-                val exists : 'a t -> f:('a -> bool t) -> bool t
+-                val existsi : 'a t -> f:(int -> 'a -> bool t) -> bool t
+-                val for_all : 'a t -> f:('a -> bool t) -> bool t
+-                val for_alli : 'a t -> f:(int -> 'a -> bool t) -> bool t
+-                val all : 'a t t -> 'a t t
+-                val all_unit : unit t t -> unit t
+-                val init :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  int -> f:(int -> 'a t) -> 'a t t
+-                val iter :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> unit t) -> unit t
+-                val iteri :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> unit t) -> unit t
+-                val map :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> 'b t) -> 'b t t
+-                val mapi :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> 'b t) -> 'b t t
+-                val filter :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> bool t) -> 'a t t
+-                val filteri :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> bool t) -> 'a t t
+-                val filter_map :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> 'b option t) -> 'b t t
+-                val filter_mapi :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> 'b option t) -> 'b t t
+-                val concat_map :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> 'b t t) -> 'b t t
+-                val concat_mapi :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> 'b t t) -> 'b t t
+-              end
+-            val fold : 'a list -> init:'b -> f:('b -> 'a -> 'b t) -> 'b t
+-            val seqmap :
+-              'a list ->
+-              f:('a -> 'b Async_kernel__.Types.Deferred.t) ->
+-              'b Core_kernel.List.t Async_kernel__.Types.Deferred.t
+-            val all :
+-              'a Async_kernel__.Types.Deferred.t list ->
+-              'a Core_kernel.List.t Async_kernel__.Types.Deferred.t
+-            val all_unit : unit t list -> unit t
+-            val all_ignore : unit t list -> unit t
+-            val ok :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              ('a, 'b) Core_kernel._result Async_kernel__.Types.Deferred.t
+-          end
+-        is not included in
+-          (module Async_kernel__.Deferred1)
+-     ocamlopt src/.async_kernel.objs/async_kernel__Throttle_debug.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -safe-string -g -I src/.async_kernel.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/caml -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/md5 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/base/shadow_stdlib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bin_prot/shape -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/core_kernel/base_for_tests -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/fieldslib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/jane-street-headers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_assert/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_bench/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_compare/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/collector -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/common -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_expect/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_hash/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/config -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_inline_test/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/splittable_random -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stdio -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/typerep -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/variantslib -no-alias-deps -open Async_kernel__ -o src/.async_kernel.objs/async_kernel__Throttle_debug.cmx -c -impl src/throttle_debug.pp.ml)
+- File "src/throttle_debug.ml", line 6, characters 48-1493:
+- Error: Signature mismatch:
+-        ...
+-        In module Deferred:
+-        Modules do not match:
+-          sig
+-            module Scheduler = Deferred.Scheduler
+-            type 'a t = 'a Async_kernel__.Types.Deferred.t
+-            val sexp_of_t :
+-              ('a -> Ppx_sexp_conv_lib.Sexp.t) ->
+-              'a t -> Ppx_sexp_conv_lib.Sexp.t
+-            type 'a deferred = 'a t
+-            val invariant :
+-              'a Base__.Invariant_intf.inv -> 'a t Base__.Invariant_intf.inv
+-            val of_ivar : 'a Async_kernel__.Ivar0.t -> 'a t
+-            val create : ('a Async_kernel__.Ivar0.t -> unit) -> 'a t
+-            val peek : 'a t -> 'a option
+-            val value_exn : 'a t -> 'a
+-            val is_determined : 'a t -> bool
+-            val upon : 'a t -> ('a -> unit) -> unit
+-            module Handler = Deferred.Handler
+-            val add_handler :
+-              'a t ->
+-              ('a -> unit) ->
+-              Async_kernel__.Execution_context.t -> 'a Handler.t
+-            val remove_handler : 'a t -> 'a Handler.t -> unit
+-            val never : unit -> 'a Async_kernel__.Deferred0.t
+-            module M = Deferred.M
+-            val ( >>= ) :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              ('a -> 'b Async_kernel__.Types.Deferred.t) ->
+-              'b Async_kernel__.Types.Deferred.t
+-            val ( >>| ) :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              ('a -> 'b) -> 'b Async_kernel__.Types.Deferred.t
+-            module Monad_infix = Deferred.Monad_infix
+-            val bind :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              f:('a -> 'b Async_kernel__.Types.Deferred.t) ->
+-              'b Async_kernel__.Types.Deferred.t
+-            val map :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              f:('a -> 'b) -> 'b Async_kernel__.Types.Deferred.t
+-            val join :
+-              'a Async_kernel__.Types.Deferred.t
+-              Async_kernel__.Types.Deferred.t ->
+-              'a Async_kernel__.Types.Deferred.t
+-            val ignore_m :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              unit Async_kernel__.Types.Deferred.t
+-            val return : 'a -> 'a Async_kernel__.Deferred0.t
+-            module Let_syntax = Deferred.Let_syntax
+-            val unit : unit Async_kernel__.Types.Deferred.t
+-            val ignore :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              unit Async_kernel__.Types.Deferred.t
+-            val both : 'a t -> 'b t -> ('a * 'b) t
+-            module Infix = Deferred.Infix
+-            val don't_wait_for : unit t -> unit
+-            module Choice = Deferred.Choice
+-            type 'a choice = 'a Choice.t
+-            module Unregister = Deferred.Unregister
+-            val choice :
+-              'a Async_kernel__.Deferred0.t -> ('a -> 'b) -> 'b Choice.t
+-            val enabled :
+-              'a Choice.t Core_kernel.List.t ->
+-              (unit -> 'a Core_kernel.List.t) Async_kernel__.Deferred0.t
+-            val choose_result : 'a Choice.t list -> 'a
+-            val choose :
+-              'a Choice.t Core_kernel.List.t -> 'a Async_kernel__.Deferred0.t
+-            val any_f :
+-              'a Async_kernel__.Deferred0.t Core_kernel.List.t ->
+-              ('a -> 'b) -> 'b Async_kernel__.Deferred0.t
+-            val any :
+-              'a Async_kernel__.Deferred0.t Core_kernel.List.t ->
+-              'a Async_kernel__.Deferred0.t
+-            val any_unit :
+-              'a Async_kernel__.Deferred0.t Core_kernel.List.t ->
+-              unit Async_kernel__.Deferred0.t
+-            val for_ :
+-              int ->
+-              to_:int ->
+-              do_:(int -> unit Async_kernel__.Types.Deferred.t) ->
+-              unit Async_kernel__.Types.Deferred.t
+-            val repeat_until_finished :
+-              'a -> ('a -> [< `Finished of 'b | `Repeat of 'a ] t) -> 'b t
+-            val forever :
+-              'a -> ('a -> 'a Async_kernel__.Types.Deferred.t) -> unit
+-            type how = Async_kernel__.Monad_sequence.how
+-            val sexp_of_how : how -> Ppx_sexp_conv_lib.Sexp.t
+-            module type Monad_sequence =
+-              sig
+-                type 'a t
+-                val foldi :
+-                  'a t -> init:'b -> f:(int -> 'b -> 'a -> 'b t) -> 'b t
+-                val fold : 'a t -> init:'b -> f:('b -> 'a -> 'b t) -> 'b t
+-                val find : 'a t -> f:('a -> bool t) -> 'a option t
+-                val findi :
+-                  'a t -> f:(int -> 'a -> bool t) -> (int * 'a) option t
+-                val find_map : 'a t -> f:('a -> 'b option t) -> 'b option t
+-                val find_mapi :
+-                  'a t -> f:(int -> 'a -> 'b option t) -> 'b option t
+-                val exists : 'a t -> f:('a -> bool t) -> bool t
+-                val existsi : 'a t -> f:(int -> 'a -> bool t) -> bool t
+-                val for_all : 'a t -> f:('a -> bool t) -> bool t
+-                val for_alli : 'a t -> f:(int -> 'a -> bool t) -> bool t
+-                val all : 'a t t -> 'a t t
+-                val all_unit : unit t t -> unit t
+-                val init :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  int -> f:(int -> 'a t) -> 'a t t
+-                val iter :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> unit t) -> unit t
+-                val iteri :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> unit t) -> unit t
+-                val map :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> 'b t) -> 'b t t
+-                val mapi :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> 'b t) -> 'b t t
+-                val filter :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> bool t) -> 'a t t
+-                val filteri :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> bool t) -> 'a t t
+-                val filter_map :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> 'b option t) -> 'b t t
+-                val filter_mapi :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> 'b option t) -> 'b t t
+-                val concat_map :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:('a -> 'b t t) -> 'b t t
+-                val concat_mapi :
+-                  ?how:Async_kernel__.Monad_sequence.how ->
+-                  'a t -> f:(int -> 'a -> 'b t t) -> 'b t t
+-              end
+-            val fold : 'a list -> init:'b -> f:('b -> 'a -> 'b t) -> 'b t
+-            val seqmap :
+-              'a list ->
+-              f:('a -> 'b Async_kernel__.Types.Deferred.t) ->
+-              'b Core_kernel.List.t Async_kernel__.Types.Deferred.t
+-            val all :
+-              'a Async_kernel__.Types.Deferred.t list ->
+-              'a Core_kernel.List.t Async_kernel__.Types.Deferred.t
+-            val all_unit : unit t list -> unit t
+-            val all_ignore : unit t list -> unit t
+-            val ok :
+-              'a Async_kernel__.Types.Deferred.t ->
+-              ('a, 'b) Core_kernel._result Async_kernel__.Types.Deferred.t
+-          end
+-        is not included in
+-          (module Async_kernel__.Deferred1)
+[ERROR] The compilation of async_kernel failed at "jbuilder build -p
+        async_kernel -j 4".
+
+#=== ERROR while installing async_kernel.v0.11.1 ==============================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p async_kernel -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/async_kernel.v0.11.1
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/async_kernel.v0.11.1/async_kernel-1239.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/async_kernel.v0.11.1/async_kernel-1239.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/async_kernel.v0.11.1/async_kernel-1239.out
+### stdout ###
+# Error: Signature mismatch:
+# [...]
+#              'a Core_kernel.List.t Async_kernel__.Types.Deferred.t
+#            val all_unit : unit t list -> unit t
+#            val all_ignore : unit t list -> unit t
+#            val ok :
+#              'a Async_kernel__.Types.Deferred.t ->
+#              ('a, 'b) Core_kernel._result Async_kernel__.Types.Deferred.t
+#          end
+#        is not included in
+#          (module Async_kernel__.Deferred1)
+### stderr ###
+# Error: Signature mismatch:
+# [...]
+#              'a Core_kernel.List.t Async_kernel__.Types.Deferred.t
+#            val all_unit : unit t list -> unit t
+#            val all_ignore : unit t list -> unit t
+#            val ok :
+#              'a Async_kernel__.Types.Deferred.t ->
+#              ('a, 'b) Core_kernel._result Async_kernel__.Types.Deferred.t
+#          end
+#        is not included in
+#          (module Async_kernel__.Deferred1)
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install async_kernel v0.11.1
+No changes have been performed
+'opam install async_kernel.v0.11.1' failed.

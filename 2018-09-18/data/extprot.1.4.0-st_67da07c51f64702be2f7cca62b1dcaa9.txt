@@ -1,0 +1,219 @@
+The following actions will be performed:
+  - install extprot 1.4.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[extprot: http] Command started
+[extprot: http] Command started
+[extprot.1.4.0] https://github.com/mfp/extprot/archive/v1.4.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[extprot: omake] Command started
++ omake  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/extprot.1.4.0)
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- --- Checking if ocamldep understands -modules... (yes)
+- *** omake: finished reading OMakefiles (0.12 sec)
+- - build compiler msg_buffer.cmi
+- + ocamlfind ocamlc -package extlib,camlp4.macro -w +a-3-4-32-44-48 -warn-error +a-3-4-6-7-9-18-27..29-32..99 -bin-annot -syntax camlp4o -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/camlp4/Camlp4Parsers -g -g -c msg_buffer.ml
+- File "msg_buffer.ml", line 53, characters 3-9:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- --- Checking if ocamldep understands -modules... (yes)
+- *** omake: finished reading OMakefiles (0.12 sec)
+- - build compiler msg_buffer.cmi
+- + ocamlfind ocamlc -package extlib,camlp4.macro -w +a-3-4-32-44-48 -warn-error +a-3-4-6-7-9-18-27..29-32..99 -bin-annot -syntax camlp4o -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/camlp4/Camlp4Parsers -g -g -c msg_buffer.ml
+- File "msg_buffer.ml", line 53, characters 3-9:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- *** omake: 127/218 targets are up to date
+- *** omake: failed (1.01 sec, 31/31 scans, 17/37 rules, 91/130 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    compiler/msg_buffer.cmi
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.cmo
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.cmx
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.o
+-       depends on: compiler/msg_buffer.ml
+- *** omake: 127/218 targets are up to date
+- *** omake: failed (1.01 sec, 31/31 scans, 17/37 rules, 91/130 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    compiler/msg_buffer.cmi
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.cmo
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.cmx
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.o
+-       depends on: compiler/msg_buffer.ml
+[ERROR] The compilation of extprot failed at "omake".
+[extprot: ocamlfind remove] Command started
++ ocamlfind "remove" "extprot" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/extprot.1.4.0)
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- --- Checking if ocamldep understands -modules... (yes)
+- *** omake: finished reading OMakefiles (0.12 sec)
+- - build compiler msg_buffer.cmi
+- + ocamlfind ocamlc -package extlib,camlp4.macro -w +a-3-4-32-44-48 -warn-error +a-3-4-6-7-9-18-27..29-32..99 -bin-annot -syntax camlp4o -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/camlp4/Camlp4Parsers -g -g -c msg_buffer.ml
+- File "msg_buffer.ml", line 53, characters 3-9:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- *** omake: 127/218 targets are up to date
+- *** omake: failed (1.01 sec, 31/31 scans, 17/37 rules, 91/130 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    compiler/msg_buffer.cmi
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.cmo
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.cmx
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.o
+-       depends on: compiler/msg_buffer.ml
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extprot/META
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- --- Checking if ocamldep understands -modules... (yes)
+- *** omake: finished reading OMakefiles (0.12 sec)
+- - build compiler msg_buffer.cmi
+- + ocamlfind ocamlc -package extlib,camlp4.macro -w +a-3-4-32-44-48 -warn-error +a-3-4-6-7-9-18-27..29-32..99 -bin-annot -syntax camlp4o -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/camlp4/Camlp4Parsers -g -g -c msg_buffer.ml
+- File "msg_buffer.ml", line 53, characters 3-9:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- *** omake: 127/218 targets are up to date
+- *** omake: failed (1.01 sec, 31/31 scans, 17/37 rules, 91/130 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    compiler/msg_buffer.cmi
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.cmo
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.cmx
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.o
+-       depends on: compiler/msg_buffer.ml
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extprot/META
+[extprot: rm] Command started
++ rm "-f" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/extprotc" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/extprotc.exe" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/extprot.1.4.0)
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- --- Checking if ocamldep understands -modules... (yes)
+- *** omake: finished reading OMakefiles (0.12 sec)
+- - build compiler msg_buffer.cmi
+- + ocamlfind ocamlc -package extlib,camlp4.macro -w +a-3-4-32-44-48 -warn-error +a-3-4-6-7-9-18-27..29-32..99 -bin-annot -syntax camlp4o -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/camlp4/Camlp4Parsers -g -g -c msg_buffer.ml
+- File "msg_buffer.ml", line 53, characters 3-9:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- *** omake: 127/218 targets are up to date
+- *** omake: failed (1.01 sec, 31/31 scans, 17/37 rules, 91/130 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    compiler/msg_buffer.cmi
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.cmo
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.cmx
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.o
+-       depends on: compiler/msg_buffer.ml
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extprot/META
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- --- Checking if ocamldep understands -modules... (yes)
+- *** omake: finished reading OMakefiles (0.12 sec)
+- - build compiler msg_buffer.cmi
+- + ocamlfind ocamlc -package extlib,camlp4.macro -w +a-3-4-32-44-48 -warn-error +a-3-4-6-7-9-18-27..29-32..99 -bin-annot -syntax camlp4o -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/camlp4/Camlp4Parsers -g -g -c msg_buffer.ml
+- File "msg_buffer.ml", line 53, characters 3-9:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- *** omake: 127/218 targets are up to date
+- *** omake: failed (1.01 sec, 31/31 scans, 17/37 rules, 91/130 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    compiler/msg_buffer.cmi
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.cmo
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.cmx
+-       depends on: compiler/msg_buffer.ml
+-    compiler/msg_buffer.o
+-       depends on: compiler/msg_buffer.ml
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extprot/META
+
+#=== ERROR while installing extprot.1.4.0 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              omake
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/extprot.1.4.0
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/extprot.1.4.0/extprot-13289.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/extprot.1.4.0/extprot-13289.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/extprot.1.4.0/extprot-13289.out
+### stdout ###
+# [...]
+# *** omake: failed (1.01 sec, 31/31 scans, 17/37 rules, 91/130 digests)
+# *** omake: targets were not rebuilt because of errors:
+#    compiler/msg_buffer.cmi
+#       depends on: compiler/msg_buffer.ml
+#    compiler/msg_buffer.cmo
+#       depends on: compiler/msg_buffer.ml
+#    compiler/msg_buffer.cmx
+#       depends on: compiler/msg_buffer.ml
+#    compiler/msg_buffer.o
+#       depends on: compiler/msg_buffer.ml
+### stderr ###
+# [...]
+# *** omake: failed (1.01 sec, 31/31 scans, 17/37 rules, 91/130 digests)
+# *** omake: targets were not rebuilt because of errors:
+#    compiler/msg_buffer.cmi
+#       depends on: compiler/msg_buffer.ml
+#    compiler/msg_buffer.cmo
+#       depends on: compiler/msg_buffer.ml
+#    compiler/msg_buffer.cmx
+#       depends on: compiler/msg_buffer.ml
+#    compiler/msg_buffer.o
+#       depends on: compiler/msg_buffer.ml
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install extprot 1.4.0
+No changes have been performed
+'opam install extprot.1.4.0' failed.

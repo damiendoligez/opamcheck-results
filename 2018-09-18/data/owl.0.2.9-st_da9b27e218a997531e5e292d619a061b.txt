@@ -1,0 +1,84 @@
+The following actions will be performed:
+  - install owl 0.2.9
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owl: http] Command started
+[owl: http] Command started
+[owl.0.2.9] https://github.com/ryanrhymes/owl/archive/0.2.9.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owl: oasis setup] Command started
++ oasis "setup" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.2.9)
+[owl: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051" "--bindir" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.2.9)
+- ocamlfind: Package `ocaml-compiler-libs' not found
+- W: Field 'pkg_ocaml_compiler_libs' is not set: Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind' query -format %d ocaml-compiler-libs > '/tmp/oasis-751003.txt'' terminated with error code 2
+- ocamlfind: Package `ocaml-compiler-libs.toplevel' not found
+- W: Field 'pkg_ocaml_compiler_libs_toplevel' is not set: Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind' query -format %d ocaml-compiler-libs.toplevel > '/tmp/oasis-89c7f7.txt'' terminated with error code 2
+- E: Cannot find findlib package ocaml-compiler-libs
+- E: Cannot find findlib package ocaml-compiler-libs.toplevel
+- E: Failure("2 configuration errors")
+- ocamlfind: Package `ocaml-compiler-libs' not found
+- W: Field 'pkg_ocaml_compiler_libs' is not set: Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind' query -format %d ocaml-compiler-libs > '/tmp/oasis-751003.txt'' terminated with error code 2
+- ocamlfind: Package `ocaml-compiler-libs.toplevel' not found
+- W: Field 'pkg_ocaml_compiler_libs_toplevel' is not set: Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind' query -format %d ocaml-compiler-libs.toplevel > '/tmp/oasis-89c7f7.txt'' terminated with error code 2
+- E: Cannot find findlib package ocaml-compiler-libs
+- E: Cannot find findlib package ocaml-compiler-libs.toplevel
+- E: Failure("2 configuration errors")
+[ERROR] The compilation of owl failed at "ocaml setup.ml -configure --prefix
+        /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+        --bindir
+        /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin".
+[owl: ocaml] Command started
++ ocaml "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/etc/owl/_oasis_remove_.ml" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/etc/owl" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.2.9)
+- ocamlfind: Package `ocaml-compiler-libs' not found
+- W: Field 'pkg_ocaml_compiler_libs' is not set: Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind' query -format %d ocaml-compiler-libs > '/tmp/oasis-751003.txt'' terminated with error code 2
+- ocamlfind: Package `ocaml-compiler-libs.toplevel' not found
+- W: Field 'pkg_ocaml_compiler_libs_toplevel' is not set: Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind' query -format %d ocaml-compiler-libs.toplevel > '/tmp/oasis-89c7f7.txt'' terminated with error code 2
+- E: Cannot find findlib package ocaml-compiler-libs
+- E: Cannot find findlib package ocaml-compiler-libs.toplevel
+- E: Failure("2 configuration errors")
+- Cannot find file /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/etc/owl/_oasis_remove_.ml.
+- ocamlfind: Package `ocaml-compiler-libs' not found
+- W: Field 'pkg_ocaml_compiler_libs' is not set: Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind' query -format %d ocaml-compiler-libs > '/tmp/oasis-751003.txt'' terminated with error code 2
+- ocamlfind: Package `ocaml-compiler-libs.toplevel' not found
+- W: Field 'pkg_ocaml_compiler_libs_toplevel' is not set: Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind' query -format %d ocaml-compiler-libs.toplevel > '/tmp/oasis-89c7f7.txt'' terminated with error code 2
+- E: Cannot find findlib package ocaml-compiler-libs
+- E: Cannot find findlib package ocaml-compiler-libs.toplevel
+- E: Failure("2 configuration errors")
+- Cannot find file /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/etc/owl/_oasis_remove_.ml.
+
+#=== ERROR while installing owl.0.2.9 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -configure --prefix /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051 --bindir /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.2.9
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.2.9/owl-29183.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.2.9/owl-29183.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.2.9/owl-29183.out
+### stdout ###
+# ocamlfind: Package `ocaml-compiler-libs' not found
+# W: Field 'pkg_ocaml_compiler_libs' is not set: Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind' query -format %d ocaml-compiler-libs > '/tmp/oasis-751003.txt'' terminated with error code 2
+# ocamlfind: Package `ocaml-compiler-libs.toplevel' not found
+# W: Field 'pkg_ocaml_compiler_libs_toplevel' is not set: Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind' query -format %d ocaml-compiler-libs.toplevel > '/tmp/oasis-89c7f7.txt'' terminated with error code 2
+# E: Cannot find findlib package ocaml-compiler-libs
+# E: Cannot find findlib package ocaml-compiler-libs.toplevel
+# E: Failure("2 configuration errors")
+### stderr ###
+# ocamlfind: Package `ocaml-compiler-libs' not found
+# W: Field 'pkg_ocaml_compiler_libs' is not set: Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind' query -format %d ocaml-compiler-libs > '/tmp/oasis-751003.txt'' terminated with error code 2
+# ocamlfind: Package `ocaml-compiler-libs.toplevel' not found
+# W: Field 'pkg_ocaml_compiler_libs_toplevel' is not set: Command ''/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind' query -format %d ocaml-compiler-libs.toplevel > '/tmp/oasis-89c7f7.txt'' terminated with error code 2
+# E: Cannot find findlib package ocaml-compiler-libs
+# E: Cannot find findlib package ocaml-compiler-libs.toplevel
+# E: Failure("2 configuration errors")
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install owl 0.2.9
+No changes have been performed
+'opam install owl.0.2.9' failed.

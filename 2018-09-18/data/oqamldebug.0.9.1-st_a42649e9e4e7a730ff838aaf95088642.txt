@@ -1,0 +1,94 @@
+The following actions will be performed:
+  - install oqamldebug 0.9.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[oqamldebug: http] Command started
+[oqamldebug: http] Command started
+[oqamldebug.0.9.1] http://oqamldebug.forge.ocamlcore.org/oqamldebug-0.9.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[oqamldebug: qmake oqamldebug.pro] Command started
++ qmake "CONFIG-=app_bundle" "CONFIG+=release" "PREFIX_BIN=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/" "CONFIG-=debug" "oqamldebug.pro" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/oqamldebug.0.9.1)
+[oqamldebug: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/oqamldebug.0.9.1)
+- g++ -c -m64 -pipe -O2 -Wall -W -D_REENTRANT -fPIC -DVERSION=\"0.9.1\" -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -o main.o main.cpp
+- main.cpp:1:24: fatal error: QApplication: No such file or directory
+- compilation terminated.
+- Makefile:531: recipe for target 'main.o' failed
+- make: *** [main.o] Error 1
+- g++ -c -m64 -pipe -O2 -Wall -W -D_REENTRANT -fPIC -DVERSION=\"0.9.1\" -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -o main.o main.cpp
+- main.cpp:1:24: fatal error: QApplication: No such file or directory
+- compilation terminated.
+- Makefile:531: recipe for target 'main.o' failed
+- make: *** [main.o] Error 1
+[ERROR] The compilation of oqamldebug failed at "make".
+[oqamldebug: qmake oqamldebug.pro] Command started
++ qmake "CONFIG-=app_bundle" "CONFIG+=release" "PREFIX_BIN=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/" "CONFIG-=debug" "oqamldebug.pro" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/oqamldebug.0.9.1)
+- g++ -c -m64 -pipe -O2 -Wall -W -D_REENTRANT -fPIC -DVERSION=\"0.9.1\" -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -o main.o main.cpp
+- main.cpp:1:24: fatal error: QApplication: No such file or directory
+- compilation terminated.
+- Makefile:531: recipe for target 'main.o' failed
+- make: *** [main.o] Error 1
+- g++ -c -m64 -pipe -O2 -Wall -W -D_REENTRANT -fPIC -DVERSION=\"0.9.1\" -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -o main.o main.cpp
+- main.cpp:1:24: fatal error: QApplication: No such file or directory
+- compilation terminated.
+- Makefile:531: recipe for target 'main.o' failed
+- make: *** [main.o] Error 1
+[oqamldebug: make uninstall] Command started
++ make "uninstall" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/oqamldebug.0.9.1)
+- g++ -c -m64 -pipe -O2 -Wall -W -D_REENTRANT -fPIC -DVERSION=\"0.9.1\" -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -o main.o main.cpp
+- main.cpp:1:24: fatal error: QApplication: No such file or directory
+- compilation terminated.
+- Makefile:531: recipe for target 'main.o' failed
+- make: *** [main.o] Error 1
+- rm -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/oqamldebug
+- rmdir /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ 
+- rmdir: failed to remove '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/': Directory not empty
+- Makefile:682: recipe for target 'uninstall_target' failed
+- make: [uninstall_target] Error 1 (ignored)
+- g++ -c -m64 -pipe -O2 -Wall -W -D_REENTRANT -fPIC -DVERSION=\"0.9.1\" -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -o main.o main.cpp
+- main.cpp:1:24: fatal error: QApplication: No such file or directory
+- compilation terminated.
+- Makefile:531: recipe for target 'main.o' failed
+- make: *** [main.o] Error 1
+- rm -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/oqamldebug
+- rmdir /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ 
+- rmdir: failed to remove '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/': Directory not empty
+- Makefile:682: recipe for target 'uninstall_target' failed
+- make: [uninstall_target] Error 1 (ignored)
+
+#=== ERROR while installing oqamldebug.0.9.1 ==================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/oqamldebug.0.9.1
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/oqamldebug.0.9.1/oqamldebug-20049.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/oqamldebug.0.9.1/oqamldebug-20049.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/oqamldebug.0.9.1/oqamldebug-20049.out
+### stdout ###
+# g++ -c -m64 -pipe -O2 -Wall -W -D_REENTRANT -fPIC -DVERSION=\"0.9.1\" -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -o main.o main.cpp
+# main.cpp:1:24: fatal error: QApplication: No such file or directory
+# compilation terminated.
+# Makefile:531: recipe for target 'main.o' failed
+# make: *** [main.o] Error 1
+### stderr ###
+# g++ -c -m64 -pipe -O2 -Wall -W -D_REENTRANT -fPIC -DVERSION=\"0.9.1\" -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -o main.o main.cpp
+# main.cpp:1:24: fatal error: QApplication: No such file or directory
+# compilation terminated.
+# Makefile:531: recipe for target 'main.o' failed
+# make: *** [main.o] Error 1
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install oqamldebug 0.9.1
+No changes have been performed
+
+=-=- oqamldebug.0.9.1 troobleshooting -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package relies on external (system) dependencies that may be missing.
+   `opam depext oqamldebug.0.9.1' may help you find the correct installation
+   for your system.
+'opam install oqamldebug.0.9.1' failed.

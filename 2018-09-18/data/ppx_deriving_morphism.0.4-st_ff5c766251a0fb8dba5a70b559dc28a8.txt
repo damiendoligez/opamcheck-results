@@ -1,0 +1,80 @@
+The following actions will be performed:
+  - install ppx_deriving_morphism 0.4
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ppx_deriving_morphism: http] Command started
+[ppx_deriving_morphism: http] Command started
+[ppx_deriving_morphism.0.4] https://github.com/choeger/ppx_deriving_morphism/archive/v0.4.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ppx_deriving_morphism: ocaml] Command started
++ ocaml "pkg/build.ml" "native=true" "native-dynlink=true" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_deriving_morphism.0.4)
+- ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package cppo_ocamlbuild myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- cppo -V OCAML:4.07.1+dev0-2018-07-10 -o src/ppx_deriving_folder.ml src/ppx_deriving_folder.cppo.ml
+- ocamlfind ocamldep -package ppx_tools.metaquot -package ppx_deriving.api -modules src/ppx_deriving_folder.ml > src/ppx_deriving_folder.ml.depends
+- ocamlfind ocamlc -c -bin-annot -safe-string -package ppx_tools.metaquot -package ppx_deriving.api -w @5@8@10@11@12@14@23@24@26@29@40 -I src -o src/ppx_deriving_folder.cmo src/ppx_deriving_folder.ml
+- + ocamlfind ocamlc -c -bin-annot -safe-string -package ppx_tools.metaquot -package ppx_deriving.api -w @5@8@10@11@12@14@23@24@26@29@40 -I src -o src/ppx_deriving_folder.cmo src/ppx_deriving_folder.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml, /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs
+- File "src/ppx_deriving_folder.cppo.ml", line 347, characters 23-27:
+- Error: This expression has type string list
+-        but an expression was expected of type Ast_helper.str list
+-        Type string is not compatible with type
+-          Ast_helper.str = string Location.loc 
+- Command exited with code 2.
+- ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package cppo_ocamlbuild myocamlbuild.ml /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- cppo -V OCAML:4.07.1+dev0-2018-07-10 -o src/ppx_deriving_folder.ml src/ppx_deriving_folder.cppo.ml
+- ocamlfind ocamldep -package ppx_tools.metaquot -package ppx_deriving.api -modules src/ppx_deriving_folder.ml > src/ppx_deriving_folder.ml.depends
+- ocamlfind ocamlc -c -bin-annot -safe-string -package ppx_tools.metaquot -package ppx_deriving.api -w @5@8@10@11@12@14@23@24@26@29@40 -I src -o src/ppx_deriving_folder.cmo src/ppx_deriving_folder.ml
+- + ocamlfind ocamlc -c -bin-annot -safe-string -package ppx_tools.metaquot -package ppx_deriving.api -w @5@8@10@11@12@14@23@24@26@29@40 -I src -o src/ppx_deriving_folder.cmo src/ppx_deriving_folder.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml, /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs
+- File "src/ppx_deriving_folder.cppo.ml", line 347, characters 23-27:
+- Error: This expression has type string list
+-        but an expression was expected of type Ast_helper.str list
+-        Type string is not compatible with type
+-          Ast_helper.str = string Location.loc 
+- Command exited with code 2.
+[ERROR] The compilation of ppx_deriving_morphism failed at "ocaml pkg/build.ml
+        native=true native-dynlink=true".
+
+#=== ERROR while installing ppx_deriving_morphism.0.4 =========================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml pkg/build.ml native=true native-dynlink=true
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_deriving_morphism.0.4
+# compiler             4.07.0+pr2051
+# exit-code            10
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_deriving_morphism.0.4/ppx_deriving_morphism-27877.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_deriving_morphism.0.4/ppx_deriving_morphism-27877.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_deriving_morphism.0.4/ppx_deriving_morphism-27877.out
+### stdout ###
+# [...]
+# ocamlfind ocamldep -package ppx_tools.metaquot -package ppx_deriving.api -modules src/ppx_deriving_folder.ml > src/ppx_deriving_folder.ml.depends
+# ocamlfind ocamlc -c -bin-annot -safe-string -package ppx_tools.metaquot -package ppx_deriving.api -w @5@8@10@11@12@14@23@24@26@29@40 -I src -o src/ppx_deriving_folder.cmo src/ppx_deriving_folder.ml
+# + ocamlfind ocamlc -c -bin-annot -safe-string -package ppx_tools.metaquot -package ppx_deriving.api -w @5@8@10@11@12@14@23@24@26@29@40 -I src -o src/ppx_deriving_folder.cmo src/ppx_deriving_folder.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml, /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs
+# File "src/ppx_deriving_folder.cppo.ml", line 347, characters 23-27:
+# Error: This expression has type string list
+#        but an expression was expected of type Ast_helper.str list
+#        Type string is not compatible with type
+#          Ast_helper.str = string Location.loc 
+# Command exited with code 2.
+### stderr ###
+# [...]
+# ocamlfind ocamldep -package ppx_tools.metaquot -package ppx_deriving.api -modules src/ppx_deriving_folder.ml > src/ppx_deriving_folder.ml.depends
+# ocamlfind ocamlc -c -bin-annot -safe-string -package ppx_tools.metaquot -package ppx_deriving.api -w @5@8@10@11@12@14@23@24@26@29@40 -I src -o src/ppx_deriving_folder.cmo src/ppx_deriving_folder.ml
+# + ocamlfind ocamlc -c -bin-annot -safe-string -package ppx_tools.metaquot -package ppx_deriving.api -w @5@8@10@11@12@14@23@24@26@29@40 -I src -o src/ppx_deriving_folder.cmo src/ppx_deriving_folder.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml, /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml/compiler-libs
+# File "src/ppx_deriving_folder.cppo.ml", line 347, characters 23-27:
+# Error: This expression has type string list
+#        but an expression was expected of type Ast_helper.str list
+#        Type string is not compatible with type
+#          Ast_helper.str = string Location.loc 
+# Command exited with code 2.
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ppx_deriving_morphism 0.4
+No changes have been performed
+'opam install ppx_deriving_morphism.0.4' failed.

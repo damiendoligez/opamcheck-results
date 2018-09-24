@@ -1,0 +1,33 @@
+The following actions will be performed:
+  - install base v0.11.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[base: http] Command started
+[base: http] Command started
+[base.v0.11.1] https://github.com/janestreet/base/releases/download/v0.11.1/base-v0.11.1.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[base: jbuilder build] Command started
++ jbuilder "build" "-p" "base" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/base.v0.11.1)
+
+#=== ERROR while installing base.v0.11.1 ======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              install -m 0755 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/base.v0.11.1/_build/install/default/lib/stublibs/dllbase_stubs.so /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stublibs/dllbase_stubs.so
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/base.v0.11.1
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/log/log-17178-1503c4.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/log/log-17178-1503c4.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/log/log-17178-1503c4.out
+### stdout ###
+# install: failed to access '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stublibs/dllbase_stubs.so': Not a directory
+### stderr ###
+# install: failed to access '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/stublibs/dllbase_stubs.so': Not a directory
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install base v0.11.1
+No changes have been performed
+'opam install base.v0.11.1' failed.

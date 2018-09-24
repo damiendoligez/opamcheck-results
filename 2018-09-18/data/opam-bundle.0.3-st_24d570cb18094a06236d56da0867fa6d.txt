@@ -1,0 +1,57 @@
+The following actions will be performed:
+  - install opam-bundle 0.3
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[opam-bundle: http] Command started
+[opam-bundle: http] Command started
+[opam-bundle.0.3] https://github.com/AltGr/opam-bundle/archive/0.3.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[opam-bundle: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opam-bundle.0.3)
+- ocaml crunch.ml shell/common.sh shell/bootstrap.sh shell/configure.sh shell/compile.sh shell/self_extract.sh > src/opamBundleScripts.ml
+- ocamlfind ocamlopt -package cmdliner,opam-repository,opam-client -linkpkg -w A-4-44 -I src src/opamBundleScripts.ml src/opamBundleMain.ml -o opam-bundle
+- File "src/opamBundleMain.ml", line 121, characters 12-33:
+- Error: Unbound module OpamSysPoll
+- Makefile:4: recipe for target 'opam-bundle' failed
+- make: *** [opam-bundle] Error 2
+- ocaml crunch.ml shell/common.sh shell/bootstrap.sh shell/configure.sh shell/compile.sh shell/self_extract.sh > src/opamBundleScripts.ml
+- ocamlfind ocamlopt -package cmdliner,opam-repository,opam-client -linkpkg -w A-4-44 -I src src/opamBundleScripts.ml src/opamBundleMain.ml -o opam-bundle
+- File "src/opamBundleMain.ml", line 121, characters 12-33:
+- Error: Unbound module OpamSysPoll
+- Makefile:4: recipe for target 'opam-bundle' failed
+- make: *** [opam-bundle] Error 2
+[ERROR] The compilation of opam-bundle failed at "make".
+
+#=== ERROR while installing opam-bundle.0.3 ===================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opam-bundle.0.3
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opam-bundle.0.3/opam-bundle-24549.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opam-bundle.0.3/opam-bundle-24549.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/opam-bundle.0.3/opam-bundle-24549.out
+### stdout ###
+# ocaml crunch.ml shell/common.sh shell/bootstrap.sh shell/configure.sh shell/compile.sh shell/self_extract.sh > src/opamBundleScripts.ml
+# ocamlfind ocamlopt -package cmdliner,opam-repository,opam-client -linkpkg -w A-4-44 -I src src/opamBundleScripts.ml src/opamBundleMain.ml -o opam-bundle
+# File "src/opamBundleMain.ml", line 121, characters 12-33:
+# Error: Unbound module OpamSysPoll
+# Makefile:4: recipe for target 'opam-bundle' failed
+# make: *** [opam-bundle] Error 2
+### stderr ###
+# ocaml crunch.ml shell/common.sh shell/bootstrap.sh shell/configure.sh shell/compile.sh shell/self_extract.sh > src/opamBundleScripts.ml
+# ocamlfind ocamlopt -package cmdliner,opam-repository,opam-client -linkpkg -w A-4-44 -I src src/opamBundleScripts.ml src/opamBundleMain.ml -o opam-bundle
+# File "src/opamBundleMain.ml", line 121, characters 12-33:
+# Error: Unbound module OpamSysPoll
+# Makefile:4: recipe for target 'opam-bundle' failed
+# make: *** [opam-bundle] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install opam-bundle 0.3
+No changes have been performed
+'opam install opam-bundle.0.3' failed.

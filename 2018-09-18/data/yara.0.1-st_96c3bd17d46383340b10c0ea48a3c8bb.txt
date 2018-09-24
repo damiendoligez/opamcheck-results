@@ -1,0 +1,62 @@
+The following actions will be performed:
+  - install yara 0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[yara: http] Command started
+[yara: http] Command started
+[yara.0.1] https://github.com/XVilka/yara-ocaml/archive/0.1.zip downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[yara: jbuilder build] Command started
++ jbuilder "build" "-p" "yara" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/yara.0.1)
+-     ocamlopt yara.cmxs (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -shared -linkall -I . -o yara.cmxs yara.cmxa)
+- /usr/bin/ld: cannot find -lyara
+- collect2: error: ld returned 1 exit status
+- File "caml_startup", line 1:
+- Error: Error during linking
+-     ocamlopt yara.cmxs (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -shared -linkall -I . -o yara.cmxs yara.cmxa)
+- /usr/bin/ld: cannot find -lyara
+- collect2: error: ld returned 1 exit status
+- File "caml_startup", line 1:
+- Error: Error during linking
+[ERROR] The compilation of yara failed at "jbuilder build -p yara -j 4".
+
+#=== ERROR while installing yara.0.1 ==========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p yara -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/yara.0.1
+# compiler             4.07.0+24fac73
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/yara.0.1/yara-5683.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/yara.0.1/yara-5683.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/yara.0.1/yara-5683.out
+### stdout ###
+#     ocamlopt yara.cmxs (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -shared -linkall -I . -o yara.cmxs yara.cmxa)
+# /usr/bin/ld: cannot find -lyara
+# collect2: error: ld returned 1 exit status
+# File "caml_startup", line 1:
+# Error: Error during linking
+### stderr ###
+#     ocamlopt yara.cmxs (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -shared -linkall -I . -o yara.cmxs yara.cmxa)
+# /usr/bin/ld: cannot find -lyara
+# collect2: error: ld returned 1 exit status
+# File "caml_startup", line 1:
+# Error: Error during linking
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install yara 0.1
+No changes have been performed
+
+=-=- yara.0.1 troobleshooting -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package relies on external (system) dependencies that may be missing.
+   `opam depext yara.0.1' may help you find the correct installation for your
+   system.
+'opam install yara.0.1' failed.

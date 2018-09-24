@@ -1,0 +1,66 @@
+The following actions will be performed:
+  - install dokeysto_lz4 3.0.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[dokeysto_lz4: http] Command started
+[dokeysto_lz4: http] Command started
+[dokeysto_lz4.3.0.0] https://github.com/UnixJunkie/dokeysto/archive/v3.0.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[dokeysto_lz4: jbuilder build] Command started
++ jbuilder "build" "-p" "dokeysto_lz4" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dokeysto_lz4.3.0.0)
+-       ocamlc src/.dokeysto_lz4.objs/dokeysto_lz4__Db_lz4.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.dokeysto_lz4.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dokeysto -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extunix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lz4 -no-alias-deps -open Dokeysto_lz4 -o src/.dokeysto_lz4.objs/dokeysto_lz4__Db_lz4.cmo -c -impl src/db_lz4.ml)
+- File "src/db_lz4.ml", line 43, characters 4-12:
+- Error: Unbound value RO.dummy
+-     ocamlopt src/.dokeysto_lz4.objs/dokeysto_lz4__Db_lz4.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I src/.dokeysto_lz4.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dokeysto -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extunix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lz4 -no-alias-deps -open Dokeysto_lz4 -o src/.dokeysto_lz4.objs/dokeysto_lz4__Db_lz4.cmx -c -impl src/db_lz4.ml)
+- File "src/db_lz4.ml", line 43, characters 4-12:
+- Error: Unbound value RO.dummy
+-       ocamlc src/.dokeysto_lz4.objs/dokeysto_lz4__Db_lz4.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.dokeysto_lz4.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dokeysto -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extunix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lz4 -no-alias-deps -open Dokeysto_lz4 -o src/.dokeysto_lz4.objs/dokeysto_lz4__Db_lz4.cmo -c -impl src/db_lz4.ml)
+- File "src/db_lz4.ml", line 43, characters 4-12:
+- Error: Unbound value RO.dummy
+-     ocamlopt src/.dokeysto_lz4.objs/dokeysto_lz4__Db_lz4.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I src/.dokeysto_lz4.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dokeysto -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extunix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lz4 -no-alias-deps -open Dokeysto_lz4 -o src/.dokeysto_lz4.objs/dokeysto_lz4__Db_lz4.cmx -c -impl src/db_lz4.ml)
+- File "src/db_lz4.ml", line 43, characters 4-12:
+- Error: Unbound value RO.dummy
+[ERROR] The compilation of dokeysto_lz4 failed at "jbuilder build -p
+        dokeysto_lz4 -j 4".
+
+#=== ERROR while installing dokeysto_lz4.3.0.0 ================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p dokeysto_lz4 -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dokeysto_lz4.3.0.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dokeysto_lz4.3.0.0/dokeysto_lz4-14792.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dokeysto_lz4.3.0.0/dokeysto_lz4-14792.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/dokeysto_lz4.3.0.0/dokeysto_lz4-14792.out
+### stdout ###
+#       ocamlc src/.dokeysto_lz4.objs/dokeysto_lz4__Db_lz4.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.dokeysto_lz4.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dokeysto -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extunix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lz4 -no-alias-deps -open Dokeysto_lz4 -o src/.dokeysto_lz4.objs/dokeysto_lz4__Db_lz4.cmo -c -impl src/db_lz4.ml)
+# File "src/db_lz4.ml", line 43, characters 4-12:
+# Error: Unbound value RO.dummy
+#     ocamlopt src/.dokeysto_lz4.objs/dokeysto_lz4__Db_lz4.{cmx,o} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I src/.dokeysto_lz4.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dokeysto -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extunix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lz4 -no-alias-deps -open Dokeysto_lz4 -o src/.dokeysto_lz4.objs/dokeysto_lz4__Db_lz4.cmx -c -impl src/db_lz4.ml)
+# File "src/db_lz4.ml", line 43, characters 4-12:
+# Error: Unbound value RO.dummy
+### stderr ###
+#       ocamlc src/.dokeysto_lz4.objs/dokeysto_lz4__Db_lz4.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.dokeysto_lz4.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dokeysto -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extunix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lz4 -no-alias-deps -open Dokeysto_lz4 -o src/.dokeysto_lz4.objs/dokeysto_lz4__Db_lz4.cmo -c -impl src/db_lz4.ml)
+# File "src/db_lz4.ml", line 43, characters 4-12:
+# Error: Unbound value RO.dummy
+#     ocamlopt src/.dokeysto_lz4.objs/dokeysto_lz4__Db_lz4.{cmx,o} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -g -I src/.dokeysto_lz4.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/dokeysto -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/extunix -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lz4 -no-alias-deps -open Dokeysto_lz4 -o src/.dokeysto_lz4.objs/dokeysto_lz4__Db_lz4.cmx -c -impl src/db_lz4.ml)
+# File "src/db_lz4.ml", line 43, characters 4-12:
+# Error: Unbound value RO.dummy
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install dokeysto_lz4 3.0.0
+No changes have been performed
+'opam install dokeysto_lz4.3.0.0' failed.

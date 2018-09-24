@@ -1,0 +1,215 @@
+The following actions will be performed:
+  - install owl 0.4.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owl: http] Command started
+[owl: http] Command started
+[owl.0.4.0] https://github.com/owlbarn/owl/releases/download/0.4.0/owl-0.4.0.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[owl: dune build] Command started
++ dune "build" "-p" "owl" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.4.0)
+-       ocamlc src/owl/.owl.objs/owl_nlp_utils.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_nlp_utils.cmo -c -impl src/owl/owl_nlp_utils.ml)
+- File "src/owl/nlp/owl_nlp_utils.ml", line 93, characters 26-48:
+- Error: Unbound module Owl_io
+- Hint: Did you mean Owl_log?
+-       ocamlc src/owl/.owl.objs/owl_nlp_utils.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_nlp_utils.cmo -c -impl src/owl/owl_nlp_utils.ml)
+- File "src/owl/nlp/owl_nlp_utils.ml", line 93, characters 26-48:
+- Error: Unbound module Owl_io
+- Hint: Did you mean Owl_log?
+-       ocamlc src/owl/.owl.objs/owl_regression_generic_sig.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_regression_generic_sig.cmo -c -impl src/owl/owl_regression_generic_sig.ml)
+- File "src/owl/optimise/owl_regression_generic_sig.ml", line 10, characters 7-24:
+- Error: Unbound module Optimise.Algodiff
+-       ocamlc src/owl/.owl.objs/owl_stats_dist.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_stats_dist.cmo -c -impl src/owl/owl_stats_dist.ml)
+- File "src/owl/stats/owl_stats_dist.ml", line 375, characters 69-76:
+- Error: Unbound type constructor owl_arr
+-       ocamlc src/owl/.owl.objs/owl_sparse_common.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_common.cmo -c -impl src/owl/owl_sparse_common.ml)
+- File "src/owl/sparse/owl_sparse_common.ml", line 272, characters 37-56:
+- Error: Unbound value Eigen.Sparse.S.gemm
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_c.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_c.cmi -c -intf src/owl/owl_dense_ndarray_c.mli)
+- File "src/owl/dense/owl_dense_ndarray_c.mli", line 19, characters 13-19:
+- Error: Unbound type constructor number
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_d.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_d.cmi -c -intf src/owl/owl_dense_ndarray_d.mli)
+- File "src/owl/dense/owl_dense_ndarray_d.mli", line 17, characters 13-19:
+- Error: Unbound type constructor number
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_s.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_s.cmi -c -intf src/owl/owl_dense_ndarray_s.mli)
+- File "src/owl/dense/owl_dense_ndarray_s.mli", line 17, characters 13-19:
+- Error: Unbound type constructor number
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_z.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_z.cmi -c -intf src/owl/owl_dense_ndarray_z.mli)
+- File "src/owl/dense/owl_dense_ndarray_z.mli", line 19, characters 13-19:
+- Error: Unbound type constructor number
+-     ocamlopt src/owl/.owl.objs/owl_maths.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -safe-string -g -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_maths.cmx -c -impl src/owl/owl_maths.ml)
+- File "src/owl/maths/owl_maths.ml", line 305, characters 17-42:
+- Error: Unbound value Owl_base_maths.is_simplex
+-     ocamlopt src/owl/.owl.objs/owl_sparse_dok_matrix.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -safe-string -g -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_dok_matrix.cmx -c -impl src/owl/owl_sparse_dok_matrix.ml)
+- File "src/owl/sparse/owl_sparse_dok_matrix.ml", line 79, characters 15-37:
+- Error: Unbound module Owl_io
+-       ocamlc src/owl/.owl.objs/owl_stats.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_stats.cmi -c -intf src/owl/owl_stats.mli)
+- File "src/owl/stats/owl_stats.mli", line 156, characters 17-41:
+- Error: Unbound type constructor Owl_base_stats.histogram
+-       ocamlc src/owl/.owl.objs/owl_regression_generic_sig.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_regression_generic_sig.cmo -c -impl src/owl/owl_regression_generic_sig.ml)
+- File "src/owl/optimise/owl_regression_generic_sig.ml", line 10, characters 7-24:
+- Error: Unbound module Optimise.Algodiff
+-       ocamlc src/owl/.owl.objs/owl_stats_dist.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_stats_dist.cmo -c -impl src/owl/owl_stats_dist.ml)
+- File "src/owl/stats/owl_stats_dist.ml", line 375, characters 69-76:
+- Error: Unbound type constructor owl_arr
+-       ocamlc src/owl/.owl.objs/owl_sparse_common.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_common.cmo -c -impl src/owl/owl_sparse_common.ml)
+- File "src/owl/sparse/owl_sparse_common.ml", line 272, characters 37-56:
+- Error: Unbound value Eigen.Sparse.S.gemm
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_c.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_c.cmi -c -intf src/owl/owl_dense_ndarray_c.mli)
+- File "src/owl/dense/owl_dense_ndarray_c.mli", line 19, characters 13-19:
+- Error: Unbound type constructor number
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_d.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_d.cmi -c -intf src/owl/owl_dense_ndarray_d.mli)
+- File "src/owl/dense/owl_dense_ndarray_d.mli", line 17, characters 13-19:
+- Error: Unbound type constructor number
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_s.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_s.cmi -c -intf src/owl/owl_dense_ndarray_s.mli)
+- File "src/owl/dense/owl_dense_ndarray_s.mli", line 17, characters 13-19:
+- Error: Unbound type constructor number
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_z.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_z.cmi -c -intf src/owl/owl_dense_ndarray_z.mli)
+- File "src/owl/dense/owl_dense_ndarray_z.mli", line 19, characters 13-19:
+- Error: Unbound type constructor number
+-     ocamlopt src/owl/.owl.objs/owl_maths.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -safe-string -g -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_maths.cmx -c -impl src/owl/owl_maths.ml)
+- File "src/owl/maths/owl_maths.ml", line 305, characters 17-42:
+- Error: Unbound value Owl_base_maths.is_simplex
+-     ocamlopt src/owl/.owl.objs/owl_sparse_dok_matrix.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -safe-string -g -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_dok_matrix.cmx -c -impl src/owl/owl_sparse_dok_matrix.ml)
+- File "src/owl/sparse/owl_sparse_dok_matrix.ml", line 79, characters 15-37:
+- Error: Unbound module Owl_io
+-       ocamlc src/owl/.owl.objs/owl_stats.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_stats.cmi -c -intf src/owl/owl_stats.mli)
+- File "src/owl/stats/owl_stats.mli", line 156, characters 17-41:
+- Error: Unbound type constructor Owl_base_stats.histogram
+-     ocamlopt src/owl/.owl.objs/owl_dense_ndarray_a.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -safe-string -g -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_a.cmx -c -impl src/owl/owl_dense_ndarray_a.ml)
+- File "src/owl/dense/owl_dense_ndarray_a.ml", line 127, characters 37-38:
+- Error: This expression has type int but an expression was expected of type
+-          'a array
+-       ocamlc src/owl/.owl.objs/owl_ppl_random_variable.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_ppl_random_variable.cmo -c -impl src/owl/owl_ppl_random_variable.ml)
+- File "src/owl/ppl/owl_ppl_random_variable.ml", line 17, characters 19-29:
+- Error: Unbound type constructor Lazy.value
+-       ocamlc src/owl/.owl.objs/owl_maths.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_maths.cmo -c -impl src/owl/owl_maths.ml)
+- File "src/owl/maths/owl_maths.ml", line 305, characters 17-42:
+- Error: Unbound value Owl_base_maths.is_simplex
+-       ocamlc src/owl/.owl.objs/owl_sparse_dok_matrix.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_dok_matrix.cmo -c -impl src/owl/owl_sparse_dok_matrix.ml)
+- File "src/owl/sparse/owl_sparse_dok_matrix.ml", line 79, characters 15-37:
+- Error: Unbound module Owl_io
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_a.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_a.cmo -c -impl src/owl/owl_dense_ndarray_a.ml)
+- File "src/owl/dense/owl_dense_ndarray_a.ml", line 127, characters 37-38:
+- Error: This expression has type int but an expression was expected of type
+-          'a array
+-     ocamlopt src/owl/.owl.objs/owl_dense_ndarray_a.{cmx,o} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt -w -40 -safe-string -g -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_a.cmx -c -impl src/owl/owl_dense_ndarray_a.ml)
+- File "src/owl/dense/owl_dense_ndarray_a.ml", line 127, characters 37-38:
+- Error: This expression has type int but an expression was expected of type
+-          'a array
+-       ocamlc src/owl/.owl.objs/owl_ppl_random_variable.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_ppl_random_variable.cmo -c -impl src/owl/owl_ppl_random_variable.ml)
+- File "src/owl/ppl/owl_ppl_random_variable.ml", line 17, characters 19-29:
+- Error: Unbound type constructor Lazy.value
+-       ocamlc src/owl/.owl.objs/owl_maths.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_maths.cmo -c -impl src/owl/owl_maths.ml)
+- File "src/owl/maths/owl_maths.ml", line 305, characters 17-42:
+- Error: Unbound value Owl_base_maths.is_simplex
+-       ocamlc src/owl/.owl.objs/owl_sparse_dok_matrix.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_dok_matrix.cmo -c -impl src/owl/owl_sparse_dok_matrix.ml)
+- File "src/owl/sparse/owl_sparse_dok_matrix.ml", line 79, characters 15-37:
+- Error: Unbound module Owl_io
+-       ocamlc src/owl/.owl.objs/owl_dense_ndarray_a.{cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_a.cmo -c -impl src/owl/owl_dense_ndarray_a.ml)
+- File "src/owl/dense/owl_dense_ndarray_a.ml", line 127, characters 37-38:
+- Error: This expression has type int but an expression was expected of type
+-          'a array
+-       ocamlc src/owl/.owl.objs/owl_dense_matrix.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_matrix.cmo -c -impl src/owl/owl_dense_matrix.ml)
+- File "src/owl/dense/owl_dense_matrix.ml", line 11, characters 36-60:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
+-        is not included in
+-          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
+-        File "src/base/types/owl_types_operator.ml", line 114, characters 2-45:
+-          Expected declaration
+-        File "src/owl/dense/owl_dense_matrix_generic.mli", line 2093, characters 0-62:
+-          Actual declaration
+-       ocamlc src/owl/.owl.objs/owl_dense_matrix.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/eigen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/owl-base -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_matrix.cmo -c -impl src/owl/owl_dense_matrix.ml)
+- File "src/owl/dense/owl_dense_matrix.ml", line 11, characters 36-60:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
+-        is not included in
+-          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
+-        File "src/base/types/owl_types_operator.ml", line 114, characters 2-45:
+-          Expected declaration
+-        File "src/owl/dense/owl_dense_matrix_generic.mli", line 2093, characters 0-62:
+-          Actual declaration
+[ERROR] The compilation of owl failed at "dune build -p owl -j 4".
+
+#=== ERROR while installing owl.0.4.0 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              dune build -p owl -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.4.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.4.0/owl-6921.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.4.0/owl-6921.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/owl.0.4.0/owl-6921.out
+### stdout ###
+# [...]
+# Error: Signature mismatch:
+#        ...
+#        Values do not match:
+#          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
+#        is not included in
+#          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
+#        File "src/base/types/owl_types_operator.ml", line 114, characters 2-45:
+#          Expected declaration
+#        File "src/owl/dense/owl_dense_matrix_generic.mli", line 2093, characters 0-62:
+#          Actual declaration
+### stderr ###
+# [...]
+# Error: Signature mismatch:
+#        ...
+#        Values do not match:
+#          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
+#        is not included in
+#          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
+#        File "src/base/types/owl_types_operator.ml", line 114, characters 2-45:
+#          Expected declaration
+#        File "src/owl/dense/owl_dense_matrix_generic.mli", line 2093, characters 0-62:
+#          Actual declaration
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install owl 0.4.0
+No changes have been performed
+'opam install owl.0.4.0' failed.

@@ -1,0 +1,65 @@
+The following actions will be performed:
+  - install jupyter 2.0.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[jupyter: http] Command started
+[jupyter: http] Command started
+[jupyter.2.0.0] https://github.com/akabe/ocaml-jupyter/releases/download/v2.0.0/jupyter-2.0.0.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[jupyter: jbuilder build] Command started
++ jbuilder "build" "-p" "jupyter" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jupyter.2.0.0)
+- Error: I couldn't find 'ocaml-migrate-parsetree.driver-main'.
+- I need this library in order to use ppx rewriters.
+- See the manual for details.
+- Hint: opam install ocaml-migrate-parsetree
+- Error: I couldn't find 'ocaml-migrate-parsetree.driver-main'.
+- I need this library in order to use ppx rewriters.
+- See the manual for details.
+- Hint: opam install ocaml-migrate-parsetree
+[ERROR] The compilation of jupyter failed at "jbuilder build -p jupyter -j 4".
+[jupyter: ./kernelspec.sh uninstall] Command started
++ ./kernelspec.sh "uninstall" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jupyter.2.0.0)
+- Error: I couldn't find 'ocaml-migrate-parsetree.driver-main'.
+- I need this library in order to use ppx rewriters.
+- See the manual for details.
+- Hint: opam install ocaml-migrate-parsetree
+- Error: I couldn't find 'ocaml-migrate-parsetree.driver-main'.
+- I need this library in order to use ppx rewriters.
+- See the manual for details.
+- Hint: opam install ocaml-migrate-parsetree
+
+#=== ERROR while installing jupyter.2.0.0 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p jupyter -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jupyter.2.0.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jupyter.2.0.0/jupyter-8645.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jupyter.2.0.0/jupyter-8645.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/jupyter.2.0.0/jupyter-8645.out
+### stdout ###
+# Error: I couldn't find 'ocaml-migrate-parsetree.driver-main'.
+# I need this library in order to use ppx rewriters.
+# See the manual for details.
+# Hint: opam install ocaml-migrate-parsetree
+### stderr ###
+# Error: I couldn't find 'ocaml-migrate-parsetree.driver-main'.
+# I need this library in order to use ppx rewriters.
+# See the manual for details.
+# Hint: opam install ocaml-migrate-parsetree
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install jupyter 2.0.0
+No changes have been performed
+
+=-=- jupyter.2.0.0 troubleshooting =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> If Jupyter is installed, ocaml-jupyter kernel is already available.
+=> Otherwise you setup Jupyter and the OCaml kernel as follows:
+=> 
+=> $ pip install jupyter
+'opam install jupyter.2.0.0' failed.

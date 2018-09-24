@@ -1,0 +1,199 @@
+The following actions will be performed:
+  - install yaml 0.2.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[yaml: http] Command started
+[yaml: http] Command started
+[yaml.0.2.0] https://github.com/avsm/ocaml-yaml/releases/download/v0.2.0/yaml-0.2.0.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[yaml: jbuilder build] Command started
++ jbuilder "build" "-p" "yaml" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/yaml.0.2.0)
+-          gcc vendor/api.o
+- api.c: In function 'yaml_document_delete':
+- api.c:1121:7: warning: variable 'context' set but not used [-Wunused-but-set-variable]
+-      } context;
+-        ^
+-          gcc vendor/parser.o
+- parser.c: In function 'yaml_parser_parse_block_sequence_entry':
+- parser.c:762:21: warning: variable 'dummy_mark' set but not used [-Wunused-but-set-variable]
+-          yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */
+-                      ^
+- parser.c: In function 'yaml_parser_parse_block_mapping_key':
+- parser.c:872:21: warning: variable 'dummy_mark' set but not used [-Wunused-but-set-variable]
+-          yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */
+-                      ^
+- parser.c: In function 'yaml_parser_parse_flow_sequence_entry':
+- parser.c:955:17: warning: variable 'dummy_mark' set but not used [-Wunused-but-set-variable]
+-      yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */
+-                  ^
+- parser.c: In function 'yaml_parser_parse_flow_mapping_key':
+- parser.c:1107:17: warning: variable 'dummy_mark' set but not used [-Wunused-but-set-variable]
+-      yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */
+-                  ^
+-          gcc vendor/emitter.o
+- emitter.c: In function 'yaml_emitter_write_plain_scalar':
+- emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+-       && ((emitter->line_break == YAML_CR_BREAK ?                                \
+-       ^
+- emitter.c:56:11: note: in expansion of macro 'PUT_BREAK'
+-           (PUT_BREAK(emitter),                                                   \
+-            ^
+- emitter.c:1931:18: note: in expansion of macro 'WRITE_BREAK'
+-              if (!WRITE_BREAK(emitter, string)) return 0;
+-                   ^
+- emitter.c: In function 'yaml_emitter_write_single_quoted_scalar':
+- emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+-       && ((emitter->line_break == YAML_CR_BREAK ?                                \
+-       ^
+- emitter.c:56:11: note: in expansion of macro 'PUT_BREAK'
+-           (PUT_BREAK(emitter),                                                   \
+-            ^
+- emitter.c:1988:18: note: in expansion of macro 'WRITE_BREAK'
+-              if (!WRITE_BREAK(emitter, string)) return 0;
+-                   ^
+- emitter.c: In function 'yaml_emitter_write_literal_scalar':
+- emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+-       && ((emitter->line_break == YAML_CR_BREAK ?                                \
+-       ^
+- emitter.c:56:11: note: in expansion of macro 'PUT_BREAK'
+-           (PUT_BREAK(emitter),                                                   \
+-            ^
+- emitter.c:2251:18: note: in expansion of macro 'WRITE_BREAK'
+-              if (!WRITE_BREAK(emitter, string)) return 0;
+-                   ^
+- emitter.c: In function 'yaml_emitter_write_folded_scalar':
+- emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+-       && ((emitter->line_break == YAML_CR_BREAK ?                                \
+-       ^
+- emitter.c:56:11: note: in expansion of macro 'PUT_BREAK'
+-           (PUT_BREAK(emitter),                                                   \
+-            ^
+- emitter.c:2300:18: note: in expansion of macro 'WRITE_BREAK'
+-              if (!WRITE_BREAK(emitter, string)) return 0;
+-                   ^
+-       ocamlc types/bindings/.yaml_bindings_types.objs/yaml_bindings_types.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I types/bindings/.yaml_bindings_types.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -no-alias-deps -o types/bindings/.yaml_bindings_types.objs/yaml_bindings_types.cmi -c -intf types/bindings/yaml_bindings_types.pp.mli)
+- File "types/bindings/yaml_bindings_types.mli", line 52, characters 13-24:
+- Error: Unbound module type Ctypes.TYPE
+-          gcc vendor/api.o
+- api.c: In function 'yaml_document_delete':
+- api.c:1121:7: warning: variable 'context' set but not used [-Wunused-but-set-variable]
+-      } context;
+-        ^
+-          gcc vendor/parser.o
+- parser.c: In function 'yaml_parser_parse_block_sequence_entry':
+- parser.c:762:21: warning: variable 'dummy_mark' set but not used [-Wunused-but-set-variable]
+-          yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */
+-                      ^
+- parser.c: In function 'yaml_parser_parse_block_mapping_key':
+- parser.c:872:21: warning: variable 'dummy_mark' set but not used [-Wunused-but-set-variable]
+-          yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */
+-                      ^
+- parser.c: In function 'yaml_parser_parse_flow_sequence_entry':
+- parser.c:955:17: warning: variable 'dummy_mark' set but not used [-Wunused-but-set-variable]
+-      yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */
+-                  ^
+- parser.c: In function 'yaml_parser_parse_flow_mapping_key':
+- parser.c:1107:17: warning: variable 'dummy_mark' set but not used [-Wunused-but-set-variable]
+-      yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */
+-                  ^
+-          gcc vendor/emitter.o
+- emitter.c: In function 'yaml_emitter_write_plain_scalar':
+- emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+-       && ((emitter->line_break == YAML_CR_BREAK ?                                \
+-       ^
+- emitter.c:56:11: note: in expansion of macro 'PUT_BREAK'
+-           (PUT_BREAK(emitter),                                                   \
+-            ^
+- emitter.c:1931:18: note: in expansion of macro 'WRITE_BREAK'
+-              if (!WRITE_BREAK(emitter, string)) return 0;
+-                   ^
+- emitter.c: In function 'yaml_emitter_write_single_quoted_scalar':
+- emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+-       && ((emitter->line_break == YAML_CR_BREAK ?                                \
+-       ^
+- emitter.c:56:11: note: in expansion of macro 'PUT_BREAK'
+-           (PUT_BREAK(emitter),                                                   \
+-            ^
+- emitter.c:1988:18: note: in expansion of macro 'WRITE_BREAK'
+-              if (!WRITE_BREAK(emitter, string)) return 0;
+-                   ^
+- emitter.c: In function 'yaml_emitter_write_literal_scalar':
+- emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+-       && ((emitter->line_break == YAML_CR_BREAK ?                                \
+-       ^
+- emitter.c:56:11: note: in expansion of macro 'PUT_BREAK'
+-           (PUT_BREAK(emitter),                                                   \
+-            ^
+- emitter.c:2251:18: note: in expansion of macro 'WRITE_BREAK'
+-              if (!WRITE_BREAK(emitter, string)) return 0;
+-                   ^
+- emitter.c: In function 'yaml_emitter_write_folded_scalar':
+- emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+-       && ((emitter->line_break == YAML_CR_BREAK ?                                \
+-       ^
+- emitter.c:56:11: note: in expansion of macro 'PUT_BREAK'
+-           (PUT_BREAK(emitter),                                                   \
+-            ^
+- emitter.c:2300:18: note: in expansion of macro 'WRITE_BREAK'
+-              if (!WRITE_BREAK(emitter, string)) return 0;
+-                   ^
+-       ocamlc types/bindings/.yaml_bindings_types.objs/yaml_bindings_types.{cmi,cmti} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I types/bindings/.yaml_bindings_types.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -no-alias-deps -o types/bindings/.yaml_bindings_types.objs/yaml_bindings_types.cmi -c -intf types/bindings/yaml_bindings_types.pp.mli)
+- File "types/bindings/yaml_bindings_types.mli", line 52, characters 13-24:
+- Error: Unbound module type Ctypes.TYPE
+-          gcc vendor/scanner.o
+- scanner.c: In function 'yaml_parser_decrease_flow_level':
+- scanner.c:1189:23: warning: variable 'dummy_key' set but not used [-Wunused-but-set-variable]
+-      yaml_simple_key_t dummy_key;    /* Used to eliminate a compiler warning. */
+-                        ^
+-          gcc vendor/scanner.o
+- scanner.c: In function 'yaml_parser_decrease_flow_level':
+- scanner.c:1189:23: warning: variable 'dummy_key' set but not used [-Wunused-but-set-variable]
+-      yaml_simple_key_t dummy_key;    /* Used to eliminate a compiler warning. */
+-                        ^
+[ERROR] The compilation of yaml failed at "jbuilder build -p yaml -j 4".
+
+#=== ERROR while installing yaml.0.2.0 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p yaml -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/yaml.0.2.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/yaml.0.2.0/yaml-21849.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/yaml.0.2.0/yaml-21849.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/yaml.0.2.0/yaml-21849.out
+### stdout ###
+# emitter.c:2300:18: note: in expansion of macro 'WRITE_BREAK'
+# [...]
+#       ocamlc types/bindings/.yaml_bindings_types.objs/yaml_bindings_types.{cmi,cmti} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I types/bindings/.yaml_bindings_types.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -no-alias-deps -o types/bindings/.yaml_bindings_types.objs/yaml_bindings_types.cmi -c -intf types/bindings/yaml_bindings_types.pp.mli)
+# File "types/bindings/yaml_bindings_types.mli", line 52, characters 13-24:
+# Error: Unbound module type Ctypes.TYPE
+#          gcc vendor/scanner.o
+# scanner.c: In function 'yaml_parser_decrease_flow_level':
+# scanner.c:1189:23: warning: variable 'dummy_key' set but not used [-Wunused-but-set-variable]
+#      yaml_simple_key_t dummy_key;    /* Used to eliminate a compiler warning. */
+#                        ^
+### stderr ###
+# emitter.c:2300:18: note: in expansion of macro 'WRITE_BREAK'
+# [...]
+#       ocamlc types/bindings/.yaml_bindings_types.objs/yaml_bindings_types.{cmi,cmti} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I types/bindings/.yaml_bindings_types.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/bytes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ctypes -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/integers -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/parsexp -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ppx_sexp_conv/runtime-lib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sexplib0 -no-alias-deps -o types/bindings/.yaml_bindings_types.objs/yaml_bindings_types.cmi -c -intf types/bindings/yaml_bindings_types.pp.mli)
+# File "types/bindings/yaml_bindings_types.mli", line 52, characters 13-24:
+# Error: Unbound module type Ctypes.TYPE
+#          gcc vendor/scanner.o
+# scanner.c: In function 'yaml_parser_decrease_flow_level':
+# scanner.c:1189:23: warning: variable 'dummy_key' set but not used [-Wunused-but-set-variable]
+#      yaml_simple_key_t dummy_key;    /* Used to eliminate a compiler warning. */
+#                        ^
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install yaml 0.2.0
+No changes have been performed
+'opam install yaml.0.2.0' failed.

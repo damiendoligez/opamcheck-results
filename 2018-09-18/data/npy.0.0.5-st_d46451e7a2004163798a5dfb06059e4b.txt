@@ -1,0 +1,320 @@
+The following actions will be performed:
+  - install npy 0.0.5
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[npy: http] Command started
+[npy: http] Command started
+[npy.0.0.5] https://github.com/LaurentMazare/npy-ocaml/archive/0.0.6.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[npy: jbuilder build] Command started
++ jbuilder "build" "--only-packages" "npy" "--root" "." "-j" "4" "@install" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/npy.0.0.5)
+- # Workspace root: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/npy.0.0.5
+- Running[0]: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -config > /tmp/dune06c8da.output
+- # # Workspace root: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/npy.0.0.5
+- # Dune context:
+- #  ((name default)
+- #   (kind default)
+- #   (profile release)
+- #   (merlin true)
+- #   (for_host ())
+- #   (build_dir (In_build_dir default))
+- #   (toplevel_path
+- #    ((External
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/toplevel)))
+- #   (ocaml_bin
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin))
+- #   (ocaml
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocaml))
+- #   (ocamlc
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt))
+- #   (ocamlopt
+- #    ((External
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt)))
+- #   (ocamldep
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt))
+- #   (ocamlmklib
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlmklib.opt))
+- #   (env
+- #    ((DUNE_CONFIGURATOR
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt)
+- #     (INSIDE_DUNE 1)
+- #     (OCAMLPATH
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/npy.0.0.5/_build/install/default/lib)))
+- #   (findlib_path
+- #    ((External
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib)))
+- #   (arch_sixtyfour true)
+- #   (natdynlink_supported true)
+- #   (opam_vars ())
+- #   (ocaml_config
+- #    ((version 4.07.1+dev0-2018-07-10)
+- #     (standard_library_default
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml)
+- #     (standard_library
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml)
+- #     (standard_runtime
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlrun)
+- #     (ccomp_type cc)
+- #     (c_compiler gcc)
+- #     (ocamlc_cflags (-O2 -fno-strict-aliasing -fwrapv -fPIC))
+- #     (ocamlopt_cflags (-O2 -fno-strict-aliasing -fwrapv))
+- #     (bytecomp_c_compiler
+- #      (gcc
+- #       -O2
+- #       -fno-strict-aliasing
+- #       -fwrapv
+- #       -fPIC
+- #       -D_FILE_OFFSET_BITS=64
+- #       -D_REENTRANT))
+- #     (bytecomp_c_libraries (-lm -ldl -lpthread))
+- #     (native_c_compiler
+- #      (gcc
+- #       -O2
+- #       -fno-strict-aliasing
+- #       -fwrapv
+- #       -D_FILE_OFFSET_BITS=64
+- #       -D_REENTRANT))
+- #     (native_c_libraries (-lm -ldl))
+- #     (cc_profile (-pg))
+- #     (architecture amd64)
+- #     (model default)
+- #     (int_size 63)
+- #     (word_size 64)
+- #     (system linux)
+- #     (asm (as))
+- #     (asm_cfi_supported true)
+- #     (with_frame_pointers false)
+- #     (ext_exe "")
+- #     (ext_obj .o)
+- #     (ext_asm .s)
+- #     (ext_lib .a)
+- #     (ext_dll .so)
+- #     (os_type Unix)
+- #     (default_executable_name a.out)
+- #     (systhread_supported true)
+- #     (host x86_64-unknown-linux-gnu)
+- #     (target x86_64-unknown-linux-gnu)
+- #     (profiling true)
+- #     (flambda false)
+- #     (spacetime false)
+- #     (safe_string false)
+- #     (exec_magic_number Caml1999X023)
+- #     (cmi_magic_number Caml1999I024)
+- #     (cmo_magic_number Caml1999O023)
+- #     (cma_magic_number Caml1999A023)
+- #     (cmx_magic_number Caml1999Y023)
+- #     (cmxa_magic_number Caml1999Z023)
+- #     (ast_impl_magic_number Caml1999M023)
+- #     (ast_intf_magic_number Caml1999N023)
+- #     (cmxs_magic_number Caml1999D023)
+- #     (cmt_magic_number Caml1999T024)
+- #     (natdynlink_supported true)))
+- #   (which
+- #    ((ocaml
+- #      ((External
+- #        /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocaml)))
+- #     (ocamlc
+- #      ((External
+- #        /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt))))))
+- # Actual targets:
+- # - recursive alias install
+- Running[1]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules -impl src/npy.ml) > _build/default/src/.npy.objs/npy.ml.d
+- Running[2]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules -intf src/npy.mli) > _build/default/src/.npy.objs/npy.mli.d
+- Running[3]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.npy.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -no-alias-deps -o src/.npy.objs/npy.cmi -c -intf src/npy.mli)
+- Running[4]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -I src/.npy.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -intf-suffix .ml -no-alias-deps -o src/.npy.objs/npy.cmx -c -impl src/npy.ml)
+- Running[5]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.npy.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -intf-suffix .ml -no-alias-deps -o src/.npy.objs/npy.cmo -c -impl src/npy.ml)
+- 
+- Command [5] exited with code 2:
+- $ (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.npy.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -intf-suffix .ml -no-alias-deps -o src/.npy.objs/npy.cmo -c -impl src/npy.ml)
+- File "src/npy.ml", line 94, characters 29-40:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- 
+- Command [4] exited with code 2:
+- $ (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -I src/.npy.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -intf-suffix .ml -no-alias-deps -o src/.npy.objs/npy.cmx -c -impl src/npy.ml)
+- File "src/npy.ml", line 94, characters 29-40:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- # Workspace root: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/npy.0.0.5
+- Running[0]: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -config > /tmp/dune06c8da.output
+- # # Workspace root: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/npy.0.0.5
+- # Dune context:
+- #  ((name default)
+- #   (kind default)
+- #   (profile release)
+- #   (merlin true)
+- #   (for_host ())
+- #   (build_dir (In_build_dir default))
+- #   (toplevel_path
+- #    ((External
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/toplevel)))
+- #   (ocaml_bin
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin))
+- #   (ocaml
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocaml))
+- #   (ocamlc
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt))
+- #   (ocamlopt
+- #    ((External
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt)))
+- #   (ocamldep
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt))
+- #   (ocamlmklib
+- #    (External
+- #     /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlmklib.opt))
+- #   (env
+- #    ((DUNE_CONFIGURATOR
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt)
+- #     (INSIDE_DUNE 1)
+- #     (OCAMLPATH
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/npy.0.0.5/_build/install/default/lib)))
+- #   (findlib_path
+- #    ((External
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib)))
+- #   (arch_sixtyfour true)
+- #   (natdynlink_supported true)
+- #   (opam_vars ())
+- #   (ocaml_config
+- #    ((version 4.07.1+dev0-2018-07-10)
+- #     (standard_library_default
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml)
+- #     (standard_library
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml)
+- #     (standard_runtime
+- #      /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlrun)
+- #     (ccomp_type cc)
+- #     (c_compiler gcc)
+- #     (ocamlc_cflags (-O2 -fno-strict-aliasing -fwrapv -fPIC))
+- #     (ocamlopt_cflags (-O2 -fno-strict-aliasing -fwrapv))
+- #     (bytecomp_c_compiler
+- #      (gcc
+- #       -O2
+- #       -fno-strict-aliasing
+- #       -fwrapv
+- #       -fPIC
+- #       -D_FILE_OFFSET_BITS=64
+- #       -D_REENTRANT))
+- #     (bytecomp_c_libraries (-lm -ldl -lpthread))
+- #     (native_c_compiler
+- #      (gcc
+- #       -O2
+- #       -fno-strict-aliasing
+- #       -fwrapv
+- #       -D_FILE_OFFSET_BITS=64
+- #       -D_REENTRANT))
+- #     (native_c_libraries (-lm -ldl))
+- #     (cc_profile (-pg))
+- #     (architecture amd64)
+- #     (model default)
+- #     (int_size 63)
+- #     (word_size 64)
+- #     (system linux)
+- #     (asm (as))
+- #     (asm_cfi_supported true)
+- #     (with_frame_pointers false)
+- #     (ext_exe "")
+- #     (ext_obj .o)
+- #     (ext_asm .s)
+- #     (ext_lib .a)
+- #     (ext_dll .so)
+- #     (os_type Unix)
+- #     (default_executable_name a.out)
+- #     (systhread_supported true)
+- #     (host x86_64-unknown-linux-gnu)
+- #     (target x86_64-unknown-linux-gnu)
+- #     (profiling true)
+- #     (flambda false)
+- #     (spacetime false)
+- #     (safe_string false)
+- #     (exec_magic_number Caml1999X023)
+- #     (cmi_magic_number Caml1999I024)
+- #     (cmo_magic_number Caml1999O023)
+- #     (cma_magic_number Caml1999A023)
+- #     (cmx_magic_number Caml1999Y023)
+- #     (cmxa_magic_number Caml1999Z023)
+- #     (ast_impl_magic_number Caml1999M023)
+- #     (ast_intf_magic_number Caml1999N023)
+- #     (cmxs_magic_number Caml1999D023)
+- #     (cmt_magic_number Caml1999T024)
+- #     (natdynlink_supported true)))
+- #   (which
+- #    ((ocaml
+- #      ((External
+- #        /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocaml)))
+- #     (ocamlc
+- #      ((External
+- #        /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt))))))
+- # Actual targets:
+- # - recursive alias install
+- Running[1]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules -impl src/npy.ml) > _build/default/src/.npy.objs/npy.ml.d
+- Running[2]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep.opt -modules -intf src/npy.mli) > _build/default/src/.npy.objs/npy.mli.d
+- Running[3]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.npy.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -no-alias-deps -o src/.npy.objs/npy.cmi -c -intf src/npy.mli)
+- Running[4]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -I src/.npy.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -intf-suffix .ml -no-alias-deps -o src/.npy.objs/npy.cmx -c -impl src/npy.ml)
+- Running[5]: (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.npy.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -intf-suffix .ml -no-alias-deps -o src/.npy.objs/npy.cmo -c -impl src/npy.ml)
+- 
+- Command [5] exited with code 2:
+- $ (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.npy.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -intf-suffix .ml -no-alias-deps -o src/.npy.objs/npy.cmo -c -impl src/npy.ml)
+- File "src/npy.ml", line 94, characters 29-40:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- 
+- Command [4] exited with code 2:
+- $ (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -I src/.npy.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -intf-suffix .ml -no-alias-deps -o src/.npy.objs/npy.cmx -c -impl src/npy.ml)
+- File "src/npy.ml", line 94, characters 29-40:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+[ERROR] The compilation of npy failed at "jbuilder build --only-packages npy
+        --root . -j 4 @install".
+
+#=== ERROR while installing npy.0.0.5 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build --only-packages npy --root . -j 4 @install
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/npy.0.0.5
+# compiler             4.07.0+24fac73
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/npy.0.0.5/npy-18851.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/npy.0.0.5/npy-18851.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/npy.0.0.5/npy-18851.out
+### stdout ###
+# [...]
+# $ (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.npy.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -intf-suffix .ml -no-alias-deps -o src/.npy.objs/npy.cmo -c -impl src/npy.ml)
+# File "src/npy.ml", line 94, characters 29-40:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# 
+# Command [4] exited with code 2:
+# $ (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -I src/.npy.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -intf-suffix .ml -no-alias-deps -o src/.npy.objs/npy.cmx -c -impl src/npy.ml)
+# File "src/npy.ml", line 94, characters 29-40:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+### stderr ###
+# [...]
+# $ (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.npy.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -intf-suffix .ml -no-alias-deps -o src/.npy.objs/npy.cmo -c -impl src/npy.ml)
+# File "src/npy.ml", line 94, characters 29-40:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# 
+# Command [4] exited with code 2:
+# $ (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt.opt -w -40 -g -I src/.npy.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/camlzip/../zip -intf-suffix .ml -no-alias-deps -o src/.npy.objs/npy.cmx -c -impl src/npy.ml)
+# File "src/npy.ml", line 94, characters 29-40:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install npy 0.0.5
+No changes have been performed
+'opam install npy.0.0.5' failed.

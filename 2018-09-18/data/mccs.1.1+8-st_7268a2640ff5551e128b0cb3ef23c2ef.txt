@@ -1,0 +1,41 @@
+The following actions will be performed:
+  - install mccs 1.1+8
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mccs: http] Command started
+[mccs: http] Command started
+[mccs.1.1+8] https://github.com/AltGr/ocaml-mccs/archive/1.1+8.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mccs: jbuilder build] Command started
++ jbuilder "build" "-p" "mccs" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mccs.1.1+8)
+- File "src/jbuild", line 27, characters 0-25:
+- Error: Unknown constructor copy_files#
+- File "src/jbuild", line 27, characters 0-25:
+- Error: Unknown constructor copy_files#
+[ERROR] The compilation of mccs failed at "jbuilder build -p mccs".
+
+#=== ERROR while installing mccs.1.1+8 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p mccs
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mccs.1.1+8
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mccs.1.1+8/mccs-9005.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mccs.1.1+8/mccs-9005.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/mccs.1.1+8/mccs-9005.out
+### stdout ###
+# File "src/jbuild", line 27, characters 0-25:
+# Error: Unknown constructor copy_files#
+### stderr ###
+# File "src/jbuild", line 27, characters 0-25:
+# Error: Unknown constructor copy_files#
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install mccs 1.1+8
+No changes have been performed
+'opam install mccs.1.1+8' failed.

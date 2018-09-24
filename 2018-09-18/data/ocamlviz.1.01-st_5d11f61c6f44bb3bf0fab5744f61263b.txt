@@ -1,0 +1,411 @@
+The following actions will be performed:
+  - install ocamlviz 1.01
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocamlviz: http] Command started
+[ocamlviz: http] Command started
+[ocamlviz.1.01] http://ocamlviz.forge.ocamlcore.org/ocamlviz-1.01.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocamlviz: mkdir] Command started
++ mkdir "-p" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlviz/camlp4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocamlviz.1.01)
+[ocamlviz: autoconf] Command started
++ autoconf  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocamlviz.1.01)
+[ocamlviz: ./configure] Command started
++ ./configure "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocamlviz.1.01)
+- checking for ocamlc... ocamlc
+- ocaml version is 4.07.1+dev0-2018-07-10
+- ocaml library path is /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2/lablgtk.cma... yes
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2/cairo2.cmxa... yes
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- checking for ocamlc... ocamlc
+- ocaml version is 4.07.1+dev0-2018-07-10
+- ocaml library path is /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2/lablgtk.cma... yes
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2/cairo2.cmxa... yes
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+[ocamlviz: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocamlviz.1.01)
+- checking for ocamlc... ocamlc
+- ocaml version is 4.07.1+dev0-2018-07-10
+- ocaml library path is /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2/lablgtk.cma... yes
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2/cairo2.cmxa... yes
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- Makefile:304: .depend: No such file or directory
+- echo "let version = \""0.1"\"" > src/version.ml
+- echo "let date = \""`date`"\"" >> src/version.ml
+- ocamllex.opt src/preflexer.mll
+- 67 states, 707 transitions, table size 3230 bytes
+- 2611 additional bytes used for bindings
+- rm -f .depend
+- ocamldep.opt -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/*.ml src/*.mli > .depend
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/binary.mli
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/binary.ml
+- File "src/binary.ml", line 46, characters 2-37:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 47, characters 2-47:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 55, characters 2-37:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 56, characters 2-47:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 57, characters 2-48:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 84, characters 2-37:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 85, characters 2-47:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 86, characters 2-48:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 87, characters 2-48:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/protocol.mli
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/bproto.mli
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/bproto.ml
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/timemap.mli
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/timemap.ml
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/db.mli
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/db.ml
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/options.ml
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/net.ml
+- File "src/net.ml", line 42, characters 10-23:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "src/net.ml", line 81, characters 20-33:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "src/net.ml", line 96, characters 21-24:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:227: recipe for target 'src/net.cmx' failed
+- make: *** [src/net.cmx] Error 2
+- checking for ocamlc... ocamlc
+- ocaml version is 4.07.1+dev0-2018-07-10
+- ocaml library path is /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2/lablgtk.cma... yes
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2/cairo2.cmxa... yes
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- Makefile:304: .depend: No such file or directory
+- echo "let version = \""0.1"\"" > src/version.ml
+- echo "let date = \""`date`"\"" >> src/version.ml
+- ocamllex.opt src/preflexer.mll
+- 67 states, 707 transitions, table size 3230 bytes
+- 2611 additional bytes used for bindings
+- rm -f .depend
+- ocamldep.opt -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/*.ml src/*.mli > .depend
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/binary.mli
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/binary.ml
+- File "src/binary.ml", line 46, characters 2-37:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 47, characters 2-47:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 55, characters 2-37:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 56, characters 2-47:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 57, characters 2-48:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 84, characters 2-37:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 85, characters 2-47:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 86, characters 2-48:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 87, characters 2-48:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/protocol.mli
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/bproto.mli
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/bproto.ml
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/timemap.mli
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/timemap.ml
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/db.mli
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/db.ml
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/options.ml
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/net.ml
+- File "src/net.ml", line 42, characters 10-23:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "src/net.ml", line 81, characters 20-33:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "src/net.ml", line 96, characters 21-24:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:227: recipe for target 'src/net.cmx' failed
+- make: *** [src/net.cmx] Error 2
+[ERROR] The compilation of ocamlviz failed at "make".
+[ocamlviz: rm] Command started
++ rm "-rf" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlviz-ascii" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlviz-gui" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/man/man1/ocamlviz.1" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocamlviz" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocamlviz.1.01)
+- checking for ocamlc... ocamlc
+- ocaml version is 4.07.1+dev0-2018-07-10
+- ocaml library path is /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2/lablgtk.cma... yes
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2/cairo2.cmxa... yes
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- Makefile:304: .depend: No such file or directory
+- echo "let version = \""0.1"\"" > src/version.ml
+- echo "let date = \""`date`"\"" >> src/version.ml
+- ocamllex.opt src/preflexer.mll
+- 67 states, 707 transitions, table size 3230 bytes
+- 2611 additional bytes used for bindings
+- rm -f .depend
+- ocamldep.opt -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/*.ml src/*.mli > .depend
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/binary.mli
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/binary.ml
+- File "src/binary.ml", line 46, characters 2-37:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 47, characters 2-47:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 55, characters 2-37:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 56, characters 2-47:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 57, characters 2-48:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 84, characters 2-37:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 85, characters 2-47:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 86, characters 2-48:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 87, characters 2-48:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/protocol.mli
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/bproto.mli
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/bproto.ml
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/timemap.mli
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/timemap.ml
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/db.mli
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/db.ml
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/options.ml
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/net.ml
+- File "src/net.ml", line 42, characters 10-23:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "src/net.ml", line 81, characters 20-33:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "src/net.ml", line 96, characters 21-24:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:227: recipe for target 'src/net.cmx' failed
+- make: *** [src/net.cmx] Error 2
+- checking for ocamlc... ocamlc
+- ocaml version is 4.07.1+dev0-2018-07-10
+- ocaml library path is /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking ocamlopt version... ok
+- checking for ocamlc.opt... ocamlc.opt
+- checking ocamlc.opt version... ok
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking ocamlc.opt version... ok
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2/lablgtk.cma... yes
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2/cairo2.cmxa... yes
+- checking for ocamlweb... true
+- checking platform... configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+- Makefile:304: .depend: No such file or directory
+- echo "let version = \""0.1"\"" > src/version.ml
+- echo "let date = \""`date`"\"" >> src/version.ml
+- ocamllex.opt src/preflexer.mll
+- 67 states, 707 transitions, table size 3230 bytes
+- 2611 additional bytes used for bindings
+- rm -f .depend
+- ocamldep.opt -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/*.ml src/*.mli > .depend
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/binary.mli
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/binary.ml
+- File "src/binary.ml", line 46, characters 2-37:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 47, characters 2-47:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 55, characters 2-37:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 56, characters 2-47:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 57, characters 2-48:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 84, characters 2-37:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 85, characters 2-47:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 86, characters 2-48:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "src/binary.ml", line 87, characters 2-48:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/protocol.mli
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/bproto.mli
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/bproto.ml
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/timemap.mli
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/timemap.ml
+- ocamlc.opt -c -g -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/db.mli
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/db.ml
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/options.ml
+- ocamlopt.opt -c -dtypes -I src -I +threads -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/lablgtk2 -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/cairo2 src/net.ml
+- File "src/net.ml", line 42, characters 10-23:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "src/net.ml", line 81, characters 20-33:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "src/net.ml", line 96, characters 21-24:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Makefile:227: recipe for target 'src/net.cmx' failed
+- make: *** [src/net.cmx] Error 2
+
+#=== ERROR while installing ocamlviz.1.01 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocamlviz.1.01
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocamlviz.1.01/ocamlviz-8339.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocamlviz.1.01/ocamlviz-8339.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/ocamlviz.1.01/ocamlviz-8339.out
+### stdout ###
+# [...]
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "src/net.ml", line 81, characters 20-33:
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "src/net.ml", line 96, characters 21-24:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:227: recipe for target 'src/net.cmx' failed
+# make: *** [src/net.cmx] Error 2
+### stderr ###
+# [...]
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "src/net.ml", line 81, characters 20-33:
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "src/net.ml", line 96, characters 21-24:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:227: recipe for target 'src/net.cmx' failed
+# make: *** [src/net.cmx] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ocamlviz 1.01
+No changes have been performed
+'opam install ocamlviz.1.01' failed.

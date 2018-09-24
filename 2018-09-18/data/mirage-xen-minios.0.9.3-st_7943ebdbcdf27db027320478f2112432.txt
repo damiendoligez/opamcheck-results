@@ -1,0 +1,83 @@
+The following actions will be performed:
+  - install mirage-xen-minios 0.9.3
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mirage-xen-minios: http] Command started
+[mirage-xen-minios: http] Command started
+[mirage-xen-minios.0.9.3] https://github.com/mirage/mirage-xen-minios/archive/v0.9.3.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mirage-xen-minios: make depend] Command started
++ make "depend" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/mirage-xen-minios.0.9.3)
+- ./fetch.sh
+- + . ./vars.sh
+- ++ '[' '' = '' ']'
+- ++ command -v opam
+- +++ opam config var prefix
+- ++ PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73
+- ++ LIBM=openlibm-0.5.4
+- ++ LIBM_ARCHIVE=v0.5.4.tar.gz
+- ++ LIBM_URL=https://github.com/JuliaLang/openlibm/archive/v0.5.4.tar.gz
+- + '[' '!' -e v0.5.4.tar.gz ']'
+- + curl -OL https://github.com/JuliaLang/openlibm/archive/v0.5.4.tar.gz
+- error: /home/doligez/opamcheck/sandbox2/bin/curl -OL https://github.com/JuliaLang/openlibm/archive/v0.5.4.tar.gz
+- Makefile:8: recipe for target 'depend' failed
+- make: *** [depend] Error 1
+- ./fetch.sh
+- + . ./vars.sh
+- ++ '[' '' = '' ']'
+- ++ command -v opam
+- +++ opam config var prefix
+- ++ PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73
+- ++ LIBM=openlibm-0.5.4
+- ++ LIBM_ARCHIVE=v0.5.4.tar.gz
+- ++ LIBM_URL=https://github.com/JuliaLang/openlibm/archive/v0.5.4.tar.gz
+- + '[' '!' -e v0.5.4.tar.gz ']'
+- + curl -OL https://github.com/JuliaLang/openlibm/archive/v0.5.4.tar.gz
+- error: /home/doligez/opamcheck/sandbox2/bin/curl -OL https://github.com/JuliaLang/openlibm/archive/v0.5.4.tar.gz
+- Makefile:8: recipe for target 'depend' failed
+- make: *** [depend] Error 1
+[ERROR] The compilation of mirage-xen-minios failed at "make depend".
+
+#=== ERROR while installing mirage-xen-minios.0.9.3 ===========================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make depend
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/mirage-xen-minios.0.9.3
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/mirage-xen-minios.0.9.3/mirage-xen-minios-11734.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/mirage-xen-minios.0.9.3/mirage-xen-minios-11734.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/mirage-xen-minios.0.9.3/mirage-xen-minios-11734.out
+### stdout ###
+# [...]
+# +++ opam config var prefix
+# ++ PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73
+# ++ LIBM=openlibm-0.5.4
+# ++ LIBM_ARCHIVE=v0.5.4.tar.gz
+# ++ LIBM_URL=https://github.com/JuliaLang/openlibm/archive/v0.5.4.tar.gz
+# + '[' '!' -e v0.5.4.tar.gz ']'
+# + curl -OL https://github.com/JuliaLang/openlibm/archive/v0.5.4.tar.gz
+# error: /home/doligez/opamcheck/sandbox2/bin/curl -OL https://github.com/JuliaLang/openlibm/archive/v0.5.4.tar.gz
+# Makefile:8: recipe for target 'depend' failed
+# make: *** [depend] Error 1
+### stderr ###
+# [...]
+# +++ opam config var prefix
+# ++ PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73
+# ++ LIBM=openlibm-0.5.4
+# ++ LIBM_ARCHIVE=v0.5.4.tar.gz
+# ++ LIBM_URL=https://github.com/JuliaLang/openlibm/archive/v0.5.4.tar.gz
+# + '[' '!' -e v0.5.4.tar.gz ']'
+# + curl -OL https://github.com/JuliaLang/openlibm/archive/v0.5.4.tar.gz
+# error: /home/doligez/opamcheck/sandbox2/bin/curl -OL https://github.com/JuliaLang/openlibm/archive/v0.5.4.tar.gz
+# Makefile:8: recipe for target 'depend' failed
+# make: *** [depend] Error 1
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install mirage-xen-minios 0.9.3
+No changes have been performed
+'opam install mirage-xen-minios.0.9.3' failed.

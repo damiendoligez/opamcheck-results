@@ -1,0 +1,54 @@
+The following actions will be performed:
+  - install ppx_regexp 0.4.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ppx_regexp: http] Command started
+[ppx_regexp: http] Command started
+[ppx_regexp.0.4.0] https://github.com/paurkedal/ppx_regexp/releases/download/v0.4.0/ppx_regexp-0.4.0.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ppx_regexp: dune build] Command started
++ dune "build" "-p" "ppx_regexp" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_regexp.0.4.0)
+- File "ppx_regexp/dune", line 6, characters 14-52:
+- Error: No ppx driver were found. It seems that
+- ppx_tools_versioned.metaquot_404 is not compatible with Dune. Examples of ppx
+- rewriters that are compatible with Dune are ones using
+- ocaml-migrate-parsetree, ppxlib or ppx_driver.
+- File "ppx_regexp/dune", line 6, characters 14-52:
+- Error: No ppx driver were found. It seems that
+- ppx_tools_versioned.metaquot_404 is not compatible with Dune. Examples of ppx
+- rewriters that are compatible with Dune are ones using
+- ocaml-migrate-parsetree, ppxlib or ppx_driver.
+[ERROR] The compilation of ppx_regexp failed at "dune build -p ppx_regexp -j
+        4".
+
+#=== ERROR while installing ppx_regexp.0.4.0 ==================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              dune build -p ppx_regexp -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_regexp.0.4.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_regexp.0.4.0/ppx_regexp-26241.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_regexp.0.4.0/ppx_regexp-26241.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/ppx_regexp.0.4.0/ppx_regexp-26241.out
+### stdout ###
+# File "ppx_regexp/dune", line 6, characters 14-52:
+# Error: No ppx driver were found. It seems that
+# ppx_tools_versioned.metaquot_404 is not compatible with Dune. Examples of ppx
+# rewriters that are compatible with Dune are ones using
+# ocaml-migrate-parsetree, ppxlib or ppx_driver.
+### stderr ###
+# File "ppx_regexp/dune", line 6, characters 14-52:
+# Error: No ppx driver were found. It seems that
+# ppx_tools_versioned.metaquot_404 is not compatible with Dune. Examples of ppx
+# rewriters that are compatible with Dune are ones using
+# ocaml-migrate-parsetree, ppxlib or ppx_driver.
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install ppx_regexp 0.4.0
+No changes have been performed
+'opam install ppx_regexp.0.4.0' failed.

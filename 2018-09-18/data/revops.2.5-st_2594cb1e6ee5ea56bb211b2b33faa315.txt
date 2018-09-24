@@ -1,0 +1,279 @@
+The following actions will be performed:
+  - install revops 2.5
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[revops: http] Command started
+[revops: http] Command started
+[revops.2.5] https://bitbucket.org/mimirops/revops/get/2.5.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[revops: make] Command started
++ make "-j4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5)
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- pds
+- make -f pds.mk all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops \
+- -C build/release/revops
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops'
+- cd ../../../src/revops && \
+- ocamlfind ocamldep   \
+- revops.ml revops_fn.ml revops_sys.ml revops_intf.ml revops.mli revops_fn.mli revops_sys.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops/.d
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_intf.ml -o revops_intf.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_intf.ml -o revops_intf.cmo
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers -c ../../../src/revops/revops_fn.mli -o revops_fn.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers -c ../../../src/revops/revops.mli -o revops.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers -c ../../../src/revops/revops_sys.mli -o revops_sys.cmi
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_fn.ml -o revops_fn.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops.ml -o revops.cmo
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_fn.ml -o revops_fn.cmo
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_sys.ml -o revops_sys.cmo
+- File "../../../src/revops/revops.ml", line 11, characters 23-28:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val protect : f:(unit -> 'a) -> finally:(unit -> unit) -> 'a
+-        is not included in
+-          val protect : f:(unit -> 'a t) -> finally:(unit -> 'b) -> 'a t
+-        File "../../../src/revops/revops_intf.ml", line 6, characters 2-64:
+-          Expected declaration
+-        File "../../../src/revops/revops.ml", line 7, characters 6-13:
+-          Actual declaration
+- ../../../Ocamlrules.mk.in:115: recipe for target 'revops.cmo' failed
+- make[2]: *** [revops.cmo] Error 2
+- make[2]: *** Waiting for unfinished jobs....
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module CCFun, and its interface was not compiled with -opaque
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops'
+- pds.mk:77: recipe for target 'release_revops' failed
+- make[1]: *** [release_revops] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- Makefile:4: recipe for target 'all' failed
+- make: *** [all] Error 2
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- pds
+- make -f pds.mk all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops \
+- -C build/release/revops
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops'
+- cd ../../../src/revops && \
+- ocamlfind ocamldep   \
+- revops.ml revops_fn.ml revops_sys.ml revops_intf.ml revops.mli revops_fn.mli revops_sys.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops/.d
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_intf.ml -o revops_intf.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_intf.ml -o revops_intf.cmo
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers -c ../../../src/revops/revops_fn.mli -o revops_fn.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers -c ../../../src/revops/revops.mli -o revops.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers -c ../../../src/revops/revops_sys.mli -o revops_sys.cmi
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_fn.ml -o revops_fn.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops.ml -o revops.cmo
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_fn.ml -o revops_fn.cmo
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_sys.ml -o revops_sys.cmo
+- File "../../../src/revops/revops.ml", line 11, characters 23-28:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val protect : f:(unit -> 'a) -> finally:(unit -> unit) -> 'a
+-        is not included in
+-          val protect : f:(unit -> 'a t) -> finally:(unit -> 'b) -> 'a t
+-        File "../../../src/revops/revops_intf.ml", line 6, characters 2-64:
+-          Expected declaration
+-        File "../../../src/revops/revops.ml", line 7, characters 6-13:
+-          Actual declaration
+- ../../../Ocamlrules.mk.in:115: recipe for target 'revops.cmo' failed
+- make[2]: *** [revops.cmo] Error 2
+- make[2]: *** Waiting for unfinished jobs....
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module CCFun, and its interface was not compiled with -opaque
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops'
+- pds.mk:77: recipe for target 'release_revops' failed
+- make[1]: *** [release_revops] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- Makefile:4: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of revops failed at "make -j4".
+[revops: make remove] Command started
++ make "PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73" "remove" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5)
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- pds
+- make -f pds.mk all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops \
+- -C build/release/revops
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops'
+- cd ../../../src/revops && \
+- ocamlfind ocamldep   \
+- revops.ml revops_fn.ml revops_sys.ml revops_intf.ml revops.mli revops_fn.mli revops_sys.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops/.d
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_intf.ml -o revops_intf.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_intf.ml -o revops_intf.cmo
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers -c ../../../src/revops/revops_fn.mli -o revops_fn.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers -c ../../../src/revops/revops.mli -o revops.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers -c ../../../src/revops/revops_sys.mli -o revops_sys.cmi
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_fn.ml -o revops_fn.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops.ml -o revops.cmo
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_fn.ml -o revops_fn.cmo
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_sys.ml -o revops_sys.cmo
+- File "../../../src/revops/revops.ml", line 11, characters 23-28:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val protect : f:(unit -> 'a) -> finally:(unit -> unit) -> 'a
+-        is not included in
+-          val protect : f:(unit -> 'a t) -> finally:(unit -> 'b) -> 'a t
+-        File "../../../src/revops/revops_intf.ml", line 6, characters 2-64:
+-          Expected declaration
+-        File "../../../src/revops/revops.ml", line 7, characters 6-13:
+-          Actual declaration
+- ../../../Ocamlrules.mk.in:115: recipe for target 'revops.cmo' failed
+- make[2]: *** [revops.cmo] Error 2
+- make[2]: *** Waiting for unfinished jobs....
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module CCFun, and its interface was not compiled with -opaque
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops'
+- pds.mk:77: recipe for target 'release_revops' failed
+- make[1]: *** [release_revops] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- Makefile:4: recipe for target 'all' failed
+- make: *** [all] Error 2
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- pds
+- make -f pds.mk remove
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- make -C build/release/revops remove
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops'
+- ocamlfind remove revops
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/revops/META
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- pds
+- make -f pds.mk all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- make \
+- OCAMLPATH=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release: \
+- BUILD_DIR=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops \
+- -C build/release/revops
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops'
+- cd ../../../src/revops && \
+- ocamlfind ocamldep   \
+- revops.ml revops_fn.ml revops_sys.ml revops_intf.ml revops.mli revops_fn.mli revops_sys.mli > /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops/.d
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_intf.ml -o revops_intf.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_intf.ml -o revops_intf.cmo
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers -c ../../../src/revops/revops_fn.mli -o revops_fn.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers -c ../../../src/revops/revops.mli -o revops.cmi
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers -c ../../../src/revops/revops_sys.mli -o revops_sys.cmi
+- ocamlfind ocamlopt -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_fn.ml -o revops_fn.cmx
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops.ml -o revops.cmo
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_fn.ml -o revops_fn.cmo
+- ocamlfind ocamlc -thread -I +camlp4  -w '@f@p@u@s@40' -strict-sequence -strict-formats -safe-string -noassert -package containers  -c ../../../src/revops/revops_sys.ml -o revops_sys.cmo
+- File "../../../src/revops/revops.ml", line 11, characters 23-28:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val protect : f:(unit -> 'a) -> finally:(unit -> unit) -> 'a
+-        is not included in
+-          val protect : f:(unit -> 'a t) -> finally:(unit -> 'b) -> 'a t
+-        File "../../../src/revops/revops_intf.ml", line 6, characters 2-64:
+-          Expected declaration
+-        File "../../../src/revops/revops.ml", line 7, characters 6-13:
+-          Actual declaration
+- ../../../Ocamlrules.mk.in:115: recipe for target 'revops.cmo' failed
+- make[2]: *** [revops.cmo] Error 2
+- make[2]: *** Waiting for unfinished jobs....
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module CCFun, and its interface was not compiled with -opaque
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops'
+- pds.mk:77: recipe for target 'release_revops' failed
+- make[1]: *** [release_revops] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- Makefile:4: recipe for target 'all' failed
+- make: *** [all] Error 2
+- pds -f | merlin-of-pds > .merlin
+- pds
+- make -f pds.mk Makefile
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- make[1]: Nothing to be done for 'Makefile'.
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- pds
+- make -f pds.mk remove
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+- make -C build/release/revops remove
+- make[2]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops'
+- ocamlfind remove revops
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/revops/META
+- make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops'
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+
+#=== ERROR while installing revops.2.5 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make -j4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/revops-14918.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/revops-14918.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/revops-14918.out
+### stdout ###
+# [...]
+# make[2]: *** [revops.cmo] Error 2
+# make[2]: *** Waiting for unfinished jobs....
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module CCFun, and its interface was not compiled with -opaque
+# make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops'
+# pds.mk:77: recipe for target 'release_revops' failed
+# make[1]: *** [release_revops] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+# Makefile:4: recipe for target 'all' failed
+# make: *** [all] Error 2
+### stderr ###
+# [...]
+# make[2]: *** [revops.cmo] Error 2
+# make[2]: *** Waiting for unfinished jobs....
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module CCFun, and its interface was not compiled with -opaque
+# make[2]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5/build/release/revops'
+# pds.mk:77: recipe for target 'release_revops' failed
+# make[1]: *** [release_revops] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/revops.2.5'
+# Makefile:4: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install revops 2.5
+No changes have been performed
+'opam install revops.2.5' failed.

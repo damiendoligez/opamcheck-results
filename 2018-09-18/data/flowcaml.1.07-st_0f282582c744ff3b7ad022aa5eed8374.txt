@@ -1,0 +1,962 @@
+The following actions will be performed:
+  - install flowcaml 1.07
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[flowcaml: http] Command started
+[flowcaml: http] Command started
+[flowcaml.1.07] http://www.normalesup.org/~simonet/soft/flowcaml/flowcaml-1.07.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[flowcaml: sh] Command started
++ sh "-c" "cd src-flowcaml && ./configure --prefix /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73 --with-runlib=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07)
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- Suffix of executable files: ""
+- checking for gcc... gcc
+- checking for C compiler default output file name... a.out
+- checking whether the C compiler works... yes
+- checking whether we are cross compiling... no
+- checking for suffix of executables... 
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ANSI C... none needed
+- checking how to run the C preprocessor... gcc -E
+- 
+- *** Objective Caml
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc
+- checking ocamlc version... 4.07.1+dev0-2018-07-10
+- checking Objective Caml library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt
+- checking ocamlopt version... 4.07.1+dev0-2018-07-10
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep
+- Enabling run-time assertion checks
+- link bytecode executables in default mode
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/graphics.cma... yes
+- 
+- *** Auxiliary programs
+- checking for dot... /usr/bin/dot
+- 
+- *** Installation directories
+- checking binaries installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin
+- checking standard library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- checking runtime library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- 
+- configure: creating ./config.status
+- config.status: creating ../Makefile.common
+- config.status: creating Makefile.config
+- config.status: creating utils/config.ml
+- 
+- ------------------------------------------------------------
+- Everything seems to be ok.
+- You can now start compilation by 'make world'.
+- ------------------------------------------------------------
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- Suffix of executable files: ""
+- checking for gcc... gcc
+- checking for C compiler default output file name... a.out
+- checking whether the C compiler works... yes
+- checking whether we are cross compiling... no
+- checking for suffix of executables... 
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ANSI C... none needed
+- checking how to run the C preprocessor... gcc -E
+- 
+- *** Objective Caml
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc
+- checking ocamlc version... 4.07.1+dev0-2018-07-10
+- checking Objective Caml library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt
+- checking ocamlopt version... 4.07.1+dev0-2018-07-10
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep
+- Enabling run-time assertion checks
+- link bytecode executables in default mode
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/graphics.cma... yes
+- 
+- *** Auxiliary programs
+- checking for dot... /usr/bin/dot
+- 
+- *** Installation directories
+- checking binaries installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin
+- checking standard library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- checking runtime library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- 
+- configure: creating ./config.status
+- config.status: creating ../Makefile.common
+- config.status: creating Makefile.config
+- config.status: creating utils/config.ml
+- 
+- ------------------------------------------------------------
+- Everything seems to be ok.
+- You can now start compilation by 'make world'.
+- ------------------------------------------------------------
+[flowcaml: sh cd src-flowcaml && make world] Command started
++ sh "-c" "cd src-flowcaml && make world" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07)
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- Suffix of executable files: ""
+- checking for gcc... gcc
+- checking for C compiler default output file name... a.out
+- checking whether the C compiler works... yes
+- checking whether we are cross compiling... no
+- checking for suffix of executables... 
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ANSI C... none needed
+- checking how to run the C preprocessor... gcc -E
+- 
+- *** Objective Caml
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc
+- checking ocamlc version... 4.07.1+dev0-2018-07-10
+- checking Objective Caml library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt
+- checking ocamlopt version... 4.07.1+dev0-2018-07-10
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep
+- Enabling run-time assertion checks
+- link bytecode executables in default mode
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/graphics.cma... yes
+- 
+- *** Auxiliary programs
+- checking for dot... /usr/bin/dot
+- 
+- *** Installation directories
+- checking binaries installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin
+- checking standard library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- checking runtime library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- 
+- configure: creating ./config.status
+- config.status: creating ../Makefile.common
+- config.status: creating Makefile.config
+- config.status: creating utils/config.ml
+- 
+- ------------------------------------------------------------
+- Everything seems to be ok.
+- You can now start compilation by 'make world'.
+- ------------------------------------------------------------
+- make all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07/src-flowcaml'
+- cpp -DGRAPHICS -P ../src-averell/avl_graphics.mlp > ../src-averell/avl_graphics.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphics.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_topo.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_topo.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_tarjan.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_tarjan.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_closure.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_closure.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_kernel.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_kernel.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphviz.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphviz.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_draw.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_draw.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_lib.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_lib.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_tree.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_list.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_debug.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_aux.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_aux.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_sig.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_templates.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_dumb.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_light.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/standard.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/graphps.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/graphps.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/draw.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/config.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/clflags.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/compare.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/compare.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/option.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/option.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/standard.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/datastruct.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/misc.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/terminfo.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/lattice_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/bool_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/variance_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/tbl.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/longident.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex parsing/linenum.mll
+- 12 states, 323 transitions, table size 1364 bytes
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/linenum.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/linenum.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/location.ml
+- File "parsing/location.ml", line 75, characters 7-20:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ../Makefile.common:48: recipe for target 'parsing/location.cmo' failed
+- make[1]: *** [parsing/location.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07/src-flowcaml'
+- Makefile:49: recipe for target 'world' failed
+- make: *** [world] Error 2
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- Suffix of executable files: ""
+- checking for gcc... gcc
+- checking for C compiler default output file name... a.out
+- checking whether the C compiler works... yes
+- checking whether we are cross compiling... no
+- checking for suffix of executables... 
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ANSI C... none needed
+- checking how to run the C preprocessor... gcc -E
+- 
+- *** Objective Caml
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc
+- checking ocamlc version... 4.07.1+dev0-2018-07-10
+- checking Objective Caml library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt
+- checking ocamlopt version... 4.07.1+dev0-2018-07-10
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep
+- Enabling run-time assertion checks
+- link bytecode executables in default mode
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/graphics.cma... yes
+- 
+- *** Auxiliary programs
+- checking for dot... /usr/bin/dot
+- 
+- *** Installation directories
+- checking binaries installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin
+- checking standard library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- checking runtime library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- 
+- configure: creating ./config.status
+- config.status: creating ../Makefile.common
+- config.status: creating Makefile.config
+- config.status: creating utils/config.ml
+- 
+- ------------------------------------------------------------
+- Everything seems to be ok.
+- You can now start compilation by 'make world'.
+- ------------------------------------------------------------
+- make all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07/src-flowcaml'
+- cpp -DGRAPHICS -P ../src-averell/avl_graphics.mlp > ../src-averell/avl_graphics.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphics.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_topo.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_topo.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_tarjan.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_tarjan.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_closure.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_closure.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_kernel.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_kernel.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphviz.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphviz.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_draw.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_draw.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_lib.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_lib.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_tree.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_list.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_debug.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_aux.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_aux.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_sig.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_templates.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_dumb.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_light.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/standard.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/graphps.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/graphps.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/draw.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/config.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/clflags.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/compare.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/compare.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/option.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/option.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/standard.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/datastruct.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/misc.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/terminfo.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/lattice_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/bool_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/variance_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/tbl.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/longident.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex parsing/linenum.mll
+- 12 states, 323 transitions, table size 1364 bytes
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/linenum.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/linenum.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/location.ml
+- File "parsing/location.ml", line 75, characters 7-20:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ../Makefile.common:48: recipe for target 'parsing/location.cmo' failed
+- make[1]: *** [parsing/location.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07/src-flowcaml'
+- Makefile:49: recipe for target 'world' failed
+- make: *** [world] Error 2
+[ERROR] The compilation of flowcaml failed at "sh -c cd src-flowcaml && make
+        world".
+[flowcaml: sh] Command started
++ sh "-c" "cd src-flowcaml && ./configure --prefix /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73 --with-runlib=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07)
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- Suffix of executable files: ""
+- checking for gcc... gcc
+- checking for C compiler default output file name... a.out
+- checking whether the C compiler works... yes
+- checking whether we are cross compiling... no
+- checking for suffix of executables... 
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ANSI C... none needed
+- checking how to run the C preprocessor... gcc -E
+- 
+- *** Objective Caml
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc
+- checking ocamlc version... 4.07.1+dev0-2018-07-10
+- checking Objective Caml library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt
+- checking ocamlopt version... 4.07.1+dev0-2018-07-10
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep
+- Enabling run-time assertion checks
+- link bytecode executables in default mode
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/graphics.cma... yes
+- 
+- *** Auxiliary programs
+- checking for dot... /usr/bin/dot
+- 
+- *** Installation directories
+- checking binaries installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin
+- checking standard library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- checking runtime library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- 
+- configure: creating ./config.status
+- config.status: creating ../Makefile.common
+- config.status: creating Makefile.config
+- config.status: creating utils/config.ml
+- 
+- ------------------------------------------------------------
+- Everything seems to be ok.
+- You can now start compilation by 'make world'.
+- ------------------------------------------------------------
+- make all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07/src-flowcaml'
+- cpp -DGRAPHICS -P ../src-averell/avl_graphics.mlp > ../src-averell/avl_graphics.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphics.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_topo.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_topo.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_tarjan.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_tarjan.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_closure.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_closure.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_kernel.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_kernel.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphviz.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphviz.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_draw.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_draw.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_lib.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_lib.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_tree.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_list.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_debug.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_aux.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_aux.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_sig.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_templates.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_dumb.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_light.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/standard.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/graphps.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/graphps.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/draw.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/config.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/clflags.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/compare.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/compare.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/option.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/option.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/standard.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/datastruct.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/misc.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/terminfo.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/lattice_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/bool_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/variance_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/tbl.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/longident.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex parsing/linenum.mll
+- 12 states, 323 transitions, table size 1364 bytes
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/linenum.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/linenum.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/location.ml
+- File "parsing/location.ml", line 75, characters 7-20:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ../Makefile.common:48: recipe for target 'parsing/location.cmo' failed
+- make[1]: *** [parsing/location.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07/src-flowcaml'
+- Makefile:49: recipe for target 'world' failed
+- make: *** [world] Error 2
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- Suffix of executable files: ""
+- checking for gcc... gcc
+- checking for C compiler default output file name... a.out
+- checking whether the C compiler works... yes
+- checking whether we are cross compiling... no
+- checking for suffix of executables... 
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ANSI C... none needed
+- checking how to run the C preprocessor... gcc -E
+- 
+- *** Objective Caml
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc
+- checking ocamlc version... 4.07.1+dev0-2018-07-10
+- checking Objective Caml library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt
+- checking ocamlopt version... 4.07.1+dev0-2018-07-10
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep
+- Enabling run-time assertion checks
+- link bytecode executables in default mode
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/graphics.cma... yes
+- 
+- *** Auxiliary programs
+- checking for dot... /usr/bin/dot
+- 
+- *** Installation directories
+- checking binaries installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin
+- checking standard library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- checking runtime library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- 
+- configure: creating ./config.status
+- config.status: creating ../Makefile.common
+- config.status: creating Makefile.config
+- config.status: creating utils/config.ml
+- 
+- ------------------------------------------------------------
+- Everything seems to be ok.
+- You can now start compilation by 'make world'.
+- ------------------------------------------------------------
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- Suffix of executable files: ""
+- checking for gcc... gcc
+- checking for C compiler default output file name... a.out
+- checking whether the C compiler works... yes
+- checking whether we are cross compiling... no
+- checking for suffix of executables... 
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ANSI C... none needed
+- checking how to run the C preprocessor... gcc -E
+- 
+- *** Objective Caml
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc
+- checking ocamlc version... 4.07.1+dev0-2018-07-10
+- checking Objective Caml library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt
+- checking ocamlopt version... 4.07.1+dev0-2018-07-10
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep
+- Enabling run-time assertion checks
+- link bytecode executables in default mode
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/graphics.cma... yes
+- 
+- *** Auxiliary programs
+- checking for dot... /usr/bin/dot
+- 
+- *** Installation directories
+- checking binaries installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin
+- checking standard library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- checking runtime library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- 
+- configure: creating ./config.status
+- config.status: creating ../Makefile.common
+- config.status: creating Makefile.config
+- config.status: creating utils/config.ml
+- 
+- ------------------------------------------------------------
+- Everything seems to be ok.
+- You can now start compilation by 'make world'.
+- ------------------------------------------------------------
+- make all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07/src-flowcaml'
+- cpp -DGRAPHICS -P ../src-averell/avl_graphics.mlp > ../src-averell/avl_graphics.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphics.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_topo.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_topo.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_tarjan.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_tarjan.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_closure.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_closure.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_kernel.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_kernel.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphviz.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphviz.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_draw.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_draw.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_lib.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_lib.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_tree.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_list.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_debug.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_aux.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_aux.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_sig.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_templates.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_dumb.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_light.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/standard.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/graphps.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/graphps.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/draw.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/config.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/clflags.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/compare.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/compare.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/option.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/option.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/standard.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/datastruct.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/misc.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/terminfo.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/lattice_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/bool_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/variance_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/tbl.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/longident.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex parsing/linenum.mll
+- 12 states, 323 transitions, table size 1364 bytes
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/linenum.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/linenum.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/location.ml
+- File "parsing/location.ml", line 75, characters 7-20:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ../Makefile.common:48: recipe for target 'parsing/location.cmo' failed
+- make[1]: *** [parsing/location.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07/src-flowcaml'
+- Makefile:49: recipe for target 'world' failed
+- make: *** [world] Error 2
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- Suffix of executable files: ""
+- checking for gcc... gcc
+- checking for C compiler default output file name... a.out
+- checking whether the C compiler works... yes
+- checking whether we are cross compiling... no
+- checking for suffix of executables... 
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ANSI C... none needed
+- checking how to run the C preprocessor... gcc -E
+- 
+- *** Objective Caml
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc
+- checking ocamlc version... 4.07.1+dev0-2018-07-10
+- checking Objective Caml library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt
+- checking ocamlopt version... 4.07.1+dev0-2018-07-10
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep
+- Enabling run-time assertion checks
+- link bytecode executables in default mode
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/graphics.cma... yes
+- 
+- *** Auxiliary programs
+- checking for dot... /usr/bin/dot
+- 
+- *** Installation directories
+- checking binaries installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin
+- checking standard library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- checking runtime library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- 
+- configure: creating ./config.status
+- config.status: creating ../Makefile.common
+- config.status: creating Makefile.config
+- config.status: creating utils/config.ml
+- 
+- ------------------------------------------------------------
+- Everything seems to be ok.
+- You can now start compilation by 'make world'.
+- ------------------------------------------------------------
+[flowcaml: sh cd src-flowcaml && make uninstall] Command started
++ sh "-c" "cd src-flowcaml && make uninstall" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07)
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- Suffix of executable files: ""
+- checking for gcc... gcc
+- checking for C compiler default output file name... a.out
+- checking whether the C compiler works... yes
+- checking whether we are cross compiling... no
+- checking for suffix of executables... 
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ANSI C... none needed
+- checking how to run the C preprocessor... gcc -E
+- 
+- *** Objective Caml
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc
+- checking ocamlc version... 4.07.1+dev0-2018-07-10
+- checking Objective Caml library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt
+- checking ocamlopt version... 4.07.1+dev0-2018-07-10
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep
+- Enabling run-time assertion checks
+- link bytecode executables in default mode
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/graphics.cma... yes
+- 
+- *** Auxiliary programs
+- checking for dot... /usr/bin/dot
+- 
+- *** Installation directories
+- checking binaries installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin
+- checking standard library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- checking runtime library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- 
+- configure: creating ./config.status
+- config.status: creating ../Makefile.common
+- config.status: creating Makefile.config
+- config.status: creating utils/config.ml
+- 
+- ------------------------------------------------------------
+- Everything seems to be ok.
+- You can now start compilation by 'make world'.
+- ------------------------------------------------------------
+- make all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07/src-flowcaml'
+- cpp -DGRAPHICS -P ../src-averell/avl_graphics.mlp > ../src-averell/avl_graphics.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphics.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_topo.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_topo.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_tarjan.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_tarjan.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_closure.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_closure.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_kernel.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_kernel.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphviz.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphviz.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_draw.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_draw.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_lib.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_lib.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_tree.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_list.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_debug.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_aux.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_aux.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_sig.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_templates.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_dumb.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_light.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/standard.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/graphps.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/graphps.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/draw.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/config.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/clflags.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/compare.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/compare.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/option.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/option.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/standard.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/datastruct.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/misc.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/terminfo.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/lattice_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/bool_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/variance_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/tbl.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/longident.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex parsing/linenum.mll
+- 12 states, 323 transitions, table size 1364 bytes
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/linenum.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/linenum.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/location.ml
+- File "parsing/location.ml", line 75, characters 7-20:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ../Makefile.common:48: recipe for target 'parsing/location.cmo' failed
+- make[1]: *** [parsing/location.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07/src-flowcaml'
+- Makefile:49: recipe for target 'world' failed
+- make: *** [world] Error 2
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- Suffix of executable files: ""
+- checking for gcc... gcc
+- checking for C compiler default output file name... a.out
+- checking whether the C compiler works... yes
+- checking whether we are cross compiling... no
+- checking for suffix of executables... 
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ANSI C... none needed
+- checking how to run the C preprocessor... gcc -E
+- 
+- *** Objective Caml
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc
+- checking ocamlc version... 4.07.1+dev0-2018-07-10
+- checking Objective Caml library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt
+- checking ocamlopt version... 4.07.1+dev0-2018-07-10
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep
+- Enabling run-time assertion checks
+- link bytecode executables in default mode
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/graphics.cma... yes
+- 
+- *** Auxiliary programs
+- checking for dot... /usr/bin/dot
+- 
+- *** Installation directories
+- checking binaries installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin
+- checking standard library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- checking runtime library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- 
+- configure: creating ./config.status
+- config.status: creating ../Makefile.common
+- config.status: creating Makefile.config
+- config.status: creating utils/config.ml
+- 
+- ------------------------------------------------------------
+- Everything seems to be ok.
+- You can now start compilation by 'make world'.
+- ------------------------------------------------------------
+- if test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcaml; then rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcaml; fi;  if test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamlc; then rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamlc; fi;  if test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamlpol; then rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamlpol; fi;  if test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamldep; then rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamldep; fi;  if test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamlmerge; then rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamlmerge; fi;  if test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamldoc; then rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamldoc; fi;  if test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcaml.opt; then rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcaml.opt; fi;  if test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamlc.opt; then rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamlc.opt; fi;
+- rm -rf /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- rm -rf /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- Suffix of executable files: ""
+- checking for gcc... gcc
+- checking for C compiler default output file name... a.out
+- checking whether the C compiler works... yes
+- checking whether we are cross compiling... no
+- checking for suffix of executables... 
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ANSI C... none needed
+- checking how to run the C preprocessor... gcc -E
+- 
+- *** Objective Caml
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc
+- checking ocamlc version... 4.07.1+dev0-2018-07-10
+- checking Objective Caml library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt
+- checking ocamlopt version... 4.07.1+dev0-2018-07-10
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep
+- Enabling run-time assertion checks
+- link bytecode executables in default mode
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/graphics.cma... yes
+- 
+- *** Auxiliary programs
+- checking for dot... /usr/bin/dot
+- 
+- *** Installation directories
+- checking binaries installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin
+- checking standard library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- checking runtime library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- 
+- configure: creating ./config.status
+- config.status: creating ../Makefile.common
+- config.status: creating Makefile.config
+- config.status: creating utils/config.ml
+- 
+- ------------------------------------------------------------
+- Everything seems to be ok.
+- You can now start compilation by 'make world'.
+- ------------------------------------------------------------
+- make all
+- make[1]: Entering directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07/src-flowcaml'
+- cpp -DGRAPHICS -P ../src-averell/avl_graphics.mlp > ../src-averell/avl_graphics.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphics.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_topo.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_topo.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_tarjan.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_tarjan.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_closure.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_closure.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_kernel.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_kernel.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphviz.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_graphviz.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_draw.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-averell/avl_draw.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_lib.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_lib.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_tree.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_list.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_debug.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_aux.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_aux.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_sig.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_templates.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_dumb.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton_light.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/standard.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c ../src-dalton/dalton.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/graphps.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/graphps.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/draw.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/config.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/clflags.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/compare.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/compare.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/option.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/option.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/standard.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/datastruct.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/misc.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/terminfo.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/lattice_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/bool_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/variance_solver.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c utils/tbl.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/longident.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex parsing/linenum.mll
+- 12 states, 323 transitions, table size 1364 bytes
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/linenum.mli
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/linenum.ml
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/location.ml
+- File "parsing/location.ml", line 75, characters 7-20:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- ../Makefile.common:48: recipe for target 'parsing/location.cmo' failed
+- make[1]: *** [parsing/location.cmo] Error 2
+- make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07/src-flowcaml'
+- Makefile:49: recipe for target 'world' failed
+- make: *** [world] Error 2
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- Suffix of executable files: ""
+- checking for gcc... gcc
+- checking for C compiler default output file name... a.out
+- checking whether the C compiler works... yes
+- checking whether we are cross compiling... no
+- checking for suffix of executables... 
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ANSI C... none needed
+- checking how to run the C preprocessor... gcc -E
+- 
+- *** Objective Caml
+- checking for ocamlc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc
+- checking ocamlc version... 4.07.1+dev0-2018-07-10
+- checking Objective Caml library path... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml
+- checking for ocamlopt... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlopt
+- checking ocamlopt version... 4.07.1+dev0-2018-07-10
+- checking for ocamlyacc... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlyacc
+- checking for ocamllex... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamllex
+- checking for ocamldep... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamldep
+- Enabling run-time assertion checks
+- link bytecode executables in default mode
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/graphics.cma... yes
+- 
+- *** Auxiliary programs
+- checking for dot... /usr/bin/dot
+- 
+- *** Installation directories
+- checking binaries installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin
+- checking standard library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- checking runtime library installation path:... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- 
+- configure: creating ./config.status
+- config.status: creating ../Makefile.common
+- config.status: creating Makefile.config
+- config.status: creating utils/config.ml
+- 
+- ------------------------------------------------------------
+- Everything seems to be ok.
+- You can now start compilation by 'make world'.
+- ------------------------------------------------------------
+- if test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcaml; then rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcaml; fi;  if test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamlc; then rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamlc; fi;  if test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamlpol; then rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamlpol; fi;  if test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamldep; then rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamldep; fi;  if test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamlmerge; then rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamlmerge; fi;  if test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamldoc; then rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamldoc; fi;  if test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcaml.opt; then rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcaml.opt; fi;  if test -f /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamlc.opt; then rm /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/flowcamlc.opt; fi;
+- rm -rf /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+- rm -rf /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/flowcaml
+
+#=== ERROR while installing flowcaml.1.07 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              sh -c cd src-flowcaml && make world
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07/flowcaml-12523.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07/flowcaml-12523.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07/flowcaml-12523.out
+### stdout ###
+# [...]
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/linenum.ml
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/location.ml
+# File "parsing/location.ml", line 75, characters 7-20:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# ../Makefile.common:48: recipe for target 'parsing/location.cmo' failed
+# make[1]: *** [parsing/location.cmo] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07/src-flowcaml'
+# Makefile:49: recipe for target 'world' failed
+# make: *** [world] Error 2
+### stderr ###
+# [...]
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/linenum.ml
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/bin/ocamlc -I ../src-averell -I ../src-dalton -I utils -I parsing -I stripping -I types -I typing -I driver -I toplevel -I tools -I docgen -w -A -c parsing/location.ml
+# File "parsing/location.ml", line 75, characters 7-20:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# ../Makefile.common:48: recipe for target 'parsing/location.cmo' failed
+# make[1]: *** [parsing/location.cmo] Error 2
+# make[1]: Leaving directory '/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/flowcaml.1.07/src-flowcaml'
+# Makefile:49: recipe for target 'world' failed
+# make: *** [world] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install flowcaml 1.07
+No changes have been performed
+'opam install flowcaml.1.07' failed.

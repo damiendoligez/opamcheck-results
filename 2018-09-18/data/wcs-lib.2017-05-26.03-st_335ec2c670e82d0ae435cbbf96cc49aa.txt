@@ -1,0 +1,65 @@
+The following actions will be performed:
+  - install wcs-lib 2017-05-26.03
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[wcs-lib: http] Command started
+[wcs-lib: http] Command started
+[wcs-lib.2017-05-26.03] https://github.com/IBM/wcs-ocaml/archive/2017-05-26.03.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[wcs-lib: jbuilder build] Command started
++ jbuilder "build" "-p" "wcs-lib" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/wcs-lib.2017-05-26.03)
+-         rmlc wcs-api/wcs_call.rzi (exit 2)
+- (cd _build/default/wcs-api && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/rmlc.opt -I ../wcs-lib -c wcs_call.mli)
+- Cannot find the compiled interface file wcs_lib.rzi.
+- 
+-       ocamlc wcs-lib/.wcs_lib.objs/wcs_lib__Spel_sedlexer_j.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I wcs-lib/.wcs_lib.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/atd -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/atdgen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/menhirLib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sedlex -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -open Wcs_lib -o wcs-lib/.wcs_lib.objs/wcs_lib__Spel_sedlexer_j.cmo -c -impl wcs-lib/spel_sedlexer_j.pp.ml)
+- File "wcs-lib/spel_sedlexer_j.ml", line 45, characters 15-28:
+- Error: Uninterpreted extension 'sedlex.regexp'.
+-         rmlc wcs-api/wcs_call.rzi (exit 2)
+- (cd _build/default/wcs-api && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/rmlc.opt -I ../wcs-lib -c wcs_call.mli)
+- Cannot find the compiled interface file wcs_lib.rzi.
+- 
+-       ocamlc wcs-lib/.wcs_lib.objs/wcs_lib__Spel_sedlexer_j.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I wcs-lib/.wcs_lib.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/atd -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/atdgen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/menhirLib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sedlex -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -open Wcs_lib -o wcs-lib/.wcs_lib.objs/wcs_lib__Spel_sedlexer_j.cmo -c -impl wcs-lib/spel_sedlexer_j.pp.ml)
+- File "wcs-lib/spel_sedlexer_j.ml", line 45, characters 15-28:
+- Error: Uninterpreted extension 'sedlex.regexp'.
+[ERROR] The compilation of wcs-lib failed at "jbuilder build -p wcs-lib -j 4".
+
+#=== ERROR while installing wcs-lib.2017-05-26.03 =============================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              jbuilder build -p wcs-lib -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/wcs-lib.2017-05-26.03
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/wcs-lib.2017-05-26.03/wcs-lib-31182.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/wcs-lib.2017-05-26.03/wcs-lib-31182.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/wcs-lib.2017-05-26.03/wcs-lib-31182.out
+### stdout ###
+#         rmlc wcs-api/wcs_call.rzi (exit 2)
+# (cd _build/default/wcs-api && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/rmlc.opt -I ../wcs-lib -c wcs_call.mli)
+# Cannot find the compiled interface file wcs_lib.rzi.
+# 
+#       ocamlc wcs-lib/.wcs_lib.objs/wcs_lib__Spel_sedlexer_j.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I wcs-lib/.wcs_lib.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/atd -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/atdgen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/menhirLib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sedlex -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -open Wcs_lib -o wcs-lib/.wcs_lib.objs/wcs_lib__Spel_sedlexer_j.cmo -c -impl wcs-lib/spel_sedlexer_j.pp.ml)
+# File "wcs-lib/spel_sedlexer_j.ml", line 45, characters 15-28:
+# Error: Uninterpreted extension 'sedlex.regexp'.
+### stderr ###
+#         rmlc wcs-api/wcs_call.rzi (exit 2)
+# (cd _build/default/wcs-api && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/rmlc.opt -I ../wcs-lib -c wcs_call.mli)
+# Cannot find the compiled interface file wcs_lib.rzi.
+# 
+#       ocamlc wcs-lib/.wcs_lib.objs/wcs_lib__Spel_sedlexer_j.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -g -bin-annot -I wcs-lib/.wcs_lib.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/atd -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/atdgen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/biniou -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/easy-format -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/gen -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/menhirLib -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/sedlex -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/yojson -no-alias-deps -open Wcs_lib -o wcs-lib/.wcs_lib.objs/wcs_lib__Spel_sedlexer_j.cmo -c -impl wcs-lib/spel_sedlexer_j.pp.ml)
+# File "wcs-lib/spel_sedlexer_j.ml", line 45, characters 15-28:
+# Error: Uninterpreted extension 'sedlex.regexp'.
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install wcs-lib 2017-05-26.03
+No changes have been performed
+'opam install wcs-lib.2017-05-26.03' failed.

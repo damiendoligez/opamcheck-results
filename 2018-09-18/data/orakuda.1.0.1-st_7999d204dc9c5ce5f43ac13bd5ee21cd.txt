@@ -1,0 +1,1741 @@
+The following actions will be performed:
+  - install orakuda 1.0.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[orakuda: http] Command started
+[orakuda: http] Command started
+[orakuda.1.0.1] https://bitbucket.org/camlspotter/orakuda/get/1.0.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[orakuda: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/orakuda.1.0.1)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ..................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ...................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: .................................. orakuda
+- Package version: ............................... 1.0.1
+- os_type: ....................................... Unix
+- system: ........................................ linux
+- architecture: .................................. amd64
+- ccomp_type: .................................... cc
+- ocaml_version: ................................. 4.07.1
+- standard_library_default: ...................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ........................... gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ............................. gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ......................................... default
+- ext_obj: ....................................... .o
+- ext_asm: ....................................... .s
+- ext_lib: ....................................... .a
+- ext_dll: ....................................... .so
+- default_executable_name: ....................... a.out
+- systhread_supported: ........................... true
+- Install architecture-independent files dir: .... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ... $prefix
+- User executables: .............................. $exec_prefix/bin
+- System admin executables: ...................... $exec_prefix/sbin
+- Program executables: ........................... $exec_prefix/libexec
+- Read-only single-machine data: ................. $prefix/etc
+- Modifiable architecture-independent data: ...... $prefix/com
+- Modifiable single-machine data: ................ $prefix/var
+- Object code libraries: ......................... $exec_prefix/lib
+- Read-only arch-independent data root: .......... $prefix/share
+- Read-only architecture-independent data: ....... $datarootdir
+- Info documentation: ............................ $datarootdir/info
+- Locale-dependent data: ......................... $datarootdir/locale
+- Man documentation: ............................. $datarootdir/man
+- Documentation root: ............................ $datarootdir/doc/$pkg_name
+- HTML documentation: ............................ $docdir
+- DVI documentation: ............................. $docdir
+- PDF documentation: ............................. $docdir
+- PS documentation: .............................. $docdir
+- findlib_version: ............................... 1.8.0
+- is_native: ..................................... true
+- suffix_program: ................................ 
+- Remove a file.: ................................ rm -f
+- Remove a directory.: ........................... rm -rf
+- Turn ocaml debug flag on: ...................... true
+- Turn ocaml profile flag on: .................... false
+- Compiler support generation of .cmxs.: ......... true
+- 
+- 
+- Configuration: 
+- ocamlfind: ..................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ...................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: .................................. orakuda
+- Package version: ............................... 1.0.1
+- os_type: ....................................... Unix
+- system: ........................................ linux
+- architecture: .................................. amd64
+- ccomp_type: .................................... cc
+- ocaml_version: ................................. 4.07.1
+- standard_library_default: ...................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ........................... gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ............................. gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ......................................... default
+- ext_obj: ....................................... .o
+- ext_asm: ....................................... .s
+- ext_lib: ....................................... .a
+- ext_dll: ....................................... .so
+- default_executable_name: ....................... a.out
+- systhread_supported: ........................... true
+- Install architecture-independent files dir: .... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ... $prefix
+- User executables: .............................. $exec_prefix/bin
+- System admin executables: ...................... $exec_prefix/sbin
+- Program executables: ........................... $exec_prefix/libexec
+- Read-only single-machine data: ................. $prefix/etc
+- Modifiable architecture-independent data: ...... $prefix/com
+- Modifiable single-machine data: ................ $prefix/var
+- Object code libraries: ......................... $exec_prefix/lib
+- Read-only arch-independent data root: .......... $prefix/share
+- Read-only architecture-independent data: ....... $datarootdir
+- Info documentation: ............................ $datarootdir/info
+- Locale-dependent data: ......................... $datarootdir/locale
+- Man documentation: ............................. $datarootdir/man
+- Documentation root: ............................ $datarootdir/doc/$pkg_name
+- HTML documentation: ............................ $docdir
+- DVI documentation: ............................. $docdir
+- PDF documentation: ............................. $docdir
+- PS documentation: .............................. $docdir
+- findlib_version: ............................... 1.8.0
+- is_native: ..................................... true
+- suffix_program: ................................ 
+- Remove a file.: ................................ rm -f
+- Remove a directory.: ........................... rm -rf
+- Turn ocaml debug flag on: ...................... true
+- Turn ocaml profile flag on: .................... false
+- Compiler support generation of .cmxs.: ......... true
+- 
+[orakuda: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-build" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/orakuda.1.0.1)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ..................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ...................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: .................................. orakuda
+- Package version: ............................... 1.0.1
+- os_type: ....................................... Unix
+- system: ........................................ linux
+- architecture: .................................. amd64
+- ccomp_type: .................................... cc
+- ocaml_version: ................................. 4.07.1
+- standard_library_default: ...................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ........................... gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ............................. gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ......................................... default
+- ext_obj: ....................................... .o
+- ext_asm: ....................................... .s
+- ext_lib: ....................................... .a
+- ext_dll: ....................................... .so
+- default_executable_name: ....................... a.out
+- systhread_supported: ........................... true
+- Install architecture-independent files dir: .... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ... $prefix
+- User executables: .............................. $exec_prefix/bin
+- System admin executables: ...................... $exec_prefix/sbin
+- Program executables: ........................... $exec_prefix/libexec
+- Read-only single-machine data: ................. $prefix/etc
+- Modifiable architecture-independent data: ...... $prefix/com
+- Modifiable single-machine data: ................ $prefix/var
+- Object code libraries: ......................... $exec_prefix/lib
+- Read-only arch-independent data root: .......... $prefix/share
+- Read-only architecture-independent data: ....... $datarootdir
+- Info documentation: ............................ $datarootdir/info
+- Locale-dependent data: ......................... $datarootdir/locale
+- Man documentation: ............................. $datarootdir/man
+- Documentation root: ............................ $datarootdir/doc/$pkg_name
+- HTML documentation: ............................ $docdir
+- DVI documentation: ............................. $docdir
+- PDF documentation: ............................. $docdir
+- PS documentation: .............................. $docdir
+- findlib_version: ............................... 1.8.0
+- is_native: ..................................... true
+- suffix_program: ................................ 
+- Remove a file.: ................................ rm -f
+- Remove a directory.: ........................... rm -rf
+- Turn ocaml debug flag on: ...................... true
+- Turn ocaml profile flag on: .................... false
+- Compiler support generation of .cmxs.: ......... true
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ..................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ...................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: .................................. orakuda
+- Package version: ............................... 1.0.1
+- os_type: ....................................... Unix
+- system: ........................................ linux
+- architecture: .................................. amd64
+- ccomp_type: .................................... cc
+- ocaml_version: ................................. 4.07.1
+- standard_library_default: ...................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ........................... gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ............................. gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ......................................... default
+- ext_obj: ....................................... .o
+- ext_asm: ....................................... .s
+- ext_lib: ....................................... .a
+- ext_dll: ....................................... .so
+- default_executable_name: ....................... a.out
+- systhread_supported: ........................... true
+- Install architecture-independent files dir: .... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ... $prefix
+- User executables: .............................. $exec_prefix/bin
+- System admin executables: ...................... $exec_prefix/sbin
+- Program executables: ........................... $exec_prefix/libexec
+- Read-only single-machine data: ................. $prefix/etc
+- Modifiable architecture-independent data: ...... $prefix/com
+- Modifiable single-machine data: ................ $prefix/var
+- Object code libraries: ......................... $exec_prefix/lib
+- Read-only arch-independent data root: .......... $prefix/share
+- Read-only architecture-independent data: ....... $datarootdir
+- Info documentation: ............................ $datarootdir/info
+- Locale-dependent data: ......................... $datarootdir/locale
+- Man documentation: ............................. $datarootdir/man
+- Documentation root: ............................ $datarootdir/doc/$pkg_name
+- HTML documentation: ............................ $docdir
+- DVI documentation: ............................. $docdir
+- PDF documentation: ............................. $docdir
+- PS documentation: .............................. $docdir
+- findlib_version: ............................... 1.8.0
+- is_native: ..................................... true
+- suffix_program: ................................ 
+- Remove a file.: ................................ rm -f
+- Remove a directory.: ........................... rm -rf
+- Turn ocaml debug flag on: ...................... true
+- Turn ocaml profile flag on: .................... false
+- Compiler support generation of .cmxs.: ......... true
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- File OMyMakefile: line 44, characters 2-21:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- File OMyMakefile: line 229, characters 3-26:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- File OMyMakefile: line 781, characters 6-34:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- *** omake: finished reading OMakefiles (0.08 sec)
+- --- Checking if ocamldep understands -modules... (yes)
+- - build . regexp.cmi
+- + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -annot -w Ae -I . -c regexp.mli
+- File "regexp.mli", line 117, characters 57-122:
+- Warning 50: ambiguous documentation comment
+- - build . cformat.cmo
+- + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -annot -w Ae -I . -c cformat.ml
+- File "cformat.ml", line 75, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "cformat.ml", line 84, characters 3-17:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "cformat.ml", line 58, characters 6-728:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val contents : elem list ref -> bytes
+-        is not included in
+-          val contents : t -> string
+-        File "cformat.ml", line 55, characters 2-28: Expected declaration
+-        File "cformat.ml", line 73, characters 6-14: Actual declaration
+- - build . cformat.cmx
+- + ocamlfind ocamlopt -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -I . -c cformat.ml
+- File "cformat.ml", line 58, characters 6-728:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val contents : elem list ref -> bytes
+-        is not included in
+-          val contents : t -> string
+-        File "cformat.ml", line 55, characters 2-28: Expected declaration
+-        File "cformat.ml", line 73, characters 6-14: Actual declaration
+- *** omake: 46/125 targets are up to date
+- *** omake: failed (0.30 sec, 11/11 scans, 7/7 rules, 28/68 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    cformat.cmo
+-       depends on: cformat.ml
+-    cformat.cmx
+-       depends on: cformat.ml
+-    cformat.o
+-       depends on: cformat.ml
+- E: Failure("Command 'sh -c \"cp OMakeroot.in OMakeroot; omake PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051\"' terminated with error code 2")
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- File OMyMakefile: line 44, characters 2-21:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- File OMyMakefile: line 229, characters 3-26:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- File OMyMakefile: line 781, characters 6-34:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- *** omake: finished reading OMakefiles (0.08 sec)
+- --- Checking if ocamldep understands -modules... (yes)
+- - build . regexp.cmi
+- + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -annot -w Ae -I . -c regexp.mli
+- File "regexp.mli", line 117, characters 57-122:
+- Warning 50: ambiguous documentation comment
+- - build . cformat.cmo
+- + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -annot -w Ae -I . -c cformat.ml
+- File "cformat.ml", line 75, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "cformat.ml", line 84, characters 3-17:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "cformat.ml", line 58, characters 6-728:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val contents : elem list ref -> bytes
+-        is not included in
+-          val contents : t -> string
+-        File "cformat.ml", line 55, characters 2-28: Expected declaration
+-        File "cformat.ml", line 73, characters 6-14: Actual declaration
+- - build . cformat.cmx
+- + ocamlfind ocamlopt -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -I . -c cformat.ml
+- File "cformat.ml", line 58, characters 6-728:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val contents : elem list ref -> bytes
+-        is not included in
+-          val contents : t -> string
+-        File "cformat.ml", line 55, characters 2-28: Expected declaration
+-        File "cformat.ml", line 73, characters 6-14: Actual declaration
+- *** omake: 46/125 targets are up to date
+- *** omake: failed (0.30 sec, 11/11 scans, 7/7 rules, 28/68 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    cformat.cmo
+-       depends on: cformat.ml
+-    cformat.cmx
+-       depends on: cformat.ml
+-    cformat.o
+-       depends on: cformat.ml
+- E: Failure("Command 'sh -c \"cp OMakeroot.in OMakeroot; omake PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051\"' terminated with error code 2")
+[ERROR] The compilation of orakuda failed at "ocaml setup.ml -build".
+[orakuda: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-configure" "--prefix" "/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/orakuda.1.0.1)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ..................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ...................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: .................................. orakuda
+- Package version: ............................... 1.0.1
+- os_type: ....................................... Unix
+- system: ........................................ linux
+- architecture: .................................. amd64
+- ccomp_type: .................................... cc
+- ocaml_version: ................................. 4.07.1
+- standard_library_default: ...................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ........................... gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ............................. gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ......................................... default
+- ext_obj: ....................................... .o
+- ext_asm: ....................................... .s
+- ext_lib: ....................................... .a
+- ext_dll: ....................................... .so
+- default_executable_name: ....................... a.out
+- systhread_supported: ........................... true
+- Install architecture-independent files dir: .... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ... $prefix
+- User executables: .............................. $exec_prefix/bin
+- System admin executables: ...................... $exec_prefix/sbin
+- Program executables: ........................... $exec_prefix/libexec
+- Read-only single-machine data: ................. $prefix/etc
+- Modifiable architecture-independent data: ...... $prefix/com
+- Modifiable single-machine data: ................ $prefix/var
+- Object code libraries: ......................... $exec_prefix/lib
+- Read-only arch-independent data root: .......... $prefix/share
+- Read-only architecture-independent data: ....... $datarootdir
+- Info documentation: ............................ $datarootdir/info
+- Locale-dependent data: ......................... $datarootdir/locale
+- Man documentation: ............................. $datarootdir/man
+- Documentation root: ............................ $datarootdir/doc/$pkg_name
+- HTML documentation: ............................ $docdir
+- DVI documentation: ............................. $docdir
+- PDF documentation: ............................. $docdir
+- PS documentation: .............................. $docdir
+- findlib_version: ............................... 1.8.0
+- is_native: ..................................... true
+- suffix_program: ................................ 
+- Remove a file.: ................................ rm -f
+- Remove a directory.: ........................... rm -rf
+- Turn ocaml debug flag on: ...................... true
+- Turn ocaml profile flag on: .................... false
+- Compiler support generation of .cmxs.: ......... true
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- File OMyMakefile: line 44, characters 2-21:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- File OMyMakefile: line 229, characters 3-26:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- File OMyMakefile: line 781, characters 6-34:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- *** omake: finished reading OMakefiles (0.08 sec)
+- --- Checking if ocamldep understands -modules... (yes)
+- - build . regexp.cmi
+- + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -annot -w Ae -I . -c regexp.mli
+- File "regexp.mli", line 117, characters 57-122:
+- Warning 50: ambiguous documentation comment
+- - build . cformat.cmo
+- + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -annot -w Ae -I . -c cformat.ml
+- File "cformat.ml", line 75, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "cformat.ml", line 84, characters 3-17:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "cformat.ml", line 58, characters 6-728:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val contents : elem list ref -> bytes
+-        is not included in
+-          val contents : t -> string
+-        File "cformat.ml", line 55, characters 2-28: Expected declaration
+-        File "cformat.ml", line 73, characters 6-14: Actual declaration
+- - build . cformat.cmx
+- + ocamlfind ocamlopt -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -I . -c cformat.ml
+- File "cformat.ml", line 58, characters 6-728:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val contents : elem list ref -> bytes
+-        is not included in
+-          val contents : t -> string
+-        File "cformat.ml", line 55, characters 2-28: Expected declaration
+-        File "cformat.ml", line 73, characters 6-14: Actual declaration
+- *** omake: 46/125 targets are up to date
+- *** omake: failed (0.30 sec, 11/11 scans, 7/7 rules, 28/68 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    cformat.cmo
+-       depends on: cformat.ml
+-    cformat.cmx
+-       depends on: cformat.ml
+-    cformat.o
+-       depends on: cformat.ml
+- E: Failure("Command 'sh -c \"cp OMakeroot.in OMakeroot; omake PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051\"' terminated with error code 2")
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ..................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ...................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: .................................. orakuda
+- Package version: ............................... 1.0.1
+- os_type: ....................................... Unix
+- system: ........................................ linux
+- architecture: .................................. amd64
+- ccomp_type: .................................... cc
+- ocaml_version: ................................. 4.07.1
+- standard_library_default: ...................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ........................... gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ............................. gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ......................................... default
+- ext_obj: ....................................... .o
+- ext_asm: ....................................... .s
+- ext_lib: ....................................... .a
+- ext_dll: ....................................... .so
+- default_executable_name: ....................... a.out
+- systhread_supported: ........................... true
+- Install architecture-independent files dir: .... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ... $prefix
+- User executables: .............................. $exec_prefix/bin
+- System admin executables: ...................... $exec_prefix/sbin
+- Program executables: ........................... $exec_prefix/libexec
+- Read-only single-machine data: ................. $prefix/etc
+- Modifiable architecture-independent data: ...... $prefix/com
+- Modifiable single-machine data: ................ $prefix/var
+- Object code libraries: ......................... $exec_prefix/lib
+- Read-only arch-independent data root: .......... $prefix/share
+- Read-only architecture-independent data: ....... $datarootdir
+- Info documentation: ............................ $datarootdir/info
+- Locale-dependent data: ......................... $datarootdir/locale
+- Man documentation: ............................. $datarootdir/man
+- Documentation root: ............................ $datarootdir/doc/$pkg_name
+- HTML documentation: ............................ $docdir
+- DVI documentation: ............................. $docdir
+- PDF documentation: ............................. $docdir
+- PS documentation: .............................. $docdir
+- findlib_version: ............................... 1.8.0
+- is_native: ..................................... true
+- suffix_program: ................................ 
+- Remove a file.: ................................ rm -f
+- Remove a directory.: ........................... rm -rf
+- Turn ocaml debug flag on: ...................... true
+- Turn ocaml profile flag on: .................... false
+- Compiler support generation of .cmxs.: ......... true
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- File OMyMakefile: line 44, characters 2-21:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- File OMyMakefile: line 229, characters 3-26:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- File OMyMakefile: line 781, characters 6-34:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- *** omake: finished reading OMakefiles (0.08 sec)
+- --- Checking if ocamldep understands -modules... (yes)
+- - build . regexp.cmi
+- + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -annot -w Ae -I . -c regexp.mli
+- File "regexp.mli", line 117, characters 57-122:
+- Warning 50: ambiguous documentation comment
+- - build . cformat.cmo
+- + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -annot -w Ae -I . -c cformat.ml
+- File "cformat.ml", line 75, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "cformat.ml", line 84, characters 3-17:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "cformat.ml", line 58, characters 6-728:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val contents : elem list ref -> bytes
+-        is not included in
+-          val contents : t -> string
+-        File "cformat.ml", line 55, characters 2-28: Expected declaration
+-        File "cformat.ml", line 73, characters 6-14: Actual declaration
+- - build . cformat.cmx
+- + ocamlfind ocamlopt -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -I . -c cformat.ml
+- File "cformat.ml", line 58, characters 6-728:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val contents : elem list ref -> bytes
+-        is not included in
+-          val contents : t -> string
+-        File "cformat.ml", line 55, characters 2-28: Expected declaration
+-        File "cformat.ml", line 73, characters 6-14: Actual declaration
+- *** omake: 46/125 targets are up to date
+- *** omake: failed (0.30 sec, 11/11 scans, 7/7 rules, 28/68 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    cformat.cmo
+-       depends on: cformat.ml
+-    cformat.cmx
+-       depends on: cformat.ml
+-    cformat.o
+-       depends on: cformat.ml
+- E: Failure("Command 'sh -c \"cp OMakeroot.in OMakeroot; omake PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051\"' terminated with error code 2")
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ..................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ...................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: .................................. orakuda
+- Package version: ............................... 1.0.1
+- os_type: ....................................... Unix
+- system: ........................................ linux
+- architecture: .................................. amd64
+- ccomp_type: .................................... cc
+- ocaml_version: ................................. 4.07.1
+- standard_library_default: ...................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ........................... gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ............................. gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ......................................... default
+- ext_obj: ....................................... .o
+- ext_asm: ....................................... .s
+- ext_lib: ....................................... .a
+- ext_dll: ....................................... .so
+- default_executable_name: ....................... a.out
+- systhread_supported: ........................... true
+- Install architecture-independent files dir: .... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ... $prefix
+- User executables: .............................. $exec_prefix/bin
+- System admin executables: ...................... $exec_prefix/sbin
+- Program executables: ........................... $exec_prefix/libexec
+- Read-only single-machine data: ................. $prefix/etc
+- Modifiable architecture-independent data: ...... $prefix/com
+- Modifiable single-machine data: ................ $prefix/var
+- Object code libraries: ......................... $exec_prefix/lib
+- Read-only arch-independent data root: .......... $prefix/share
+- Read-only architecture-independent data: ....... $datarootdir
+- Info documentation: ............................ $datarootdir/info
+- Locale-dependent data: ......................... $datarootdir/locale
+- Man documentation: ............................. $datarootdir/man
+- Documentation root: ............................ $datarootdir/doc/$pkg_name
+- HTML documentation: ............................ $docdir
+- DVI documentation: ............................. $docdir
+- PDF documentation: ............................. $docdir
+- PS documentation: .............................. $docdir
+- findlib_version: ............................... 1.8.0
+- is_native: ..................................... true
+- suffix_program: ................................ 
+- Remove a file.: ................................ rm -f
+- Remove a directory.: ........................... rm -rf
+- Turn ocaml debug flag on: ...................... true
+- Turn ocaml profile flag on: .................... false
+- Compiler support generation of .cmxs.: ......... true
+- 
+- 
+- Configuration: 
+- ocamlfind: ..................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ...................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: .................................. orakuda
+- Package version: ............................... 1.0.1
+- os_type: ....................................... Unix
+- system: ........................................ linux
+- architecture: .................................. amd64
+- ccomp_type: .................................... cc
+- ocaml_version: ................................. 4.07.1
+- standard_library_default: ...................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ........................... gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ............................. gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ......................................... default
+- ext_obj: ....................................... .o
+- ext_asm: ....................................... .s
+- ext_lib: ....................................... .a
+- ext_dll: ....................................... .so
+- default_executable_name: ....................... a.out
+- systhread_supported: ........................... true
+- Install architecture-independent files dir: .... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ... $prefix
+- User executables: .............................. $exec_prefix/bin
+- System admin executables: ...................... $exec_prefix/sbin
+- Program executables: ........................... $exec_prefix/libexec
+- Read-only single-machine data: ................. $prefix/etc
+- Modifiable architecture-independent data: ...... $prefix/com
+- Modifiable single-machine data: ................ $prefix/var
+- Object code libraries: ......................... $exec_prefix/lib
+- Read-only arch-independent data root: .......... $prefix/share
+- Read-only architecture-independent data: ....... $datarootdir
+- Info documentation: ............................ $datarootdir/info
+- Locale-dependent data: ......................... $datarootdir/locale
+- Man documentation: ............................. $datarootdir/man
+- Documentation root: ............................ $datarootdir/doc/$pkg_name
+- HTML documentation: ............................ $docdir
+- DVI documentation: ............................. $docdir
+- PDF documentation: ............................. $docdir
+- PS documentation: .............................. $docdir
+- findlib_version: ............................... 1.8.0
+- is_native: ..................................... true
+- suffix_program: ................................ 
+- Remove a file.: ................................ rm -f
+- Remove a directory.: ........................... rm -rf
+- Turn ocaml debug flag on: ...................... true
+- Turn ocaml profile flag on: .................... false
+- Compiler support generation of .cmxs.: ......... true
+- 
+[orakuda: ocaml setup.ml] Command started
++ ocaml "setup.ml" "-uninstall" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/orakuda.1.0.1)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ..................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ...................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: .................................. orakuda
+- Package version: ............................... 1.0.1
+- os_type: ....................................... Unix
+- system: ........................................ linux
+- architecture: .................................. amd64
+- ccomp_type: .................................... cc
+- ocaml_version: ................................. 4.07.1
+- standard_library_default: ...................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ........................... gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ............................. gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ......................................... default
+- ext_obj: ....................................... .o
+- ext_asm: ....................................... .s
+- ext_lib: ....................................... .a
+- ext_dll: ....................................... .so
+- default_executable_name: ....................... a.out
+- systhread_supported: ........................... true
+- Install architecture-independent files dir: .... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ... $prefix
+- User executables: .............................. $exec_prefix/bin
+- System admin executables: ...................... $exec_prefix/sbin
+- Program executables: ........................... $exec_prefix/libexec
+- Read-only single-machine data: ................. $prefix/etc
+- Modifiable architecture-independent data: ...... $prefix/com
+- Modifiable single-machine data: ................ $prefix/var
+- Object code libraries: ......................... $exec_prefix/lib
+- Read-only arch-independent data root: .......... $prefix/share
+- Read-only architecture-independent data: ....... $datarootdir
+- Info documentation: ............................ $datarootdir/info
+- Locale-dependent data: ......................... $datarootdir/locale
+- Man documentation: ............................. $datarootdir/man
+- Documentation root: ............................ $datarootdir/doc/$pkg_name
+- HTML documentation: ............................ $docdir
+- DVI documentation: ............................. $docdir
+- PDF documentation: ............................. $docdir
+- PS documentation: .............................. $docdir
+- findlib_version: ............................... 1.8.0
+- is_native: ..................................... true
+- suffix_program: ................................ 
+- Remove a file.: ................................ rm -f
+- Remove a directory.: ........................... rm -rf
+- Turn ocaml debug flag on: ...................... true
+- Turn ocaml profile flag on: .................... false
+- Compiler support generation of .cmxs.: ......... true
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- File OMyMakefile: line 44, characters 2-21:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- File OMyMakefile: line 229, characters 3-26:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- File OMyMakefile: line 781, characters 6-34:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- *** omake: finished reading OMakefiles (0.08 sec)
+- --- Checking if ocamldep understands -modules... (yes)
+- - build . regexp.cmi
+- + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -annot -w Ae -I . -c regexp.mli
+- File "regexp.mli", line 117, characters 57-122:
+- Warning 50: ambiguous documentation comment
+- - build . cformat.cmo
+- + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -annot -w Ae -I . -c cformat.ml
+- File "cformat.ml", line 75, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "cformat.ml", line 84, characters 3-17:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "cformat.ml", line 58, characters 6-728:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val contents : elem list ref -> bytes
+-        is not included in
+-          val contents : t -> string
+-        File "cformat.ml", line 55, characters 2-28: Expected declaration
+-        File "cformat.ml", line 73, characters 6-14: Actual declaration
+- - build . cformat.cmx
+- + ocamlfind ocamlopt -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -I . -c cformat.ml
+- File "cformat.ml", line 58, characters 6-728:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val contents : elem list ref -> bytes
+-        is not included in
+-          val contents : t -> string
+-        File "cformat.ml", line 55, characters 2-28: Expected declaration
+-        File "cformat.ml", line 73, characters 6-14: Actual declaration
+- *** omake: 46/125 targets are up to date
+- *** omake: failed (0.30 sec, 11/11 scans, 7/7 rules, 28/68 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    cformat.cmo
+-       depends on: cformat.ml
+-    cformat.cmx
+-       depends on: cformat.ml
+-    cformat.o
+-       depends on: cformat.ml
+- E: Failure("Command 'sh -c \"cp OMakeroot.in OMakeroot; omake PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051\"' terminated with error code 2")
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ..................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ...................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: .................................. orakuda
+- Package version: ............................... 1.0.1
+- os_type: ....................................... Unix
+- system: ........................................ linux
+- architecture: .................................. amd64
+- ccomp_type: .................................... cc
+- ocaml_version: ................................. 4.07.1
+- standard_library_default: ...................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ........................... gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ............................. gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ......................................... default
+- ext_obj: ....................................... .o
+- ext_asm: ....................................... .s
+- ext_lib: ....................................... .a
+- ext_dll: ....................................... .so
+- default_executable_name: ....................... a.out
+- systhread_supported: ........................... true
+- Install architecture-independent files dir: .... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ... $prefix
+- User executables: .............................. $exec_prefix/bin
+- System admin executables: ...................... $exec_prefix/sbin
+- Program executables: ........................... $exec_prefix/libexec
+- Read-only single-machine data: ................. $prefix/etc
+- Modifiable architecture-independent data: ...... $prefix/com
+- Modifiable single-machine data: ................ $prefix/var
+- Object code libraries: ......................... $exec_prefix/lib
+- Read-only arch-independent data root: .......... $prefix/share
+- Read-only architecture-independent data: ....... $datarootdir
+- Info documentation: ............................ $datarootdir/info
+- Locale-dependent data: ......................... $datarootdir/locale
+- Man documentation: ............................. $datarootdir/man
+- Documentation root: ............................ $datarootdir/doc/$pkg_name
+- HTML documentation: ............................ $docdir
+- DVI documentation: ............................. $docdir
+- PDF documentation: ............................. $docdir
+- PS documentation: .............................. $docdir
+- findlib_version: ............................... 1.8.0
+- is_native: ..................................... true
+- suffix_program: ................................ 
+- Remove a file.: ................................ rm -f
+- Remove a directory.: ........................... rm -rf
+- Turn ocaml debug flag on: ...................... true
+- Turn ocaml profile flag on: .................... false
+- Compiler support generation of .cmxs.: ......... true
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ..................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ...................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: .................................. orakuda
+- Package version: ............................... 1.0.1
+- os_type: ....................................... Unix
+- system: ........................................ linux
+- architecture: .................................. amd64
+- ccomp_type: .................................... cc
+- ocaml_version: ................................. 4.07.1
+- standard_library_default: ...................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ........................... gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ............................. gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ......................................... default
+- ext_obj: ....................................... .o
+- ext_asm: ....................................... .s
+- ext_lib: ....................................... .a
+- ext_dll: ....................................... .so
+- default_executable_name: ....................... a.out
+- systhread_supported: ........................... true
+- Install architecture-independent files dir: .... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ... $prefix
+- User executables: .............................. $exec_prefix/bin
+- System admin executables: ...................... $exec_prefix/sbin
+- Program executables: ........................... $exec_prefix/libexec
+- Read-only single-machine data: ................. $prefix/etc
+- Modifiable architecture-independent data: ...... $prefix/com
+- Modifiable single-machine data: ................ $prefix/var
+- Object code libraries: ......................... $exec_prefix/lib
+- Read-only arch-independent data root: .......... $prefix/share
+- Read-only architecture-independent data: ....... $datarootdir
+- Info documentation: ............................ $datarootdir/info
+- Locale-dependent data: ......................... $datarootdir/locale
+- Man documentation: ............................. $datarootdir/man
+- Documentation root: ............................ $datarootdir/doc/$pkg_name
+- HTML documentation: ............................ $docdir
+- DVI documentation: ............................. $docdir
+- PDF documentation: ............................. $docdir
+- PS documentation: .............................. $docdir
+- findlib_version: ............................... 1.8.0
+- is_native: ..................................... true
+- suffix_program: ................................ 
+- Remove a file.: ................................ rm -f
+- Remove a directory.: ........................... rm -rf
+- Turn ocaml debug flag on: ...................... true
+- Turn ocaml profile flag on: .................... false
+- Compiler support generation of .cmxs.: ......... true
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- *** omake: reading OMakefiles
+- --- Checking for ocamlfind... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind)
+- --- Checking for ocamlc.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt)
+- --- Checking for ocamlopt.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt)
+- --- Checking for ocamldep.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamldep.opt)
+- --- Checking for ocamllex.opt... (found /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamllex.opt)
+- --- Checking whether ocamlc understands the "z" warnings... (yes)
+- --- Checking whether ocamlopt can create cmxs plugins... (yes)
+- File OMyMakefile: line 44, characters 2-21:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- File OMyMakefile: line 229, characters 3-26:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- File OMyMakefile: line 781, characters 6-34:
+-    Warning: old-style foreach expression.
+-    This expression should use a => binding.
+- *** omake: finished reading OMakefiles (0.08 sec)
+- --- Checking if ocamldep understands -modules... (yes)
+- - build . regexp.cmi
+- + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -annot -w Ae -I . -c regexp.mli
+- File "regexp.mli", line 117, characters 57-122:
+- Warning 50: ambiguous documentation comment
+- - build . cformat.cmo
+- + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -annot -w Ae -I . -c cformat.ml
+- File "cformat.ml", line 75, characters 14-27:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "cformat.ml", line 84, characters 3-17:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "cformat.ml", line 58, characters 6-728:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val contents : elem list ref -> bytes
+-        is not included in
+-          val contents : t -> string
+-        File "cformat.ml", line 55, characters 2-28: Expected declaration
+-        File "cformat.ml", line 73, characters 6-14: Actual declaration
+- - build . cformat.cmx
+- + ocamlfind ocamlopt -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -I . -c cformat.ml
+- File "cformat.ml", line 58, characters 6-728:
+- Error: Signature mismatch:
+-        ...
+-        Values do not match:
+-          val contents : elem list ref -> bytes
+-        is not included in
+-          val contents : t -> string
+-        File "cformat.ml", line 55, characters 2-28: Expected declaration
+-        File "cformat.ml", line 73, characters 6-14: Actual declaration
+- *** omake: 46/125 targets are up to date
+- *** omake: failed (0.30 sec, 11/11 scans, 7/7 rules, 28/68 digests)
+- *** omake: targets were not rebuilt because of errors:
+-    cformat.cmo
+-       depends on: cformat.ml
+-    cformat.cmx
+-       depends on: cformat.ml
+-    cformat.o
+-       depends on: cformat.ml
+- E: Failure("Command 'sh -c \"cp OMakeroot.in OMakeroot; omake PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051\"' terminated with error code 2")
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ..................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlfind
+- ocamlc: ........................................ /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt
+- ocamlopt: ...................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlopt.opt
+- ocamlbuild: .................................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlbuild
+- Package name: .................................. orakuda
+- Package version: ............................... 1.0.1
+- os_type: ....................................... Unix
+- system: ........................................ linux
+- architecture: .................................. amd64
+- ccomp_type: .................................... cc
+- ocaml_version: ................................. 4.07.1
+- standard_library_default: ...................... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_library: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ocaml
+- standard_runtime: .............................. /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlrun
+- bytecomp_c_compiler: ........................... gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ............................. gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ......................................... default
+- ext_obj: ....................................... .o
+- ext_asm: ....................................... .s
+- ext_lib: ....................................... .a
+- ext_dll: ....................................... .so
+- default_executable_name: ....................... a.out
+- systhread_supported: ........................... true
+- Install architecture-independent files dir: .... /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051
+- Install architecture-dependent files in dir: ... $prefix
+- User executables: .............................. $exec_prefix/bin
+- System admin executables: ...................... $exec_prefix/sbin
+- Program executables: ........................... $exec_prefix/libexec
+- Read-only single-machine data: ................. $prefix/etc
+- Modifiable architecture-independent data: ...... $prefix/com
+- Modifiable single-machine data: ................ $prefix/var
+- Object code libraries: ......................... $exec_prefix/lib
+- Read-only arch-independent data root: .......... $prefix/share
+- Read-only architecture-independent data: ....... $datarootdir
+- Info documentation: ............................ $datarootdir/info
+- Locale-dependent data: ......................... $datarootdir/locale
+- Man documentation: ............................. $datarootdir/man
+- Documentation root: ............................ $datarootdir/doc/$pkg_name
+- HTML documentation: ............................ $docdir
+- DVI documentation: ............................. $docdir
+- PDF documentation: ............................. $docdir
+- PS documentation: .............................. $docdir
+- findlib_version: ............................... 1.8.0
+- is_native: ..................................... true
+- suffix_program: ................................ 
+- Remove a file.: ................................ rm -f
+- Remove a directory.: ........................... rm -rf
+- Turn ocaml debug flag on: ...................... true
+- Turn ocaml profile flag on: .................... false
+- Compiler support generation of .cmxs.: ......... true
+- 
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- *** omake: reading OMakefiles
+- *** omake: finished reading OMakefiles (0.02 sec)
+- - build pa <uninstall>
+- + ocamlfind remove pa_orakuda
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/pa_orakuda/META
+- - build . <uninstall>
+- + ocamlfind remove orakuda
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/orakuda/META
+- *** omake: done (0.02 sec, 0/0 scans, 2/2 rules, 1/46 digests)
+- *** omake: reading OMakefiles
+- *** omake: finished reading OMakefiles (0.02 sec)
+- - build pa <uninstall>
+- + ocamlfind remove pa_orakuda
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/pa_orakuda/META
+- - build . <uninstall>
+- + ocamlfind remove orakuda
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/orakuda/META
+- *** omake: done (0.02 sec, 0/0 scans, 2/2 rules, 1/46 digests)
+
+#=== ERROR while installing orakuda.1.0.1 =====================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/orakuda.1.0.1
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/orakuda.1.0.1/orakuda-31797.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/orakuda.1.0.1/orakuda-31797.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/orakuda.1.0.1/orakuda-31797.out
+### stdout ###
+# [...]
+# *** omake: 46/125 targets are up to date
+# *** omake: failed (0.30 sec, 11/11 scans, 7/7 rules, 28/68 digests)
+# *** omake: targets were not rebuilt because of errors:
+#    cformat.cmo
+#       depends on: cformat.ml
+#    cformat.cmx
+#       depends on: cformat.ml
+#    cformat.o
+#       depends on: cformat.ml
+# E: Failure("Command 'sh -c \"cp OMakeroot.in OMakeroot; omake PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051\"' terminated with error code 2")
+### stderr ###
+# [...]
+# *** omake: 46/125 targets are up to date
+# *** omake: failed (0.30 sec, 11/11 scans, 7/7 rules, 28/68 digests)
+# *** omake: targets were not rebuilt because of errors:
+#    cformat.cmo
+#       depends on: cformat.ml
+#    cformat.cmx
+#       depends on: cformat.ml
+#    cformat.o
+#       depends on: cformat.ml
+# E: Failure("Command 'sh -c \"cp OMakeroot.in OMakeroot; omake PREFIX=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051\"' terminated with error code 2")
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install orakuda 1.0.1
+No changes have been performed
+'opam install orakuda.1.0.1' failed.

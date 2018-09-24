@@ -1,0 +1,53 @@
+The following actions will be performed:
+  - install fftw3 0.8.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[fftw3: http] Command started
+[fftw3: http] Command started
+[fftw3.0.8.2] https://github.com/Chris00/fftw-ocaml/releases/download/0.8.2/fftw3-0.8.2.tbz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[fftw3: dune build] Command started
++ dune "build" "-p" "fftw3" "-j" "4" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/fftw3.0.8.2)
+- File "dune-project", line 1, characters 11-14:
+- Error: Version 1.1 of dune is not supported.
+- Supported versions:
+- - 0.0
+- - 1.0
+- File "dune-project", line 1, characters 11-14:
+- Error: Version 1.1 of dune is not supported.
+- Supported versions:
+- - 0.0
+- - 1.0
+[ERROR] The compilation of fftw3 failed at "dune build -p fftw3 -j 4".
+
+#=== ERROR while installing fftw3.0.8.2 =======================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              dune build -p fftw3 -j 4
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/fftw3.0.8.2
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/fftw3.0.8.2/fftw3-12545.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/fftw3.0.8.2/fftw3-12545.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/fftw3.0.8.2/fftw3-12545.out
+### stdout ###
+# File "dune-project", line 1, characters 11-14:
+# Error: Version 1.1 of dune is not supported.
+# Supported versions:
+# - 0.0
+# - 1.0
+### stderr ###
+# File "dune-project", line 1, characters 11-14:
+# Error: Version 1.1 of dune is not supported.
+# Supported versions:
+# - 0.0
+# - 1.0
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install fftw3 0.8.2
+No changes have been performed
+'opam install fftw3.0.8.2' failed.

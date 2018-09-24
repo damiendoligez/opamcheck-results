@@ -1,0 +1,103 @@
+The following actions will be performed:
+  - install CamlGI 0.6
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[CamlGI: http] Command started
+[CamlGI: http] Command started
+[CamlGI.0.6] http://downloads.sourceforge.net/project/ocaml-cgi/CamlGI/0.6/CamlGI-0.6.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[CamlGI: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/CamlGI.0.6)
+- Makefile:134: .depend: No such file or directory
+- ocamldep -pp "camlp4o pa_macro.cmo pr_o.cmo" cgi_types.ml expires.ml cgi.ml dbiPool.ml cgi_common.ml cgi_std.ml template.ml camlGI.ml cgi_fast.ml cookie.ml sendmail.ml cgi_common.mli camlGI.mli > .depend
+- Makefile:134: .depend: No such file or directory
+- ocamldep -pp "camlp4o pa_macro.cmo pr_o.cmo" cgi_types.ml expires.ml cgi.ml dbiPool.ml cgi_common.ml cgi_std.ml template.ml camlGI.ml cgi_fast.ml cookie.ml sendmail.ml cgi_common.mli camlGI.mli > .depend
+- ocamlc -dtypes -I +threads -c camlGI.mli
+- ocamlc -pp "camlp4o pa_macro.cmo pr_o.cmo" -a -o camlGI.cma -dtypes -I +threads camlGI.ml
+- ocamlc -dtypes -I +threads -c camlGI.mli
+- ocamlc -pp "camlp4o pa_macro.cmo pr_o.cmo" -a -o camlGI.cma -dtypes -I +threads camlGI.ml
+- File "/tmp/ocamlppf839dc", line 383, characters 14-31:
+- Warning 3: deprecated: Stdlib.String.unsafe_set
+- File "/tmp/ocamlppf839dc", line 383, characters 32-33:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:52: recipe for target 'camlGI.cma' failed
+- make: *** [camlGI.cma] Error 2
+- File "/tmp/ocamlppf839dc", line 383, characters 14-31:
+- Warning 3: deprecated: Stdlib.String.unsafe_set
+- File "/tmp/ocamlppf839dc", line 383, characters 32-33:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:52: recipe for target 'camlGI.cma' failed
+- make: *** [camlGI.cma] Error 2
+[ERROR] The compilation of CamlGI failed at "make".
+[CamlGI: ocamlfind remove] Command started
++ ocamlfind "remove" "CamlGI" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/CamlGI.0.6)
+- Makefile:134: .depend: No such file or directory
+- ocamldep -pp "camlp4o pa_macro.cmo pr_o.cmo" cgi_types.ml expires.ml cgi.ml dbiPool.ml cgi_common.ml cgi_std.ml template.ml camlGI.ml cgi_fast.ml cookie.ml sendmail.ml cgi_common.mli camlGI.mli > .depend
+- ocamlc -dtypes -I +threads -c camlGI.mli
+- ocamlc -pp "camlp4o pa_macro.cmo pr_o.cmo" -a -o camlGI.cma -dtypes -I +threads camlGI.ml
+- File "/tmp/ocamlppf839dc", line 383, characters 14-31:
+- Warning 3: deprecated: Stdlib.String.unsafe_set
+- File "/tmp/ocamlppf839dc", line 383, characters 32-33:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:52: recipe for target 'camlGI.cma' failed
+- make: *** [camlGI.cma] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/CamlGI/META
+- Makefile:134: .depend: No such file or directory
+- ocamldep -pp "camlp4o pa_macro.cmo pr_o.cmo" cgi_types.ml expires.ml cgi.ml dbiPool.ml cgi_common.ml cgi_std.ml template.ml camlGI.ml cgi_fast.ml cookie.ml sendmail.ml cgi_common.mli camlGI.mli > .depend
+- ocamlc -dtypes -I +threads -c camlGI.mli
+- ocamlc -pp "camlp4o pa_macro.cmo pr_o.cmo" -a -o camlGI.cma -dtypes -I +threads camlGI.ml
+- File "/tmp/ocamlppf839dc", line 383, characters 14-31:
+- Warning 3: deprecated: Stdlib.String.unsafe_set
+- File "/tmp/ocamlppf839dc", line 383, characters 32-33:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:52: recipe for target 'camlGI.cma' failed
+- make: *** [camlGI.cma] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/CamlGI/META
+
+#=== ERROR while installing CamlGI.0.6 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/CamlGI.0.6
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/CamlGI.0.6/CamlGI-3969.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/CamlGI.0.6/CamlGI-3969.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/CamlGI.0.6/CamlGI-3969.out
+### stdout ###
+# [...]
+# ocamldep -pp "camlp4o pa_macro.cmo pr_o.cmo" cgi_types.ml expires.ml cgi.ml dbiPool.ml cgi_common.ml cgi_std.ml template.ml camlGI.ml cgi_fast.ml cookie.ml sendmail.ml cgi_common.mli camlGI.mli > .depend
+# ocamlc -dtypes -I +threads -c camlGI.mli
+# ocamlc -pp "camlp4o pa_macro.cmo pr_o.cmo" -a -o camlGI.cma -dtypes -I +threads camlGI.ml
+# File "/tmp/ocamlppf839dc", line 383, characters 14-31:
+# Warning 3: deprecated: Stdlib.String.unsafe_set
+# File "/tmp/ocamlppf839dc", line 383, characters 32-33:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:52: recipe for target 'camlGI.cma' failed
+# make: *** [camlGI.cma] Error 2
+### stderr ###
+# [...]
+# ocamldep -pp "camlp4o pa_macro.cmo pr_o.cmo" cgi_types.ml expires.ml cgi.ml dbiPool.ml cgi_common.ml cgi_std.ml template.ml camlGI.ml cgi_fast.ml cookie.ml sendmail.ml cgi_common.mli camlGI.mli > .depend
+# ocamlc -dtypes -I +threads -c camlGI.mli
+# ocamlc -pp "camlp4o pa_macro.cmo pr_o.cmo" -a -o camlGI.cma -dtypes -I +threads camlGI.ml
+# File "/tmp/ocamlppf839dc", line 383, characters 14-31:
+# Warning 3: deprecated: Stdlib.String.unsafe_set
+# File "/tmp/ocamlppf839dc", line 383, characters 32-33:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:52: recipe for target 'camlGI.cma' failed
+# make: *** [camlGI.cma] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install CamlGI 0.6
+No changes have been performed
+'opam install CamlGI.0.6' failed.

@@ -1,0 +1,192 @@
+The following actions will be performed:
+  - install tidy 0-2009-0.1.1
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[tidy: http] Command started
+[tidy: http] Command started
+[tidy.0-2009-0.1.1] https://bitbucket.org/zandoye/ocaml-tidy/get/ver.2009-0.1.1.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[tidy: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/tidy.0-2009-0.1.1)
+- ocamlfind ocamlc -package core_kernel tidy.mli
+- File "tidy.mli", line 639, characters 34-62:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- File "tidy.mli", line 657, characters 37-59:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- File "tidy.mli", line 688, characters 25-53:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- File "tidy.mli", line 689, characters 25-53:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- gcc -Wall -fPIC  -c -I `ocamlc -where` -I /usr/include/tidy -o stub.o stub.c
+- ocamlfind ocamlmklib -package core_kernel -ltidy -o tidy -oc tidy_stubs tidy.ml stub.o
+- File "tidy.ml", line 1, characters 5-20:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- File "tidy.ml", line 499, characters 2-75:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "tidy.ml", line 500, characters 2-75:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "tidy.ml", line 980, characters 8-102:
+- Error: This expression has type
+-          string Core_kernel.Std.String.Map.t Base__.Map_intf.Or_duplicate.t
+-        but an expression was expected of type
+-          string Core_kernel.Std.String.Map.t =
+-            (Core_kernel.Std.String.Map.Key.t, string,
+-             Core_kernel.Std.String.Map.Key.comparator_witness)
+-            Base.Map.t
+- Makefile:13: recipe for target 'tidy.cma' failed
+- make: *** [tidy.cma] Error 2
+- ocamlfind ocamlc -package core_kernel tidy.mli
+- File "tidy.mli", line 639, characters 34-62:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- File "tidy.mli", line 657, characters 37-59:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- File "tidy.mli", line 688, characters 25-53:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- File "tidy.mli", line 689, characters 25-53:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- gcc -Wall -fPIC  -c -I `ocamlc -where` -I /usr/include/tidy -o stub.o stub.c
+- ocamlfind ocamlmklib -package core_kernel -ltidy -o tidy -oc tidy_stubs tidy.ml stub.o
+- File "tidy.ml", line 1, characters 5-20:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- File "tidy.ml", line 499, characters 2-75:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "tidy.ml", line 500, characters 2-75:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "tidy.ml", line 980, characters 8-102:
+- Error: This expression has type
+-          string Core_kernel.Std.String.Map.t Base__.Map_intf.Or_duplicate.t
+-        but an expression was expected of type
+-          string Core_kernel.Std.String.Map.t =
+-            (Core_kernel.Std.String.Map.Key.t, string,
+-             Core_kernel.Std.String.Map.Key.comparator_witness)
+-            Base.Map.t
+- Makefile:13: recipe for target 'tidy.cma' failed
+- make: *** [tidy.cma] Error 2
+[ERROR] The compilation of tidy failed at "make".
+[tidy: ocamlfind remove] Command started
++ ocamlfind "remove" "tidy" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/tidy.0-2009-0.1.1)
+- ocamlfind ocamlc -package core_kernel tidy.mli
+- File "tidy.mli", line 639, characters 34-62:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- File "tidy.mli", line 657, characters 37-59:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- File "tidy.mli", line 688, characters 25-53:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- File "tidy.mli", line 689, characters 25-53:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- gcc -Wall -fPIC  -c -I `ocamlc -where` -I /usr/include/tidy -o stub.o stub.c
+- ocamlfind ocamlmklib -package core_kernel -ltidy -o tidy -oc tidy_stubs tidy.ml stub.o
+- File "tidy.ml", line 1, characters 5-20:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- File "tidy.ml", line 499, characters 2-75:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "tidy.ml", line 500, characters 2-75:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "tidy.ml", line 980, characters 8-102:
+- Error: This expression has type
+-          string Core_kernel.Std.String.Map.t Base__.Map_intf.Or_duplicate.t
+-        but an expression was expected of type
+-          string Core_kernel.Std.String.Map.t =
+-            (Core_kernel.Std.String.Map.Key.t, string,
+-             Core_kernel.Std.String.Map.Key.comparator_witness)
+-            Base.Map.t
+- Makefile:13: recipe for target 'tidy.cma' failed
+- make: *** [tidy.cma] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/tidy/META
+- ocamlfind ocamlc -package core_kernel tidy.mli
+- File "tidy.mli", line 639, characters 34-62:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- File "tidy.mli", line 657, characters 37-59:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- File "tidy.mli", line 688, characters 25-53:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- File "tidy.mli", line 689, characters 25-53:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- gcc -Wall -fPIC  -c -I `ocamlc -where` -I /usr/include/tidy -o stub.o stub.c
+- ocamlfind ocamlmklib -package core_kernel -ltidy -o tidy -oc tidy_stubs tidy.ml stub.o
+- File "tidy.ml", line 1, characters 5-20:
+- Warning 3: deprecated: module Core_kernel.Std
+- [since 2018-03] Use Core_kernel directly instead
+- File "tidy.ml", line 499, characters 2-75:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "tidy.ml", line 500, characters 2-75:
+- Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "tidy.ml", line 980, characters 8-102:
+- Error: This expression has type
+-          string Core_kernel.Std.String.Map.t Base__.Map_intf.Or_duplicate.t
+-        but an expression was expected of type
+-          string Core_kernel.Std.String.Map.t =
+-            (Core_kernel.Std.String.Map.Key.t, string,
+-             Core_kernel.Std.String.Map.Key.comparator_witness)
+-            Base.Map.t
+- Makefile:13: recipe for target 'tidy.cma' failed
+- make: *** [tidy.cma] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/tidy/META
+
+#=== ERROR while installing tidy.0-2009-0.1.1 =================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/tidy.0-2009-0.1.1
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/tidy.0-2009-0.1.1/tidy-7815.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/tidy.0-2009-0.1.1/tidy-7815.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/tidy.0-2009-0.1.1/tidy-7815.out
+### stdout ###
+# [...]
+# File "tidy.ml", line 980, characters 8-102:
+# Error: This expression has type
+#          string Core_kernel.Std.String.Map.t Base__.Map_intf.Or_duplicate.t
+#        but an expression was expected of type
+#          string Core_kernel.Std.String.Map.t =
+#            (Core_kernel.Std.String.Map.Key.t, string,
+#             Core_kernel.Std.String.Map.Key.comparator_witness)
+#            Base.Map.t
+# Makefile:13: recipe for target 'tidy.cma' failed
+# make: *** [tidy.cma] Error 2
+### stderr ###
+# [...]
+# File "tidy.ml", line 980, characters 8-102:
+# Error: This expression has type
+#          string Core_kernel.Std.String.Map.t Base__.Map_intf.Or_duplicate.t
+#        but an expression was expected of type
+#          string Core_kernel.Std.String.Map.t =
+#            (Core_kernel.Std.String.Map.Key.t, string,
+#             Core_kernel.Std.String.Map.Key.comparator_witness)
+#            Base.Map.t
+# Makefile:13: recipe for target 'tidy.cma' failed
+# make: *** [tidy.cma] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install tidy 0-2009-0.1.1
+No changes have been performed
+
+=-=- tidy.0-2009-0.1.1 troobleshooting =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package relies on external (system) dependencies that may be missing.
+   `opam depext tidy.0-2009-0.1.1' may help you find the correct installation
+   for your system.
+'opam install tidy.0-2009-0.1.1' failed.

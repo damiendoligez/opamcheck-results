@@ -1,0 +1,61 @@
+The following actions will be performed:
+  - install toml 5.0.0
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[toml: http] Command started
+[toml: http] Command started
+[toml.5.0.0] https://github.com/ocaml-toml/to.ml/archive/v5.0.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[toml: dune build] Command started
++ dune "build" "-p" "toml" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/toml.5.0.0)
+-       ocamlc src/.toml.objs/tomlPrinter.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -w -27-26-32 -g -bin-annot -I src/.toml.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ISO8601 -no-alias-deps -o src/.toml.objs/tomlPrinter.cmo -c -impl src/tomlPrinter.ml)
+- File "src/tomlPrinter.ml", line 33, characters 2-36:
+- Error: Unbound value ISO8601.Permissive.pp_datetimezone
+-     ocamlopt src/.toml.objs/tomlLexer.{cmx,o}
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module ISO8601, and its interface was not compiled with -opaque
+-       ocamlc src/.toml.objs/tomlPrinter.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -w -27-26-32 -g -bin-annot -I src/.toml.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ISO8601 -no-alias-deps -o src/.toml.objs/tomlPrinter.cmo -c -impl src/tomlPrinter.ml)
+- File "src/tomlPrinter.ml", line 33, characters 2-36:
+- Error: Unbound value ISO8601.Permissive.pp_datetimezone
+-     ocamlopt src/.toml.objs/tomlLexer.{cmx,o}
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module ISO8601, and its interface was not compiled with -opaque
+[ERROR] The compilation of toml failed at "dune build -p toml".
+
+#=== ERROR while installing toml.5.0.0 ========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              dune build -p toml
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/toml.5.0.0
+# compiler             4.07.0+pr2051
+# exit-code            1
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/toml.5.0.0/toml-7293.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/toml.5.0.0/toml-7293.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/toml.5.0.0/toml-7293.out
+### stdout ###
+#       ocamlc src/.toml.objs/tomlPrinter.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -w -27-26-32 -g -bin-annot -I src/.toml.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ISO8601 -no-alias-deps -o src/.toml.objs/tomlPrinter.cmo -c -impl src/tomlPrinter.ml)
+# File "src/tomlPrinter.ml", line 33, characters 2-36:
+# Error: Unbound value ISO8601.Permissive.pp_datetimezone
+#     ocamlopt src/.toml.objs/tomlLexer.{cmx,o}
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module ISO8601, and its interface was not compiled with -opaque
+### stderr ###
+#       ocamlc src/.toml.objs/tomlPrinter.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/bin/ocamlc.opt -w -40 -w -27-26-32 -g -bin-annot -I src/.toml.objs -I /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/ISO8601 -no-alias-deps -o src/.toml.objs/tomlPrinter.cmo -c -impl src/tomlPrinter.ml)
+# File "src/tomlPrinter.ml", line 33, characters 2-36:
+# Error: Unbound value ISO8601.Permissive.pp_datetimezone
+#     ocamlopt src/.toml.objs/tomlLexer.{cmx,o}
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module ISO8601, and its interface was not compiled with -opaque
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install toml 5.0.0
+No changes have been performed
+'opam install toml.5.0.0' failed.

@@ -1,0 +1,115 @@
+The following actions will be performed:
+  - install delimcc 2017.03.02
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[delimcc: http] Command started
+[delimcc: http] Command started
+[delimcc.2017.03.02] https://github.com/zinid/delimcc/archive/2017.03.02.zip downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[delimcc: make all] Command started
++ make "all" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/delimcc.2017.03.02)
+- gcc -O2 -fno-strict-aliasing -fwrapv -Wall -Werror -fno-tree-vrp -fPIC -Wall -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/caml -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DCAML_NAME_SPACE   -c -o stacks.o stacks.c
+- stacks.c: In function 'copy_stack_fragment':
+- stacks.c:206:13: error: implicit declaration of function 'alloc' [-Werror=implicit-function-declaration]
+-      block = alloc(size, 0);
+-              ^
+- stacks.c:209:13: error: implicit declaration of function 'alloc_shr' [-Werror=implicit-function-declaration]
+-      block = alloc_shr(size, 0);
+-              ^
+- stacks.c:212:7: error: implicit declaration of function 'initialize' [-Werror=implicit-function-declaration]
+-        initialize(&Field(block, i), tp2[i]);
+-        ^
+- cc1: all warnings being treated as errors
+- <builtin>: recipe for target 'stacks.o' failed
+- make: *** [stacks.o] Error 1
+- gcc -O2 -fno-strict-aliasing -fwrapv -Wall -Werror -fno-tree-vrp -fPIC -Wall -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/caml -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DCAML_NAME_SPACE   -c -o stacks.o stacks.c
+- stacks.c: In function 'copy_stack_fragment':
+- stacks.c:206:13: error: implicit declaration of function 'alloc' [-Werror=implicit-function-declaration]
+-      block = alloc(size, 0);
+-              ^
+- stacks.c:209:13: error: implicit declaration of function 'alloc_shr' [-Werror=implicit-function-declaration]
+-      block = alloc_shr(size, 0);
+-              ^
+- stacks.c:212:7: error: implicit declaration of function 'initialize' [-Werror=implicit-function-declaration]
+-        initialize(&Field(block, i), tp2[i]);
+-        ^
+- cc1: all warnings being treated as errors
+- <builtin>: recipe for target 'stacks.o' failed
+- make: *** [stacks.o] Error 1
+[ERROR] The compilation of delimcc failed at "make all".
+[delimcc: ocamlfind remove] Command started
++ ocamlfind "remove" "delimcc" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/delimcc.2017.03.02)
+- gcc -O2 -fno-strict-aliasing -fwrapv -Wall -Werror -fno-tree-vrp -fPIC -Wall -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/caml -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DCAML_NAME_SPACE   -c -o stacks.o stacks.c
+- stacks.c: In function 'copy_stack_fragment':
+- stacks.c:206:13: error: implicit declaration of function 'alloc' [-Werror=implicit-function-declaration]
+-      block = alloc(size, 0);
+-              ^
+- stacks.c:209:13: error: implicit declaration of function 'alloc_shr' [-Werror=implicit-function-declaration]
+-      block = alloc_shr(size, 0);
+-              ^
+- stacks.c:212:7: error: implicit declaration of function 'initialize' [-Werror=implicit-function-declaration]
+-        initialize(&Field(block, i), tp2[i]);
+-        ^
+- cc1: all warnings being treated as errors
+- <builtin>: recipe for target 'stacks.o' failed
+- make: *** [stacks.o] Error 1
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/delimcc/META
+- gcc -O2 -fno-strict-aliasing -fwrapv -Wall -Werror -fno-tree-vrp -fPIC -Wall -I/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/ocaml/caml -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DCAML_NAME_SPACE   -c -o stacks.o stacks.c
+- stacks.c: In function 'copy_stack_fragment':
+- stacks.c:206:13: error: implicit declaration of function 'alloc' [-Werror=implicit-function-declaration]
+-      block = alloc(size, 0);
+-              ^
+- stacks.c:209:13: error: implicit declaration of function 'alloc_shr' [-Werror=implicit-function-declaration]
+-      block = alloc_shr(size, 0);
+-              ^
+- stacks.c:212:7: error: implicit declaration of function 'initialize' [-Werror=implicit-function-declaration]
+-        initialize(&Field(block, i), tp2[i]);
+-        ^
+- cc1: all warnings being treated as errors
+- <builtin>: recipe for target 'stacks.o' failed
+- make: *** [stacks.o] Error 1
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/delimcc/META
+
+#=== ERROR while installing delimcc.2017.03.02 ================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make all
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/delimcc.2017.03.02
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/delimcc.2017.03.02/delimcc-20617.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/delimcc.2017.03.02/delimcc-20617.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/delimcc.2017.03.02/delimcc-20617.out
+### stdout ###
+# stacks.c:206:13: error: implicit declaration of function 'alloc' [-Werror=implicit-function-declaration]
+# [...]
+# stacks.c:209:13: error: implicit declaration of function 'alloc_shr' [-Werror=implicit-function-declaration]
+#      block = alloc_shr(size, 0);
+#              ^
+# stacks.c:212:7: error: implicit declaration of function 'initialize' [-Werror=implicit-function-declaration]
+#        initialize(&Field(block, i), tp2[i]);
+#        ^
+# cc1: all warnings being treated as errors
+# <builtin>: recipe for target 'stacks.o' failed
+# make: *** [stacks.o] Error 1
+### stderr ###
+# stacks.c:206:13: error: implicit declaration of function 'alloc' [-Werror=implicit-function-declaration]
+# [...]
+# stacks.c:209:13: error: implicit declaration of function 'alloc_shr' [-Werror=implicit-function-declaration]
+#      block = alloc_shr(size, 0);
+#              ^
+# stacks.c:212:7: error: implicit declaration of function 'initialize' [-Werror=implicit-function-declaration]
+#        initialize(&Field(block, i), tp2[i]);
+#        ^
+# cc1: all warnings being treated as errors
+# <builtin>: recipe for target 'stacks.o' failed
+# make: *** [stacks.o] Error 1
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install delimcc 2017.03.02
+No changes have been performed
+'opam install delimcc.2017.03.02' failed.

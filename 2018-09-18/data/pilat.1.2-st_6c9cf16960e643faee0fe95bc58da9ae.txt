@@ -1,0 +1,195 @@
+The following actions will be performed:
+  - install pilat 1.2
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pilat: http] Command started
+[pilat: http] Command started
+[pilat.1.2] https://github.com/Stevendeo/Pilat/archive/stable_1.2.zip downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pilat: sh make.sh] Command started
++ sh "make.sh" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pilat.1.2)
+- configure.in:18: warning: prefer named diversions
+- configure.in:30: warning: prefer named diversions
+- configure.in:40: warning: prefer named diversions
+- checking for frama-c-gui... yes
+- checking for Makefile.in... yes
+- pilat... yes
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lacaml/lacaml.cmxa... yes
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/zarith/zarith.cmxa... yes
+- configure: pilat: yes
+- configure: creating ./config.status
+- config.status: creating ./Makefile
+- Generating   src//.Makefile.plugin.generated
+- Cleaning     Pilat
+- Generating   src//.Makefile.plugin.generated
+- Generating   src//top/Pilat.mli
+- Ocamldep     src//.depend
+- Ocamldep     src//.depend
+- Generating   META.frama-c-pilat
+- configure.in:18: warning: prefer named diversions
+- configure.in:30: warning: prefer named diversions
+- configure.in:40: warning: prefer named diversions
+- checking for frama-c-gui... yes
+- checking for Makefile.in... yes
+- pilat... yes
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lacaml/lacaml.cmxa... yes
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/zarith/zarith.cmxa... yes
+- configure: pilat: yes
+- configure: creating ./config.status
+- config.status: creating ./Makefile
+- Generating   src//.Makefile.plugin.generated
+- Cleaning     Pilat
+- Generating   src//.Makefile.plugin.generated
+- Generating   src//top/Pilat.mli
+- Ocamldep     src//.depend
+- Ocamldep     src//.depend
+- Generating   META.frama-c-pilat
+- Ocamlc       src//mat_option.cmi
+- Ocamlc       src//mat_option.cmo
+- Ocamlc       src//float.cmo
+- Ocamlc       src//qring.cmo
+- Ocamlc       src/pilat_math.cmi
+- Ocamlc       src//poly.cmi
+- Ocamlc       src//poly.cmo
+- Ocamlc       src//poly_utils.cmi
+- Ocamlc       src//poly_utils.cmo
+- Ocamlc       src//pilat_visitors.cmi
+- Ocamlc       src//pilat_visitors.cmo
+- Ocamlc       src//lacaml_matrix.cmi
+- File "src//lacaml_matrix.mli", line 27, characters 16-29:
+- Error: Unbound module Lacaml__D
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/share/frama-c/Makefile.generic:70: recipe for target 'src//lacaml_matrix.cmi' failed
+- make: *** [src//lacaml_matrix.cmi] Error 2
+- Ocamlc       src//mat_option.cmi
+- Ocamlc       src//mat_option.cmo
+- Ocamlc       src//float.cmo
+- Ocamlc       src//qring.cmo
+- Ocamlc       src/pilat_math.cmi
+- Ocamlc       src//poly.cmi
+- Ocamlc       src//poly.cmo
+- Ocamlc       src//poly_utils.cmi
+- Ocamlc       src//poly_utils.cmo
+- Ocamlc       src//pilat_visitors.cmi
+- Ocamlc       src//pilat_visitors.cmo
+- Ocamlc       src//lacaml_matrix.cmi
+- File "src//lacaml_matrix.mli", line 27, characters 16-29:
+- Error: Unbound module Lacaml__D
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/share/frama-c/Makefile.generic:70: recipe for target 'src//lacaml_matrix.cmi' failed
+- make: *** [src//lacaml_matrix.cmi] Error 2
+[ERROR] The compilation of pilat failed at "sh make.sh".
+[pilat: ocamlfind remove] Command started
++ ocamlfind "remove" "pilat" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pilat.1.2)
+- configure.in:18: warning: prefer named diversions
+- configure.in:30: warning: prefer named diversions
+- configure.in:40: warning: prefer named diversions
+- checking for frama-c-gui... yes
+- checking for Makefile.in... yes
+- pilat... yes
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lacaml/lacaml.cmxa... yes
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/zarith/zarith.cmxa... yes
+- configure: pilat: yes
+- configure: creating ./config.status
+- config.status: creating ./Makefile
+- Generating   src//.Makefile.plugin.generated
+- Cleaning     Pilat
+- Generating   src//.Makefile.plugin.generated
+- Generating   src//top/Pilat.mli
+- Ocamldep     src//.depend
+- Ocamldep     src//.depend
+- Generating   META.frama-c-pilat
+- Ocamlc       src//mat_option.cmi
+- Ocamlc       src//mat_option.cmo
+- Ocamlc       src//float.cmo
+- Ocamlc       src//qring.cmo
+- Ocamlc       src/pilat_math.cmi
+- Ocamlc       src//poly.cmi
+- Ocamlc       src//poly.cmo
+- Ocamlc       src//poly_utils.cmi
+- Ocamlc       src//poly_utils.cmo
+- Ocamlc       src//pilat_visitors.cmi
+- Ocamlc       src//pilat_visitors.cmo
+- Ocamlc       src//lacaml_matrix.cmi
+- File "src//lacaml_matrix.mli", line 27, characters 16-29:
+- Error: Unbound module Lacaml__D
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/share/frama-c/Makefile.generic:70: recipe for target 'src//lacaml_matrix.cmi' failed
+- make: *** [src//lacaml_matrix.cmi] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/pilat/META
+- configure.in:18: warning: prefer named diversions
+- configure.in:30: warning: prefer named diversions
+- configure.in:40: warning: prefer named diversions
+- checking for frama-c-gui... yes
+- checking for Makefile.in... yes
+- pilat... yes
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/lacaml/lacaml.cmxa... yes
+- checking for /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/zarith/zarith.cmxa... yes
+- configure: pilat: yes
+- configure: creating ./config.status
+- config.status: creating ./Makefile
+- Generating   src//.Makefile.plugin.generated
+- Cleaning     Pilat
+- Generating   src//.Makefile.plugin.generated
+- Generating   src//top/Pilat.mli
+- Ocamldep     src//.depend
+- Ocamldep     src//.depend
+- Generating   META.frama-c-pilat
+- Ocamlc       src//mat_option.cmi
+- Ocamlc       src//mat_option.cmo
+- Ocamlc       src//float.cmo
+- Ocamlc       src//qring.cmo
+- Ocamlc       src/pilat_math.cmi
+- Ocamlc       src//poly.cmi
+- Ocamlc       src//poly.cmo
+- Ocamlc       src//poly_utils.cmi
+- Ocamlc       src//poly_utils.cmo
+- Ocamlc       src//pilat_visitors.cmi
+- Ocamlc       src//pilat_visitors.cmo
+- Ocamlc       src//lacaml_matrix.cmi
+- File "src//lacaml_matrix.mli", line 27, characters 16-29:
+- Error: Unbound module Lacaml__D
+- /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/share/frama-c/Makefile.generic:70: recipe for target 'src//lacaml_matrix.cmi' failed
+- make: *** [src//lacaml_matrix.cmi] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/lib/pilat/META
+
+#=== ERROR while installing pilat.1.2 =========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              sh make.sh
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pilat.1.2
+# compiler             4.07.0+pr2051
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pilat.1.2/pilat-19182.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pilat.1.2/pilat-19182.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/build/pilat.1.2/pilat-19182.out
+### stdout ###
+# [...]
+# Ocamlc       src//poly.cmo
+# Ocamlc       src//poly_utils.cmi
+# Ocamlc       src//poly_utils.cmo
+# Ocamlc       src//pilat_visitors.cmi
+# Ocamlc       src//pilat_visitors.cmo
+# Ocamlc       src//lacaml_matrix.cmi
+# File "src//lacaml_matrix.mli", line 27, characters 16-29:
+# Error: Unbound module Lacaml__D
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/share/frama-c/Makefile.generic:70: recipe for target 'src//lacaml_matrix.cmi' failed
+# make: *** [src//lacaml_matrix.cmi] Error 2
+### stderr ###
+# [...]
+# Ocamlc       src//poly.cmo
+# Ocamlc       src//poly_utils.cmi
+# Ocamlc       src//poly_utils.cmo
+# Ocamlc       src//pilat_visitors.cmi
+# Ocamlc       src//pilat_visitors.cmo
+# Ocamlc       src//lacaml_matrix.cmi
+# File "src//lacaml_matrix.mli", line 27, characters 16-29:
+# Error: Unbound module Lacaml__D
+# /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+pr2051/dotopam/4.07.0+pr2051/share/frama-c/Makefile.generic:70: recipe for target 'src//lacaml_matrix.cmi' failed
+# make: *** [src//lacaml_matrix.cmi] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install pilat 1.2
+No changes have been performed
+'opam install pilat.1.2' failed.

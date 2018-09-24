@@ -1,0 +1,91 @@
+The following actions will be performed:
+  - install text 0.6
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[text: http] Command started
+[text: http] Command started
+[text.0.6] http://forge.ocamlcore.org/frs/download.php/937/ocaml-text-0.6.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[text: make] Command started
++ make  (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/text.0.6)
+- ocaml setup.ml -configure 
+- File "/home/dim/sources/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/home/dim/sources/oasis/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:34: recipe for target 'setup.data' failed
+- make: *** [setup.data] Error 2
+- ocaml setup.ml -configure 
+- File "/home/dim/sources/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/home/dim/sources/oasis/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:34: recipe for target 'setup.data' failed
+- make: *** [setup.data] Error 2
+[ERROR] The compilation of text failed at "make".
+[text: ocamlfind remove] Command started
++ ocamlfind "remove" "text" (CWD=/home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/text.0.6)
+- ocaml setup.ml -configure 
+- File "/home/dim/sources/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/home/dim/sources/oasis/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:34: recipe for target 'setup.data' failed
+- make: *** [setup.data] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/text/META
+- ocaml setup.ml -configure 
+- File "/home/dim/sources/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "/home/dim/sources/oasis/src/oasis/OASISString.ml", line 118, characters 8-11:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:34: recipe for target 'setup.data' failed
+- make: *** [setup.data] Error 2
+- ocamlfind: [WARNING] No such file: /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/lib/text/META
+
+#=== ERROR while installing text.0.6 ==========================================#
+# opam-version         1.2.2+dd (3852ba0a7708d4dc37f64dd4cd00f873bf317ac0)
+# os                   linux
+# command              make
+# path                 /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/text.0.6
+# compiler             4.07.0+24fac73
+# exit-code            2
+# env-file             /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/text.0.6/text-25652.env
+# stdout-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/text.0.6/text-25652.out
+# stderr-file          /home/doligez/opamcheck/sandbox2/opamstate/4.07.0+24fac73/dotopam/4.07.0+24fac73/build/text.0.6/text-25652.out
+### stdout ###
+# ocaml setup.ml -configure 
+# File "/home/dim/sources/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "/home/dim/sources/oasis/src/oasis/OASISString.ml", line 118, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:34: recipe for target 'setup.data' failed
+# make: *** [setup.data] Error 2
+### stderr ###
+# ocaml setup.ml -configure 
+# File "/home/dim/sources/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "/home/dim/sources/oasis/src/oasis/OASISString.ml", line 118, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:34: recipe for target 'setup.data' failed
+# make: *** [setup.data] Error 2
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following actions failed
+  - install text 0.6
+No changes have been performed
+'opam install text.0.6' failed.
