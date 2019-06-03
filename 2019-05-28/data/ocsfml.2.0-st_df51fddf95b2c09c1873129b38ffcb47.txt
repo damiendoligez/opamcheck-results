@@ -1,0 +1,111 @@
+The following actions will be performed:
+  - install ocsfml 2.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [ocsfml.2.0: http]
+[ocsfml.2.0] downloaded from https://github.com/KyoDralliam/Ocsfml/tarball/master
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [ocsfml: cmake .]
++ /usr/bin/cmake "." (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/ocsfml.2.0)
+- -- The C compiler identification is GNU 7.3.0
+- -- The CXX compiler identification is GNU 7.3.0
+- -- Check for working C compiler: /usr/bin/cc
+- -- Check for working C compiler: /usr/bin/cc -- works
+- -- Detecting C compiler ABI info
+- -- Detecting C compiler ABI info - done
+- -- Detecting C compile features
+- -- Detecting C compile features - done
+- -- Check for working CXX compiler: /usr/bin/c++
+- -- Check for working CXX compiler: /usr/bin/c++ -- works
+- -- Detecting CXX compiler ABI info
+- -- Detecting CXX compiler ABI info - done
+- -- Detecting CXX compile features
+- -- Detecting CXX compile features - done
+- Found SFML: /usr/include
+- -- Boost version: 1.65.1
+- CMake Warning (dev) at CMakeLists.txt:199 (add_custom_target):
+-   Policy CMP0037 is not set: Target names should not be reserved and should
+-   match a validity pattern.  Run "cmake --help-policy CMP0037" for policy
+-   details.  Use the cmake_policy command to set the policy and suppress this
+-   warning.
+- 
+-   The target name "install" is reserved or not valid for certain CMake
+-   features, such as generator expressions, and may result in undefined
+-   behavior.
+- This warning is for project developers.  Use -Wno-dev to suppress it.
+- 
+- CMake Warning (dev) at CMakeLists.txt:229 (add_custom_target):
+-   Policy CMP0053 is not set: Simplify variable reference and escape sequence
+-   evaluation.  Run "cmake --help-policy CMP0053" for policy details.  Use the
+-   cmake_policy command to set the policy and suppress this warning.
+- 
+-   For input:
+- 
+-     '${OCSFML_DISTRIB_DIR}/install.@SCRIPT_EXTENSION@'
+- 
+-   the old evaluation rules produce:
+- 
+-     '/install.sh'
+- 
+-   but the new evaluation rules produce:
+- 
+-     '/install.@SCRIPT_EXTENSION@'
+- 
+-   Using the old result for compatibility since the policy is not set.
+- This warning is for project developers.  Use -Wno-dev to suppress it.
+- 
+- -- Configuring done
+- CMake Warning (dev) at CMakeLists.txt:216 (add_dependencies):
+-   Policy CMP0046 is not set: Error on non-existent dependency in
+-   add_dependencies.  Run "cmake --help-policy CMP0046" for policy details.
+-   Use the cmake_policy command to set the policy and suppress this warning.
+- 
+-   The dependency target "uninstall_external_cpp" of target "uninstall_ocsfml"
+-   does not exist.
+- This warning is for project developers.  Use -Wno-dev to suppress it.
+- 
+- -- Generating done
+- -- Build files have been written to: /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/ocsfml.2.0
+Processing  1/2: [ocsfml: make]
++ /usr/bin/make  (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/ocsfml.2.0)
+- Scanning dependencies of target ocsfml
+- make[2]: ocamlbuild: Command not found
+- CMakeFiles/ocsfml.dir/build.make:57: recipe for target 'CMakeFiles/ocsfml' failed
+- make[2]: *** [CMakeFiles/ocsfml] Error 127
+- CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/ocsfml.dir/all' failed
+- make[1]: *** [CMakeFiles/ocsfml.dir/all] Error 2
+- Makefile:83: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of ocsfml failed at "/usr/bin/make".
+
+#=== ERROR while compiling ocsfml.2.0 =========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/ocsfml.2.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/ocsfml-122507-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/ocsfml-122507-6cc03f.out
+### output ###
+# Scanning dependencies of target ocsfml
+# make[2]: ocamlbuild: Command not found
+# CMakeFiles/ocsfml.dir/build.make:57: recipe for target 'CMakeFiles/ocsfml' failed
+# make[2]: *** [CMakeFiles/ocsfml] Error 127
+# CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/ocsfml.dir/all' failed
+# make[1]: *** [CMakeFiles/ocsfml.dir/all] Error 2
+# Makefile:83: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ocsfml 2.0
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    cmake libboost-dev libsfml-dev
+
+'opam install ocsfml.2.0' failed.

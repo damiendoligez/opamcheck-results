@@ -1,0 +1,64 @@
+The following actions will be performed:
+  - install vecosek-engine 0.0.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[vecosek-engine.0.0.0] found in cache
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [vecosek-engine: ocaml please.ml]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocaml "please.ml" "configure" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/vecosek-engine.0.0.0)
+Processing  1/2: [vecosek-engine: jbuilder build]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/jbuilder "build" "-p" "vecosek-engine" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/vecosek-engine.0.0.0)
+- The jbuilder binary is deprecated and will cease to be maintained in July 2019.
+- Please switch to dune instead.
+- File "src/app/jbuild", line 1, characters 0-0:
+- Warning: jbuild files are deprecated, please convert this file to a dune file instead.
+- Note: You can use "dune upgrade" to convert your project to dune.
+- File "src/engine/jbuild", line 1, characters 0-0:
+- Warning: jbuild files are deprecated, please convert this file to a dune file instead.
+- Note: You can use "dune upgrade" to convert your project to dune.
+- File "src/lib/jbuild", line 1, characters 0-0:
+- Warning: jbuild files are deprecated, please convert this file to a dune file instead.
+- Note: You can use "dune upgrade" to convert your project to dune.
+- File "src/test/jbuild", line 1, characters 0-0:
+- Warning: jbuild files are deprecated, please convert this file to a dune file instead.
+- Note: You can use "dune upgrade" to convert your project to dune.
+-       ocamlc src/engine/.vecosek_engine.objs/byte/vecosek_engine__Tracker.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I src/engine/.vecosek_engine.objs/byte -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/atd -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/atdgen -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/biniou -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/easy-format -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/nonstd -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/sosa -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/vecosek-scene -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/yojson -no-alias-deps -open Vecosek_engine -o src/engine/.vecosek_engine.objs/byte/vecosek_engine__Tracker.cmo -c -impl src/engine/tracker.ml)
+- File "src/engine/tracker.ml", line 282, characters 4-15:
+- 282 |     Option.iter t.override_ppqn ~f:(fun i -> state.ppqn <- i);
+-           ^^^^^^^^^^^
+- Error: Unbound value Option.iter
+[ERROR] The compilation of vecosek-engine failed at "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/jbuilder build -p vecosek-engine -j 39".
+
+#=== ERROR while compiling vecosek-engine.0.0.0 ===============================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/vecosek-engine.0.0.0
+# command              /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/jbuilder build -p vecosek-engine -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/vecosek-engine-75015-d2c37b.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/vecosek-engine-75015-d2c37b.out
+### output ###
+# [...]
+# File "src/lib/jbuild", line 1, characters 0-0:
+# Warning: jbuild files are deprecated, please convert this file to a dune file instead.
+# Note: You can use "dune upgrade" to convert your project to dune.
+# File "src/test/jbuild", line 1, characters 0-0:
+# Warning: jbuild files are deprecated, please convert this file to a dune file instead.
+# Note: You can use "dune upgrade" to convert your project to dune.
+#       ocamlc src/engine/.vecosek_engine.objs/byte/vecosek_engine__Tracker.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I src/engine/.vecosek_engine.objs/byte -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/atd -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/atdgen -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/biniou -I /opamcheck/sandbox/[...]
+# File "src/engine/tracker.ml", line 282, characters 4-15:
+# 282 |     Option.iter t.override_ppqn ~f:(fun i -> state.ppqn <- i);
+#           ^^^^^^^^^^^
+# Error: Unbound value Option.iter
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build vecosek-engine 0.0.0
++- 
+- No changes have been performed
+'opam install vecosek-engine.0.0.0' failed.

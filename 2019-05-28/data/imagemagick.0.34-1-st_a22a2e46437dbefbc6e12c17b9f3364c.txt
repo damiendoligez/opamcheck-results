@@ -1,0 +1,27 @@
+The following actions will be performed:
+  - install imagemagick 0.34-1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [imagemagick.0.34-1: http]
+[imagemagick.0.34-1] downloaded from http://www.linux-nantes.org/~fmonnier/OCaml/ImageMagick/downloads/OCaml-ImageMagick-0.34.tgz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [imagemagick: patch]
+
+#=== ERROR while compiling imagemagick.0.34-1 =================================#
+These patches didn't apply at /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/imagemagick.0.34-1:
+  - fix_build.patch: "/usr/bin/patch -p1 -i /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/processed-patch-67451-6cc03f" exited with code 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build imagemagick 0.34-1
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libmagickcore-dev
+
+'opam install imagemagick.0.34-1' failed.

@@ -1,0 +1,102 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install opam-core 2.0.0~rc3
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [opam-core.2.0.0~rc3: http]
+[opam-core.2.0.0~rc3] downloaded from https://github.com/ocaml/opam/archive/2.0.0-rc3.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [opam-core: ./configure]
++ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/opam-core.2.0.0~rc3/./configure "--disable-checks" "--prefix" "/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/opam-core.2.0.0~rc3)
+- checking for ocamlc... ocamlc
+- OCaml version is 4.04.2
+- OCaml library path is /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamldoc.opt... ocamldoc.opt
+- checking for ocamlbuild... ocamlbuild
+- checking OCaml Sys.os_type... Unix
+- checking for gawk... no
+- checking for mawk... mawk
+- checking for compiler type... cc
+- checking for compiler architecture... amd64
+- checking for compiler system... linux
+- checking for gcc... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... 
+- yes
+- checking whether gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 accepts -g... yes
+- checking for gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 option to accept ISO C89... none needed
+- checking for ocamlobjinfo... ocamlobjinfo
+- checking for ocamlfind... ocamlfind
+- checking for curl... curl
+- checking for jbuilder... jbuilder
+- 
+- checking for OCaml findlib package unix... found
+- checking for OCaml findlib package bigarray... found
+- checking for OCaml findlib package extlib... not found
+- checking for OCaml findlib package re... found
+- checking for OCaml findlib package re.glob... found
+- checking for OCaml findlib package cmdliner... found
+- checking for OCaml findlib package ocamlgraph... found
+- checking for OCaml findlib package cudf... not found
+- checking for OCaml findlib package dose3.common... not found
+- checking for OCaml findlib package dose3.algo... not found
+- checking for OCaml findlib package opam-file-format... found
+- checking for OCaml findlib package mccs... not found
+- checking for OCaml findlib package cppo... found
+- 
+- configure: creating ./config.status
+- config.status: creating Makefile.config
+- config.status: creating src/client/opamManifest.inc
+- 
+- Opam will be built WITHOUT a built-in solver
+- 
+- Executables will be installed in /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin
+- Manual pages will be installed in /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/share/man
+Processing  1/2: [opam-core: make opam-core.install]
++ /usr/bin/make "opam-core.install" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/opam-core.2.0.0~rc3)
+- jbuilder build  -p opam-core opam-core.install
+- File "src/client/jbuild", line 37, characters 13-23:
+- Error: Unknown constructor universe
+- Makefile:101: recipe for target 'opam-core.install' failed
+- make: *** [opam-core.install] Error 1
+[ERROR] The compilation of opam-core failed at "/usr/bin/make opam-core.install".
+
+#=== ERROR while compiling opam-core.2.0.0~rc3 ================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/opam-core.2.0.0~rc3
+# command              /usr/bin/make opam-core.install
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/opam-core-15471-d0f245.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/opam-core-15471-d0f245.out
+### output ###
+# jbuilder build  -p opam-core opam-core.install
+# File "src/client/jbuild", line 37, characters 13-23:
+# Error: Unknown constructor universe
+# Makefile:101: recipe for target 'opam-core.install' failed
+# make: *** [opam-core.install] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build opam-core 2.0.0~rc3
++- 
+- No changes have been performed
+'opam install opam-core.2.0.0~rc3' failed.

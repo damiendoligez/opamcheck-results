@@ -1,0 +1,105 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install conf-llvm 7.0.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [conf-llvm: bash configure.sh]
++ /bin/bash "-ex" "configure.sh" "7.0.0" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/conf-llvm.7.0.0)
+- + version=7
+- + hash brew
+- + shopt -s nullglob
+- + for llvm_config in llvm-config-$version llvm-config-${version}.0 llvm-config${version}0 llvm-config-mp-$version llvm-config-mp-${version}.0 $brew_llvm_config llvm-config
+- ++ llvm-config-7 --version
+- configure.sh: line 11: llvm-config-7: command not found
+- + llvm_version=
+- + true
+- + case $llvm_version in
+- + echo 'Note: '\''llvm-config-7'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''7'\''.'
+- Note: 'llvm-config-7' doesn't match the required version. Got '' but required '7'.
+- + continue
+- + for llvm_config in llvm-config-$version llvm-config-${version}.0 llvm-config${version}0 llvm-config-mp-$version llvm-config-mp-${version}.0 $brew_llvm_config llvm-config
+- ++ llvm-config-7.0 --version
+- configure.sh: line 11: llvm-config-7.0: command not found
+- + llvm_version=
+- + true
+- + case $llvm_version in
+- + echo 'Note: '\''llvm-config-7.0'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''7'\''.'
+- Note: 'llvm-config-7.0' doesn't match the required version. Got '' but required '7'.
+- + continue
+- + for llvm_config in llvm-config-$version llvm-config-${version}.0 llvm-config${version}0 llvm-config-mp-$version llvm-config-mp-${version}.0 $brew_llvm_config llvm-config
+- ++ llvm-config70 --version
+- configure.sh: line 11: llvm-config70: command not found
+- + llvm_version=
+- + true
+- + case $llvm_version in
+- + echo 'Note: '\''llvm-config70'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''7'\''.'
+- Note: 'llvm-config70' doesn't match the required version. Got '' but required '7'.
+- + continue
+- + for llvm_config in llvm-config-$version llvm-config-${version}.0 llvm-config${version}0 llvm-config-mp-$version llvm-config-mp-${version}.0 $brew_llvm_config llvm-config
+- ++ llvm-config-mp-7 --version
+- configure.sh: line 11: llvm-config-mp-7: command not found
+- + llvm_version=
+- + true
+- + case $llvm_version in
+- + echo 'Note: '\''llvm-config-mp-7'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''7'\''.'
+- Note: 'llvm-config-mp-7' doesn't match the required version. Got '' but required '7'.
+- + continue
+- + for llvm_config in llvm-config-$version llvm-config-${version}.0 llvm-config${version}0 llvm-config-mp-$version llvm-config-mp-${version}.0 $brew_llvm_config llvm-config
+- ++ llvm-config-mp-7.0 --version
+- configure.sh: line 11: llvm-config-mp-7.0: command not found
+- + llvm_version=
+- + true
+- + case $llvm_version in
+- + echo 'Note: '\''llvm-config-mp-7.0'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''7'\''.'
+- Note: 'llvm-config-mp-7.0' doesn't match the required version. Got '' but required '7'.
+- + continue
+- + for llvm_config in llvm-config-$version llvm-config-${version}.0 llvm-config${version}0 llvm-config-mp-$version llvm-config-mp-${version}.0 $brew_llvm_config llvm-config
+- ++ llvm-config --version
+- + llvm_version=6.0.0
+- + case $llvm_version in
+- + echo 'Note: '\''llvm-config'\'' doesn'\''t match the required version. Got '\''6.0.0'\'' but required '\''7'\''.'
+- Note: 'llvm-config' doesn't match the required version. Got '6.0.0' but required '7'.
+- + continue
+- + echo 'Error: LLVM 7 is not installed.'
+- Error: LLVM 7 is not installed.
+- + exit 1
+[ERROR] The compilation of conf-llvm failed at "/bin/bash -ex configure.sh 7.0.0".
+
+#=== ERROR while compiling conf-llvm.7.0.0 ====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/conf-llvm.7.0.0
+# command              /bin/bash -ex configure.sh 7.0.0
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/conf-llvm-121464-9b8556.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/conf-llvm-121464-9b8556.out
+### output ###
+# [...]
+# Note: 'llvm-config-mp-7.0' doesn't match the required version. Got '' but required '7'.
+# + continue
+# + for llvm_config in llvm-config-$version llvm-config-${version}.0 llvm-config${version}0 llvm-config-mp-$version llvm-config-mp-${version}.0 $brew_llvm_config llvm-config
+# ++ llvm-config --version
+# + llvm_version=6.0.0
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config'\'' doesn'\''t match the required version. Got '\''6.0.0'\'' but required '\''7'\''.'
+# Note: 'llvm-config' doesn't match the required version. Got '6.0.0' but required '7'.
+# + continue
+# + echo 'Error: LLVM 7 is not installed.'
+# Error: LLVM 7 is not installed.
+# + exit 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-llvm 7.0.0
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    llvm-7-dev
+
+'opam install conf-llvm.7.0.0' failed.

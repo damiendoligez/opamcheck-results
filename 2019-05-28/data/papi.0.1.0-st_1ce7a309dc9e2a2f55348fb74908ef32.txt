@@ -1,0 +1,51 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install papi 0.1.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [papi.0.1.0: http]
+[papi.0.1.0] downloaded from https://github.com/pqwy/ocaml-papi/releases/download/v0.1.0/papi-0.1.0.tbz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [papi: ocaml build]
++ /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocaml "pkg/pkg.ml" "build" "--pinned" "false" (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/papi.0.1.0)
+- ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package ocb-stubblr myocamlbuild.ml /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- Failure: Ocb_stubblr: pkg-config: package papi not found.
+- pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-tag' 'debug'
+-      '-build-dir' '_build' '-plugin-tag' 'package(ocb-stubblr)' 'opam'
+-      'pkg/META' 'CHANGES.md' 'LICENSE.md' 'README.md' 'src/dllpapi_stubs.so'
+-      'src/libpapi_stubs.a' 'src/papi.a' 'src/papi.cmxs' 'src/papi.cmxa'
+-      'src/papi.cma' 'src/papi.cmx' 'src/papi.cmi' 'src/papi.mli'
+-      'src/papi_top.a' 'src/papi_top.cmxs' 'src/papi_top.cmxa'
+-      'src/papi_top.cma' 'src/papi_top.cmx' 'src/papi_top_init.ml']: exited with 2
+[ERROR] The compilation of papi failed at "/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocaml pkg/pkg.ml build --pinned false".
+
+#=== ERROR while compiling papi.0.1.0 =========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/papi.0.1.0
+# command              /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocaml pkg/pkg.ml build --pinned false
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/papi-186204-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/papi-186204-a00279.out
+### output ###
+# ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package ocb-stubblr myocamlbuild.ml /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# Failure: Ocb_stubblr: pkg-config: package papi not found.
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-tag' 'debug'
+#      '-build-dir' '_build' '-plugin-tag' 'package(ocb-stubblr)' 'opam'
+#      'pkg/META' 'CHANGES.md' 'LICENSE.md' 'README.md' 'src/dllpapi_stubs.so'
+#      'src/libpapi_stubs.a' 'src/papi.a' 'src/papi.cmxs' 'src/papi.cmxa'
+#      'src/papi.cma' 'src/papi.cmx' 'src/papi.cmi' 'src/papi.mli'
+#      'src/papi_top.a' 'src/papi_top.cmxs' 'src/papi_top.cmxa'
+#      'src/papi_top.cma' 'src/papi_top.cmx' 'src/papi_top_init.ml']: exited with 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build papi 0.1.0
++- 
+- No changes have been performed
+'opam install papi.0.1.0' failed.

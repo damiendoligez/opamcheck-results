@@ -1,0 +1,55 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install srs 2.0.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [srs.2.0.0: http]
+[srs.2.0.0] downloaded from https://github.com/andrenth/ocaml-srs/archive/2.0.0.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [srs: jbuilder build]
++ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/jbuilder "build" "-p" "srs" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/srs.2.0.0)
+-     ocamldep src/srs.dependsi.ocamldep-output
+-     ocamldep src/srs.depends.ocamldep-output
+-       ocamlc src/srs.{cmi,cmti}
+-       ocamlc src/srs.{cmo,cmt}
+-       ocamlc src/srs.cma
+-       ocamlc src/srs_stubs.o (exit 2)
+- (cd _build/default/src && /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlc.opt -g -ccopt -Wall -ccopt -Werror -o srs_stubs.o srs_stubs.c)
+- srs_stubs.c:4:10: fatal error: srs2.h: No such file or directory
+-  #include <srs2.h>
+-           ^~~~~~~~
+- compilation terminated.
+[ERROR] The compilation of srs failed at "/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/jbuilder build -p srs -j 39".
+
+#=== ERROR while compiling srs.2.0.0 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/srs.2.0.0
+# command              /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/jbuilder build -p srs -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/srs-109534-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/srs-109534-a00279.out
+### output ###
+#     ocamldep src/srs.dependsi.ocamldep-output
+#     ocamldep src/srs.depends.ocamldep-output
+#       ocamlc src/srs.{cmi,cmti}
+#       ocamlc src/srs.{cmo,cmt}
+#       ocamlc src/srs.cma
+#       ocamlc src/srs_stubs.o (exit 2)
+# (cd _build/default/src && /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlc.opt -g -ccopt -Wall -ccopt -Werror -o srs_stubs.o srs_stubs.c)
+# srs_stubs.c:4:10: fatal error: srs2.h: No such file or directory
+#  #include <srs2.h>
+#           ^~~~~~~~
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build srs 2.0.0
++- 
+- No changes have been performed
+'opam install srs.2.0.0' failed.

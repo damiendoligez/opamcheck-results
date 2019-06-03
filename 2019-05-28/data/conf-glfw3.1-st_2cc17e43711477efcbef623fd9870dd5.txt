@@ -1,0 +1,30 @@
+The following actions will be performed:
+  - install conf-glfw3 1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [conf-glfw3: pkg-config glfw3]
++ /usr/bin/pkg-config "glfw3" (CWD=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/conf-glfw3.1)
+[ERROR] The compilation of conf-glfw3 failed at "/usr/bin/pkg-config glfw3".
+
+#=== ERROR while compiling conf-glfw3.1 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/conf-glfw3.1
+# command              /usr/bin/pkg-config glfw3
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/conf-glfw3-84549-ccabea.env
+# output-file          /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/conf-glfw3-84549-ccabea.out
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-glfw3 1
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libglfw3-dev
+
+'opam install conf-glfw3.1' failed.

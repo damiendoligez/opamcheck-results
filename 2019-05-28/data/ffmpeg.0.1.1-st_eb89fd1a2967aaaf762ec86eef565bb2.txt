@@ -1,0 +1,106 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install ffmpeg 0.1.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [ffmpeg.0.1.1: http]
+[ffmpeg.0.1.1] downloaded from https://github.com/savonet/ocaml-ffmpeg/releases/download/0.1.1/ocaml-ffmpeg-0.1.1.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [ffmpeg: ./configure]
++ /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ffmpeg.0.1.1/./configure "--prefix" "/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1" (CWD=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ffmpeg.0.1.1)
+- configuring ocaml-ffmpeg 0.1.1
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- checking for a BSD-compatible install... /usr/bin/install -c
+- checking that calling user is not root... ok
+- checking for gcc... (cached) gcc
+- checking whether we are using the GNU C compiler... (cached) yes
+- checking whether gcc accepts -g... (cached) yes
+- checking for gcc option to accept ISO C89... (cached) none needed
+- checking for ar... ar
+- checking for ocamlc... ocamlc
+- OCaml version is 4.06.1
+- checking if ocaml compiler supports first-class modules... yes
+- OCaml library path is /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamldep.opt... ocamldep.opt
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamldoc.opt... ocamldoc.opt
+- checking for ocamlbuild... ocamlbuild
+- checking for camlidl... camlidl
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for camlp4... camlp4
+- versions differs from ocamlc
+- checking for camlp4boot... camlp4boot
+- checking for camlp4o... camlp4o
+- checking for camlp4of... camlp4of
+- checking for camlp4oof... camlp4oof
+- checking for camlp4orf... camlp4orf
+- checking for camlp4prof... camlp4prof
+- checking for camlp4r... camlp4r
+- checking for camlp4rf... camlp4rf
+- checking for ocamlfind... ocamlfind
+- checking for ocaml standard library path... /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml
+- checking for caml/threads.h... yes
+- checking for gcc option to produce PIC... -fPIC
+- checking for pkg-config... /usr/bin/pkg-config
+- checking pkg-config is at least version 0.9.0... yes
+- checking whether pkg-config knows about libavutil... ok
+- checking whether pkg-config knows about libswscale... configure: error: libswscale.pc not found.. Do you need to set PKG_CONFIG_PATH?
+[ERROR] The compilation of ffmpeg failed at "/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ffmpeg.0.1.1/./configure --prefix /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1".
+
+#=== ERROR while compiling ffmpeg.0.1.1 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ffmpeg.0.1.1
+# command              /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ffmpeg.0.1.1/./configure --prefix /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/ffmpeg-135166-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/ffmpeg-135166-a00279.out
+### output ###
+# [...]
+# checking for camlp4orf... camlp4orf
+# checking for camlp4prof... camlp4prof
+# checking for camlp4r... camlp4r
+# checking for camlp4rf... camlp4rf
+# checking for ocamlfind... ocamlfind
+# checking for ocaml standard library path... /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml
+# checking for caml/threads.h... yes
+# checking for gcc option to produce PIC... -fPIC
+# checking for pkg-config... /usr/bin/pkg-config
+# checking pkg-config is at least version 0.9.0... yes
+# checking whether pkg-config knows about libavutil... ok
+# checking whether pkg-config knows about libswscale... configure: error: libswscale.pc not found.. Do you need to set PKG_CONFIG_PATH?
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ffmpeg 0.1.1
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libavutil-dev libswscale-dev
+
+'opam install ffmpeg.0.1.1' failed.

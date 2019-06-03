@@ -1,0 +1,211 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install grib 0.11.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [grib.0.11.0: http]
+[grib.0.11.0] downloaded from https://github.com/hcarty/ocaml-grib/archive/v0.11.0.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [grib: ocaml setup.ml]
++ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocaml "setup.ml" "-configure" "--prefix" "/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/grib.0.11.0)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlbuild
+- Package name: ........................................ ocaml-grib
+- Package version: ..................................... 0.11.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml
+- standard_library: .................................... /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml
+- standard_runtime: .................................... /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Link with a JPEG2000 library: ........................ true
+- Use jasper for JPEG2000 support: ..................... true
+- Use libjpeg for JPEG2000 support: .................... true
+- Use openjpeg for JPEG2000 support: ................... true
+- Link with libpng: .................................... true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_bear: ............................................ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/bear
+- pkg_bigarray: ........................................ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml
+- 
++ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocaml "setup.ml" "-build" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/grib.0.11.0)
+- File "./setup.ml", line 318, characters 20-36:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1825, characters 16-33:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 5847, characters 11-28:
+- Warning 3: deprecated: String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Warning 3: deprecated: String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- ocamlfind ocamlopt unix.cmxa -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocamlbuild /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlfind ocamlc -g -ccopt -O2 -ccopt -g -ccopt -DUSE_JPEG2000 -ccopt -DUSE_PNG -package bigarray -package bear -c src/grib_stubs.c
+- mv grib_stubs.o src/grib_stubs.o
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlfind ocamlc -g -ccopt -O2 -ccopt -g -ccopt -DUSE_JPEG2000 -ccopt -DUSE_PNG -package bigarray -package bear -c src/g2clib_stubs.c
+- mv g2clib_stubs.o src/g2clib_stubs.o
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlfind ocamlc -g -ccopt -O2 -ccopt -g -ccopt -DUSE_JPEG2000 -ccopt -DUSE_PNG -package bigarray -package bear -c src/g2clib-src/cmplxpack.c
+- mv cmplxpack.o src/g2clib-src/cmplxpack.o
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlfind ocamlc -g -ccopt -O2 -ccopt -g -ccopt -DUSE_JPEG2000 -ccopt -DUSE_PNG -package bigarray -package bear -c src/g2clib-src/compack.c
+- + /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlfind ocamlc -g -ccopt -O2 -ccopt -g -ccopt -DUSE_JPEG2000 -ccopt -DUSE_PNG -package bigarray -package bear -c src/g2clib-src/compack.c
+- src/g2clib-src/compack.c: In function ‘compack’:
+- src/g2clib-src/compack.c:70:20: warning: variable ‘nbits’ set but not used [-Wunused-but-set-variable]
+-        g2int  i,j,n,nbits,imin,imax,left;
+-                     ^~~~~
+- mv compack.o src/g2clib-src/compack.o
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlfind ocamlc -g -ccopt -O2 -ccopt -g -ccopt -DUSE_JPEG2000 -ccopt -DUSE_PNG -package bigarray -package bear -c src/g2clib-src/comunpack.c
+- mv comunpack.o src/g2clib-src/comunpack.o
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlfind ocamlc -g -ccopt -O2 -ccopt -g -ccopt -DUSE_JPEG2000 -ccopt -DUSE_PNG -package bigarray -package bear -c src/g2clib-src/dec_jpeg2000.c
+- + /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlfind ocamlc -g -ccopt -O2 -ccopt -g -ccopt -DUSE_JPEG2000 -ccopt -DUSE_PNG -package bigarray -package bear -c src/g2clib-src/dec_jpeg2000.c
+- src/g2clib-src/dec_jpeg2000.c:8:10: fatal error: jasper/jasper.h: No such file or directory
+-  #include "jasper/jasper.h"
+-           ^~~~~~~~~~~~~~~~~
+- compilation terminated.
+- Command exited with code 2.
+- + ocamlfind ocamlopt unix.cmxa -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocamlbuild /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlbuild' src/libgrib_stubs.a src/dllgrib_stubs.so src/grib.cma src/grib.cmxa src/grib.a src/grib.cmxs -use-ocamlfind -tag debug' terminated with error code 10")
+[ERROR] The compilation of grib failed at "/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling grib.0.11.0 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/grib.0.11.0
+# command              /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/grib-169203-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/grib-169203-6cc03f.out
+### output ###
+# src/g2clib-src/dec_jpeg2000.c:8:10: fatal error: jasper/jasper.h: No such file or directory
+# [...]
+#           ^~~~~~~~~~~~~~~~~
+# compilation terminated.
+# Command exited with code 2.
+# + ocamlfind ocamlopt unix.cmxa -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocamlbuild /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlbuild' src/libgrib_stubs.a src/dllgrib_stubs.so src/grib.cma src/grib.cmxa src/grib.a src/grib.cmxs -use-ocamlfind -tag debug' terminated with error code 10")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build grib 0.11.0
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libgrib-api-dev libjasper-dev libjpeg-dev libopenjpeg-dev libpng-dev
+
+'opam install grib.0.11.0' failed.

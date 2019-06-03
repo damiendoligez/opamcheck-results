@@ -1,0 +1,83 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install llvm 3.7
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [llvm.3.7: http]
+[llvm.3.7] downloaded from http://llvm.org/releases/3.7.0/llvm-3.7.0.src.tar.xz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  2/2: [llvm: bash 3.7]
++ /bin/bash "-ex" "./install.sh" "3.7" "make" "/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2" "/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/llvm.3.7)
+- + version=3.7
+- + make=make
+- + prefix=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2
+- + libdir=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib
+- + brew_llvm_config='/usr/local/Cellar/llvm/3.7*/bin/llvm-config'
+- + stat -t '/usr/local/Cellar/llvm/3.7*/bin/llvm-config'
+- stat: cannot stat '/usr/local/Cellar/llvm/3.7*/bin/llvm-config': No such file or directory
+- + brew_llvm_config=
+- + shopt -s nullglob
+- ++ echo 3.7
+- ++ tr -d .
+- + version_sans_dot=37
+- + for config in llvm-config-$version llvm-config$version_sans_dot llvm-config-mp-$version $brew_llvm_config llvm-config
+- + case `$config --version` in
+- ++ llvm-config-3.7 --version
+- ./install.sh: line 32: llvm-config-3.7: command not found
+- + continue
+- + for config in llvm-config-$version llvm-config$version_sans_dot llvm-config-mp-$version $brew_llvm_config llvm-config
+- + case `$config --version` in
+- ++ llvm-config37 --version
+- ./install.sh: line 32: llvm-config37: command not found
+- + continue
+- + for config in llvm-config-$version llvm-config$version_sans_dot llvm-config-mp-$version $brew_llvm_config llvm-config
+- + case `$config --version` in
+- ++ llvm-config-mp-3.7 --version
+- ./install.sh: line 32: llvm-config-mp-3.7: command not found
+- + continue
+- + for config in llvm-config-$version llvm-config$version_sans_dot llvm-config-mp-$version $brew_llvm_config llvm-config
+- + case `$config --version` in
+- ++ llvm-config --version
+- + continue
+- + echo 'Error: LLVM 3.7 is not installed.'
+- Error: LLVM 3.7 is not installed.
+- + exit 1
+[ERROR] The installation of llvm failed at "bash -ex ./install.sh 3.7 make /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib".
+Processing  2/2: [llvm: ocamlfind remove]
++ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlfind "remove" "llvm" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/llvm.3.7)
+- ocamlfind: [WARNING] No such file: /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/llvm/META
+
+#=== ERROR while installing llvm.3.7 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/llvm.3.7
+# command              /bin/bash -ex ./install.sh 3.7 make /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/llvm-14559-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/llvm-14559-6cc03f.out
+### output ###
+# [...]
+# + for config in llvm-config-$version llvm-config$version_sans_dot llvm-config-mp-$version $brew_llvm_config llvm-config
+# + case `$config --version` in
+# ++ llvm-config-mp-3.7 --version
+# ./install.sh: line 32: llvm-config-mp-3.7: command not found
+# + continue
+# + for config in llvm-config-$version llvm-config$version_sans_dot llvm-config-mp-$version $brew_llvm_config llvm-config
+# + case `$config --version` in
+# ++ llvm-config --version
+# + continue
+# + echo 'Error: LLVM 3.7 is not installed.'
+# Error: LLVM 3.7 is not installed.
+# + exit 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - install llvm 3.7
++- 
+- No changes have been performed
+'opam install llvm.3.7' failed.

@@ -1,0 +1,67 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install orocksdb 0.2.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [orocksdb.0.2.0: http]
+[orocksdb.0.2.0] downloaded from https://github.com/domsj/orocksdb/archive/0.2.0.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [orocksdb: make]
++ /usr/bin/make  (CWD=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/orocksdb.0.2.0)
+- ocamlbuild -use-ocamlfind -lflags -cclib,/usr/local/lib/librocksdb.so rocks.inferred.mli rocks.cma rocks.cmxa rocks.cmxs
+- ocamlfind ocamldep -package ctypes.foreign -package ctypes -modules rocks.ml > rocks.ml.depends
+- ocamlfind ocamlc -i -package ctypes.foreign -package ctypes rocks.ml > rocks.inferred.mli
+- ocamlfind ocamldep -package ctypes.foreign -package ctypes -modules rocks.mli > rocks.mli.depends
+- ocamlfind ocamlc -c -g -annot -package ctypes.foreign -package ctypes -o rocks.cmi rocks.mli
+- ocamlfind ocamlc -c -g -annot -package ctypes.foreign -package ctypes -o rocks.cmo rocks.ml
+- ocamlfind ocamlc -a -cclib /usr/local/lib/librocksdb.so -package ctypes.foreign -package ctypes rocks.cmo -o rocks.cma
+- ocamlfind ocamlopt -c -g -annot -package ctypes.foreign -package ctypes -o rocks.cmx rocks.ml
+- ocamlfind ocamlopt -a -cclib /usr/local/lib/librocksdb.so -package ctypes.foreign -package ctypes rocks.cmx -o rocks.cmxa
+- ocamlfind ocamlopt -shared -cclib /usr/local/lib/librocksdb.so -package ctypes.foreign -package ctypes rocks.cmx -o rocks.cmxs
+- + ocamlfind ocamlopt -shared -cclib /usr/local/lib/librocksdb.so -package ctypes.foreign -package ctypes rocks.cmx -o rocks.cmxs
+- gcc: error: /usr/local/lib/librocksdb.so: No such file or directory
+- File "caml_startup", line 1:
+- Error: Error during linking
+- Command exited with code 2.
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 10
+[ERROR] The compilation of orocksdb failed at "/usr/bin/make".
+
+#=== ERROR while compiling orocksdb.0.2.0 =====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/orocksdb.0.2.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/orocksdb-143008-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/orocksdb-143008-a00279.out
+### output ###
+# [...]
+# ocamlfind ocamlc -c -g -annot -package ctypes.foreign -package ctypes -o rocks.cmo rocks.ml
+# ocamlfind ocamlc -a -cclib /usr/local/lib/librocksdb.so -package ctypes.foreign -package ctypes rocks.cmo -o rocks.cma
+# ocamlfind ocamlopt -c -g -annot -package ctypes.foreign -package ctypes -o rocks.cmx rocks.ml
+# ocamlfind ocamlopt -a -cclib /usr/local/lib/librocksdb.so -package ctypes.foreign -package ctypes rocks.cmx -o rocks.cmxa
+# ocamlfind ocamlopt -shared -cclib /usr/local/lib/librocksdb.so -package ctypes.foreign -package ctypes rocks.cmx -o rocks.cmxs
+# + ocamlfind ocamlopt -shared -cclib /usr/local/lib/librocksdb.so -package ctypes.foreign -package ctypes rocks.cmx -o rocks.cmxs
+# gcc: error: /usr/local/lib/librocksdb.so: No such file or directory
+# File "caml_startup", line 1:
+# Error: Error during linking
+# Command exited with code 2.
+# Makefile:7: recipe for target 'build' failed
+# make: *** [build] Error 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build orocksdb 0.2.0
++- 
+- No changes have been performed
+
+<><> orocksdb.0.2.0 troubleshooting <><><><><><><><><><><><><><><><><><><><><><>
+=> This package requires rocksdb library installed in /usr/local/lib.
+     Tentative instructions : https://gist.githubusercontent.com/toolslive/22958251b056dcb3131a/raw/14e68d9a0a2480d7be13c31f1fbe126d796c8db3/install.sh
+'opam install orocksdb.0.2.0' failed.

@@ -1,0 +1,83 @@
+The following actions will be performed:
+  - install solo5-kernel-virtio 0.2.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [solo5-kernel-virtio.0.2.1: http]
+[solo5-kernel-virtio.0.2.1] downloaded from https://github.com/Solo5/solo5/archive/v0.2.1.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [solo5-kernel-virtio: make virtio]
++ /usr/bin/make "virtio" (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1)
+- Makefile.common:28: /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/Makeconf: No such file or directory
+- ./configure.sh
+- /usr/bin/make -C kernel virtio
+- make[1]: Entering directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/kernel'
+- cc -nostdinc -ffreestanding -mno-red-zone -isystem /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -DASM_FILE -c virtio/boot.S -o virtio/boot.o
+- cc -nostdinc -ffreestanding -mno-red-zone -isystem /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/kernel.c -o virtio/kernel.o
+- cc -nostdinc -ffreestanding -mno-red-zone -isystem /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/platform.c -o virtio/platform.o
+- cc -nostdinc -ffreestanding -mno-red-zone -isystem /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/platform_intr.c -o virtio/platform_intr.o
+- cc -nostdinc -ffreestanding -mno-red-zone -isystem /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/mem.c -o virtio/mem.o
+- cc -nostdinc -ffreestanding -mno-red-zone -isystem /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/pci.c -o virtio/pci.o
+- cc -nostdinc -ffreestanding -mno-red-zone -isystem /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/serial.c -o virtio/serial.o
+- cc -nostdinc -ffreestanding -mno-red-zone -isystem /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/time.c -o virtio/time.o
+- cc -nostdinc -ffreestanding -mno-red-zone -isystem /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/virtio_ring.c -o virtio/virtio_ring.o
+- cc -nostdinc -ffreestanding -mno-red-zone -isystem /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/virtio_net.c -o virtio/virtio_net.o
+- cc -nostdinc -ffreestanding -mno-red-zone -isystem /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/virtio_blk.c -o virtio/virtio_blk.o
+- cc -nostdinc -ffreestanding -mno-red-zone -isystem /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/tscclock.c -o virtio/tscclock.o
+- cc -nostdinc -ffreestanding -mno-red-zone -isystem /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/clock_subr.c -o virtio/clock_subr.o
+- cc -nostdinc -ffreestanding -mno-red-zone -isystem /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c abort.c -o abort.o
+- cc -nostdinc -ffreestanding -mno-red-zone -isystem /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -DASM_FILE -c cpu.S -o cpu.o
+- cc -nostdinc -ffreestanding -mno-red-zone -isystem /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -DASM_FILE -c cpu_vectors.S -o cpu_vectors.o
+- cc -nostdinc -ffreestanding -mno-red-zone -isystem /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c ee_printf.c -o ee_printf.o
+- ee_printf.c: In function ‘vsnprintf’:
+- ee_printf.c:639:19: error: this statement may fall through [-Werror=implicit-fallthrough=]
+-              flags |= UPPERCASE;
+-                    ^
+- ee_printf.c:641:9: note: here
+-          case 'a':
+-          ^~~~
+- ee_printf.c:656:19: error: this statement may fall through [-Werror=implicit-fallthrough=]
+-              flags |= UPPERCASE;
+-                    ^
+- ee_printf.c:658:9: note: here
+-          case 'x':
+-          ^~~~
+- cc1: all warnings being treated as errors
+- Makefile:68: recipe for target 'ee_printf.o' failed
+- make[1]: *** [ee_printf.o] Error 1
+- make[1]: Leaving directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/kernel'
+- Makefile:32: recipe for target 'virtio' failed
+- make: *** [virtio] Error 2
+[ERROR] The compilation of solo5-kernel-virtio failed at "/usr/bin/make virtio".
+
+#=== ERROR while compiling solo5-kernel-virtio.0.2.1 ==========================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1
+# command              /usr/bin/make virtio
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/solo5-kernel-virtio-32840-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/solo5-kernel-virtio-32840-a00279.out
+### output ###
+# [...]
+# ee_printf.c:656:19: error: this statement may fall through [-Werror=implicit-fallthrough=]
+#              flags |= UPPERCASE;
+#                    ^
+# ee_printf.c:658:9: note: here
+#          case 'x':
+#          ^~~~
+# cc1: all warnings being treated as errors
+# Makefile:68: recipe for target 'ee_printf.o' failed
+# make[1]: *** [ee_printf.o] Error 1
+# make[1]: Leaving directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/solo5-kernel-virtio.0.2.1/kernel'
+# Makefile:32: recipe for target 'virtio' failed
+# make: *** [virtio] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build solo5-kernel-virtio 0.2.1
++- 
+- No changes have been performed
+'opam install solo5-kernel-virtio.0.2.1' failed.

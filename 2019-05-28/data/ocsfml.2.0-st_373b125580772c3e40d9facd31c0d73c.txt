@@ -1,0 +1,417 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install ocsfml 2.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [ocsfml.2.0: http]
+[ocsfml.2.0] downloaded from https://github.com/KyoDralliam/Ocsfml/tarball/master
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [ocsfml: cmake .]
++ /usr/bin/cmake "." (CWD=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0)
+- -- The C compiler identification is GNU 7.3.0
+- -- The CXX compiler identification is GNU 7.3.0
+- -- Check for working C compiler: /usr/bin/cc
+- -- Check for working C compiler: /usr/bin/cc -- works
+- -- Detecting C compiler ABI info
+- -- Detecting C compiler ABI info - done
+- -- Detecting C compile features
+- -- Detecting C compile features - done
+- -- Check for working CXX compiler: /usr/bin/c++
+- -- Check for working CXX compiler: /usr/bin/c++ -- works
+- -- Detecting CXX compiler ABI info
+- -- Detecting CXX compiler ABI info - done
+- -- Detecting CXX compile features
+- -- Detecting CXX compile features - done
+- Found SFML: /usr/include
+- -- Boost version: 1.65.1
+- CMake Warning (dev) at CMakeLists.txt:199 (add_custom_target):
+-   Policy CMP0037 is not set: Target names should not be reserved and should
+-   match a validity pattern.  Run "cmake --help-policy CMP0037" for policy
+-   details.  Use the cmake_policy command to set the policy and suppress this
+-   warning.
+- 
+-   The target name "install" is reserved or not valid for certain CMake
+-   features, such as generator expressions, and may result in undefined
+-   behavior.
+- This warning is for project developers.  Use -Wno-dev to suppress it.
+- 
+- CMake Warning (dev) at CMakeLists.txt:229 (add_custom_target):
+-   Policy CMP0053 is not set: Simplify variable reference and escape sequence
+-   evaluation.  Run "cmake --help-policy CMP0053" for policy details.  Use the
+-   cmake_policy command to set the policy and suppress this warning.
+- 
+-   For input:
+- 
+-     '${OCSFML_DISTRIB_DIR}/install.@SCRIPT_EXTENSION@'
+- 
+-   the old evaluation rules produce:
+- 
+-     '/install.sh'
+- 
+-   but the new evaluation rules produce:
+- 
+-     '/install.@SCRIPT_EXTENSION@'
+- 
+-   Using the old result for compatibility since the policy is not set.
+- This warning is for project developers.  Use -Wno-dev to suppress it.
+- 
+- -- Configuring done
+- CMake Warning (dev) at CMakeLists.txt:216 (add_dependencies):
+-   Policy CMP0046 is not set: Error on non-existent dependency in
+-   add_dependencies.  Run "cmake --help-policy CMP0046" for policy details.
+-   Use the cmake_policy command to set the policy and suppress this warning.
+- 
+-   The dependency target "uninstall_external_cpp" of target "uninstall_ocsfml"
+-   does not exist.
+- This warning is for project developers.  Use -Wno-dev to suppress it.
+- 
+- -- Generating done
+- -- Build files have been written to: /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0
+Processing  1/2: [ocsfml: make]
++ /usr/bin/make  (CWD=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0)
+- Scanning dependencies of target ocsfml
+- ocamlfind ocamlopt unix.cmxa -I /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocamlbuild /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "_tags", line 6, characters 46-65:
+- Warning: the tag "include_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 7, characters 35-50:
+- Warning: the tag "use_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 8, characters 36-51:
+- Warning: the tag "use_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 9, characters 27-42:
+- Warning: the tag "use_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 12, characters 46-65:
+- Warning: the tag "include_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 13, characters 35-50:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 14, characters 36-51:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 15, characters 27-42:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 18, characters 50-71:
+- Warning: the tag "include_sfml_graphics" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 19, characters 39-56:
+- Warning: the tag "use_sfml_graphics" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 20, characters 40-55:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 21, characters 29-46:
+- Warning: the tag "use_sfml_graphics" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 24, characters 44-62:
+- Warning: the tag "include_sfml_audio" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 25, characters 33-47:
+- Warning: the tag "use_sfml_audio" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 26, characters 34-49:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 27, characters 26-40:
+- Warning: the tag "use_sfml_audio" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 29, characters 48-68:
+- Warning: the tag "include_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 30, characters 37-53:
+- Warning: the tag "use_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 31, characters 38-54:
+- Warning: the tag "use_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 32, characters 28-44:
+- Warning: the tag "use_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- /usr/bin/c++ -O3 '-fvisibility=hidden' -fPIC -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp '-std=c++0x' -fpermissive -c -I/usr/include -I/usr/include -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml -I../OcsfmlSystem/ocsfml_system_stub OcsfmlSystem/ocsfml_system_stub/Sleep.cpp -oOcsfmlSystem/ocsfml_system_stub/Sleep.o
+- /usr/bin/c++ -O3 '-fvisibility=hidden' -fPIC -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp '-std=c++0x' -fpermissive -c -I/usr/include -I/usr/include -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml -I../OcsfmlSystem/ocsfml_system_stub OcsfmlSystem/ocsfml_system_stub/Clock.cpp -oOcsfmlSystem/ocsfml_system_stub/Clock.o
+- /usr/bin/c++ -shared OcsfmlSystem/ocsfml_system_stub/Sleep.o OcsfmlSystem/ocsfml_system_stub/Clock.o /usr/lib/x86_64-linux-gnu/libsfml-system.so -o OcsfmlSystem/dllocsfmlsystem.so
+- ocamlfind ocamldep -modules OcsfmlSystem/ocsfmlSystem.mli > OcsfmlSystem/ocsfmlSystem.mli.depends
+- ocamlfind ocamlc -c -I OcsfmlSystem -I Test -I OcsfmlGraphics -I OcsfmlWindow -I OcsfmlAudio -I OcsfmlNetwork -I camlpp/ExternalCpp -o OcsfmlSystem/ocsfmlSystem.cmi OcsfmlSystem/ocsfmlSystem.mli
+- ocamlfind ocamldep -modules OcsfmlSystem/ocsfmlSystem.ml > OcsfmlSystem/ocsfmlSystem.ml.depends
+- ocamlfind ocamldep -modules OcsfmlSystem/vector.ml > OcsfmlSystem/vector.ml.depends
+- ocamlfind ocamlc -c -I OcsfmlSystem -I Test -I OcsfmlGraphics -I OcsfmlWindow -I OcsfmlAudio -I OcsfmlNetwork -I camlpp/ExternalCpp -o OcsfmlSystem/ocsfmlSystem.cmo OcsfmlSystem/ocsfmlSystem.ml
+- ocamlfind ocamlc -c -I OcsfmlSystem -I Test -I OcsfmlGraphics -I OcsfmlWindow -I OcsfmlAudio -I OcsfmlNetwork -I camlpp/ExternalCpp -o OcsfmlSystem/vector.cmo OcsfmlSystem/vector.ml
+- ocamlfind ocamlc -a -verbose -dllib -locsfmlsystem -cclib -lstdc++ OcsfmlSystem/ocsfmlSystem.cmo OcsfmlSystem/vector.cmo -o OcsfmlSystem/ocsfmlsystem.cma
+- + ocamlfind ocamlc -a -verbose -dllib -locsfmlsystem -cclib -lstdc++ OcsfmlSystem/ocsfmlSystem.cmo OcsfmlSystem/vector.cmo -o OcsfmlSystem/ocsfmlsystem.cma
+- Effective set of compiler predicates: autolink,byte
+- + ocamlc.opt -a -verbose -dllib -locsfmlsystem -o OcsfmlSystem/ocsfmlsystem.cma -cclib -lstdc++ OcsfmlSystem/ocsfmlSystem.cmo OcsfmlSystem/vector.cmo
+- + ocamlfind ocamlopt unix.cmxa -I /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocamlbuild /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 119, characters 14-31:
+- Warning 3: deprecated: Ocamlbuild_plugin.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "_tags", line 6, characters 46-65:
+- Warning: the tag "include_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 7, characters 35-50:
+- Warning: the tag "use_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 8, characters 36-51:
+- Warning: the tag "use_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 9, characters 27-42:
+- Warning: the tag "use_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 12, characters 46-65:
+- Warning: the tag "include_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 13, characters 35-50:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 14, characters 36-51:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 15, characters 27-42:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 18, characters 50-71:
+- Warning: the tag "include_sfml_graphics" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 19, characters 39-56:
+- Warning: the tag "use_sfml_graphics" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 20, characters 40-55:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 21, characters 29-46:
+- Warning: the tag "use_sfml_graphics" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 24, characters 44-62:
+- Warning: the tag "include_sfml_audio" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 25, characters 33-47:
+- Warning: the tag "use_sfml_audio" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 26, characters 34-49:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 27, characters 26-40:
+- Warning: the tag "use_sfml_audio" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 29, characters 48-68:
+- Warning: the tag "include_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 30, characters 37-53:
+- Warning: the tag "use_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 31, characters 38-54:
+- Warning: the tag "use_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 32, characters 28-44:
+- Warning: the tag "use_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- ar -q OcsfmlSystem/libocsfmlsystem.a OcsfmlSystem/ocsfml_system_stub/Sleep.o OcsfmlSystem/ocsfml_system_stub/Clock.o
+- + ar -q OcsfmlSystem/libocsfmlsystem.a OcsfmlSystem/ocsfml_system_stub/Sleep.o OcsfmlSystem/ocsfml_system_stub/Clock.o
+- ar: creating OcsfmlSystem/libocsfmlsystem.a
+- ocamlfind ocamlopt -c -I OcsfmlSystem -I Test -I OcsfmlGraphics -I OcsfmlWindow -I OcsfmlAudio -I OcsfmlNetwork -I camlpp/ExternalCpp -o OcsfmlSystem/ocsfmlSystem.cmx OcsfmlSystem/ocsfmlSystem.ml
+- ocamlfind ocamlopt -c -I OcsfmlSystem -I Test -I OcsfmlGraphics -I OcsfmlWindow -I OcsfmlAudio -I OcsfmlNetwork -I camlpp/ExternalCpp -o OcsfmlSystem/vector.cmx OcsfmlSystem/vector.ml
+- ocamlfind ocamlopt -a -verbose -cclib -locsfmlsystem -cclib /usr/lib/x86_64-linux-gnu/libsfml-system.so -cclib -lstdc++ OcsfmlSystem/ocsfmlSystem.cmx OcsfmlSystem/vector.cmx -o OcsfmlSystem/ocsfmlsystem.cmxa
+- + ocamlfind ocamlopt -a -verbose -cclib -locsfmlsystem -cclib /usr/lib/x86_64-linux-gnu/libsfml-system.so -cclib -lstdc++ OcsfmlSystem/ocsfmlSystem.cmx OcsfmlSystem/vector.cmx -o OcsfmlSystem/ocsfmlsystem.cmxa
+- Effective set of compiler predicates: autolink,native
+- + ocamlopt.opt -a -verbose -o OcsfmlSystem/ocsfmlsystem.cmxa -cclib -locsfmlsystem -cclib /usr/lib/x86_64-linux-gnu/libsfml-system.so -cclib -lstdc++ OcsfmlSystem/ocsfmlSystem.cmx OcsfmlSystem/vector.cmx
+- + ar rc 'OcsfmlSystem/ocsfmlsystem.a' 'OcsfmlSystem/ocsfmlSystem.o' 'OcsfmlSystem/vector.o'
+- + ranlib 'OcsfmlSystem/ocsfmlsystem.a'
+- File "_tags", line 6, characters 46-65:
+- Warning: the tag "include_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 7, characters 35-50:
+- Warning: the tag "use_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 8, characters 36-51:
+- Warning: the tag "use_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 9, characters 27-42:
+- Warning: the tag "use_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 12, characters 46-65:
+- Warning: the tag "include_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 13, characters 35-50:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 14, characters 36-51:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 15, characters 27-42:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 18, characters 50-71:
+- Warning: the tag "include_sfml_graphics" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 19, characters 39-56:
+- Warning: the tag "use_sfml_graphics" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 20, characters 40-55:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 21, characters 29-46:
+- Warning: the tag "use_sfml_graphics" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 24, characters 44-62:
+- Warning: the tag "include_sfml_audio" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 25, characters 33-47:
+- Warning: the tag "use_sfml_audio" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 26, characters 34-49:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 27, characters 26-40:
+- Warning: the tag "use_sfml_audio" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 29, characters 48-68:
+- Warning: the tag "include_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 30, characters 37-53:
+- Warning: the tag "use_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 31, characters 38-54:
+- Warning: the tag "use_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 32, characters 28-44:
+- Warning: the tag "use_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- /usr/bin/c++ -O3 '-fvisibility=hidden' -fPIC -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp '-std=c++0x' -fpermissive -c -I/usr/include -I/usr/include -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml -I../OcsfmlSystem/ocsfml_system_stub -I../OcsfmlWindow/ocsfml_window_stub OcsfmlWindow/ocsfml_window_stub/Context.cpp -oOcsfmlWindow/ocsfml_window_stub/Context.o
+- /usr/bin/c++ -O3 '-fvisibility=hidden' -fPIC -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp '-std=c++0x' -fpermissive -c -I/usr/include -I/usr/include -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml -I../OcsfmlSystem/ocsfml_system_stub -I../OcsfmlWindow/ocsfml_window_stub OcsfmlWindow/ocsfml_window_stub/Joystick.cpp -oOcsfmlWindow/ocsfml_window_stub/Joystick.o
+- /usr/bin/c++ -O3 '-fvisibility=hidden' -fPIC -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp '-std=c++0x' -fpermissive -c -I/usr/include -I/usr/include -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml -I../OcsfmlSystem/ocsfml_system_stub -I../OcsfmlWindow/ocsfml_window_stub OcsfmlWindow/ocsfml_window_stub/Keyboard.cpp -oOcsfmlWindow/ocsfml_window_stub/Keyboard.o
+- /usr/bin/c++ -O3 '-fvisibility=hidden' -fPIC -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp '-std=c++0x' -fpermissive -c -I/usr/include -I/usr/include -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml -I../OcsfmlSystem/ocsfml_system_stub -I../OcsfmlWindow/ocsfml_window_stub OcsfmlWindow/ocsfml_window_stub/Mouse.cpp -oOcsfmlWindow/ocsfml_window_stub/Mouse.o
+- /usr/bin/c++ -O3 '-fvisibility=hidden' -fPIC -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp '-std=c++0x' -fpermissive -c -I/usr/include -I/usr/include -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml -I../OcsfmlSystem/ocsfml_system_stub -I../OcsfmlWindow/ocsfml_window_stub OcsfmlWindow/ocsfml_window_stub/VideoMode.cpp -oOcsfmlWindow/ocsfml_window_stub/VideoMode.o
+- /usr/bin/c++ -O3 '-fvisibility=hidden' -fPIC -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp '-std=c++0x' -fpermissive -c -I/usr/include -I/usr/include -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml -I../OcsfmlSystem/ocsfml_system_stub -I../OcsfmlWindow/ocsfml_window_stub OcsfmlWindow/ocsfml_window_stub/Window.cpp -oOcsfmlWindow/ocsfml_window_stub/Window.o
+- /usr/bin/c++ -shared OcsfmlWindow/ocsfml_window_stub/Context.o OcsfmlWindow/ocsfml_window_stub/Joystick.o OcsfmlWindow/ocsfml_window_stub/Keyboard.o OcsfmlWindow/ocsfml_window_stub/Mouse.o OcsfmlWindow/ocsfml_window_stub/VideoMode.o OcsfmlWindow/ocsfml_window_stub/Window.o /usr/lib/x86_64-linux-gnu/libsfml-window.so /usr/lib/x86_64-linux-gnu/libsfml-system.so -o OcsfmlWindow/dllocsfmlwindow.so
+- ocamlfind ocamldep -modules OcsfmlWindow/ocsfmlWindow.mli > OcsfmlWindow/ocsfmlWindow.mli.depends
+- ocamlfind ocamlc -c -I OcsfmlWindow -I Test -I OcsfmlGraphics -I OcsfmlAudio -I OcsfmlNetwork -I OcsfmlSystem -I camlpp/ExternalCpp -o OcsfmlWindow/ocsfmlWindow.cmi OcsfmlWindow/ocsfmlWindow.mli
+- ocamlfind ocamldep -modules OcsfmlWindow/ocsfmlWindow.ml > OcsfmlWindow/ocsfmlWindow.ml.depends
+- ocamlfind ocamlc -c -I OcsfmlWindow -I Test -I OcsfmlGraphics -I OcsfmlAudio -I OcsfmlNetwork -I OcsfmlSystem -I camlpp/ExternalCpp -o OcsfmlWindow/ocsfmlWindow.cmo OcsfmlWindow/ocsfmlWindow.ml
+- ocamlfind ocamlc -a -verbose -dllib -locsfmlwindow -cclib -lstdc++ OcsfmlWindow/ocsfmlWindow.cmo -o OcsfmlWindow/ocsfmlwindow.cma
+- + ocamlfind ocamlc -a -verbose -dllib -locsfmlwindow -cclib -lstdc++ OcsfmlWindow/ocsfmlWindow.cmo -o OcsfmlWindow/ocsfmlwindow.cma
+- Effective set of compiler predicates: autolink,byte
+- + ocamlc.opt -a -verbose -dllib -locsfmlwindow -o OcsfmlWindow/ocsfmlwindow.cma -cclib -lstdc++ OcsfmlWindow/ocsfmlWindow.cmo
+- File "_tags", line 6, characters 46-65:
+- Warning: the tag "include_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 7, characters 35-50:
+- Warning: the tag "use_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 8, characters 36-51:
+- Warning: the tag "use_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 9, characters 27-42:
+- Warning: the tag "use_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 12, characters 46-65:
+- Warning: the tag "include_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 13, characters 35-50:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 14, characters 36-51:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 15, characters 27-42:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 18, characters 50-71:
+- Warning: the tag "include_sfml_graphics" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 19, characters 39-56:
+- Warning: the tag "use_sfml_graphics" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 20, characters 40-55:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 21, characters 29-46:
+- Warning: the tag "use_sfml_graphics" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 24, characters 44-62:
+- Warning: the tag "include_sfml_audio" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 25, characters 33-47:
+- Warning: the tag "use_sfml_audio" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 26, characters 34-49:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 27, characters 26-40:
+- Warning: the tag "use_sfml_audio" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 29, characters 48-68:
+- Warning: the tag "include_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 30, characters 37-53:
+- Warning: the tag "use_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 31, characters 38-54:
+- Warning: the tag "use_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 32, characters 28-44:
+- Warning: the tag "use_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- ar -q OcsfmlWindow/libocsfmlwindow.a OcsfmlWindow/ocsfml_window_stub/Context.o OcsfmlWindow/ocsfml_window_stub/Joystick.o OcsfmlWindow/ocsfml_window_stub/Keyboard.o OcsfmlWindow/ocsfml_window_stub/Mouse.o OcsfmlWindow/ocsfml_window_stub/VideoMode.o OcsfmlWindow/ocsfml_window_stub/Window.o
+- + ar -q OcsfmlWindow/libocsfmlwindow.a OcsfmlWindow/ocsfml_window_stub/Context.o OcsfmlWindow/ocsfml_window_stub/Joystick.o OcsfmlWindow/ocsfml_window_stub/Keyboard.o OcsfmlWindow/ocsfml_window_stub/Mouse.o OcsfmlWindow/ocsfml_window_stub/VideoMode.o OcsfmlWindow/ocsfml_window_stub/Window.o
+- ar: creating OcsfmlWindow/libocsfmlwindow.a
+- ocamlfind ocamlopt -c -I OcsfmlWindow -I Test -I OcsfmlGraphics -I OcsfmlAudio -I OcsfmlNetwork -I OcsfmlSystem -I camlpp/ExternalCpp -o OcsfmlWindow/ocsfmlWindow.cmx OcsfmlWindow/ocsfmlWindow.ml
+- ocamlfind ocamlopt -a -verbose -cclib -locsfmlwindow -cclib /usr/lib/x86_64-linux-gnu/libsfml-window.so -cclib /usr/lib/x86_64-linux-gnu/libsfml-system.so -cclib -lstdc++ OcsfmlWindow/ocsfmlWindow.cmx -o OcsfmlWindow/ocsfmlwindow.cmxa
+- + ocamlfind ocamlopt -a -verbose -cclib -locsfmlwindow -cclib /usr/lib/x86_64-linux-gnu/libsfml-window.so -cclib /usr/lib/x86_64-linux-gnu/libsfml-system.so -cclib -lstdc++ OcsfmlWindow/ocsfmlWindow.cmx -o OcsfmlWindow/ocsfmlwindow.cmxa
+- Effective set of compiler predicates: autolink,native
+- + ocamlopt.opt -a -verbose -o OcsfmlWindow/ocsfmlwindow.cmxa -cclib -locsfmlwindow -cclib /usr/lib/x86_64-linux-gnu/libsfml-window.so -cclib /usr/lib/x86_64-linux-gnu/libsfml-system.so -cclib -lstdc++ OcsfmlWindow/ocsfmlWindow.cmx
+- + ar rc 'OcsfmlWindow/ocsfmlwindow.a' 'OcsfmlWindow/ocsfmlWindow.o'
+- + ranlib 'OcsfmlWindow/ocsfmlwindow.a'
+- File "_tags", line 6, characters 46-65:
+- Warning: the tag "include_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 7, characters 35-50:
+- Warning: the tag "use_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 8, characters 36-51:
+- Warning: the tag "use_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 9, characters 27-42:
+- Warning: the tag "use_sfml_system" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 12, characters 46-65:
+- Warning: the tag "include_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 13, characters 35-50:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 14, characters 36-51:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 15, characters 27-42:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 18, characters 50-71:
+- Warning: the tag "include_sfml_graphics" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 19, characters 39-56:
+- Warning: the tag "use_sfml_graphics" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 20, characters 40-55:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 21, characters 29-46:
+- Warning: the tag "use_sfml_graphics" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 24, characters 44-62:
+- Warning: the tag "include_sfml_audio" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 25, characters 33-47:
+- Warning: the tag "use_sfml_audio" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 26, characters 34-49:
+- Warning: the tag "use_sfml_window" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 27, characters 26-40:
+- Warning: the tag "use_sfml_audio" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 29, characters 48-68:
+- Warning: the tag "include_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 30, characters 37-53:
+- Warning: the tag "use_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 31, characters 38-54:
+- Warning: the tag "use_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- File "_tags", line 32, characters 28-44:
+- Warning: the tag "use_sfml_network" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+- /usr/bin/c++ -O3 '-fvisibility=hidden' -fPIC -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp '-std=c++0x' -fpermissive -c -I/usr/include -I/usr/include -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml -I../OcsfmlSystem/ocsfml_system_stub -I../OcsfmlWindow/ocsfml_window_stub -I../OcsfmlGraphics/ocsfml_graphics_stub OcsfmlGraphics/ocsfml_graphics_stub/CircleShape.cpp -oOcsfmlGraphics/ocsfml_graphics_stub/CircleShape.o
+- /usr/bin/c++ -O3 '-fvisibility=hidden' -fPIC -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp '-std=c++0x' -fpermissive -c -I/usr/include -I/usr/include -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml -I../OcsfmlSystem/ocsfml_system_stub -I../OcsfmlWindow/ocsfml_window_stub -I../OcsfmlGraphics/ocsfml_graphics_stub OcsfmlGraphics/ocsfml_graphics_stub/Color.cpp -oOcsfmlGraphics/ocsfml_graphics_stub/Color.o
+- /usr/bin/c++ -O3 '-fvisibility=hidden' -fPIC -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp '-std=c++0x' -fpermissive -c -I/usr/include -I/usr/include -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml -I../OcsfmlSystem/ocsfml_system_stub -I../OcsfmlWindow/ocsfml_window_stub -I../OcsfmlGraphics/ocsfml_graphics_stub OcsfmlGraphics/ocsfml_graphics_stub/ConvexShape.cpp -oOcsfmlGraphics/ocsfml_graphics_stub/ConvexShape.o
+- /usr/bin/c++ -O3 '-fvisibility=hidden' -fPIC -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp '-std=c++0x' -fpermissive -c -I/usr/include -I/usr/include -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml -I../OcsfmlSystem/ocsfml_system_stub -I../OcsfmlWindow/ocsfml_window_stub -I../OcsfmlGraphics/ocsfml_graphics_stub OcsfmlGraphics/ocsfml_graphics_stub/Drawable.cpp -oOcsfmlGraphics/ocsfml_graphics_stub/Drawable.o
+- /usr/bin/c++ -O3 '-fvisibility=hidden' -fPIC -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp '-std=c++0x' -fpermissive -c -I/usr/include -I/usr/include -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml -I../OcsfmlSystem/ocsfml_system_stub -I../OcsfmlWindow/ocsfml_window_stub -I../OcsfmlGraphics/ocsfml_graphics_stub OcsfmlGraphics/ocsfml_graphics_stub/Font.cpp -oOcsfmlGraphics/ocsfml_graphics_stub/Font.o
+- + /usr/bin/c++ -O3 '-fvisibility=hidden' -fPIC -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp '-std=c++0x' -fpermissive -c -I/usr/include -I/usr/include -I/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml -I../OcsfmlSystem/ocsfml_system_stub -I../OcsfmlWindow/ocsfml_window_stub -I../OcsfmlGraphics/ocsfml_graphics_stub OcsfmlGraphics/ocsfml_graphics_stub/Font.cpp -oOcsfmlGraphics/ocsfml_graphics_stub/Font.o
+- In file included from /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp/camlpp/custom_class.hpp:5:0,
+-                  from ../OcsfmlGraphics/ocsfml_graphics_stub/Font.hpp:4,
+-                  from OcsfmlGraphics/ocsfml_graphics_stub/Font.cpp:1:
+- /usr/include/c++/7/functional: In instantiation of ‘struct std::_Bind_check_arity<const sf::Glyph& (sf::Font::*)(unsigned int, unsigned int, bool, float) const, const std::_Placeholder<1>&, const std::_Placeholder<2>&, const std::_Placeholder<3>&, const std::_Placeholder<4>&>’:
+- /usr/include/c++/7/functional:883:12:   required from ‘struct std::_Bindres_helper<const sf::Glyph&, const sf::Glyph& (sf::Font::*)(unsigned int, unsigned int, bool, float) const, const std::_Placeholder<1>&, const std::_Placeholder<2>&, const std::_Placeholder<3>&, const std::_Placeholder<4>&>’
+- /usr/include/c++/7/functional:899:5:   required by substitution of ‘template<class _Result, class _Func, class ... _BoundArgs> typename std::_Bindres_helper<_Result, _Func, _BoundArgs>::type std::bind(_Func&&, _BoundArgs&& ...) [with _Result = const sf::Glyph&; _Func = const sf::Glyph& (sf::Font::*)(unsigned int, unsigned int, bool, float) const; _BoundArgs = {const std::_Placeholder<1>&, const std::_Placeholder<2>&, const std::_Placeholder<3>&, const std::_Placeholder<4>&}]’
+- OcsfmlGraphics/ocsfml_graphics_stub/Font.cpp:30:3:   required from here
+- /usr/include/c++/7/functional:841:7: error: static assertion failed: Wrong number of arguments for pointer-to-member
+-        static_assert(_Varargs::value
+-        ^~~~~~~~~~~~~
+- /usr/include/c++/7/functional: In instantiation of ‘std::_Bind_result<_Result, _Functor(_Bound_args ...)>::__disable_if_void<_Res> std::_Bind_result<_Result, _Functor(_Bound_args ...)>::__call(std::tuple<_Args2 ...>&&, std::_Index_tuple<_Indexes ...>) [with _Res = const sf::Glyph&; _Args = {const sf::Font&, unsigned int&, unsigned int&, bool&}; long unsigned int ..._Indexes = {0, 1, 2, 3}; _Result = const sf::Glyph&; _Functor = const sf::Glyph& (sf::Font::*)(unsigned int, unsigned int, bool, float) const; _Bound_args = {std::_Placeholder<1>, std::_Placeholder<2>, std::_Placeholder<3>, std::_Placeholder<4>}; std::_Bind_result<_Result, _Functor(_Bound_args ...)>::__disable_if_void<_Res> = const sf::Glyph&]’:
+- /usr/include/c++/7/functional:718:24:   required from ‘std::_Bind_result<_Result, _Functor(_Bound_args ...)>::result_type std::_Bind_result<_Result, _Functor(_Bound_args ...)>::operator()(_Args&& ...) [with _Args = {const sf::Font&, unsigned int&, unsigned int&, bool&}; _Result = const sf::Glyph&; _Functor = const sf::Glyph& (sf::Font::*)(unsigned int, unsigned int, bool, float) const; _Bound_args = {std::_Placeholder<1>, std::_Placeholder<2>, std::_Placeholder<3>, std::_Placeholder<4>}; std::_Bind_result<_Result, _Functor(_Bound_args ...)>::result_type = const sf::Glyph&]’
+- /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp/camlpp/res_management.hpp:62:15:   required from ‘T camlpp::res_management<T, flags>::call_helper(Func&&, Args&& ...) [with Func = std::_Bind_result<const sf::Glyph&, const sf::Glyph& (sf::Font::*(std::_Placeholder<1>, std::_Placeholder<2>, std::_Placeholder<3>, std::_Placeholder<4>))(unsigned int, unsigned int, bool, float) const>; Args = {const sf::Font&, unsigned int&, unsigned int&, bool&}; T = const sf::Glyph&; int flags = 0]’
+- /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp/camlpp/res_management.hpp:82:57:   required from ‘void camlpp::res_management<T, flags>::call_exception_flag(std::false_type, value&, Func&&, Args&& ...) [with Func = std::_Bind_result<const sf::Glyph&, const sf::Glyph& (sf::Font::*(std::_Placeholder<1>, std::_Placeholder<2>, std::_Placeholder<3>, std::_Placeholder<4>))(unsigned int, unsigned int, bool, float) const>; Args = {const sf::Font&, unsigned int&, unsigned int&, bool&}; T = const sf::Glyph&; int flags = 0; std::false_type = std::integral_constant<bool, false>; value = long int]’
+- /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp/camlpp/res_management.hpp:89:26:   required from ‘void camlpp::res_management<T, flags>::call(value&, Func&&, Args&& ...) [with Func = std::_Bind_result<const sf::Glyph&, const sf::Glyph& (sf::Font::*(std::_Placeholder<1>, std::_Placeholder<2>, std::_Placeholder<3>, std::_Placeholder<4>))(unsigned int, unsigned int, bool, float) const>; Args = {const sf::Font&, unsigned int&, unsigned int&, bool&}; T = const sf::Glyph&; int flags = 0; value = long int]’
+- OcsfmlGraphics/ocsfml_graphics_stub/Font.cpp:30:3:   required from here
+- /usr/include/c++/7/functional:623:24: error: no matching function for call to ‘__invoke(const sf::Glyph& (sf::Font::*&)(unsigned int, unsigned int, bool, float) const, const sf::Font&, unsigned int&, unsigned int&, bool&)’
+-     return std::__invoke(_M_f, _Mu<_Bound_args>()
+-            ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+-          (std::get<_Indexes>(_M_bound_args), __args)...);
+-          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- In file included from /usr/include/c++/7/tuple:41:0,
+-                  from /usr/include/c++/7/functional:54,
+-                  from /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp/camlpp/custom_class.hpp:5,
+-                  from ../OcsfmlGraphics/ocsfml_graphics_stub/Font.hpp:4,
+-                  from OcsfmlGraphics/ocsfml_graphics_stub/Font.cpp:1:
+- /usr/include/c++/7/bits/invoke.h:89:5: note: candidate: template<class _Callable, class ... _Args> constexpr typename std::__invoke_result<_Functor, _ArgTypes>::type std::__invoke(_Callable&&, _Args&& ...)
+-      __invoke(_Callable&& __fn, _Args&&... __args)
+-      ^~~~~~~~
+- /usr/include/c++/7/bits/invoke.h:89:5: note:   template argument deduction/substitution failed:
+- /usr/include/c++/7/bits/invoke.h: In substitution of ‘template<class _Callable, class ... _Args> constexpr typename std::__invoke_result<_Functor, _ArgTypes>::type std::__invoke(_Callable&&, _Args&& ...) [with _Callable = const sf::Glyph& (sf::Font::*&)(unsigned int, unsigned int, bool, float) const; _Args = {const sf::Font&, unsigned int&, unsigned int&, bool&}]’:
+- /usr/include/c++/7/functional:623:24:   required from ‘std::_Bind_result<_Result, _Functor(_Bound_args ...)>::__disable_if_void<_Res> std::_Bind_result<_Result, _Functor(_Bound_args ...)>::__call(std::tuple<_Args2 ...>&&, std::_Index_tuple<_Indexes ...>) [with _Res = const sf::Glyph&; _Args = {const sf::Font&, unsigned int&, unsigned int&, bool&}; long unsigned int ..._Indexes = {0, 1, 2, 3}; _Result = const sf::Glyph&; _Functor = const sf::Glyph& (sf::Font::*)(unsigned int, unsigned int, bool, float) const; _Bound_args = {std::_Placeholder<1>, std::_Placeholder<2>, std::_Placeholder<3>, std::_Placeholder<4>}; std::_Bind_result<_Result, _Functor(_Bound_args ...)>::__disable_if_void<_Res> = const sf::Glyph&]’
+- /usr/include/c++/7/functional:718:24:   required from ‘std::_Bind_result<_Result, _Functor(_Bound_args ...)>::result_type std::_Bind_result<_Result, _Functor(_Bound_args ...)>::operator()(_Args&& ...) [with _Args = {const sf::Font&, unsigned int&, unsigned int&, bool&}; _Result = const sf::Glyph&; _Functor = const sf::Glyph& (sf::Font::*)(unsigned int, unsigned int, bool, float) const; _Bound_args = {std::_Placeholder<1>, std::_Placeholder<2>, std::_Placeholder<3>, std::_Placeholder<4>}; std::_Bind_result<_Result, _Functor(_Bound_args ...)>::result_type = const sf::Glyph&]’
+- /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp/camlpp/res_management.hpp:62:15:   required from ‘T camlpp::res_management<T, flags>::call_helper(Func&&, Args&& ...) [with Func = std::_Bind_result<const sf::Glyph&, const sf::Glyph& (sf::Font::*(std::_Placeholder<1>, std::_Placeholder<2>, std::_Placeholder<3>, std::_Placeholder<4>))(unsigned int, unsigned int, bool, float) const>; Args = {const sf::Font&, unsigned int&, unsigned int&, bool&}; T = const sf::Glyph&; int flags = 0]’
+- /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp/camlpp/res_management.hpp:82:57:   required from ‘void camlpp::res_management<T, flags>::call_exception_flag(std::false_type, value&, Func&&, Args&& ...) [with Func = std::_Bind_result<const sf::Glyph&, const sf::Glyph& (sf::Font::*(std::_Placeholder<1>, std::_Placeholder<2>, std::_Placeholder<3>, std::_Placeholder<4>))(unsigned int, unsigned int, bool, float) const>; Args = {const sf::Font&, unsigned int&, unsigned int&, bool&}; T = const sf::Glyph&; int flags = 0; std::false_type = std::integral_constant<bool, false>; value = long int]’
+- /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp/camlpp/res_management.hpp:89:26:   required from ‘void camlpp::res_management<T, flags>::call(value&, Func&&, Args&& ...) [with Func = std::_Bind_result<const sf::Glyph&, const sf::Glyph& (sf::Font::*(std::_Placeholder<1>, std::_Placeholder<2>, std::_Placeholder<3>, std::_Placeholder<4>))(unsigned int, unsigned int, bool, float) const>; Args = {const sf::Font&, unsigned int&, unsigned int&, bool&}; T = const sf::Glyph&; int flags = 0; value = long int]’
+- OcsfmlGraphics/ocsfml_graphics_stub/Font.cpp:30:3:   required from here
+- /usr/include/c++/7/bits/invoke.h:89:5: error: no type named ‘type’ in ‘struct std::__invoke_result<const sf::Glyph& (sf::Font::*&)(unsigned int, unsigned int, bool, float) const, const sf::Font&, unsigned int&, unsigned int&, bool&>’
+- Command exited with code 1.
+- CMakeFiles/ocsfml.dir/build.make:57: recipe for target 'CMakeFiles/ocsfml' failed
+- make[2]: *** [CMakeFiles/ocsfml] Error 10
+- CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/ocsfml.dir/all' failed
+- make[1]: *** [CMakeFiles/ocsfml.dir/all] Error 2
+- Makefile:83: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of ocsfml failed at "/usr/bin/make".
+
+#=== ERROR while compiling ocsfml.2.0 =========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/ocsfml-124701-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/ocsfml-124701-6cc03f.out
+### output ###
+# [...]
+# /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp/camlpp/res_management.hpp:62:15:   required from ‘T camlpp::res_management<T, flags>::call_helper(Func&&, Args&& ...) [with Func = std::_Bind_result<const sf::Glyph&, const sf::Glyph& (sf::Font::*(std::_Placeholder<1>, std::_Placeholder<2>, std::_Placeholder<3>, std::_Placeholder<4>))[...]
+# /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp/camlpp/res_management.hpp:82:57:   required from ‘void camlpp::res_management<T, flags>::call_exception_flag(std::false_type, value&, Func&&, Args&& ...) [with Func = std::_Bind_result<const sf::Glyph&, const sf::Glyph& (sf::Font::*(std::_Placeholder<1>, std::_Placeholder<2>, std::_Pl[...]
+# /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/ocsfml.2.0/camlpp/camlpp/res_management.hpp:89:26:   required from ‘void camlpp::res_management<T, flags>::call(value&, Func&&, Args&& ...) [with Func = std::_Bind_result<const sf::Glyph&, const sf::Glyph& (sf::Font::*(std::_Placeholder<1>, std::_Placeholder<2>, std::_Placeholder<3>, std::_Placeholder<[...]
+# OcsfmlGraphics/ocsfml_graphics_stub/Font.cpp:30:3:   required from here
+# /usr/include/c++/7/bits/invoke.h:89:5: error: no type named ‘type’ in ‘struct std::__invoke_result<const sf::Glyph& (sf::Font::*&)(unsigned int, unsigned int, bool, float) const, const sf::Font&, unsigned int&, unsigned int&, bool&>’
+# Command exited with code 1.
+# CMakeFiles/ocsfml.dir/build.make:57: recipe for target 'CMakeFiles/ocsfml' failed
+# make[2]: *** [CMakeFiles/ocsfml] Error 10
+# CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/ocsfml.dir/all' failed
+# make[1]: *** [CMakeFiles/ocsfml.dir/all] Error 2
+# Makefile:83: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ocsfml 2.0
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    cmake libboost-dev libsfml-dev
+
+'opam install ocsfml.2.0' failed.

@@ -1,0 +1,143 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install humane-re 0.0.2
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [humane-re.0.0.2: http]
+[humane-re.0.0.2] downloaded from https://github.com/rgrinberg/humane-re/archive/v0.0.2.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [humane-re: make configure-no-tests]
++ /usr/bin/make "configure-no-tests" (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/humane-re.0.0.2)
+- oasis setup
+- ocaml setup.ml -configure
+- 
+- Configuration:
+- ocamlfind: ........................................... /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind
+- ocamlc: .............................................. /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlbuild
+- Package name: ........................................ humane_re
+- Package version: ..................................... 0.0.2
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml
+- standard_library: .................................... /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml
+- standard_runtime: .................................... /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /usr/local
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_re: .............................................. /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/re
+- pkg_re_emacs: ........................................ /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/re/emacs
+- pkg_ounit: ........................................... /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/oUnit
+- 
+Processing  1/2: [humane-re: make build]
++ /usr/bin/make "build" (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/humane-re.0.0.2)
+- ocaml setup.ml -build
+- W: Cannot find source file matching module 'humane_re' in library humane_re.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlopt.opt unix.cmxa -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocamlbuild /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind ocamldep -package re -package re.emacs -modules lib/s.mli > lib/s.mli.depends
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package re -package re.emacs -I lib -o lib/s.cmi lib/s.mli
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind ocamldep -package re -package re.emacs -modules lib/str.mli > lib/str.mli.depends
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package re -package re.emacs -I lib -o lib/str.cmi lib/str.mli
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind ocamldep -package re -package re.emacs -modules lib/str.ml > lib/str.ml.depends
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package re -package re.emacs -I lib -o lib/str.cmo lib/str.ml
+- + /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package re -package re.emacs -I lib -o lib/str.cmo lib/str.ml
+- findlib: [WARNING] Interface str.cmi occurs in several directories: /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml, lib
+- File "lib/str.ml", line 14, characters 9-20:
+- Warning 3: deprecated: module Re_emacs
+- Use Re.Emacs
+- File "lib/str.ml", line 20, characters 12-25:
+- Warning 3: deprecated: String.create
+- Use BytesLabels.create instead.
+- File "lib/str.ml", line 25, characters 6-24:
+- Warning 3: deprecated: String.set
+- Use BytesLabels.set instead.
+- File "lib/str.ml", line 25, characters 26-45:
+- Warning 3: deprecated: String.set
+- Use BytesLabels.set instead.
+- File "lib/str.ml", line 27, characters 6-21:
+- Warning 3: deprecated: String.set
+- Use BytesLabels.set instead.
+- File "lib/str.ml", line 29, characters 14-17:
+- Error: This expression has type bytes but an expression was expected of type
+-          string
+- Command exited with code 2.
+- E: Failure("Command ''/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlbuild' lib/humane_re.cma lib/humane_re.cmxa lib/humane_re.a lib/humane_re.cmxs lib_test/test1.native -tag debug' terminated with error code 10")
+- Makefile:12: recipe for target 'build' failed
+- make: *** [build] Error 1
+[ERROR] The compilation of humane-re failed at "/usr/bin/make build".
+
+#=== ERROR while compiling humane-re.0.0.2 ====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/humane-re.0.0.2
+# command              /usr/bin/make build
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/humane-re-156208-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/humane-re-156208-6cc03f.out
+### output ###
+# [...]
+# Warning 3: deprecated: String.set
+# Use BytesLabels.set instead.
+# File "lib/str.ml", line 27, characters 6-21:
+# Warning 3: deprecated: String.set
+# Use BytesLabels.set instead.
+# File "lib/str.ml", line 29, characters 14-17:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# E: Failure("Command ''/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlbuild' lib/humane_re.cma lib/humane_re.cmxa lib/humane_re.a lib/humane_re.cmxs lib_test/test1.native -tag debug' terminated with error code 10")
+# Makefile:12: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build humane-re 0.0.2
++- 
+- No changes have been performed
+'opam install humane-re.0.0.2' failed.

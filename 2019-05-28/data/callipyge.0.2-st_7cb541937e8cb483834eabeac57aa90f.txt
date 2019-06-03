@@ -1,0 +1,55 @@
+The following actions will be performed:
+  - install callipyge 0.2
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [callipyge.0.2: http]
+[callipyge.0.2] downloaded from https://github.com/oklm-wsh/callipyge/releases/download/v0.2/callipyge-0.2.tbz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [callipyge: dune build]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune "build" "-p" "callipyge" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/callipyge.0.2)
+-       ocamlc lib/.callipyge.objs/callipyge.{cmo,cmt} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.callipyge.objs -I lib/.callipyge.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/eqaf -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -intf-suffix .ml -no-alias-deps -open Callipyge__ -o lib/.callipyge.objs/callipyge.cmo -c -impl lib/callipyge.ml)
+- File "lib/callipyge.ml", line 323, characters 7-22:
+- 323 |   then Fmt.invalid_arg "secret_key_of_string: invalid key" ;
+-              ^^^^^^^^^^^^^^^
+- Error: Unbound value Fmt.invalid_arg
+-     ocamlopt lib/.callipyge.objs/callipyge.{cmx,o} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt -w -40 -g -I lib/.callipyge.objs -I lib/.callipyge.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/eqaf -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -intf-suffix .ml -no-alias-deps -open Callipyge__ -o lib/.callipyge.objs/callipyge.cmx -c -impl lib/callipyge.ml)
+- File "lib/callipyge.ml", line 323, characters 7-22:
+- 323 |   then Fmt.invalid_arg "secret_key_of_string: invalid key" ;
+-              ^^^^^^^^^^^^^^^
+- Error: Unbound value Fmt.invalid_arg
+[ERROR] The compilation of callipyge failed at "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p callipyge -j 39".
+
+#=== ERROR while compiling callipyge.0.2 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/callipyge.0.2
+# command              /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p callipyge -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/callipyge-38791-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/callipyge-38791-a00279.out
+### output ###
+# [...]
+#       ocamlc lib/.callipyge.objs/callipyge.{cmo,cmt} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.callipyge.objs -I lib/.callipyge.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/eqaf -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -intf-suffix .ml -no-alias-deps -open Callipyge__ -o lib/.callipyge.objs/callipyge[...]
+# File "lib/callipyge.ml", line 323, characters 7-22:
+# 323 |   then Fmt.invalid_arg "secret_key_of_string: invalid key" ;
+#              ^^^^^^^^^^^^^^^
+# Error: Unbound value Fmt.invalid_arg
+#     ocamlopt lib/.callipyge.objs/callipyge.{cmx,o} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt -w -40 -g -I lib/.callipyge.objs -I lib/.callipyge.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/eqaf -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -intf-suffix .ml -no-alias-deps -open Callipyge__ -o lib/.callipyge.objs/callipyge.cmx -c -[...]
+# File "lib/callipyge.ml", line 323, characters 7-22:
+# 323 |   then Fmt.invalid_arg "secret_key_of_string: invalid key" ;
+#              ^^^^^^^^^^^^^^^
+# Error: Unbound value Fmt.invalid_arg
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build callipyge 0.2
++- 
+- No changes have been performed
+'opam install callipyge.0.2' failed.

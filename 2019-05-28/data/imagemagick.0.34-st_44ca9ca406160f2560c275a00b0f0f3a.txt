@@ -1,0 +1,81 @@
+The following actions will be performed:
+  - install imagemagick 0.34
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [imagemagick.0.34: http]
+[imagemagick.0.34] downloaded from http://www.linux-nantes.org/~fmonnier/OCaml/ImageMagick/downloads/OCaml-ImageMagick-0.34.tgz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [imagemagick: make]
++ /usr/bin/make  (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/imagemagick.0.34)
+- make: --prefix: Command not found
+- make: --libs: Command not found
+- make: --cflags: Command not found
+- ocamlc -c magick.mli
+- ocamlc -c magick.ml
+- File "magick.ml", line 143, characters 8-24:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "magick.ml", line 180, characters 8-24:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "magick.ml", line 200, characters 8-24:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "magick.ml", line 257, characters 8-24:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "magick.ml", line 278, characters 8-24:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "magick.ml", line 374, characters 8-24:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "magick.ml", line 443, characters 8-24:
+- Warning 3: deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "magick.ml", line 953, characters 4-22:
+- Warning 3: deprecated: Stdlib.String.set
+- Use Bytes.set instead.
+- File "magick.ml", line 953, characters 4-7:
+- Error: This expression has type string but an expression was expected of type
+-          bytes
+- Makefile:61: recipe for target 'magick.cmo' failed
+- make: *** [magick.cmo] Error 2
+[ERROR] The compilation of imagemagick failed at "/usr/bin/make".
+
+#=== ERROR while compiling imagemagick.0.34 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/imagemagick.0.34
+# command              /usr/bin/make
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/imagemagick-68584-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/imagemagick-68584-a00279.out
+### output ###
+# [...]
+# Use String.lowercase_ascii instead.
+# File "magick.ml", line 443, characters 8-24:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "magick.ml", line 953, characters 4-22:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "magick.ml", line 953, characters 4-7:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:61: recipe for target 'magick.cmo' failed
+# make: *** [magick.cmo] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build imagemagick 0.34
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libmagickcore-dev
+
+'opam install imagemagick.0.34' failed.

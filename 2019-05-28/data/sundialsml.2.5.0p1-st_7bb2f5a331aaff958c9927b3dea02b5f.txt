@@ -1,0 +1,39 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install sundialsml 2.5.0p1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [sundialsml.2.5.0p1: http]
+[sundialsml.2.5.0p1] downloaded from https://github.com/inria-parkas/sundialsml/archive/v2.5.0p1.zip
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [sundialsml: ./configure]
++ /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/sundialsml.2.5.0p1/./configure "--prefix=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1" (CWD=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/sundialsml.2.5.0p1)
+- ERROR: Sundials is not installed (no sundials-config).
+[ERROR] The compilation of sundialsml failed at "/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/sundialsml.2.5.0p1/./configure --prefix=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1".
+
+#=== ERROR while compiling sundialsml.2.5.0p1 =================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/sundialsml.2.5.0p1
+# command              /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/sundialsml.2.5.0p1/./configure --prefix=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/sundialsml-115287-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/sundialsml-115287-a00279.out
+### output ###
+# ERROR: Sundials is not installed (no sundials-config).
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build sundialsml 2.5.0p1
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libsundials-serial-dev
+
+'opam install sundialsml.2.5.0p1' failed.

@@ -1,0 +1,582 @@
+The following actions will be performed:
+  - install postgresql 4.0.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [postgresql.4.0.0: http]
+[postgresql.4.0.0] downloaded from https://github.com/mmottl/postgresql-ocaml/releases/download/v4.0.0/postgresql-ocaml-4.0.0.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [postgresql: ocaml setup.ml]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocaml "setup.ml" "-configure" "--prefix" "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1" "--enable-lablgtk2" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/postgresql.4.0.0)
+- File "./setup.ml", line 318, characters 20-36:
+- 318 |     String.compare (String.lowercase s1) (String.lowercase s2)
+-                           ^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- 318 |     String.compare (String.lowercase s1) (String.lowercase s2)
+-                                                 ^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- 327 |              (String.lowercase s1) = (String.lowercase s2)
+-                     ^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- 327 |              (String.lowercase s1) = (String.lowercase s2)
+-                                             ^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- 330 |            Hashtbl.hash (String.lowercase s)
+-                                ^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- 368 |           String.lowercase buf
+-                 ^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- 474 |              String.lowercase
+-                    ^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1381, characters 23-41:
+- 1381 |          let compare = Pervasives.compare
+-                               ^^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- File "./setup.ml", line 1825, characters 16-33:
+- 1825 |     concat dir (String.capitalize base)
+-                        ^^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- 1831 |     concat dir (String.uncapitalize base)
+-                        ^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 3229, characters 16-34:
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- File "setup.ml", line 5847, characters 11-28:
+- Alert deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Alert deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- 
+- Configuration: 
+- ocamlfind: ........................................... /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind
+- ocamlc: .............................................. /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt
+- ocamlopt: ............................................ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlbuild
+- Package name: ........................................ postgresql
+- Package version: ..................................... 4.0.0
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.08.0
+- standard_library_default: ............................ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml
+- standard_library: .................................... /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ...................................... 
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: ......................... 
+- Strict compile-time checks: .......................... true
+- Build examples: ...................................... true
+- Build applications depending on lablgtk2: ............ true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- ocamldoc: ............................................ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamldoc
+- pkg_threads: ......................................... /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml
+- pkg_bigarray: ........................................ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml
+- pkg_bytes: ........................................... /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes
+- pkg_lablgtk2: ........................................ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/lablgtk2
+- 
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocaml "setup.ml" "-build" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/postgresql.4.0.0)
+- File "./setup.ml", line 318, characters 20-36:
+- 318 |     String.compare (String.lowercase s1) (String.lowercase s2)
+-                           ^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 318, characters 42-58:
+- 318 |     String.compare (String.lowercase s1) (String.lowercase s2)
+-                                                 ^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 14-30:
+- 327 |              (String.lowercase s1) = (String.lowercase s2)
+-                     ^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 327, characters 38-54:
+- 327 |              (String.lowercase s1) = (String.lowercase s2)
+-                                             ^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 330, characters 25-41:
+- 330 |            Hashtbl.hash (String.lowercase s)
+-                                ^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 368, characters 10-26:
+- 368 |           String.lowercase buf
+-                 ^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 474, characters 13-29:
+- 474 |              String.lowercase
+-                    ^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.lowercase
+- Use String.lowercase_ascii instead.
+- File "./setup.ml", line 1381, characters 23-41:
+- 1381 |          let compare = Pervasives.compare
+-                               ^^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- File "./setup.ml", line 1825, characters 16-33:
+- 1825 |     concat dir (String.capitalize base)
+-                        ^^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "./setup.ml", line 1831, characters 16-35:
+- 1831 |     concat dir (String.uncapitalize base)
+-                        ^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "setup.ml", line 3229, characters 16-34:
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- File "setup.ml", line 5847, characters 11-28:
+- Alert deprecated: Stdlib.String.capitalize
+- Use String.capitalize_ascii instead.
+- File "setup.ml", line 5848, characters 11-30:
+- Alert deprecated: Stdlib.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt unix.cmxa -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -ccopt -I/usr/include/postgresql -ccopt '-DPG_OCAML_MAJOR_VERSION=10' -ccopt '-DPG_OCAML_MINOR_VERSION=5' -c lib/postgresql_stubs.c
+- mv postgresql_stubs.o lib/postgresql_stubs.o
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlmklib -o lib/postgresql_stubs -g -lpq -L/usr/lib/x86_64-linux-gnu -lpq lib/postgresql_stubs.o
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamldep -package bigarray -package bytes -package threads -modules lib/postgresql.mli > lib/postgresql.mli.depends
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmi lib/postgresql.mli
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamldep -package bigarray -package bytes -package threads -modules lib/postgresql.ml > lib/postgresql.ml.depends
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamldep -package bigarray -package bytes -package threads -modules lib/postgresql_compat.ml > lib/postgresql_compat.ml.depends
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql_compat.cmo lib/postgresql_compat.ml
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmo lib/postgresql.ml
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmo lib/postgresql.ml
+- File "lib/postgresql.ml", line 338, characters 2-71:
+- 338 |   external conn_isnull : connection -> bool = "PQconn_isnull" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 351, characters 2-94:
+- 351 | ..external connection_status :
+- 352 |     connection -> connection_status = "PQstatus_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 355, characters 2-74:
+- 355 |   external backend_pid : connection -> int = "PQbackendPID_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 356, characters 2-80:
+- 356 |   external server_version : connection -> int = "PQserverVersion_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 360, characters 2-68:
+- 360 |   external result_isnull : result -> bool = "PQres_isnull" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 375, characters 2-88:
+- 375 | ..external result_status :
+- 376 |     result -> result_status = "PQresultStatus_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 383, characters 2-63:
+- 383 |   external ntuples : result -> int = "PQntuples_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 386, characters 2-63:
+- 386 |   external nfields : result -> int = "PQnfields_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 388, characters 2-72:
+- 388 |   external fnumber : result -> string -> int ="PQfnumber_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 389, characters 2-76:
+- 389 |   external fformat : result -> int -> FFormat.t = "PQfformat_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 390, characters 2-66:
+- 390 |   external ftype : result -> int -> oid = "PQftype_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 393, characters 2-64:
+- 393 |   external fmod : result -> int -> int = "PQfmod_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 394, characters 2-66:
+- 394 |   external fsize : result -> int -> int = "PQfsize_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 395, characters 2-75:
+- 395 |   external binary_tuples : result -> bool = "PQbinaryTuples_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 402, characters 2-86:
+- 402 | ..external getisnull :
+- 403 |     result -> int -> int -> bool = "PQgetisnull_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 405, characters 2-85:
+- 405 | ..external getlength :
+- 406 |     result -> int -> int -> int = "PQgetlength_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 410, characters 2-66:
+- 410 |   external oid_value : result -> oid = "PQoidValue_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 415, characters 2-91:
+- 415 | ..external connect_poll :
+- 416 |     connection -> polling_status = "PQconnectPoll_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 418, characters 2-79:
+- 418 | ..external reset_start :
+- 419 |     connection -> bool = "PQresetStart_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 421, characters 2-87:
+- 421 | ..external reset_poll :
+- 422 |     connection -> polling_status = "PQresetPoll_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 424, characters 2-94:
+- 424 | ..external set_nonblocking :
+- 425 |     connection -> bool -> int = "PQsetnonblocking_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 427, characters 2-85:
+- 427 | ..external is_nonblocking :
+- 428 |     connection -> bool = "PQisnonblocking_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 434, characters 2-100:
+- 434 | ..external send_prepare :
+- 435 |     connection -> string -> string -> int = "PQsendPrepare_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 449, characters 2-78:
+- 449 |   external consume_input : connection -> int = "PQconsumeInput_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 450, characters 2-67:
+- 450 |   external is_busy : connection -> bool = "PQisBusy_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 451, characters 2-63:
+- 451 |   external flush : connection -> int = "PQflush_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 452, characters 2-65:
+- 452 |   external socket : connection -> int = "PQsocket_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 466, characters 2-107:
+- 466 | ..external getline_async :
+- 467 |     connection -> Bytes.t -> int -> int -> int = "PQgetlineAsync_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -a -dllib -lpostgresql_stubs -cclib -lpostgresql_stubs -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq -I lib lib/postgresql_compat.cmo lib/postgresql.cmo -o lib/postgresql.cma
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql_compat.cmx lib/postgresql_compat.ml
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmx lib/postgresql.ml
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -Wno-keyword-macro -package bigarray -package bytes -package threads -thread -w Aer-44-48 -I lib -o lib/postgresql.cmx lib/postgresql.ml
+- File "lib/postgresql.ml", line 338, characters 2-71:
+- 338 |   external conn_isnull : connection -> bool = "PQconn_isnull" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 351, characters 2-94:
+- 351 | ..external connection_status :
+- 352 |     connection -> connection_status = "PQstatus_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 355, characters 2-74:
+- 355 |   external backend_pid : connection -> int = "PQbackendPID_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 356, characters 2-80:
+- 356 |   external server_version : connection -> int = "PQserverVersion_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 360, characters 2-68:
+- 360 |   external result_isnull : result -> bool = "PQres_isnull" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 375, characters 2-88:
+- 375 | ..external result_status :
+- 376 |     result -> result_status = "PQresultStatus_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 383, characters 2-63:
+- 383 |   external ntuples : result -> int = "PQntuples_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 386, characters 2-63:
+- 386 |   external nfields : result -> int = "PQnfields_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 388, characters 2-72:
+- 388 |   external fnumber : result -> string -> int ="PQfnumber_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 389, characters 2-76:
+- 389 |   external fformat : result -> int -> FFormat.t = "PQfformat_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 390, characters 2-66:
+- 390 |   external ftype : result -> int -> oid = "PQftype_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 393, characters 2-64:
+- 393 |   external fmod : result -> int -> int = "PQfmod_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 394, characters 2-66:
+- 394 |   external fsize : result -> int -> int = "PQfsize_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 395, characters 2-75:
+- 395 |   external binary_tuples : result -> bool = "PQbinaryTuples_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 402, characters 2-86:
+- 402 | ..external getisnull :
+- 403 |     result -> int -> int -> bool = "PQgetisnull_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 405, characters 2-85:
+- 405 | ..external getlength :
+- 406 |     result -> int -> int -> int = "PQgetlength_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 410, characters 2-66:
+- 410 |   external oid_value : result -> oid = "PQoidValue_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 415, characters 2-91:
+- 415 | ..external connect_poll :
+- 416 |     connection -> polling_status = "PQconnectPoll_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 418, characters 2-79:
+- 418 | ..external reset_start :
+- 419 |     connection -> bool = "PQresetStart_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 421, characters 2-87:
+- 421 | ..external reset_poll :
+- 422 |     connection -> polling_status = "PQresetPoll_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 424, characters 2-94:
+- 424 | ..external set_nonblocking :
+- 425 |     connection -> bool -> int = "PQsetnonblocking_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 427, characters 2-85:
+- 427 | ..external is_nonblocking :
+- 428 |     connection -> bool = "PQisnonblocking_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 434, characters 2-100:
+- 434 | ..external send_prepare :
+- 435 |     connection -> string -> string -> int = "PQsendPrepare_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 449, characters 2-78:
+- 449 |   external consume_input : connection -> int = "PQconsumeInput_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 450, characters 2-67:
+- 450 |   external is_busy : connection -> bool = "PQisBusy_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 451, characters 2-63:
+- 451 |   external flush : connection -> int = "PQflush_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 452, characters 2-65:
+- 452 |   external socket : connection -> int = "PQsocket_stub" "noalloc"
+-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- File "lib/postgresql.ml", line 466, characters 2-107:
+- 466 | ..external getline_async :
+- 467 |     connection -> Bytes.t -> int -> int -> int = "PQgetlineAsync_stub" "noalloc"
+- Alert deprecated: [@@noalloc] should be used instead of "noalloc"
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -a -cclib -lpostgresql_stubs -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq -I lib lib/postgresql_compat.cmx lib/postgresql.cmx -o lib/postgresql.cmxa
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -shared -cclib -lpostgresql_stubs -I lib -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpq -I lib lib/postgresql.cmxa lib/postgresql_compat.cmx lib/postgresql.cmx -o lib/postgresql.cmxs
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/async.ml > examples/async.ml.depends
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmo examples/async.ml
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmo examples/async.ml
+- File "examples/async.ml", line 2, characters 0-15:
+- 2 | open Postgresql
+-     ^^^^^^^^^^^^^^^
+- Warning 45: this open statement shadows the constructor Ok (which is later used)
+- File "examples/async.ml", line 2, characters 0-15:
+- 2 | open Postgresql
+-     ^^^^^^^^^^^^^^^
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmx examples/async.ml
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/async.cmx examples/async.ml
+- File "examples/async.ml", line 2, characters 0-15:
+- 2 | open Postgresql
+-     ^^^^^^^^^^^^^^^
+- Warning 45: this open statement shadows the constructor Ok (which is later used)
+- File "examples/async.ml", line 2, characters 0-15:
+- 2 | open Postgresql
+-     ^^^^^^^^^^^^^^^
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread -I lib -I examples lib/postgresql.cmxa examples/async.cmx -o examples/async.native
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/cursor.ml > examples/cursor.ml.depends
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmo examples/cursor.ml
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmo examples/cursor.ml
+- File "examples/cursor.ml", line 3, characters 0-15:
+- 3 | open Postgresql
+-     ^^^^^^^^^^^^^^^
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmx examples/cursor.ml
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/cursor.cmx examples/cursor.ml
+- File "examples/cursor.ml", line 3, characters 0-15:
+- 3 | open Postgresql
+-     ^^^^^^^^^^^^^^^
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread -I lib -I examples lib/postgresql.cmxa examples/cursor.cmx -o examples/cursor.native
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/dump.ml > examples/dump.ml.depends
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmo examples/dump.ml
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmo examples/dump.ml
+- File "examples/dump.ml", line 3, characters 0-15:
+- 3 | open Postgresql
+-     ^^^^^^^^^^^^^^^
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmx examples/dump.ml
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/dump.cmx examples/dump.ml
+- File "examples/dump.ml", line 3, characters 0-15:
+- 3 | open Postgresql
+-     ^^^^^^^^^^^^^^^
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread -I lib -I examples lib/postgresql.cmxa examples/dump.cmx -o examples/dump.native
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/populate.ml > examples/populate.ml.depends
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmo examples/populate.ml
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmo examples/populate.ml
+- File "examples/populate.ml", line 3, characters 0-15:
+- 3 | open Postgresql
+-     ^^^^^^^^^^^^^^^
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmx examples/populate.ml
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/populate.cmx examples/populate.ml
+- File "examples/populate.ml", line 3, characters 0-15:
+- 3 | open Postgresql
+-     ^^^^^^^^^^^^^^^
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread -I lib -I examples lib/postgresql.cmxa examples/populate.cmx -o examples/populate.native
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/prompt.ml > examples/prompt.ml.depends
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmo examples/prompt.ml
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmo examples/prompt.ml
+- File "examples/prompt.ml", line 4, characters 0-15:
+- 4 | open Postgresql
+-     ^^^^^^^^^^^^^^^
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmx examples/prompt.ml
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt.cmx examples/prompt.ml
+- File "examples/prompt.ml", line 4, characters 0-15:
+- 4 | open Postgresql
+-     ^^^^^^^^^^^^^^^
+- Warning 45: this open statement shadows the constructor Error (which is later used)
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package bytes -package threads -thread -I lib -I examples lib/postgresql.cmxa examples/prompt.cmx -o examples/prompt.native
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamldep -package bigarray -package bytes -package lablgtk2 -package threads -modules examples/prompt_gtk.ml > examples/prompt_gtk.ml.depends
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt_gtk.cmo examples/prompt_gtk.ml
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -I lib -package bigarray -package bytes -package lablgtk2 -package threads -thread -w Aer-44-48 -I examples -I lib -o examples/prompt_gtk.cmo examples/prompt_gtk.ml
+- File "examples/prompt_gtk.ml", line 150, characters 11-28:
+- 150 |     | Some (msg, pid, extra) ->
+-                  ^^^^^^^^^^^^^^^^^
+- Error: This pattern matches values of type 'a * 'b * 'c
+-        but a pattern was expected which matches values of type
+-          Postgresql.Notification.t
+- Command exited with code 2.
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt unix.cmxa -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- File "myocamlbuild.ml", line 518, characters 43-62:
+- 518 |                        List.map (fun m -> (String.uncapitalize m) ^ ".cmi")
+-                                                  ^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "myocamlbuild.ml", line 531, characters 51-70:
+- 531 |                        List.map (fun m -> dir^"/"^(String.uncapitalize m)^".cmi")
+-                                                          ^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: Ocamlbuild_plugin.String.uncapitalize
+- Use String.uncapitalize_ascii instead.
+- E: Failure("Command ''/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlbuild' lib/libpostgresql_stubs.a lib/dllpostgresql_stubs.so lib/postgresql.cma lib/postgresql.cmxa lib/postgresql.a lib/postgresql.cmxs examples/async.native examples/cursor.native examples/dump.native examples/populate.native examples/prompt.native examples/prompt_gtk.native examples/test_lo.native -tag debug' terminated with error code 10")
+[ERROR] The compilation of postgresql failed at "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling postgresql.4.0.0 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/postgresql.4.0.0
+# command              /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/postgresql-86983-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/postgresql-86983-6cc03f.out
+### output ###
+# [...]
+# + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt unix.cmxa -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# 518 |                        List.map (fun m -> (String.uncapitalize m) ^ ".cmi")
+#                                                  ^^^^^^^^^^^^^^^^^^^
+# Alert deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# 531 |                        List.map (fun m -> dir^"/"^(String.uncapitalize m)^".cmi")
+#                                                          ^^^^^^^^^^^^^^^^^^^
+# Alert deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlbuild' lib/libpostgresql_stubs.a lib/dllpostgresql_stubs.so lib/postgresql.cma lib/postgresql.cmxa lib/postgresql.a lib/postgresql.cmxs examples/async.native examples/cursor.native examples/dump.native examples/populate.native examples/prompt.native examples/prompt_gtk.native examples/test_lo.native -tag[...]
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build postgresql 4.0.0
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libpq-dev
+
+'opam install postgresql.4.0.0' failed.

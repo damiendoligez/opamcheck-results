@@ -1,0 +1,152 @@
+The following actions will be performed:
+  - install hdfs 0.2
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [hdfs.0.2: http]
+[hdfs.0.2] downloaded from http://ygrek.org.ua/p/release/ocaml-hdfs/ocaml-hdfs-0.2.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [hdfs: ocaml setup.ml]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocaml "setup.ml" "-configure" "--prefix" "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/hdfs.0.2)
+- File "./setup.ml", line 1775, characters 22-40:
+- 1775 |         let compare = Pervasives.compare
+-                              ^^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- File "setup.ml", line 3467, characters 16-34:
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- 
+- Configuration:
+- ocamlfind: ........................................... /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind
+- ocamlc: .............................................. /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt
+- ocamlopt: ............................................ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlbuild
+- Package name: ........................................ hdfs
+- Package version: ..................................... 0.2
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.08.0
+- standard_library_default: ............................ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml
+- standard_library: .................................... /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- camlidl: ............................................. /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/camlidl
+- pkg_unix: ............................................ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml
+- pkg_camlidl: ......................................... /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/camlidl
+- ocamldoc: ............................................ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamldoc
+- 
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocaml "setup.ml" "-build" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/hdfs.0.2)
+- File "./setup.ml", line 1775, characters 22-40:
+- 1775 |         let compare = Pervasives.compare
+-                              ^^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- File "setup.ml", line 3467, characters 16-34:
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- ocamlfind ocamlopt unix.cmxa -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- Package hdfs was not found in the pkg-config search path.
+- Perhaps you should add the directory containing `hdfs.pc'
+- to the PKG_CONFIG_PATH environment variable
+- No package 'hdfs' found
+- Failure("Error while running: pkg-config --cflags hdfs > '/tmp/ocamlbuildfa5e1aout'")
+- W: pkg-config hdfs lookup failed, proceeding nonetheless in case hdfs headers and libraries are present in search paths
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -g -ccopt '' -package camlidl -package unix -c src/hdfs_stubs.c
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -g -ccopt '' -package camlidl -package unix -c src/hdfs_stubs.c
+- src/hdfs_stubs.c:18:10: fatal error: hdfs.h: No such file or directory
+-  #include <hdfs.h>
+-           ^~~~~~~~
+- compilation terminated.
+- Command exited with code 2.
+- E: Failure("Command ''/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlbuild' src/libhdfs_stubs.a src/dllhdfs_stubs.so src/hdfs.cma src/hdfs.cmxa src/hdfs.a src/hdfs.cmxs src/example.native -use-ocamlfind -tag debug' terminated with error code 10")
+[ERROR] The compilation of hdfs failed at "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling hdfs.0.2 ===========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/hdfs.0.2
+# command              /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/hdfs-195010-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/hdfs-195010-6cc03f.out
+### output ###
+# [...]
+# to the PKG_CONFIG_PATH environment variable
+# No package 'hdfs' found
+# Failure("Error while running: pkg-config --cflags hdfs > '/tmp/ocamlbuildfa5e1aout'")
+# W: pkg-config hdfs lookup failed, proceeding nonetheless in case hdfs headers and libraries are present in search paths
+# /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -g -ccopt '' -package camlidl -package unix -c src/hdfs_stubs.c
+# + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -g -ccopt '' -package camlidl -package unix -c src/hdfs_stubs.c
+# src/hdfs_stubs.c:18:10: fatal error: hdfs.h: No such file or directory
+#  #include <hdfs.h>
+#           ^~~~~~~~
+# compilation terminated.
+# Command exited with code 2.
+# E: Failure("Command ''/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlbuild' src/libhdfs_stubs.a src/dllhdfs_stubs.so src/hdfs.cma src/hdfs.cmxa src/hdfs.a src/hdfs.cmxs src/example.native -use-ocamlfind -tag debug' terminated with error code 10")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build hdfs 0.2
++- 
+- No changes have been performed
+
+<><> hdfs.0.2 troubleshooting <><><><><><><><><><><><><><><><><><><><><><><><><>
+=> This package depends on C compiler being able to find libhdfs header and library files.
+     Given that hadoop is often installed outside of default system paths it may require additional
+     manual configuration for the build to succeed.
+     See https://github.com/ygrek/ocaml-hdfs/blob/master/README.md
+'opam install hdfs.0.2' failed.

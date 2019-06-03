@@ -1,0 +1,56 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install brotli 2.0.3
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [brotli.2.0.3: http]
+[brotli.2.0.3] downloaded from https://github.com/fxfactorial/reasonml-brotli/archive/v2.0.3.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [brotli: jbuilder build]
++ /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/jbuilder "build" "-p" "brotli" (CWD=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/brotli.2.0.3)
+- Error: Program refmt not found in the tree or in PATH (context: default)
+- Hint: opam install reason
+-       ocamlc src/brotli_stubs.o
+- brotli_stubs.c: In function ‘value ml_brotli_decompress(value, value)’:
+- brotli_stubs.c:146:20: warning: comparison between ‘enum BrotliDecoderResult’ and ‘enum BrotliDecoderErrorCode’ [-Wenum-compare]
+-    while (result == BROTLI_DECODER_NEEDS_MORE_OUTPUT) {
+-                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- brotli_stubs.c:162:18: warning: comparison between ‘enum BrotliDecoderResult’ and ‘enum BrotliDecoderErrorCode’ [-Wenum-compare]
+-    if ((result == BROTLI_DECODER_SUCCESS) == true) {
+-                   ^~~~~~~~~~~~~~~~~~~~~~
+[ERROR] The compilation of brotli failed at "/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/jbuilder build -p brotli".
+
+#=== ERROR while compiling brotli.2.0.3 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/brotli.2.0.3
+# command              /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/jbuilder build -p brotli
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/brotli-194227-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/brotli-194227-a00279.out
+### output ###
+# Error: Program refmt not found in the tree or in PATH (context: default)
+# Hint: opam install reason
+#       ocamlc src/brotli_stubs.o
+# brotli_stubs.c: In function ‘value ml_brotli_decompress(value, value)’:
+# brotli_stubs.c:146:20: warning: comparison between ‘enum BrotliDecoderResult’ and ‘enum BrotliDecoderErrorCode’ [-Wenum-compare]
+#    while (result == BROTLI_DECODER_NEEDS_MORE_OUTPUT) {
+#                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# brotli_stubs.c:162:18: warning: comparison between ‘enum BrotliDecoderResult’ and ‘enum BrotliDecoderErrorCode’ [-Wenum-compare]
+#    if ((result == BROTLI_DECODER_SUCCESS) == true) {
+#                   ^~~~~~~~~~~~~~~~~~~~~~
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build brotli 2.0.3
++- 
+- No changes have been performed
+
+<><> brotli.2.0.3 troubleshooting <><><><><><><><><><><><><><><><><><><><><><><>
+=> Be sure to have libbrotli installed on your machine
+'opam install brotli.2.0.3' failed.

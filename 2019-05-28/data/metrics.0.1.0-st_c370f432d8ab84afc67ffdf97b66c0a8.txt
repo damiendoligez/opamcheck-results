@@ -1,0 +1,37 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install metrics 0.1.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [metrics.0.1.0: http]
+[metrics.0.1.0] downloaded from https://github.com/mirage/metrics/releases/download/0.1.0/metrics-0.1.0.tbz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [metrics: dune build]
++ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/dune "build" "-p" "metrics" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/metrics.0.1.0)
+- File "dune-project", line 2, characters 7-10:
+- Error: Unknown extension "fmt".
+[ERROR] The compilation of metrics failed at "/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/dune build -p metrics -j 39".
+
+#=== ERROR while compiling metrics.0.1.0 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/metrics.0.1.0
+# command              /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/dune build -p metrics -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/metrics-71607-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/metrics-71607-a00279.out
+### output ###
+# File "dune-project", line 2, characters 7-10:
+# Error: Unknown extension "fmt".
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build metrics 0.1.0
++- 
+- No changes have been performed
+'opam install metrics.0.1.0' failed.

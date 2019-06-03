@@ -1,0 +1,30 @@
+The following actions will be performed:
+  - install conf-rust 0.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [conf-rust: which cargo]
++ /usr/bin/which "cargo" (CWD=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/conf-rust.0.1)
+[ERROR] The compilation of conf-rust failed at "/usr/bin/which cargo".
+
+#=== ERROR while compiling conf-rust.0.1 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/conf-rust.0.1
+# command              /usr/bin/which cargo
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/conf-rust-180968-ccabea.env
+# output-file          /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/conf-rust-180968-ccabea.out
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-rust 0.1
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    cargo
+
+'opam install conf-rust.0.1' failed.

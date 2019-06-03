@@ -1,0 +1,37 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install craml 1.0.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [craml.1.0.0: http]
+[craml.1.0.0] downloaded from https://github.com/realworldocaml/craml/releases/download/1.0.0/craml-1.0.0.tbz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [craml: jbuilder build]
++ /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/jbuilder "build" "-p" "craml" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/craml.1.0.0)
+- File "test/jbuild", line 6, characters 11-47:
+- Error: Unknown constructor diff?
+[ERROR] The compilation of craml failed at "/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/jbuilder build -p craml -j 39".
+
+#=== ERROR while compiling craml.1.0.0 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/craml.1.0.0
+# command              /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/jbuilder build -p craml -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/craml-147884-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/craml-147884-a00279.out
+### output ###
+# File "test/jbuild", line 6, characters 11-47:
+# Error: Unknown constructor diff?
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build craml 1.0.0
++- 
+- No changes have been performed
+'opam install craml.1.0.0' failed.

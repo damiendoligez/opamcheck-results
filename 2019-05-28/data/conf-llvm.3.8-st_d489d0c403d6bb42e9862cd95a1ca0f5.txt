@@ -1,0 +1,85 @@
+The following actions will be performed:
+  - install conf-llvm 3.8
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [conf-llvm: bash configure.sh]
++ /bin/bash "-ex" "configure.sh" "3.8" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/conf-llvm.3.8)
+- + version=3.8
+- + config=
+- + hash brew
+- + shopt -s nullglob
+- + for llvm_config in $config llvm-config-$version llvm-config${version//./} llvm-config-mp-$version $brew_llvm_config llvm-config
+- ++ llvm-config-3.8 --version
+- configure.sh: line 13: llvm-config-3.8: command not found
+- + llvm_version=
+- + true
+- + case $llvm_version in
+- + echo 'Note: '\''llvm-config-3.8'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''3.8'\''.'
+- Note: 'llvm-config-3.8' doesn't match the required version. Got '' but required '3.8'.
+- + continue
+- + for llvm_config in $config llvm-config-$version llvm-config${version//./} llvm-config-mp-$version $brew_llvm_config llvm-config
+- ++ llvm-config38 --version
+- configure.sh: line 13: llvm-config38: command not found
+- + llvm_version=
+- + true
+- + case $llvm_version in
+- + echo 'Note: '\''llvm-config38'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''3.8'\''.'
+- Note: 'llvm-config38' doesn't match the required version. Got '' but required '3.8'.
+- + continue
+- + for llvm_config in $config llvm-config-$version llvm-config${version//./} llvm-config-mp-$version $brew_llvm_config llvm-config
+- ++ llvm-config-mp-3.8 --version
+- configure.sh: line 13: llvm-config-mp-3.8: command not found
+- + llvm_version=
+- + true
+- + case $llvm_version in
+- + echo 'Note: '\''llvm-config-mp-3.8'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''3.8'\''.'
+- Note: 'llvm-config-mp-3.8' doesn't match the required version. Got '' but required '3.8'.
+- + continue
+- + for llvm_config in $config llvm-config-$version llvm-config${version//./} llvm-config-mp-$version $brew_llvm_config llvm-config
+- ++ llvm-config --version
+- + llvm_version=6.0.0
+- + case $llvm_version in
+- + echo 'Note: '\''llvm-config'\'' doesn'\''t match the required version. Got '\''6.0.0'\'' but required '\''3.8'\''.'
+- Note: 'llvm-config' doesn't match the required version. Got '6.0.0' but required '3.8'.
+- + continue
+- + echo 'Error: LLVM 3.8 is not installed.'
+- Error: LLVM 3.8 is not installed.
+- + exit 1
+[ERROR] The compilation of conf-llvm failed at "/bin/bash -ex configure.sh 3.8".
+
+#=== ERROR while compiling conf-llvm.3.8 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/conf-llvm.3.8
+# command              /bin/bash -ex configure.sh 3.8
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/conf-llvm-36634-9b8556.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/conf-llvm-36634-9b8556.out
+### output ###
+# [...]
+# Note: 'llvm-config-mp-3.8' doesn't match the required version. Got '' but required '3.8'.
+# + continue
+# + for llvm_config in $config llvm-config-$version llvm-config${version//./} llvm-config-mp-$version $brew_llvm_config llvm-config
+# ++ llvm-config --version
+# + llvm_version=6.0.0
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config'\'' doesn'\''t match the required version. Got '\''6.0.0'\'' but required '\''3.8'\''.'
+# Note: 'llvm-config' doesn't match the required version. Got '6.0.0' but required '3.8'.
+# + continue
+# + echo 'Error: LLVM 3.8 is not installed.'
+# Error: LLVM 3.8 is not installed.
+# + exit 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-llvm 3.8
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    llvm-3.8-dev
+
+'opam install conf-llvm.3.8' failed.

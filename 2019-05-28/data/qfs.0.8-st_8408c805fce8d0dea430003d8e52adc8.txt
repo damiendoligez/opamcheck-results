@@ -1,0 +1,120 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install qfs 0.8
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [qfs.0.8: http]
+[qfs.0.8] downloaded from https://github.com/ahrefs/ocaml-qfs/archive/0.8.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [qfs: ocaml setup.ml]
++ /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocaml "setup.ml" "-configure" "--prefix" "/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1" (CWD=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/qfs.0.8)
+- 
+- Configuration:
+- ocamlfind: ........................................... /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocamlfind
+- ocamlc: .............................................. /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocamlbuild
+- Package name: ........................................ qfs
+- Package version: ..................................... 0.8
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.06.1
+- standard_library_default: ............................ /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml
+- standard_library: .................................... /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml
+- standard_runtime: .................................... /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_unix: ............................................ /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml
+- pkg_bytes: ........................................... /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/bytes
+- pkg_lwt_unix: ........................................ /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/lwt/unix
+- pkg_lwt_ppx: ......................................... /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/lwt_ppx
+- pkg_extlib: .......................................... /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/extlib
+- ocamldoc: ............................................ /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocamldoc
+- 
++ /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocaml "setup.ml" "-build" (CWD=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/qfs.0.8)
+- ocamlfind ocamlopt unix.cmxa -I /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocamlbuild /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocamlfind ocamlc -g -ccopt -x -ccopt c++ -ccopt -Wall -ccopt -Wno-write-strings -package unix -package lwt_ppx -package lwt.unix -package extlib -package bytes -c src/qfs_stubs.c
+- + /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocamlfind ocamlc -g -ccopt -x -ccopt c++ -ccopt -Wall -ccopt -Wno-write-strings -package unix -package lwt_ppx -package lwt.unix -package extlib -package bytes -c src/qfs_stubs.c
+- src/qfs_stubs.c:4:10: fatal error: kfs/KfsClient.h: No such file or directory
+-  #include <kfs/KfsClient.h>
+-           ^~~~~~~~~~~~~~~~~
+- compilation terminated.
+- Command exited with code 2.
+- E: Failure("Command ''/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocamlbuild' src/libqfs_stubs.a src/dllqfs_stubs.so src/qfs.cma src/qfs.cmxa src/qfs.a src/qfs.cmxs src/example.native -use-ocamlfind -tag debug' terminated with error code 10")
+[ERROR] The compilation of qfs failed at "/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling qfs.0.8 ============================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/qfs.0.8
+# command              /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/qfs-26190-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/qfs-26190-6cc03f.out
+### output ###
+# ocamlfind ocamlopt unix.cmxa -I /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocamlbuild /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocamlfind ocamlc -g -ccopt -x -ccopt c++ -ccopt -Wall -ccopt -Wno-write-strings -package unix -package lwt_ppx -package lwt.unix -package extlib -package bytes -c src/qfs_stubs.c
+# + /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocamlfind ocamlc -g -ccopt -x -ccopt c++ -ccopt -Wall -ccopt -Wno-write-strings -package unix -package lwt_ppx -package lwt.unix -package extlib -package bytes -c src/qfs_stubs.c
+# src/qfs_stubs.c:4:10: fatal error: kfs/KfsClient.h: No such file or directory
+#  #include <kfs/KfsClient.h>
+#           ^~~~~~~~~~~~~~~~~
+# compilation terminated.
+# Command exited with code 2.
+# E: Failure("Command ''/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocamlbuild' src/libqfs_stubs.a src/dllqfs_stubs.so src/qfs.cma src/qfs.cmxa src/qfs.a src/qfs.cmxs src/example.native -use-ocamlfind -tag debug' terminated with error code 10")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build qfs 0.8
++- 
+- No changes have been performed
+
+<><> qfs.0.8 troubleshooting ><><><><><><><><><><><><><><><><><><><><><><><><><>
+=> This package requires QFS development files installed, consult https://quantcast.github.io/qfs/
+     and https://github.com/quantcast/qfs/wiki/Developer-Documentation on how to build manually.
+
+     Tentative instructions for Debian : https://gist.githubusercontent.com/ygrek/7bb217d6ab7b25a765b7/raw
+'opam install qfs.0.8' failed.

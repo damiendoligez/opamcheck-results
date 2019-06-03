@@ -1,0 +1,47 @@
+The following actions will be performed:
+  - install oqamldebug 0.9.4
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [oqamldebug.0.9.4: http]
+[oqamldebug.0.9.4] downloaded from http://oqamldebug.forge.ocamlcore.org/oqamldebug-0.9.4.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [oqamldebug: qmake oqamldebug.pro]
++ /usr/bin/qmake "CONFIG-=app_bundle" "CONFIG+=release" "PREFIX_BIN=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/" "CONFIG-=debug" "oqamldebug.pro" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/oqamldebug.0.9.4)
+- Info: creating stash file /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/oqamldebug.0.9.4/.qmake.stash
+Processing  1/2: [oqamldebug: make]
++ /usr/bin/make  (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/oqamldebug.0.9.4)
+- g++ -c -pipe -O2 -Wall -W -D_REENTRANT -fPIC -DVERSION=\"0.9.4\" -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -o main.o main.cpp
+- main.cpp:1:10: fatal error: QApplication: No such file or directory
+-  #include <QApplication>
+-           ^~~~~~~~~~~~~~
+- compilation terminated.
+- Makefile:596: recipe for target 'main.o' failed
+- make: *** [main.o] Error 1
+[ERROR] The compilation of oqamldebug failed at "/usr/bin/make".
+
+#=== ERROR while compiling oqamldebug.0.9.4 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/oqamldebug.0.9.4
+# command              /usr/bin/make
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/oqamldebug-82297-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/oqamldebug-82297-6cc03f.out
+### output ###
+# g++ -c -pipe -O2 -Wall -W -D_REENTRANT -fPIC -DVERSION=\"0.9.4\" -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -I. -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/[...]
+# main.cpp:1:10: fatal error: QApplication: No such file or directory
+#  #include <QApplication>
+#           ^~~~~~~~~~~~~~
+# compilation terminated.
+# Makefile:596: recipe for target 'main.o' failed
+# make: *** [main.o] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build oqamldebug 0.9.4
++- 
+- No changes have been performed
+'opam install oqamldebug.0.9.4' failed.

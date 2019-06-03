@@ -1,0 +1,45 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install ke 0.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [ke.0.1: http]
+[ke.0.1] downloaded from https://github.com/mirage/ke/releases/download/v0.1/ke-v0.1.tbz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [ke: dune subst]
++ /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/dune "subst" (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/ke.0.1)
+Processing  1/2: [ke: dune build]
++ /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/dune "build" "-p" "ke" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/ke.0.1)
+- File "dune-project", line 1, characters 11-14:
+- Error: Version 1.5 of dune is not supported.
+- Supported versions:
+- - 0.0
+- - 1.0 to 1.1
+[ERROR] The compilation of ke failed at "/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/dune build -p ke -j 39".
+
+#=== ERROR while compiling ke.0.1 =============================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/ke.0.1
+# command              /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/dune build -p ke -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/ke-9760-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/ke-9760-6cc03f.out
+### output ###
+# File "dune-project", line 1, characters 11-14:
+# Error: Version 1.5 of dune is not supported.
+# Supported versions:
+# - 0.0
+# - 1.0 to 1.1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ke 0.1
++- 
+- No changes have been performed
+'opam install ke.0.1' failed.

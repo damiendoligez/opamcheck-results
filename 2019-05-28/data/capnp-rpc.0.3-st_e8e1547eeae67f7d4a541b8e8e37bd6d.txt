@@ -1,0 +1,77 @@
+The following actions will be performed:
+  - install capnp-rpc 0.3
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [capnp-rpc.0.3: http]
+[capnp-rpc.0.3] downloaded from https://github.com/mirage/capnp-rpc/archive/v0.3.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [capnp-rpc: jbuilder build]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/jbuilder "build" "-p" "capnp-rpc" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/capnp-rpc.0.3)
+-       ocamlc capnp-rpc/.capnp_rpc.objs/capnp_rpc__CapTP.{cmo,cmt} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I capnp-rpc/.capnp_rpc.objs -I capnp-rpc/.capnp_rpc.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/asetmap -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/astring -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/logs -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/uint -intf-suffix .ml -no-alias-deps -open Capnp_rpc__ -o capnp-rpc/.capnp_rpc.objs/capnp_rpc__CapTP.cmo -c -impl capnp-rpc/capTP.ml)
+- File "capnp-rpc/capTP.ml", line 1680, characters 10-17:
+- 1680 |         | Error e -> Core_types.broken_cap e
+-                  ^^^^^^^
+- Error: This pattern matches values of type ('a, 'b) result
+-        but a pattern was expected which matches values of type
+-          ([< `Local of < pp : Format.formatter -> unit; .. >
+-            | `None
+-            | `ReceiverAnswer of In.QuestionId.t * EP.Core_types.Wire.Path.t
+-            | `ReceiverHosted of In.ImportId.t
+-            | `SenderHosted of In.ExportId.t
+-            | `SenderPromise of In.ExportId.t
+-            | `ThirdPartyHosted of 'c ],
+-           Capnp_rpc__.Exception.t)
+-          Result.result
+-        Result.result is abstract because no corresponding cmi file was found in path.
+-     ocamlopt capnp-rpc/.capnp_rpc.objs/capnp_rpc__CapTP.{cmx,o} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt -w -40 -g -I capnp-rpc/.capnp_rpc.objs -I capnp-rpc/.capnp_rpc.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/asetmap -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/astring -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/logs -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/uint -intf-suffix .ml -no-alias-deps -open Capnp_rpc__ -o capnp-rpc/.capnp_rpc.objs/capnp_rpc__CapTP.cmx -c -impl capnp-rpc/capTP.ml)
+- File "capnp-rpc/capTP.ml", line 1680, characters 10-17:
+- 1680 |         | Error e -> Core_types.broken_cap e
+-                  ^^^^^^^
+- Error: This pattern matches values of type ('a, 'b) result
+-        but a pattern was expected which matches values of type
+-          ([< `Local of < pp : Format.formatter -> unit; .. >
+-            | `None
+-            | `ReceiverAnswer of In.QuestionId.t * EP.Core_types.Wire.Path.t
+-            | `ReceiverHosted of In.ImportId.t
+-            | `SenderHosted of In.ExportId.t
+-            | `SenderPromise of In.ExportId.t
+-            | `ThirdPartyHosted of 'c ],
+-           Capnp_rpc__.Exception.t)
+-          Result.result
+-        Result.result is abstract because no corresponding cmi file was found in path.
+[ERROR] The compilation of capnp-rpc failed at "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/jbuilder build -p capnp-rpc -j 39".
+
+#=== ERROR while compiling capnp-rpc.0.3 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/capnp-rpc.0.3
+# command              /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/jbuilder build -p capnp-rpc -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/capnp-rpc-48116-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/capnp-rpc-48116-a00279.out
+### output ###
+# [...]
+# Error: This pattern matches values of type ('a, 'b) result
+#        but a pattern was expected which matches values of type
+#          ([< `Local of < pp : Format.formatter -> unit; .. >
+#            | `None
+#            | `ReceiverAnswer of In.QuestionId.t * EP.Core_types.Wire.Path.t
+#            | `ReceiverHosted of In.ImportId.t
+#            | `SenderHosted of In.ExportId.t
+#            | `SenderPromise of In.ExportId.t
+#            | `ThirdPartyHosted of 'c ],
+#           Capnp_rpc__.Exception.t)
+#          Result.result
+#        Result.result is abstract because no corresponding cmi file was found in path.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build capnp-rpc 0.3
++- 
+- No changes have been performed
+'opam install capnp-rpc.0.3' failed.

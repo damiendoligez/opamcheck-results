@@ -1,0 +1,159 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install flac 0.1.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [flac.0.1.1: http]
+[flac.0.1.1] downloaded from http://sourceforge.net/projects/savonet/files/ocaml-flac/0.1.1/ocaml-flac-0.1.1.tar.gz/download
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [flac: ./configure]
++ /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/flac.0.1.1/./configure "--prefix" "/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib" "--mandir" "/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/man" (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/flac.0.1.1)
+- configuring ocaml-flac 0.1.1
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking build system type... x86_64-unknown-linux-gnu
+- checking host system type... x86_64-unknown-linux-gnu
+- checking for a BSD-compatible install... /usr/bin/install -c
+- checking that calling user is not root... ok
+- checking for gcc... (cached) gcc
+- checking whether we are using the GNU C compiler... (cached) yes
+- checking whether gcc accepts -g... (cached) yes
+- checking for gcc option to accept ISO C89... (cached) none needed
+- checking for ar... ar
+- checking for ocamlc... ocamlc
+- OCaml version is 4.07.1
+- checking if ocaml compiler supports first-class modules... yes
+- OCaml library path is /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamlbuild... ocamlbuild
+- checking for camlidl... camlidl
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for camlp4... camlp4
+- versions differs from ocamlc
+- checking for camlp4boot... camlp4boot
+- checking for camlp4o... camlp4o
+- checking for camlp4of... camlp4of
+- checking for camlp4oof... camlp4oof
+- checking for camlp4orf... camlp4orf
+- checking for camlp4prof... camlp4prof
+- checking for camlp4r... camlp4r
+- checking for camlp4rf... camlp4rf
+- checking for ocamlfind... ocamlfind
+- checking for caml/threads.h... yes
+- checking for gcc option to produce PIC... -fPIC
+- checking for pkg-config... /usr/bin/pkg-config
+- checking pkg-config is at least version 0.9.0... yes
+- checking whether pkg-config knows about flac... ok
+- checking how to run the C preprocessor... gcc -E
+- checking for grep that handles long lines and -e... /bin/grep
+- checking for egrep... /bin/grep -E
+- checking for ANSI C header files... yes
+- checking for sys/types.h... yes
+- checking for sys/stat.h... 
+- yes
+- checking for stdlib.h... yes
+- checking for string.h... yes
+- checking for memory.h... yes
+- checking for strings.h... yes
+- checking for inttypes.h... yes
+- checking for stdint.h... yes
+- checking for unistd.h... yes
+- checking whether byte ordering is bigendian... no
+- checking for ocaml-ogg... ok
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating src/META
+- config.status: creating src/Makefile
+- config.status: creating examples/Makefile.decode
+- config.status: creating examples/Makefile.encode
+- config.status: creating config.h
+Processing  1/2: [flac: make all]
++ /usr/bin/make "all" (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/flac.0.1.1)
+- /usr/bin/make -C src all
+- make[1]: Entering directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/flac.0.1.1/src'
+- make[2]: Entering directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/flac.0.1.1/src'
+- making ._bcdi/ogg_demuxer_flac_decoder.di from ogg_demuxer_flac_decoder.mli
+- making ._bcdi/ogg_flac.di from ogg_flac.mli
+- making ._bcdi/flac.di from flac.mli
+- making ._d/ogg_demuxer_flac_decoder.d from ogg_demuxer_flac_decoder.ml
+- making ._d/ogg_flac.d from ogg_flac.ml
+- making ._d/flac.d from flac.ml
+- ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/include  -I .. -Wall -DCAML_NAME_SPACE \
+- 			-DPIC -fPIC -I/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/include   \
+- 			  -I/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ogg  -o flac_stubs.o " flac_stubs.c 
+- ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/include  -I .. -Wall -DCAML_NAME_SPACE \
+- 			-DPIC -fPIC -I/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/include   \
+- 			  -I/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ogg  -o ogg_flac_stubs.o " ogg_flac_stubs.c 
+- ar rcs libflac_stubs.a  flac_stubs.o ogg_flac_stubs.o
+- ocamlc.opt -c -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ogg flac.mli
+- ocamlc.opt -c -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ogg flac.ml
+- File "flac.ml", line 108, characters 8-24:
+- Warning 3: deprecated: Stdlib.String.uppercase
+- Use String.uppercase_ascii instead.
+- File "flac.ml", line 166, characters 16-29:
+- Warning 3: deprecated: Stdlib.String.create
+- Use Bytes.create instead.
+- File "flac.ml", line 186, characters 17-21:
+- Error: This expression has type int -> bytes * int
+-        but an expression was expected of type read = int -> string * int
+-        Type bytes is not compatible with type string 
+- OCamlMakefile:952: recipe for target 'flac.cmo' failed
+- make[2]: *** [flac.cmo] Error 2
+- make[2]: Leaving directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/flac.0.1.1/src'
+- OCamlMakefile:717: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/flac.0.1.1/src'
+- Makefile:12: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of flac failed at "/usr/bin/make all".
+
+#=== ERROR while compiling flac.0.1.1 =========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/flac.0.1.1
+# command              /usr/bin/make all
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/flac-146030-d0f245.env
+# output-file          /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/flac-146030-d0f245.out
+### output ###
+# [...]
+# File "flac.ml", line 186, characters 17-21:
+# Error: This expression has type int -> bytes * int
+#        but an expression was expected of type read = int -> string * int
+#        Type bytes is not compatible with type string 
+# OCamlMakefile:952: recipe for target 'flac.cmo' failed
+# make[2]: *** [flac.cmo] Error 2
+# make[2]: Leaving directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/flac.0.1.1/src'
+# OCamlMakefile:717: recipe for target 'byte-code-library' failed
+# make[1]: *** [byte-code-library] Error 2
+# make[1]: Leaving directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/flac.0.1.1/src'
+# Makefile:12: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build flac 0.1.1
++- 
+- No changes have been performed
+'opam install flac.0.1.1' failed.

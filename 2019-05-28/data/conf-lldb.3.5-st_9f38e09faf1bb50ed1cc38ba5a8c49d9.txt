@@ -1,0 +1,36 @@
+The following actions will be performed:
+  - install conf-lldb 3.5
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [conf-lldb: ls]
++ /bin/ls "/usr/lib/llvm-3.5/include/lldb/API/SBDebugger.h" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/conf-lldb.3.5)
+- /bin/ls: cannot access '/usr/lib/llvm-3.5/include/lldb/API/SBDebugger.h': No such file or directory
+[ERROR] The compilation of conf-lldb failed at "/bin/ls /usr/lib/llvm-3.5/include/lldb/API/SBDebugger.h".
+
+#=== ERROR while compiling conf-lldb.3.5 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/conf-lldb.3.5
+# command              /bin/ls /usr/lib/llvm-3.5/include/lldb/API/SBDebugger.h
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/conf-lldb-66108-9b8556.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/conf-lldb-66108-9b8556.out
+### output ###
+# /bin/ls: cannot access '/usr/lib/llvm-3.5/include/lldb/API/SBDebugger.h': No such file or directory
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-lldb 3.5
++- 
+- No changes have been performed
+
+<><> conf-lldb.3.5 troubleshooting ><><><><><><><><><><><><><><><><><><><><><><>
+=> This package requires LLDB 3.5 development packages installed on your system
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    liblldb-3.5-dev
+
+'opam install conf-lldb.3.5' failed.

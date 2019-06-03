@@ -1,0 +1,113 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install conf-libclang 1.0.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [conf-libclang: bash configure.sh]
++ /bin/bash "-ex" "configure.sh" "1.0.0" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/conf-libclang.1.0.0)
+- + find_llvm_config
+- + shopt -s nullglob
+- + for version in 7 6 5 4 3
+- + hash brew
+- + for llvm_config in llvm-config-$version llvm-config-${version}.0 llvm-config${version}0 llvm-config-mp-$version llvm-config-mp-${version}.0 $brew_llvm_config llvm-config
+- ++ llvm-config-7 --version
+- configure.sh: line 16: llvm-config-7: command not found
+- + llvm_version=
+- + continue
+- + for llvm_config in llvm-config-$version llvm-config-${version}.0 llvm-config${version}0 llvm-config-mp-$version llvm-config-mp-${version}.0 $brew_llvm_config llvm-config
+- ++ llvm-config-7.0 --version
+- configure.sh: line 16: llvm-config-7.0: command not found
+- + llvm_version=
+- + continue
+- + for llvm_config in llvm-config-$version llvm-config-${version}.0 llvm-config${version}0 llvm-config-mp-$version llvm-config-mp-${version}.0 $brew_llvm_config llvm-config
+- ++ llvm-config70 --version
+- configure.sh: line 16: llvm-config70: command not found
+- + llvm_version=
+- + continue
+- + for llvm_config in llvm-config-$version llvm-config-${version}.0 llvm-config${version}0 llvm-config-mp-$version llvm-config-mp-${version}.0 $brew_llvm_config llvm-config
+- ++ llvm-config-mp-7 --version
+- configure.sh: line 16: llvm-config-mp-7: command not found
+- + llvm_version=
+- + continue
+- + for llvm_config in llvm-config-$version llvm-config-${version}.0 llvm-config${version}0 llvm-config-mp-$version llvm-config-mp-${version}.0 $brew_llvm_config llvm-config
+- ++ llvm-config-mp-7.0 --version
+- configure.sh: line 16: llvm-config-mp-7.0: command not found
+- + llvm_version=
+- + continue
+- + for llvm_config in llvm-config-$version llvm-config-${version}.0 llvm-config${version}0 llvm-config-mp-$version llvm-config-mp-${version}.0 $brew_llvm_config llvm-config
+- ++ llvm-config --version
+- + llvm_version=6.0.0
+- + return
+- ++ llvm-config --cflags
+- + LLVM_CFLAGS='-I/usr/lib/llvm-6.0/include -g -O2 -fdebug-prefix-map=/build/llvm-toolchain-6.0-QjOn7h/llvm-toolchain-6.0-6.0=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -Werror=date-time -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -ffunction-sections -fdata-sections -O2 -g -DNDEBUG -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS'
+- ++ llvm-config --ldflags
+- + LLVM_LDFLAGS='-L/usr/lib/llvm-6.0/lib '
+- ++ llvm-config --libdir
+- + LLVM_LIBDIR=/usr/lib/llvm-6.0/lib
+- ++ sed 's/-Wstring-conversion //'
+- ++ echo -I/usr/lib/llvm-6.0/include -g -O2 -fdebug-prefix-map=/build/llvm-toolchain-6.0-QjOn7h/llvm-toolchain-6.0-6.0=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -Werror=date-time -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -ffunction-sections -fdata-sections -O2 -g -DNDEBUG -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS
+- + LLVM_CFLAGS='-I/usr/lib/llvm-6.0/include -g -O2 -fdebug-prefix-map=/build/llvm-toolchain-6.0-QjOn7h/llvm-toolchain-6.0-6.0=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -Werror=date-time -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -ffunction-sections -fdata-sections -O2 -g -DNDEBUG -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS'
+- ++ sed 's/-Werror=unguarded-availability-new //'
+- ++ echo -I/usr/lib/llvm-6.0/include -g -O2 -fdebug-prefix-map=/build/llvm-toolchain-6.0-QjOn7h/llvm-toolchain-6.0-6.0=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -Werror=date-time -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -ffunction-sections -fdata-sections -O2 -g -DNDEBUG -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS
+- + LLVM_CFLAGS='-I/usr/lib/llvm-6.0/include -g -O2 -fdebug-prefix-map=/build/llvm-toolchain-6.0-QjOn7h/llvm-toolchain-6.0-6.0=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -Werror=date-time -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -ffunction-sections -fdata-sections -O2 -g -DNDEBUG -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS'
+- ++ echo -I/usr/lib/llvm-6.0/include -g -O2 -fdebug-prefix-map=/build/llvm-toolchain-6.0-QjOn7h/llvm-toolchain-6.0-6.0=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -Werror=date-time -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -ffunction-sections -fdata-sections -O2 -g -DNDEBUG -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS
+- ++ sed 's/-Wcovered-switch-default //'
+- + LLVM_CFLAGS='-I/usr/lib/llvm-6.0/include -g -O2 -fdebug-prefix-map=/build/llvm-toolchain-6.0-QjOn7h/llvm-toolchain-6.0-6.0=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -Werror=date-time -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -ffunction-sections -fdata-sections -O2 -g -DNDEBUG -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS'
+- ++ sed 's/-Wdelete-non-virtual-dtor //'
+- ++ echo -I/usr/lib/llvm-6.0/include -g -O2 -fdebug-prefix-map=/build/llvm-toolchain-6.0-QjOn7h/llvm-toolchain-6.0-6.0=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -Werror=date-time -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -ffunction-sections -fdata-sections -O2 -g -DNDEBUG -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS
+- + LLVM_CFLAGS='-I/usr/lib/llvm-6.0/include -g -O2 -fdebug-prefix-map=/build/llvm-toolchain-6.0-QjOn7h/llvm-toolchain-6.0-6.0=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -Werror=date-time -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -ffunction-sections -fdata-sections -O2 -g -DNDEBUG -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS'
+- ++ mktemp -d
+- + tempdir=/tmp/tmp.Hap8auHbtF
+- + cat
+- + CC=cc
+- + cc -o /tmp/tmp.Hap8auHbtF/test_libclang.o -c -I/usr/lib/llvm-6.0/include -g -O2 -fdebug-prefix-map=/build/llvm-toolchain-6.0-QjOn7h/llvm-toolchain-6.0-6.0=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -Werror=date-time -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -ffunction-sections -fdata-sections -O2 -g -DNDEBUG -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS /tmp/tmp.Hap8auHbtF/test_libclang.c
+- /tmp/tmp.Hap8auHbtF/test_libclang.c:1:10: fatal error: clang-c/Index.h: No such file or directory
+-  #include <clang-c/Index.h>
+-           ^~~~~~~~~~~~~~~~~
+- compilation terminated.
+- + clean_tempdir
+- + rm -f /tmp/tmp.Hap8auHbtF/test_libclang.c /tmp/tmp.Hap8auHbtF/test_libclang.o /tmp/tmp.Hap8auHbtF/test_libclang
+- + rmdir /tmp/tmp.Hap8auHbtF
+- + echo 'Error: cannot compile libclang test.'
+- Error: cannot compile libclang test.
+- + exit 1
+[ERROR] The compilation of conf-libclang failed at "/bin/bash -ex configure.sh 1.0.0".
+
+#=== ERROR while compiling conf-libclang.1.0.0 ================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/conf-libclang.1.0.0
+# command              /bin/bash -ex configure.sh 1.0.0
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/conf-libclang-120306-9b8556.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/conf-libclang-120306-9b8556.out
+### output ###
+# [...]
+# + CC=cc
+# + cc -o /tmp/tmp.Hap8auHbtF/test_libclang.o -c -I/usr/lib/llvm-6.0/include -g -O2 -fdebug-prefix-map=/build/llvm-toolchain-6.0-QjOn7h/llvm-toolchain-6.0-6.0=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -Werror=date-time -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -ffunction-sections -fdata-sections -[...]
+# /tmp/tmp.Hap8auHbtF/test_libclang.c:1:10: fatal error: clang-c/Index.h: No such file or directory
+#  #include <clang-c/Index.h>
+#           ^~~~~~~~~~~~~~~~~
+# compilation terminated.
+# + clean_tempdir
+# + rm -f /tmp/tmp.Hap8auHbtF/test_libclang.c /tmp/tmp.Hap8auHbtF/test_libclang.o /tmp/tmp.Hap8auHbtF/test_libclang
+# + rmdir /tmp/tmp.Hap8auHbtF
+# + echo 'Error: cannot compile libclang test.'
+# Error: cannot compile libclang test.
+# + exit 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-libclang 1.0.0
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libclang-dev llvm-dev
+
+'opam install conf-libclang.1.0.0' failed.

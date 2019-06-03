@@ -1,0 +1,68 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install solo5-kernel-virtio 0.1.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [solo5-kernel-virtio.0.1.1: http]
+[solo5-kernel-virtio.0.1.1] downloaded from https://github.com/Solo5/solo5/archive/v0.1.1.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [solo5-kernel-virtio: make virtio]
++ /usr/bin/make "virtio" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/solo5-kernel-virtio.0.1.1)
+- /usr/bin/make -C kernel virtio
+- make[1]: Entering directory '/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/solo5-kernel-virtio.0.1.1/kernel'
+- cc -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/7/include -ffreestanding -mno-red-zone -mno-3dnow -std=gnu99 -Wall -Wextra -Werror -O2 -g -c ee_printf.c -o ee_printf.o
+- ee_printf.c: In function ‘vsnprintf’:
+- ee_printf.c:619:19: error: this statement may fall through [-Werror=implicit-fallthrough=]
+-              flags |= UPPERCASE;
+-                    ^
+- ee_printf.c:621:9: note: here
+-          case 'a':
+-          ^~~~
+- ee_printf.c:636:19: error: this statement may fall through [-Werror=implicit-fallthrough=]
+-              flags |= UPPERCASE;
+-                    ^
+- ee_printf.c:638:9: note: here
+-          case 'x':
+-          ^~~~
+- cc1: all warnings being treated as errors
+- Makefile:75: recipe for target 'ee_printf.o' failed
+- make[1]: *** [ee_printf.o] Error 1
+- make[1]: Leaving directory '/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/solo5-kernel-virtio.0.1.1/kernel'
+- Makefile:23: recipe for target 'virtio' failed
+- make: *** [virtio] Error 2
+[ERROR] The compilation of solo5-kernel-virtio failed at "/usr/bin/make virtio".
+
+#=== ERROR while compiling solo5-kernel-virtio.0.1.1 ==========================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/solo5-kernel-virtio.0.1.1
+# command              /usr/bin/make virtio
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/solo5-kernel-virtio-166935-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/solo5-kernel-virtio-166935-a00279.out
+### output ###
+# [...]
+# ee_printf.c:636:19: error: this statement may fall through [-Werror=implicit-fallthrough=]
+#              flags |= UPPERCASE;
+#                    ^
+# ee_printf.c:638:9: note: here
+#          case 'x':
+#          ^~~~
+# cc1: all warnings being treated as errors
+# Makefile:75: recipe for target 'ee_printf.o' failed
+# make[1]: *** [ee_printf.o] Error 1
+# make[1]: Leaving directory '/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/solo5-kernel-virtio.0.1.1/kernel'
+# Makefile:23: recipe for target 'virtio' failed
+# make: *** [virtio] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build solo5-kernel-virtio 0.1.1
++- 
+- No changes have been performed
+'opam install solo5-kernel-virtio.0.1.1' failed.

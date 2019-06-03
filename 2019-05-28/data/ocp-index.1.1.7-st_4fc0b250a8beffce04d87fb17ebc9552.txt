@@ -1,0 +1,62 @@
+The following actions will be performed:
+  - install ocp-index 1.1.7
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [ocp-index.1.1.7: http]
+[ocp-index.1.1.7] downloaded from https://github.com/OCamlPro/ocp-index/archive/1.1.7.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [ocp-index: jbuilder build]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/jbuilder "build" "-p" "ocp-index" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ocp-index.1.1.7)
+-       ocamlc libs/.indexLib.objs/indexPredefined.{cmo,cmt} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -w -9 -g -bin-annot -I libs/.indexLib.objs -I libs/.indexLib.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml/compiler-libs -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocp-indent/lexer -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocp-indent/utils -intf-suffix .ml -no-alias-deps -o libs/.indexLib.objs/indexPredefined.cmo -c -impl libs/indexPredefined.pp.ml)
+- File "libs/indexPredefined.ml", line 112, characters 57-63:
+- Error: This expression has type string but an expression was expected of type
+-          Outcometree.out_name
+-       ocamlc libs/.indexLib.objs/indexBuild.{cmo,cmt} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -w -9 -g -bin-annot -I libs/.indexLib.objs -I libs/.indexLib.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml/compiler-libs -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocp-indent/lexer -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocp-indent/utils -intf-suffix .ml -no-alias-deps -o libs/.indexLib.objs/indexBuild.cmo -c -impl libs/indexBuild.pp.ml)
+- File "libs/indexBuild.ml", line 149, characters 4-29:
+- Error: The constructor Types.Sig_value expects 3 argument(s),
+-        but is applied here to 2 argument(s)
+-     ocamlopt libs/.indexLib.objs/indexPredefined.{cmx,o} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt -w -40 -w -9 -g -I libs/.indexLib.objs -I libs/.indexLib.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml/compiler-libs -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocp-indent/lexer -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocp-indent/utils -intf-suffix .ml -no-alias-deps -o libs/.indexLib.objs/indexPredefined.cmx -c -impl libs/indexPredefined.pp.ml)
+- File "libs/indexPredefined.ml", line 112, characters 57-63:
+- Error: This expression has type string but an expression was expected of type
+-          Outcometree.out_name
+-       ocamlc src/.grepMain.eobjs/grepMain.{cmi,cmo,cmt}
+- File "src/grepMain.ml", line 127, characters 20-30:
+- Alert deprecated: Re.get_ofs
+- Use Group.offset
+[ERROR] The compilation of ocp-index failed at "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/jbuilder build -p ocp-index -j 39".
+
+#=== ERROR while compiling ocp-index.1.1.7 ====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ocp-index.1.1.7
+# command              /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/jbuilder build -p ocp-index -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/ocp-index-157642-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/ocp-index-157642-6cc03f.out
+### output ###
+# [...]
+# File "libs/indexBuild.ml", line 149, characters 4-29:
+# Error: The constructor Types.Sig_value expects 3 argument(s),
+#        but is applied here to 2 argument(s)
+#     ocamlopt libs/.indexLib.objs/indexPredefined.{cmx,o} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt -w -40 -w -9 -g -I libs/.indexLib.objs -I libs/.indexLib.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml/compiler-libs -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/oc[...]
+# File "libs/indexPredefined.ml", line 112, characters 57-63:
+# Error: This expression has type string but an expression was expected of type
+#          Outcometree.out_name
+#       ocamlc src/.grepMain.eobjs/grepMain.{cmi,cmo,cmt}
+# File "src/grepMain.ml", line 127, characters 20-30:
+# Alert deprecated: Re.get_ofs
+# Use Group.offset
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ocp-index 1.1.7
++- 
+- No changes have been performed
+'opam install ocp-index.1.1.7' failed.

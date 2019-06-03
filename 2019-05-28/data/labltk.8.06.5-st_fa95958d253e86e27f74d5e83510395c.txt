@@ -1,0 +1,85 @@
+The following actions will be performed:
+  - install labltk 8.06.5
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [labltk.8.06.5: http]
+[labltk.8.06.5] downloaded from https://download.ocamlcore.org/labltk/labltk/8.06.5/labltk-8.06.5.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [labltk: patch]
+Processing  1/2: [labltk: ./configure]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/labltk.8.06.5/./configure "-use-findlib" "-installbindir" "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/labltk.8.06.5)
+- Configuring LablTk...
+- tcl.h and/or tk.h not found.
+- 
+- ** Configuration summary **
+- 
+- The "labltk" library: not supported
+Processing  1/2: [labltk: make all]
++ /usr/bin/make "all" "opt" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/labltk.8.06.5)
+- cd support; /usr/bin/make
+- make[1]: Entering directory '/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/labltk.8.06.5/support'
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  support.mli
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  support.ml
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  rawwidget.mli
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  rawwidget.ml
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  widget.mli
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  widget.ml
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  protocol.mli
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  protocol.ml
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  textvariable.mli
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  textvariable.ml
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  timer.mli
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  timer.ml
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  fileevent.mli
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  fileevent.ml
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  camltkwrap.mli
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  camltkwrap.ml
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  -I +threads -I vmthreads tkthread.mli
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  -I +threads -I vmthreads tkthread.ml
+- gcc  -I/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml/caml   -c cltkCaml.c
+- cltkCaml.c:19:10: fatal error: tcl.h: No such file or directory
+-  #include <tcl.h>
+-           ^~~~~~~
+- compilation terminated.
+- Makefile:87: recipe for target 'cltkCaml.o' failed
+- make[1]: *** [cltkCaml.o] Error 1
+- make[1]: Leaving directory '/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/labltk.8.06.5/support'
+- Makefile:25: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of labltk failed at "/usr/bin/make all opt".
+
+#=== ERROR while compiling labltk.8.06.5 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/labltk.8.06.5
+# command              /usr/bin/make all opt
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/labltk-99275-2dea01.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/labltk-99275-2dea01.out
+### output ###
+# [...]
+# /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  -I +threads -I vmthreads tkthread.mli
+# /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -c -warn-error A-3  -I +threads -I vmthreads tkthread.ml
+# gcc  -I/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml/caml   -c cltkCaml.c
+# cltkCaml.c:19:10: fatal error: tcl.h: No such file or directory
+#  #include <tcl.h>
+#           ^~~~~~~
+# compilation terminated.
+# Makefile:87: recipe for target 'cltkCaml.o' failed
+# make[1]: *** [cltkCaml.o] Error 1
+# make[1]: Leaving directory '/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/labltk.8.06.5/support'
+# Makefile:25: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build labltk 8.06.5
++- 
+- No changes have been performed
+
+<><> labltk.8.06.5 troubleshooting ><><><><><><><><><><><><><><><><><><><><><><>
+=> This package requires Tcl/Tk with its development packages installed on your system
+'opam install labltk.8.06.5' failed.

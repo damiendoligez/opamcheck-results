@@ -1,0 +1,44 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install vecosek 0.0.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[vecosek.0.0.0] found in cache
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [vecosek: ocaml please.ml]
++ /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocaml "please.ml" "configure" (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/vecosek.0.0.0)
+Processing  1/2: [vecosek: jbuilder build]
++ /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/jbuilder "build" "-p" "vecosek" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/vecosek.0.0.0)
+-     ocamlopt src/app/main.exe (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlopt.opt -w -40 -g -o src/app/main.exe -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/atd -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/atdgen -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/biniou -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/bytes -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/cmdliner -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/easy-format -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/misuja -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/nonstd -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml/threads -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/result -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/rresult -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/sosa -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/vecosek-engine -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/vecosek-scene -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/yojson /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml/str.cmxa /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/easy-format/easy_format.cmx /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/atd/atd.cmxa /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/biniou/biniou.cmxa /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/yojson/yojson.cmxa /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/atdgen/atdgen.cmxa /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/nonstd/nonstd.cmxa /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/sosa/sosa.cmxa /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/vecosek-scene/vecosek_scene.cmxa /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/vecosek-engine/vecosek_engine.cmxa /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/result/result.cmxa /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/rresult/rresult.cmxa /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml/unix.cmxa /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml/threads/threads.cmxa /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/misuja/misuja.cmxa /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/cmdliner/cmdliner.cmxa src/app/.main.eobjs/main.cmx)
+- File "_none_", line 1:
+- Error: No implementations provided for the following modules:
+-          Unix referenced from /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/vecosek-engine/vecosek_engine.cmxa(Vecosek_engine__Internal_pervasives)
+[ERROR] The compilation of vecosek failed at "/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/jbuilder build -p vecosek -j 39".
+
+#=== ERROR while compiling vecosek.0.0.0 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/vecosek.0.0.0
+# command              /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/jbuilder build -p vecosek -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/vecosek-173313-d2c37b.env
+# output-file          /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/vecosek-173313-d2c37b.out
+### output ###
+#     ocamlopt src/app/main.exe (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlopt.opt -w -40 -g -o src/app/main.exe -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/atd -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/atdgen -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/biniou -I [...]
+# File "_none_", line 1:
+# Error: No implementations provided for the following modules:
+#          Unix referenced from /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/vecosek-engine/vecosek_engine.cmxa(Vecosek_engine__Internal_pervasives)
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build vecosek 0.0.0
++- 
+- No changes have been performed
+'opam install vecosek.0.0.0' failed.

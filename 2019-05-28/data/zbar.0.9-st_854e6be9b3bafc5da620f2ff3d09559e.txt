@@ -1,0 +1,154 @@
+The following actions will be performed:
+  - install zbar 0.9
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [zbar.0.9: http]
+[zbar.0.9] downloaded from https://github.com/vbmithr/ocaml-zbar/archive/0.9.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [zbar: oasis setup]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/oasis "setup" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/zbar.0.9)
+Processing  1/2: [zbar: make]
++ /usr/bin/make "PREFIX=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/zbar.0.9)
+- ocamlopt.opt -o setup.bin setup.ml || ocamlopt -o setup.bin setup.ml || ocamlc -o setup.bin setup.ml
+- File "setup.ml", line 1781, characters 22-40:
+- 1781 |         let compare = Pervasives.compare
+-                              ^^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- File "setup.ml", line 3473, characters 16-34:
+- 3473 |                 Pervasives.compare o2 o1)
+-                        ^^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- rm -f setup.cmx setup.cmi setup.o setup.cmo
+- ./setup.bin -configure --enable-ctypes --prefix /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1
+- 
+- Configuration:
+- ocamlfind: ........................................... /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind
+- ocamlc: .............................................. /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt
+- ocamlopt: ............................................ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlbuild
+- Package name: ........................................ zbar
+- Package version: ..................................... 0.9
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.08.0
+- standard_library_default: ............................ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml
+- standard_library: .................................... /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Build the ctypes binding: ............................ true
+- Build the classic OCaml FFI binding: ................. true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_lwt_unix: ........................................ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/lwt/unix
+- pkg_ctypes_foreign: .................................. /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ctypes
+- ocamldoc: ............................................ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamldoc
+- 
+- ./setup.bin -build -classic-display
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt unix.cmxa -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -g -c classic/zbar_stubs.c
+- mv zbar_stubs.o classic/zbar_stubs.o
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlmklib -o classic/zbar_stubs -g -lzbar classic/zbar_stubs.o
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamldep -package lwt.unix -modules classic/zbar.mli > classic/zbar.mli.depends
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package lwt.unix -I classic -o classic/zbar.cmi classic/zbar.mli
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package lwt.unix -I classic -o classic/zbar.cmi classic/zbar.mli
+- ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamldep -package lwt.unix -modules classic/zbar.ml > classic/zbar.ml.depends
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package lwt.unix -I classic -o classic/zbar.cmo classic/zbar.ml
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package lwt.unix -I classic -o classic/zbar.cmo classic/zbar.ml
+- ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlc -a -dllib -lzbar_stubs -cclib -lzbar_stubs -cclib -lzbar -I classic classic/zbar.cmo -o classic/zbar.cma
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package lwt.unix -I classic -o classic/zbar.cmx classic/zbar.ml
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package lwt.unix -I classic -o classic/zbar.cmx classic/zbar.ml
+- ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -a -cclib -lzbar_stubs -cclib -lzbar -I classic classic/zbar.cmx -o classic/zbar.cmxa
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -shared -I classic -I classic classic/zbar.cmxa classic/zbar.cmx -o classic/zbar.cmxs
+- /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamldep -package ctypes.foreign -package lwt.unix -modules ctypes/zbar.mli > ctypes/zbar.mli.depends
+- + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamldep -package ctypes.foreign -package lwt.unix -modules ctypes/zbar.mli > ctypes/zbar.mli.depends
+- ocamlfind: Package `ctypes.foreign.unthreaded' not found - required by `ctypes.foreign'
+- Command exited with code 2.
+- E: Failure("Command ''/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlbuild' classic/libzbar_stubs.a classic/dllzbar_stubs.so classic/zbar.cma classic/zbar.cmxa classic/zbar.a classic/zbar.cmxs ctypes/zbar_ctypes.cma ctypes/zbar_ctypes.cmxa ctypes/zbar_ctypes.a ctypes/zbar_ctypes.cmxs test/test.native -tag debug -classic-display' terminated with error code 10")
+- Makefile:17: recipe for target 'build' failed
+- make: *** [build] Error 1
+[ERROR] The compilation of zbar failed at "/usr/bin/make PREFIX=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1".
+
+#=== ERROR while compiling zbar.0.9 ===========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/zbar.0.9
+# command              /usr/bin/make PREFIX=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/zbar-127412-e4db2f.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/zbar-127412-e4db2f.out
+### output ###
+# [...]
+# /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package lwt.unix -I classic -o classic/zbar.cmx classic/zbar.ml
+# + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package lwt.unix -I classic -o classic/zbar.cmx classic/zbar.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -a -cclib -lzbar_stubs -cclib -lzbar -I classic classic/zbar.cmx -o classic/zbar.cmxa
+# /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamlopt -shared -I classic -I classic classic/zbar.cmxa classic/zbar.cmx -o classic/zbar.cmxs
+# /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamldep -package ctypes.foreign -package lwt.unix -modules ctypes/zbar.mli > ctypes/zbar.mli.depends
+# + /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlfind ocamldep -package ctypes.foreign -package lwt.unix -modules ctypes/zbar.mli > ctypes/zbar.mli.depends
+# ocamlfind: Package `ctypes.foreign.unthreaded' not found - required by `ctypes.foreign'
+# Command exited with code 2.
+# E: Failure("Command ''/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlbuild' classic/libzbar_stubs.a classic/dllzbar_stubs.so classic/zbar.cma classic/zbar.cmxa classic/zbar.a classic/zbar.cmxs ctypes/zbar_ctypes.cma ctypes/zbar_ctypes.cmxa ctypes/zbar_ctypes.a ctypes/zbar_ctypes.cmxs test/test.native -tag debug -classic-display' terminated with error code 10")
+# Makefile:17: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build zbar 0.9
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libzbar-dev
+
+'opam install zbar.0.9' failed.

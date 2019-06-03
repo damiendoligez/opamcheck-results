@@ -1,0 +1,39 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install srs 2.0.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [srs.2.0.0: http]
+[srs.2.0.0] downloaded from https://github.com/andrenth/ocaml-srs/archive/2.0.0.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [srs: jbuilder build]
++ /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/jbuilder "build" "-p" "srs" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/srs.2.0.0)
+- jbuilder: unknown option `-p'.
+- Usage: jbuilder build [OPTION]... TARGET...
+- Try `jbuilder build --help' or `jbuilder --help' for more information.
+[ERROR] The compilation of srs failed at "/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/jbuilder build -p srs -j 39".
+
+#=== ERROR while compiling srs.2.0.0 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/srs.2.0.0
+# command              /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/jbuilder build -p srs -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/srs-109398-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/srs-109398-a00279.out
+### output ###
+# jbuilder: unknown option `-p'.
+# Usage: jbuilder build [OPTION]... TARGET...
+# Try `jbuilder build --help' or `jbuilder --help' for more information.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build srs 2.0.0
++- 
+- No changes have been performed
+'opam install srs.2.0.0' failed.

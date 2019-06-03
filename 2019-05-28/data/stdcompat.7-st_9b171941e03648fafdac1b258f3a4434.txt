@@ -1,0 +1,908 @@
+The following actions will be performed:
+  - install stdcompat 7
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [stdcompat.7: http]
+[stdcompat.7] downloaded from https://github.com/thierry-martinez/stdcompat/releases/download/7/stdcompat-7.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [stdcompat: ./configure]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/stdcompat.7/./configure "--prefix=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/stdcompat.7)
+- checking for a BSD-compatible install... /usr/bin/install -c
+- checking whether build environment is sane... yes
+- checking for a thread-safe mkdir -p... /bin/mkdir -p
+- checking for gawk... no
+- checking for mawk... mawk
+- checking whether make sets $(MAKE)... yes
+- checking whether make supports nested variables... yes
+- checking for ocamlfind... ocamlfind
+- checking for ocamlfind package result... yes
+- checking for ocamlfind package seq... yes
+- checking for ocamlfind package uchar... yes
+- checking for style of include used by make... GNU
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking whether gcc understands -c and -o together... yes
+- checking dependency style of gcc... none
+- checking how to run the C preprocessor... gcc -E
+- checking for grep that handles long lines and -e... /bin/grep
+- checking for egrep... /bin/grep -E
+- checking for ANSI C header files... yes
+- checking for sys/types.h... yes
+- checking for sys/stat.h... yes
+- checking for stdlib.h... yes
+- checking for string.h... yes
+- checking for memory.h... yes
+- checking for strings.h... yes
+- checking for inttypes.h... yes
+- checking for stdint.h... yes
+- checking for unistd.h... yes
+- checking whether byte ordering is bigendian... no
+- checking OCaml version... 4.08.0+rc1
+- checking that generated files are newer than configure... 
+- done
+- configure: creating ./config.status
+- config.status: creating META
+- config.status: creating Makefile
+- config.status: creating stdcompat__hashtbl_ext.mli
+- config.status: creating stdcompat__hashtbl_ext.ml
+- config.status: creating stdcompat__init.mli
+- config.status: creating stdcompat__init.ml
+- config.status: creating stdcompat__root.mli
+- config.status: creating stdcompat__root.ml
+- config.status: creating stdcompat__tools.mli
+- config.status: creating stdcompat__tools.ml
+- config.status: creating stdcompat__native.ml_byte
+- config.status: creating stdcompat__native.ml_native
+- config.status: creating stdcompat_tests.ml
+- config.status: creating stdcompat__pervasives_s.mli
+- config.status: creating stdcompat__arg_s.mli
+- config.status: creating stdcompat__array_s.mli
+- config.status: creating stdcompat__arrayLabels_s.mli
+- config.status: creating stdcompat__bool_s.mli
+- config.status: creating stdcompat__buffer_s.mli
+- config.status: creating stdcompat__bytes_s.mli
+- config.status: creating stdcompat__bytesLabels_s.mli
+- config.status: creating stdcompat__char_s.mli
+- config.status: creating stdcompat__digest_s.mli
+- config.status: creating stdcompat__ephemeron_s.mli
+- config.status: creating stdcompat__filename_s.mli
+- config.status: creating stdcompat__float_s.mli
+- config.status: creating stdcompat__format_s.mli
+- config.status: creating stdcompat__fun_s.mli
+- config.status: creating stdcompat__hashtbl_s.mli
+- config.status: creating stdcompat__int_s.mli
+- config.status: creating stdcompat__int32_s.mli
+- config.status: creating stdcompat__int64_s.mli
+- config.status: creating stdcompat__lazy_s.mli
+- config.status: creating stdcompat__lexing_s.mli
+- config.status: creating stdcompat__list_s.mli
+- config.status: creating stdcompat__listLabels_s.mli
+- config.status: creating stdcompat__map_s.mli
+- config.status: creating stdcompat__moreLabels_s.mli
+- config.status: creating stdcompat__nativeint_s.mli
+- config.status: creating stdcompat__option_s.mli
+- config.status: creating stdcompat__printf_s.mli
+- config.status: creating stdcompat__queue_s.mli
+- config.status: creating stdcompat__result_s.mli
+- config.status: creating stdcompat__seq_s.mli
+- config.status: creating stdcompat__set_s.mli
+- config.status: creating stdcompat__spacetime_s.mli
+- config.status: creating stdcompat__stack_s.mli
+- config.status: creating stdcompat__stream_s.mli
+- config.status: creating stdcompat__string_s.mli
+- config.status: creating stdcompat__stringLabels_s.mli
+- config.status: creating stdcompat__sys_s.mli
+- config.status: creating stdcompat__uchar_s.mli
+- config.status: creating stdcompat__weak_s.mli
+- config.status: creating stdcompat__stdlib_s.mli
+- config.status: creating stdcompat__pervasives_s.ml
+- config.status: creating stdcompat__arg_s.ml
+- config.status: creating stdcompat__array_s.ml
+- config.status: creating stdcompat__arrayLabels_s.ml
+- config.status: creating stdcompat__bool_s.ml
+- config.status: creating stdcompat__buffer_s.ml
+- config.status: creating stdcompat__bytes_s.ml
+- config.status: creating stdcompat__bytesLabels_s.ml
+- config.status: creating stdcompat__char_s.ml
+- config.status: creating stdcompat__digest_s.ml
+- config.status: creating stdcompat__ephemeron_s.ml
+- config.status: creating stdcompat__filename_s.ml
+- config.status: creating stdcompat__float_s.ml
+- config.status: creating stdcompat__format_s.ml
+- config.status: creating stdcompat__fun_s.ml
+- config.status: creating stdcompat__hashtbl_s.ml
+- config.status: creating stdcompat__int_s.ml
+- config.status: creating stdcompat__int32_s.ml
+- config.status: creating stdcompat__int64_s.ml
+- config.status: creating stdcompat__lazy_s.ml
+- config.status: creating stdcompat__lexing_s.ml
+- config.status: creating stdcompat__list_s.ml
+- config.status: creating stdcompat__listLabels_s.ml
+- config.status: creating stdcompat__map_s.ml
+- config.status: creating stdcompat__moreLabels_s.ml
+- config.status: creating stdcompat__nativeint_s.ml
+- config.status: creating stdcompat__option_s.ml
+- config.status: creating stdcompat__printf_s.ml
+- config.status: creating stdcompat__queue_s.ml
+- config.status: creating stdcompat__result_s.ml
+- config.status: creating stdcompat__seq_s.ml
+- config.status: creating stdcompat__set_s.ml
+- config.status: creating stdcompat__spacetime_s.ml
+- config.status: creating stdcompat__stack_s.ml
+- config.status: creating stdcompat__stdlib_s.ml
+- config.status: creating stdcompat__stream_s.ml
+- config.status: creating stdcompat__string_s.ml
+- config.status: creating stdcompat__stringLabels_s.ml
+- config.status: creating stdcompat__sys_s.ml
+- config.status: creating stdcompat__uchar_s.ml
+- config.status: creating stdcompat__weak_s.ml
+- config.status: creating stdcompat__pervasives.ml
+- config.status: creating stdcompat__arg.ml
+- config.status: creating stdcompat__array.ml
+- config.status: creating stdcompat__arrayLabels.ml
+- config.status: creating stdcompat__bool.ml
+- config.status: creating stdcompat__buffer.ml
+- config.status: creating stdcompat__bytes.ml
+- config.status: creating stdcompat__bytesLabels.ml
+- config.status: creating stdcompat__char.ml
+- config.status: creating stdcompat__digest.ml
+- config.status: creating stdcompat__ephemeron.ml
+- config.status: creating stdcompat__filename.ml
+- config.status: creating stdcompat__float.ml
+- config.status: creating stdcompat__format.ml
+- config.status: creating stdcompat__fun.ml
+- config.status: creating stdcompat__hashtbl.ml
+- config.status: creating stdcompat__int.ml
+- config.status: creating stdcompat__int32.ml
+- config.status: creating stdcompat__int64.ml
+- config.status: creating stdcompat__lazy.ml
+- config.status: creating stdcompat__lexing.ml
+- config.status: creating stdcompat__list.ml
+- config.status: creating stdcompat__listLabels.ml
+- config.status: creating stdcompat__map.ml
+- config.status: creating stdcompat__moreLabels.ml
+- config.status: creating stdcompat__nativeint.ml
+- config.status: creating stdcompat__option.ml
+- config.status: creating stdcompat__printf.ml
+- config.status: creating stdcompat__queue.ml
+- config.status: creating stdcompat__result.ml
+- config.status: creating stdcompat__seq.ml
+- config.status: creating stdcompat__set.ml
+- config.status: creating stdcompat__spacetime.ml
+- config.status: creating stdcompat__stack.ml
+- config.status: creating stdcompat__stdlib.ml
+- config.status: creating stdcompat__stream.ml
+- config.status: creating stdcompat__string.ml
+- config.status: creating stdcompat__stringLabels.ml
+- config.status: creating stdcompat__sys.ml
+- config.status: creating stdcompat__uchar.ml
+- config.status: creating stdcompat__weak.ml
+- config.status: creating stdcompat__pervasives.mli
+- config.status: creating stdcompat__arg.mli
+- config.status: creating stdcompat__array.mli
+- config.status: creating stdcompat__arrayLabels.mli
+- config.status: creating stdcompat__bool.mli
+- config.status: creating stdcompat__buffer.mli
+- config.status: creating stdcompat__bytes.mli
+- config.status: creating stdcompat__bytesLabels.mli
+- config.status: creating stdcompat__char.mli
+- config.status: creating stdcompat__digest.mli
+- config.status: creating stdcompat__ephemeron.mli
+- config.status: creating stdcompat__filename.mli
+- config.status: creating stdcompat__float.mli
+- config.status: creating stdcompat__format.mli
+- config.status: creating stdcompat__fun.mli
+- config.status: creating stdcompat__hashtbl.mli
+- config.status: creating stdcompat__int.mli
+- config.status: creating stdcompat__int32.mli
+- config.status: creating stdcompat__int64.mli
+- config.status: creating stdcompat__lazy.mli
+- config.status: creating stdcompat__lexing.mli
+- config.status: creating stdcompat__list.mli
+- config.status: creating stdcompat__listLabels.mli
+- config.status: creating stdcompat__map.mli
+- config.status: creating stdcompat__moreLabels.mli
+- config.status: creating stdcompat__nativeint.mli
+- config.status: creating stdcompat__option.mli
+- config.status: creating stdcompat__printf.mli
+- config.status: creating stdcompat__queue.mli
+- config.status: creating stdcompat__result.mli
+- config.status: creating stdcompat__seq.mli
+- config.status: creating stdcompat__set.mli
+- config.status: creating stdcompat__spacetime.mli
+- config.status: creating stdcompat__stack.mli
+- config.status: creating stdcompat__stdlib.mli
+- config.status: creating stdcompat__stream.mli
+- config.status: creating stdcompat__string.mli
+- config.status: creating stdcompat__stringLabels.mli
+- config.status: creating stdcompat__sys.mli
+- config.status: creating stdcompat__uchar.mli
+- config.status: creating stdcompat__weak.mli
+- config.status: creating stdcompat.mli
+- config.status: creating stdcompat.ml
+- config.status: executing depfiles commands
+- configure: OCaml version is 4.08.0+rc1
+- configure: Obj.magic will be used in redefinition when possible
+-     (add --disable-magic for pure redefinitions).
+Processing  1/2: [stdcompat: make]
++ /usr/bin/make  (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/stdcompat.7)
+- Makefile:490: .depend: No such file or directory
+- Makefile:1406: .depend: No such file or directory
+- cp stdcompat__native.ml_byte stdcompat__native.ml
+- ocamlfind ocamldep stdcompat__native.ml stdcompat__init.ml stdcompat__root.ml stdcompat__seq.ml stdcompat__tools.ml stdcompat__pervasives_s.ml stdcompat__arg_s.ml stdcompat__lazy_s.ml stdcompat__char_s.ml stdcompat__uchar_s.ml stdcompat__buffer_s.ml stdcompat__string_s.ml stdcompat__stringLabels_s.ml stdcompat__bytes_s.ml stdcompat__bytesLabels_s.ml stdcompat__list_s.ml stdcompat__listLabels_s.ml stdcompat__stack_s.ml stdcompat__hashtbl_s.ml stdcompat__set_s.ml stdcompat__map_s.ml stdcompat__weak_s.ml stdcompat__sys_s.ml stdcompat__stream_s.ml stdcompat__digest_s.ml stdcompat__nativeint_s.ml stdcompat__int_s.ml stdcompat__int64_s.ml stdcompat__int32_s.ml stdcompat__filename_s.ml stdcompat__array_s.ml stdcompat__arrayLabels_s.ml stdcompat__float_s.ml stdcompat__queue_s.ml stdcompat__ephemeron_s.ml stdcompat__spacetime_s.ml stdcompat__moreLabels_s.ml stdcompat__lexing_s.ml stdcompat__option_s.ml stdcompat__result_s.ml stdcompat__bool_s.ml stdcompat__fun_s.ml stdcompat__stdlib_s.ml stdcompat__printf_s.ml stdcompat__pervasives.ml stdcompat__arg.ml stdcompat__lazy.ml stdcompat__char.ml stdcompat__uchar.ml stdcompat__sys.ml stdcompat__buffer.ml stdcompat__string.ml stdcompat__stringLabels.ml stdcompat__bytes.ml stdcompat__bytesLabels.ml stdcompat__list.ml stdcompat__listLabels.ml stdcompat__stack.ml stdcompat__hashtbl_ext.ml stdcompat__hashtbl.ml stdcompat__set.ml stdcompat__map.ml stdcompat__weak.ml stdcompat__stream.ml stdcompat__digest.ml stdcompat__nativeint.ml stdcompat__int.ml stdcompat__int64.ml stdcompat__int32.ml stdcompat__filename.ml stdcompat__array.ml stdcompat__arrayLabels.ml stdcompat__float.ml stdcompat__queue.ml stdcompat__ephemeron.ml stdcompat__spacetime.ml stdcompat__moreLabels.ml stdcompat__lexing.ml stdcompat__option.ml stdcompat__result.ml stdcompat__bool.ml stdcompat__fun.ml stdcompat__format.ml stdcompat__printf.ml stdcompat__stdlib.ml stdcompat__init.mli stdcompat__root.mli stdcompat__seq.mli stdcompat__tools.mli stdcompat__pervasives_s.mli stdcompat__arg_s.mli stdcompat__lazy_s.mli stdcompat__char_s.mli stdcompat__uchar_s.mli stdcompat__buffer_s.mli stdcompat__string_s.mli stdcompat__stringLabels_s.mli stdcompat__bytes_s.mli stdcompat__bytesLabels_s.mli stdcompat__list_s.mli stdcompat__listLabels_s.mli stdcompat__stack_s.mli stdcompat__hashtbl_s.mli stdcompat__set_s.mli stdcompat__map_s.mli stdcompat__weak_s.mli stdcompat__sys_s.mli stdcompat__stream_s.mli stdcompat__digest_s.mli stdcompat__nativeint_s.mli stdcompat__int_s.mli stdcompat__int64_s.mli stdcompat__int32_s.mli stdcompat__filename_s.mli stdcompat__array_s.mli stdcompat__arrayLabels_s.mli stdcompat__float_s.mli stdcompat__queue_s.mli stdcompat__ephemeron_s.mli stdcompat__spacetime_s.mli stdcompat__moreLabels_s.mli stdcompat__lexing_s.mli stdcompat__option_s.mli stdcompat__result_s.mli stdcompat__bool_s.mli stdcompat__fun_s.mli stdcompat__stdlib_s.mli stdcompat__printf_s.mli stdcompat__pervasives.mli stdcompat__arg.mli stdcompat__lazy.mli stdcompat__char.mli stdcompat__uchar.mli stdcompat__sys.mli stdcompat__buffer.mli stdcompat__string.mli stdcompat__stringLabels.mli stdcompat__bytes.mli stdcompat__bytesLabels.mli stdcompat__list.mli stdcompat__listLabels.mli stdcompat__stack.mli stdcompat__hashtbl_ext.mli stdcompat__hashtbl.mli stdcompat__set.mli stdcompat__map.mli stdcompat__weak.mli stdcompat__stream.mli stdcompat__digest.mli stdcompat__nativeint.mli stdcompat__int.mli stdcompat__int64.mli stdcompat__int32.mli stdcompat__filename.mli stdcompat__array.mli stdcompat__arrayLabels.mli stdcompat__float.mli stdcompat__queue.mli stdcompat__ephemeron.mli stdcompat__spacetime.mli stdcompat__moreLabels.mli stdcompat__lexing.mli stdcompat__option.mli stdcompat__result.mli stdcompat__bool.mli stdcompat__fun.mli stdcompat__format.mli stdcompat__printf.mli stdcompat__stdlib.mli stdcompat.ml stdcompat.mli stdcompat__native.ml_byte >.depend || rm -f .depend
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__stdlib_s.mli -o stdcompat__stdlib_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__init.mli -o stdcompat__init.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat.mli -o stdcompat.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__native.mli -o stdcompat__native.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__root.mli -o stdcompat__root.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__seq_s.mli -o stdcompat__seq_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__seq.mli -o stdcompat__seq.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__tools.mli -o stdcompat__tools.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__pervasives_s.mli -o stdcompat__pervasives_s.cmi
+- File "stdcompat__pervasives_s.mli", line 4, characters 17-35:
+- 4 |   type fpclass = Pervasives.fpclass =
+-                      ^^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- File "stdcompat__pervasives_s.mli", line 15, characters 19-39:
+- 15 |   type open_flag = Pervasives.open_flag =
+-                         ^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- File "stdcompat__pervasives_s.mli", line 27, characters 21-41:
+- 27 |   module LargeFile = Pervasives.LargeFile
+-                           ^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- File "stdcompat__pervasives_s.mli", line 40, characters 19-33:
+- 40 |   type 'a ref = 'a Pervasives.ref = {
+-                         ^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- File "stdcompat__pervasives_s.mli", line 45, characters 13-30:
+- 45 |     ('a, 'b) Pervasives.result =
+-                   ^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__arg_s.mli -o stdcompat__arg_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__lazy_s.mli -o stdcompat__lazy_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__char_s.mli -o stdcompat__char_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__uchar_s.mli -o stdcompat__uchar_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__buffer_s.mli -o stdcompat__buffer_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__string_s.mli -o stdcompat__string_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__stringLabels_s.mli -o stdcompat__stringLabels_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__bytes_s.mli -o stdcompat__bytes_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__bytesLabels_s.mli -o stdcompat__bytesLabels_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__list_s.mli -o stdcompat__list_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__listLabels_s.mli -o stdcompat__listLabels_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__stack_s.mli -o stdcompat__stack_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__hashtbl_s.mli -o stdcompat__hashtbl_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__set_s.mli -o stdcompat__set_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__map_s.mli -o stdcompat__map_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__weak_s.mli -o stdcompat__weak_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__sys_s.mli -o stdcompat__sys_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__stream_s.mli -o stdcompat__stream_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__digest_s.mli -o stdcompat__digest_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__nativeint_s.mli -o stdcompat__nativeint_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__int_s.mli -o stdcompat__int_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__int64_s.mli -o stdcompat__int64_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__int32_s.mli -o stdcompat__int32_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__filename_s.mli -o stdcompat__filename_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__array_s.mli -o stdcompat__array_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__arrayLabels_s.mli -o stdcompat__arrayLabels_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__float_s.mli -o stdcompat__float_s.cmi
+- File "stdcompat__float_s.mli", line 3, characters 15-33:
+- 3 | type fpclass = Pervasives.fpclass =
+-                    ^^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__queue_s.mli -o stdcompat__queue_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__ephemeron_s.mli -o stdcompat__ephemeron_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__spacetime_s.mli -o stdcompat__spacetime_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__moreLabels_s.mli -o stdcompat__moreLabels_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__lexing_s.mli -o stdcompat__lexing_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__option_s.mli -o stdcompat__option_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__result_s.mli -o stdcompat__result_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__bool_s.mli -o stdcompat__bool_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__fun_s.mli -o stdcompat__fun_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__printf_s.mli -o stdcompat__printf_s.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__pervasives.mli -o stdcompat__pervasives.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__arg.mli -o stdcompat__arg.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__lazy.mli -o stdcompat__lazy.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__char.mli -o stdcompat__char.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__uchar.mli -o stdcompat__uchar.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__sys.mli -o stdcompat__sys.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__buffer.mli -o stdcompat__buffer.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__string.mli -o stdcompat__string.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__stringLabels.mli -o stdcompat__stringLabels.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__bytes.mli -o stdcompat__bytes.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__bytesLabels.mli -o stdcompat__bytesLabels.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__list.mli -o stdcompat__list.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__listLabels.mli -o stdcompat__listLabels.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__stack.mli -o stdcompat__stack.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__hashtbl_ext.mli -o stdcompat__hashtbl_ext.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__hashtbl.mli -o stdcompat__hashtbl.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__set.mli -o stdcompat__set.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__map.mli -o stdcompat__map.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__weak.mli -o stdcompat__weak.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__stream.mli -o stdcompat__stream.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__digest.mli -o stdcompat__digest.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__nativeint.mli -o stdcompat__nativeint.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__int.mli -o stdcompat__int.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__int64.mli -o stdcompat__int64.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__int32.mli -o stdcompat__int32.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__filename.mli -o stdcompat__filename.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__array.mli -o stdcompat__array.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__arrayLabels.mli -o stdcompat__arrayLabels.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__float.mli -o stdcompat__float.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__queue.mli -o stdcompat__queue.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__ephemeron.mli -o stdcompat__ephemeron.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__spacetime.mli -o stdcompat__spacetime.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__moreLabels.mli -o stdcompat__moreLabels.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__lexing.mli -o stdcompat__lexing.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__option.mli -o stdcompat__option.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__result.mli -o stdcompat__result.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__bool.mli -o stdcompat__bool.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__fun.mli -o stdcompat__fun.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__format_s.mli -o stdcompat__format_s.cmi
+- File "stdcompat__format_s.mli", line 46, characters 31-61:
+- 46 | type formatter_tag_functions = Format.formatter_tag_functions =
+-                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: Stdlib.Format.formatter_tag_functions
+- Use formatter_stag_functions.
+- File "stdcompat__format_s.mli", line 46, characters 0-199:
+- 46 | type formatter_tag_functions = Format.formatter_tag_functions =
+- 47 |   {
+- 48 |   mark_open_tag: tag -> string ;
+- 49 |   mark_close_tag: tag -> string ;
+- 50 |   print_open_tag: tag -> unit ;
+- 51 |   print_close_tag: tag -> unit }
+- Alert deprecated: formatter_tag_functions
+- Use formatter_stag_functions.
+- File "format.mli", line 1339, characters 0-219:
+-   Definition
+- File "stdcompat__format_s.mli", line 46, characters 0-199:
+- 46 | type formatter_tag_functions = Format.formatter_tag_functions =
+- 47 |   {
+- 48 |   mark_open_tag: tag -> string ;
+- 49 |   mark_close_tag: tag -> string ;
+- 50 |   print_open_tag: tag -> unit ;
+- 51 |   print_close_tag: tag -> unit }
+-   Expected signature
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__format.mli -o stdcompat__format.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__printf.mli -o stdcompat__printf.cmi
+- ocamlfind ocamlopt -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__stdlib.mli -o stdcompat__stdlib.cmi
+- ocamlfind ocamlc -package result -package seq -package uchar -no-alias-deps -I . -c -impl stdcompat__native.ml_byte
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__init.ml -o stdcompat__init.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__root.ml -o stdcompat__root.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__seq.ml -o stdcompat__seq.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__tools.ml -o stdcompat__tools.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__pervasives_s.ml -o stdcompat__pervasives_s.cmo
+- File "stdcompat__pervasives_s.ml", line 4, characters 17-35:
+- 4 |   type fpclass = Pervasives.fpclass =
+-                      ^^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- File "stdcompat__pervasives_s.ml", line 15, characters 19-39:
+- 15 |   type open_flag = Pervasives.open_flag =
+-                         ^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- File "stdcompat__pervasives_s.ml", line 27, characters 21-41:
+- 27 |   module LargeFile = Pervasives.LargeFile
+-                           ^^^^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- File "stdcompat__pervasives_s.ml", line 40, characters 19-33:
+- 40 |   type 'a ref = 'a Pervasives.ref = {
+-                         ^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- File "stdcompat__pervasives_s.ml", line 45, characters 13-30:
+- 45 |     ('a, 'b) Pervasives.result =
+-                   ^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__arg_s.ml -o stdcompat__arg_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__lazy_s.ml -o stdcompat__lazy_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__char_s.ml -o stdcompat__char_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__uchar_s.ml -o stdcompat__uchar_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__buffer_s.ml -o stdcompat__buffer_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__string_s.ml -o stdcompat__string_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__stringLabels_s.ml -o stdcompat__stringLabels_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__bytes_s.ml -o stdcompat__bytes_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__bytesLabels_s.ml -o stdcompat__bytesLabels_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__list_s.ml -o stdcompat__list_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__listLabels_s.ml -o stdcompat__listLabels_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__stack_s.ml -o stdcompat__stack_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__hashtbl_s.ml -o stdcompat__hashtbl_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__set_s.ml -o stdcompat__set_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__map_s.ml -o stdcompat__map_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__weak_s.ml -o stdcompat__weak_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__sys_s.ml -o stdcompat__sys_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__stream_s.ml -o stdcompat__stream_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__digest_s.ml -o stdcompat__digest_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__nativeint_s.ml -o stdcompat__nativeint_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__int_s.ml -o stdcompat__int_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__int64_s.ml -o stdcompat__int64_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__int32_s.ml -o stdcompat__int32_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__filename_s.ml -o stdcompat__filename_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__array_s.ml -o stdcompat__array_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__arrayLabels_s.ml -o stdcompat__arrayLabels_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__float_s.ml -o stdcompat__float_s.cmo
+- File "stdcompat__float_s.ml", line 3, characters 15-33:
+- 3 | type fpclass = Pervasives.fpclass =
+-                    ^^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__queue_s.ml -o stdcompat__queue_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__ephemeron_s.ml -o stdcompat__ephemeron_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__spacetime_s.ml -o stdcompat__spacetime_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__moreLabels_s.ml -o stdcompat__moreLabels_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__lexing_s.ml -o stdcompat__lexing_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__option_s.ml -o stdcompat__option_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__result_s.ml -o stdcompat__result_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__bool_s.ml -o stdcompat__bool_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__fun_s.ml -o stdcompat__fun_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__stdlib_s.ml -o stdcompat__stdlib_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__printf_s.ml -o stdcompat__printf_s.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__pervasives.ml -o stdcompat__pervasives.cmo
+- File "stdcompat__pervasives.ml", line 1, characters 8-18:
+- 1 | include Pervasives
+-             ^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__arg.ml -o stdcompat__arg.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__lazy.ml -o stdcompat__lazy.cmo
+- File "stdcompat__lazy.ml", line 1:
+- Alert deprecated: lazy_from_fun
+- Use Lazy.from_fun instead.
+- File "lazy.mli", line 100, characters 0-92:
+-   Definition
+- File "stdcompat__lazy_s.mli", line 31, characters 0-40:
+-   Expected signature
+- File "stdcompat__lazy.ml", line 1:
+- Alert deprecated: lazy_from_val
+- Use Lazy.from_val instead.
+- File "lazy.mli", line 104, characters 0-82:
+-   Definition
+- File "stdcompat__lazy_s.mli", line 51, characters 0-30:
+-   Expected signature
+- File "stdcompat__lazy.ml", line 1:
+- Alert deprecated: lazy_is_val
+- Use Lazy.is_val instead.
+- File "lazy.mli", line 108, characters 0-80:
+-   Definition
+- File "stdcompat__lazy_s.mli", line 71, characters 0-30:
+-   Expected signature
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__char.ml -o stdcompat__char.cmo
+- File "stdcompat__char.ml", line 1:
+- Alert deprecated: lowercase
+- Use Char.lowercase_ascii instead.
+- File "char.mli", line 33, characters 0-87:
+-   Definition
+- File "stdcompat__char_s.mli", line 24, characters 0-28:
+-   Expected signature
+- File "stdcompat__char.ml", line 1:
+- Alert deprecated: uppercase
+- Use Char.uppercase_ascii instead.
+- File "char.mli", line 39, characters 0-87:
+-   Definition
+- File "stdcompat__char_s.mli", line 44, characters 0-28:
+-   Expected signature
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__uchar.ml -o stdcompat__uchar.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__sys.ml -o stdcompat__sys.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__buffer.ml -o stdcompat__buffer.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__string.ml -o stdcompat__string.cmo
+- File "stdcompat__string.ml", line 1:
+- Alert deprecated: set
+- Use Bytes.set instead.
+- File "string.mli", line 59, characters 0-112:
+-   Definition
+- File "stdcompat__string_s.mli", line 63, characters 0-64:
+-   Expected signature
+- File "stdcompat__string.ml", line 1:
+- Alert deprecated: create
+- Use Bytes.create instead.
+- File "string.mli", line 69, characters 0-104:
+-   Definition
+- File "stdcompat__string_s.mli", line 84, characters 0-53:
+-   Expected signature
+- File "stdcompat__string.ml", line 1:
+- Alert deprecated: fill
+- Use Bytes.fill instead.
+- File "string.mli", line 108, characters 0-95:
+-   Definition
+- File "stdcompat__string_s.mli", line 112, characters 0-46:
+-   Expected signature
+- File "stdcompat__string.ml", line 1:
+- Alert deprecated: unsafe_set
+- File "string.mli", line 354, characters 0-96:
+-   Definition
+- File "stdcompat__string_s.mli", line 143, characters 0-73:
+-   Expected signature
+- File "stdcompat__string.ml", line 1:
+- Alert deprecated: unsafe_fill
+- File "string.mli", line 359, characters 0-116:
+-   Definition
+- File "stdcompat__string_s.mli", line 198, characters 0-93:
+-   Expected signature
+- File "stdcompat__string.ml", line 1:
+- Alert deprecated: copy
+- File "string.mli", line 94, characters 0-48:
+-   Definition
+- File "stdcompat__string_s.mli", line 264, characters 0-27:
+-   Expected signature
+- File "stdcompat__string.ml", line 1:
+- Alert deprecated: uppercase
+- Use String.uppercase_ascii instead.
+- File "string.mli", line 260, characters 0-93:
+-   Definition
+- File "stdcompat__string_s.mli", line 317, characters 0-32:
+-   Expected signature
+- File "stdcompat__string.ml", line 1:
+- Alert deprecated: lowercase
+- Use String.lowercase_ascii instead.
+- File "string.mli", line 267, characters 0-93:
+-   Definition
+- File "stdcompat__string_s.mli", line 337, characters 0-32:
+-   Expected signature
+- File "stdcompat__string.ml", line 1:
+- Alert deprecated: capitalize
+- Use String.capitalize_ascii instead.
+- File "string.mli", line 274, characters 0-95:
+-   Definition
+- File "stdcompat__string_s.mli", line 357, characters 0-33:
+-   Expected signature
+- File "stdcompat__string.ml", line 1:
+- Alert deprecated: uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "string.mli", line 280, characters 0-99:
+-   Definition
+- File "stdcompat__string_s.mli", line 377, characters 0-35:
+-   Expected signature
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__stringLabels.ml -o stdcompat__stringLabels.cmo
+- File "stdcompat__stringLabels.ml", line 1:
+- Alert deprecated: set
+- Use BytesLabels.set instead.
+- File "stringLabels.mli", line 27, characters 0-118:
+-   Definition
+- File "stdcompat__stringLabels_s.mli", line 69, characters 0-64:
+-   Expected signature
+- File "stdcompat__stringLabels.ml", line 1:
+- Alert deprecated: create
+- Use BytesLabels.create instead.
+- File "stringLabels.mli", line 37, characters 0-110:
+-   Definition
+- File "stdcompat__stringLabels_s.mli", line 90, characters 0-53:
+-   Expected signature
+- File "stdcompat__stringLabels.ml", line 1:
+- Alert deprecated: fill
+- Use BytesLabels.fill instead.
+- File "stringLabels.mli", line 70, characters 0-109:
+-   Definition
+- File "stdcompat__stringLabels_s.mli", line 118, characters 0-54:
+-   Expected signature
+- File "stdcompat__stringLabels.ml", line 1:
+- Alert deprecated: unsafe_set
+- File "stringLabels.mli", line 311, characters 0-96:
+-   Definition
+- File "stdcompat__stringLabels_s.mli", line 156, characters 0-73:
+-   Expected signature
+- File "stdcompat__stringLabels.ml", line 1:
+- Alert deprecated: unsafe_fill
+- File "stringLabels.mli", line 316, characters 0-124:
+-   Definition
+- File "stdcompat__stringLabels_s.mli", line 218, characters 0-169:
+-   Expected signature
+- File "stdcompat__stringLabels.ml", line 1:
+- Alert deprecated: copy
+- File "stringLabels.mli", line 59, characters 0-49:
+-   Definition
+- File "stdcompat__stringLabels_s.mli", line 291, characters 0-27:
+-   Expected signature
+- File "stdcompat__stringLabels.ml", line 1:
+- Alert deprecated: uppercase
+- Use String.uppercase_ascii instead.
+- File "stringLabels.mli", line 217, characters 0-93:
+-   Definition
+- File "stdcompat__stringLabels_s.mli", line 344, characters 0-32:
+-   Expected signature
+- File "stdcompat__stringLabels.ml", line 1:
+- Alert deprecated: lowercase
+- Use String.lowercase_ascii instead.
+- File "stringLabels.mli", line 224, characters 0-93:
+-   Definition
+- File "stdcompat__stringLabels_s.mli", line 364, characters 0-32:
+-   Expected signature
+- File "stdcompat__stringLabels.ml", line 1:
+- Alert deprecated: capitalize
+- Use String.capitalize_ascii instead.
+- File "stringLabels.mli", line 231, characters 0-95:
+-   Definition
+- File "stdcompat__stringLabels_s.mli", line 384, characters 0-33:
+-   Expected signature
+- File "stdcompat__stringLabels.ml", line 1:
+- Alert deprecated: uncapitalize
+- Use String.uncapitalize_ascii instead.
+- File "stringLabels.mli", line 237, characters 0-99:
+-   Definition
+- File "stdcompat__stringLabels_s.mli", line 404, characters 0-35:
+-   Expected signature
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__bytes.ml -o stdcompat__bytes.cmo
+- File "stdcompat__bytes.ml", line 1:
+- Alert deprecated: uppercase
+- Use Bytes.uppercase_ascii instead.
+- File "bytes.mli", line 263, characters 0-90:
+-   Definition
+- File "stdcompat__bytes_s.mli", line 682, characters 0-30:
+-   Expected signature
+- File "stdcompat__bytes.ml", line 1:
+- Alert deprecated: lowercase
+- Use Bytes.lowercase_ascii instead.
+- File "bytes.mli", line 270, characters 0-90:
+-   Definition
+- File "stdcompat__bytes_s.mli", line 708, characters 0-30:
+-   Expected signature
+- File "stdcompat__bytes.ml", line 1:
+- Alert deprecated: capitalize
+- Use Bytes.capitalize_ascii instead.
+- File "bytes.mli", line 277, characters 0-92:
+-   Definition
+- File "stdcompat__bytes_s.mli", line 734, characters 0-31:
+-   Expected signature
+- File "stdcompat__bytes.ml", line 1:
+- Alert deprecated: uncapitalize
+- Use Bytes.uncapitalize_ascii instead.
+- File "bytes.mli", line 283, characters 0-96:
+-   Definition
+- File "stdcompat__bytes_s.mli", line 760, characters 0-33:
+-   Expected signature
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__bytesLabels.ml -o stdcompat__bytesLabels.cmo
+- File "stdcompat__bytesLabels.ml", line 1:
+- Alert deprecated: uppercase
+- Use Bytes.uppercase_ascii instead.
+- File "bytesLabels.mli", line 237, characters 0-90:
+-   Definition
+- File "stdcompat__bytesLabels_s.mli", line 694, characters 0-30:
+-   Expected signature
+- File "stdcompat__bytesLabels.ml", line 1:
+- Alert deprecated: lowercase
+- Use Bytes.lowercase_ascii instead.
+- File "bytesLabels.mli", line 244, characters 0-90:
+-   Definition
+- File "stdcompat__bytesLabels_s.mli", line 720, characters 0-30:
+-   Expected signature
+- File "stdcompat__bytesLabels.ml", line 1:
+- Alert deprecated: capitalize
+- Use Bytes.capitalize_ascii instead.
+- File "bytesLabels.mli", line 251, characters 0-92:
+-   Definition
+- File "stdcompat__bytesLabels_s.mli", line 746, characters 0-31:
+-   Expected signature
+- File "stdcompat__bytesLabels.ml", line 1:
+- Alert deprecated: uncapitalize
+- Use Bytes.uncapitalize_ascii instead.
+- File "bytesLabels.mli", line 257, characters 0-96:
+-   Definition
+- File "stdcompat__bytesLabels_s.mli", line 772, characters 0-33:
+-   Expected signature
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__list.ml -o stdcompat__list.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__listLabels.ml -o stdcompat__listLabels.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__stack.ml -o stdcompat__stack.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__hashtbl_ext.ml -o stdcompat__hashtbl_ext.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__hashtbl.ml -o stdcompat__hashtbl.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__set.ml -o stdcompat__set.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__map.ml -o stdcompat__map.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__weak.ml -o stdcompat__weak.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__stream.ml -o stdcompat__stream.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__digest.ml -o stdcompat__digest.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__nativeint.ml -o stdcompat__nativeint.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__int.ml -o stdcompat__int.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__int64.ml -o stdcompat__int64.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__int32.ml -o stdcompat__int32.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__filename.ml -o stdcompat__filename.cmo
+- File "stdcompat__filename.ml", line 1:
+- Alert deprecated: temp_dir_name
+- Use Filename.get_temp_dir_name instead
+- File "filename.mli", line 171, characters 0-90:
+-   Definition
+- File "stdcompat__filename_s.mli", line 36, characters 0-26:
+-   Expected signature
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__array.ml -o stdcompat__array.cmo
+- File "stdcompat__array.ml", line 1:
+- Alert deprecated: make_float
+- Use Array.create_float instead.
+- File "array.mli", line 63, characters 0-91:
+-   Definition
+- File "stdcompat__array_s.mli", line 86, characters 0-35:
+-   Expected signature
+- File "stdcompat__array.ml", line 1:
+- Alert deprecated: create
+- Use Array.make instead.
+- File "array.mli", line 54, characters 0-107:
+-   Definition
+- File "stdcompat__array_s.mli", line 132, characters 0-58:
+-   Expected signature
+- File "stdcompat__array.ml", line 1:
+- Alert deprecated: create_matrix
+- Use Array.make_matrix instead.
+- File "array.mli", line 90, characters 0-110:
+-   Definition
+- File "stdcompat__array_s.mli", line 165, characters 0-54:
+-   Expected signature
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__arrayLabels.ml -o stdcompat__arrayLabels.cmo
+- File "stdcompat__arrayLabels.ml", line 1:
+- Alert deprecated: make_float
+- Use Array.create_float instead.
+- File "arrayLabels.mli", line 211, characters 0-91:
+-   Definition
+- File "stdcompat__arrayLabels_s.mli", line 86, characters 0-35:
+-   Expected signature
+- File "stdcompat__arrayLabels.ml", line 1:
+- Alert deprecated: create
+- Use Array.make instead.
+- File "arrayLabels.mli", line 54, characters 0-107:
+-   Definition
+- File "stdcompat__arrayLabels_s.mli", line 124, characters 0-58:
+-   Expected signature
+- File "stdcompat__arrayLabels.ml", line 1:
+- Alert deprecated: create_matrix
+- Use Array.make_matrix instead.
+- File "arrayLabels.mli", line 81, characters 0-120:
+-   Definition
+- File "stdcompat__arrayLabels_s.mli", line 157, characters 0-64:
+-   Expected signature
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__float.ml -o stdcompat__float.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__queue.ml -o stdcompat__queue.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__ephemeron.ml -o stdcompat__ephemeron.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__spacetime.ml -o stdcompat__spacetime.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__moreLabels.ml -o stdcompat__moreLabels.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__lexing.ml -o stdcompat__lexing.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__option.ml -o stdcompat__option.cmo
+- ocamlfind ocamlc -c -package result -package seq -package uchar -no-alias-deps -I . stdcompat__result.ml -o stdcompat__result.cmo
+- File "stdcompat__result.ml", line 1:
+- Error: The implementation stdcompat__result.ml
+-        does not match the interface stdcompat__result.cmi:
+-        The value `to_seq' is required but not provided
+-        File "stdcompat__result_s.mli", line 217, characters 0-40:
+-          Expected declaration
+-        The value `to_list' is required but not provided
+-        File "stdcompat__result_s.mli", line 208, characters 0-40:
+-          Expected declaration
+-        The value `to_option' is required but not provided
+-        File "stdcompat__result_s.mli", line 199, characters 0-44:
+-          Expected declaration
+-        The value `compare' is required but not provided
+-        File "stdcompat__result_s.mli", line 181, characters 0-112:
+-          Expected declaration
+-        The value `equal' is required but not provided
+-        File "stdcompat__result_s.mli", line 162, characters 0-113:
+-          Expected declaration
+-        The value `is_error' is required but not provided
+-        File "stdcompat__result_s.mli", line 153, characters 0-38:
+-          Expected declaration
+-        The value `is_ok' is required but not provided
+-        File "stdcompat__result_s.mli", line 144, characters 0-35:
+-          Expected declaration
+-        The value `iter_error' is required but not provided
+-        File "stdcompat__result_s.mli", line 134, characters 0-56:
+-          Expected declaration
+-        The value `iter' is required but not provided
+-        File "stdcompat__result_s.mli", line 125, characters 0-50:
+-          Expected declaration
+-        The value `fold' is required but not provided
+-        File "stdcompat__result_s.mli", line 113, characters 0-69:
+-          Expected declaration
+-        The value `map_error' is required but not provided
+-        File "stdcompat__result_s.mli", line 100, characters 0-64:
+-          Expected declaration
+-        The value `map' is required but not provided
+-        File "stdcompat__result_s.mli", line 88, characters 0-58:
+-          Expected declaration
+-        The value `join' is required but not provided
+-        File "stdcompat__result_s.mli", line 77, characters 0-58:
+-          Expected declaration
+-        The value `bind' is required but not provided
+-        File "stdcompat__result_s.mli", line 64, characters 0-72:
+-          Expected declaration
+-        The value `get_error' is required but not provided
+-        File "stdcompat__result_s.mli", line 55, characters 0-37:
+-          Expected declaration
+-        The value `get_ok' is required but not provided
+-        File "stdcompat__result_s.mli", line 46, characters 0-34:
+-          Expected declaration
+-        The value `value' is required but not provided
+-        File "stdcompat__result_s.mli", line 37, characters 0-47:
+-          Expected declaration
+-        The value `error' is required but not provided
+-        File "stdcompat__result_s.mli", line 28, characters 0-33:
+-          Expected declaration
+-        The value `ok' is required but not provided
+-        File "stdcompat__result_s.mli", line 19, characters 0-30:
+-          Expected declaration
+-        The type `t' is required but not provided
+-        File "stdcompat__result_s.mli", line 3, characters 0-65:
+-          Expected declaration
+- Makefile:1367: recipe for target 'stdcompat__result.cmo' failed
+- make: *** [stdcompat__result.cmo] Error 2
+[ERROR] The compilation of stdcompat failed at "/usr/bin/make".
+
+#=== ERROR while compiling stdcompat.7 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/stdcompat.7
+# command              /usr/bin/make
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/stdcompat-71097-d0f245.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/stdcompat-71097-d0f245.out
+### output ###
+# Error: The implementation stdcompat__result.ml
+# [...]
+#        The value `error' is required but not provided
+#        File "stdcompat__result_s.mli", line 28, characters 0-33:
+#          Expected declaration
+#        The value `ok' is required but not provided
+#        File "stdcompat__result_s.mli", line 19, characters 0-30:
+#          Expected declaration
+#        The type `t' is required but not provided
+#        File "stdcompat__result_s.mli", line 3, characters 0-65:
+#          Expected declaration
+# Makefile:1367: recipe for target 'stdcompat__result.cmo' failed
+# make: *** [stdcompat__result.cmo] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build stdcompat 7
++- 
+- No changes have been performed
+'opam install stdcompat.7' failed.

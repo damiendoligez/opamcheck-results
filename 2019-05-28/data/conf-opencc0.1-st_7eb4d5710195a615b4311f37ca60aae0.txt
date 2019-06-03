@@ -1,0 +1,40 @@
+The following actions will be performed:
+  - install conf-opencc0 1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [conf-opencc0: sh cc $CFLAGS test.c -l:libopencc.so.1]
++ /bin/sh "-exec" "cc $CFLAGS test.c -l:libopencc.so.1" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/conf-opencc0.1)
+- + cc test.c -l:libopencc.so.1
+- /usr/bin/x86_64-linux-gnu-ld: cannot find -l:libopencc.so.1
+- collect2: error: ld returned 1 exit status
+[ERROR] The compilation of conf-opencc0 failed at "/bin/sh -exec cc $CFLAGS test.c -l:libopencc.so.1".
+
+#=== ERROR while compiling conf-opencc0.1 =====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/conf-opencc0.1
+# command              /bin/sh -exec cc $CFLAGS test.c -l:libopencc.so.1
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/conf-opencc0-68401-5f1023.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/conf-opencc0-68401-5f1023.out
+### output ###
+# + cc test.c -l:libopencc.so.1
+# /usr/bin/x86_64-linux-gnu-ld: cannot find -l:libopencc.so.1
+# collect2: error: ld returned 1 exit status
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-opencc0 1
++- 
+- No changes have been performed
+
+<><> conf-opencc0.1 troubleshooting <><><><><><><><><><><><><><><><><><><><><><>
+=> If the libopencc0 library is not installed by the system package manager, make sure that the path of the directory containing libopencc.so.1 is included in env-var LD_LIBRARY_PATH(for ld) and LIBRARY_PATH(for cc)
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libopencc1
+
+'opam install conf-opencc0.1' failed.

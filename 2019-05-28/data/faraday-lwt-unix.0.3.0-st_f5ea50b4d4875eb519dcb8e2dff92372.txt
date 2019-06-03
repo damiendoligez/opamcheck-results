@@ -1,0 +1,42 @@
+The following actions will be performed:
+  - install faraday-lwt-unix 0.3.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [faraday-lwt-unix.0.3.0: http]
+[faraday-lwt-unix.0.3.0] downloaded from https://github.com/inhabitedtype/faraday/archive/0.3.0.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [faraday-lwt-unix: jbuilder build]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/jbuilder "build" "-p" "faraday-lwt-unix" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/faraday-lwt-unix.0.3.0)
+-       ocamlc lwt_unix/.faraday_lwt_unix.objs/faraday_lwt_unix.{cmi,cmti} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I lwt_unix/.faraday_lwt_unix.objs -I lwt_unix/.faraday_lwt_unix.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/faraday -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/faraday-lwt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/lwt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocplib-endian -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/result -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/seq -no-alias-deps -o lwt_unix/.faraday_lwt_unix.objs/faraday_lwt_unix.cmi -c -intf lwt_unix/faraday_lwt_unix.mli)
+- File "lwt_unix/faraday_lwt_unix.mli", line 7, characters 5-24:
+- 7 |   :  Lwt_unix.file_descr
+-          ^^^^^^^^^^^^^^^^^^^
+- Error: Unbound module Lwt_unix
+[ERROR] The compilation of faraday-lwt-unix failed at "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/jbuilder build -p faraday-lwt-unix -j 39".
+
+#=== ERROR while compiling faraday-lwt-unix.0.3.0 =============================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/faraday-lwt-unix.0.3.0
+# command              /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/jbuilder build -p faraday-lwt-unix -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/faraday-lwt-unix-20172-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/faraday-lwt-unix-20172-a00279.out
+### output ###
+#       ocamlc lwt_unix/.faraday_lwt_unix.objs/faraday_lwt_unix.{cmi,cmti} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I lwt_unix/.faraday_lwt_unix.objs -I lwt_unix/.faraday_lwt_unix.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/faraday -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.[...]
+# File "lwt_unix/faraday_lwt_unix.mli", line 7, characters 5-24:
+# 7 |   :  Lwt_unix.file_descr
+#          ^^^^^^^^^^^^^^^^^^^
+# Error: Unbound module Lwt_unix
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build faraday-lwt-unix 0.3.0
++- 
+- No changes have been performed
+'opam install faraday-lwt-unix.0.3.0' failed.

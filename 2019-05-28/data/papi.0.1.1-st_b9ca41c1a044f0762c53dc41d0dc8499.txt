@@ -1,0 +1,55 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install papi 0.1.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [papi.0.1.1: http]
+[papi.0.1.1] downloaded from https://github.com/pqwy/ocaml-papi/releases/download/v0.1.1/papi-v0.1.1.tbz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [papi: dune build]
++ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/dune "build" "-p" "papi" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/papi.0.1.1)
+-       ocamlc src/stubs.o (exit 2)
+- (cd _build/default/src && /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlc.opt -g -ccopt -Wall -ccopt -Wextra -ccopt -O3 -ccopt -Wno-implicit-fallthrough -o stubs.o native/stubs.c)
+- native/stubs.c:4:10: fatal error: papi.h: No such file or directory
+-  #include <papi.h>
+-           ^~~~~~~~
+- compilation terminated.
+-     ocamlopt src/.papi_top.objs/native/papi_top.{cmx,o}
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module Toploop, and its interface was not compiled with -opaque
+[ERROR] The compilation of papi failed at "/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/dune build -p papi -j 39".
+
+#=== ERROR while compiling papi.0.1.1 =========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/papi.0.1.1
+# command              /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/dune build -p papi -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/papi-182589-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/papi-182589-a00279.out
+### output ###
+#       ocamlc src/stubs.o (exit 2)
+# (cd _build/default/src && /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlc.opt -g -ccopt -Wall -ccopt -Wextra -ccopt -O3 -ccopt -Wno-implicit-fallthrough -o stubs.o native/stubs.c)
+# native/stubs.c:4:10: fatal error: papi.h: No such file or directory
+#  #include <papi.h>
+#           ^~~~~~~~
+# compilation terminated.
+#     ocamlopt src/.papi_top.objs/native/papi_top.{cmx,o}
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module Toploop, and its interface was not compiled with -opaque
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build papi 0.1.1
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libpapi-dev
+
+'opam install papi.0.1.1' failed.

@@ -1,0 +1,95 @@
+The following actions will be performed:
+  - install ptset 1.0.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [ptset.1.0.0: http]
+[ptset.1.0.0] downloaded from https://github.com/UnixJunkie/ptset/archive/v1.0.0.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [ptset: obuild configure]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/obuild "configure" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ptset.1.0.0)
+- Configuring ptset-1.0...
+Processing  1/2: [ptset: obuild build]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/obuild "build" "lib-ptset" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ptset.1.0.0)
+- [1 of 4] Intfing Ptset                         
+- [2 of 4] Compiling Ptset                         
+- 
+- File "ptset.ml", line 310, characters 12-30:
+- 310 |   List.sort Pervasives.compare (elements_aux [] s)
+-                   ^^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- File "ptset.ml", line 571, characters 14-32:
+- 571 |     List.sort Pervasives.compare (elements_aux [] s)
+-                     ^^^^^^^^^^^^^^^^^^
+- Alert deprecated: module Stdlib.Pervasives
+- Use Stdlib instead.
+- 
+- If you need to stay compatible with OCaml < 4.07, you can use the 
+- stdlib-shims library: https://github.com/ocaml/stdlib-shims
+- File "ptset.ml", line 1:
+- Error: The implementation ptset.ml
+-        does not match the interface dist/build/lib-ptset/ptset.cmi:
+-        The value `of_seq' is required but not provided
+-        File "set.mli", line 282, characters 4-31: Expected declaration
+-        The value `add_seq' is required but not provided
+-        File "set.mli", line 278, characters 4-37: Expected declaration
+-        The value `to_seq' is required but not provided
+-        File "set.mli", line 274, characters 4-31: Expected declaration
+-        The value `to_seq_from' is required but not provided
+-        File "set.mli", line 269, characters 4-43: Expected declaration
+-        The value `find_last_opt' is required but not provided
+-        File "set.mli", line 254, characters 4-55: Expected declaration
+-        The value `find_last' is required but not provided
+-        File "set.mli", line 247, characters 4-44: Expected declaration
+-        The value `find_first_opt' is required but not provided
+-        File "set.mli", line 240, characters 4-56: Expected declaration
+-        The value `find_first' is required but not provided
+-        File "set.mli", line 227, characters 4-45: Expected declaration
+-        The value `find_opt' is required but not provided
+-        File "set.mli", line 221, characters 4-40: Expected declaration
+-        The value `choose_opt' is required but not provided
+-        File "set.mli", line 199, characters 4-35: Expected declaration
+-        The value `max_elt_opt' is required but not provided
+-        File "set.mli", line 188, characters 4-36: Expected declaration
+-        The value `min_elt_opt' is required but not provided
+-        File "set.mli", line 177, characters 4-36: Expected declaration
+-        The value `disjoint' is required but not provided
+-        File "set.mli", line 101, characters 4-32: Expected declaration
+- 
+[ERROR] The compilation of ptset failed at "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/obuild build lib-ptset".
+
+#=== ERROR while compiling ptset.1.0.0 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ptset.1.0.0
+# command              /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/obuild build lib-ptset
+# exit-code            6
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/ptset-123159-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/ptset-123159-6cc03f.out
+### output ###
+# Error: The implementation ptset.ml
+# [...]
+#        The value `find_opt' is required but not provided
+#        File "set.mli", line 221, characters 4-40: Expected declaration
+#        The value `choose_opt' is required but not provided
+#        File "set.mli", line 199, characters 4-35: Expected declaration
+#        The value `max_elt_opt' is required but not provided
+#        File "set.mli", line 188, characters 4-36: Expected declaration
+#        The value `min_elt_opt' is required but not provided
+#        File "set.mli", line 177, characters 4-36: Expected declaration
+#        The value `disjoint' is required but not provided
+#        File "set.mli", line 101, characters 4-32: Expected declaration
+# 
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ptset 1.0.0
++- 
+- No changes have been performed
+'opam install ptset.1.0.0' failed.

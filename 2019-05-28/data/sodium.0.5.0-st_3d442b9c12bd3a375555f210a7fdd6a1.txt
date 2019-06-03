@@ -1,0 +1,77 @@
+The following actions will be performed:
+  - install sodium 0.5.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [sodium.0.5.0: http]
+[sodium.0.5.0] downloaded from https://github.com/dsheets/ocaml-sodium/archive/0.5.0.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [sodium: make]
++ /usr/bin/make  (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/sodium.0.5.0)
+- CTYPES_LIB_DIR=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ctypes OCAML_LIB_DIR=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml ocamlbuild -use-ocamlfind -classic-display lib/sodium.cma lib/sodium.cmxa
+- ocamlfind ocamlopt unix.cmxa -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/sodium_bindgen.ml > lib_gen/sodium_bindgen.ml.depends
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/sodium_bindings.ml > lib_gen/sodium_bindings.ml.depends
+- ocamlfind ocamldep -package ctypes.stubs -package bigarray -package bytes -modules lib/sodium_storage.ml > lib/sodium_storage.ml.depends
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/sodium_types.ml > lib_gen/sodium_types.ml.depends
+- ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/sodium_typegen.ml > lib_gen/sodium_typegen.ml.depends
+- ocamlfind ocamlc -c -bin-annot -safe-string -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -o lib_gen/sodium_types.cmo lib_gen/sodium_types.ml
+- ocamlfind ocamlc -c -bin-annot -safe-string -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -o lib_gen/sodium_typegen.cmo lib_gen/sodium_typegen.ml
+- ocamlfind ocamlc -linkpkg -package ctypes.stubs -I lib_gen lib_gen/sodium_types.cmo lib_gen/sodium_typegen.cmo -o lib_gen/sodium_typegen.byte
+- lib_gen/sodium_typegen.byte
+- cc -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ctypes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml -o lib_gen/sodium_types_detect lib_gen/sodium_types_detect.c
+- lib_gen/sodium_types_detect > lib/sodium_types_detected.ml
+- ocamlfind ocamldep -package ctypes.stubs -package bigarray -package bytes -modules lib/sodium_types_detected.ml > lib/sodium_types_detected.ml.depends
+- ocamlfind ocamlc -c -bin-annot -safe-string -package ctypes.stubs -package bigarray -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/sodium_storage.cmo lib/sodium_storage.ml
+- ocamlfind ocamlc -c -bin-annot -safe-string -package ctypes.stubs -package bigarray -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/sodium_types_detected.cmo lib/sodium_types_detected.ml
+- ocamlfind ocamlc -c -bin-annot -safe-string -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -o lib_gen/sodium_bindings.cmo lib_gen/sodium_bindings.ml
+- ocamlfind ocamlc -c -bin-annot -safe-string -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -o lib_gen/sodium_bindgen.cmo lib_gen/sodium_bindgen.ml
+- ocamlfind ocamlc -linkpkg -package ctypes.stubs -I lib -I lib_gen lib/sodium_storage.cmo lib/sodium_types_detected.cmo lib_gen/sodium_types.cmo lib_gen/sodium_bindings.cmo lib_gen/sodium_bindgen.cmo -o lib_gen/sodium_bindgen.byte
+- lib_gen/sodium_bindgen.byte
+- ocamlfind ocamlc -ccopt -I/usr/local/include -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ctypes -ccopt '--std=c99 -Wall -pedantic -Werror -Wno-pointer-sign' -c lib/sodium_stubs.c
+- + ocamlfind ocamlc -ccopt -I/usr/local/include -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ctypes -ccopt '--std=c99 -Wall -pedantic -Werror -Wno-pointer-sign' -c lib/sodium_stubs.c
+- lib/sodium_stubs.c: In function ‘caml__1_sodium_init’:
+- lib/sodium_stubs.c:6:4: error: ignoring return value of ‘sodium_init’, declared with attribute warn_unused_result [-Werror=unused-result]
+-     sodium_init();
+-     ^~~~~~~~~~~~~
+- lib/sodium_stubs.c: In function ‘caml__3_sodium_memcmp’:
+- lib/sodium_stubs.c:21:4: error: ignoring return value of ‘sodium_memcmp’, declared with attribute warn_unused_result [-Werror=unused-result]
+-     sodium_memcmp(x13, x14, x15);
+-     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- cc1: all warnings being treated as errors
+- Command exited with code 2.
+- Makefile:13: recipe for target 'all' failed
+- make: *** [all] Error 10
+[ERROR] The compilation of sodium failed at "/usr/bin/make".
+
+#=== ERROR while compiling sodium.0.5.0 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/sodium.0.5.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/sodium-129895-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/sodium-129895-a00279.out
+### output ###
+# [...]
+# lib/sodium_stubs.c: In function ‘caml__1_sodium_init’:
+# lib/sodium_stubs.c:6:4: error: ignoring return value of ‘sodium_init’, declared with attribute warn_unused_result [-Werror=unused-result]
+#     sodium_init();
+#     ^~~~~~~~~~~~~
+# lib/sodium_stubs.c: In function ‘caml__3_sodium_memcmp’:
+# lib/sodium_stubs.c:21:4: error: ignoring return value of ‘sodium_memcmp’, declared with attribute warn_unused_result [-Werror=unused-result]
+#     sodium_memcmp(x13, x14, x15);
+#     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# cc1: all warnings being treated as errors
+# Command exited with code 2.
+# Makefile:13: recipe for target 'all' failed
+# make: *** [all] Error 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build sodium 0.5.0
++- 
+- No changes have been performed
+'opam install sodium.0.5.0' failed.

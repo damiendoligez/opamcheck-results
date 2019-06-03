@@ -1,0 +1,39 @@
+The following actions will be performed:
+  - install metrics-unix 0.1.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[metrics-unix.0.1.0] found in cache
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [metrics-unix: dune build]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune "build" "-p" "metrics-unix" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/metrics-unix.0.1.0)
+- File "src/unix/dune", line 5, characters 53-64:
+- 5 |   (libraries   lwt.unix metrics fmt uuidm unix mtime mtime.clock
+-                                                          ^^^^^^^^^^^
+- Error: Library "mtime.clock" not found.
+- Hint: try: dune external-lib-deps --missing -p metrics-unix @@default
+[ERROR] The compilation of metrics-unix failed at "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p metrics-unix -j 39".
+
+#=== ERROR while compiling metrics-unix.0.1.0 =================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/metrics-unix.0.1.0
+# command              /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p metrics-unix -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/metrics-unix-106792-05296d.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/metrics-unix-106792-05296d.out
+### output ###
+# File "src/unix/dune", line 5, characters 53-64:
+# 5 |   (libraries   lwt.unix metrics fmt uuidm unix mtime mtime.clock
+#                                                          ^^^^^^^^^^^
+# Error: Library "mtime.clock" not found.
+# Hint: try: dune external-lib-deps --missing -p metrics-unix @@default
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build metrics-unix 0.1.0
++- 
+- No changes have been performed
+'opam install metrics-unix.0.1.0' failed.

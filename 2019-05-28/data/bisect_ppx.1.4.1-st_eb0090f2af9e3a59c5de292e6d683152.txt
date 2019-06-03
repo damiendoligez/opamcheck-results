@@ -1,0 +1,49 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install bisect_ppx 1.4.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [bisect_ppx.1.4.1: http]
+[bisect_ppx.1.4.1] downloaded from https://github.com/aantron/bisect_ppx/archive/1.4.1.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [bisect_ppx: dune build]
++ /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/dune "build" "-p" "bisect_ppx" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/bisect_ppx.1.4.1)
+-       ocamlc src/ppx/.bisect_ppx.objs/byte/bisect_ppx__Instrument.{cmo,cmt} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocamlc.opt -w -40 -g -bin-annot -I src/ppx/.bisect_ppx.objs/byte -I /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml-migrate-parsetree -I /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml/compiler-libs -I /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ppx_tools_versioned -I /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/result -I src/runtime/.bisect.objs/byte -I src/runtime/.bisect.objs/native -intf-suffix .ml -no-alias-deps -open Bisect_ppx -o src/ppx/.bisect_ppx.objs/byte/bisect_ppx__Instrument.cmo -c -impl src/ppx/instrument.pp.ml)
+- File "src/ppx/instrument.ml", line 88, characters 10-14:
+- Error: Uninterpreted extension 'expr'.
+-     ocamlopt src/ppx/.bisect_ppx.objs/native/bisect_ppx__Instrument.{cmx,o} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocamlopt.opt -w -40 -g -I src/ppx/.bisect_ppx.objs/byte -I src/ppx/.bisect_ppx.objs/native -I /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml-migrate-parsetree -I /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml/compiler-libs -I /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ppx_tools_versioned -I /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/result -I src/runtime/.bisect.objs/byte -I src/runtime/.bisect.objs/native -intf-suffix .ml -no-alias-deps -open Bisect_ppx -o src/ppx/.bisect_ppx.objs/native/bisect_ppx__Instrument.cmx -c -impl src/ppx/instrument.pp.ml)
+- File "src/ppx/instrument.ml", line 88, characters 10-14:
+- Error: Uninterpreted extension 'expr'.
+[ERROR] The compilation of bisect_ppx failed at "/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/dune build -p bisect_ppx -j 39".
+
+#=== ERROR while compiling bisect_ppx.1.4.1 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/bisect_ppx.1.4.1
+# command              /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/dune build -p bisect_ppx -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/bisect_ppx-39033-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/bisect_ppx-39033-a00279.out
+### output ###
+#       ocamlc src/ppx/.bisect_ppx.objs/byte/bisect_ppx__Instrument.{cmo,cmt} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocamlc.opt -w -40 -g -bin-annot -I src/ppx/.bisect_ppx.objs/byte -I /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml-migrate-parsetree -I /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml/compiler-libs -I /opamcheck/sandbox/opamstate/4[...]
+# File "src/ppx/instrument.ml", line 88, characters 10-14:
+# Error: Uninterpreted extension 'expr'.
+#     ocamlopt src/ppx/.bisect_ppx.objs/native/bisect_ppx__Instrument.{cmx,o} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/ocamlopt.opt -w -40 -g -I src/ppx/.bisect_ppx.objs/byte -I src/ppx/.bisect_ppx.objs/native -I /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml-migrate-parsetree -I /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/lib/ocaml/compiler-libs -I /opa[...]
+# File "src/ppx/instrument.ml", line 88, characters 10-14:
+# Error: Uninterpreted extension 'expr'.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build bisect_ppx 1.4.1
++- 
+- No changes have been performed
+'opam install bisect_ppx.1.4.1' failed.

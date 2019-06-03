@@ -1,0 +1,33 @@
+The following actions will be performed:
+  - install conf-ida 0.2
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [conf-ida: ocaml find-ida.ml]
++ /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocaml "find-ida.ml" (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/conf-ida.0.2)
+- command which ida64 failed: exit status 1
+- command which idaq64 failed: exit status 1
+- failed to locate IDA Pro
+[ERROR] The compilation of conf-ida failed at "/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocaml find-ida.ml".
+
+#=== ERROR while compiling conf-ida.0.2 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/conf-ida.0.2
+# command              /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocaml find-ida.ml
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/conf-ida-137142-9b8556.env
+# output-file          /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/conf-ida-137142-9b8556.out
+### output ###
+# command which ida64 failed: exit status 1
+# command which idaq64 failed: exit status 1
+# failed to locate IDA Pro
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-ida 0.2
++- 
+- No changes have been performed
+'opam install conf-ida.0.2' failed.

@@ -1,0 +1,58 @@
+The following actions will be performed:
+  - install ocsigen-i18n 3.4.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [ocsigen-i18n.3.4.0: http]
+[ocsigen-i18n.3.4.0] downloaded from https://github.com/jrochel/ocsigen-i18n/archive/3.4.0.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [ocsigen-i18n: make build]
++ /usr/bin/make "build" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ocsigen-i18n.3.4.0)
+- ocamllex i18n_generate.mll
+- 36 states, 629 transitions, table size 2732 bytes
+- 2307 additional bytes used for bindings
+- ocamlfind ocamlc -package str -linkpkg -o ocsigen-i18n-generator i18n_generate.ml
+- ocamlfind ocamlc -package str -package compiler-libs.common -linkpkg -o ocsigen-i18n-rewriter i18n_ppx_common.ml i18n_ppx_rewriter.ml
+- findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml/compiler-libs, /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml
+- File "i18n_ppx_rewriter.ml", line 29, characters 15-204:
+- 29 | ...............{ pexp_desc =
+- 30 |                Pexp_construct ( Location.mknoloc (Longident.Lident "()")
+- 31 |                               , None )
+- 32 |            ; pexp_loc = loc
+- 33 |            ; pexp_attributes = [] }
+- Error: Some record fields are undefined: pexp_loc_stack
+- Makefile:18: recipe for target 'ocsigen-i18n-rewriter' failed
+- make: *** [ocsigen-i18n-rewriter] Error 2
+[ERROR] The compilation of ocsigen-i18n failed at "/usr/bin/make build".
+
+#=== ERROR while compiling ocsigen-i18n.3.4.0 =================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ocsigen-i18n.3.4.0
+# command              /usr/bin/make build
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/ocsigen-i18n-93685-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/ocsigen-i18n-93685-6cc03f.out
+### output ###
+# [...]
+# ocamlfind ocamlc -package str -linkpkg -o ocsigen-i18n-generator i18n_generate.ml
+# ocamlfind ocamlc -package str -package compiler-libs.common -linkpkg -o ocsigen-i18n-rewriter i18n_ppx_common.ml i18n_ppx_rewriter.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml/compiler-libs, /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml
+# File "i18n_ppx_rewriter.ml", line 29, characters 15-204:
+# 29 | ...............{ pexp_desc =
+# 30 |                Pexp_construct ( Location.mknoloc (Longident.Lident "()")
+# 31 |                               , None )
+# 32 |            ; pexp_loc = loc
+# 33 |            ; pexp_attributes = [] }
+# Error: Some record fields are undefined: pexp_loc_stack
+# Makefile:18: recipe for target 'ocsigen-i18n-rewriter' failed
+# make: *** [ocsigen-i18n-rewriter] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ocsigen-i18n 3.4.0
++- 
+- No changes have been performed
+'opam install ocsigen-i18n.3.4.0' failed.

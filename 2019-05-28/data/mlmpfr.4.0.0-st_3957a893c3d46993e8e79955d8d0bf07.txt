@@ -1,0 +1,41 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install mlmpfr 4.0.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [mlmpfr.4.0.0: http]
+[mlmpfr.4.0.0] downloaded from https://github.com/thvnx/mlmpfr/archive/mlmpfr.4.0.0.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [mlmpfr: cc test.c]
++ /usr/bin/cc "test.c" "-lmpfr" "-o" "test_installed" (CWD=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/mlmpfr.4.0.0)
+Processing  1/2: [mlmpfr: ./test_installed]
++ /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/mlmpfr.4.0.0/./test_installed  (CWD=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/mlmpfr.4.0.0)
+[ERROR] The compilation of mlmpfr failed at "/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/mlmpfr.4.0.0/./test_installed".
+
+#=== ERROR while compiling mlmpfr.4.0.0 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/mlmpfr.4.0.0
+# command              /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/mlmpfr.4.0.0/./test_installed
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/mlmpfr-90813-e4db2f.env
+# output-file          /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/mlmpfr-90813-e4db2f.out
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build mlmpfr 4.0.0
++- 
+- No changes have been performed
+
+<><> mlmpfr.4.0.0 troubleshooting <><><><><><><><><><><><><><><><><><><><><><><>
+=> Make sure you had MPFR version 4.0.0 installed on your system.
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libmpfr-dev
+
+'opam install mlmpfr.4.0.0' failed.

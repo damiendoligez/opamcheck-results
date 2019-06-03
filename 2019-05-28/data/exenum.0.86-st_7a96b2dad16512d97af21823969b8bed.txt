@@ -1,0 +1,55 @@
+The following actions will be performed:
+  - install exenum 0.86
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [exenum.0.86: http]
+[exenum.0.86] downloaded from https://github.com/lebotlan/ocaml-exenum/archive/0.86.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [exenum: dune build]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune "build" "-p" "exenum" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/exenum.0.86)
+-       ocamlc src/lwt/.exenum_lwt.objs/exenum_lwt__Lwt_tester.{cmo,cmt} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I src/lwt/.exenum_lwt.objs -I src/lwt/.exenum_lwt.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/lwt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/result -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/seq -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/zarith -I src/.exenum.objs -I src/internals/.exenum_internals.objs -intf-suffix .ml -no-alias-deps -open Exenum_lwt -o src/lwt/.exenum_lwt.objs/exenum_lwt__Lwt_tester.cmo -c -impl src/lwt/lwt_tester.ml)
+- File "src/lwt/lwt_tester.ml", line 4, characters 19-31:
+- 4 |  Tester.gen_tester Lwt_io.print ?tos Lwt.bind Lwt.return_unit (Exenum.get_exen exen) ?from ?upto ?verbose_period ~len f
+-                        ^^^^^^^^^^^^
+- Error: Unbound module Lwt_io
+-     ocamlopt src/lwt/.exenum_lwt.objs/exenum_lwt__Lwt_tester.{cmx,o} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt -w -40 -g -I src/lwt/.exenum_lwt.objs -I src/lwt/.exenum_lwt.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/lwt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/result -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/seq -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/zarith -I src/.exenum.objs -I src/internals/.exenum_internals.objs -intf-suffix .ml -no-alias-deps -open Exenum_lwt -o src/lwt/.exenum_lwt.objs/exenum_lwt__Lwt_tester.cmx -c -impl src/lwt/lwt_tester.ml)
+- File "src/lwt/lwt_tester.ml", line 4, characters 19-31:
+- 4 |  Tester.gen_tester Lwt_io.print ?tos Lwt.bind Lwt.return_unit (Exenum.get_exen exen) ?from ?upto ?verbose_period ~len f
+-                        ^^^^^^^^^^^^
+- Error: Unbound module Lwt_io
+[ERROR] The compilation of exenum failed at "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p exenum -j 39".
+
+#=== ERROR while compiling exenum.0.86 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/exenum.0.86
+# command              /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p exenum -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/exenum-95067-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/exenum-95067-6cc03f.out
+### output ###
+# [...]
+#       ocamlc src/lwt/.exenum_lwt.objs/exenum_lwt__Lwt_tester.{cmo,cmt} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I src/lwt/.exenum_lwt.objs -I src/lwt/.exenum_lwt.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/lwt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/resul[...]
+# File "src/lwt/lwt_tester.ml", line 4, characters 19-31:
+# 4 |  Tester.gen_tester Lwt_io.print ?tos Lwt.bind Lwt.return_unit (Exenum.get_exen exen) ?from ?upto ?verbose_period ~len f
+#                        ^^^^^^^^^^^^
+# Error: Unbound module Lwt_io
+#     ocamlopt src/lwt/.exenum_lwt.objs/exenum_lwt__Lwt_tester.{cmx,o} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt -w -40 -g -I src/lwt/.exenum_lwt.objs -I src/lwt/.exenum_lwt.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/lwt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/result -I /opa[...]
+# File "src/lwt/lwt_tester.ml", line 4, characters 19-31:
+# 4 |  Tester.gen_tester Lwt_io.print ?tos Lwt.bind Lwt.return_unit (Exenum.get_exen exen) ?from ?upto ?verbose_period ~len f
+#                        ^^^^^^^^^^^^
+# Error: Unbound module Lwt_io
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build exenum 0.86
++- 
+- No changes have been performed
+'opam install exenum.0.86' failed.

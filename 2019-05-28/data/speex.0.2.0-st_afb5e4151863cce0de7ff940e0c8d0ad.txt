@@ -1,0 +1,126 @@
+The following actions will be performed:
+  - install speex 0.2.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [speex.0.2.0: http]
+[speex.0.2.0] downloaded from http://downloads.sourceforge.net/project/savonet/ocaml-speex/0.2.0/ocaml-speex-0.2.0.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [speex: ./configure]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/speex.0.2.0/./configure "--prefix" "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/speex.0.2.0)
+- configuring ocaml-speex 0.2.0
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- checking for ocamlc... ocamlc
+- OCaml version is 4.08.0+rc1
+- checking if ocaml compiler supports first-class modules... yes
+- OCaml library path is /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml
+- checking for ocamlopt... ocamlopt
+- checking for ocamlc.opt... ocamlc.opt
+- checking for ocamlopt.opt... ocamlopt.opt
+- checking for ocaml... ocaml
+- checking for ocamldep... ocamldep
+- checking for ocamlmktop... ocamlmktop
+- checking for ocamlmklib... ocamlmklib
+- checking for ocamldoc... ocamldoc
+- checking for ocamlbuild... ocamlbuild
+- checking for camlidl... camlidl
+- checking for ocamllex... ocamllex
+- checking for ocamllex.opt... ocamllex.opt
+- checking for ocamlyacc... ocamlyacc
+- checking for camlp4... camlp4
+- versions differs from ocamlc
+- checking for camlp4boot... camlp4boot
+- checking for camlp4o... camlp4o
+- checking for camlp4of... camlp4of
+- checking for camlp4oof... camlp4oof
+- checking for camlp4orf... camlp4orf
+- checking for camlp4prof... camlp4prof
+- checking for camlp4r... camlp4r
+- checking for camlp4rf... camlp4rf
+- checking for ocamlfind... ocamlfind
+- checking for caml/threads.h... yes
+- checking for gcc... (cached) gcc
+- checking whether we are using the GNU C compiler... (cached) yes
+- checking whether gcc accepts -g... (cached) yes
+- checking for gcc option to accept ISO C89... (cached) none needed
+- checking for ar... ar
+- checking for pkg-config... /usr/bin/pkg-config
+- checking pkg-config is at least version 0.9.0... yes
+- checking for ocaml-ogg... ok
+- configure: creating ./config.status
+- config.status: creating Makefile
+- config.status: creating src/META
+- config.status: creating src/Makefile
+- config.status: creating examples/Makefile.speex2wav
+- config.status: creating examples/Makefile.wav2speex
+Processing  1/2: [speex: make]
++ /usr/bin/make  (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/speex.0.2.0)
+- /usr/bin/make -C src all
+- make[1]: Entering directory '/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/speex.0.2.0/src'
+- make[2]: Entering directory '/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/speex.0.2.0/src'
+- making ._bcdi/ogg_demuxer_speex_decoder.di from ogg_demuxer_speex_decoder.mli
+- making ._bcdi/speex.di from speex.mli
+- making ._d/ogg_demuxer_speex_decoder.d from ogg_demuxer_speex_decoder.ml
+- making ._d/speex.d from speex.ml
+- ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -I/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/include    -Wall -DCAML_NAME_SPACE \
+- 			-DPIC -I/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/include  \
+- 			  -I/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ogg  -o speex_stubs.o " speex_stubs.c 
+- ar rcs libspeex_stubs.a  speex_stubs.o
+- ocamlc.opt -c -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ogg speex.mli
+- File "speex.mli", line 126, characters 51-63:
+- 126 |   val encode_header : t -> (string*string) list -> Ogg.Stream.t -> unit
+-                                                          ^^^^^^^^^^^^
+- Error: Unbound type constructor Ogg.Stream.t
+- OCamlMakefile:934: recipe for target 'speex.cmi' failed
+- make[2]: *** [speex.cmi] Error 2
+- make[2]: Leaving directory '/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/speex.0.2.0/src'
+- OCamlMakefile:717: recipe for target 'byte-code-library' failed
+- make[1]: *** [byte-code-library] Error 2
+- make[1]: Leaving directory '/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/speex.0.2.0/src'
+- Makefile:13: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of speex failed at "/usr/bin/make".
+
+#=== ERROR while compiling speex.0.2.0 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/speex.0.2.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/speex-129812-865888.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/speex-129812-865888.out
+### output ###
+# [...]
+# File "speex.mli", line 126, characters 51-63:
+# 126 |   val encode_header : t -> (string*string) list -> Ogg.Stream.t -> unit
+#                                                          ^^^^^^^^^^^^
+# Error: Unbound type constructor Ogg.Stream.t
+# OCamlMakefile:934: recipe for target 'speex.cmi' failed
+# make[2]: *** [speex.cmi] Error 2
+# make[2]: Leaving directory '/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/speex.0.2.0/src'
+# OCamlMakefile:717: recipe for target 'byte-code-library' failed
+# make[1]: *** [byte-code-library] Error 2
+# make[1]: Leaving directory '/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/speex.0.2.0/src'
+# Makefile:13: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build speex 0.2.0
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libspeex-dev
+
+'opam install speex.0.2.0' failed.

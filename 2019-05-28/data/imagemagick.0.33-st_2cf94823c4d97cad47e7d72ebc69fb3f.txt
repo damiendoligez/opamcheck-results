@@ -1,0 +1,86 @@
+The following actions will be performed:
+  - install imagemagick 0.33
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [imagemagick.0.33: http]
+[imagemagick.0.33] downloaded from https://github.com/besport/ocaml-imagemagick/tarball/0.33
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [imagemagick: make]
++ /usr/bin/make  (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/imagemagick.0.33)
+- make: --prefix: Command not found
+- make: --libs: Command not found
+- make: --cflags: Command not found
+- ocamlc -c magick.mli
+- ocamlc -c magick.ml
+- File "magick.ml", line 144, characters 8-24:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "magick.ml", line 181, characters 8-24:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "magick.ml", line 201, characters 8-24:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "magick.ml", line 258, characters 8-24:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "magick.ml", line 279, characters 8-24:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "magick.ml", line 375, characters 8-24:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "magick.ml", line 444, characters 8-24:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- File "magick.ml", line 954, characters 4-22:
+- Warning 3: deprecated: String.set
+- Use Bytes.set instead.
+- File "magick.ml", line 1778, characters 8-24:
+- Warning 3: deprecated: String.lowercase
+- Use String.lowercase_ascii instead.
+- gcc -fPIC -c -I"/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml"  imagemagick_wrap.c
+- imagemagick_wrap.c:58:10: fatal error: magick/ImageMagick.h: No such file or directory
+-  #include <magick/ImageMagick.h>
+-           ^~~~~~~~~~~~~~~~~~~~~~
+- compilation terminated.
+- Makefile:45: recipe for target 'imagemagick_wrap.o' failed
+- make: *** [imagemagick_wrap.o] Error 1
+[ERROR] The compilation of imagemagick failed at "/usr/bin/make".
+
+#=== ERROR while compiling imagemagick.0.33 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/imagemagick.0.33
+# command              /usr/bin/make
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/imagemagick-72651-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/imagemagick-72651-a00279.out
+### output ###
+# [...]
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "magick.ml", line 1778, characters 8-24:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# gcc -fPIC -c -I"/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml"  imagemagick_wrap.c
+# imagemagick_wrap.c:58:10: fatal error: magick/ImageMagick.h: No such file or directory
+#  #include <magick/ImageMagick.h>
+#           ^~~~~~~~~~~~~~~~~~~~~~
+# compilation terminated.
+# Makefile:45: recipe for target 'imagemagick_wrap.o' failed
+# make: *** [imagemagick_wrap.o] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build imagemagick 0.33
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libmagickcore-dev
+
+'opam install imagemagick.0.33' failed.

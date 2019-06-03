@@ -1,0 +1,43 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install bigstringaf 0.5.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [bigstringaf.0.5.0: http]
+[bigstringaf.0.5.0] downloaded from https://github.com/inhabitedtype/bigstringaf/archive/0.5.0.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [bigstringaf: dune build]
++ /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/dune "build" "-p" "bigstringaf" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/bigstringaf.0.5.0)
+- File "dune-project", line 1, characters 11-14:
+- Error: Version 1.6 of dune is not supported.
+- Supported versions:
+- - 0.0
+- - 1.0
+[ERROR] The compilation of bigstringaf failed at "/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/dune build -p bigstringaf -j 39".
+
+#=== ERROR while compiling bigstringaf.0.5.0 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/bigstringaf.0.5.0
+# command              /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/bin/dune build -p bigstringaf -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/bigstringaf-186745-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/bigstringaf-186745-a00279.out
+### output ###
+# File "dune-project", line 1, characters 11-14:
+# Error: Version 1.6 of dune is not supported.
+# Supported versions:
+# - 0.0
+# - 1.0
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build bigstringaf 0.5.0
++- 
+- No changes have been performed
+'opam install bigstringaf.0.5.0' failed.

@@ -1,0 +1,133 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install lmdb 0.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [lmdb.0.1: http]
+[lmdb.0.1] downloaded from https://github.com/Drup/ocaml-lmdb/archive/0.1.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [lmdb: ocaml setup.ml]
++ /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocaml "setup.ml" "-configure" "--prefix" "/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1" (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/lmdb.0.1)
+- 
+- Configuration:
+- ocamlfind: ........................................... /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind
+- ocamlc: .............................................. /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlc.opt
+- ocamlopt: ............................................ /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlbuild
+- Package name: ........................................ ocaml-lmdb
+- Package version: ..................................... 0.1
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.07.1
+- standard_library_default: ............................ /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml
+- standard_library: .................................... /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml
+- standard_runtime: .................................... /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.8.0
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_ctypes: .......................................... /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ctypes
+- pkg_ctypes_stubs: .................................... /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ctypes
+- pkg_ctypes_foreign: .................................. /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ctypes
+- pkg_unix_type_representations: ....................... /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/unix-type-representations
+- ocamldoc: ............................................ /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamldoc
+- 
++ /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocaml "setup.ml" "-build" (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/lmdb.0.1)
+- W: Cannot find source file matching module 'Lmdb_generated' in library lmdb.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- W: Cannot find source file matching module 'Lmdb_generated_types' in library lmdb.
+- W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlopt.opt unix.cmxa -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocamlbuild /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -package unix-type-representations -modules src/lmdb_bindgen.ml > src/lmdb_bindgen.ml.depends
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -package unix-type-representations -modules src/lmdb_bindings.ml > src/lmdb_bindings.ml.depends
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -package unix-type-representations -modules src/lmdb_typegen.ml > src/lmdb_typegen.ml.depends
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -package unix-type-representations -modules src/lmdb_types.ml > src/lmdb_types.ml.depends
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -keep-locs -strict-sequence -package ctypes -package ctypes.foreign -package ctypes.stubs -package unix-type-representations -w A-40-42-44 -warn-error +1..49 -warn-error -45-3 -I src -o src/lmdb_types.cmo src/lmdb_types.ml
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -keep-locs -strict-sequence -package ctypes -package ctypes.foreign -package ctypes.stubs -package unix-type-representations -w A-40-42-44 -warn-error +1..49 -warn-error -45-3 -I src -o src/lmdb_typegen.cmo src/lmdb_typegen.ml
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind ocamlc -g -linkpkg -package ctypes.stubs -package unix-type-representations -I src src/lmdb_types.cmo src/lmdb_typegen.cmo -o src/lmdb_typegen.byte
+- src/lmdb_typegen.byte
+- gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT src/lmdb_typestubs.c -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ctypes -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml -o src/lmdb_typestubs
+- + gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT src/lmdb_typestubs.c -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ctypes -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml -o src/lmdb_typestubs
+- src/lmdb_typestubs.c:2:10: fatal error: lmdb.h: No such file or directory
+-  #include <lmdb.h>
+-           ^~~~~~~~
+- compilation terminated.
+- Command exited with code 1.
+- E: Failure("Command ''/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlbuild' src/liblmdb_stubs.a src/dlllmdb_stubs.so src/lmdb.cma src/lmdb.cmxa src/lmdb.a src/lmdb.cmxs src/lmdb_bindgen.byte src/lmdb_typegen.byte -tag debug' terminated with error code 10")
+[ERROR] The compilation of lmdb failed at "/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling lmdb.0.1 ===========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/lmdb.0.1
+# command              /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/lmdb-38180-e4db2f.env
+# output-file          /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/lmdb-38180-e4db2f.out
+### output ###
+# [...]
+# /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -keep-locs -strict-sequence -package ctypes -package ctypes.foreign -package ctypes.stubs -package unix-type-representations -w A-40-42-44 -warn-error +1..49 -warn-error -45-3 -I src -o src/lmdb_types.cmo src/lmdb_types.ml
+# /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -keep-locs -strict-sequence -package ctypes -package ctypes.foreign -package ctypes.stubs -package unix-type-representations -w A-40-42-44 -warn-error +1..49 -warn-error -45-3 -I src -o src/lmdb_typegen.cmo src/lmdb_typegen.ml
+# /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlfind ocamlc -g -linkpkg -package ctypes.stubs -package unix-type-representations -I src src/lmdb_types.cmo src/lmdb_typegen.cmo -o src/lmdb_typegen.byte
+# src/lmdb_typegen.byte
+# gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT src/lmdb_typestubs.c -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ctypes -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml -o src/lmdb_typestubs
+# + gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT src/lmdb_typestubs.c -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ctypes -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml -o src/lmdb_typestubs
+# src/lmdb_typestubs.c:2:10: fatal error: lmdb.h: No such file or directory
+#  #include <lmdb.h>
+#           ^~~~~~~~
+# compilation terminated.
+# Command exited with code 1.
+# E: Failure("Command ''/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlbuild' src/liblmdb_stubs.a src/dlllmdb_stubs.so src/lmdb.cma src/lmdb.cmxa src/lmdb.a src/lmdb.cmxs src/lmdb_bindgen.byte src/lmdb_typegen.byte -tag debug' terminated with error code 10")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build lmdb 0.1
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    liblmdb-dev
+
+'opam install lmdb.0.1' failed.

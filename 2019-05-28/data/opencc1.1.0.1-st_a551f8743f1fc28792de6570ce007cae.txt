@@ -1,0 +1,46 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install opencc1 1.0.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [opencc1.1.0.1: http]
+[opencc1.1.0.1] downloaded from https://bitbucket.org/zandoye/ocaml-opencc1/get/1.0.1.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [opencc1: dune build]
++ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/dune "build" "-p" "opencc1" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/opencc1.1.0.1)
+- File "dune-project", line 1, characters 11-14:
+- Error: Version 1.4 of dune is not supported.
+- Supported versions:
+- - 0.0
+- - 1.0
+[ERROR] The compilation of opencc1 failed at "/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/dune build -p opencc1 -j 39".
+
+#=== ERROR while compiling opencc1.1.0.1 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/opencc1.1.0.1
+# command              /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/dune build -p opencc1 -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/opencc1-93359-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/opencc1-93359-a00279.out
+### output ###
+# File "dune-project", line 1, characters 11-14:
+# Error: Version 1.4 of dune is not supported.
+# Supported versions:
+# - 0.0
+# - 1.0
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build opencc1 1.0.1
++- 
+- No changes have been performed
+
+<><> opencc1.1.0.1 troubleshooting ><><><><><><><><><><><><><><><><><><><><><><>
+=> This package requires installation of libopencc (>= 1.0.1 & < 2.0~)
+'opam install opencc1.1.0.1' failed.

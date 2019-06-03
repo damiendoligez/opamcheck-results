@@ -1,0 +1,55 @@
+The following actions will be performed:
+  - install mirage-fs-mem 0.1.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [mirage-fs-mem.0.1.0: http]
+[mirage-fs-mem.0.1.0] downloaded from https://github.com/roburio/mirage-fs-mem/releases/download/0.1.0/mirage-fs-mem-0.1.0.tbz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [mirage-fs-mem: dune build]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune "build" "-p" "mirage-fs-mem" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/mirage-fs-mem.0.1.0)
+-     ocamlopt src/.mirage_fs_mem.objs/mirage_fs_mem.{cmx,o} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt -w -40 -g -I src/.mirage_fs_mem.objs -I src/.mirage_fs_mem.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/astring -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/cstruct -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fpath -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/lwt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/mirage-device -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/mirage-fs -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/mirage-fs-lwt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/mirage-kv -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/mirage-kv-lwt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocplib-endian -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/parsexp -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/result -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/rresult -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/seq -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/sexplib -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/sexplib0 -intf-suffix .ml -no-alias-deps -o src/.mirage_fs_mem.objs/mirage_fs_mem.cmx -c -impl src/mirage_fs_mem.ml)
+- File "src/mirage_fs_mem.ml", line 106, characters 57-70:
+- 106 |   let create t path = add_file_or_directory t path (File Cstruct.empty)
+-                                                                ^^^^^^^^^^^^^
+- Error: Unbound value Cstruct.empty
+-       ocamlc src/.mirage_fs_mem.objs/mirage_fs_mem.{cmo,cmt} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.mirage_fs_mem.objs -I src/.mirage_fs_mem.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/astring -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/cstruct -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fpath -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/lwt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/mirage-device -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/mirage-fs -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/mirage-fs-lwt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/mirage-kv -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/mirage-kv-lwt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocplib-endian -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/parsexp -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/result -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/rresult -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/seq -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/sexplib -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/sexplib0 -intf-suffix .ml -no-alias-deps -o src/.mirage_fs_mem.objs/mirage_fs_mem.cmo -c -impl src/mirage_fs_mem.ml)
+- File "src/mirage_fs_mem.ml", line 106, characters 57-70:
+- 106 |   let create t path = add_file_or_directory t path (File Cstruct.empty)
+-                                                                ^^^^^^^^^^^^^
+- Error: Unbound value Cstruct.empty
+[ERROR] The compilation of mirage-fs-mem failed at "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p mirage-fs-mem -j 39".
+
+#=== ERROR while compiling mirage-fs-mem.0.1.0 ================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/mirage-fs-mem.0.1.0
+# command              /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p mirage-fs-mem -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/mirage-fs-mem-111504-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/mirage-fs-mem-111504-6cc03f.out
+### output ###
+# [...]
+#     ocamlopt src/.mirage_fs_mem.objs/mirage_fs_mem.{cmx,o} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt -w -40 -g -I src/.mirage_fs_mem.objs -I src/.mirage_fs_mem.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/astring -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/cstruct -I /[...]
+# File "src/mirage_fs_mem.ml", line 106, characters 57-70:
+# 106 |   let create t path = add_file_or_directory t path (File Cstruct.empty)
+#                                                                ^^^^^^^^^^^^^
+# Error: Unbound value Cstruct.empty
+#       ocamlc src/.mirage_fs_mem.objs/mirage_fs_mem.{cmo,cmt} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.mirage_fs_mem.objs -I src/.mirage_fs_mem.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/astring -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/cst[...]
+# File "src/mirage_fs_mem.ml", line 106, characters 57-70:
+# 106 |   let create t path = add_file_or_directory t path (File Cstruct.empty)
+#                                                                ^^^^^^^^^^^^^
+# Error: Unbound value Cstruct.empty
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build mirage-fs-mem 0.1.0
++- 
+- No changes have been performed
+'opam install mirage-fs-mem.0.1.0' failed.

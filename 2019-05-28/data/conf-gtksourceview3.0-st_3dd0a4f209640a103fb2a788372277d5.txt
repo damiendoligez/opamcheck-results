@@ -1,0 +1,33 @@
+The following actions will be performed:
+  - install conf-gtksourceview3 0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [conf-gtksourceview3: pkg-config gtksourceview-3.0]
++ /usr/bin/pkg-config "--short-errors" "--print-errors" "gtksourceview-3.0" (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/conf-gtksourceview3.0)
+- No package 'gtksourceview-3.0' found
+[ERROR] The compilation of conf-gtksourceview3 failed at "/usr/bin/pkg-config --short-errors --print-errors gtksourceview-3.0".
+
+#=== ERROR while compiling conf-gtksourceview3.0 ==============================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/conf-gtksourceview3.0
+# command              /usr/bin/pkg-config --short-errors --print-errors gtksourceview-3.0
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/conf-gtksourceview3-66742-ccabea.env
+# output-file          /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/conf-gtksourceview3-66742-ccabea.out
+### output ###
+# No package 'gtksourceview-3.0' found
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-gtksourceview3 0
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libgtksourceview-3.0-dev
+
+'opam install conf-gtksourceview3.0' failed.

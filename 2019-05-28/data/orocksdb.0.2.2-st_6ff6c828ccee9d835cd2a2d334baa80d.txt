@@ -1,0 +1,79 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install orocksdb 0.2.2
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [orocksdb.0.2.2: http]
+[orocksdb.0.2.2] downloaded from https://github.com/domsj/orocksdb/archive/0.2.2.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [orocksdb: make]
++ /usr/bin/make  (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/orocksdb.0.2.2)
+- ocamlbuild -use-ocamlfind -lflags -cclib,/usr/local/lib/librocksdb.so rocks.inferred.mli rocks.cma rocks.cmxa rocks.cmxs rocks_options.inferred.mli
+- ocamlfind ocamldep -package ctypes.foreign -package ctypes -modules rocks.ml > rocks.ml.depends
+- ocamlfind ocamldep -package ctypes.foreign -package ctypes -modules rocks_common.ml > rocks_common.ml.depends
+- ocamlfind ocamldep -package ctypes.foreign -package ctypes -modules rocks_options.ml > rocks_options.ml.depends
+- ocamlfind ocamlc -c -g -annot -package ctypes.foreign -package ctypes -o rocks_common.cmo rocks_common.ml
+- ocamlfind ocamlc -c -g -annot -package ctypes.foreign -package ctypes -o rocks_options.cmo rocks_options.ml
+- ocamlfind ocamlc -i -package ctypes.foreign -package ctypes rocks.ml > rocks.inferred.mli
+- ocamlfind ocamldep -package ctypes.foreign -package ctypes -modules rocks.mli > rocks.mli.depends
+- ocamlfind ocamlc -c -g -annot -package ctypes.foreign -package ctypes -o rocks.cmi rocks.mli
+- ocamlfind ocamlc -c -g -annot -package ctypes.foreign -package ctypes -o rocks.cmo rocks.ml
+- ocamlfind ocamlc -a -cclib /usr/local/lib/librocksdb.so -package ctypes.foreign -package ctypes rocks_common.cmo rocks_options.cmo rocks.cmo -o rocks.cma
+- ocamlfind ocamlopt -c -g -annot -package ctypes.foreign -package ctypes -o rocks_common.cmx rocks_common.ml
+- + ocamlfind ocamlopt -c -g -annot -package ctypes.foreign -package ctypes -o rocks_common.cmx rocks_common.ml
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module Foreign, and its interface was not compiled with -opaque
+- ocamlfind ocamlopt -c -g -annot -package ctypes.foreign -package ctypes -o rocks_options.cmx rocks_options.ml
+- ocamlfind ocamlopt -c -g -annot -package ctypes.foreign -package ctypes -o rocks.cmx rocks.ml
+- + ocamlfind ocamlopt -c -g -annot -package ctypes.foreign -package ctypes -o rocks.cmx rocks.ml
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module Foreign, and its interface was not compiled with -opaque
+- ocamlfind ocamlopt -a -cclib /usr/local/lib/librocksdb.so -package ctypes.foreign -package ctypes rocks_common.cmx rocks_options.cmx rocks.cmx -o rocks.cmxa
+- ocamlfind ocamlopt -shared -cclib /usr/local/lib/librocksdb.so -package ctypes.foreign -package ctypes rocks.cmx -o rocks.cmxs
+- + ocamlfind ocamlopt -shared -cclib /usr/local/lib/librocksdb.so -package ctypes.foreign -package ctypes rocks.cmx -o rocks.cmxs
+- gcc: error: /usr/local/lib/librocksdb.so: No such file or directory
+- File "caml_startup", line 1:
+- Error: Error during linking
+- Command exited with code 2.
+- Makefile:7: recipe for target 'build' failed
+- make: *** [build] Error 10
+[ERROR] The compilation of orocksdb failed at "/usr/bin/make".
+
+#=== ERROR while compiling orocksdb.0.2.2 =====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/orocksdb.0.2.2
+# command              /usr/bin/make
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/orocksdb-137432-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/orocksdb-137432-a00279.out
+### output ###
+# [...]
+# + ocamlfind ocamlopt -c -g -annot -package ctypes.foreign -package ctypes -o rocks.cmx rocks.ml
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module Foreign, and its interface was not compiled with -opaque
+# ocamlfind ocamlopt -a -cclib /usr/local/lib/librocksdb.so -package ctypes.foreign -package ctypes rocks_common.cmx rocks_options.cmx rocks.cmx -o rocks.cmxa
+# ocamlfind ocamlopt -shared -cclib /usr/local/lib/librocksdb.so -package ctypes.foreign -package ctypes rocks.cmx -o rocks.cmxs
+# + ocamlfind ocamlopt -shared -cclib /usr/local/lib/librocksdb.so -package ctypes.foreign -package ctypes rocks.cmx -o rocks.cmxs
+# gcc: error: /usr/local/lib/librocksdb.so: No such file or directory
+# File "caml_startup", line 1:
+# Error: Error during linking
+# Command exited with code 2.
+# Makefile:7: recipe for target 'build' failed
+# make: *** [build] Error 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build orocksdb 0.2.2
++- 
+- No changes have been performed
+
+<><> orocksdb.0.2.2 troubleshooting <><><><><><><><><><><><><><><><><><><><><><>
+=> This package requires rocksdb library installed in /usr/local/lib.
+     Tentative instructions : https://gist.githubusercontent.com/domsj/9a28ba5a523a3420ded8/raw/dc6ebd8768a87dee285e84438dc733dfc58e037f/gistfile1.txt
+'opam install orocksdb.0.2.2' failed.

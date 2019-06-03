@@ -1,0 +1,38 @@
+The following actions will be performed:
+  - install craml 1.0.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [craml.1.0.0: http]
+[craml.1.0.0] downloaded from https://github.com/realworldocaml/craml/releases/download/1.0.0/craml-1.0.0.tbz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [craml: jbuilder build]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/jbuilder "build" "-p" "craml" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/craml.1.0.0)
+-       ocamlc lib/.craml.objs/craml__Lexer.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.craml.objs -I lib/.craml.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/astring -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/logs -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/result -no-alias-deps -open Craml__ -o lib/.craml.objs/craml__Lexer.cmo -c -impl lib/lexer.ml)
+- File "lib/lexer.mll", line 13, characters 8-20:
+- Error: Unbound value Fmt.failwith
+[ERROR] The compilation of craml failed at "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/jbuilder build -p craml -j 39".
+
+#=== ERROR while compiling craml.1.0.0 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/craml.1.0.0
+# command              /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/jbuilder build -p craml -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/craml-16981-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/craml-16981-a00279.out
+### output ###
+#       ocamlc lib/.craml.objs/craml__Lexer.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.craml.objs -I lib/.craml.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/astring -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -I /opamcheck/s[...]
+# File "lib/lexer.mll", line 13, characters 8-20:
+# Error: Unbound value Fmt.failwith
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build craml 1.0.0
++- 
+- No changes have been performed
+'opam install craml.1.0.0' failed.

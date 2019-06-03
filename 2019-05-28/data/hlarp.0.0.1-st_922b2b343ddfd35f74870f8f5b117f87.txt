@@ -1,0 +1,77 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install hlarp 0.0.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [hlarp.0.0.1: http]
+[hlarp.0.0.1] downloaded from https://github.com/hammerlab/hlarp/archive/0.0.1.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [hlarp: make]
++ /usr/bin/make  (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/hlarp.0.0.1)
+- ocamlbuild -use-ocamlfind -package nonstd -package re -package cmdliner -package re.posix -package re.glob \
+-            -I src/app -I src/lib hlarp_cli.native \
+-            hlarp.cma hlarp.cmxs hlarp.cmxa
+- ocamlfind ocamldep -package re.glob -package re.posix -package cmdliner -package re -package nonstd -modules src/app/hlarp_cli.ml > src/app/hlarp_cli.ml.depends
+- ocamlfind ocamldep -package re.glob -package re.posix -package cmdliner -package re -package nonstd -modules src/lib/hlarp.ml > src/lib/hlarp.ml.depends
+- ocamlfind ocamlc -c -annot -bin-annot -principal -w A-42-44-48-50 -warn-error A-42-44-48-50 -package re.glob -package re.posix -package cmdliner -package re -package nonstd -I src/lib -I src/app -o src/lib/hlarp.cmo src/lib/hlarp.ml
+- + ocamlfind ocamlc -c -annot -bin-annot -principal -w A-42-44-48-50 -warn-error A-42-44-48-50 -package re.glob -package re.posix -package cmdliner -package re -package nonstd -I src/lib -I src/app -o src/lib/hlarp.cmo src/lib/hlarp.ml
+- File "src/lib/hlarp.ml", line 38, characters 23-43:
+- Error (warning 3): deprecated: module Re_posix
+- Use Re.Posix
+- File "src/lib/hlarp.ml", line 80, characters 31-43:
+- Error (warning 3): deprecated: module Re_glob
+- Use Re.Glob
+- File "src/lib/hlarp.ml", line 103, characters 23-43:
+- Error (warning 3): deprecated: module Re_posix
+- Use Re.Posix
+- File "src/lib/hlarp.ml", line 129, characters 31-43:
+- Error (warning 3): deprecated: module Re_glob
+- Use Re.Glob
+- File "src/lib/hlarp.ml", line 170, characters 23-43:
+- Error (warning 3): deprecated: module Re_posix
+- Use Re.Posix
+- File "src/lib/hlarp.ml", line 290, characters 20-40:
+- Error (warning 3): deprecated: module Re_posix
+- Use Re.Posix
+- File "src/lib/hlarp.ml", line 309, characters 51-71:
+- Error (warning 3): deprecated: module Re_posix
+- Use Re.Posix
+- Command exited with code 2.
+- Makefile:12: recipe for target 'build' failed
+- make: *** [build] Error 10
+[ERROR] The compilation of hlarp failed at "/usr/bin/make".
+
+#=== ERROR while compiling hlarp.0.0.1 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/hlarp.0.0.1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/hlarp-179882-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/hlarp-179882-6cc03f.out
+### output ###
+# [...]
+# File "src/lib/hlarp.ml", line 170, characters 23-43:
+# Error (warning 3): deprecated: module Re_posix
+# Use Re.Posix
+# File "src/lib/hlarp.ml", line 290, characters 20-40:
+# Error (warning 3): deprecated: module Re_posix
+# Use Re.Posix
+# File "src/lib/hlarp.ml", line 309, characters 51-71:
+# Error (warning 3): deprecated: module Re_posix
+# Use Re.Posix
+# Command exited with code 2.
+# Makefile:12: recipe for target 'build' failed
+# make: *** [build] Error 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build hlarp 0.0.1
++- 
+- No changes have been performed
+'opam install hlarp.0.0.1' failed.

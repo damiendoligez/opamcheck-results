@@ -1,0 +1,42 @@
+The following actions will be performed:
+  - install hpack 0.1.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [hpack.0.1.0: http]
+[hpack.0.1.0] downloaded from https://github.com/anmonteiro/ocaml-h2/releases/download/0.1.0/h2-0.1.0.tbz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [hpack: dune build]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune "build" "-p" "hpack" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/hpack.0.1.0)
+- File "dune-project", line 2, characters 11-14:
+- 2 | (using fmt 1.1)
+-                ^^^
+- Error: Version 1.1 of fmt is not supported.
+- Supported versions:
+- - 1.0
+[ERROR] The compilation of hpack failed at "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p hpack -j 39".
+
+#=== ERROR while compiling hpack.0.1.0 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/hpack.0.1.0
+# command              /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p hpack -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/hpack-157786-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/hpack-157786-a00279.out
+### output ###
+# File "dune-project", line 2, characters 11-14:
+# 2 | (using fmt 1.1)
+#                ^^^
+# Error: Version 1.1 of fmt is not supported.
+# Supported versions:
+# - 1.0
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build hpack 0.1.0
++- 
+- No changes have been performed
+'opam install hpack.0.1.0' failed.

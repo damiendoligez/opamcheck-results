@@ -1,0 +1,57 @@
+The following actions will be performed:
+  - install dune-release 1.0.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [dune-release.1.0.1: http]
+[dune-release.1.0.1] downloaded from https://github.com/samoht/dune-release/releases/download/1.0.1/dune-release-1.0.1.tbz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [dune-release: dune subst]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune "subst" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/dune-release.1.0.1)
+Processing  1/2: [dune-release: dune build]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune "build" "-p" "dune-release" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/dune-release.1.0.1)
+-       ocamlc lib/.dune_release.objs/dune_release__Github.{cmo,cmt} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.dune_release.objs -I lib/.dune_release.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/astring -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bos -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fpath -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/logs -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlgraph -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/opam-core -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/opam-file-format -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/opam-format -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/re -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/result -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/rresult -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/uchar -intf-suffix .ml -no-alias-deps -open Dune_release -o lib/.dune_release.objs/dune_release__Github.cmo -c -impl lib/github.ml)
+- File "lib/github.ml", line 18, characters 4-24:
+- 18 |     Re.Emacs.compile_pat "git@github\\.com:\\(.+\\)/.+\\(\\.git\\)?"
+-          ^^^^^^^^^^^^^^^^^^^^
+- Error: Unbound module Re.Emacs
+-     ocamlopt lib/.dune_release.objs/dune_release__Github.{cmx,o} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt -w -40 -g -I lib/.dune_release.objs -I lib/.dune_release.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/astring -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bos -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fpath -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/logs -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlgraph -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/opam-core -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/opam-file-format -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/opam-format -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/re -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/result -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/rresult -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/uchar -intf-suffix .ml -no-alias-deps -open Dune_release -o lib/.dune_release.objs/dune_release__Github.cmx -c -impl lib/github.ml)
+- File "lib/github.ml", line 18, characters 4-24:
+- 18 |     Re.Emacs.compile_pat "git@github\\.com:\\(.+\\)/.+\\(\\.git\\)?"
+-          ^^^^^^^^^^^^^^^^^^^^
+- Error: Unbound module Re.Emacs
+[ERROR] The compilation of dune-release failed at "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p dune-release -j 39".
+
+#=== ERROR while compiling dune-release.1.0.1 =================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/dune-release.1.0.1
+# command              /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p dune-release -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/dune-release-166644-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/dune-release-166644-6cc03f.out
+### output ###
+# [...]
+#       ocamlc lib/.dune_release.objs/dune_release__Github.{cmo,cmt} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.dune_release.objs -I lib/.dune_release.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/astring -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bos -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -[...]
+# File "lib/github.ml", line 18, characters 4-24:
+# 18 |     Re.Emacs.compile_pat "git@github\\.com:\\(.+\\)/.+\\(\\.git\\)?"
+#          ^^^^^^^^^^^^^^^^^^^^
+# Error: Unbound module Re.Emacs
+#     ocamlopt lib/.dune_release.objs/dune_release__Github.{cmx,o} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt -w -40 -g -I lib/.dune_release.objs -I lib/.dune_release.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/astring -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bos -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamch[...]
+# File "lib/github.ml", line 18, characters 4-24:
+# 18 |     Re.Emacs.compile_pat "git@github\\.com:\\(.+\\)/.+\\(\\.git\\)?"
+#          ^^^^^^^^^^^^^^^^^^^^
+# Error: Unbound module Re.Emacs
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build dune-release 1.0.1
++- 
+- No changes have been performed
+'opam install dune-release.1.0.1' failed.

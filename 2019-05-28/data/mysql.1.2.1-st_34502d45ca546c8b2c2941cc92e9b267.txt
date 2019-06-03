@@ -1,0 +1,68 @@
+The following actions will be performed:
+  - install mysql 1.2.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [mysql.1.2.1: http]
+[mysql.1.2.1] downloaded from http://ygrek.org.ua/p/release/ocaml-mysql/ocaml-mysql-1.2.1.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [mysql: ./configure]
++ /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/mysql.1.2.1/./configure "--prefix" "/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1" (CWD=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/mysql.1.2.1)
+- configure: checking for ocaml compiler and tools...
+- checking for ocamlc... ocamlc
+- checking for ocamlopt... ocamlopt
+- checking for ocamlfind... ocamlfind
+- checking for a BSD-compatible install... /usr/bin/install -c
+- configure: checking for C compiler...
+- checking for gcc... gcc
+- checking whether the C compiler works... yes
+- checking for C compiler default output file name... a.out
+- checking for suffix of executables... 
+- checking whether we are cross compiling... no
+- checking for suffix of object files... o
+- checking whether we are using the GNU C compiler... yes
+- checking whether gcc accepts -g... yes
+- checking for gcc option to accept ISO C89... none needed
+- configure: checking for C header files...
+- checking how to run the C preprocessor... gcc -E
+- checking for grep that handles long lines and -e... /bin/grep
+- checking for egrep... /bin/grep -E
+- checking for ANSI C header files... yes
+- checking for mysql_config include... -I/usr/include/mysql
+- checking for mysql_config pkglibdir... /usr/lib/x86_64-linux-gnu
+- configure: checking for MySQL library...
+- checking for mysql_real_connect in -lmysqlclient... no
+- configure: error: MySQL client library not found
+[ERROR] The compilation of mysql failed at "/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/mysql.1.2.1/./configure --prefix /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1".
+
+#=== ERROR while compiling mysql.1.2.1 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/mysql.1.2.1
+# command              /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/mysql.1.2.1/./configure --prefix /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/mysql-6794-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/mysql-6794-a00279.out
+### output ###
+# [...]
+# checking whether gcc accepts -g... yes
+# checking for gcc option to accept ISO C89... none needed
+# configure: checking for C header files...
+# checking how to run the C preprocessor... gcc -E
+# checking for grep that handles long lines and -e... /bin/grep
+# checking for egrep... /bin/grep -E
+# checking for ANSI C header files... yes
+# checking for mysql_config include... -I/usr/include/mysql
+# checking for mysql_config pkglibdir... /usr/lib/x86_64-linux-gnu
+# configure: checking for MySQL library...
+# checking for mysql_real_connect in -lmysqlclient... no
+# configure: error: MySQL client library not found
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build mysql 1.2.1
++- 
+- No changes have been performed
+'opam install mysql.1.2.1' failed.

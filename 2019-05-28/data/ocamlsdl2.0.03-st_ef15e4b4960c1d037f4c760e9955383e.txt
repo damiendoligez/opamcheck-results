@@ -1,0 +1,142 @@
+The following actions will be performed:
+  - install ocamlsdl2 0.03
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [ocamlsdl2.0.03: http]
+[ocamlsdl2.0.03] downloaded from https://github.com/fccm/OCamlSDL2/archive/v0.03.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [ocamlsdl2: cp]
++ /bin/cp "src/Makefile.config.unix" "src/Makefile.config" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ocamlsdl2.0.03)
+Processing  1/2: [ocamlsdl2: make src]
++ /usr/bin/make "-C" "src" "gen" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ocamlsdl2.0.03)
+- make: Entering directory '/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ocamlsdl2.0.03/src'
+- ocaml variant.ml sdl_scancode.var.list > sdl_scancode.gen.c
+- ocaml variant.ml sdl_keycode.var.list > sdl_keycode.gen.c
+- make: Leaving directory '/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ocamlsdl2.0.03/src'
++ /usr/bin/make "-C" "src" "dep" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ocamlsdl2.0.03)
+- make: Entering directory '/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ocamlsdl2.0.03/src'
+- ocamldep sdl.ml sdl.mli sdl*.ml sdl*.mli > ml_depend.mk
+- gcc -MM -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml -I/usr/include/SDL2 -D_REENTRANT *_stub.[ch] > c_depend.mk
+- make: Leaving directory '/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ocamlsdl2.0.03/src'
++ /usr/bin/make "-C" "src" "opt" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ocamlsdl2.0.03)
+- make: Entering directory '/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ocamlsdl2.0.03/src'
+- ocamlc -g sdlinit.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlinit.ml
+- ocamlc -g sdlquit.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlquit.ml
+- ocamlc -g sdlrect.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlrect.ml
+- ocamlc -g sdlblendMode.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlblendMode.ml
+- ocamlc -g sdlpixelFormat.mli
+- ocamlc -g sdlsurface.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlpixelFormat.ml
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlsurface.ml
+- ocamlc -g sdlwindow.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlwindow.ml
+- ocamlc -g sdltype.mli
+- ocamlc -g sdltexture.mli
+- ocamlc -g sdlrender.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdltype.ml
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdltexture.ml
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlrender.ml
+- ocamlc -g sdlpixel.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlpixel.ml
+- ocamlc -g sdlscancode.mli
+- ocamlc -g sdlkeymod.mli
+- ocamlc -g sdlkeycode.mli
+- ocamlc -g sdlhat.mli
+- ocamlc -g sdlevent.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlscancode.ml
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlkeymod.ml
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlkeycode.ml
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlhat.ml
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlevent.ml
+- ocamlc -g sdlkeyboard.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlkeyboard.ml
+- ocamlc -g sdlmouse.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlmouse.ml
+- ocamlc -g sdljoystick.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdljoystick.ml
+- ocamlc -g sdlclipboard.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlclipboard.ml
+- ocamlc -g sdltimer.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdltimer.ml
+- ocamlc -g sdlaudio.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlaudio.ml
+- ocamlc -g sdlfilesystem.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlfilesystem.ml
+- ocamlc -g sdlversion.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlversion.ml
+- ocamlc -g sdlcpuinfo.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlcpuinfo.ml
+- ocamlc -g sdlpower.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlpower.ml
+- ocamlc -g sdlrwops.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlrwops.ml
+- ocamlc -g sdlerror.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlerror.ml
+- ocamlc -g sdlgl.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdlgl.ml
+- cat sdl_header > sdl.mli
+- ocamlc -g -i sdl.ml >> sdl.mli
+- ocamlc -g sdl.mli
+- ocamlopt -g -cc "cc" -g -w A -warn-error A -ccopt "" -c sdl.ml
+- ocamlc -g -ccopt "-static -I/usr/include/SDL2 -D_REENTRANT -g -O " sdlinit_stub.c
+- ocamlc -g -ccopt "-static -I/usr/include/SDL2 -D_REENTRANT -g -O " sdlquit_stub.c
+- ocamlc -g -ccopt "-static -I/usr/include/SDL2 -D_REENTRANT -g -O " sdlrect_stub.c
+- ocamlc -g -ccopt "-static -I/usr/include/SDL2 -D_REENTRANT -g -O " sdlblendMode_stub.c
+- ocamlc -g -ccopt "-static -I/usr/include/SDL2 -D_REENTRANT -g -O " sdlsurface_stub.c
+- ocamlc -g -ccopt "-static -I/usr/include/SDL2 -D_REENTRANT -g -O " sdlwindow_stub.c
+- ocamlc -g -ccopt "-static -I/usr/include/SDL2 -D_REENTRANT -g -O " sdlrender_stub.c
+- ocamlc -g -ccopt "-static -I/usr/include/SDL2 -D_REENTRANT -g -O " sdltexture_stub.c
+- ocamlc -g -ccopt "-static -I/usr/include/SDL2 -D_REENTRANT -g -O " sdlpixelFormat_stub.c
+- ocamlc -g -ccopt "-static -I/usr/include/SDL2 -D_REENTRANT -g -O " sdlpixel_stub.c
+- ocamlc -g -ccopt "-static -I/usr/include/SDL2 -D_REENTRANT -g -O " sdlevent_stub.c
+- sdlevent_stub.c: In function ‘Val_SDL_Event’:
+- sdlevent_stub.c:511:10: error: ‘SDL_DISPLAYEVENT’ undeclared (first use in this function); did you mean ‘Val_SDL_DISPLAYEVENT’?
+-      case SDL_DISPLAYEVENT:               return Val_SDL_DISPLAYEVENT;
+-           ^~~~~~~~~~~~~~~~
+-           Val_SDL_DISPLAYEVENT
+- sdlevent_stub.c:511:10: note: each undeclared identifier is reported only once for each function it appears in
+- sdlevent_stub.c:518:10: error: ‘SDL_SENSORUPDATE’ undeclared (first use in this function); did you mean ‘Val_SDL_SENSORUPDATE’?
+-      case SDL_SENSORUPDATE:               return Val_SDL_SENSORUPDATE;
+-           ^~~~~~~~~~~~~~~~
+-           Val_SDL_SENSORUPDATE
+- Makefile:193: recipe for target 'sdlevent_stub.o' failed
+- make: *** [sdlevent_stub.o] Error 2
+- make: Leaving directory '/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ocamlsdl2.0.03/src'
+[ERROR] The compilation of ocamlsdl2 failed at "/usr/bin/make -C src opt".
+
+#=== ERROR while compiling ocamlsdl2.0.03 =====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ocamlsdl2.0.03
+# command              /usr/bin/make -C src opt
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/ocamlsdl2-168939-c743ac.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/ocamlsdl2-168939-c743ac.out
+### output ###
+# [...]
+# sdlevent_stub.c:511:10: error: ‘SDL_DISPLAYEVENT’ undeclared (first use in this function); did you mean ‘Val_SDL_DISPLAYEVENT’?
+#      case SDL_DISPLAYEVENT:               return Val_SDL_DISPLAYEVENT;
+#           ^~~~~~~~~~~~~~~~
+#           Val_SDL_DISPLAYEVENT
+# sdlevent_stub.c:511:10: note: each undeclared identifier is reported only once for each function it appears in
+# sdlevent_stub.c:518:10: error: ‘SDL_SENSORUPDATE’ undeclared (first use in this function); did you mean ‘Val_SDL_SENSORUPDATE’?
+#      case SDL_SENSORUPDATE:               return Val_SDL_SENSORUPDATE;
+#           ^~~~~~~~~~~~~~~~
+#           Val_SDL_SENSORUPDATE
+# Makefile:193: recipe for target 'sdlevent_stub.o' failed
+# make: *** [sdlevent_stub.o] Error 2
+# make: Leaving directory '/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ocamlsdl2.0.03/src'
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ocamlsdl2 0.03
++- 
+- No changes have been performed
+'opam install ocamlsdl2.0.03' failed.

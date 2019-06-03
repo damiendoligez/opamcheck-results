@@ -1,0 +1,399 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install zmq 3.2-0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [zmq.3.2-0: http]
+[zmq.3.2-0] downloaded from https://github.com/issuu/ocaml-zmq/archive/3.2-0.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [zmq: oasis setup]
++ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/oasis "setup" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/zmq.3.2-0)
+Processing  1/2: [zmq: ocaml setup.ml]
++ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocaml "setup.ml" "-configure" "--prefix" "/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/zmq.3.2-0)
+- 
+- Configuration:
+- ocamlfind: ........................................... /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlfind
+- ocamlc: .............................................. /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlc.opt
+- ocamlopt: ............................................ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlopt.opt
+- ocamlbuild: .......................................... /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlbuild
+- Package name: ........................................ ZMQ
+- Package version: ..................................... 3.2
+- os_type: ............................................. Unix
+- system: .............................................. linux
+- architecture: ........................................ amd64
+- ccomp_type: .......................................... cc
+- ocaml_version: ....................................... 4.04.2
+- standard_library_default: ............................ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml
+- standard_library: .................................... /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml
+- standard_runtime: .................................... /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlrun
+- bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+- native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+- model: ............................................... default
+- ext_obj: ............................................. .o
+- ext_asm: ............................................. .s
+- ext_lib: ............................................. .a
+- ext_dll: ............................................. .so
+- default_executable_name: ............................. a.out
+- systhread_supported: ................................. true
+- Install architecture-independent files dir: .......... /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2
+- Install architecture-dependent files in dir: ......... $prefix
+- User executables: .................................... $exec_prefix/bin
+- System admin executables: ............................ $exec_prefix/sbin
+- Program executables: ................................. $exec_prefix/libexec
+- Read-only single-machine data: ....................... $prefix/etc
+- Modifiable architecture-independent data: ............ $prefix/com
+- Modifiable single-machine data: ...................... $prefix/var
+- Object code libraries: ............................... $exec_prefix/lib
+- Read-only arch-independent data root: ................ $prefix/share
+- Read-only architecture-independent data: ............. $datarootdir
+- Info documentation: .................................. $datarootdir/info
+- Locale-dependent data: ............................... $datarootdir/locale
+- Man documentation: ................................... $datarootdir/man
+- Documentation root: .................................. $datarootdir/doc/$pkg_name
+- HTML documentation: .................................. $docdir
+- DVI documentation: ................................... $docdir
+- PDF documentation: ................................... $docdir
+- PS documentation: .................................... $docdir
+- findlib_version: ..................................... 1.7.3
+- is_native: ........................................... true
+- suffix_program: ......................................
+- Remove a file.: ...................................... rm -f
+- Remove a directory.: ................................. rm -rf
+- Turn ocaml debug flag on: ............................ true
+- Turn ocaml profile flag on: .......................... false
+- Compiler support generation of .cmxs.: ............... true
+- OCamlbuild additional flags: .........................
+- Build and run tests: ................................. true
+- Create documentations: ............................... true
+- Compile tests executable and library and run them: ... false
+- pkg_uint_uint64: ..................................... /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/uint
+- pkg_ounit: ........................................... /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/oUnit
+- 
++ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocaml "setup.ml" "-build" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/zmq.3.2-0)
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlopt.opt unix.cmxa -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocamlbuild /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlfind ocamlc -g -ccopt -Wall -ccopt -W -ccopt -Wextra -ccopt -O2 -c src/caml_zmq_stubs.c
+- + /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlfind ocamlc -g -ccopt -Wall -ccopt -W -ccopt -Wextra -ccopt -O2 -c src/caml_zmq_stubs.c
+- In file included from src/caml_zmq_stubs.c:37:0:
+- src/uint64.h:15:29: error: unknown type name ‘uint64’; did you mean ‘uint64_t’?
+-  value caml_uint_copy_uint64(uint64 i);
+-                              ^~~~~~
+-                              uint64_t
+- src/caml_zmq_stubs.c: In function ‘caml_zmq_set_uint64_option’:
+- src/caml_zmq_stubs.c:137:5: error: unknown type name ‘uint64’; did you mean ‘uint64_t’?
+-      uint64 val = CAML_UINT_Uint64_val(socket_option);
+-      ^~~~~~
+-      uint64_t
+- In file included from src/caml_zmq_stubs.c:37:0:
+- src/uint64.h:13:37: error: ‘uint64’ undeclared (first use in this function); did you mean ‘uint64_t’?
+-  #define CAML_UINT_Uint64_val(v) (*((uint64 *)Data_custom_val(v)))
+-                                      ^
+- src/caml_zmq_stubs.c:137:18: note: in expansion of macro ‘CAML_UINT_Uint64_val’
+-      uint64 val = CAML_UINT_Uint64_val(socket_option);
+-                   ^~~~~~~~~~~~~~~~~~~~
+- src/uint64.h:13:37: note: each undeclared identifier is reported only once for each function it appears in
+-  #define CAML_UINT_Uint64_val(v) (*((uint64 *)Data_custom_val(v)))
+-                                      ^
+- src/caml_zmq_stubs.c:137:18: note: in expansion of macro ‘CAML_UINT_Uint64_val’
+-      uint64 val = CAML_UINT_Uint64_val(socket_option);
+-                   ^~~~~~~~~~~~~~~~~~~~
+- src/uint64.h:13:45: error: expected expression before ‘)’ token
+-  #define CAML_UINT_Uint64_val(v) (*((uint64 *)Data_custom_val(v)))
+-                                              ^
+- src/caml_zmq_stubs.c:137:18: note: in expansion of macro ‘CAML_UINT_Uint64_val’
+-      uint64 val = CAML_UINT_Uint64_val(socket_option);
+-                   ^~~~~~~~~~~~~~~~~~~~
+- src/caml_zmq_stubs.c: In function ‘caml_zmq_set_int64_option’:
+- src/caml_zmq_stubs.c:154:5: error: unknown type name ‘int64’; did you mean ‘int64_t’?
+-      int64 val = Int64_val(Field(socket_option, 1));
+-      ^~~~~
+-      int64_t
+- src/caml_zmq_stubs.c: In function ‘caml_zmq_get_uint64_option’:
+- src/caml_zmq_stubs.c:237:5: error: unknown type name ‘uint64’; did you mean ‘uint64_t’?
+-      uint64 mark;
+-      ^~~~~~
+-      uint64_t
+- In file included from src/caml_zmq_stubs.c:15:0:
+- src/caml_zmq_stubs.c:244:17: warning: implicit declaration of function ‘caml_uint_copy_uint64’; did you mean ‘caml_copy_int64’? [-Wimplicit-function-declaration]
+-      CAMLreturn (caml_uint_copy_uint64(mark));
+-                  ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:340:29: note: in definition of macro ‘CAMLreturnT’
+-    type caml__temp_result = (result); \
+-                              ^~~~~~
+- src/caml_zmq_stubs.c:244:5: note: in expansion of macro ‘CAMLreturn’
+-      CAMLreturn (caml_uint_copy_uint64(mark));
+-      ^~~~~~~~~~
+- src/caml_zmq_stubs.c: In function ‘caml_zmq_get_int64_option’:
+- src/caml_zmq_stubs.c:249:5: error: unknown type name ‘int64’; did you mean ‘int64_t’?
+-      int64 mark;
+-      ^~~~~
+-      int64_t
+- src/caml_zmq_stubs.c: In function ‘caml_zmq_event_recv’:
+- src/caml_zmq_stubs.c:496:5: error: unknown type name ‘zmq_event_t’; did you mean ‘zmq_msg_t’?
+-      zmq_event_t event;
+-      ^~~~~~~~~~~
+-      zmq_msg_t
+- src/caml_zmq_stubs.c:499:18: error: request for member ‘event’ in something not a structure or union
+-      switch (event.event) {
+-                   ^
+- In file included from src/caml_zmq_stubs.c:15:0:
+- src/caml_zmq_stubs.c:502:54: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 0, caml_copy_string(event.data.connected.addr));
+-                                                       ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- src/caml_zmq_stubs.c:503:44: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 1, Val_fd(event.data.connected.fd));
+-                                             ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/mlvalues.h:77:20: note: in expansion of macro ‘Val_long’
+-  #define Val_int(x) Val_long(x)
+-                     ^~~~~~~~
+- src/caml_zmq_stubs.c:27:21: note: in expansion of macro ‘Val_int’
+-  #  define Val_fd(x) Val_int(x)
+-                      ^~~~~~~
+- src/caml_zmq_stubs.c:503:32: note: in expansion of macro ‘Val_fd’
+-          Store_field(result, 1, Val_fd(event.data.connected.fd));
+-                                 ^~~~~~
+- src/caml_zmq_stubs.c:507:54: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 0, caml_copy_string(event.data.connect_delayed.addr));
+-                                                       ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- src/caml_zmq_stubs.c:508:45: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 1, Val_int(event.data.connect_delayed.err));
+-                                              ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/mlvalues.h:77:20: note: in expansion of macro ‘Val_long’
+-  #define Val_int(x) Val_long(x)
+-                     ^~~~~~~~
+- src/caml_zmq_stubs.c:508:32: note: in expansion of macro ‘Val_int’
+-          Store_field(result, 1, Val_int(event.data.connect_delayed.err));
+-                                 ^~~~~~~
+- src/caml_zmq_stubs.c:509:67: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 2, caml_copy_string(zmq_strerror(event.data.connect_delayed.err)));
+-                                                                    ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- src/caml_zmq_stubs.c:514:54: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 0, caml_copy_string(event.data.connect_retried.addr));
+-                                                       ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- src/caml_zmq_stubs.c:515:45: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 1, Val_int(event.data.connect_retried.interval));
+-                                              ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/mlvalues.h:77:20: note: in expansion of macro ‘Val_long’
+-  #define Val_int(x) Val_long(x)
+-                     ^~~~~~~~
+- src/caml_zmq_stubs.c:515:32: note: in expansion of macro ‘Val_int’
+-          Store_field(result, 1, Val_int(event.data.connect_retried.interval));
+-                                 ^~~~~~~
+- src/caml_zmq_stubs.c:520:54: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 0, caml_copy_string(event.data.listening.addr));
+-                                                       ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- src/caml_zmq_stubs.c:521:44: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 1, Val_fd(event.data.listening.fd));
+-                                             ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/mlvalues.h:77:20: note: in expansion of macro ‘Val_long’
+-  #define Val_int(x) Val_long(x)
+-                     ^~~~~~~~
+- src/caml_zmq_stubs.c:27:21: note: in expansion of macro ‘Val_int’
+-  #  define Val_fd(x) Val_int(x)
+-                      ^~~~~~~
+- src/caml_zmq_stubs.c:521:32: note: in expansion of macro ‘Val_fd’
+-          Store_field(result, 1, Val_fd(event.data.listening.fd));
+-                                 ^~~~~~
+- src/caml_zmq_stubs.c:526:54: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 0, caml_copy_string(event.data.bind_failed.addr));
+-                                                       ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- src/caml_zmq_stubs.c:527:45: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 1, Val_int(event.data.bind_failed.err));
+-                                              ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/mlvalues.h:77:20: note: in expansion of macro ‘Val_long’
+-  #define Val_int(x) Val_long(x)
+-                     ^~~~~~~~
+- src/caml_zmq_stubs.c:527:32: note: in expansion of macro ‘Val_int’
+-          Store_field(result, 1, Val_int(event.data.bind_failed.err));
+-                                 ^~~~~~~
+- src/caml_zmq_stubs.c:528:67: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 2, caml_copy_string(zmq_strerror(event.data.bind_failed.err)));
+-                                                                    ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- src/caml_zmq_stubs.c:533:54: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 0, caml_copy_string(event.data.accepted.addr));
+-                                                       ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- src/caml_zmq_stubs.c:534:44: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 1, Val_fd(event.data.accepted.fd));
+-                                             ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/mlvalues.h:77:20: note: in expansion of macro ‘Val_long’
+-  #define Val_int(x) Val_long(x)
+-                     ^~~~~~~~
+- src/caml_zmq_stubs.c:27:21: note: in expansion of macro ‘Val_int’
+-  #  define Val_fd(x) Val_int(x)
+-                      ^~~~~~~
+- src/caml_zmq_stubs.c:534:32: note: in expansion of macro ‘Val_fd’
+-          Store_field(result, 1, Val_fd(event.data.accepted.fd));
+-                                 ^~~~~~
+- src/caml_zmq_stubs.c:539:54: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 0, caml_copy_string(event.data.accept_failed.addr));
+-                                                       ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- src/caml_zmq_stubs.c:540:45: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 1, Val_int(event.data.accept_failed.err));
+-                                              ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/mlvalues.h:77:20: note: in expansion of macro ‘Val_long’
+-  #define Val_int(x) Val_long(x)
+-                     ^~~~~~~~
+- src/caml_zmq_stubs.c:540:32: note: in expansion of macro ‘Val_int’
+-          Store_field(result, 1, Val_int(event.data.accept_failed.err));
+-                                 ^~~~~~~
+- src/caml_zmq_stubs.c:541:67: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 2, caml_copy_string(zmq_strerror(event.data.accept_failed.err)));
+-                                                                    ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- src/caml_zmq_stubs.c:546:54: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 0, caml_copy_string(event.data.closed.addr));
+-                                                       ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- src/caml_zmq_stubs.c:547:44: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 1, Val_fd(event.data.closed.fd));
+-                                             ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/mlvalues.h:77:20: note: in expansion of macro ‘Val_long’
+-  #define Val_int(x) Val_long(x)
+-                     ^~~~~~~~
+- src/caml_zmq_stubs.c:27:21: note: in expansion of macro ‘Val_int’
+-  #  define Val_fd(x) Val_int(x)
+-                      ^~~~~~~
+- src/caml_zmq_stubs.c:547:32: note: in expansion of macro ‘Val_fd’
+-          Store_field(result, 1, Val_fd(event.data.closed.fd));
+-                                 ^~~~~~
+- src/caml_zmq_stubs.c:552:54: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 0, caml_copy_string(event.data.close_failed.addr));
+-                                                       ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- src/caml_zmq_stubs.c:553:45: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 1, Val_int(event.data.close_failed.err));
+-                                              ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/mlvalues.h:77:20: note: in expansion of macro ‘Val_long’
+-  #define Val_int(x) Val_long(x)
+-                     ^~~~~~~~
+- src/caml_zmq_stubs.c:553:32: note: in expansion of macro ‘Val_int’
+-          Store_field(result, 1, Val_int(event.data.close_failed.err));
+-                                 ^~~~~~~
+- src/caml_zmq_stubs.c:554:67: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 2, caml_copy_string(zmq_strerror(event.data.close_failed.err)));
+-                                                                    ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- src/caml_zmq_stubs.c:559:54: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 0, caml_copy_string(event.data.disconnected.addr));
+-                                                       ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- src/caml_zmq_stubs.c:560:44: error: request for member ‘data’ in something not a structure or union
+-          Store_field(result, 1, Val_fd(event.data.disconnected.fd));
+-                                             ^
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+-    value caml__temp_val = (val); \
+-                            ^~~
+- /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/mlvalues.h:77:20: note: in expansion of macro ‘Val_long’
+-  #define Val_int(x) Val_long(x)
+-                     ^~~~~~~~
+- src/caml_zmq_stubs.c:27:21: note: in expansion of macro ‘Val_int’
+-  #  define Val_fd(x) Val_int(x)
+-                      ^~~~~~~
+- src/caml_zmq_stubs.c:560:32: note: in expansion of macro ‘Val_fd’
+-          Store_field(result, 1, Val_fd(event.data.disconnected.fd));
+-                                 ^~~~~~
+- Command exited with code 2.
+- E: Failure("Command ''/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlbuild' src/libZMQB_stubs.a src/dllZMQB_stubs.so src/ZMQB.cma src/ZMQB.cmxa src/ZMQB.a src/ZMQB.cmxs test/test.native -tag debug' terminated with error code 10")
+[ERROR] The compilation of zmq failed at "/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling zmq.3.2-0 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/zmq.3.2-0
+# command              /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/zmq-174893-e4db2f.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/zmq-174893-e4db2f.out
+### output ###
+# /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/memory.h:353:27: note: in definition of macro ‘Store_field’
+# [...]
+# /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/caml/mlvalues.h:77:20: note: in expansion of macro ‘Val_long’
+#  #define Val_int(x) Val_long(x)
+#                     ^~~~~~~~
+# src/caml_zmq_stubs.c:27:21: note: in expansion of macro ‘Val_int’
+#  #  define Val_fd(x) Val_int(x)
+#                      ^~~~~~~
+# src/caml_zmq_stubs.c:560:32: note: in expansion of macro ‘Val_fd’
+#          Store_field(result, 1, Val_fd(event.data.disconnected.fd));
+#                                 ^~~~~~
+# Command exited with code 2.
+# E: Failure("Command ''/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlbuild' src/libZMQB_stubs.a src/dllZMQB_stubs.so src/ZMQB.cma src/ZMQB.cmxa src/ZMQB.a src/ZMQB.cmxs test/test.native -tag debug' terminated with error code 10")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build zmq 3.2-0
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libzmq3-dev
+
+'opam install zmq.3.2-0' failed.

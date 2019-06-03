@@ -1,0 +1,42 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install conf-pam 1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [conf-pam: cc main.c]
++ /usr/bin/cc "-lpam" "main.c" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/conf-pam.1)
+- main.c:1:10: fatal error: security/pam_appl.h: No such file or directory
+-  #include <security/pam_appl.h>
+-           ^~~~~~~~~~~~~~~~~~~~~
+- compilation terminated.
+[ERROR] The compilation of conf-pam failed at "/usr/bin/cc -lpam main.c".
+
+#=== ERROR while compiling conf-pam.1 =========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/conf-pam.1
+# command              /usr/bin/cc -lpam main.c
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/conf-pam-123665-9b8556.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/conf-pam-123665-9b8556.out
+### output ###
+# main.c:1:10: fatal error: security/pam_appl.h: No such file or directory
+#  #include <security/pam_appl.h>
+#           ^~~~~~~~~~~~~~~~~~~~~
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-pam 1
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libpam0g-dev
+
+'opam install conf-pam.1' failed.

@@ -1,0 +1,77 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install bos 0.1.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [bos.0.1.0: http]
+[bos.0.1.0] downloaded from http://erratique.ch/software/bos/releases/bos-0.1.0.tbz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [bos: ocaml build]
++ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocaml "pkg/pkg.ml" "build" "--pinned" "false" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/bos.0.1.0)
+- ocamlfind ocamldep -package bytes -package rresult -package astring -package fpath -package fmt -package logs -package unix -modules src/bos_base.ml > src/bos_base.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -package bytes -package rresult -package astring -package fpath -package fmt -package logs -package unix -I src -I test -o src/bos_base.cmo src/bos_base.ml
+- ocamlfind ocamldep -package bytes -package rresult -package astring -package fpath -package fmt -package logs -package unix -modules src/bos_pat.ml > src/bos_pat.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -package bytes -package rresult -package astring -package fpath -package fmt -package logs -package unix -I src -I test -o src/bos_pat.cmo src/bos_pat.ml
+- ocamlfind ocamldep -package bytes -package rresult -package astring -package fpath -package fmt -package logs -package unix -modules src/bos_log.ml > src/bos_log.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -package bytes -package rresult -package astring -package fpath -package fmt -package logs -package unix -I src -I test -o src/bos_log.cmo src/bos_log.ml
+- ocamlfind ocamldep -package bytes -package rresult -package astring -package fpath -package fmt -package logs -package unix -modules src/bos_cmd.ml > src/bos_cmd.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -package bytes -package rresult -package astring -package fpath -package fmt -package logs -package unix -I src -I test -o src/bos_cmd.cmo src/bos_cmd.ml
+- ocamlfind ocamldep -package bytes -package rresult -package astring -package fpath -package fmt -package logs -package unix -modules src/bos_os_u.ml > src/bos_os_u.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -package bytes -package rresult -package astring -package fpath -package fmt -package logs -package unix -I src -I test -o src/bos_os_u.cmo src/bos_os_u.ml
+- ocamlfind ocamldep -package bytes -package rresult -package astring -package fpath -package fmt -package logs -package unix -modules src/bos_os_tmp.ml > src/bos_os_tmp.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -package bytes -package rresult -package astring -package fpath -package fmt -package logs -package unix -I src -I test -o src/bos_os_tmp.cmo src/bos_os_tmp.ml
+- ocamlfind ocamldep -package bytes -package rresult -package astring -package fpath -package fmt -package logs -package unix -modules src/bos_os_path.ml > src/bos_os_path.ml.depends
+- ocamlfind ocamlc -c -g -bin-annot -safe-string -package bytes -package rresult -package astring -package fpath -package fmt -package logs -package unix -I src -I test -o src/bos_os_path.cmo src/bos_os_path.ml
+- + ocamlfind ocamlc -c -g -bin-annot -safe-string -package bytes -package rresult -package astring -package fpath -package fmt -package logs -package unix -I src -I test -o src/bos_os_path.cmo src/bos_os_path.ml
+- File "src/bos_os_path.ml", line 133, characters 26-29:
+- Error: Unbound value >>=
+- Hint: Did you mean >=?
+- Command exited with code 2.
+- pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-tag' 'debug'
+-      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+-      'README.md' 'src/bos.a' 'src/bos.cmxs' 'src/bos.cmxa' 'src/bos.cma'
+-      'src/bos.cmx' 'src/bos.cmi' 'src/bos.mli' 'src/bos_os_arg.cmx'
+-      'src/bos_os_env.cmx' 'src/bos_os_cmd.cmx' 'src/bos_os_dir.cmx'
+-      'src/bos_os_file.cmx' 'src/bos_os_path.cmx' 'src/bos_os_tmp.cmx'
+-      'src/bos_os_u.cmx' 'src/bos_cmd.cmx' 'src/bos_log.cmx' 'src/bos_pat.cmx'
+-      'src/bos_base.cmx' 'src/bos_setup.a' 'src/bos_setup.cmxs'
+-      'src/bos_setup.cmxa' 'src/bos_setup.cma' 'src/bos_setup.cmx'
+-      'src/bos_setup.cmi' 'src/bos_setup.mli' 'src/bos_top.a'
+-      'src/bos_top.cmxs' 'src/bos_top.cmxa' 'src/bos_top.cma'
+-      'src/bos_top.cmx' 'src/bos_top_init.ml']: exited with 10
+[ERROR] The compilation of bos failed at "/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocaml pkg/pkg.ml build --pinned false".
+
+#=== ERROR while compiling bos.0.1.0 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/bos.0.1.0
+# command              /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocaml pkg/pkg.ml build --pinned false
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/bos-27666-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/bos-27666-a00279.out
+### output ###
+# [...]
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-tag' 'debug'
+#      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+#      'README.md' 'src/bos.a' 'src/bos.cmxs' 'src/bos.cmxa' 'src/bos.cma'
+#      'src/bos.cmx' 'src/bos.cmi' 'src/bos.mli' 'src/bos_os_arg.cmx'
+#      'src/bos_os_env.cmx' 'src/bos_os_cmd.cmx' 'src/bos_os_dir.cmx'
+#      'src/bos_os_file.cmx' 'src/bos_os_path.cmx' 'src/bos_os_tmp.cmx'
+#      'src/bos_os_u.cmx' 'src/bos_cmd.cmx' 'src/bos_log.cmx' 'src/bos_pat.cmx'
+#      'src/bos_base.cmx' 'src/bos_setup.a' 'src/bos_setup.cmxs'
+#      'src/bos_setup.cmxa' 'src/bos_setup.cma' 'src/bos_setup.cmx'
+#      'src/bos_setup.cmi' 'src/bos_setup.mli' 'src/bos_top.a'
+#      'src/bos_top.cmxs' 'src/bos_top.cmxa' 'src/bos_top.cma'
+#      'src/bos_top.cmx' 'src/bos_top_init.ml']: exited with 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build bos 0.1.0
++- 
+- No changes have been performed
+'opam install bos.0.1.0' failed.

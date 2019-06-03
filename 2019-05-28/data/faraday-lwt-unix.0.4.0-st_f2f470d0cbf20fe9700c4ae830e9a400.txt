@@ -1,0 +1,44 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install faraday-lwt-unix 0.4.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[faraday-lwt-unix.0.4.0] found in cache
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [faraday-lwt-unix: jbuilder build]
++ /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/jbuilder "build" "-p" "faraday-lwt-unix" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/faraday-lwt-unix.0.4.0)
+-     ocamldep lwt_unix/faraday_lwt_unix.depends.ocamldep-output
+-     ocamldep lwt_unix/faraday_lwt_unix.dependsi.ocamldep-output
+-       ocamlc lwt_unix/faraday_lwt_unix.{cmi,cmti} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlc.opt -w -40 -g -bin-annot -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/bytes -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/faraday -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/faraday-lwt -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/lwt -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocplib-endian -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/result -no-alias-deps -I lwt_unix -o lwt_unix/faraday_lwt_unix.cmi -c -intf lwt_unix/faraday_lwt_unix.mli)
+- File "lwt_unix/faraday_lwt_unix.mli", line 7, characters 5-24:
+- Error: Unbound module Lwt_unix
+[ERROR] The compilation of faraday-lwt-unix failed at "/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/jbuilder build -p faraday-lwt-unix -j 39".
+
+#=== ERROR while compiling faraday-lwt-unix.0.4.0 =============================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/faraday-lwt-unix.0.4.0
+# command              /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/jbuilder build -p faraday-lwt-unix -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/faraday-lwt-unix-119848-05296d.env
+# output-file          /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/faraday-lwt-unix-119848-05296d.out
+### output ###
+#     ocamldep lwt_unix/faraday_lwt_unix.depends.ocamldep-output
+#     ocamldep lwt_unix/faraday_lwt_unix.dependsi.ocamldep-output
+#       ocamlc lwt_unix/faraday_lwt_unix.{cmi,cmti} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlc.opt -w -40 -g -bin-annot -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/bytes -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/faraday -I /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/faraday-lwt -I /op[...]
+# File "lwt_unix/faraday_lwt_unix.mli", line 7, characters 5-24:
+# Error: Unbound module Lwt_unix
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build faraday-lwt-unix 0.4.0
++- 
+- No changes have been performed
+'opam install faraday-lwt-unix.0.4.0' failed.

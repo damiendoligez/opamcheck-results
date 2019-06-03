@@ -1,0 +1,60 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install ppx_tools_versioned 5.2
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [ppx_tools_versioned.5.2: http]
+[ppx_tools_versioned.5.2] downloaded from https://github.com/ocaml-ppx/ppx_tools_versioned/archive/5.2.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [ppx_tools_versioned: jbuilder build]
++ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/jbuilder "build" "-p" "ppx_tools_versioned" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/ppx_tools_versioned.5.2)
+-     ocamldep ppx_tools_versioned_metaquot_402.depends.ocamldep-output
+-     ocamldep ppx_tools_versioned.dependsi.ocamldep-output
+-     ocamldep ppx_tools_versioned_metaquot_403.depends.ocamldep-output
+-     ocamldep ppx_tools_versioned_metaquot_404.depends.ocamldep-output
+-     ocamldep ppx_tools_versioned_metaquot_405.depends.ocamldep-output
+-     ocamldep ppx_tools_versioned_metaquot_406.depends.ocamldep-output
+-       ocamlc ast_convenience_406.{cmi,cmti} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlc.opt -w -40 -w +A-4-17-44-45-105-42 -safe-string -g -bin-annot -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml-migrate-parsetree -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/compiler-libs -no-alias-deps -I . -o ast_convenience_406.cmi -c -intf ast_convenience_406.mli)
+- File "ast_convenience_406.mli", line 1, characters 5-12:
+- Error: Unbound module Ast_406
+-       ocamlc ast_mapper_class_406.{cmi,cmti} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlc.opt -w -40 -w +A-4-17-44-45-105-42 -safe-string -g -bin-annot -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml-migrate-parsetree -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/compiler-libs -no-alias-deps -I . -o ast_mapper_class_406.cmi -c -intf ast_mapper_class_406.mli)
+- File "ast_mapper_class_406.mli", line 1, characters 5-12:
+- Error: Unbound module Ast_406
+[ERROR] The compilation of ppx_tools_versioned failed at "/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/jbuilder build -p ppx_tools_versioned -j 39".
+
+#=== ERROR while compiling ppx_tools_versioned.5.2 ============================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/ppx_tools_versioned.5.2
+# command              /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/jbuilder build -p ppx_tools_versioned -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/ppx_tools_versioned-22343-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/ppx_tools_versioned-22343-a00279.out
+### output ###
+# [...]
+#     ocamldep ppx_tools_versioned_metaquot_403.depends.ocamldep-output
+#     ocamldep ppx_tools_versioned_metaquot_404.depends.ocamldep-output
+#     ocamldep ppx_tools_versioned_metaquot_405.depends.ocamldep-output
+#     ocamldep ppx_tools_versioned_metaquot_406.depends.ocamldep-output
+#       ocamlc ast_convenience_406.{cmi,cmti} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlc.opt -w -40 -w +A-4-17-44-45-105-42 -safe-string -g -bin-annot -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml-migrate-parsetree -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/compiler-libs -no-alias-deps -I . -o ast_co[...]
+# File "ast_convenience_406.mli", line 1, characters 5-12:
+# Error: Unbound module Ast_406
+#       ocamlc ast_mapper_class_406.{cmi,cmti} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlc.opt -w -40 -w +A-4-17-44-45-105-42 -safe-string -g -bin-annot -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml-migrate-parsetree -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/compiler-libs -no-alias-deps -I . -o ast_ma[...]
+# File "ast_mapper_class_406.mli", line 1, characters 5-12:
+# Error: Unbound module Ast_406
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ppx_tools_versioned 5.2
++- 
+- No changes have been performed
+'opam install ppx_tools_versioned.5.2' failed.

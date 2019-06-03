@@ -1,0 +1,82 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install ppx_tools_versioned 5.2
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [ppx_tools_versioned.5.2: http]
+[ppx_tools_versioned.5.2] downloaded from https://github.com/ocaml-ppx/ppx_tools_versioned/archive/5.2.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [ppx_tools_versioned: jbuilder build]
++ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/jbuilder "build" "-p" "ppx_tools_versioned" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/ppx_tools_versioned.5.2)
+-     ocamldep ppx_tools_versioned_metaquot_405.depends.ocamldep-output
+-     ocamldep ppx_tools_versioned.dependsi.ocamldep-output
+-     ocamldep ppx_tools_versioned_metaquot_402.depends.ocamldep-output
+-     ocamldep ppx_tools_versioned_metaquot_403.depends.ocamldep-output
+-     ocamldep ppx_tools_versioned_metaquot_404.depends.ocamldep-output
+-     ocamldep ppx_tools_versioned_metaquot_406.depends.ocamldep-output
+-       ocamlc ast_mapper_class_404.{cmi,cmti}
+-       ocamlc ast_convenience_402.{cmi,cmti}
+-       ocamlc ast_mapper_class_405.{cmi,cmti}
+-     ocamldep ppx_tools_versioned.depends.ocamldep-output
+-       ocamlc ast_convenience_403.{cmi,cmti}
+-       ocamlc ast_convenience_404.{cmi,cmti}
+-       ocamlc ast_convenience_405.{cmi,cmti}
+-       ocamlc ast_convenience_406.{cmi,cmti}
+-       ocamlc ast_mapper_class_402.{cmi,cmti}
+-       ocamlc ast_mapper_class_403.{cmi,cmti}
+-       ocamlc ast_mapper_class_406.{cmi,cmti}
+-       ocamlc ppx_tools_404.{cmi,cmo,cmt}
+-       ocamlc ppx_tools_405.{cmi,cmo,cmt}
+-       ocamlc ppx_tools_402.{cmi,cmo,cmt}
+-       ocamlc ppx_tools_403.{cmi,cmo,cmt}
+-       ocamlc ppx_tools_406.{cmi,cmo,cmt}
+-     ocamlopt ast_mapper_class_406.{cmx,o} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlopt.opt -w -40 -w +A-4-17-44-45-105-42 -safe-string -g -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml-migrate-parsetree -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/compiler-libs -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/result -no-alias-deps -I . -o ast_mapper_class_406.cmx -c -impl ast_mapper_class_406.ml)
+- File "ast_mapper_class_406.ml", line 30, characters 6-10:
+- Error: Unbound constructor Otag
+- Hint: Did you mean Rtag?
+-       ocamlc ast_lifter_406.{cmi,cmo,cmt} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlc.opt -w -40 -w +A-4-17-44-45-105-42 -safe-string -g -bin-annot -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml-migrate-parsetree -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/compiler-libs -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/result -no-alias-deps -I . -o ast_lifter_406.cmo -c -impl ast_lifter_406.ml)
+- File "ast_lifter_406.ml", line 429, characters 41-63:
+- Error: Unbound type constructor Parsetree.object_field
+-       ocamlc ast_mapper_class_406.{cmo,cmt} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlc.opt -w -40 -w +A-4-17-44-45-105-42 -safe-string -g -bin-annot -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml-migrate-parsetree -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/compiler-libs -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/result -no-alias-deps -I . -o ast_mapper_class_406.cmo -c -impl ast_mapper_class_406.ml)
+- File "ast_mapper_class_406.ml", line 30, characters 6-10:
+- Error: Unbound constructor Otag
+- Hint: Did you mean Rtag?
+[ERROR] The compilation of ppx_tools_versioned failed at "/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/jbuilder build -p ppx_tools_versioned -j 39".
+
+#=== ERROR while compiling ppx_tools_versioned.5.2 ============================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/ppx_tools_versioned.5.2
+# command              /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/jbuilder build -p ppx_tools_versioned -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/ppx_tools_versioned-17857-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/ppx_tools_versioned-17857-a00279.out
+### output ###
+# [...]
+# File "ast_mapper_class_406.ml", line 30, characters 6-10:
+# Error: Unbound constructor Otag
+# Hint: Did you mean Rtag?
+#       ocamlc ast_lifter_406.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlc.opt -w -40 -w +A-4-17-44-45-105-42 -safe-string -g -bin-annot -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml-migrate-parsetree -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/compiler-libs -I /opamcheck/sandbox/opamsta[...]
+# File "ast_lifter_406.ml", line 429, characters 41-63:
+# Error: Unbound type constructor Parsetree.object_field
+#       ocamlc ast_mapper_class_406.{cmo,cmt} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/bin/ocamlc.opt -w -40 -w +A-4-17-44-45-105-42 -safe-string -g -bin-annot -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml-migrate-parsetree -I /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/lib/ocaml/compiler-libs -I /opamcheck/sandbox/opamsta[...]
+# File "ast_mapper_class_406.ml", line 30, characters 6-10:
+# Error: Unbound constructor Otag
+# Hint: Did you mean Rtag?
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ppx_tools_versioned 5.2
++- 
+- No changes have been performed
+'opam install ppx_tools_versioned.5.2' failed.

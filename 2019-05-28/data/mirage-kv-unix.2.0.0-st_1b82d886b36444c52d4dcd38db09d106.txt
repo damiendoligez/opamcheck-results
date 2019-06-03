@@ -1,0 +1,42 @@
+The following actions will be performed:
+  - install mirage-kv-unix 2.0.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [mirage-kv-unix.2.0.0: http]
+[mirage-kv-unix.2.0.0] downloaded from https://github.com/mirage/mirage-kv-unix/releases/download/v2.0.0/mirage-kv-unix-v2.0.0.tbz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [mirage-kv-unix: dune build]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune "build" "-p" "mirage-kv-unix" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/mirage-kv-unix.2.0.0)
+-       ocamlc src/.mirage_kv_unix.objs/byte/mirage_kv_unix.{cmi,cmti} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.mirage_kv_unix.objs/byte -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/cstruct -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/lwt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/lwt/unix -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/mirage-device -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/mirage-kv -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/mirage-kv-lwt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/mmap -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml/threads -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ptime -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/result -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/seq -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/sexplib -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/sexplib/0 -no-alias-deps -o src/.mirage_kv_unix.objs/byte/mirage_kv_unix.cmi -c -intf src/mirage_kv_unix.mli)
+- File "src/mirage_kv_unix.mli", line 22, characters 51-66:
+- 22 | type error = [ Mirage_kv.error | `Storage_error of Mirage_kv.Key.t * string ]
+-                                                         ^^^^^^^^^^^^^^^
+- Error: Unbound module Mirage_kv.Key
+[ERROR] The compilation of mirage-kv-unix failed at "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p mirage-kv-unix -j 39".
+
+#=== ERROR while compiling mirage-kv-unix.2.0.0 ===============================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/mirage-kv-unix.2.0.0
+# command              /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p mirage-kv-unix -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/mirage-kv-unix-121663-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/mirage-kv-unix-121663-a00279.out
+### output ###
+#       ocamlc src/.mirage_kv_unix.objs/byte/mirage_kv_unix.{cmi,cmti} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.mirage_kv_unix.objs/byte -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/cstruct -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -I /opamcheck/sandbox/opamsta[...]
+# File "src/mirage_kv_unix.mli", line 22, characters 51-66:
+# 22 | type error = [ Mirage_kv.error | `Storage_error of Mirage_kv.Key.t * string ]
+#                                                         ^^^^^^^^^^^^^^^
+# Error: Unbound module Mirage_kv.Key
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build mirage-kv-unix 2.0.0
++- 
+- No changes have been performed
+'opam install mirage-kv-unix.2.0.0' failed.

@@ -1,0 +1,33 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install conf-nanomsg 0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [conf-nanomsg: pkg-config nanomsg]
++ /usr/bin/pkg-config "nanomsg" (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/conf-nanomsg.0)
+[ERROR] The compilation of conf-nanomsg failed at "/usr/bin/pkg-config nanomsg".
+
+#=== ERROR while compiling conf-nanomsg.0 =====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/conf-nanomsg.0
+# command              /usr/bin/pkg-config nanomsg
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/conf-nanomsg-122378-ccabea.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/conf-nanomsg-122378-ccabea.out
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-nanomsg 0
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libnanomsg-dev
+
+'opam install conf-nanomsg.0' failed.

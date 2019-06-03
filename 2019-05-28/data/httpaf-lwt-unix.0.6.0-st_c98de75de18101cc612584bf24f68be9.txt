@@ -1,0 +1,42 @@
+The following actions will be performed:
+  - install httpaf-lwt-unix 0.6.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [httpaf-lwt-unix.0.6.0: http]
+[httpaf-lwt-unix.0.6.0] downloaded from https://github.com/inhabitedtype/httpaf/archive/0.6.0.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [httpaf-lwt-unix: dune build]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune "build" "-p" "httpaf-lwt-unix" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/httpaf-lwt-unix.0.6.0)
+-       ocamlc lwt-unix/.httpaf_lwt_unix.objs/httpaf_lwt_unix.{cmi,cmti} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I lwt-unix/.httpaf_lwt_unix.objs -I lwt-unix/.httpaf_lwt_unix.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/angstrom -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bigstringaf -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bytes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/faraday -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/faraday-lwt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/faraday-lwt-unix -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/httpaf -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/lwt -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/lwt/unix -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/mmap -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml/threads -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/result -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/seq -no-alias-deps -o lwt-unix/.httpaf_lwt_unix.objs/httpaf_lwt_unix.cmi -c -intf lwt-unix/httpaf_lwt_unix.mli)
+- File "lwt-unix/httpaf_lwt_unix.mli", line 43, characters 25-33:
+- 43 |     :  ?config         : Config.t
+-                               ^^^^^^^^
+- Error: Unbound module Config
+[ERROR] The compilation of httpaf-lwt-unix failed at "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p httpaf-lwt-unix -j 39".
+
+#=== ERROR while compiling httpaf-lwt-unix.0.6.0 ==============================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/httpaf-lwt-unix.0.6.0
+# command              /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p httpaf-lwt-unix -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/httpaf-lwt-unix-67666-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/httpaf-lwt-unix-67666-a00279.out
+### output ###
+#       ocamlc lwt-unix/.httpaf_lwt_unix.objs/httpaf_lwt_unix.{cmi,cmti} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I lwt-unix/.httpaf_lwt_unix.objs -I lwt-unix/.httpaf_lwt_unix.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/angstrom -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/bigstringaf -I /opamcheck/sandbox/opamstate/4.0[...]
+# File "lwt-unix/httpaf_lwt_unix.mli", line 43, characters 25-33:
+# 43 |     :  ?config         : Config.t
+#                               ^^^^^^^^
+# Error: Unbound module Config
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build httpaf-lwt-unix 0.6.0
++- 
+- No changes have been performed
+'opam install httpaf-lwt-unix.0.6.0' failed.

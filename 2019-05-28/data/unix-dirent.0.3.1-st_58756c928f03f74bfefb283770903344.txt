@@ -1,0 +1,110 @@
+The following actions will be performed:
+  - install unix-dirent 0.3.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [unix-dirent.0.3.1: http]
+[unix-dirent.0.3.1] downloaded from https://github.com/dsheets/ocaml-unix-dirent/archive/0.3.1.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [unix-dirent: make build]
++ /usr/bin/make "build" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/unix-dirent.0.3.1)
+- CTYPES_LIB_DIR=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ctypes LWT_LIB_DIR=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/lwt OCAML_LIB_DIR=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml ocamlbuild -use-ocamlfind -classic-display dirent.cma dirent.cmxa unix_dirent.cma unix_dirent.cmxa libunix_dirent_stubs.a dllunix_dirent_stubs.so unix_dirent_lwt.cma unix_dirent_lwt.cmxa libunix_dirent_lwt_stubs.a dllunix_dirent_lwt_stubs.so
+- ocamlfind ocamlopt unix.cmxa -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+- ocamlfind ocamldep -package bytes -modules lib/dirent.mli > lib/dirent.mli.depends
+- ocamlfind ocamlc -c -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I lwt -o lib/dirent.cmi lib/dirent.mli
+- ocamlfind ocamldep -package bytes -modules lib/dirent.ml > lib/dirent.ml.depends
+- ocamlfind ocamlc -c -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I lwt -o lib/dirent.cmo lib/dirent.ml
+- ocamlfind ocamlc -a -I lib lib/dirent.cmo -o lib/dirent.cma
+- ocamlfind ocamlopt -c -bin-annot -safe-string -principal -strict-sequence -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -I unix -I lwt -o lib/dirent.cmx lib/dirent.ml
+- ocamlfind ocamlopt -a -I lib lib/dirent.cmx -o lib/dirent.cmxa
+- ocamlfind ocamldep -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -modules unix/dirent_unix.mli > unix/dirent_unix.mli.depends
+- ocamlfind ocamlc -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I lwt -o unix/dirent_unix.cmi unix/dirent_unix.mli
+- ocamlfind ocamldep -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -modules unix/dirent_unix.ml > unix/dirent_unix.ml.depends
+- cp -p lib_gen/unix_dirent_bindings.ml unix/unix_dirent_bindings.ml
+- ocamlfind ocamldep -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -modules unix/unix_dirent_bindings.ml > unix/unix_dirent_bindings.ml.depends
+- cp -p lib_gen/unix_dirent_types.ml unix/unix_dirent_types.ml
+- ocamlfind ocamldep -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -modules unix/unix_dirent_types.ml > unix/unix_dirent_types.ml.depends
+- ocamlfind ocamldep -package unix-type-representations -package ctypes.stubs -modules lib_gen/unix_dirent_typegen.ml > lib_gen/unix_dirent_typegen.ml.depends
+- ocamlfind ocamldep -package unix-type-representations -package ctypes.stubs -modules lib_gen/unix_dirent_types.ml > lib_gen/unix_dirent_types.ml.depends
+- ocamlfind ocamlc -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I lwt -o lib_gen/unix_dirent_types.cmo lib_gen/unix_dirent_types.ml
+- ocamlfind ocamlc -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I lwt -o lib_gen/unix_dirent_typegen.cmo lib_gen/unix_dirent_typegen.ml
+- ocamlfind ocamlc -linkpkg -package unix-type-representations -package ctypes.stubs -I lib_gen lib_gen/unix_dirent_types.cmo lib_gen/unix_dirent_typegen.cmo -o lib_gen/unix_dirent_typegen.byte
+- lib_gen/unix_dirent_typegen.byte
+- cc -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ctypes -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ocaml -o lib_gen/unix_dirent_types_detect lib_gen/unix_dirent_types_detect.c
+- lib_gen/unix_dirent_types_detect > unix/unix_dirent_types_detected.ml
+- ocamlfind ocamldep -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -modules unix/unix_dirent_types_detected.ml > unix/unix_dirent_types_detected.ml.depends
+- ocamlfind ocamlc -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I lwt -o unix/unix_dirent_types.cmo unix/unix_dirent_types.ml
+- ocamlfind ocamlc -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I lwt -o unix/unix_dirent_types_detected.cmo unix/unix_dirent_types_detected.ml
+- ocamlfind ocamldep -package unix-type-representations -package ctypes.stubs -modules lib_gen/unix_dirent_bindgen.ml > lib_gen/unix_dirent_bindgen.ml.depends
+- ocamlfind ocamldep -package unix-type-representations -package ctypes.stubs -modules lib_gen/unix_dirent_bindings.ml > lib_gen/unix_dirent_bindings.ml.depends
+- ocamlfind ocamlc -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I lwt -o lib_gen/unix_dirent_bindings.cmo lib_gen/unix_dirent_bindings.ml
+- + ocamlfind ocamlc -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I lwt -o lib_gen/unix_dirent_bindings.cmo lib_gen/unix_dirent_bindings.ml
+- findlib: [WARNING] Interface unix_dirent_types.cmi occurs in several directories: unix, lib_gen
+- ocamlfind ocamlc -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I lwt -o lib_gen/unix_dirent_bindgen.cmo lib_gen/unix_dirent_bindgen.ml
+- + ocamlfind ocamlc -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -I unix -I lwt -o lib_gen/unix_dirent_bindgen.cmo lib_gen/unix_dirent_bindgen.ml
+- findlib: [WARNING] Interface unix_dirent_types.cmi occurs in several directories: unix, lib_gen
+- ocamlfind ocamlc -linkpkg -package unix-type-representations -package ctypes.stubs -I lib_gen -I unix lib_gen/unix_dirent_types.cmo unix/unix_dirent_types_detected.cmo lib_gen/unix_dirent_bindings.cmo lib_gen/unix_dirent_bindgen.cmo -o lib_gen/unix_dirent_bindgen.byte
+- + ocamlfind ocamlc -linkpkg -package unix-type-representations -package ctypes.stubs -I lib_gen -I unix lib_gen/unix_dirent_types.cmo unix/unix_dirent_types_detected.cmo lib_gen/unix_dirent_bindings.cmo lib_gen/unix_dirent_bindgen.cmo -o lib_gen/unix_dirent_bindgen.byte
+- findlib: [WARNING] Interface unix_dirent_types.cmi occurs in several directories: unix, lib_gen
+- lib_gen/unix_dirent_bindgen.byte
+- ocamlfind ocamldep -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -modules unix/unix_dirent_generated.ml > unix/unix_dirent_generated.ml.depends
+- ocamlfind ocamlc -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I lwt -o unix/unix_dirent_bindings.cmo unix/unix_dirent_bindings.ml
+- ocamlfind ocamlc -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I lwt -o unix/unix_dirent_generated.cmo unix/unix_dirent_generated.ml
+- ocamlfind ocamlc -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I lwt -o unix/dirent_unix.cmo unix/dirent_unix.ml
+- ocamlfind ocamlc -a -dllib -lunix_dirent_stubs -I unix unix/unix_dirent_types.cmo unix/unix_dirent_types_detected.cmo unix/unix_dirent_bindings.cmo unix/unix_dirent_generated.cmo unix/dirent_unix.cmo -o unix/unix_dirent.cma
+- ocamlfind ocamlopt -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I lwt -o unix/unix_dirent_types.cmx unix/unix_dirent_types.ml
+- ocamlfind ocamlopt -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I lwt -o unix/unix_dirent_types_detected.cmx unix/unix_dirent_types_detected.ml
+- ocamlfind ocamlopt -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I lwt -o unix/unix_dirent_bindings.cmx unix/unix_dirent_bindings.ml
+- ocamlfind ocamlopt -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I lwt -o unix/unix_dirent_generated.cmx unix/unix_dirent_generated.ml
+- + ocamlfind ocamlopt -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I lwt -o unix/unix_dirent_generated.cmx unix/unix_dirent_generated.ml
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module Cstubs_internals, and its interface was not compiled with -opaque
+- ocamlfind ocamlopt -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I lwt -o unix/dirent_unix.cmx unix/dirent_unix.ml
+- + ocamlfind ocamlopt -c -bin-annot -safe-string -principal -strict-sequence -package unix-type-representations -package unix-errno.unix -package ctypes.stubs -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I unix -I lib -I lwt -o unix/dirent_unix.cmx unix/dirent_unix.ml
+- File "_none_", line 1:
+- Warning 58: no cmx file was found in path for module Errno_unix, and its interface was not compiled with -opaque
+- ocamlfind ocamlopt -a -cclib -lunix_dirent_stubs -I unix unix/unix_dirent_types.cmx unix/unix_dirent_types_detected.cmx unix/unix_dirent_bindings.cmx unix/unix_dirent_generated.cmx unix/dirent_unix.cmx -o unix/unix_dirent.cmxa
+- ocamlfind ocamlc -ccopt -I/usr/local/include -c unix/unix_dirent_util.c
+- mv unix_dirent_util.o unix/unix_dirent_util.o
+- ocamlfind ocamlc -ccopt -I/usr/local/include -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ctypes -c unix/unix_dirent_stubs.c
+- mv unix_dirent_stubs.o unix/unix_dirent_stubs.o
+- ocamlfind ocamlmklib -o unix/unix_dirent_stubs -L/usr/local/lib unix/unix_dirent_util.o unix/unix_dirent_stubs.o
+- ocamlfind ocamldep -package unix-type-representations -package lwt.preemptive -package unix-errno.unix -modules lwt/dirent_unix_lwt.mli > lwt/dirent_unix_lwt.mli.depends
+- + ocamlfind ocamldep -package unix-type-representations -package lwt.preemptive -package unix-errno.unix -modules lwt/dirent_unix_lwt.mli > lwt/dirent_unix_lwt.mli.depends
+- ocamlfind: Package `lwt.preemptive' not found
+- Command exited with code 2.
+- Makefile:80: recipe for target 'build' failed
+- make: *** [build] Error 10
+[ERROR] The compilation of unix-dirent failed at "/usr/bin/make build".
+
+#=== ERROR while compiling unix-dirent.0.3.1 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/unix-dirent.0.3.1
+# command              /usr/bin/make build
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/unix-dirent-23914-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/unix-dirent-23914-6cc03f.out
+### output ###
+# [...]
+# ocamlfind ocamlopt -a -cclib -lunix_dirent_stubs -I unix unix/unix_dirent_types.cmx unix/unix_dirent_types_detected.cmx unix/unix_dirent_bindings.cmx unix/unix_dirent_generated.cmx unix/dirent_unix.cmx -o unix/unix_dirent.cmxa
+# ocamlfind ocamlc -ccopt -I/usr/local/include -c unix/unix_dirent_util.c
+# mv unix_dirent_util.o unix/unix_dirent_util.o
+# ocamlfind ocamlc -ccopt -I/usr/local/include -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/ctypes -c unix/unix_dirent_stubs.c
+# mv unix_dirent_stubs.o unix/unix_dirent_stubs.o
+# ocamlfind ocamlmklib -o unix/unix_dirent_stubs -L/usr/local/lib unix/unix_dirent_util.o unix/unix_dirent_stubs.o
+# ocamlfind ocamldep -package unix-type-representations -package lwt.preemptive -package unix-errno.unix -modules lwt/dirent_unix_lwt.mli > lwt/dirent_unix_lwt.mli.depends
+# + ocamlfind ocamldep -package unix-type-representations -package lwt.preemptive -package unix-errno.unix -modules lwt/dirent_unix_lwt.mli > lwt/dirent_unix_lwt.mli.depends
+# ocamlfind: Package `lwt.preemptive' not found
+# Command exited with code 2.
+# Makefile:80: recipe for target 'build' failed
+# make: *** [build] Error 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build unix-dirent 0.3.1
++- 
+- No changes have been performed
+'opam install unix-dirent.0.3.1' failed.

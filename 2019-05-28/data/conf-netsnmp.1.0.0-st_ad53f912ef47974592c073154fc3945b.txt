@@ -1,0 +1,44 @@
+The following actions will be performed:
+  - install conf-netsnmp 1.0.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [conf-netsnmp.1.0.0: http]
+[conf-netsnmp.1.0.0] downloaded from https://www.github.com/stevebleazard/ocaml-conf-netsnmp/releases/download/v1.0.0/conf-netsnmp-1.0.0.tbz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [conf-netsnmp: sh]
++ /bin/sh "-exc" "cc -c $CFLAGS -I/usr/local/include files/test.c" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/conf-netsnmp.1.0.0)
+- + cc -c -I/usr/local/include files/test.c
+- files/test.c:1:10: fatal error: net-snmp/net-snmp-config.h: No such file or directory
+-  #include <net-snmp/net-snmp-config.h>
+-           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- compilation terminated.
+[ERROR] The compilation of conf-netsnmp failed at "/bin/sh -exc cc -c $CFLAGS -I/usr/local/include files/test.c".
+
+#=== ERROR while compiling conf-netsnmp.1.0.0 =================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/conf-netsnmp.1.0.0
+# command              /bin/sh -exc cc -c $CFLAGS -I/usr/local/include files/test.c
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/conf-netsnmp-67586-6cc03f.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/conf-netsnmp-67586-6cc03f.out
+### output ###
+# + cc -c -I/usr/local/include files/test.c
+# files/test.c:1:10: fatal error: net-snmp/net-snmp-config.h: No such file or directory
+#  #include <net-snmp/net-snmp-config.h>
+#           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-netsnmp 1.0.0
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libsnmp-dev
+
+'opam install conf-netsnmp.1.0.0' failed.

@@ -1,0 +1,39 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install conf-gtk3 18
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [conf-gtk3: pkg-config 3.18]
++ /usr/bin/pkg-config "--short-errors" "--print-errors" "--atleast-version" "3.18" "gtk+-3.0" (CWD=/opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/conf-gtk3.18)
+- No package 'gtk+-3.0' found
+[ERROR] The compilation of conf-gtk3 failed at "/usr/bin/pkg-config --short-errors --print-errors --atleast-version 3.18 gtk+-3.0".
+
+#=== ERROR while compiling conf-gtk3.18 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.06.1/dotopam/ocaml-base-compiler.4.06.1/.opam-switch/build/conf-gtk3.18
+# command              /usr/bin/pkg-config --short-errors --print-errors --atleast-version 3.18 gtk+-3.0
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/conf-gtk3-152031-ccabea.env
+# output-file          /opamcheck/sandbox/opamstate/4.06.1/dotopam/log/conf-gtk3-152031-ccabea.out
+### output ###
+# No package 'gtk+-3.0' found
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-gtk3 18
++- 
+- No changes have been performed
+
+<><> conf-gtk3.18 troubleshooting <><><><><><><><><><><><><><><><><><><><><><><>
+=> This package requires gtk+ 3.0 development packages installed on your system
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libexpat1-dev libgtk-3-dev
+
+'opam install conf-gtk3.18' failed.

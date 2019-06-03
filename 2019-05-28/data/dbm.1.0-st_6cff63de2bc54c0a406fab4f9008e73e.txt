@@ -1,0 +1,42 @@
+The following actions will be performed:
+  - install dbm 1.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [dbm.1.0: http]
+[dbm.1.0] downloaded from https://download.ocamlcore.org/camldbm/template/CamlDBM1.0/camldbm-1.0.tgz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [dbm: patch]
+[WARNING] File /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/dbm.1.0/mkdir-stublibs.patch uses context diffs which are less portable; consider using unified diffs
+Processing  1/2: [dbm: ./configure]
++ /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/dbm.1.0/./configure  (CWD=/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/dbm.1.0)
+- Configuring for OCaml version 4.04.2
+- 
+- NDBM not found, the "camldbm" library cannot be built.
+[ERROR] The compilation of dbm failed at "/opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/dbm.1.0/./configure".
+
+#=== ERROR while compiling dbm.1.0 ============================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/dbm.1.0
+# command              /opamcheck/sandbox/opamstate/4.04.2/dotopam/ocaml-base-compiler.4.04.2/.opam-switch/build/dbm.1.0/./configure
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/dbm-13265-f0f09f.env
+# output-file          /opamcheck/sandbox/opamstate/4.04.2/dotopam/log/dbm-13265-f0f09f.out
+### output ###
+# Configuring for OCaml version 4.04.2
+# 
+# NDBM not found, the "camldbm" library cannot be built.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build dbm 1.0
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libgdbm-dev
+
+'opam install dbm.1.0' failed.

@@ -1,0 +1,93 @@
+[NOTE] It seems you have not updated your repositories for a while. Consider updating them with:
+       opam update
+
+The following actions will be performed:
+  - install crypt 1.2
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [crypt.1.2: http]
+[crypt.1.2] downloaded from https://github.com/vbmithr/ocaml-crypt/archive/1.2.tar.gz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [crypt: make]
++ /usr/bin/make  (CWD=/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/crypt.1.2)
+- cd lib && /usr/bin/make
+- make[1]: Entering directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/crypt.1.2/lib'
+- make[2]: Entering directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/crypt.1.2/lib'
+- ocamldep -native crypt.mli > ._ncdi/crypt.di
+- ocamldep crypt.ml > ._d/crypt.d
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlc.opt -c -cc "cc" -ccopt "-fPIC  \
+- 			-DPIC -DNATIVE_CODE   \
+- 			    -o crypt_stubs.o " crypt_stubs.c
+- ar rcs libcrypt_stubs.a  crypt_stubs.o
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlc.opt -c crypt.mli
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlopt.opt -c crypt.ml
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlopt.opt -a -cclib -lcrypt_stubs           -ccopt -lcrypt     -o crypt.cmxa crypt.cmx
+- make[2]: Leaving directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/crypt.1.2/lib'
+- make[2]: Entering directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/crypt.1.2/lib'
+- ocamldep crypt.mli > ._bcdi/crypt.di
+- make[2]: 'libcrypt_stubs.a' is up to date.
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlc.opt -c crypt.ml
+- ocamlmklib         \
+- 			-o crypt_stubs  crypt_stubs.o   \
+- 			-lcrypt
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlc.opt -a -cclib -lcrypt_stubs    -dllib dllcrypt_stubs.so       -ccopt -lcrypt      -o crypt.cma crypt.cmo
+- make[2]: Leaving directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/crypt.1.2/lib'
+- make[1]: Leaving directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/crypt.1.2/lib'
+- cd test && /usr/bin/make
+- make[1]: Entering directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/crypt.1.2/test'
+- make[2]: Entering directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/crypt.1.2/test'
+- ocamldep -I ../lib test.ml > ._d/test.d
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlopt.opt -c -I ../lib test.ml
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/bin/ocamlopt.opt \
+- 			  \
+- 			     -I ../lib          crypt.cmxa -o test.opt \
+- 			test.cmx
+- ../lib/libcrypt_stubs.a(crypt_stubs.o): In function `crypt_raw':
+- crypt_stubs.c:(.text+0x82): undefined reference to `crypt'
+- ../lib/libcrypt_stubs.a(crypt_stubs.o): In function `crypt_md5':
+- crypt_stubs.c:(.text+0x241): undefined reference to `crypt'
+- collect2: error: ld returned 1 exit status
+- File "caml_startup", line 1:
+- Error: Error during linking
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml-makefile/OCamlMakefile:952: recipe for target 'test.opt' failed
+- make[2]: *** [test.opt] Error 2
+- make[2]: Leaving directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/crypt.1.2/test'
+- /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml-makefile/OCamlMakefile:777: recipe for target 'native-code' failed
+- make[1]: *** [native-code] Error 2
+- make[1]: Leaving directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/crypt.1.2/test'
+- Makefile:2: recipe for target 'all' failed
+- make: *** [all] Error 2
+[ERROR] The compilation of crypt failed at "/usr/bin/make".
+
+#=== ERROR while compiling crypt.1.2 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/crypt.1.2
+# command              /usr/bin/make
+# exit-code            2
+# env-file             /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/crypt-152942-a00279.env
+# output-file          /opamcheck/sandbox/opamstate/4.07.1/dotopam/log/crypt-152942-a00279.out
+### output ###
+# [...]
+# crypt_stubs.c:(.text+0x241): undefined reference to `crypt'
+# collect2: error: ld returned 1 exit status
+# File "caml_startup", line 1:
+# Error: Error during linking
+# /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml-makefile/OCamlMakefile:952: recipe for target 'test.opt' failed
+# make[2]: *** [test.opt] Error 2
+# make[2]: Leaving directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/crypt.1.2/test'
+# /opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/lib/ocaml-makefile/OCamlMakefile:777: recipe for target 'native-code' failed
+# make[1]: *** [native-code] Error 2
+# make[1]: Leaving directory '/opamcheck/sandbox/opamstate/4.07.1/dotopam/ocaml-base-compiler.4.07.1/.opam-switch/build/crypt.1.2/test'
+# Makefile:2: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build crypt 1.2
++- 
+- No changes have been performed
+'opam install crypt.1.2' failed.

@@ -1,0 +1,69 @@
+The following actions will be performed:
+  - install ke 0.3
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/1: [ke.0.3: http]
+[ke.0.3] downloaded from https://github.com/mirage/ke/releases/download/v0.3/ke-v0.3.tbz
+Processing  1/1:
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Processing  1/2: [ke: dune subst]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune "subst" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ke.0.3)
+Processing  1/2: [ke: dune build]
++ /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune "build" "-p" "ke" "-j" "39" (CWD=/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ke.0.3)
+-       ocamlc lib/.ke.objs/ke__Rke.{cmo,cmt} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.ke.objs -I lib/.ke.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -intf-suffix .ml -no-alias-deps -open Ke__ -o lib/.ke.objs/ke__Rke.cmo -c -impl lib/rke.ml)
+- File "lib/rke.ml", line 38, characters 22-37:
+- 38 |         if n < 0 then Fmt.invalid_arg "Rke.create" else to_power_of_two n
+-                            ^^^^^^^^^^^^^^^
+- Error: Unbound value Fmt.invalid_arg
+-     ocamlopt lib/.ke.objs/ke__Rke.{cmx,o} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt -w -40 -g -I lib/.ke.objs -I lib/.ke.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -intf-suffix .ml -no-alias-deps -open Ke__ -o lib/.ke.objs/ke__Rke.cmx -c -impl lib/rke.ml)
+- File "lib/rke.ml", line 38, characters 22-37:
+- 38 |         if n < 0 then Fmt.invalid_arg "Rke.create" else to_power_of_two n
+-                            ^^^^^^^^^^^^^^^
+- Error: Unbound value Fmt.invalid_arg
+-     ocamlopt lib/.ke.objs/ke__Fke.{cmx,o} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt -w -40 -g -I lib/.ke.objs -I lib/.ke.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -intf-suffix .ml -no-alias-deps -open Ke__ -o lib/.ke.objs/ke__Fke.cmx -c -impl lib/fke.ml)
+- File "lib/fke.ml", line 169, characters 24-39:
+- 169 |           if n < 0 then Fmt.invalid_arg "Rke.Weighted.create"
+-                               ^^^^^^^^^^^^^^^
+- Error: Unbound value Fmt.invalid_arg
+-       ocamlc lib/.ke.objs/ke__Fke.{cmo,cmt} (exit 2)
+- (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.ke.objs -I lib/.ke.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -intf-suffix .ml -no-alias-deps -open Ke__ -o lib/.ke.objs/ke__Fke.cmo -c -impl lib/fke.ml)
+- File "lib/fke.ml", line 169, characters 24-39:
+- 169 |           if n < 0 then Fmt.invalid_arg "Rke.Weighted.create"
+-                               ^^^^^^^^^^^^^^^
+- Error: Unbound value Fmt.invalid_arg
+[ERROR] The compilation of ke failed at "/opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p ke -j 39".
+
+#=== ERROR while compiling ke.0.3 =============================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+rc1 | file:///home/doligez/opam-repository
+# path                 /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/.opam-switch/build/ke.0.3
+# command              /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/dune build -p ke -j 39
+# exit-code            1
+# env-file             /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/ke-88054-2dea01.env
+# output-file          /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/log/ke-88054-2dea01.out
+### output ###
+# Error: Unbound value Fmt.invalid_arg
+# [...]
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlopt.opt -w -40 -g -I lib/.ke.objs -I lib/.ke.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -intf-suffix .ml -no-alias-deps -open Ke__ -o lib/.ke.objs/ke__Fke.cmx -c -impl lib/fke.ml)
+# File "lib/fke.ml", line 169, characters 24-39:
+# 169 |           if n < 0 then Fmt.invalid_arg "Rke.Weighted.create"
+#                               ^^^^^^^^^^^^^^^
+# Error: Unbound value Fmt.invalid_arg
+#       ocamlc lib/.ke.objs/ke__Fke.{cmo,cmt} (exit 2)
+# (cd _build/default && /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.ke.objs -I lib/.ke.objs/.private -I /opamcheck/sandbox/opamstate/4.08.0+rc1/dotopam/4.08.0+rc1/lib/fmt -intf-suffix .ml -no-alias-deps -open Ke__ -o lib/.ke.objs/ke__Fke.cmo -c -impl lib/fke.ml)
+# File "lib/fke.ml", line 169, characters 24-39:
+# 169 |           if n < 0 then Fmt.invalid_arg "Rke.Weighted.create"
+#                               ^^^^^^^^^^^^^^^
+# Error: Unbound value Fmt.invalid_arg
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ke 0.3
++- 
+- No changes have been performed
+'opam install ke.0.3' failed.
